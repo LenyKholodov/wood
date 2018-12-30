@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TESTBUGGY - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\users\admin\LOCALS~1\Temp\RSP2FD.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "DEBUG" /D "dSINGLE" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"Q:\Ode.DSW\TESTS\TESTBUGGY\test_buggy.cpp"
+]
+Creating command line "cl.exe @C:\users\admin\LOCALS~1\Temp\RSP2FD.tmp" 
+Creating temporary file "C:\users\admin\LOCALS~1\Temp\RSP2FE.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/TESTBUGGY.pdb" /debug /machine:I386 /out:"Debug/TESTBUGGY.exe" /pdbtype:sept 
+.\Debug\test_buggy.obj
+.\resources.RES
+\lib\OdeAddonsSPd.lib
+\lib\OdeSPD.lib
+\lib\DrawStuffD.lib
+]
+Creating command line "link.exe @C:\users\admin\LOCALS~1\Temp\RSP2FE.tmp"
+<h3>Output Window</h3>
+Compiling...
+test_buggy.cpp
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(123) : warning C4305: '=' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(124) : warning C4305: '=' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(125) : warning C4305: '=' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(126) : warning C4305: '=' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(160) : warning C4305: '+=' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(163) : warning C4305: '-=' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(198) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(198) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(218) : warning C4305: '=' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(219) : warning C4305: '=' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(230) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(278) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(280) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(281) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(282) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(312) : warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(328) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(346) : warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(375) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(375) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(376) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(381) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(381) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(385) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(385) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(399) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(400) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(414) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(421) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(421) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(422) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(424) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(424) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(425) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(427) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(427) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(435) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(435) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(438) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(438) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(439) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(439) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(439) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(440) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(440) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(440) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(470) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(497) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+q:\ode.dsw\tests\testbuggy\test_buggy.cpp(498) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/TESTBUGGY.bsc"  .\Debug\test_buggy.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+TESTBUGGY.exe - 0 error(s), 49 warning(s)
+</pre>
+</body>
+</html>

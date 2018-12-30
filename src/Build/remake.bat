@@ -1,0 +1,1 @@
+@nmake /f make\libmake.vc CFG=Debug

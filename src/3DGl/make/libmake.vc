@@ -1,0 +1,13 @@
+LIB_OPT            = $(LIB_OPT) /YX"pch.h"
+COPT               = 
+#CL                 = icl.exe /O3 /G6 /QaxK
+CL                 = cl.exe /O2 /G6
+
+!IF  "$(CFG)" == "Debug"
+TARGET_SHORT_NAME  = 3dgld.lib
+!ELSEIF  "$(CFG)" == "Release"
+TARGET_SHORT_NAME  = 3dgl.lib
+!ENDIF
+
+!include make\objlist.inc
+!include ..\build\makepro.vc

@@ -1,0 +1,15 @@
+-----------Windows startup------------
+...Create console
+...Create full screen windows
+...Set handlers
+---------Init input system----------------
+---------Init OpenGL system---------------
+...Load OpenGL unit
+...Create context
+...Init extensions table
+...Start OpenGL unit
+------------Game init--------------
+...Create static data
+-------------Render init-------------
+...Init fonts
+...Create render

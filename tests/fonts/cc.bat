@@ -1,0 +1,1 @@
+@cl /YX %1 /nologo /link /nologo kernel32.lib gdi32.lib user32.lib opengl32.lib glu32.lib glaux.lib advapi32.lib

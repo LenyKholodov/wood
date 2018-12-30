@@ -1,0 +1,12 @@
+@cd   striper
+@call clean.bat
+@cd ..
+@cd   striper_nv
+@call clean.bat 
+@cd ..
+@cd   glextproc
+@call clean.bat
+@cd ..
+@cd   glext
+@call clean.bat
+@cd ..

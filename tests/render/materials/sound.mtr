@@ -1,0 +1,79 @@
+//===============================================================
+//sound shaders
+//==================================================================
+
+lights/duolight02_snd_cv
+{
+	{
+		map	lights/duolight02grey.tga
+		colored
+
+//		red 	( neontable1 [Parm4 + (time * (1 * Parm3)) ]) * Parm0 * sound
+//		green 	( neontable1 [Parm4 + (time * (1 * Parm3)) ]) * Parm1 * sound
+//		blue 	( neontable1 [Parm4 + (time * (1 * Parm3)) ]) * Parm2 * sound
+
+		red 	Parm0 * sound
+		green 	Parm1 * sound
+		blue 	Parm2 * sound
+	
+	}
+}
+
+lights/squarelight1_snd
+{	
+	{
+		map		lights/squarelight1.tga
+		red 		sound * Parm0
+		green 		sound * Parm1
+		blue 		sound * Parm2
+		zeroclamp
+	}
+}
+
+lights/spot01_snd
+{	
+	{
+		map		lights/spot01.tga
+		red 		sound * Parm0
+		green 		sound * Parm1
+		blue 		sound * Parm2
+		zeroclamp
+	}
+}
+
+
+// The lights oscillate with half the frequency of the sound so there is not as much flicker.
+// - Xian (Feb.25.2002)
+
+lights/squarelight1_snd_softer
+{
+	{
+		map		lights/squarelight1.tga
+		red 		0.5 + ( sound * 0.5 ) * Parm0
+		green 		0.5 + ( sound * 0.5 ) * Parm1
+		blue 		0.5 + ( sound * 0.5 ) * Parm2
+		zeroclamp
+	}
+
+
+
+}
+
+// -Xian (Feb.4.2002)
+// Use shaderParm3 to adjust the volume of the sound
+//
+
+lights/squarelight1_snd_negative
+{	
+	{
+		map		lights/squarelight1.tga
+		red 		( ( 1 - sound ) * Parm0 ) * Parm3
+		green 		( ( 1 - sound ) * Parm1 ) * Parm3
+		blue 		( ( 1 - sound ) * Parm2 ) * Parm3
+		zeroclamp
+	}
+}
+
+
+// =======================================================================
+

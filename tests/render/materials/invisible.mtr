@@ -1,0 +1,366 @@
+
+// none of the surfaces in this file generate visible drawing,
+// they are just for modifying the game and utility behavior
+
+// nodraw surfaces will never get marks, so they
+// don't need to explicitly specify nomarks
+
+// FIXME: the editor should get qer_trans implicitly when trans
+
+
+
+// when gui surfaces are placed on an entity to allow them to be
+// interactive, use this surface for the view screen and place
+// a "gui" key containing the gui file, like "guis/mainmenu.gui"
+// on the entity
+textures/common/entityGui {
+	qer_editorimage	textures/editor/entityGui.tga
+	guiSurf	entity
+}
+
+// when gui surfaces are placed on an entity to allow them to be
+// interactive, use this surface for the view screen and place
+// a "gui" key containing the gui file, like "guis/mainmenu.gui"
+// on the entity
+textures/common/entityGui2 {
+	qer_editorimage	textures/editor/entityGui2.tga
+	guiSurf	entity
+}
+
+// when gui surfaces are placed on an entity to allow them to be
+// interactive, use this surface for the view screen and place
+// a "gui" key containing the gui file, like "guis/mainmenu.gui"
+// on the entity
+textures/common/entityGui3 {
+	qer_editorimage	textures/editor/entityGui3.tga
+	guiSurf	entity
+}
+
+// visportal brushes stop the area flood fills in dmap and
+// define portals, separating the world into areas
+textures/editor/visportal
+{
+	qer_editorimage	textures/editor/visportal.tga
+	qer_trans 0.40
+	//qer_nocarve		// don't let an awry CSG operation cut it up
+	nodraw
+	areaportal
+	trans
+	noshadows
+}
+
+// a caulk brush will behave as a normal solid surface
+// for collision detection and utility flood filling, and
+// should be used whenever you know the area isn't going to
+// be visible, but it needs to be closed off for things to
+// work right.  Curves and models don't stop the utility
+// flood filling, so you need to have solid brushes behind
+// them.  Setting the faces that won't ever be seen to
+// caulk will save some rendering time and data space.
+textures/common/caulk
+{
+	qer_editorimage textures/common/caulk.tga
+	nodraw
+	forceOpaque			// will still seal levels
+	qer_trans 0.7
+}
+
+
+// nodraw is used for surfaces that don't have any automatic
+// interaction with anything
+textures/common/nodraw
+{
+	qer_editorimage textures/common/nodraw.tga
+	qer_trans 0.50
+	nodraw
+	nonsolid
+	trans
+	noshadows
+}
+
+// nodraw solid is used for surfaces that are not visible but are used to collide with
+textures/common/nodrawsolid
+{
+	qer_editorimage textures/common/nodrawsolid.tga
+	qer_trans 0.50
+	nodraw
+	trans
+	noshadows
+}
+
+// This is an invisible brush that should cast a shadow
+// - Xian (Jul.9.2001)
+
+textures/common/shadow
+{
+	qer_editorimage textures/common/shadow.tga
+	nodraw
+	nonsolid
+	forceshadows
+}
+
+// Invisible Shadow 2
+
+textures/common/shadow2
+{
+	qer_editorimage textures/common/shadow.tga
+	nodraw
+	nonsolid
+	forceshadows
+}
+
+
+// entity triggers don't need to be any particular material,
+// but this is used by convention
+textures/common/trigger
+{
+	qer_editorimage textures/common/trigger.tga
+	qer_trans 0.50
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	nodraw
+	trans
+	noshadows
+}
+
+// entity triggers don't need to be any particular material,
+// but this is used by convention
+textures/common/trigmulti
+{
+	qer_editorimage textures/common/trigmulti.tga
+	qer_trans 0.50
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	nodraw
+	trans
+	noshadows
+}
+
+// entity triggers don't need to be any particular material,
+// but this is used by convention
+textures/common/trigonce
+{
+	qer_editorimage textures/common/trigonce.tga
+	qer_trans 0.50
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	nodraw
+	trans
+	noshadows
+}
+
+// entity triggers don't need to be any particular material,
+// but this is used by convention
+textures/common/trigtimer
+{
+	qer_editorimage textures/common/trigtimer.tga
+	qer_trans 0.50
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	nodraw
+	trans
+	noshadows
+}
+
+// entity triggers don't need to be any particular material,
+// but this is used by convention
+textures/common/trigrelay
+{
+	qer_editorimage textures/common/trigrelay.tga
+	qer_trans 0.50
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	nodraw
+	trans
+	noshadows
+}
+
+// entity triggers don't need to be any particular material,
+// but this is used by convention
+textures/common/trighurt
+{
+	qer_editorimage textures/common/trighurt.tga
+	qer_trans 0.50
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	nodraw
+	trans
+	noshadows
+}
+
+// entity triggers don't need to be any particular material,
+// but this is used by convention
+textures/common/trigfade
+{
+	qer_editorimage textures/common/trigfade.tga
+	qer_trans 0.50
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	nodraw
+	trans
+	noshadows
+}
+
+// entity triggers don't need to be any particular material,
+// but this is used by convention
+textures/common/triggui
+{
+	qer_editorimage textures/common/triggui.tga
+	qer_trans 0.50
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	nodraw
+	trans
+	noshadows
+}
+
+
+
+
+// nodrop is a volume modifier that is tested
+// before dropping items, used to keep items
+// from cluttering up death pits
+textures/common/nodrop
+{
+	qer_editorimage textures/common/nodrop.tga
+	qer_nocarve
+	qer_trans	0.5
+	nodraw
+	trans
+	nodrop
+	nonsolid
+	noshadows
+}
+
+// a clip brush is solid to players and monsters, but not missiles
+textures/common/clip
+{
+	qer_editorimage textures/common/clip.tga
+	qer_trans 0.50
+	nodraw
+	noimpact
+	nonsolid
+	monsterclip
+	playerclip
+	noshadows
+}
+
+// full clip is just like a solid brush, clipping missiles, monsters, and players
+textures/common/full_clip
+{
+	qer_editorimage textures/common/full_clip.tga
+	qer_trans 0.50
+	nodraw
+	monsterclip
+	playerclip
+	trans
+	noshadows
+}
+
+// a monster clip brush is solid to monsters only
+textures/common/monster_clip
+{
+	qer_editorimage textures/common/monster_clip.tga
+	qer_trans 0.50
+	nodraw
+	trans
+	nonsolid
+	monsterclip
+	noshadows
+}
+
+// a cushion is an invisible surface that is
+// solid to movement, but will never give falling
+// damage.  Put a thin sliver brush over jump pads, etc.
+textures/common/cushion
+{
+	qer_editorimage textures/common/cushion.tga
+	qer_trans 0.50
+	nodraw
+	trans
+	nodamage
+	noshadows
+}
+
+// slick is an invisible surface that should be
+// used as a thin sliver brush over floors to cause sliding
+textures/common/slick
+{
+	qer_editorimage textures/common/slick.tga
+	qer_trans 0.50
+	nodraw
+	trans
+	slick
+	noshadows
+}
+
+// noimpact can be used as a thin sliver
+// brush over surfaces that you want missiles to
+// just dissapear into, instead of exploding on
+textures/common/noimpact
+{
+	qer_editorimage textures/common/noimpact.tga
+	qer_trans 0.50
+	nodraw
+	trans
+	noimpact
+	noshadows
+}
+
+// subviews are for perfect mirrors or portals
+// without any extra surface drawing
+textures/common/mirror
+{
+	discrete		// never merge with other surfaces
+	qer_editorimage textures/common/qer_mirror.tga
+	mirror
+	{
+		blend add
+		map textures/common/qer_mirror.tga
+	}
+}
+
+
+// this is used during dmap development for some things
+invisible
+{
+	noshadows
+}
+
+// a ladder brush is solid to players and monsters, but not missiles (11/06/01)
+textures/common/ladder
+{
+	qer_editorimage textures/common/ladder.tga
+	qer_trans 0.40
+	nodraw
+	nonsolid
+	monsterclip
+	playerclip
+	noimpact
+	ladder
+	noshadows
+}
+
+// if an ASE/LWO model has a surface that uses this material that surface will
+// be used for collision detection instead of the visual surface(s)
+textures/common/collision
+{
+	qer_editorimage textures/common/collision.tga
+	nodraw
+	collision
+	qer_trans 0.7
+}
+
+
+textures/common/speaker
+{
+	qer_editorimage textures/common/speaker.tga
+	qer_trans 1.0
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	nodraw
+	trans
+	noshadows
+}
+
+textures/common/particle
+{
+	qer_editorimage textures/common/particle.tga
+	qer_trans 1.0
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	nodraw
+	trans
+	noshadows
+}
+

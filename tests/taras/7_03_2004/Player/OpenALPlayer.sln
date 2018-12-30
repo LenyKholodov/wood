@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoundLib", "SoundLib\SoundLib.vcproj", "{1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Player", "Player.vcproj", "{82F2FE50-B087-49E6-9B0B-A9A9CD8A0794}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44} = {1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44}.Debug.ActiveCfg = Debug|Win32
+		{1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44}.Debug.Build.0 = Debug|Win32
+		{1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44}.Release.ActiveCfg = Release|Win32
+		{1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44}.Release.Build.0 = Release|Win32
+		{82F2FE50-B087-49E6-9B0B-A9A9CD8A0794}.Debug.ActiveCfg = Debug|Win32
+		{82F2FE50-B087-49E6-9B0B-A9A9CD8A0794}.Debug.Build.0 = Debug|Win32
+		{82F2FE50-B087-49E6-9B0B-A9A9CD8A0794}.Release.ActiveCfg = Release|Win32
+		{82F2FE50-B087-49E6-9B0B-A9A9CD8A0794}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+LINK_OBJS = $(OUTDIR)\export.obj \
+            $(OUTDIR)\geom.obj   \
+            $(OUTDIR)\node.obj   \
+            $(OUTDIR)\mesh.obj   \
+            $(OUTDIR)\base.obj   \
+            $(OUTDIR)\material.obj \
+            $(OUTDIR)\anim.obj  \
+            $(OUTDIR)\helper.obj \
+            $(OUTDIR)\dump.obj  \
+            $(OUTDIR)\plugin.obj
+            

@@ -1,0 +1,6 @@
+test1.cpp
+Microsoft (R) Incremental Linker Version 7.10.3077
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:test1.exe 
+test1.obj 

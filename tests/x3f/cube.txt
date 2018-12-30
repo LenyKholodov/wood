@@ -1,0 +1,206 @@
+
+Chunk M3DMAGIC (4d4dH) 
+Length is 1297 (511H) 
+
+|  Chunk M3D_VERSION (2H) 
+|  Length is 10 (aH) 
+|  Version 3
+
+|  Chunk MDATA (3d3dH) 
+|  Length is 1062 (426H) 
+
+|  |  Chunk MESH_VERSION (3d3eH) 
+|  |  Length is 10 (aH) 
+|  |  Version 3
+
+|  |  Chunk MAT_ENTRY (afffH) 
+|  |  Length is 226 (e2H) 
+
+|  |  |  Chunk MAT_NAME (a000H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Material name 1 - Default
+
+|  |  |  Chunk MAT_AMBIENT (a010H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 150,G: 150,B: 150
+
+|  |  |  Chunk MAT_DIFFUSE (a020H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 150,G: 150,B: 150
+
+|  |  |  Chunk MAT_SPECULAR (a030H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 229,G: 229,B: 229
+
+|  |  |  Chunk MAT_SHININESS (a040H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 10%
+
+|  |  |  Chunk MAT_SHIN2PCT (a041H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_TRANSPARENCY (a050H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_XPFALL (a052H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_REFBLUR (a053H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_SHADING (a100H) 
+|  |  |  Length is 8 (8H) 
+|  |  |  Shading value of 3
+
+|  |  |  Chunk MAT_SELF_ILPCT (a084H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_XPFALLIN (a08aH) 
+|  |  |  Length is 6 (6H) 
+
+|  |  |  Chunk MAT_WIRESIZE (a087H) 
+|  |  |  Length is 10 (aH) 
+|  |  |  Wire frame size of 1.000000
+
+|  |  |  Chunk MAT_TEXMAP (a200H) 
+|  |  |  Length is 49 (31H) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 100%
+
+|  |  |  |  Chunk MAT_MAPNAME (a300H) 
+|  |  |  |  Length is 17 (11H) 
+|  |  |  |  Map name ATOLL1.BMP
+
+|  |  |  |  Chunk MAT_MAP_TILING (a351H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Map flags of NONE
+
+|  |  |  |  Chunk MAT_MAP_TEXBLUR (a353H) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Map bluring of 0.000000
+
+|  |  Chunk MASTER_SCALE (100H) 
+|  |  Length is 10 (aH) 
+|  |  Master Scale 1.000000
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 810 (32aH) 
+|  |  Name: Box01
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 798 (31eH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 320 (140H) 
+|  |  |  |  26 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 216 (d8H) 
+|  |  |  |  26 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 1.000000 [1] 0.000000 [2] 0.000000
+|  |  |  |  [3] 0.000000 [4] 1.000000 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] 0.000000 [8] 1.000000
+|  |  |  |  [9] -43.200310 [10] 116.346237 [11] 0.000000
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 202 (caH) 
+|  |  |  |  12 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 44 (2cH) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 12 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 54 (36H) 
+
+|  Chunk KFDATA (b000H) 
+|  Length is 219 (dbH) 
+
+|  |  Chunk KFHDR (b00aH) 
+|  |  Length is 21 (15H) 
+|  |  Revision level of 5
+|  |  Filename MAXSCENE
+|  |  Animation length of 100
+
+|  |  Chunk KFSEG (b008H) 
+|  |  Length is 14 (eH) 
+|  |  Segment starts at 0 and ends at 100
+
+|  |  Chunk KFCURTIME (b009H) 
+|  |  Length is 10 (aH) 
+|  |  Current frame is 0
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 168 (a8H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 0 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Object name: Box01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -43.200310, 116.346237, 0.000000
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000

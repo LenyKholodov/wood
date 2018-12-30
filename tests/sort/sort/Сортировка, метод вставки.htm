@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0043)http://rtfm.vn.ua/prog/tech/sort/sort_5.htm -->
+<HTML><HEAD><TITLE>Сортировка, метод вставки</TITLE>
+<META content="text/html; charset=windows-1251" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2614.3401" name=GENERATOR></HEAD>
+<BODY bgColor=#000000 link=#ffffff text=#00ffff>
+<P align=right><A href="http://www.linkexchange.ru/users/010865/goto.map" 
+target=_blank><IMG alt="Russian LinkExchange Advertising Network" border=0 
+height=60 isMap src="" vspace=4 width=468></A></P>
+<H2 align=left>&nbsp;&nbsp;&nbsp;&nbsp; <FONT color=#ffff80>Метод 
+вставки</FONT></H2>
+<P align=left><FONT color=#ffffff>&nbsp;</FONT> Метод основывается на следующем: 
+считается, что перед рассмотрением записи R[j] предыдущие записи 
+R[1],R[2],...,R[j-1] уже упорядочены, и R[j] вставляется в соответствующее 
+место. Сортировка таблицы начинается со второй записи. Ее ключ сравнивается с 
+ключом первой записи, и, если упорядоченность<BR>нарушена, то записи R[1] и R[2] 
+переставляются. Затем ключ записи R[3] сравнивается с ключами записей R[2] и 
+R[1]. На j - м шаге К[j] сравнивается по очереди 
+сK[j-1],K[j-2],...(K[1]&lt;=K[2]&lt;=...&lt;=K[j-1]) до тех пор, 
+&nbsp;&nbsp;&nbsp; пока выполняется условие K[j]&lt;K[i] (i=j-1,j-2,...) или 
+достигнут левый конец упорядоченной подтаблицы (i=1, K[j]&lt;K[1]). Выполнение 
+условия K[j]&gt;=K[i] означает, что запись R[j]&nbsp;&nbsp;&nbsp; нужно вставить 
+между R[i] и R[i+1]. Тогда записи R[i+1], R[i+2],...,R[j-1] сдвигаются на одну 
+позицию, и запись R[j] помещается в позицию i+1.<BR>Операции сравнения и 
+перемещения записей удобно совмещать,перемежая их друг с другом (этот способ 
+называется "просеиванием").<BR>Ниже показано выполнение j-го шага сортировки ( с 
+"просеиванием" ).<BR><BR>5&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp; 
+10&nbsp;&nbsp;&nbsp; 14 &nbsp;&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp; 
+2&nbsp;&nbsp;&nbsp;&nbsp; 11 &nbsp;&nbsp;&nbsp; ¦ j=5, i=4, 6 &lt; 
+14<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;-~~ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦<BR>5&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp; 6 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 11 
+&nbsp;&nbsp;&nbsp; ¦ i=3, 6 &lt; 
+10<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;-~~ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦<BR>5&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp; 10 
+&nbsp;&nbsp;&nbsp;&nbsp; 14&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 11 
+&nbsp;&nbsp;&nbsp; ¦ i=2, 6 &lt; 
+8<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;-~~ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦<BR>5&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp; 10 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 11 
+&nbsp;&nbsp;&nbsp; ¦ i=1, 6 &gt; 5</P>
+<P align=left>Количество операций сравнения для метода вставки определяется по 
+формуле<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+n * (n - 1)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C = 
+------------<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+4<BR>При достаточно большом числе элементов в сортируемой таблице можно принять 
+C = n**2/4 . &nbsp; Максимальное количество перестановок при использовании этого 
+метода примерно равно n**2/4<BR>Метод вставки обычно используется тогда, когда 
+записи вносятся&nbsp;&nbsp;&nbsp; в упорядоченную таблицу. Новая запись должна 
+быть вставлена в таблицу таким образом, чтобы существующая упорядоченность не 
+нарушалась.<BR></P>
+<P align=left><BR><FONT color=#ffffff>Модифицированный метод вставки ( бинарное 
+включение )</FONT><BR><BR>Метод прямого включения можно улучшить,если вставлять 
+очередной элемент таблицы в упорядоченную подтаблицу с помощью метода бинарного 
+(дихотомического,двоичного,логарифмического) поиска.<BR>j-й шаг 
+сортировки:<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<BR>5&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp; 10 
+&nbsp;&nbsp;&nbsp;&nbsp; 14&nbsp;&nbsp;&nbsp; 18&nbsp;&nbsp;&nbsp; 9 
+&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; ¦ i = 6/2 = 3; 9 &gt; 
+8<BR>~~~~~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ~~~~~~~~~&nbsp;&nbsp; ~~ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¦<BR>отбрасывается 
+рассматривается&nbsp;&nbsp;&nbsp; 
+¦<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+--¬ &nbsp;&nbsp;&nbsp; ¦<BR>.&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp;&nbsp; 
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 &nbsp;&nbsp;&nbsp;&nbsp; 
+14&nbsp;&nbsp;&nbsp; 18&nbsp;&nbsp; 9 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+2&nbsp;&nbsp;&nbsp;&nbsp; ¦ i = (4+6)/2 = 
+5;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+~~ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ~~~~~ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦ 9 &lt; 
+14<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+рассм. отбрас. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦<BR>.&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp;&nbsp; 9 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp; 14&nbsp;&nbsp; 18 
+&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; ¦ i = 4; 9 &lt; 10<BR></P>
+<P>&nbsp;</P></BODY></HTML>

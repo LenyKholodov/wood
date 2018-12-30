@@ -1,0 +1,19 @@
+x 100
+y 123.05
+z [
+  12  12 14 23 0
+]
+msg Fucker is the life!!!
+call func1
+
+bla_t {
+  x 12
+  y 32
+  z "hello!2"
+}
+
+bla_t {
+  x 13
+  y 134
+  z "Hello world! hi!"
+}

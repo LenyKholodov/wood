@@ -1,0 +1,103 @@
+//===============================================================
+//Mal's attempt at lights
+//===============================================================
+
+snaptable alarmstrobe {1, 0, 0, 0, 0, 0}
+
+
+//alarm strobe lights
+lights/alarm_strobe
+{
+	{
+		map		lights/squarelight1.tga
+		colored
+		//rgb		alarmstrobe[time]
+		red 		( alarmstrobe[Parm4 + (time * Parm3) ]) * Parm0
+		green 	( alarmstrobe[Parm4 + (time * Parm3) ]) * Parm1
+		blue 		( alarmstrobe[Parm4 + (time * Parm3) ]) * Parm2
+		zeroClamp
+	}
+}
+
+textures/base_trim/comptrim2_ns
+{
+	noShadows
+	qer_editorimage		textures/base_trim/comptrim2.tga
+	bumpmap			textures/base_trim/comptrim2_local.tga
+	diffusemap			textures/base_trim/comptrim2_d.tga
+	specularmap			textures/base_trim/comptrim2_s.tga
+}
+
+textures/base_trim/stesilverswatch_ns
+{
+	noShadows
+	qer_editorimage	textures/base_trim/stesilverswatch.tga
+	bumpmap		textures/base_trim/stesilverswatch_local.tga
+	diffusemap		textures/base_trim/stesilverswatch_d.tga
+	specularmap		textures/base_trim/stesilverswatch_s.tga
+}
+
+textures/decals/ind_logo1a
+{
+	qer_editorimage	textures/decals/ind_logo1.tga
+	noshadows
+	twoSided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+	{
+		colored
+		blend gl_one,gl_one
+		map textures/decals/ind_logo1.tga
+	}
+}
+
+lights/floorvent01ax_cv
+{
+	{
+		map	lights/floorvent01x_cv.tga
+		colored
+		//red 		( flickerblink [Parm4 + (time * (1 * Parm3)) ]) * Parm0
+		//green 		( flickerblink [Parm4 + (time * (1 * Parm3)) ]) * Parm1
+		//blue 		( flickerblink [Parm4 + (time * (1 * Parm3)) ]) * Parm2
+		//rgb		eyestable[ time * 1 ]
+		zeroClamp
+	}
+}
+
+textures/rock/rockblend
+{
+		noshadows
+// blended part
+	{
+		blend 		bumpmap
+		map		heightmap (textures/rock/rock02_h.tga, 24)
+	}
+	{
+		blend 		diffusemap
+		map		textures/rock/rock02_d.tga
+		vertexColor
+	}
+	{
+		blend		specularmap
+		map		textures/rock/rock02_s.tga
+		vertexColor
+	}
+// inverse blended part
+	{
+		blend		bumpmap
+		map		heightmap (textures/rock/skysand1_bmp.tga, 4)
+	}
+	{
+		blend		diffusemap
+		map		textures/rock/skysand1_d.tga
+		inverseVertexColor
+	}
+	{
+		blend 		specularmap
+		map		textures/rock/skysand1_s.tga
+		inverseVertexColor
+	}
+}
+

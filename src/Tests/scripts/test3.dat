@@ -1,0 +1,46 @@
+x       100
+y       200
+z       300
+
+d       1
+d       2.5
+d       -.5
+d       2
+d       7
+
+c       'Hello world'
+
+a 1 4 {
+  x 100
+  y 200
+  b {
+    x 30
+    y 60
+  }
+  arr 1
+  arr 2
+  arr 3
+  arr 4
+}
+
+a 1 4 {
+  x 100;
+  y 200;
+  b {
+    x 30;
+    y 60;
+  }
+  arr 1;
+  arr 2;
+  arr 3;
+  arr 4;
+}
+
+f
+{
+  g{
+    x {
+      fff
+    }
+  }
+}

@@ -1,0 +1,51 @@
+// определения 3D-структур и функция проецирования
+
+#ifndef __EXAMPLE_3D_H
+#define __EXAMPLE_3D_H
+
+// размер экрана и расстояние до камеры определены в video.h
+#include "video.h"
+
+// стркутура "вершина"
+typedef struct {
+  float x, y, z;       // координаты вершины
+  float rx, ry, rz;    // преобразованные (eg, повернутые) координаты вершины
+  float sx, sy;        // экранные (спроецированные) координаты вершины
+  float u, v;          // соответствующие ей координаты текстуры
+  float uz, vz, z1;    // u/z, v/z, 1/z (для перспективно-скорректированного)
+  float nx, ny, nz;    // координаты вектора нормали к вершине
+  float rnx, rny, rnz; // преобразованные (eg, повернутые) координаты нормали
+  float cc;            // освещенность вершины (для освещения по Гуро)
+} vertex;
+
+// структура "грань"
+typedef struct {
+  vertex *v1, *v2, *v3; // указатели на вершины грани
+  char *texture;        // указатель на текстуру
+  float nx, ny, nz;     // координаты вектора нормали к грани
+} face;
+
+// функция проецирования вершины
+void projectVertex(vertex *v) {
+  v->sx = XSIZE/2 + v->rx * DIST / (v->rz + DIST);
+  v->sy = YSIZE/2 - v->ry * DIST / (v->rz + DIST);
+}
+
+// поворот вершины относительно оси Ox на угол angle
+void xRotateVertex(vertex *v, float angle) {
+  register float mysin = sin(angle);
+  register float mycos = cos(angle);
+
+  // поворачиваем саму точку
+  v->rx = v->x;
+  v->rz = v->z * mycos - v->y * mysin;
+  v->ry = v->z * mysin + v->y * mycos;
+
+  // поворачиваем нормаль к объекту в этой точке
+  v->rnx = v->nx;
+  v->rnz = v->nz * mycos - v->ny * mysin;
+  v->rny = v->nz * mysin + v->ny * mycos;
+}
+
+#endif
+

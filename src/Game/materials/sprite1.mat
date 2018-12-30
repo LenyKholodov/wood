@@ -1,0 +1,71 @@
+material {
+        name "chair/ch1.alp"
+
+        diffuse_map "chair/ch1.alp"
+
+        alpha_koef 1
+        alpha_present 1
+}
+
+material {
+        name "chair/ch2.alp"
+
+        diffuse_map "chair/ch2.alp"
+
+        alpha_koef 1
+        alpha_present 1
+}
+
+material {
+        name "chair/ch3.alp"
+
+        diffuse_map "chair/ch3.alp"
+
+        alpha_koef 1
+        alpha_present 1
+}
+
+material {
+        name "chair/ch4.alp"
+
+        diffuse_map "chair/ch4.alp"
+
+        alpha_koef 1
+        alpha_present 1
+}
+
+material {
+        name "chair/ch5.alp"
+
+        diffuse_map "chair/ch5.alp"
+
+        alpha_koef 1
+        alpha_present 1
+}
+
+material {
+        name "chair/ch6.alp"
+
+        diffuse_map "chair/ch6.alp"
+
+        alpha_koef 1
+        alpha_present 1
+}
+
+material {
+        name "chair/ch7.alp"
+
+        diffuse_map "chair/ch7.alp"
+
+        alpha_koef 1
+        alpha_present 1
+}
+
+material {
+        name "chair/ch8.alp"
+
+        diffuse_map "chair/ch8.alp"
+
+        alpha_koef 1
+        alpha_present 1
+}

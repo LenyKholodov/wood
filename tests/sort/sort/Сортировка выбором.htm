@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0043)http://rtfm.vn.ua/prog/tech/sort/sort_3.htm -->
+<HTML><HEAD><TITLE>Сортировка выбором</TITLE>
+<META content="text/html; charset=windows-1251" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2614.3401" name=GENERATOR></HEAD>
+<BODY bgColor=#000000 link=#ffffff text=#00ffff>
+<P align=right><A href="http://www.linkexchange.ru/users/010865/goto.map" 
+target=_blank><IMG alt="Russian LinkExchange Advertising Network" border=0 
+height=60 isMap src="" vspace=4 width=468></A></P>
+<H2 align=left>&nbsp;&nbsp;&nbsp;&nbsp; <FONT color=#ffff80>Сортировка 
+выбором</FONT></H2>
+<P align=left>&nbsp;&nbsp;&nbsp; Сортировка выбором ( прямой выбор,линейный 
+выбор )<BR><BR>Согласно этому методу,начиная с первой записи таблицы, 
+осуществляется поиск элемента,имеющего наименьшее значение ключа. 
+После&nbsp;&nbsp;&nbsp; того, как этот элемент найден, он меняется местами с 
+первой записью в таблице. В результате такой перестановки запись с наименьшим 
+значением ключа помещается в первую позицию в таблице. Затем, начиная со второго 
+элемента таблицы, осуществляется поиск второго наименьшего ключа. Найденный 
+элемент меняется местами со вторым элементом таблицы. Этот процесс продолжается 
+до тех пор, пока все записи не будут расположены в порядке возрастания кодов 
+ключа. Число сравнений в данном методе равно n(n-1)/2 (в среднем порядка 
+n**2),где n - количество записей в таблице. Максимальное количество перестановок 
+при такой сортировке равно (n-1). В качестве примера рассмотрим шаги алгоритма 
+для таблицы со следующими значениями ключей:<BR><BR>23&nbsp;&nbsp;&nbsp; 
+11&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp; 56&nbsp;&nbsp;&nbsp;&nbsp; 
+9&nbsp;&nbsp;&nbsp;&nbsp; 35&nbsp;&nbsp;&nbsp; 7<BR><BR>Таблица на различных 
+этапах упорядочения (подчеркнуты перемещаемые элементы) 
+:<BR><BR>23&nbsp;&nbsp;&nbsp; 11&nbsp;&nbsp;&nbsp;&nbsp; 
+4&nbsp;&nbsp;&nbsp;&nbsp; 56&nbsp;&nbsp;&nbsp;&nbsp; 9&nbsp;&nbsp;&nbsp;&nbsp; 
+35&nbsp;&nbsp;&nbsp; 7<BR>~~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+~~~<BR>4&nbsp;&nbsp;&nbsp;&nbsp; 11&nbsp;&nbsp;&nbsp;&nbsp; 23&nbsp;&nbsp;&nbsp; 
+56&nbsp;&nbsp;&nbsp;&nbsp; 9&nbsp;&nbsp;&nbsp;&nbsp; 35&nbsp;&nbsp;&nbsp; 
+7<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+~~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+~~~<BR>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp;&nbsp; 
+23&nbsp;&nbsp;&nbsp;&nbsp; 56&nbsp;&nbsp;&nbsp;&nbsp; 9&nbsp;&nbsp;&nbsp;&nbsp; 
+35&nbsp;&nbsp;&nbsp; 
+11<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+~~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+~~~<BR>4&nbsp;&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 56&nbsp;&nbsp;&nbsp; 23&nbsp;&nbsp; 
+35&nbsp;&nbsp;&nbsp; 
+11<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+~~~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+~~~~<BR>4&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23&nbsp;&nbsp; 
+35&nbsp;&nbsp;&nbsp; 
+56<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+~~~<BR><BR><FONT color=#ffffff>Линейный выбор с подсчетом</FONT><BR><BR>При 
+упорядочении таблицы этим методом необходима память для хранения исходной и 
+упорядоченной таблиц,а также дополнительно должна быть выделена память под 
+счетчик для каждой записи таблицы.<BR>Просмотр таблицы начинается с первой 
+записи. Ее ключ сравнивается с ключами последующих записей.При этом счетчик 
+большего из сравниваемых ключей увеличивается на 1. При втором просмотре таблицы 
+первый ключ уже не рассматривается,второй ключ сравнивается со всеми 
+последующими.Результаты сравнений фиксируются в счетчиках. Для 
+таблицы,содержащей n элементов,этот процесс повторяется n-1 раз.<BR>После 
+выполнения всех просмотров счетчик каждого элемента указывает, какое количество 
+ключей таблицы меньше ключа этого элемента.Эти счетчики используются затем в 
+качестве индексов элементов результирующей таблицы. Поместив записи в 
+результирующую таблицу в соответствии со значениями их счетчиков ,получим 
+упорядоченную таблицу. Выполняется n-1 просмотров с n/2 сравнениями в среднем 
+при<BR>каждом&nbsp;&nbsp;&nbsp; просмотре.Значения счетчиков изменяются столько 
+раз,сколько выполняется сравнений.<BR>Число пересылок равно n.<BR><BR>Рассмотрим 
+пример использования этого метода.<BR><BR><BR>Исходная таблица и массив 
+счетчиков:<BR>--------------T-----------T----------¬<BR>¦ 
+индексы&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¦ 
+ключи&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¦ счетчики 
+¦<BR>+-------------+-----------+----------+<BR>¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0 ¦<BR>¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0 ¦<BR>¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0 ¦<BR>¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0 ¦<BR>L-------------+-----------+-----------<BR><BR>Рассмотрим изменение 
+массива счетчиков в результате просмотров:<BR><BR>1-й&nbsp;&nbsp;&nbsp; 2-й 
+3-й&nbsp;&nbsp;&nbsp; Результирующая таблица (ключи):<BR><BR>&nbsp;&nbsp;&nbsp; 
+2&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2<BR>&nbsp;&nbsp;&nbsp; 
+0&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; 
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5<BR>&nbsp;&nbsp;&nbsp; 
+1&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 
+3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9<BR>&nbsp;&nbsp;&nbsp; 
+0&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp; 
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10<BR></P>
+<P align=left>&nbsp;</P></BODY></HTML>

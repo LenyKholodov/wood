@@ -1,0 +1,85 @@
+#Пути переназначить при переустановке на другую машину
+
+LIB_DIR     = Q:\lib
+ASM_DIR     = asm
+
+!IF "$(CFG)" == ""
+CFG=Debug
+!MESSAGE No configuration specified. Defaulting to Debug.
+!ENDIF 
+
+!IF "$(CFG)" != "Release" && "$(CFG)" != "Debug"
+!ERROR Invalid configuration "$(CFG)" specified.
+!ENDIF 
+
+!IF "$(COPT)" == ""
+LIB_OPT     = $(LIB_OPT) /nologo /D "WOOD_LIB_COMPILE"  /EHs /GB /GA /QIfdiv /O2  \
+              /Fo"$(OUTDIR)\\" /Fa"$(ASM_DIR)\\" /Fd"$(OUTDIR)\\" /Fp"$(OUTDIR)\pch.pch" /c \
+              /I "q:\h"
+!ELSE
+LIB_OPT     = $(LIB_OPT) /nologo /D "WOOD_LIB_COMPILE"  /GA /GB /QIfdiv  \
+              /Fo"$(OUTDIR)\\" /Fa"$(ASM_DIR)\\" /Fd"$(OUTDIR)\\" /Fp"$(OUTDIR)\pch.pch" /O2 /Og /c  \
+              /I "q:\h"
+!ENDIF
+
+OUTDIR      =  $(CFG)
+
+!IF  "$(CFG)" == "Debug"
+CPPFLAGS    =  $(CPPFLAGS) $(COPT) $(LIB_OPT) /Zi /D"DEBUG"
+CFLAGS      =  $(CFLAGS)   $(COPT) $(LIB_OPT) /Zi /D"DEBUG"
+!ELSEIF  "$(CFG)" == "Release"
+CPPFLAGS    =  $(CPPFLAGS) $(COPT) $(LIB_OPT) /D"RELEASE"
+CFLAGS      =  $(CFLAGS)   $(COPT) $(LIB_OPT) /D"RELEASE"
+!ENDIF
+
+TARGET_NAME = $(LIB_DIR)\$(TARGET_SHORT_NAME)
+
+all: $(ASM_DIR) $(OUTDIR) $(TARGET_NAME) 
+
+!ifndef CL
+CL=cl.exe
+#CL=icl.exe
+!endif
+
+.c{$(OUTDIR)}.obj::
+   $(CL) @<<
+   $(CFLAGS) $< 
+<<
+
+.cpp{$(OUTDIR)}.obj::
+   $(CL) @<<
+   $(CPPFLAGS) $< 
+<<
+
+.cxx{$(OUTDIR)}.obj::
+   $(CL) @<<
+   $(CPPFLAGS) $< 
+<<
+
+.c{$(OUTDIR)}.sbr::
+   $(CL) @<<
+   $(CFLAGS) $< 
+<<
+
+.cpp{$(OUTDIR)}.sbr::
+   $(CL) @<<
+   $(CPPFLAGS) $< 
+<<
+
+.cxx{$(OUTDIR)}.sbr::
+   $(CL) @<<
+   $(CPPFLAGS) $< 
+<<
+
+"$(OUTDIR)":
+    @if not exist $(OUTDIR) mkdir $(OUTDIR)
+
+"$(ASM_DIR)":
+    @if not exist $(ASM_DIR) mkdir $(ASM_DIR)
+
+$(TARGET_NAME) :  $(OBJ_LIST)
+  @echo off                         
+  @if NOT exist $(TARGET_NAME) echo Create library "$(TARGET_NAME)"
+  @if exist $(TARGET_NAME) ( lib  /out:$(TARGET_NAME) $(OBJ_LIST) $(TARGET_NAME) ) \
+  else ( lib /out:$(TARGET_NAME) $(OBJ_LIST))
+  @echo on  

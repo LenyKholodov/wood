@@ -1,0 +1,17 @@
+textures/rock/rock02
+{
+	qer_editorimage textures/rock/rock02.tga
+	diffusemap	textures/rock/rock02_d.tga
+	specularmap	textures/rock/rock02_s.tga
+        bumpmap	        heightmap (textures/rock/rock02_h.tga, 24)
+}
+
+textures/rock/rock01
+{
+	qer_editorimage textures/rock/rock01.tga
+
+	diffusemap	textures/rock/rock01_d.tga
+	specularmap	textures/rock/rock01_s.tga
+        bumpmap	        heightmap (textures/rock/rock01_h.tga, 24)
+}
+

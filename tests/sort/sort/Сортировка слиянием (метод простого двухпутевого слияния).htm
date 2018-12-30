@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0043)http://rtfm.vn.ua/prog/tech/sort/sort_9.htm -->
+<HTML><HEAD><TITLE>Сортировка слиянием (метод простого двухпутевого слияния)</TITLE>
+<META content="text/html; charset=windows-1251" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2614.3401" name=GENERATOR></HEAD>
+<BODY bgColor=#000000 link=#ffffff text=#00ffff>
+<P align=right><A href="http://www.linkexchange.ru/users/010865/goto.map" 
+target=_blank><IMG alt="Russian LinkExchange Advertising Network" border=0 
+height=60 isMap src="" vspace=4 width=468></A></P>
+<H2 align=left>&nbsp;&nbsp;&nbsp;&nbsp; <FONT color=#ffff80>Сортировка 
+слиянием</FONT></H2>
+<P align=left><FONT color=#ffffff>Сортировка слиянием (метод простого 
+двухпутевого слияния)</FONT><BR><BR>&nbsp;&nbsp;&nbsp; В основе данного метода 
+внутренней сортировки лежит&nbsp; процедура слияния двух упорядоченных таблиц. 
+Эти таблицы&nbsp;&nbsp;&nbsp;&nbsp; должны быть объединены таким образом, чтобы 
+получилась одна упорядоченная таблица.<BR>Пусть имеются две таблицы А и В, 
+упорядоченные по возрастанию ключей . Слияние заключается в поочередной 
+пересылке элементов из таблиц А и В в зону формирования С. Порядок пересылки в 
+зону формирования зависит от результата попарного сравнения ключей таблиц А и 
+В.<BR>Сортировка слиянием&nbsp;&nbsp;&nbsp; производится на основе использования 
+рассмотренной выше процедуры.&nbsp;&nbsp;&nbsp; Сущность сортировки состоит в 
+том, что упорядочиваемая таблица разделяется на равные группы элементов. Группы 
+упорядочиваются, а затем попарно сливаются, образуя новые группы, содержащие 
+вдвое больше элементов.<BR>Процедура слияния двух групп должна иметь такие 
+параметры:<BR>TAB - имя сортируемой таблицы;<BR>n - длина таблицы (количество 
+записей);<BR>i1,i2 - начальные индексы сливаемых групп;<BR>l1,l2 - длины 
+сливаемых групп;<BR>h - шаг слияния;<BR>PS - поле 
+слияния.<BR><BR>&nbsp;&nbsp;&nbsp; 
+TAB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+TAB<BR>&nbsp;&nbsp;&nbsp; 
+---------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+---------------<BR>&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; . . 
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; . . 
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¦<BR>i1 
++-------------+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+-------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i1 
++-------------+<BR>&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¦ 
+l1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¦&nbsp;&nbsp; 17&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¦<BR>&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+68&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
++-----+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¦<BR>i2 
++-------------+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp; 19&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¦<BR>&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
++-----+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+68&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦<BR>&nbsp;&nbsp;&nbsp; ¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¦ 
+l2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¦&nbsp; 23&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦<BR>&nbsp;&nbsp;&nbsp; 
++-------------+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
++-----+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
++-------------+<BR>&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp; 68&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦<BR>&nbsp;&nbsp;&nbsp; ¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; . . 
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+¦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; . . 
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¦<BR>&nbsp;&nbsp;&nbsp; 
+--------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+--------------<BR><BR>На первом этапе каждая группа содержит два соседних 
+элемента исходного&nbsp;&nbsp;&nbsp; массива. Элементы внутри групп 
+упорядочиваются (напр., методом вставки). Затем происходит попарное слияние 
+групп. Количество групп в списке уменьшается вдвое до тех пор, пока не будет 
+получена одна упорядоченная группа. Если число элементов нечетное, то вводится 
+дополнительный элемент с максимальным значением. После сортировки он 
+отбрасывается. Если число групп, сформированных на первом этапе, нечетно, то 
+непарная группа переписывается без слияния. Рассмотренный 
+метод&nbsp;&nbsp;&nbsp; двухпутевой сортировки слиянием весьма эффективен. 
+Поскольку&nbsp;&nbsp;&nbsp; при сортировке нужно выполнить log2(n) проходов,то 
+необходимое суммарное число сравнений равно,примерно,n*log2(n). 
+Одним&nbsp;&nbsp;&nbsp;&nbsp; из недостатков данного метода является требование 
+большого резерва 
+памяти:<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S 
+= [n/2].<BR></P>
+<P align=left><FONT color=#ffffff>Сортировка слиянием (естественное 
+слияние)</FONT><BR><BR>&nbsp;&nbsp;&nbsp; Метод простого слияния никак не 
+учитывает тот факт,что в таблице могут&nbsp;&nbsp;&nbsp;&nbsp; быть сразу или 
+получаться на некотором шаге упорядоченые группы записей длиной m и l,которые 
+можно сразу объединить в одну упорядоченную группу длиной m+l (более того,эти 
+упорядоченные последовательности могут разрываться,их<BR>элементы будут 
+относиться к разным группам). Сортировка,при которой сливаются рядом стоящие 
+упорядоченные группы произвольной длины,называется естественным слиянием. Цель 
+естественного слияния-исключить лишние просмотры. Процедура слияния двух групп 
+такая же,как и в методе простого слияния,но длины l1 и l2 сливаемых групп нужно 
+каждый раз подсчитывать,сравнивая ключи двух рядом стоящих записей (можно 
+составить массив длин упорядоченных групп).<BR><BR></P></BODY></HTML>

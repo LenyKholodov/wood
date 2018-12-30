@@ -1,0 +1,9 @@
+sprite 0   45  chair/ch1.alp
+sprite 45  90  chair/ch2.alp
+sprite 90  135 chair/ch3.alp
+sprite 135 180 chair/ch4.alp
+sprite 180 225 chair/ch5.alp
+sprite 225 270 chair/ch6.alp
+sprite 270 315 chair/ch7.alp
+sprite 315 360 chair/ch8.alp
+step 45

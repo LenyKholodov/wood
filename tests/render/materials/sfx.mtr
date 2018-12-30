@@ -1,0 +1,1044 @@
+textures/sfx/purpleglass
+{
+	translucent
+	twoSided
+	noshadows
+	
+	qer_editorimage	textures/sfx/purpleglass.tga
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	
+	{
+	 	 blend	diffuseMap
+		map textures/sfx/purpleglass.tga
+		//scale	 16 , 16
+	}
+
+}
+
+
+textures/sfx/redglass
+{
+	translucent
+	twoSided
+	noshadows
+	
+	qer_editorimage	textures/sfx/redglass.tga
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	
+	{
+	 	 blend	diffuseMap
+		map textures/sfx/redglass.tga
+		//scale	 16 , 16
+	}
+
+}
+
+
+textures/sfx/blueglass
+{
+	translucent
+	twoSided
+	noshadows
+	
+	qer_editorimage	textures/sfx/blueglass.tga
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	
+	{
+	 	 blend	diffuseMap
+		map textures/sfx/blueglass.tga
+		//scale	 16 , 16
+	}
+
+}
+
+textures/sfx/amberglass
+{
+	translucent
+	twoSided
+	noshadows
+	
+	qer_editorimage	textures/sfx/amberglass.tga
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	
+	{
+	 	 blend	diffuseMap
+		map textures/sfx/amberglass.tga
+		//scale	 16 , 16
+	}
+
+}
+
+textures/sfx/bubble
+
+{
+    noselfShadow
+    noshadows	
+	deform sprite
+	translucent
+	surfaceparm discrete
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage  textures/sfx/bubble.tga 
+
+		{ 
+      
+      		 blend	add
+	 		map	textures/sfx/bubble.tga
+	}
+	               	
+
+}
+
+
+
+textures/sfx/depthtest
+{
+	noshadows
+	translucent
+
+	qer_editorimage		textures/sfx/depthtest.tga
+
+	{
+	   blend  blend  // GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+		map    textures/sfx/depthtest.tga
+
+	}
+}
+
+textures/sfx/bevglass01
+
+{
+    noselfShadow
+    noshadows	
+	twosided
+	translucent
+	               
+		{
+       
+    		  		 blend	filter
+				     map	textures/sfx/bevglass01.tga
+
+		}
+						bumpmap		addnormals(textures/sfx/bevglass01_local.tga, heightmap(textures/sfx/bevglass01_h.tga, 2 ) )
+						specularmap		textures/sfx/bevglass01_s.tga
+	//{
+	//	blend add
+	//	cubeMap		env/bland
+	//	texgen		reflect
+	//}
+
+}
+
+textures/sfx/monitor_glass
+
+{
+    noselfShadow
+    noshadows	
+	translucent
+	               
+		{
+       
+    		  		 blend	filter
+				     map	textures/sfx/monitor_glass.tga
+					scale	2, 2
+					translate	time * 5 , time * 3
+		}
+	
+						bumpmap		textures/sfx/monitor_glass_local.tga
+						specularmap		textures/sfx/monitor_glass_s.tga
+	//{
+	//	blend add
+	//	cubeMap		env/bland
+	//	texgen		reflect
+	//}
+
+}
+
+textures/sfx/flare
+{
+	noshadows
+	translucent
+	surfaceparm		nonsolid
+	deform flare 		( 16 + parm4 )
+	qer_editorimage		textures/editor/flare.tga
+	{
+		blend		add
+		map		_quadratic
+		colored
+		vertexcolor
+	}
+}
+
+
+textures/sfx/flare_cv
+{
+	noshadows
+	translucent
+	surfaceparm		nonsolid
+	deform flare 		16
+	qer_editorimage		textures/editor/flare.tga
+
+	{
+		colored
+		blend		add
+		map		_quadratic
+		colored
+		vertexcolor
+	}
+}
+
+
+textures/sfx/flare_cv2
+{
+	noshadows
+	translucent
+	surfaceparm		nonsolid
+	deform flare 		16
+	qer_editorimage		textures/editor/flare.tga
+
+	{
+		colored
+		blend		add
+		map		_quadratic
+		colored
+		vertexcolor
+	}
+}
+
+//duplicate of flare needed for models
+textures/sfx/flare2
+{
+	noshadows
+	translucent
+	surfaceparm		nonsolid
+	deform flare 		( 16 + parm4 )
+	qer_editorimage		textures/editor/flare.tga
+
+	{
+		blend		add
+		map		_quadratic
+		colored
+		vertexcolor
+	}
+}
+
+//duplicate of flare needed for models
+textures/sfx/flare3
+{
+	noshadows
+	translucent
+	surfaceparm		nonsolid
+	deform flare 		( 16 + parm4 )
+	qer_editorimage		textures/editor/flare.tga
+
+	{
+		blend		add
+		map		_quadratic
+		colored
+		vertexcolor
+	}
+}
+
+
+//duplicate of flare needed for models
+textures/sfx/flare4
+{
+	noshadows
+	translucent
+	surfaceparm		nonsolid
+	deform flare 		( 16 + parm4 )
+	qer_editorimage		textures/editor/flare.tga
+
+	{
+		blend		add
+		map		_quadratic
+		colored
+		vertexcolor
+	}
+}
+
+//duplicate of flare needed for models
+textures/sfx/flare5
+{
+	noshadows
+	translucent
+	surfaceparm		nonsolid
+	deform flare 		( 16 + parm4 )
+	qer_editorimage		textures/editor/flare.tga
+
+	{
+		blend		add
+		map		_quadratic
+		colored
+		vertexcolor
+	}
+}
+
+textures/sfx/lens_flare02
+{
+	qer_editorimage textures/sfx/lens_flare02.tga
+	noShadows
+	deform sprite
+	surfaceparm discrete
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	{       
+      	 blend	add
+	 map	textures/sfx/lens_flare02.tga
+	}
+
+
+ }
+
+
+textures/sfx/lens_flare01
+{
+	qer_editorimage textures/sfx/lens_flare01.tga
+	noShadows
+	deform sprite
+	surfaceparm discrete
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	{       
+      	 blend	add
+	 map	textures/sfx/lens_flare01.tga
+	}
+
+
+ }
+
+
+
+textures/sfx/shard06
+{
+	translucent
+	twoSided
+	noshadows
+	qer_editorimage	textures/sfx/shard06.tga
+	
+	{
+		blend add //diffuseMap
+		map textures/sfx/shard06.tga
+	}
+
+
+
+}
+
+
+
+
+textures/sfx/shard05
+{
+	translucent
+	twoSided
+	noshadows
+	qer_editorimage	textures/sfx/shard05.tga
+	
+	{
+		blend add //diffuseMap
+		map textures/sfx/shard05.tga
+	}
+
+
+
+}
+
+
+
+textures/sfx/shard04
+{
+	translucent
+	twoSided
+	noshadows
+	qer_editorimage	textures/sfx/shard04.tga
+	
+	{
+		blend add //diffuseMap
+		map textures/sfx/shard04.tga
+	}
+
+
+
+}
+
+
+
+textures/sfx/shard03
+{
+	translucent
+	twoSided
+	noshadows
+	qer_editorimage	textures/sfx/shard03.tga
+	
+	{
+		blend add //diffuseMap
+		map textures/sfx/shard03.tga
+	}
+
+
+
+}
+
+
+textures/sfx/shard02
+{
+	translucent
+	twoSided
+	noshadows
+	qer_editorimage	textures/sfx/shard02.tga
+	
+	{
+		blend add //diffuseMap
+		map textures/sfx/shard02.tga
+	}
+
+
+
+}
+
+
+textures/sfx/shard01
+{
+	translucent
+	twoSided
+	noshadows
+	qer_editorimage	textures/sfx/shard01.tga
+	
+	{
+		blend add //diffuseMap
+		map textures/sfx/shard01.tga
+	}
+
+
+
+}
+
+textures/sfx/shard00
+{
+	translucent
+	twoSided
+	noshadows
+	qer_editorimage	textures/sfx/shard00.tga
+	
+	{
+		blend add //diffuseMap
+		map textures/sfx/shard00.tga
+	}
+
+
+
+}
+
+textures/sfx/pane//1
+{
+	translucent
+	//surfaceparm nonsolid
+	//surfaceparm noimpact
+	twoSided
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/sfx/paneglass1.tga
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	
+	{
+		blend diffuseMap
+		map textures/sfx/paneglass1_d.tga
+	}
+
+
+}
+
+textures/sfx/paneglass2
+{
+	translucent
+	//surfaceparm nonsolid
+	//surfaceparm noimpact
+	twoSided
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/sfx/paneglass2.tga
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	
+	{
+		blend diffuseMap
+		map textures/sfx/paneglass2_d.tga
+	}
+
+
+}
+
+textures/sfx/shatterglass01
+{
+	translucent
+	//surfaceparm nonsolid
+	//surfaceparm noimpact
+	twoSided
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/sfx/shatterglass01.tga
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	
+	{
+		blend diffuseMap
+		map textures/sfx/shatterglass01_d.tga
+	}
+
+
+
+}
+
+
+textures/sfx/smoke_a
+{
+	noSelfShadow
+	noshadows
+	twosided
+	translucent
+	surfaceparm discrete
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage textures/sfx/smoke_a_1.tga
+	{
+		if ( ( time * 11 ) % 11 == 0 )
+		blend diffuseMap
+		map		textures/sfx/smoke_a_1.tga
+	}	
+	{
+		if ( ( time * 11 ) % 11 == 1 )
+		blend diffuseMap
+		map		textures/sfx/smoke_a_2.tga
+	}	
+	{
+		if ( ( time * 11 ) % 11 == 2 )
+		blend diffuseMap
+		map		textures/sfx/smoke_a_3.tga
+	}	
+	{
+		if ( ( time * 11 ) % 11 == 3 )
+	blend diffuseMap
+		map		textures/sfx/smoke_a_4.tga
+	}	
+	{
+		if ( ( time * 11 ) % 11 == 4 )
+	blend diffuseMap
+		map		textures/sfx/smoke_a_5.tga
+	}	
+	{
+		if ( ( time * 11 ) % 11 == 5 )
+	blend diffuseMap
+		map		textures/sfx/smoke_a_6.tga
+	}
+	{
+		if ( ( time * 11 ) % 11 == 6 )
+	blend diffuseMap
+		map		textures/sfx/smoke_a_7.tga
+	}
+	{
+		if ( ( time * 11 ) % 11 == 7 )
+	blend diffuseMap
+		map		textures/sfx/smoke_a_8.tga
+	}
+	{
+		if ( ( time * 11 ) % 11 == 8 )
+	blend diffuseMap
+		map		textures/sfx/smoke_a_9.tga
+	}
+	{
+		if ( ( time * 11 ) % 11 == 9 )
+	blend diffuseMap
+		map		textures/sfx/smoke_a_10.tga
+	}
+	{
+		if ( ( time * 11 ) % 11 == 10 )
+	blend diffuseMap
+		map		textures/sfx/smoke_a_11.tga
+	}
+
+}
+
+textures/sfx/techglass1
+{
+	translucent
+	//surfaceparm nonsolid
+	//surfaceparm noimpact
+	twosided
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/sfx/techglass1.tga
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	
+	{
+	 	 blend	add
+		map textures/sfx/techglass1_d.tga
+		scale	8 , 8
+	}
+
+
+
+}
+
+
+textures/sfx/chiglass1blue
+{
+	translucent
+	twoSided
+	noshadows
+	
+	qer_editorimage	textures/sfx/chiglass1blue.tga
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	
+	{
+	 	 blend	diffuseMap
+		map textures/sfx/chiglass1blue_d.tga
+		scale	 16 , 16
+	}
+
+
+
+}
+
+
+textures/sfx/chiglass1bluemac
+{
+	translucent
+	twoSided
+	noshadows
+	
+	qer_editorimage	textures/sfx/chiglass1blue.tga
+
+	{
+		blend add
+		cubeMap		env/machine1
+		texgen		reflect
+	}
+	
+	{
+	 	 blend	diffuseMap
+		map textures/sfx/chiglass1blue_d.tga
+		scale	 16 , 16
+	}
+
+
+
+}
+
+
+
+textures/sfx/chiglass1bluex
+{
+	translucent
+	//surfaceparm nonsolid
+	//surfaceparm noimpact
+	twoSided
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/sfx/chiglass1blue.tga
+
+	{
+		blend add
+		cubeMap		env/xcputest
+		texgen		reflect
+	}
+	
+	{
+	 	 blend	diffuseMap
+		map textures/sfx/chiglass1blue_d.tga
+		scale	 16 , 16
+	}
+
+
+
+}
+
+
+textures/sfx/chiglass1
+{
+	translucent
+	//surfaceparm nonsolid
+	//surfaceparm noimpact
+	twosided
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/sfx/chiglass1.tga
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	
+	{
+	 	 blend	diffuseMap
+		map textures/sfx/chiglass1_d.tga
+		scale	 16 , 16
+	}
+
+
+
+}
+
+textures/sfx/act1glass
+{
+	translucent
+	twoSided
+	noshadows
+	
+	qer_editorimage	textures/sfx/chiglass1blue.tga
+
+	{
+		blend add
+		cubeMap		env/act1
+		texgen		reflect
+	}
+	
+	{
+	 	 blend	diffuseMap
+		map textures/sfx/chiglass1blue_d.tga
+		scale	 16 , 16
+	}
+
+
+
+}
+
+
+textures/sfx/bglass02
+{
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	twoSided
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/sfx/bglass02.tga
+	
+	{
+		blend diffuseMap
+		map textures/sfx/bglass02_d.tga
+	}
+
+
+
+}
+
+textures/sfx/wing
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	polygonOffset
+	qer_editorimage	textures/sfx/wing.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/sfx/wing.tga
+	}	
+}
+
+
+
+
+textures/sfx/bglasstrim
+{
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	twosided
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/sfx/bglasstrim.tga
+	
+	{
+		blend add
+		map textures/sfx/bglasstrim.tga
+	}
+
+
+
+}
+
+textures/sfx/bglass01
+{
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	twosided
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/sfx/bglass01.tga
+	
+	{
+		blend add
+		map textures/sfx/bglass01_d.tga
+	}
+
+
+
+}
+
+textures/sfx/flame
+{
+	noSelfShadow
+	noshadows
+	twosided
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage textures/sfx/flame.tga
+	{
+		if ( ( time * 9 ) % 9 == 0 )
+	blend	add
+		map		textures/sfx/flame1.tga
+	}	
+	{
+		if ( ( time * 9 ) % 9 == 1 )
+	blend	add
+		map		textures/sfx/flame2.tga
+	}	
+	{
+		if ( ( time * 9 ) % 9 == 2 )
+	blend	add
+		map		textures/sfx/flame3.tga
+	}	
+	{
+		if ( ( time * 9 ) % 9 == 3 )
+	blend	add
+		map		textures/sfx/flame4.tga
+	}	
+	{
+		if ( ( time * 9 ) % 9 == 4 )
+	blend	add
+		map		textures/sfx/flame5.tga
+	}	
+	{
+		if ( ( time * 9 ) % 9 == 5 )
+	blend	add
+		map		textures/sfx/flame6.tga
+	}
+	{
+		if ( ( time * 9 ) % 9 == 6 )
+	blend	add
+		map		textures/sfx/flame7.tga
+	}
+	{
+		if ( ( time * 9 ) % 9 == 7 )
+	blend	add
+		map		textures/sfx/flame8.tga
+	}
+	{
+		if ( ( time * 9 ) % 9 == 8 )
+	blend	add
+		map		textures/sfx/flame9.tga
+	}
+
+
+}
+
+textures/sfx/beam_n
+
+ {
+	noSelfShadow
+	noshadows
+	twosided
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage textures/sfx/beam_n.tga
+
+	{
+		blend	add
+		map	textures/sfx/beam_n.tga
+		scroll	time * 0.2 , time * 0	
+		//scale	 2 , 1
+		
+	}
+	{
+		blend	add
+		map	textures/sfx/beam_n.tga
+		scroll	time * 0.11 , time * 0	
+		//scale	 4 , 1
+		
+	}
+}
+
+
+textures/sfx/black
+
+ {
+	description "used for big boxes no light no shadows"
+	noSelfShadow
+	noshadows
+	//twosided
+
+	qer_editorimage textures/sfx/black.tga
+
+	
+	diffusemap	textures/sfx/black_2.tga
+	
+}
+
+textures/sfx/white
+
+ {
+	description "bright white"
+	noSelfShadow
+	noshadows
+	//twosided
+
+	qer_editorimage textures/sfx/white.tga
+
+	
+	{
+		map	textures/sfx/white_2.tga
+	}
+}
+
+
+
+textures/sfx/beam_red
+
+ {
+	noSelfShadow
+	noshadows
+	twosided
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage textures/sfx/beam_red.tga
+
+	{
+		blend	add
+		map	textures/sfx/beam_red.tga
+		scroll	time * 0.2 , time * 0	
+		//scale	 2 , 1
+		
+	}
+	{
+		blend	add
+		map	textures/sfx/beam_red.tga
+		scroll	time * 0.11 , time * 0	
+		//scale	 4 , 1
+		
+	}
+}
+
+textures/sfx/beam_blue
+ {
+	noSelfShadow
+	noshadows
+	twosided
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage textures/sfx/beam_blue.tga
+
+	{
+		blend	add
+		map	textures/sfx/beam_blue.tga
+		scroll	time * 0.2 , time * 0	
+		//scale	 2 , 1
+		
+	}
+	{
+		blend	add
+		map	textures/sfx/beam_blue2.tga
+		scroll	time * -0.31 , time * 0	
+		scale	 2 , 1
+		
+	}
+}
+
+
+textures/sfx/mac_reflective
+{
+	discrete
+	translucent
+	noshadows
+	
+	qer_editorimage	textures/sfx/shatterglass01.tga
+	
+	{
+		blend diffuseMap
+		map textures/sfx/shatterglass01_d.tga
+//		map textures/washroom/mirror.tga
+	}
+
+	{
+		mirrorRenderMap		256 256		// size of the texture to draw the mirror view in
+		blend	blend
+
+		// tint
+		red		0.7
+		green	0.7
+		blue	0.8
+
+		// opacity
+		alpha	0.6
+
+		// fix up the projection
+		translate	0.5 , 0.5
+		scale	0.5 , 0.5
+
+	
+	}
+
+
+}
+
+
+

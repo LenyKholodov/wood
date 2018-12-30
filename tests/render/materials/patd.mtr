@@ -1,0 +1,2224 @@
+table pdfade { .75, .5 }
+table pdinout { .75, .1 }
+table pdinouthold { .75, .5, .45 }
+table pdflick { 1, .85 }
+table pdflick2 { 1, .82 }
+table pdmgflick { 1, .2, .6, .1, .8, .4 }
+table subtleflick { 1, .92 }
+table subtleflick2 { 0.25, 0.16 }
+table pdscaleTable { 1, .3, 1, .5, 1, .8, 1, .5, 1, .7, 1, .4 }
+table pdscaleTable2 { 2, 3, .5, 1 }
+table pdscaleTable3 { 1, -.5 }
+table pdscaleTable4 { 1, .5 }
+table pdhexTable { 0, 1, 0, 0, 0, 0 }
+table pdcommTable { 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+table pdquadTable { 0, 1, 0, 0 }
+table DoomExitTable {.1, .05,.2, .05,.15, .05,.1, .2,.1, .05,.1, .2 }
+table pdhalffade { .3, .2 }
+
+
+//
+//
+//
+
+gui/hud/scanline2
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/prjhud2/mask2.tga
+		alpha	parm3
+	}
+
+	{
+		maskcolor
+		map		guis/assets/hud/prjhud2/mask2.tga
+		alpha	parm3
+	}
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map		guis/assets/hud/prjhud2/scroll3.tga
+				scroll	time * 0 , time * -0.2
+				red	0.4
+				green	0.4
+				blue	0.4
+				alpha	0.4	
+	}
+	           
+
+}
+
+gui/hud/scanline
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/prjhud2/mask.tga
+		alpha	parm3
+	}
+
+	{
+		maskcolor
+		map		guis/assets/hud/prjhud2/mask.tga
+		alpha	parm3
+	}
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map		guis/assets/hud/prjhud2/scroll3.tga
+				scroll	time * 0 , time * -0.2
+				red	0.4
+				green	0.4
+				blue	0.4
+				alpha	0.4	
+	}
+	           
+
+}
+
+
+obj/static
+{
+
+	{
+		blend	blend
+		map		guis/assets/objective/glassmask.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+
+	{
+		maskcolor
+		map		guis/assets/objective/glassmask.tga
+		alpha	parm3
+	}
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map	textures/sfx/monitor_glass2.tga
+				scale	5, 5
+				translate	time * -1 , time * 1.2
+				alpha	parm3
+	}
+	           
+
+}
+
+static/roll
+{
+
+	{
+    		blend	blend
+//		map	guis/assets/camera/staticroll.tga
+		map	textures/sfx/monitor_glass_fade.tga
+		scale	4, 4
+		translate	time * -0.6 , time * 1
+		alpha	parm3
+	}
+	           
+
+}
+
+bg/light
+{
+
+	{
+		blend	blend
+		map		guis/assets/hydrocon/sidefade.tga
+		alpha	0.3
+	}
+
+	{
+		maskcolor
+		map		guis/assets/hydrocon/sidefade.tga
+		alpha	parm3
+	}
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map	guis/assets/hydrocon/bglight.tga
+				scale	10, 8
+				translate	time * -0.02 , time * -0.04
+		red	flickertable [ time * 0.3 ]
+		green	flickertable [ time * 0.3 ]
+		blue	flickertable [ time * 0.3 ]
+		alpha	parm3
+	}
+	           
+
+}
+
+bg/dark
+{
+
+	{
+    		blend	blend
+		map	guis/assets/hydrocon/bgdark.tga
+		scale	10, 8
+		translate	time * 0.02 , time * -0.06
+		red	flickertable [ time * 0.3 ]
+		green	flickertable [ time * 0.3 ]
+		blue	flickertable [ time * 0.3 ]
+		alpha	parm3
+	}
+	           
+
+}
+
+bg/texture
+{
+
+	{
+    		blend	add
+		map	guis/assets/hydrocon/texture.tga
+		scale	6, 4.5
+		translate	time * -0.005 , time * 0.01
+		rgb	0.5
+	}
+	           
+
+}
+
+camera/bgglow
+{
+
+	{
+		blend	add
+		map	guis/assets/camera/bgb.tga
+		red	subtleflick [ time * 2 ] * 0.9
+		green	subtleflick [ time * 2 ] * 0.4 
+		blue	parm2
+		alpha	parm3
+	}
+
+
+}
+
+glow/edge
+{
+
+	{
+		blend	add
+		map	guis/assets/common/sideglow_add.tga
+		rgb	pdflick [ time * 1 ]
+	}
+
+
+}
+
+//Menu Buttons
+
+menu/button1
+{
+
+	{
+		blend	add
+		map	guis/assets/mainmenu/1.tga
+		rgb	pdscaleTable4 [ time * 1 ]
+	}
+
+
+}
+
+menu/button2
+{
+
+	{
+		blend	add
+		map	guis/assets/mainmenu/2.tga
+		rgb	pdscaleTable4 [ time * 1 ]
+	}
+
+
+}
+
+menu/button3
+{
+
+	{
+		blend	add
+		map	guis/assets/mainmenu/3.tga
+		rgb	pdscaleTable4 [ time * 1 ]
+	}
+
+
+}
+
+menu/button4
+{
+
+	{
+		blend	add
+		map	guis/assets/mainmenu/4.tga
+		rgb	pdscaleTable4 [ time * 1 ]
+	}
+
+
+}
+
+menu/button5
+{
+
+	{
+		blend	add
+		map	guis/assets/mainmenu/5.tga
+		rgb	pdscaleTable4 [ time * 1 ]
+	}
+
+
+}
+
+///
+///
+
+schema/map
+{
+
+	{
+		blend	add
+		map	guis/assets/schema/bgmarsover.tga
+		rgb	subtleflick2 [ time * 1 ]
+	}
+
+
+}
+
+gui/bars1
+{
+
+	{
+		blend	blend
+		map		guis/assets/epd/bars.tga
+		scale	1, pdscaleTable4[time * 0.5]
+		scroll	time * 0.4 , time * 0
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+}
+
+gui/spike5
+{
+
+	{
+		blend	blend
+		map		guis/assets/epd/spikes.tga
+		scale	1, pdscaleTable4[time * 2]
+		scroll	time * 0.3 , time * 0
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+}
+
+gui/blueborder
+{
+
+	{
+		blend	blend
+		map		guis/assets/epd/glowline.tga
+		rgb	pdflick [ time * 4 ]
+	}
+
+
+}
+
+epd/spin
+{
+
+	{
+		blend	add
+		map		guis/assets/epd/spin.tga
+		rotate	time * 0.279
+	}
+
+
+}
+
+gui/textscroll
+{
+
+	{
+		blend	add
+		map		guis/assets/epd/textscroll.tga
+		scroll	time * 0 , time * 0.05
+		rgb	flickertable [ time * 2 ]
+
+	}
+
+
+}
+
+commstation
+{
+
+	{
+		blend	add
+		map		guis/assets/comm/bg.tga
+	}
+}
+
+commSpin {
+	translucent
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3]
+		map		guis/assets/comm/logo1.tga
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 1 / 18 ) ]
+		map		guis/assets/comm/logo2.tga
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 2 / 18 ) ]
+		map		guis/assets/comm/logo3.tga
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 3 / 18 ) ]
+		map		guis/assets/comm/logo4.tga
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 4 / 18 ) ]
+		map		guis/assets/comm/logo5.tga
+	}
+
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 5 / 18 ) ]
+		map		guis/assets/comm/logo5.tga
+		scale -1, 1
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 6 / 18 ) ]
+		map		guis/assets/comm/logo4.tga
+		scale -1, 1
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 7 / 18 ) ]
+		map		guis/assets/comm/logo3.tga
+		scale -1, 1
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 8 / 18 ) ]
+		map		guis/assets/comm/logo2.tga
+		scale -1, 1
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 9 / 18 ) ]
+		map		guis/assets/comm/logo1.tga
+		scale -1, 1
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 10 / 18 ) ]
+		map		guis/assets/comm/logo2.tga
+		scale -1, 1
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 11 / 18 ) ]
+		map		guis/assets/comm/logo3.tga
+		scale -1, 1
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 12 / 18 ) ]
+		map		guis/assets/comm/logo4.tga
+		scale -1, 1
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 13 / 18 ) ]
+		map		guis/assets/comm/logo5.tga
+		scale -1, 1
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 14 / 18 ) ]
+		map		guis/assets/comm/logo5.tga
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 15 / 18 ) ]
+		map		guis/assets/comm/logo4.tga
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 16 / 18 ) ]
+		map		guis/assets/comm/logo3.tga
+	}
+	{
+		blend	add
+		rgb		pdcommTable[time * 0.3 + ( 17 / 18 ) ]
+		map		guis/assets/comm/logo2.tga
+	}
+}
+
+doomglow
+{
+
+	{
+		blend	add
+		map		guis/assets/schema/doomblue.tga
+		rgb	DoomExitTable [ time * 0.5 ]
+	}
+}
+
+doomblur
+{
+
+	{
+		blend	add
+		map		guis/assets/schema/doomblur.tga
+	}
+}
+
+epd1
+{
+
+	{
+		blend	add
+		map		guis/assets/epd/test1.tga
+	}
+}
+
+epd1a
+{
+
+	{
+		blend	add
+		map		guis/assets/epd/test3.tga
+	}
+}
+
+epd1b
+{
+
+	{
+		blend	add
+		map		guis/assets/epd/test2.tga
+	}
+}
+
+epd2
+{
+
+	{
+		blend	add
+		map		guis/assets/epd/test6.tga
+	}
+}
+
+epd2a
+{
+
+	{
+		blend	add
+		map		guis/assets/epd/test5.tga
+	}
+}
+
+epd2b
+{
+
+	{
+		blend	add
+		map		guis/assets/epd/test4.tga
+	}
+}
+
+
+
+gui/static
+{
+
+	{
+		blend	blend
+		map		guis/assets/cpuserver/bg.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+
+	{
+		maskcolor
+		map		guis/assets/cpuserver/bg.tga
+		alpha	parm3
+	}
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map	textures/sfx/monitor_glass2.tga
+				scale	2, 2
+				translate	time * 5 , time * 3
+		red	flickertable [ time * 2 ]
+		green	flickertable [ time * 2 ]
+		blue	flickertable [ time * 2 ]
+		alpha	parm3
+	}
+	           
+
+}
+
+temp/star
+
+ {
+	noSelfShadow
+	noshadows
+
+	qer_editorimage textures/sfx/black.tga
+
+	diffusemap	textures/sfx/tempstar.tga
+}
+
+schema/bluebox
+{
+
+	{
+		blend	blend
+		map		guis/assets/schema/bluebox.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+
+
+}
+
+schema/squares
+{
+
+	{
+		blend	blend
+		map		guis/assets/schema/squares.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+
+
+}
+
+schema/overlay
+{
+
+	{
+		blend	add
+		map		guis/assets/schema/overlay3.tga
+		rgb 0.08
+	}
+
+
+}
+
+keypad/overlay
+{
+
+	{
+		blend	add
+		map		guis/assets/keypad/over2_gray.tga
+		rgb	flickertable [ time * 3 ]
+		alpha	0.5
+	}
+
+
+}
+
+keypad/overlay2
+{
+
+	{
+		blend	blend
+		map		guis/assets/keypad/over_gray3.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+
+
+}
+
+hud/bar1
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/small/bar1.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+}
+
+hud/bar2
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/small/bar2.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+}
+
+hud/healthspike
+{
+
+	{
+		blend	blend
+		map		guis/assets/health/hspike4.tga
+		scroll	time * 1 , time * 0
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+}
+
+gui/health
+{
+
+	{
+		blend	add
+		map		guis/assets/health/hbg.tga
+		rgb	flickertable [ time * 3 ]
+		alpha	parm3
+	}
+
+
+}
+
+gui/spike1
+{
+
+	{
+                              
+		blend	blend
+		map	guis/assets/health/hspike1.tga
+		scroll	time * 1.2 , time * 0
+                scale       16,1
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+}
+
+gui/spike2
+{
+
+	{
+		blend	blend
+		map		guis/assets/health/hspike2.tga
+		scale	16, 1
+		scroll	time * 0.3 , time * 0
+
+	}
+}
+
+gui/spike3
+{
+
+	{
+		blend	blend
+		map		guis/assets/health/hspike2.tga
+		scale	4, 1
+		scroll	time * 0.3 , time * 0
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+}
+
+gui/grid
+{
+
+	{
+		blend	blend
+		map		guis/assets/health/grid.tga
+		scale	16, 16
+
+	}
+
+
+}
+
+
+guisurfs/looptest
+{	
+	guiSurf guis/patd/po.gui
+}
+
+
+hudmg/largecirc
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/largecirc.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdmgflick [ time * 1 ]
+	}
+
+	{
+		maskcolor
+		map		guis/assets/hud/largecirc.tga
+		alpha	pdmgflick [ time * 2 ]
+	}
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map	textures/sfx/monitor_glass2.tga
+				scale	2, 2
+				translate	time * 5 , time * 3
+		red	0.6
+		green	0
+		blue	0
+	}
+/*
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_SRC_COLOR
+				map	textures/sfx/monitor_glass2.tga
+				scale	2, 2
+				translate	time * 5 , time * 3
+				rgb	0.5
+	}
+*/
+
+
+}
+
+
+hudmgr/innercirc
+{
+
+	{ 
+		blend	blend
+		map		guis/assets/hud/innercirc.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdmgflick [ time * 1 ]
+	}
+
+	{
+		maskcolor
+		map		guis/assets/hud/innercirc.tga
+		alpha	pdmgflick [ time * 2 ]
+	}
+
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map	textures/sfx/monitor_glass2.tga
+				scale	2, 2
+				translate	time * 5 , time * 3
+		red	0.7
+		green	0
+		blue	0
+	}
+}
+
+hudmgb/innercirc
+{
+
+	{ 
+		blend	blend
+		map		guis/assets/hud/innercirc.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdmgflick [ time * 1 ]
+	}
+
+	{
+		maskcolor
+		map		guis/assets/hud/innercirc.tga
+		alpha	pdmgflick [ time * 2 ]
+	}
+
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map	textures/sfx/monitor_glass2.tga
+				scale	2, 2
+				translate	time * 5 , time * 3
+		red	0.2
+		green	0.2
+		blue	0.2
+	}
+}
+
+hudmg/weaponhud
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/weaponhud.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdmgflick [ time * 1 ]
+	}
+
+	{
+		maskcolor
+		map		guis/assets/hud/weaponhud.tga
+		alpha	pdmgflick [ time * 2 ]
+	}
+
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map	textures/sfx/monitor_glass2.tga
+				scale	2, 2
+				translate	time * 5 , time * 3
+		red	0.1
+		green	0.5
+		blue	0.55
+	}
+
+
+}
+
+hudmg/invbox
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/invbox.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdmgflick [ time * 1 ]
+	}
+
+	{
+		maskcolor
+		map		guis/assets/hud/invbox.tga
+		alpha	pdmgflick [ time * 2 ]
+	}
+
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map	textures/sfx/monitor_glass2.tga
+				scale	2, 2
+				translate	time * 5 , time * 3
+		red	0.1
+		green	0.5
+		blue	0.55
+	}
+
+
+}
+
+hudmg/pdabox
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/pdabox.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdmgflick [ time * 1 ]
+	}
+
+	{
+		maskcolor
+		map		guis/assets/hud/pdabox.tga
+		alpha	pdmgflick [ time * 2 ]
+	}
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map	textures/sfx/monitor_glass2.tga
+				scale	2, 2
+				translate	time * 5 , time * 3
+		red	0.1
+		green	0.5
+		blue	0.55
+	}
+
+
+}
+
+hudmg/objbox
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/objbox.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdmgflick [ time * 1 ]
+	}
+
+	{
+		maskcolor
+		map		guis/assets/hud/objbox.tga
+		alpha	pdmgflick [ time * 2 ]
+	}
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map	textures/sfx/monitor_glass2.tga
+				scale	2, 2
+				translate	time * 5 , time * 3
+		red	0.1
+		green	0.5
+		blue	0.55
+	}
+
+
+}
+
+
+hud/largecirc
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/largecirc.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 3 ]
+	}
+
+
+}
+
+hud/innercirc
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/innercirc.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 3 ]
+	}
+
+
+}
+
+hud/weaponhud
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/weaponhud.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 3 ]
+	}
+
+
+}
+
+hud/invbox
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/invbox.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 3 ]
+	}
+
+
+}
+
+hud/pdabox
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/pdabox.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 3 ]
+	}
+
+
+}
+
+hud/objbox
+{
+
+	{
+		blend	blend
+		map		guis/assets/hud/objbox.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 3 ]
+	}
+
+
+}
+
+ev/elbg
+{
+
+	{
+		blend	blend
+		map		guis/assets/elevator/elbg.tga
+		rgb	pdflick [ time * 5 ]
+
+	}
+
+
+}
+
+ev/callbg_blue
+{
+
+	{
+		blend	blend
+		map		guis/assets/elevator/callbg_blue.tga
+		rgb	pdflick [ time * 5 ]
+
+	}
+
+
+}
+
+ev/callbg
+{
+
+	{
+		blend	blend
+		map		guis/assets/elevator/callbg.tga
+		rgb	pdflick [ time * 5 ]
+
+	}
+
+
+}
+
+
+pdcameraswitch
+{
+	           
+	{
+    		blend	blend
+		map	textures/sfx/monitor_glass_fade.tga
+		scale	2, 2
+		scroll	time * 1 , time * 2.5
+		red	flickertable [ time * 2 ]
+		green	flickertable [ time * 2 ]
+		blue	flickertable [ time * 2 ]
+		alpha	parm3
+
+	}
+}
+
+ventglow
+{
+
+	{
+		blend	blend
+		map		guis/assets/site4/site4_bg.tga
+		red	pdflick [ time * 5 ]
+		green	pdflick [ time * 5 ]
+		blue	pdflick [ time * 5 ]
+		alpha	parm3
+	}
+
+
+}
+
+
+envglow
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/env/envbg.tga
+		red	flickertable [ time * 2 ]
+		green	flickertable [ time * 2 ]
+		blue	flickertable [ time * 2 ]
+		alpha	parm3
+		
+	}
+
+
+}
+
+//
+//
+
+line/1aingame
+{
+
+	{
+		blend	blend
+		map		guis/assets/objective/1a.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdflick [ time * 2 ]
+	}
+
+
+}
+
+line/2aingame
+{
+
+	{
+		blend	blend
+		map		guis/assets/objective/2a.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdflick [ time * 2 ]
+	}
+
+
+}
+
+line/h_endingame
+{
+
+	{
+		blend	blend
+		map		guis/assets/objective/horiz_end.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdflick [ time * 2 ]
+	}
+
+
+}
+
+line/cingame
+{
+
+	{
+		blend	blend
+		map		guis/assets/objective/corner.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdflick [ time * 2 ]
+	}
+
+
+}
+
+line/hingame
+{
+
+	{
+		blend	blend
+		map		guis/assets/objective/horiz.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdflick [ time * 2 ]
+	}
+
+
+}
+
+line/fillingame
+{
+
+	{
+		blend	blend
+		map		guis/assets/objective/fill.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdflick [ time * 2 ]
+	}
+
+
+}
+
+line/v_endingame
+{
+
+	{
+		blend	blend
+		map		guis/assets/objective/vert_end.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdflick [ time * 2 ]
+	}
+
+
+}
+
+line/vingame
+{
+
+	{
+		blend	blend
+		map		guis/assets/objective/vert.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdflick [ time * 2 ]
+	}
+
+
+}
+
+//
+//
+
+line/hmap
+{
+
+	{
+		blend	blend
+		map		guis/map/hori.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+
+
+}
+
+line/vmap
+{
+
+	{
+		blend	blend
+		map		guis/map/vert.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+	}
+
+
+}
+
+airlock/circle_white3
+{
+
+	{
+		blend	blend
+		map		guis/assets/airlock/circle_white3.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdinout [ time * 0.25 ]
+	}
+
+
+}
+
+airlock/harrow
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/airlock/arrow_blur.tga
+		scroll	time * -2.5 , time * 0
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdinout [ time * 1 ]
+
+		scale	4, 1
+
+	}
+
+
+}
+
+airlock/varrow
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/airlock/arrow_blur2.tga
+		scroll	time * 0 , time * 2.5
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	pdinout [ time * 1 ]
+
+		scale	1, 4
+
+	}
+
+
+}
+
+gui/glow
+{
+
+	{
+		blend	blend
+
+		map		guis/patd/assets/waste/glow.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	flickertable [ time * 5 ]
+		
+	}
+
+
+}
+
+line/horizwarn
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/waste/hborder.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+		scale 10, 1
+	}
+
+
+}
+
+line/horizwarn2
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/waste/hborder.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+		scale 7, 1
+	}
+
+
+}
+
+line/vertwarn
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/waste/vborder.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+		scale 1, 7
+	}
+
+
+}
+
+bg/horizwarn
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/waste/hborder2.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+		scale 3, 1
+	}
+
+
+}
+
+pressuretick
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/waste/pressuretick.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+		scale 20, 1
+	}
+
+
+}
+
+//
+//
+//
+
+line/horiz
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/keycard/hline.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+
+	}
+
+
+}
+
+yellow/corner
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/camera/corner2.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 4 ]
+
+	}
+
+
+}
+
+yellow/horiz
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/camera/horiz2.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 4 ]
+
+	}
+
+
+}
+
+yellow/vert
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/camera/vert.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 4 ]
+
+	}
+
+
+}
+
+yellowa/corner
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/camera/cornera.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 4 ]
+
+	}
+
+
+}
+
+yellowa/horiz
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/camera/horiza.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 4 ]
+
+	}
+
+
+}
+
+
+sm3/scroll
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/small/sm3scroll.tga
+		scroll	time * 4 , time * 0.8
+		rgb	pdflick [ time * 5 ]
+		scale	pdscaleTable3[time * 0.5] , 1 
+
+	}
+
+
+}
+
+sm3/NumSwitch {
+	translucent
+	{
+		if ( ( time * 6 ) % 6 == 0 )
+		blend blend
+		map		guis/patd/assets/small/sm3num1.tga
+	}	
+	{
+		if ( ( time * 6 ) % 6 == 1 )
+		blend blend
+		map		guis/patd/assets/small/sm3num2.tga
+      	}	
+	{
+		if ( ( time * 6 ) % 6 == 2 )
+		blend blend
+		map		guis/patd/assets/small/sm3num3.tga
+	}	
+	{
+		if ( ( time * 6 ) % 6 == 3 )
+		blend blend
+		map		guis/patd/assets/small/sm3num4.tga
+	}	
+	{
+		if ( ( time * 6 ) % 6 == 4 )
+		blend blend
+		map		guis/patd/assets/small/sm3num5.tga
+	}	
+	{
+		if ( ( time * 6 ) % 6 == 5 )
+		blend blend
+		map		guis/patd/assets/small/sm3num6.tga
+	}
+}
+
+sm3/NumFade {
+	{
+		rgb		pdhexTable[time]
+		map		guis/patd/assets/small/sm3num1.tga
+	}
+	{
+		blend	add
+		rgb		pdhexTable[time + ( 1 / 6 ) ]
+		map		guis/patd/assets/small/sm3num2.tga
+	}
+	{
+		blend	add
+		rgb		pdhexTable[time + ( 2 / 6 ) ]
+		map		guis/patd/assets/small/sm3num3.tga
+	}
+	{
+		blend	add
+		rgb		pdhexTable[time + ( 3 / 6 ) ]
+		map		guis/patd/assets/small/sm3num4.tga
+	}
+	{
+		blend	add
+		rgb		pdhexTable[time + ( 4 / 6 ) ]
+		map		guis/patd/assets/small/sm3num5.tga
+	}
+	{
+		blend	add
+		rgb		pdhexTable[time + ( 5 / 6 ) ]
+		map		guis/patd/assets/small/sm3num6.tga
+	}
+}
+
+sm3/SpinSwitch {
+	translucent
+	{
+		if ( ( time * 4 ) % 4 == 0 )
+		blend blend
+		map		guis/patd/assets/small/sm3spin4.tga
+	}	
+	{
+		if ( ( time * 4 ) % 4 == 1 )
+		blend blend
+		map		guis/patd/assets/small/sm3spin3.tga
+      	}	
+	{
+		if ( ( time * 4 ) % 4 == 2 )
+		blend blend
+		map		guis/patd/assets/small/sm3spin2.tga
+	}	
+	{
+		if ( ( time * 4 ) % 4 == 3 )
+		blend blend
+		map		guis/patd/assets/small/sm3spin1.tga
+	}	
+}
+
+sm3/SpinFade {
+	translucent
+	{
+		rgb		pdquadTable[time]
+		map		guis/patd/assets/small/sm3spin4.tga
+	}
+	{
+		blend	add
+		rgb		pdquadTable[time + ( 1 / 4 ) ]
+		map		guis/patd/assets/small/sm3spin3.tga
+	}
+	{
+		blend	add
+		rgb		pdquadTable[time + ( 2 / 4 ) ]
+		map		guis/patd/assets/small/sm3spin2.tga
+	}
+	{
+		blend	add
+		rgb		pdquadTable[time + ( 3 / 4 ) ]
+		map		guis/patd/assets/small/sm3spin1.tga
+	}
+}
+
+sm3/bg
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/small/sm3bg.tga
+		rgb	pdflick [ time * 4 ]
+	}
+
+
+}
+
+sm2/scroll
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/small/sm2scroll.tga
+		scroll	time * 0 , time * 0.1
+		rgb	flickertable [ time * 4 ]
+
+	}
+
+
+}
+
+sm2/bg
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/small/sm2bg.tga
+		rgb	pdflick [ time * 4 ]
+	}
+
+
+}
+
+sm1/scroll
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/small/sm1scroll.tga
+		scroll	time * 2 , time * 0
+		rgb	pdflick [ time * 5 ]
+		scale	1, pdscaleTable3[time * 5]
+
+	}
+
+
+}
+
+sm1/bg
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/small/sm1bg.tga
+		rgb	pdflick [ time * 5 ]
+	}
+
+
+}
+
+pdvideotest {  
+     translucent { 
+          videomap "video/level3_atommachine.roq" 
+          linear 
+     } 
+}
+
+
+smdoor/underlay
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/smdoor/underlay.tga
+		rgb	pdfade [ time * 1 ]
+	}
+
+
+}
+
+smdoor/underlayvert
+{
+
+	{
+		blend	blend
+		map		guis/assets/smdoor/underlayvert.tga
+		rgb	pdfade [ time * 1 ]
+	}
+
+
+}
+
+smdoor/arrow
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/smdoor/arrow.tga
+		red	flickertable [ time * 4 ]
+		green	flickertable [ time * 4 ]
+		blue	flickertable [ time * 4 ]
+		alpha	parm3
+	}
+
+
+}
+
+
+reactor
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/power/reactor.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	flickertable [ time * 1 ]
+	}
+
+
+}
+
+sizetest
+{
+
+	{
+		blend	add
+		map		guis/patd/assets/power/bg4c.tga
+		red	flickertable [ time * 4 ]
+		green	flickertable [ time * 4 ]
+		blue	flickertable [ time * 4 ]
+		alpha	parm3
+	}
+
+
+}
+
+bridgebg
+{
+
+	{
+		blend	add
+		map		guis/patd/assets/bridge/bg2.tga
+		rgb	subtleflick [ time * 5 ]
+	}
+
+
+}
+
+bridge
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/bridge/bridge2.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 5 ]
+	}
+
+
+}
+
+bridge2
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/bridge/bridge2a.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	subtleflick [ time * 5 ]
+	}
+
+
+}
+
+fadeglass
+{
+
+	{
+		blend	add
+		cubeMap	env/bland
+		texgen reflect
+
+		red	0.25
+		green	0.25
+		blue	0.25
+	}
+	translucent
+
+
+}
+
+
+spikes
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/power/spikes.tga
+		scroll	time * 1.5 , time * 0
+		red	parm0
+		green	flickertable [ time * 0.1 ]
+		blue	flickertable [ time * 0.03 ]
+		alpha	parm3
+		scale	1 , pdscaleTable[time * 0.5]
+
+	}
+
+
+}
+
+spikes2
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/power/spikes3.tga
+		scroll	time * 10 , time * 0
+		red	flickertable [ time * 1 ]
+		green	flickertable [ time * 0.1 ]
+		blue	flickertable [ time * 0.5 ]
+		alpha	parm3
+		scale	pdscaleTable2[time * 1] , pdscaleTable3[time * 1]
+
+	}
+
+
+}
+
+
+doorkeyglow
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/keycard/bg.tga
+		red	flickertable [ time * 2 ]
+		green	flickertable [ time * 2 ]
+		blue	flickertable [ time * 2 ]
+		alpha	parm3
+		
+	}
+
+
+}
+
+doorglow
+{
+
+	{
+		blend	add
+		map		guis/patd/assets/smdoor/glow.tga
+		rgb	flickertable [ time * 1 ]
+		
+	}
+
+
+}
+
+doorglowvert
+{
+
+	{
+		blend	add
+		map		guis/assets/smdoor/glowvert.tga
+		rgb	flickertable [ time * 1 ]
+		
+	}
+
+
+}
+
+
+reflect
+{
+
+	{
+		blend	blend
+
+		map		guis/patd/assets/smdoor/reflect.tga
+		red	flickertable [ time * 5 ]
+		green	flickertable [ time * 5 ]
+		blue	flickertable [ time * 5 ]
+		alpha	parm3
+		
+	}
+
+
+}
+
+
+reflect1
+{
+
+	{
+		blend	blend
+
+		map		guis/patd/assets/smdoor/reflect1.tga
+		red	subtleflick [ time * 3 ]
+		green	subtleflick [ time * 3 ]
+		blue	subtleflick [ time * 3 ]
+		alpha	parm3
+		
+	}
+
+
+}
+
+reflect2
+{
+
+	{
+		blend	blend
+
+		map		guis/patd/assets/smdoor/reflect1.tga
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+		
+	}
+
+
+}
+
+scrollbig
+{
+
+	{
+		blend	blend
+		map		guis/assets/comm/scrollbig.tga
+		scroll	time * 0 , time * -0.18
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+
+
+		
+	}
+
+
+}
+
+scroll3
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/smdoor/scroll2.tga
+		scroll	time * 0 , time * -0.3
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+
+
+		
+	}
+
+
+}
+
+scroll2
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/smdoor/scroll2.tga
+		scroll	time * 0 , time * -5
+		red	parm0
+		green	parm1
+		blue	parm2
+		alpha	parm3
+
+
+		
+	}
+
+
+}
+
+
+scroll
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/rodstat2/scroll.tga
+		scroll	time * 0 , time * -0.3
+		rgb	flickertable [ time * 3 ]
+
+
+		
+	}
+
+
+}
+
+kioskbg
+{
+	{
+		blend	blend
+		map		guis/patd/assets/kiosk/bgspin.tga
+		rotate time * 0.1
+	}
+}
+
+
+
+kioskbgrev
+{
+	{
+		blend	add
+		map		guis/patd/assets/kiosk/bgspin.tga
+		rotate time * 0.1
+	}
+}
+
+
+
+circscroll
+{
+
+	{
+		blend	add
+		map		guis/assets/efc/scroll.tga
+		scroll	time * 0 , time * 0
+		rgb	flickertable [ time * 6 ]
+		
+	}
+
+
+}
+
+
+
+glass
+{
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	translucent
+
+
+}
+
+
+mmap
+{
+
+	{
+		blend	add
+		map		guis/patd/assets/mmap/map7b.tga
+		scroll	time * 0 , time * 0
+		rgb	flickertable [ time * 4 ]
+
+
+		
+	}
+
+
+}
+
+mmaplines2
+{
+
+	{
+		blend	add
+		map		guis/patd/assets/mmap/map6.tga
+		scroll	time * 0 , time * 0
+		rgb	pdhalffade [ time * 1 ]
+
+
+		
+	}
+
+
+}
+
+mmaplines
+{
+
+	{
+		blend	add
+		map		guis/patd/assets/mmap/maplines.tga
+		scroll	time * 0 , time * 0
+		rgb	pdfade [ time * 0.5 ]
+
+
+		
+	}
+
+
+}
+
+

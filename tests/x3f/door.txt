@@ -1,0 +1,1141 @@
+
+Chunk M3DMAGIC (4d4dH) 
+Length is 44577 (ae21H) 
+
+|  Chunk M3D_VERSION (2H) 
+|  Length is 10 (aH) 
+|  Version 3
+
+|  Chunk MDATA (3d3dH) 
+|  Length is 38710 (9736H) 
+
+|  |  Chunk MESH_VERSION (3d3eH) 
+|  |  Length is 10 (aH) 
+|  |  Version 3
+
+|  |  Chunk MASTER_SCALE (100H) 
+|  |  Length is 10 (aH) 
+|  |  Master Scale 1.000000
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 1486 (5ceH) 
+|  |  Name: Box01
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 1474 (5c2H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 488 (1e8H) 
+|  |  |  |  40 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 1.000000 [1] 0.000000 [2] 0.000000
+|  |  |  |  [3] 0.000000 [4] 1.000000 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] 0.000000 [8] 1.000000
+|  |  |  |  [9] 0.001000 [10] 0.001000 [11] 0.001000
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 926 (39eH) 
+|  |  |  |  76 Faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 310 (136H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2787 (ae3H) 
+|  |  Name: Cylinder02
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2770 (ad2H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 920 (398H) 
+|  |  |  |  76 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.000000 [1] -1.000000 [2] -0.000000
+|  |  |  |  [3] -0.000000 [4] -0.000000 [5] 1.000000
+|  |  |  |  [6] -1.000000 [7] 0.000000 [8] 0.000000
+|  |  |  |  [9] 100.543373 [10] -63.237938 [11] 183.388092
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1790 (6feH) 
+|  |  |  |  148 Faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 598 (256H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 334 (14eH) 
+|  |  Name: Box03
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 322 (142H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 104 (68H) 
+|  |  |  |  8 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.597609 [1] -0.801788 [2] 0.000003
+|  |  |  |  [3] -0.000001 [4] 0.000003 [5] 1.000000
+|  |  |  |  [6] -0.801788 [7] -0.597609 [8] 0.000001
+|  |  |  |  [9] -85.107689 [10] -89.285721 [11] 159.459274
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 158 (9eH) 
+|  |  |  |  12 Faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 54 (36H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 334 (14eH) 
+|  |  Name: Box04
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 322 (142H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 104 (68H) 
+|  |  |  |  8 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.629886 [1] 0.776688 [2] -0.000002
+|  |  |  |  [3] -0.000001 [4] 0.000003 [5] 1.000000
+|  |  |  |  [6] 0.776688 [7] -0.629886 [8] 0.000003
+|  |  |  |  [9] -33.796730 [10] -158.127563 [11] 159.459564
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 158 (9eH) 
+|  |  |  |  12 Faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 54 (36H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 1419 (58bH) 
+|  |  Name: Cylinder01
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 1402 (57aH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 464 (1d0H) 
+|  |  |  |  38 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 1.000000 [1] 0.000000 [2] -0.000000
+|  |  |  |  [3] 0.000000 [4] -0.148715 [5] 0.988880
+|  |  |  |  [6] 0.000000 [7] -0.988880 [8] -0.148715
+|  |  |  |  [9] 111.041000 [10] -61.673992 [11] 184.141815
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 878 (36eH) 
+|  |  |  |  72 Faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 294 (126H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 30839 (7877H) 
+|  |  Name: Text01
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 30826 (786aH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 15440 (3c50H) 
+|  |  |  |  1286 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.000000 [1] -0.375940 [2] -0.000000
+|  |  |  |  [3] -0.000000 [4] -0.000000 [5] 0.375940
+|  |  |  |  [6] -0.375940 [7] 0.000000 [8] 0.000000
+|  |  |  |  [9] 134.030060 [10] -178.019684 [11] 289.137482
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 15326 (3bdeH) 
+|  |  |  |  1276 Faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 5110 (13f6H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 1151 (47fH) 
+|  |  Name: Line01
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 1138 (472H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 548 (224H) 
+|  |  |  |  45 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.000000 [1] -1.000000 [2] -0.000000
+|  |  |  |  [3] -0.000000 [4] -0.000000 [5] 1.000000
+|  |  |  |  [6] -1.000000 [7] 0.000000 [8] 0.000000
+|  |  |  |  [9] 134.030060 [10] -175.501953 [11] 191.396973
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 530 (212H) 
+|  |  |  |  43 Faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 178 (b2H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 334 (14eH) 
+|  |  Name: Box02
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 322 (142H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 104 (68H) 
+|  |  |  |  8 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 1.000000 [1] 0.000000 [2] 0.000000
+|  |  |  |  [3] 0.000000 [4] 1.000000 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] 0.000000 [8] 1.000000
+|  |  |  |  [9] -95.027405 [10] 57.459259 [11] 0.000000
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 158 (9eH) 
+|  |  |  |  12 Faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 54 (36H) 
+
+|  Chunk KFDATA (b000H) 
+|  Length is 5851 (16dbH) 
+
+|  |  Chunk KFHDR (b00aH) 
+|  |  Length is 21 (15H) 
+|  |  Revision level of 5
+|  |  Filename MAXSCENE
+|  |  Animation length of 100
+
+|  |  Chunk KFSEG (b008H) 
+|  |  Length is 14 (eH) 
+|  |  Segment starts at 0 and ends at 100
+
+|  |  Chunk KFCURTIME (b009H) 
+|  |  Length is 10 (aH) 
+|  |  Current frame is 12825
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 168 (a8H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 0 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Object name: Box01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 1 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Cylinder02
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 100.543373, -63.237938, 183.388092
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 4.188790
+|  |  |  Axis of 0.577350, -0.577350, -0.577350
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 2368 (940H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 2 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Object name: Box03
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -41.664726, 0.017403, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -85.107689, -89.285721, 159.459274
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 2242 (8c2H) 
+|  |  |  101 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.751414
+|  |  |  Axis of -0.833926, 0.390236, 0.390234
+|  |  |  Frame 1
+|  |  |  Rotation of 0.033458
+|  |  |  Axis of 0.000002, 0.000001, 1.000000
+|  |  |  Frame 2
+|  |  |  Rotation of 0.035066
+|  |  |  Axis of -0.000003, 0.000002, 1.000000
+|  |  |  Frame 3
+|  |  |  Rotation of 0.036335
+|  |  |  Axis of -0.000004, 0.000001, 1.000000
+|  |  |  Frame 4
+|  |  |  Rotation of 0.037244
+|  |  |  Axis of -0.000001, 0.000001, 1.000000
+|  |  |  Frame 5
+|  |  |  Rotation of 0.037780
+|  |  |  Axis of -0.000003, 0.000002, 1.000000
+|  |  |  Frame 6
+|  |  |  Rotation of 0.037939
+|  |  |  Axis of -0.000004, -0.000000, 1.000000
+|  |  |  Frame 7
+|  |  |  Rotation of 0.037722
+|  |  |  Axis of -0.000001, -0.000000, 1.000000
+|  |  |  Frame 8
+|  |  |  Rotation of 0.037146
+|  |  |  Axis of -0.000006, 0.000001, 1.000000
+|  |  |  Frame 9
+|  |  |  Rotation of 0.036232
+|  |  |  Axis of -0.000006, 0.000001, 1.000000
+|  |  |  Frame 10
+|  |  |  Rotation of 0.035013
+|  |  |  Axis of -0.000003, 0.000001, 1.000000
+|  |  |  Frame 11
+|  |  |  Rotation of 0.033527
+|  |  |  Axis of -0.000004, -0.000000, 1.000000
+|  |  |  Frame 12
+|  |  |  Rotation of 0.031817
+|  |  |  Axis of -0.000007, 0.000001, 1.000000
+|  |  |  Frame 13
+|  |  |  Rotation of 0.029933
+|  |  |  Axis of -0.000005, -0.000001, 1.000000
+|  |  |  Frame 14
+|  |  |  Rotation of 0.027920
+|  |  |  Axis of -0.000008, 0.000001, 1.000000
+|  |  |  Frame 15
+|  |  |  Rotation of 0.025827
+|  |  |  Axis of -0.000008, 0.000001, 1.000000
+|  |  |  Frame 16
+|  |  |  Rotation of 0.023698
+|  |  |  Axis of -0.000002, -0.000002, 1.000000
+|  |  |  Frame 17
+|  |  |  Rotation of 0.021572
+|  |  |  Axis of -0.000011, -0.000000, 1.000000
+|  |  |  Frame 18
+|  |  |  Rotation of 0.019486
+|  |  |  Axis of -0.000006, 0.000000, 1.000000
+|  |  |  Frame 19
+|  |  |  Rotation of 0.017468
+|  |  |  Axis of -0.000007, 0.000000, 1.000000
+|  |  |  Frame 20
+|  |  |  Rotation of 0.015542
+|  |  |  Axis of -0.000008, 0.000000, 1.000000
+|  |  |  Frame 21
+|  |  |  Rotation of 0.013726
+|  |  |  Axis of -0.000009, 0.000000, 1.000000
+|  |  |  Frame 22
+|  |  |  Rotation of 0.012032
+|  |  |  Axis of -0.000010, 0.000000, 1.000000
+|  |  |  Frame 23
+|  |  |  Rotation of 0.010467
+|  |  |  Axis of -0.000003, -0.000003, 1.000000
+|  |  |  Frame 24
+|  |  |  Rotation of 0.009036
+|  |  |  Axis of -0.000010, 0.000003, 1.000000
+|  |  |  Frame 25
+|  |  |  Rotation of 0.007736
+|  |  |  Axis of -0.000007, -0.000008, 1.000000
+|  |  |  Frame 26
+|  |  |  Rotation of 0.006563
+|  |  |  Axis of -0.000009, 0.000009, 1.000000
+|  |  |  Frame 27
+|  |  |  Rotation of 0.005513
+|  |  |  Axis of -0.000005, -0.000005, 1.000000
+|  |  |  Frame 28
+|  |  |  Rotation of 0.004575
+|  |  |  Axis of -0.000020, 0.000007, 1.000000
+|  |  |  Frame 29
+|  |  |  Rotation of 0.003739
+|  |  |  Axis of -0.000016, 0.000016, 1.000000
+|  |  |  Frame 30
+|  |  |  Rotation of 0.002992
+|  |  |  Axis of 0.000020, -0.000020, 1.000000
+|  |  |  Frame 31
+|  |  |  Rotation of 0.002320
+|  |  |  Axis of -0.000051, -0.000000, 1.000000
+|  |  |  Frame 32
+|  |  |  Rotation of 0.001709
+|  |  |  Axis of 0.000052, -0.000017, 1.000000
+|  |  |  Frame 33
+|  |  |  Rotation of 0.001141
+|  |  |  Axis of -0.000026, -0.000026, 1.000000
+|  |  |  Frame 34
+|  |  |  Rotation of 0.000596
+|  |  |  Axis of -0.000050, 0.000150, 1.000000
+|  |  |  Frame 35
+|  |  |  Rotation of 0.000054
+|  |  |  Axis of -0.000552, -0.000553, 1.000000
+|  |  |  Frame 36
+|  |  |  Rotation of 0.000511
+|  |  |  Axis of -0.000000, -0.000000, -1.000000
+|  |  |  Frame 37
+|  |  |  Rotation of 0.000912
+|  |  |  Axis of 0.000065, -0.000065, -1.000000
+|  |  |  Frame 38
+|  |  |  Rotation of 0.001129
+|  |  |  Axis of 0.000026, 0.000026, -1.000000
+|  |  |  Frame 39
+|  |  |  Rotation of 0.001358
+|  |  |  Axis of -0.000022, -0.000022, -1.000000
+|  |  |  Frame 40
+|  |  |  Rotation of 0.001603
+|  |  |  Axis of 0.000018, 0.000019, -1.000000
+|  |  |  Frame 41
+|  |  |  Rotation of 0.001867
+|  |  |  Axis of 0.000016, 0.000016, -1.000000
+|  |  |  Frame 42
+|  |  |  Rotation of 0.002151
+|  |  |  Axis of -0.000014, -0.000014, -1.000000
+|  |  |  Frame 43
+|  |  |  Rotation of 0.002458
+|  |  |  Axis of 0.000012, 0.000012, -1.000000
+|  |  |  Frame 44
+|  |  |  Rotation of 0.002790
+|  |  |  Axis of 0.000021, -0.000021, -1.000000
+|  |  |  Frame 45
+|  |  |  Rotation of 0.003151
+|  |  |  Axis of -0.000010, 0.000028, -1.000000
+|  |  |  Frame 46
+|  |  |  Rotation of 0.003542
+|  |  |  Axis of -0.000000, -0.000000, -1.000000
+|  |  |  Frame 47
+|  |  |  Rotation of 0.003966
+|  |  |  Axis of 0.000023, -0.000007, -1.000000
+|  |  |  Frame 48
+|  |  |  Rotation of 0.004425
+|  |  |  Axis of -0.000000, -0.000000, -1.000000
+|  |  |  Frame 49
+|  |  |  Rotation of 0.004920
+|  |  |  Axis of 0.000018, -0.000006, -1.000000
+|  |  |  Frame 50
+|  |  |  Rotation of 0.005455
+|  |  |  Axis of 0.000005, 0.000005, -1.000000
+|  |  |  Frame 51
+|  |  |  Rotation of 0.006032
+|  |  |  Axis of 0.000005, 0.000005, -1.000000
+|  |  |  Frame 52
+|  |  |  Rotation of 0.006650
+|  |  |  Axis of 0.000013, -0.000004, -1.000000
+|  |  |  Frame 53
+|  |  |  Rotation of 0.007314
+|  |  |  Axis of 0.000012, -0.000004, -1.000000
+|  |  |  Frame 54
+|  |  |  Rotation of 0.008023
+|  |  |  Axis of 0.000004, 0.000003, -1.000000
+|  |  |  Frame 55
+|  |  |  Rotation of 0.008780
+|  |  |  Axis of 0.000003, 0.000003, -1.000000
+|  |  |  Frame 56
+|  |  |  Rotation of 0.009583
+|  |  |  Axis of 0.000009, -0.000003, -1.000000
+|  |  |  Frame 57
+|  |  |  Rotation of 0.010435
+|  |  |  Axis of 0.000011, 0.000000, -1.000000
+|  |  |  Frame 58
+|  |  |  Rotation of 0.011334
+|  |  |  Axis of 0.000002, 0.000002, -1.000000
+|  |  |  Frame 59
+|  |  |  Rotation of 0.012280
+|  |  |  Axis of 0.000010, 0.000000, -1.000000
+|  |  |  Frame 60
+|  |  |  Rotation of 0.013272
+|  |  |  Axis of 0.000009, -0.000000, -1.000000
+|  |  |  Frame 61
+|  |  |  Rotation of 0.014307
+|  |  |  Axis of 0.000008, -0.000000, -1.000000
+|  |  |  Frame 62
+|  |  |  Rotation of 0.015384
+|  |  |  Axis of 0.000006, -0.000002, -1.000000
+|  |  |  Frame 63
+|  |  |  Rotation of 0.016497
+|  |  |  Axis of 0.000003, 0.000003, -1.000000
+|  |  |  Frame 64
+|  |  |  Rotation of 0.017643
+|  |  |  Axis of 0.000010, -0.000003, -1.000000
+|  |  |  Frame 65
+|  |  |  Rotation of 0.018817
+|  |  |  Axis of 0.000004, 0.000004, -1.000000
+|  |  |  Frame 66
+|  |  |  Rotation of 0.020012
+|  |  |  Axis of 0.000008, -0.000005, -1.000000
+|  |  |  Frame 67
+|  |  |  Rotation of 0.021221
+|  |  |  Axis of 0.000006, -0.000000, -1.000000
+|  |  |  Frame 68
+|  |  |  Rotation of 0.022436
+|  |  |  Axis of 0.000005, -0.000000, -1.000000
+|  |  |  Frame 69
+|  |  |  Rotation of 0.023649
+|  |  |  Axis of 0.000005, -0.000000, -1.000000
+|  |  |  Frame 70
+|  |  |  Rotation of 0.024849
+|  |  |  Axis of 0.000006, 0.000001, -1.000000
+|  |  |  Frame 71
+|  |  |  Rotation of 0.026025
+|  |  |  Axis of 0.000005, -0.000000, -1.000000
+|  |  |  Frame 72
+|  |  |  Rotation of 0.027169
+|  |  |  Axis of 0.000007, -0.000002, -1.000000
+|  |  |  Frame 73
+|  |  |  Rotation of 0.028267
+|  |  |  Axis of 0.000002, 0.000001, -1.000000
+|  |  |  Frame 74
+|  |  |  Rotation of 0.029308
+|  |  |  Axis of 0.000004, -0.000001, -1.000000
+|  |  |  Frame 75
+|  |  |  Rotation of 0.030282
+|  |  |  Axis of 0.000004, -0.000001, -1.000000
+|  |  |  Frame 76
+|  |  |  Rotation of 0.031176
+|  |  |  Axis of 0.000004, -0.000001, -1.000000
+|  |  |  Frame 77
+|  |  |  Rotation of 0.031980
+|  |  |  Axis of 0.000001, -0.000000, -1.000000
+|  |  |  Frame 78
+|  |  |  Rotation of 0.032685
+|  |  |  Axis of 0.000003, -0.000002, -1.000000
+|  |  |  Frame 79
+|  |  |  Rotation of 0.033281
+|  |  |  Axis of 0.000004, -0.000001, -1.000000
+|  |  |  Frame 80
+|  |  |  Rotation of 0.033761
+|  |  |  Axis of 0.000001, -0.000001, -1.000000
+|  |  |  Frame 81
+|  |  |  Rotation of 0.034119
+|  |  |  Axis of 0.000003, -0.000002, -1.000000
+|  |  |  Frame 82
+|  |  |  Rotation of 0.034350
+|  |  |  Axis of -0.000002, -0.000001, -1.000000
+|  |  |  Frame 83
+|  |  |  Rotation of 0.034451
+|  |  |  Axis of 0.000003, -0.000003, -1.000000
+|  |  |  Frame 84
+|  |  |  Rotation of 0.034424
+|  |  |  Axis of 0.000001, -0.000002, -1.000000
+|  |  |  Frame 85
+|  |  |  Rotation of 0.034265
+|  |  |  Axis of 0.000001, -0.000002, -1.000000
+|  |  |  Frame 86
+|  |  |  Rotation of 0.033980
+|  |  |  Axis of -0.000002, -0.000001, -1.000000
+|  |  |  Frame 87
+|  |  |  Rotation of 0.033574
+|  |  |  Axis of 0.000000, -0.000002, -1.000000
+|  |  |  Frame 88
+|  |  |  Rotation of 0.033050
+|  |  |  Axis of 0.000000, -0.000003, -1.000000
+|  |  |  Frame 89
+|  |  |  Rotation of 0.032417
+|  |  |  Axis of 0.000000, -0.000003, -1.000000
+|  |  |  Frame 90
+|  |  |  Rotation of 0.031684
+|  |  |  Axis of -0.000002, -0.000002, -1.000000
+|  |  |  Frame 91
+|  |  |  Rotation of 0.030861
+|  |  |  Axis of 0.000000, -0.000003, -1.000000
+|  |  |  Frame 92
+|  |  |  Rotation of 0.029956
+|  |  |  Axis of -0.000005, -0.000002, -1.000000
+|  |  |  Frame 93
+|  |  |  Rotation of 0.028982
+|  |  |  Axis of 0.000000, -0.000003, -1.000000
+|  |  |  Frame 94
+|  |  |  Rotation of 0.027948
+|  |  |  Axis of -0.000003, -0.000004, -1.000000
+|  |  |  Frame 95
+|  |  |  Rotation of 0.026866
+|  |  |  Axis of -0.000003, -0.000003, -1.000000
+|  |  |  Frame 96
+|  |  |  Rotation of 0.025747
+|  |  |  Axis of -0.000003, -0.000003, -1.000000
+|  |  |  Frame 97
+|  |  |  Rotation of 0.024601
+|  |  |  Axis of -0.000003, -0.000003, -1.000000
+|  |  |  Frame 98
+|  |  |  Rotation of 0.023437
+|  |  |  Axis of -0.000000, -0.000005, -1.000000
+|  |  |  Frame 99
+|  |  |  Rotation of 0.022265
+|  |  |  Axis of -0.000007, -0.000003, -1.000000
+|  |  |  Frame 100
+|  |  |  Rotation of 0.021093
+|  |  |  Axis of -0.000004, -0.000003, -1.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 2368 (940H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 3 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Object name: Box04
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 2
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Box03
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -41.664726, 0.017403, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 85.860435, 0.000007, -0.000004
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 2242 (8c2H) 
+|  |  |  101 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.712242
+|  |  |  Axis of 0.000000, -1.000000, -0.000000
+|  |  |  Frame 1
+|  |  |  Rotation of 0.065446
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 2
+|  |  |  Rotation of 0.068591
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 3
+|  |  |  Rotation of 0.071072
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 4
+|  |  |  Rotation of 0.072851
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 5
+|  |  |  Rotation of 0.073899
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 6
+|  |  |  Rotation of 0.074210
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 7
+|  |  |  Rotation of 0.073786
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 8
+|  |  |  Rotation of 0.072659
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 9
+|  |  |  Rotation of 0.070872
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 10
+|  |  |  Rotation of 0.068486
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 11
+|  |  |  Rotation of 0.065580
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 12
+|  |  |  Rotation of 0.062236
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 13
+|  |  |  Rotation of 0.058550
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 14
+|  |  |  Rotation of 0.054613
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 15
+|  |  |  Rotation of 0.050519
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 16
+|  |  |  Rotation of 0.046354
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 17
+|  |  |  Rotation of 0.042196
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 18
+|  |  |  Rotation of 0.038116
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 19
+|  |  |  Rotation of 0.034168
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 20
+|  |  |  Rotation of 0.030400
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 21
+|  |  |  Rotation of 0.026848
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 22
+|  |  |  Rotation of 0.023535
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 23
+|  |  |  Rotation of 0.020474
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 24
+|  |  |  Rotation of 0.017674
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 25
+|  |  |  Rotation of 0.015131
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 26
+|  |  |  Rotation of 0.012839
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 27
+|  |  |  Rotation of 0.010784
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 28
+|  |  |  Rotation of 0.008949
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 29
+|  |  |  Rotation of 0.007313
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 30
+|  |  |  Rotation of 0.005852
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 31
+|  |  |  Rotation of 0.004539
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 32
+|  |  |  Rotation of 0.003343
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 33
+|  |  |  Rotation of 0.002231
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 34
+|  |  |  Rotation of 0.001166
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 35
+|  |  |  Rotation of 0.000105
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+|  |  |  Frame 36
+|  |  |  Rotation of 0.000999
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 37
+|  |  |  Rotation of 0.001784
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 38
+|  |  |  Rotation of 0.002208
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 39
+|  |  |  Rotation of 0.002657
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 40
+|  |  |  Rotation of 0.003136
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 41
+|  |  |  Rotation of 0.003652
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 42
+|  |  |  Rotation of 0.004207
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 43
+|  |  |  Rotation of 0.004808
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 44
+|  |  |  Rotation of 0.005458
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 45
+|  |  |  Rotation of 0.006164
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 46
+|  |  |  Rotation of 0.006929
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 47
+|  |  |  Rotation of 0.007758
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 48
+|  |  |  Rotation of 0.008655
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 49
+|  |  |  Rotation of 0.009624
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 50
+|  |  |  Rotation of 0.010671
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 51
+|  |  |  Rotation of 0.011798
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 52
+|  |  |  Rotation of 0.013009
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 53
+|  |  |  Rotation of 0.014307
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 54
+|  |  |  Rotation of 0.015694
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 55
+|  |  |  Rotation of 0.017173
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 56
+|  |  |  Rotation of 0.018746
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 57
+|  |  |  Rotation of 0.020411
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 58
+|  |  |  Rotation of 0.022170
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 59
+|  |  |  Rotation of 0.024021
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 60
+|  |  |  Rotation of 0.025961
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 61
+|  |  |  Rotation of 0.027987
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 62
+|  |  |  Rotation of 0.030091
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 63
+|  |  |  Rotation of 0.032269
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 64
+|  |  |  Rotation of 0.034511
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 65
+|  |  |  Rotation of 0.036807
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 66
+|  |  |  Rotation of 0.039144
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 67
+|  |  |  Rotation of 0.041510
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 68
+|  |  |  Rotation of 0.043887
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 69
+|  |  |  Rotation of 0.046258
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 70
+|  |  |  Rotation of 0.048605
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 71
+|  |  |  Rotation of 0.050907
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 72
+|  |  |  Rotation of 0.053143
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 73
+|  |  |  Rotation of 0.055291
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 74
+|  |  |  Rotation of 0.057328
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 75
+|  |  |  Rotation of 0.059232
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 76
+|  |  |  Rotation of 0.060981
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 77
+|  |  |  Rotation of 0.062554
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 78
+|  |  |  Rotation of 0.063933
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 79
+|  |  |  Rotation of 0.065099
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 80
+|  |  |  Rotation of 0.066038
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 81
+|  |  |  Rotation of 0.066738
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 82
+|  |  |  Rotation of 0.067190
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 83
+|  |  |  Rotation of 0.067389
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 84
+|  |  |  Rotation of 0.067334
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 85
+|  |  |  Rotation of 0.067025
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 86
+|  |  |  Rotation of 0.066468
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 87
+|  |  |  Rotation of 0.065671
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 88
+|  |  |  Rotation of 0.064647
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 89
+|  |  |  Rotation of 0.063410
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+|  |  |  Frame 90
+|  |  |  Rotation of 0.061976
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+|  |  |  Frame 91
+|  |  |  Rotation of 0.060365
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+|  |  |  Frame 92
+|  |  |  Rotation of 0.058595
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+|  |  |  Frame 93
+|  |  |  Rotation of 0.056689
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+|  |  |  Frame 94
+|  |  |  Rotation of 0.054667
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+|  |  |  Frame 95
+|  |  |  Rotation of 0.052552
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+|  |  |  Frame 96
+|  |  |  Rotation of 0.050362
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+|  |  |  Frame 97
+|  |  |  Rotation of 0.048120
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+|  |  |  Frame 98
+|  |  |  Rotation of 0.045843
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+|  |  |  Frame 99
+|  |  |  Rotation of 0.043552
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+|  |  |  Frame 100
+|  |  |  Rotation of 0.041258
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 217 (d9H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 4 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Cylinder01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 111.041000, -61.673992, 184.141815
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 86 (56H) 
+|  |  |  3 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.684243
+|  |  |  Axis of -1.000000, -0.000000, 0.000000
+|  |  |  Frame 36
+|  |  |  Rotation of 0.759218
+|  |  |  Axis of -1.000000, -0.000000, 0.000000
+|  |  |  Frame 100
+|  |  |  Rotation of 1.134464
+|  |  |  Axis of 1.000000, 0.000000, -0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 169 (a9H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 5 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Text01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 134.030060, -178.019684, 289.137482
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 4.188790
+|  |  |  Axis of 0.577350, -0.577350, -0.577350
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 0.375940, 0.375940, 0.375940
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 169 (a9H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 6 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Line01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 134.030060, -175.501953, 191.396973
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 4.188790
+|  |  |  Axis of 0.577350, -0.577350, -0.577350
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 168 (a8H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 7 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Object name: Box02
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -95.027405, 57.459259, 0.000000
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000

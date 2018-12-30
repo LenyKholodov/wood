@@ -1,0 +1,40 @@
+textures/skies/qc_sky
+{
+	qer_editorimage	textures/skies/qc_sky.tga
+	noshadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm discrete	
+	{
+	                  blend    Add
+		map textures/skies/qc_sky.tga
+		scroll	time * 0.31 , time * -0.1
+		
+	}
+                 {
+	                  blend	add 
+		map textures/skies/qc_sky.tga
+		scroll	time * 0.21 , time * 0.14
+		
+	}
+	{
+		blend gl_dst_color,gl_zero
+		map lights/round.tga
+	}	
+	
+}	
+
+
+textures/skies/animatingSky
+{
+	discrete
+	forceOpaque					// so transparent windows can draw on top of it
+	{
+		blend			add		// so transparent windows can draw on top of it
+		texgen			skybox
+		videoMap		models\skies\e3outsideskyrender\render\skyroqCM.roq	// because this has a height = 6x width, it will be a cube map
+//		cameraCubeMap	test\skyroq
+//		cameraCubeMap	env/boxsky
+	}
+}
+

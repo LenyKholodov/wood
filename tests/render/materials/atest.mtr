@@ -1,0 +1,302 @@
+textures/atest/atest1
+{
+	qer_editorimage	textures/atest/atest1.tga
+	diffusemap		textures/atest/atest1_d.tga
+	specularmap		textures/atest/atest1_s.tga
+	bumpmap		heightmap (textures/atest/atest1_b.tga, 5)
+        
+}
+
+
+//{
+//	qer_editorimage	doom/base/textures/base_wall/techmetal02_ed.tga
+//	diffusemap		doom/base/textures/base_wall/techmetal02_d.tga
+//	specularmap		doom/base/textures/base_wall/techmetal02_s.tga
+//	bumpmap		heightmap (doom/base/textures/base_wall/techmetal02_b.tga, 5)
+//}
+
+//{
+//	qer_editorimage	doom/base/textures/base_wall/techmetal02b_ed.tga
+//	diffusemap		doom/base/textures/base_wall/techmetal02b_d.tga
+//	specularmap		doom/base/textures/base_wall/techmetal02b_s.tga
+//	bumpmap		heightmap (doom/base/textures/base_wall/techmetal02b_b.tga, 5)
+//}
+
+//{
+//	qer_editorimage	doom/base/textures/base_wall/techmetal03_ed.tga
+//	diffusemap		doom/base/textures/base_wall/techmetal03_d.tga
+//	specularmap		doom/base/textures/base_wall/techmetal03_s.tga
+//	bumpmap		heightmap (doom/base/textures/base_wall/techmetal03_b.tga, 5)
+//}
+
+//{
+//	qer_editorimage	doom/base/textures/base_wall/techmetal03_top02_ed.tga
+//	diffusemap		doom/base/textures/base_wall/techmetal03_top02_d.tga
+//	specularmap		doom/base/textures/base_wall/techmetal03_top02_s.tga
+//	bumpmap		heightmap (doom/base/textures/base_wall/techmetal03_top02_b.tga, 5)
+//}
+
+//{
+//	qer_editorimage	doom/base/textures/base_wall/techmetal03_top01_ed.tga
+//	diffusemap		doom/base/textures/base_wall/techmetal03_top01_d.tga
+//	specularmap		doom/base/textures/base_wall/techmetal03_top01_s.tga
+//	bumpmap		heightmap (doom/base/textures/base_wall/techmetal03_top01_b.tga, 5)
+//}
+
+//{
+//	qer_editorimage	doom/base/textures/base_wall/techmetal03b_ed.tga
+//	diffusemap		doom/base/textures/base_wall/techmetal03b_d.tga
+//	specularmap		doom/base/textures/base_wall/techmetal03b_s.tga
+//	bumpmap		heightmap (doom/base/textures/base_wall/techmetal03b_b.tga, 5)
+//}
+
+//{
+//	qer_editorimage	doom/base/textures/base_wall/techmetal04_ed.tga
+//	diffusemap		doom/base/textures/base_wall/techmetal04_d.tga
+//	specularmap		doom/base/textures/base_wall/techmetal04_s.tga
+//	bumpmap		heightmap (doom/base/textures/base_wall/techmetal04_b.tga, 5)
+//}
+
+//{
+//	qer_editorimage	doom/base/textures/base_wall/techmetal05_ed.tga
+//	diffusemap		doom/base/textures/base_wall/techmetal05_d.tga
+//	specularmap		doom/base/textures/base_wall/techmetal05_s.tga
+//	bumpmap		heightmap (doom/base/textures/base_wall/techmetal05_b.tga, 5)
+//}
+
+textures/atest/puzzle01
+{
+	qer_editorimage textures/atest/puzzle01.tga
+
+        // All textures need an image to show in the editor presently
+
+	diffusemap	textures/atest/puzzle01_d.tga
+
+        // Diffuse map = Color of the texture
+
+	specularmap	textures/atest/puzzle01_s.tga
+
+        // Specular is additive to the height/bump map. ie broad strokes of color will still                 // pick up the detail of the bump pass
+
+        bumpmap	        heightmap (textures/atest/puzzle01_b.tga, 5)
+  
+        // greyscale bump map. # indicates dist between height/depth defined in gradation
+        
+}
+
+textures/atest/puzzle02
+{
+	qer_editorimage textures/atest/puzzle02.tga
+
+        // All textures need an image to show in the editor presently
+
+	diffusemap	textures/atest/puzzle02_d.tga
+
+        // Diffuse map = Color of the texture
+
+	specularmap	textures/atest/puzzle02_s.tga
+
+        // Specular is additive to the height/bump map. ie broad strokes of color will still                 // pick up the detail of the bump pass
+
+        bumpmap	        heightmap (textures/atest/puzzle02_b.tga, 5)
+  
+        // greyscale bump map. # indicates dist between height/depth defined in gradation
+        
+}
+
+textures/atest/puzzle03
+{
+	qer_editorimage textures/atest/puzzle03.tga
+
+        // All textures need an image to show in the editor presently
+
+	diffusemap	textures/atest/puzzle03_d.tga
+
+        // Diffuse map = Color of the texture
+
+	specularmap	textures/atest/puzzle03_s.tga
+
+        // Specular is additive to the height/bump map. ie broad strokes of color will still                 // pick up the detail of the bump pass
+
+        bumpmap	        heightmap (textures/atest/puzzle03_b.tga, 5)
+  
+        // greyscale bump map. # indicates dist between height/depth defined in gradation
+        
+}
+
+textures/atest/puzzle04
+{
+	qer_editorimage textures/atest/puzzle04.tga
+
+        // All textures need an image to show in the editor presently
+
+	diffusemap	textures/atest/puzzle04_d.tga
+
+        // Diffuse map = Color of the texture
+
+	specularmap	textures/atest/puzzle04_s.tga
+
+        // Specular is additive to the height/bump map. ie broad strokes of color will still                 // pick up the detail of the bump pass
+
+        bumpmap	        heightmap (textures/atest/puzzle04_b.tga, 5)
+  
+        // greyscale bump map. # indicates dist between height/depth defined in gradation
+}      
+  
+textures/atest/techboard01
+{
+	qer_editorimage textures/atest/techboard01.tga
+        diffusemap	textures/atest/techboard01_d.tga       
+	specularmap	textures/atest/techboard01_s.tga        
+        bumpmap	        heightmap (textures/atest/techboard01_b.tga, 5)
+  
+       
+}        
+
+textures/atest/techboard02
+{
+	qer_editorimage textures/atest/techboard02.tga
+        diffusemap	textures/atest/techboard02_d.tga       
+	specularmap	textures/atest/techboard02_s.tga        
+        bumpmap	        heightmap (textures/atest/techboard02_b.tga, 5)
+  
+       
+}  
+
+textures/atest/techpipes01
+{
+	qer_editorimage textures/atest/techpipes01.tga
+        diffusemap	textures/atest/techpipes01_d.tga       
+	specularmap	textures/atest/techpipes01_s.tga        
+        bumpmap	        heightmap (textures/atest/techpipes01_b.tga, 10)
+  
+       
+}        
+
+textures/atest/techpipes02
+{
+	qer_editorimage textures/atest/techpipes02.tga
+        diffusemap	textures/atest/techpipes02_d.tga       
+	specularmap	textures/atest/techpipes02_s.tga        
+        bumpmap	        heightmap (textures/atest/techpipes02_b.tga, 10)
+  
+       
+} 
+
+textures/atest/techpipes03
+{
+	qer_editorimage textures/atest/techpipes03.tga
+        diffusemap	textures/atest/techpipes03_d.tga       
+	specularmap	textures/atest/techpipes03_s.tga        
+        bumpmap	        heightmap (textures/atest/techpipes03_b.tga, 10)
+  
+       
+}           
+
+textures/atest/starwars01
+{
+	qer_editorimage textures/atest/starwars01.tga
+        diffusemap	textures/atest/starwars01_d.tga       
+	specularmap	textures/atest/starwars01_s.tga        
+        bumpmap	        heightmap (textures/atest/starwars01_b.tga, 5)
+  
+       
+}       
+
+textures/atest/starwars02
+{
+	qer_editorimage textures/atest/starwars02.tga
+        diffusemap	textures/atest/starwars02_d.tga       
+	specularmap	textures/atest/starwars02_s.tga        
+        bumpmap	        heightmap (textures/atest/starwars02_b.tga, 5)
+  
+       
+}  
+
+textures/atest/starwars03
+{
+	qer_editorimage textures/atest/starwars03.tga
+        diffusemap	textures/atest/starwars03_d.tga       
+	specularmap	textures/atest/starwars03_s.tga        
+        bumpmap	        heightmap (textures/atest/starwars03_b.tga, 5)
+  
+       
+}         
+
+textures/atest/starwars04
+{
+	qer_editorimage textures/atest/starwars04.tga
+        diffusemap	textures/atest/starwars04_d.tga       
+	specularmap	textures/atest/starwars04_s.tga        
+        bumpmap	        heightmap (textures/atest/starwars04_b.tga, 7)
+  
+       
+}
+
+textures/atest/starwars05
+{
+	qer_editorimage textures/atest/starwars05.tga
+        diffusemap	textures/atest/starwars05_d.tga       
+	specularmap	textures/atest/starwars05_s.tga        
+        bumpmap	        heightmap (textures/atest/starwars05_b.tga, 9)
+  
+       
+}                     
+ 
+textures/atest/girders02d128test1
+{
+	qer_editorimage textures/atest/girders02d128test1.tga
+        diffusemap	textures/atest/girders02d128test1_d.tga      
+	specularmap	textures/atest/girders02d128test1_s.tga        
+        bumpmap	        addnormals( textures/atest/girders02d128test1_local.tga  , heightmap( textures/atest/girders02d128test1_b.tga, 6 ) )
+
+       
+}          
+
+textures/atest/girders02d128test2
+{
+	qer_editorimage textures/atest/girders02d128test2.tga
+        diffusemap	textures/atest/girders02d128test2_d.tga      
+	specularmap	textures/atest/girders02d128test2_s.tga        
+        bumpmap	        addnormals( textures/atest/girders02d128test2_local.tga  , heightmap( textures/atest/girders02d128test2_b.tga, 6 ) )
+
+       
+}          
+
+textures/atest/girders02e128_fin
+{
+	qer_editorimage textures/atest/girders02e128_fin.tga
+        diffusemap	textures/atest/girders02e128_fin_d.tga      
+	specularmap	textures/atest/girders02e128_fin_s.tga        
+        bumpmap	        addnormals( textures/atest/girders02e128_fin_local.tga  , heightmap( textures/atest/girders02e128_fin_b.tga, 6 ) )
+
+       
+}         
+
+textures/atest/girders02eorg_fin
+{
+	qer_editorimage textures/atest/girders02eorg_fin.tga
+        diffusemap	textures/atest/girders02eorg_fin_d.tga      
+	specularmap	textures/atest/girders02eorg_fin_s.tga        
+        bumpmap	        addnormals( textures/atest/girders02eorg_fin_local.tga  , heightmap( textures/atest/girders02eorg_fin_b.tga, 6 ) )
+
+       
+}  
+
+
+
+
+//============================================================================================================
+//mapobjects
+//============================================================================================================
+
+
+models/adrian/final/a_hangingmonitor_hp
+{
+	
+	diffusemap         textures/atest/recyccompskins/a_hangingmonitor_d.tga
+	specularmap	   textures/atest/recyccompskins/a_hangingmonitor_s.tga
+        bumpmap	           addnormals( textures/atest/recyccompskins/a_hangingmonitor_local.tga  , heightmap( textures/atest/recyccompskins/a_hangingmonitor_b.tga, 4 ) )
+
+}
+       

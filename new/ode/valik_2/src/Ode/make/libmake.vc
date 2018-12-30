@@ -1,0 +1,19 @@
+LIB_OPT            = $(LIB_OPT) /YX "pch.h"
+COPT               = /EHa
+
+!IF "$(PRECISION)"=="SINGLE"
+!IF  "$(CFG)" == "Debug"
+TARGET_SHORT_NAME  = OdeSPd.lib
+!ELSEIF  "$(CFG)" == "Release"
+TARGET_SHORT_NAME  = OdeSP.lib
+!ENDIF
+!ELSEIF "$(PRECISION)"=="DOUBLE"
+!IF  "$(CFG)" == "Debug"
+TARGET_SHORT_NAME  = OdeDPd.lib
+!ELSEIF  "$(CFG)" == "Release"
+TARGET_SHORT_NAME  = OdeDP.lib
+!ENDIF
+!ENDIF
+
+!include make\objlist.inc
+!include ..\.build\makepro.vc

@@ -1,0 +1,14 @@
+material {
+	name "ostrov/Ground_Sand"
+
+
+	diffuse 150 150 150 
+	specular 230 230 230 
+	ambient 150 150 150 
+	emission 0 0 0 
+
+	shiness 0.1
+	alpha_koef 1
+	alpha_present 0
+}
+

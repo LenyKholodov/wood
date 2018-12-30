@@ -1,0 +1,22 @@
+LIB_OPT            = $(LIB_OPT) /YX"pch.h"
+COPT               = /EHa
+
+!IF  "$(CFG)" == "Debug"
+TARGET_SHORT_NAME  = kerneld.lib
+!ELSE
+TARGET_SHORT_NAME  = kernel.lib
+!ENDIF
+
+!include make\objlist.inc
+!include ..\build\makepro.vc
+
+!IF  "$(CFG)" == "Debug"
+#Указать имя библиотеки для debug версии
+TARGET_SHORT_NAME  = winappd.lib
+#Указать имя библиотеки для release версии
+!ELSEIF  "$(CFG)" == "Release"
+TARGET_SHORT_NAME  = winapp.lib
+!ENDIF
+
+!include make\app.inc
+!include ..\build\makepro.vc

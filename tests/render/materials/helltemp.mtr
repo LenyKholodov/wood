@@ -1,0 +1,41 @@
+textures/helltemp/afloor1b_f
+{
+	qer_editorimage		textures/helltemp/afloor1b_f.tga
+	diffusemap		textures/helltemp/afloor1b_f.tga
+}
+
+textures/helltemp/awall2h
+{
+	qer_editorimage		textures/helltemp/awall2h.tga
+	diffusemap		textures/helltemp/awall2h.tga
+}
+
+textures/helltemp/awall4j
+{
+	qer_editorimage		textures/helltemp/awall4j.tga
+	diffusemap		textures/helltemp/awall4j.tga
+}
+
+textures/helltemp/skin1
+{
+	qer_editorimage 	textures/helltemp/skin1.tga
+	diffusemap		textures/helltemp/skin1.tga
+}
+
+textures/helltemp/soylent
+{
+	qer_editorimage 	textures/helltemp/soylent.tga
+	diffusemap		textures/helltemp/soylent.tga
+}
+
+textures/helltemp/teeth
+{
+	qer_editorimage		textures/helltemp/teeth.tga
+	diffusemap		textures/helltemp/teeth.tga
+}
+
+textures/helltemp/tongue
+{
+	qer_editorimage		textures/helltemp/tongue.tga
+	diffusemap		textures/helltemp/tongue.tga
+}

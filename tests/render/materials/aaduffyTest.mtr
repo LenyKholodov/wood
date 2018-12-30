@@ -1,0 +1,601 @@
+
+
+guis/assets/glassy
+{
+	qer_editorimage 	textures/base_trim/glasscountertop.tga
+	bumpmap		textures/base_trim/glasscountertop_local.tga
+	diffusemap		textures/base_trim/glasscountertop_d.tga
+	specularmap		textures/base_trim/glasscountertop_s.tga
+	{
+		blend	add
+		map		ui/assets/uiScroll.tga
+		linear		// no mip maps
+		scroll	time * 0 , time * 0.2
+		
+	}
+
+}
+
+ui/assets/map {
+	{
+		blend add
+		map ui/assets/guisurfs/map2.tga
+	}
+	
+}
+
+guisurfs/pattest
+{	
+	qer_editorimage	guisurfs/guisurface.tga
+	guiSurf guis/patd/po.gui
+	surfaceparm discrete
+}
+
+guisurfs/videopanel_1
+{	
+	qer_editorimage	guisurfs/guisurface.tga
+	guiSurf badgui
+	surfaceparm discrete
+}
+
+guisurfs/wallpanel_1
+{	
+	qer_editorimage	guisurfaces/guisurface.tga
+	guiSurf badgui
+	surfaceparm discrete
+}
+
+guisurfs/moongui_1
+{	
+	qer_editorimage	guisurfaces/guisurface.tga
+	guiSurf badgui
+	surfaceparm discrete
+}
+
+ui/assets/guisurfs/computerBackground {
+	translucent			// everything used on a guisurf should be translucent
+	{
+		//videomap "moon.roq"
+		//videomap "mpintro.roq"
+		map		ui/assets/guiSurfs/computerBackground.tga
+		linear		// no mip maps
+		//scroll	time * 0.02 , 0
+	}
+
+}
+
+
+ui/assets/guisurfs/computerBlueBackground {
+	translucent			// everything used on a guisurf should be translucent
+	{
+		//videomap "moon.roq"
+		//videomap "mpintro.roq"
+		map		ui/assets/guiSurfs/computerBlueBackground.tga
+		linear		// no mip maps
+		//scroll	time * 0.02 , 0
+	}
+	{
+		blend	add
+		map		ui/assets/guiSurfs/computerScroll.tga
+		linear		// no mip maps
+		scroll	time * 0 , time * 0.2
+	}
+
+
+}
+
+
+
+ui/assets/guisurfs/moonvid {
+	translucent			// everything used on a guisurf should be translucent
+	{
+		videomap "moon.roq"
+		//videomap "mpintro.roq"
+		//map		ui/assets/guiSurfs/computerBackground.tga
+		linear		// no mip maps
+		//scroll	time * 0.02 , 0
+	}
+
+}
+
+ui/assets/guisurfs/video {
+	translucent			// everything used on a guisurf should be translucent
+	{
+		//videomap "moon.roq"
+		videomap "mpintro.roq"
+		//map		ui/assets/guiSurfs/computerBackground.tga
+		linear		// no mip maps
+		//scroll	time * 0.02 , 0
+	}
+}
+
+
+guisurfs/testgui
+{	
+	qer_editorimage	guisurfaces/guisurface.tga
+	guiSurf guis/patd/po.gui
+	surfaceparm discrete
+	description "A test gui surface"
+}
+
+ui/assets/3_cursor3 {
+	{
+		blend add
+		map ui/assets/3_cursor3.tga
+	}
+}
+
+ui/assets/copyright {
+	{
+		//blend add
+		map ui/assets/copyright.tga
+	}
+}
+
+ui/assets/playbutton {
+	{
+		blend add
+		map ui/assets/playbutton.tga
+	}
+	
+}
+
+ui/assets/playbuttonblur {
+      
+	{
+		blend add
+		map ui/assets/playbuttonblur.tga
+	}
+	
+}
+
+ui/assets/setupbutton {
+	{
+		blend add
+		map ui/assets/setupbutton.tga
+	}
+	
+}
+
+ui/assets/setupbuttonblur {
+      
+	{
+		blend add
+		map ui/assets/setupbuttonblur.tga
+	}
+	
+}
+
+ui/assets/editorbutton {
+	{
+		blend add
+		map ui/assets/editorbutton.tga
+	}
+	
+}
+
+ui/assets/editorbuttonblur {
+      
+	{
+		blend add
+		map ui/assets/editorbuttonblur.tga
+	}
+	
+}
+
+ui/assets/quitbutton {
+	{
+		blend add
+		map ui/assets/quitbutton.tga
+	}
+	
+}
+
+ui/assets/quitbuttonblur {
+      
+	{
+		blend add
+		map ui/assets/quitbuttonblur.tga
+	}
+	
+}
+
+ui/assets/uiBackground {
+	translucent			// everything used on a guisurf should be translucent
+	{
+		map		ui/assets/uiBackground.tga
+		linear		// no mip maps
+		//scroll	time * 0.02 , 0
+	}
+	{
+		blend	add
+		map		ui/assets/uiScroll.tga
+		linear		// no mip maps
+		scroll	time * 0 , time * 0.2
+		
+	}
+
+}
+
+ui/assets/setupbutton {
+	{
+		blend add
+		map ui/assets/setupbutton.tga
+	}
+	
+}
+
+
+textures/decals/wallsplat1
+{
+	qer_editorimage	textures/decals/duffysplat.tga
+
+	DECAL_MACRO
+	sort
+	{       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/splat5.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		rgb			decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/decals/wallsplat2
+{
+	qer_editorimage	textures/decals/duffysplat.tga
+
+	DECAL_MACRO
+	{       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/duffysplat.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		rgb			decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/particles/bloodspray
+{
+	qer_editorimage textures/particles/bloodparticle.tga
+	translucent
+	noShadows
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map		textures/decals/duffysplat.tga
+		vertexColor
+
+		//blend blend
+		//map textures/particles/bloodparticle.tga
+		//rgb		Parm3
+	}
+}
+
+textures/particles/bloodpuff
+{
+	qer_editorimage textures/particles/bloodpuff.tga
+	translucent
+	noShadows
+	{
+		blend blend
+		map textures/particles/bloodpuff.tga
+		vertexColor
+	}
+}
+
+textures/decals/duffysplat
+{
+	qer_editorimage	textures/decals/duffysplat.tga
+
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm blood
+	DECAL_MACRO
+	{       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/duffysplat.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		rgb			decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/decals/duffysplat2
+{
+	qer_editorimage	textures/decals/duffysplat2.tga
+
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm blood
+	DECAL_MACRO
+	{       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/duffysplat2.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		rgb			decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/decals/dsplat2
+{
+	qer_editorimage	textures/decals/dsplat2.tga
+
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm blood
+	DECAL_MACRO
+	{       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat2.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		rgb			decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/decals/dsplat5
+{
+	qer_editorimage	textures/decals/dsplat5.tga
+
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm blood
+	DECAL_MACRO
+	{       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat5.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		rgb			decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/decals/dsplat7
+{
+	qer_editorimage	textures/decals/dsplat7.tga
+
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm blood
+	DECAL_MACRO
+	{       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat7.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		rgb			decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/decals/dsplat11
+{
+	qer_editorimage	textures/decals/dsplat11.tga
+
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm blood
+	polygonoffset
+	DECAL_MACRO
+	{       
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/dsplat11.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		rgb			decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/sfx/firetrail
+{
+	qer_editorimage textures/particles/firepuff.tga
+	translucent
+	noShadows
+	{
+		blend	add
+		map		textures/particles/firepuff.tga
+		vertexColor
+	}
+}
+
+textures/sfx/fireplume
+{
+	qer_editorimage textures/particles/fireplume.tga
+	translucent
+	noShadows
+	{
+		blend	add
+		map		textures/particles/fireplume.tga
+		vertexColor
+	}
+}
+
+
+
+guis/testColored
+{
+	translucent			// everything used on a guisurf should be translucent
+	{
+		blend	blend
+		map		guis/assets/cpuserver/bg.tga
+		colored
+	}
+}
+
+textures/particles/teleportsparks
+{
+	qer_editorimage textures/particles/spawn1.tga
+	translucent
+	noShadows
+	{
+		blend add
+		map textures/particles/spawn1.tga
+		zeroClamp
+	}
+}
+
+textures/particles/teleportsparks2
+{
+	qer_editorimage textures/particles/spawn2.tga
+	translucent
+	noShadows
+	{
+		blend add
+		map textures/particles/spawn2.tga
+		zeroClamp
+	}
+}
+
+textures/particles/bluesparks
+{
+	qer_editorimage textures/particles/spark.tga
+	translucent
+	noShadows
+	{
+		blend add
+		map textures/particles/spark.tga
+//		rgb  sintable [time] + 2.5
+//		centerScale (1.25 + 0.25 * sintable[time]), (1.25 + 0.25 * sintable[time])
+		zeroClamp
+//		translate sintable[time], 0
+	}
+}
+
+textures/particles/redteleportsparks
+{
+	qer_editorimage textures/particles/redspawn.tga
+	translucent
+	noShadows
+	{
+		blend add
+		map textures/particles/redspawn.tga
+		zeroClamp
+	}
+}
+
+
+textures/decals/duffysplatgun
+{
+	qer_editorimage	textures/decals/duffysplat.tga
+
+	DECAL_MACRO
+	{       
+		blend gl_dst_color,gl_zero
+		map			textures/decals/duffysplat.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+	}	
+}
+
+textures/particles/redteleportsparks
+{
+	qer_editorimage textures/particles/redspawn.tga
+	translucent
+	noShadows
+	{
+		blend add
+		map textures/particles/redspawn.tga
+		zeroClamp
+		colored
+	}
+}
+
+textures/particles/redteleportsmoke
+{
+	qer_editorimage textures/particles/hellsmoke.tga
+	translucent
+	noShadows
+	{
+		blend add
+		map textures/particles/hellsmoke.tga
+		//zeroClamp
+		colored
+	}
+}
+
+textures/particles/debris
+{
+	qer_editorimage textures/sfx/debris.tga
+	//translucent
+	noShadows
+	{
+		blend blend
+		map textures/sfx/debris.tga
+		//zeroClamp
+		//rotate	time * 3
+		//colored
+		vertexcolor
+	}
+}
+
+textures/particles/debrislight
+{
+	qer_editorimage textures/sfx/debrislight.tga
+	//translucent
+	noShadows
+	{
+		blend blend
+		map textures/sfx/debrislight.tga
+		//zeroClamp
+		//rotate	time * 3
+		//colored
+		vertexcolor
+	}
+}
+
+
+textures/cameraImg1
+{	
+	qer_editorimage	textures/editor/cameragui.tga
+	noshadows
+	guiSurf	entity
+	discrete
+	translucent
+	{
+		rgba 0
+		remoteRenderMap	512 256	// width / height of render image
+		map textures/dynamic/camera1.tga
+		scale 1 , -1		// the render view ars upside down otherwise
+	}
+}
+
+textures/cameraImg2
+{	
+	qer_editorimage	textures/editor/cameragui.tga
+	noshadows
+	guiSurf	entity
+	discrete
+	translucent
+	{
+		rgba 0
+		remoteRenderMap	512 256	// width / height of render image
+		map textures/dynamic/camera2.tga
+		scale 1 , -1		// the render view ars upside down otherwise
+	}
+}
+
+textures/cameraView1
+{	
+	qer_editorimage	textures/editor/camera.tga
+	translucent			// everything used on a guisurf should be translucent
+	noshadows
+	discrete
+	{
+		blend add
+		map textures/dynamic/camera1.tga
+		scale 1 , -1		// the render view ars upside down otherwise
+	}
+}
+
+textures/cameraView2
+{	
+	qer_editorimage	textures/editor/camera.tga
+	translucent			// everything used on a guisurf should be translucent
+	noshadows
+	discrete
+	{
+		blend add
+		map textures/dynamic/camera2.tga
+		scale 1 , -1		// the render view ars upside down otherwise
+	}
+}
+

@@ -1,0 +1,250 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Ode - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\users\admin\LOCALS~1\Temp\RSP33F.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /D "RELEASE" /D "dSINGLE" /Fp"Release/Ode.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"Q:\src\Ode\collision_kernel.cpp"
+"Q:\src\Ode\collision_space.cpp"
+"Q:\src\Ode\collision_std.cpp"
+"Q:\src\Ode\collision_transform.cpp"
+"Q:\src\Ode\collision_util.cpp"
+"Q:\src\Ode\fastdot.c"
+"Q:\src\Ode\fastldlt.c"
+"Q:\src\Ode\fastlsolve.c"
+"Q:\src\Ode\fastltsolve.c"
+"Q:\src\Ode\joint.cpp"
+"Q:\src\Ode\lcp.cpp"
+"Q:\src\Ode\mass.cpp"
+"Q:\src\Ode\mat.cpp"
+"Q:\src\Ode\matrix.cpp"
+"Q:\src\Ode\misc.cpp"
+"Q:\src\Ode\obstack.cpp"
+"Q:\src\Ode\ode.cpp"
+"Q:\src\Ode\odemath.cpp"
+"Q:\src\Ode\rotation.cpp"
+"Q:\src\Ode\step.cpp"
+"Q:\src\Ode\testing.cpp"
+"Q:\src\Ode\timer.cpp"
+]
+Creating command line "cl.exe @C:\users\admin\LOCALS~1\Temp\RSP33F.tmp" 
+Creating temporary file "C:\users\admin\LOCALS~1\Temp\RSP340.tmp" with contents
+[
+/nologo /out:"q:\lib\OdeSP.lib" 
+.\Release\array.obj
+.\Release\collision_kernel.obj
+.\Release\collision_space.obj
+.\Release\collision_std.obj
+.\Release\collision_transform.obj
+.\Release\collision_util.obj
+.\Release\error.obj
+.\Release\fastdot.obj
+.\Release\fastldlt.obj
+.\Release\fastlsolve.obj
+.\Release\fastltsolve.obj
+.\Release\joint.obj
+.\Release\lcp.obj
+.\Release\mass.obj
+.\Release\mat.obj
+.\Release\matrix.obj
+.\Release\memory.obj
+.\Release\misc.obj
+.\Release\obstack.obj
+.\Release\ode.obj
+.\Release\odemath.obj
+.\Release\rotation.obj
+.\Release\step.obj
+.\Release\testing.obj
+.\Release\timer.obj
+]
+Creating command line "link.exe -lib @C:\users\admin\LOCALS~1\Temp\RSP340.tmp"
+<h3>Output Window</h3>
+Compiling...
+collision_kernel.cpp
+Q:\src\Ode\collision_kernel.cpp(549) : warning C4291: 'void *__cdecl dBase::operator new(unsigned int)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+        Q:\src\Ode\objects.h(48) : see declaration of 'new'
+collision_space.cpp
+Q:\src\Ode\collision_space.cpp(632) : warning C4291: 'void *__cdecl dBase::operator new(unsigned int)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+        Q:\src\Ode\objects.h(48) : see declaration of 'new'
+Q:\src\Ode\collision_space.cpp(638) : warning C4291: 'void *__cdecl dBase::operator new(unsigned int)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+        Q:\src\Ode\objects.h(48) : see declaration of 'new'
+collision_std.cpp
+Q:\src\Ode\collision_std.cpp(102) : warning C4291: 'void *__cdecl dBase::operator new(unsigned int)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+        Q:\src\Ode\objects.h(48) : see declaration of 'new'
+Q:\src\Ode\collision_std.cpp(165) : warning C4291: 'void *__cdecl dBase::operator new(unsigned int)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+        Q:\src\Ode\objects.h(48) : see declaration of 'new'
+Q:\src\Ode\collision_std.cpp(200) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+Q:\src\Ode\collision_std.cpp(201) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+Q:\src\Ode\collision_std.cpp(202) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+Q:\src\Ode\collision_std.cpp(240) : warning C4291: 'void *__cdecl dBase::operator new(unsigned int)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+        Q:\src\Ode\objects.h(48) : see declaration of 'new'
+Q:\src\Ode\collision_std.cpp(333) : warning C4291: 'void *__cdecl dBase::operator new(unsigned int)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+        Q:\src\Ode\objects.h(48) : see declaration of 'new'
+Q:\src\Ode\collision_std.cpp(416) : warning C4291: 'void *__cdecl dBase::operator new(unsigned int)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+        Q:\src\Ode\objects.h(48) : see declaration of 'new'
+Q:\src\Ode\collision_std.cpp(664) : warning C4305: 'initializing' : truncation from 'const double' to 'const float'
+Q:\src\Ode\collision_std.cpp(1563) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+Q:\src\Ode\collision_std.cpp(1764) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+Q:\src\Ode\collision_std.cpp(1803) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+collision_transform.cpp
+Q:\src\Ode\collision_transform.cpp(171) : warning C4291: 'void *__cdecl dBase::operator new(unsigned int)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+        Q:\src\Ode\objects.h(48) : see declaration of 'new'
+collision_util.cpp
+fastdot.c
+fastldlt.c
+fastlsolve.c
+fastltsolve.c
+joint.cpp
+lcp.cpp
+mass.cpp
+mat.cpp
+matrix.cpp
+misc.cpp
+obstack.cpp
+ode.cpp
+Q:\src\Ode\ode.cpp(334) : warning C4291: 'void *__cdecl dBase::operator new(unsigned int)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+        Q:\src\Ode\objects.h(48) : see declaration of 'new'
+Q:\src\Ode\ode.cpp(995) : warning C4291: 'void *__cdecl dBase::operator new(unsigned int)' : no matching operator delete found; memory will not be freed if initialization throws an exception
+        Q:\src\Ode\objects.h(48) : see declaration of 'new'
+odemath.cpp
+rotation.cpp
+step.cpp
+testing.cpp
+timer.cpp
+Creating library...
+<h3>
+--------------------Configuration: Addons - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\users\admin\LOCALS~1\Temp\RSP341.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /D "RELEASE" /D "dSINGLE" /Fp"Release/Addons.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"Q:\src\AdvShapes\dCylinder.cpp"
+"Q:\src\AdvShapes\GeomTransformGroup.cpp"
+"Q:\src\AdvShapes\Mesh.cpp"
+]
+Creating command line "cl.exe @C:\users\admin\LOCALS~1\Temp\RSP341.tmp" 
+Creating command line "link.exe -lib /nologo /out:"q:\lib\OdeAddonsSP.lib"  .\Release\dCylinder.obj .\Release\GeomTransformGroup.obj .\Release\Mesh.obj \lib\OdeSP.lib "
+<h3>Output Window</h3>
+Compiling...
+dCylinder.cpp
+GeomTransformGroup.cpp
+Mesh.cpp
+Q:\src\AdvShapes\Mesh.cpp(151) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+Q:\src\AdvShapes\Mesh.cpp(152) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+Q:\src\AdvShapes\Mesh.cpp(153) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+Q:\src\AdvShapes\Mesh.cpp(515) : warning C4183: 'Init': member function definition looks like a ctor, but name does not match enclosing class
+Q:\src\AdvShapes\Mesh.cpp(663) : warning C4305: 'initializing' : truncation from 'const double' to 'const float'
+Q:\src\AdvShapes\Mesh.cpp(696) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+Q:\src\AdvShapes\Mesh.cpp(699) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+Q:\src\AdvShapes\Mesh.cpp(699) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+Q:\src\AdvShapes\Mesh.cpp(699) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+Creating library...
+<h3>
+--------------------Configuration: drawstuff - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\users\admin\LOCALS~1\Temp\RSP342.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /D "dSINGLE" /Fp"Release/drawstuff.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"Q:\src\drawstuff\Draw2.cpp"
+]
+Creating command line "cl.exe @C:\users\admin\LOCALS~1\Temp\RSP342.tmp" 
+Creating command line "link.exe -lib /nologo /out:"q:\lib\drawstuff.lib"  .\Release\Draw2.obj .\Release\drawstuff.obj .\Release\windows.obj "
+<h3>Output Window</h3>
+Compiling...
+Draw2.cpp
+Q:\src\drawstuff\Draw2.cpp(84) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\src\drawstuff\Draw2.cpp(84) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Creating library...
+<h3>
+--------------------Configuration: TESTBUGGY2 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\users\admin\LOCALS~1\Temp\RSP343.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "RELEASE" /D "dSINGLE" /Fp"Release/TestBuggy2.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp"
+]
+Creating command line "cl.exe @C:\users\admin\LOCALS~1\Temp\RSP343.tmp" 
+Creating temporary file "C:\users\admin\LOCALS~1\Temp\RSP344.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/TestBuggy2.pdb" /machine:I386 /out:"Release/TestBuggy2.exe" 
+.\Release\test_buggy.obj
+.\resources.RES
+\lib\OdeAddonsSP.lib
+\lib\drawstuff.lib
+\lib\OdeSP.lib
+]
+Creating command line "link.exe @C:\users\admin\LOCALS~1\Temp\RSP344.tmp"
+<h3>Output Window</h3>
+Compiling...
+test_buggy.cpp
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(121) : warning C4305: '=' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(122) : warning C4305: '=' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(123) : warning C4305: '=' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(124) : warning C4305: '=' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(160) : warning C4305: '+=' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(163) : warning C4305: '-=' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(198) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(198) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(225) : warning C4305: '=' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(226) : warning C4305: '=' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(238) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(247) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(297) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(299) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(300) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(301) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(331) : warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(347) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(365) : warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(392) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(399) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(399) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(403) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(403) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(417) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(418) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(423) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(423) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(424) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(426) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(426) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(427) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(438) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(438) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(439) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(441) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(441) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(442) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(444) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(444) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(452) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(452) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(455) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(455) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(456) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(456) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(456) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(457) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(457) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(457) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(487) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(514) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(515) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Q:\Ode.DSW\Tests\TestBuggy2\test_buggy.cpp(520) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Linking...
+
+
+
+<h3>Results</h3>
+TestBuggy2.exe - 0 error(s), 83 warning(s)
+</pre>
+</body>
+</html>

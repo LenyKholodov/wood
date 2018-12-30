@@ -1,0 +1,128 @@
+cv_grmap.cpp
+C:\Program Files\Microsoft Visual Studio 9.0\VC\include\new(82) : warning C4985: 'operator new[]': attributes not present on previous declaration.
+        q:\h\memory\memory.h(28) : see declaration of 'operator new[]'
+q:\h\misc\string.inl(288) : warning C4812: obsolete declaration style: please use 'String<ssize>::String' instead
+q:\h\misc\string.inl(303) : warning C4812: obsolete declaration style: please use 'String<ssize>::String' instead
+q:\h\misc\Collection.inl(104) : warning C4346: 'Collection<T,Base>::iterator' : dependent name is not a type
+        prefix with 'typename' to indicate a type
+q:\h\misc\Collection.inl(104) : error C2062: type 'bool' unexpected
+q:\h\misc\Collection.inl(121) : error C2649: 'typename' : is not a 'class'
+q:\h\misc\list.h(54) : error C2065: 'BaseList' : undeclared identifier
+        q:\h\misc\list.h(58) : see reference to class template instantiation 'List<T>' being compiled
+q:\h\misc\list.h(55) : error C2955: 'Collection' : use of class template requires template argument list
+        q:\h\misc\collection.h(63) : see declaration of 'Collection'
+q:\h\misc\ring.h(19) : error C2061: syntax error : identifier 'node'
+q:\h\misc\ring.h(19) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+q:\h\misc\ring.h(19) : warning C4183: 'InsertLast': missing return type; assumed to be a member function returning 'int'
+q:\h\misc\ring.h(24) : error C2628: 'BaseRing' followed by 'void' is illegal (did you forget a ';'?)
+q:\h\misc\ring.h(29) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+q:\h\misc\ring.h(29) : error C2143: syntax error : missing ',' before '&'
+q:\h\misc\ring.h(29) : error C2270: 'IsLast' : modifiers not allowed on nonmember functions
+q:\h\misc\ring.h(29) : error C2065: 'node' : undeclared identifier
+q:\h\misc\ring.h(29) : error C2065: 'mFirst' : undeclared identifier
+q:\h\misc\ring.h(30) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+q:\h\misc\ring.h(30) : error C2143: syntax error : missing ',' before '&'
+q:\h\misc\ring.h(30) : error C2270: 'IsFirst' : modifiers not allowed on nonmember functions
+q:\h\misc\ring.h(30) : error C2065: 'node' : undeclared identifier
+q:\h\misc\ring.h(30) : error C2065: 'node' : undeclared identifier
+q:\h\misc\ring.h(30) : error C2065: 'mFirst' : undeclared identifier
+q:\h\misc\ring.h(31) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+q:\h\misc\ring.h(31) : error C2143: syntax error : missing ',' before '&'
+q:\h\misc\ring.h(31) : error C2270: 'IsValid' : modifiers not allowed on nonmember functions
+q:\h\misc\ring.h(31) : error C2065: 'node' : undeclared identifier
+q:\h\misc\ring.h(31) : error C2065: 'node' : undeclared identifier
+q:\h\misc\ring.h(31) : error C2065: 'node' : undeclared identifier
+q:\h\misc\ring.h(36) : error C2143: syntax error : missing ';' before '&'
+q:\h\misc\ring.h(36) : error C2270: 'GetFirst' : modifiers not allowed on nonmember functions
+q:\h\misc\ring.h(36) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+q:\h\misc\ring.h(36) : error C2065: 'mFirst' : undeclared identifier
+q:\h\misc\ring.h(37) : error C2143: syntax error : missing ';' before '&'
+q:\h\misc\ring.h(37) : error C2270: 'GetLast' : modifiers not allowed on nonmember functions
+q:\h\misc\ring.h(37) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+q:\h\misc\ring.h(37) : error C2065: 'mFirst' : undeclared identifier
+q:\h\misc\ring.h(37) : error C2065: 'mFirst' : undeclared identifier
+q:\h\misc\ring.h(37) : error C2065: 'mFirst' : undeclared identifier
+q:\h\misc\ring.h(37) : warning C4508: 'GetLast' : function should return a value; 'void' return type assumed
+q:\h\misc\ring.h(42) : error C2065: 'listnode_t' : undeclared identifier
+q:\h\misc\ring.h(42) : error C2065: 'node' : undeclared identifier
+q:\h\misc\ring.h(42) : error C2448: 'SetFirst' : function-style initializer appears to be a function definition
+q:\h\misc\ring.h(43) : error C2065: 'listnode_t' : undeclared identifier
+q:\h\misc\ring.h(43) : error C2065: 'node' : undeclared identifier
+q:\h\misc\ring.h(43) : error C2448: 'SetLast' : function-style initializer appears to be a function definition
+q:\h\misc\ring.h(48) : error C2065: 'listnode_t' : undeclared identifier
+q:\h\misc\ring.h(48) : error C2059: syntax error : ')'
+q:\h\misc\ring.h(50) : error C2059: syntax error : 'private'
+q:\h\misc\ring.h(51) : error C2143: syntax error : missing ';' before '*'
+q:\h\misc\ring.h(52) : error C2059: syntax error : '}'
+q:\h\misc\ring.h(52) : error C2143: syntax error : missing ';' before '}'
+q:\h\misc\ring.h(52) : error C2059: syntax error : '}'
+q:\h\misc\rbtree.h(26) : error C2059: syntax error : 'return'
+q:\h\misc\rbtree.h(26) : error C2238: unexpected token(s) preceding ';'
+q:\h\misc\rbtree.h(31) : error C2628: 'RedBlackTree' followed by 'void' is illegal (did you forget a ';'?)
+q:\h\misc\rbtree.h(31) : error C2065: 'mapnode_t' : undeclared identifier
+q:\h\misc\rbtree.h(31) : error C2059: syntax error : ')'
+q:\h\misc\rbtree.h(32) : error C2065: 'mapnode_t' : undeclared identifier
+q:\h\misc\rbtree.h(32) : error C2059: syntax error : ')'
+q:\h\misc\rbtree.h(37) : error C2143: syntax error : missing ';' before '&'
+q:\h\misc\rbtree.h(37) : error C2270: 'GetMin' : modifiers not allowed on nonmember functions
+q:\h\misc\rbtree.h(37) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+q:\h\misc\rbtree.h(37) : error C2065: 'mRoot' : undeclared identifier
+q:\h\misc\rbtree.h(37) : error C2065: 'mRoot' : undeclared identifier
+q:\h\misc\rbtree.h(37) : error C2065: 'mNull' : undeclared identifier
+q:\h\misc\rbtree.h(37) : warning C4508: 'GetMin' : function should return a value; 'void' return type assumed
+q:\h\misc\rbtree.h(38) : error C2143: syntax error : missing ';' before '&'
+q:\h\misc\rbtree.h(38) : error C2270: 'GetMax' : modifiers not allowed on nonmember functions
+q:\h\misc\rbtree.h(38) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+q:\h\misc\rbtree.h(38) : error C2065: 'mRoot' : undeclared identifier
+q:\h\misc\rbtree.h(38) : error C2065: 'mRoot' : undeclared identifier
+q:\h\misc\rbtree.h(38) : error C2065: 'mNull' : undeclared identifier
+q:\h\misc\rbtree.h(38) : warning C4508: 'GetMax' : function should return a value; 'void' return type assumed
+q:\h\misc\rbtree.h(39) : error C2143: syntax error : missing ';' before '&'
+q:\h\misc\rbtree.h(39) : error C2270: 'GetRoot' : modifiers not allowed on nonmember functions
+q:\h\misc\rbtree.h(39) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+q:\h\misc\rbtree.h(39) : error C2065: 'mRoot' : undeclared identifier
+q:\h\misc\rbtree.h(39) : error C2065: 'mRoot' : undeclared identifier
+q:\h\misc\rbtree.h(39) : error C2065: 'mNull' : undeclared identifier
+q:\h\misc\rbtree.h(39) : warning C4508: 'GetRoot' : function should return a value; 'void' return type assumed
+q:\h\misc\rbtree.h(44) : error C2143: syntax error : missing ';' before '&'
+q:\h\misc\rbtree.h(44) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+q:\h\misc\rbtree.h(44) : error C2143: syntax error : missing ',' before '&'
+q:\h\misc\rbtree.h(44) : error C2270: 'GetMin' : modifiers not allowed on nonmember functions
+q:\h\misc\rbtree.h(45) : error C2143: syntax error : missing ';' before '&'
+q:\h\misc\rbtree.h(45) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+q:\h\misc\rbtree.h(45) : error C2143: syntax error : missing ',' before '&'
+q:\h\misc\rbtree.h(45) : error C2270: 'GetMax' : modifiers not allowed on nonmember functions
+q:\h\misc\rbtree.h(47) : error C2059: syntax error : 'protected'
+q:\h\misc\rbtree.h(51) : error C2065: 'mapnode_t' : undeclared identifier
+q:\h\misc\rbtree.h(51) : error C2065: 'node' : undeclared identifier
+q:\h\misc\rbtree.h(51) : error C2448: 'SetRoot' : function-style initializer appears to be a function definition
+q:\h\misc\rbtree.h(53) : error C2059: syntax error : 'protected'
+q:\h\misc\rbtree.h(54) : error C2065: 'mRoot' : undeclared identifier
+q:\h\misc\rbtree.h(54) : error C2065: 'mCount' : undeclared identifier
+q:\h\misc\rbtree.h(56) : error C2059: syntax error : 'private'
+q:\h\misc\rbtree.h(60) : error C2065: 'mapnode_t' : undeclared identifier
+q:\h\misc\rbtree.h(60) : error C2059: syntax error : ')'
+q:\h\misc\rbtree.h(61) : error C2065: 'mapnode_t' : undeclared identifier
+q:\h\misc\rbtree.h(61) : error C2059: syntax error : ')'
+q:\h\misc\rbtree.h(62) : error C2065: 'mapnode_t' : undeclared identifier
+q:\h\misc\rbtree.h(62) : error C2059: syntax error : ')'
+q:\h\misc\rbtree.h(63) : error C2143: syntax error : missing ';' before '*'
+q:\h\misc\rbtree.h(63) : error C2065: 'mapnode_t' : undeclared identifier
+q:\h\misc\rbtree.h(63) : error C2059: syntax error : ')'
+q:\h\misc\rbtree.h(65) : error C2059: syntax error : 'private'
+q:\h\misc\rbtree.h(66) : error C2146: syntax error : missing ';' before identifier 'mNull'
+q:\h\misc\rbtree.h(67) : error C2143: syntax error : missing ';' before '*'
+q:\h\misc\rbtree.h(69) : error C2059: syntax error : '}'
+q:\h\misc\rbtree.h(69) : error C2143: syntax error : missing ';' before '}'
+q:\h\misc\rbtree.h(69) : error C2059: syntax error : '}'
+q:\h\misc\rbtree.h(85) : error C2059: syntax error : 'return'
+q:\h\misc\rbtree.h(85) : error C2238: unexpected token(s) preceding ';'
+q:\h\misc\rbtree.h(86) : error C2549: user-defined conversion cannot specify a return type
+q:\h\misc\rbtree.h(86) : error C2270: '._N' : modifiers not allowed on nonmember functions
+q:\h\misc\rbtree.h(86) : error C2801: 'operator bool' must be a non-static member
+q:\h\misc\rbtree.h(86) : error C3861: 'valid': identifier not found
+q:\h\misc\rbtree.h(88) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+q:\h\misc\rbtree.h(88) : error C2065: 'mNull' : undeclared identifier
+q:\h\misc\rbtree.h(88) : error C2065: 'mNull' : undeclared identifier
+q:\h\misc\rbtree.h(88) : error C2065: 'BLACK' : undeclared identifier
+q:\h\misc\rbtree.h(88) : fatal error C1003: error count exceeds 100; stopping compilation

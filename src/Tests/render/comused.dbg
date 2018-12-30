@@ -1,0 +1,63 @@
+Port opened, internal buffer = 0x00783008 to 0x00783487
+Consumed -- 1 bytes 0x00783008 to 0x00783008:
+3F 
+Consumed -- 1 bytes 0x00783009 to 0x00783009:
+3F 
+Consumed -- 1 bytes 0x0078300A to 0x0078300A:
+3F 
+Consumed -- 1 bytes 0x0078300B to 0x0078300B:
+3F 
+Consumed -- 1 bytes 0x0078300C to 0x0078300C:
+3F 
+Consumed -- 1 bytes 0x0078300D to 0x0078300D:
+3F 
+Consumed -- 1 bytes 0x0078300E to 0x0078300E:
+3F 
+Consumed -- 1 bytes 0x0078300F to 0x0078300F:
+3F 
+Consumed -- 1 bytes 0x00783010 to 0x00783010:
+3F 
+Consumed -- 1 bytes 0x00783011 to 0x00783011:
+3F 
+Consumed -- 1 bytes 0x00783012 to 0x00783012:
+3F 
+Consumed -- 1 bytes 0x00783013 to 0x00783013:
+3F 
+Consumed -- 1 bytes 0x00783014 to 0x00783014:
+3F 
+Consumed -- 1 bytes 0x00783015 to 0x00783015:
+3F 
+Consumed -- 1 bytes 0x00783016 to 0x00783016:
+3F 
+Consumed -- 1 bytes 0x00783017 to 0x00783017:
+3F 
+Consumed -- 1 bytes 0x00783018 to 0x00783018:
+3F 
+Consumed -- 1 bytes 0x00783019 to 0x00783019:
+3F 
+Consumed -- 2 bytes 0x0078301A to 0x0078301B:
+0D 0A 
+Consumed -- 26 bytes 0x0078301C to 0x00783035:
+72 7A 0D 0A 2A 2A 18 42 30 30 30 30 30 30 30 30 
+30 30 30 30 30 30 0D 0A 8A 11 
+Consumed -- 21 bytes 0x00783036 to 0x0078304A:
+2A 2A 18 42 30 31 30 30 30 30 30 30 32 33 62 65 
+35 30 0D 8A 11 
+Consumed -- 21 bytes 0x0078304B to 0x0078305F:
+2A 2A 18 42 30 31 30 30 30 30 30 30 32 33 62 65 
+35 30 0D 8A 11 
+Consumed -- 21 bytes 0x00783060 to 0x00783074:
+2A 2A 18 42 30 39 30 30 30 30 30 30 30 30 61 38 
+37 63 0D 8A 11 
+Consumed -- 21 bytes 0x00783075 to 0x00783089:
+2A 2A 18 42 30 31 30 30 30 30 30 30 32 33 62 65 
+35 30 0D 8A 11 
+Consumed -- 21 bytes 0x0078308A to 0x0078309E:
+2A 2A 18 42 30 39 30 30 30 30 30 30 30 30 61 38 
+37 63 0D 8A 11 
+Consumed -- 21 bytes 0x0078309F to 0x007830B3:
+2A 2A 18 42 30 31 30 30 30 30 30 30 32 33 62 65 
+35 30 0D 8A 11 
+Consumed -- 20 bytes 0x007830B4 to 0x007830C7:
+2A 2A 18 42 30 38 30 30 30 30 30 30 30 30 30 32 
+32 64 0D 8A 

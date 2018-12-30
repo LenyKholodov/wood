@@ -1,0 +1,222 @@
+bonebegin // 24 total points
+ name=Gravity Center aka Loins;
+// length=0;
+ coord.x=150; 
+ coord.y=229; 
+ al.nom=0;           al.min=0;           al.max=0;
+ be.nom=0;           be.min=0;           be.max=0;
+ ga.nom=0;           ga.min=0;           ga.max=0;
+ Lcolor=12;                      // not used
+ Rcolor=12;
+ bonebegin
+  name=Neck;
+  length=45;
+  al.nom=-Pi/12;      al.min=0;           al.max=0;
+  be.nom=0;           be.min=0;           be.max=0;
+  ga.nom=0;           ga.min=0;           ga.max=0;
+  Lcolor=10;
+  Rcolor=10;
+  bonebegin
+   name=Chest;
+   length=20;
+   al.nom=11*Pi/12; al.min=10*Pi/12;  al.max=11*Pi/12;
+   be.nom=0;        be.min=0;         be.max=0;
+   ga.nom=0;        ga.min=0;         ga.max=0;
+   Lcolor=15;
+   Rcolor=15;
+  boneend // Chest
+  bonebegin
+   name=Head;
+   length=20;
+   al.nom=-Pi/12;  al.min=0;         al.max=0;
+   be.nom=0;       be.min=0;         be.max=0;
+   ga.nom=0;       ga.min=0;         ga.max=0;
+   Lcolor=10;
+   Rcolor=10;
+   bonebegin
+    name=Tooth;
+    length=15;
+    al.nom=Pi/4;        al.min=0;           al.max=0;
+    be.nom=0;           be.min=0;           be.max=0;
+    ga.nom=0;           ga.min=0;           ga.max=0;
+    Lcolor=10;
+    Rcolor=10;
+   boneend // Tooth
+  boneend // Head
+  bonebegin
+// {Left side} {Top}
+   name=Left Shoulder;
+   length=20;
+   al.nom=0;           al.min=0;           al.max=0;
+   be.nom=0;           be.min=0;           be.max=0;
+   ga.nom=5*Pi/8;      ga.min=0;           ga.max=0;
+   Lcolor=11;
+   Rcolor=11;
+   bonebegin
+    name=Left Forearm;
+    length=30;
+    al.nom=0;           al.min=0;           al.max=0;
+    be.nom=0;           be.min=0;           be.max=0;
+    ga.nom=Pi/12;        ga.min=0;           ga.max=0;
+    Lcolor=11;
+    Rcolor=11;
+    bonebegin
+     name=Left Hand;
+     length=25;
+     al.nom=0;           al.min=0;           al.max=0;
+     be.nom=0;           be.min=0;           be.max=0;
+     ga.nom=0;           ga.min=0;           ga.max=0;
+     Lcolor=11;
+     Rcolor=11;
+     bonebegin
+      name=Left Hand's Fingers;
+      length=10;
+      al.nom=0;           al.min=0;           al.max=0;
+      be.nom=0;           be.min=0;           be.max=0;
+      ga.nom=0;           ga.min=0;           ga.max=0;
+      Lcolor=11;
+      Rcolor=11;
+     boneend // Left Hand's Fingers
+    boneend // Left Hand
+   boneend // Left Forearm
+  boneend // Left Shoulder
+  bonebegin
+// {Right side} {Top}
+   name=Right Shoulder;
+   length=20;
+   al.nom=0;           al.min=-2*Pi/3;     al.max=Pi/2;
+   be.nom=0;           be.min=0;           be.max=0;
+   ga.nom=-5*Pi/8;     ga.min=0;           ga.max=0;
+   Lcolor=14;
+   Rcolor=14;
+   bonebegin
+    name=Right Forearm;
+    length=30;
+    al.nom=0;           al.min=0;           al.max=0;
+    be.nom=0;           be.min=0;           be.max=0;
+    ga.nom=-Pi/12;      ga.min=0;           ga.max=0;
+    Lcolor=14;
+    Rcolor=14;
+    bonebegin
+     name=Right Hand;
+     length=25;
+     al.nom=0;           al.min=0;           al.max=0;
+     be.nom=0;           be.min=0;           be.max=0;
+     ga.nom=0;           ga.min=0;           ga.max=0;
+     Lcolor=14;
+     Rcolor=14;
+     bonebegin
+      name=Right Hand's Fingers;
+      length=10;
+      al.nom=0;           al.min=-Pi/4;       al.max=Pi/4;
+      be.nom=0;           be.min=0;           be.max=0;
+      ga.nom=0;           ga.min=0;           ga.max=0;
+      Lcolor=14;
+      Rcolor=14;
+     boneend // Right Hand's Fingers
+    boneend // Right Hand
+   boneend // Right Forearm
+  boneend // Right Shoulder
+ boneend // Neck
+// {Left Side} {Bottom}
+ bonebegin
+  name=Left Tazz;
+  length=20;
+  al.nom=Pi/2;        al.min=0;           al.max=0;
+  be.nom=0;           be.min=0;           be.max=0;
+  ga.nom=Pi/3;        ga.min=Pi/4;        ga.max=Pi/2;
+  Lcolor=11;
+  Rcolor=11;
+  bonebegin
+   name=Left Knee;
+   length=45;
+   al.nom=-Pi/6;       al.min=-2*Pi/3;     al.max=Pi/6;
+   be.nom=0;           be.min=-Pi/3;       be.max=Pi/3;
+   ga.nom=-Pi/3;       ga.min=-Pi/6;       ga.max=Pi/2;
+   Lcolor=11;
+   Rcolor=11;
+   bonebegin
+    name=Left Heel;
+    length=45;
+    al.nom=Pi/3;        al.min=0;           al.max=0;
+    be.nom=0;           be.min=0;           be.max=0;
+    ga.nom=0;           ga.min=0;           ga.max=0;
+    Lcolor=11;
+    Rcolor=11;
+    bonebegin
+     name=Left Foot;
+     length=15;
+     al.nom=-Pi/3;       al.min=0;           al.max=0;
+     be.nom=0;           be.min=0;           be.max=0;
+     ga.nom=0;           ga.min=0;           ga.max=0;
+     Lcolor=11;
+     Rcolor=11;
+     bonebegin
+      name=Left Foot's Fingers;
+      length=7;
+      al.nom=-Pi/3;       al.min=0;           al.max=0;
+      be.nom=0;           be.min=0;           be.max=0;
+      ga.nom=0;           ga.min=0;           ga.max=0;
+      Lcolor=11;
+      Rcolor=11;
+     boneend // Left Foot's Fingers
+    boneend // Left Foot
+   boneend // Left Heel
+  boneend // Left Knee
+ boneend // Left Tazz
+// {Right side} {Bottom}
+ bonebegin
+  name=Right Tazz;
+  length=20;
+  al.nom=Pi/2;        al.min=0;           al.max=0;
+  be.nom=0;           be.min=0;           be.max=0;
+  ga.nom=-Pi/3;       ga.min=-Pi/2;       ga.max=-Pi/4;
+  Lcolor=14;
+  Rcolor=14;
+  bonebegin
+   name=Right Knee
+   length=45;
+   al.nom=-Pi/6;       al.min=0;           al.max=0;
+   be.nom=0;           be.min=0;           be.max=0;
+   ga.nom=Pi/3;        ga.min=0;           ga.max=0;
+   Lcolor=14;
+   Rcolor=14;
+   bonebegin
+    name=Right Heel;
+    length=45;
+    al.nom=Pi/3;        al.min=0;           al.max=0;
+    be.nom=0;           be.min=0;           be.max=0;
+    ga.nom=0;           ga.min=0;           ga.max=0;
+    Lcolor=14;
+    Rcolor=14;
+    bonebegin
+     name=Right Foot;
+     length=15;
+     al.nom=-Pi/3;       al.min=-2*Pi/3;     al.max=-Pi/6;
+     be.nom=0;           be.min=0;           be.max=0;
+     ga.nom=0;           ga.min=0;           ga.max=0;
+     Lcolor=14;
+     Rcolor=14;
+     bonebegin
+      name=Right Foot's Fingers;
+      length=7;
+      al.nom=-Pi/3;       al.min=0;           al.max=0;
+      be.nom=0;           be.min=0;           be.max=0;
+      ga.nom=0;           ga.min=0;           ga.max=0;
+      Lcolor=14;
+      Rcolor=14;
+     boneend // Right Foot's Fingers
+    boneend // Right Foot
+   boneend // Right Heel
+  boneend // Right Knee
+ boneend // Right Tazz
+ bonebegin
+  name=Tail;
+  length=25;
+  al.nom=7*Pi/6;      al.min=0;           al.max=0;
+  be.nom=0;           be.min=0;           be.max=0;
+  ga.nom=0;           ga.min=0;           ga.max=0;
+  Lcolor=5;
+  Rcolor=5;
+ boneend // Tail
+boneend // Gravity Center aka Loins

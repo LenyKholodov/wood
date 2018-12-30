@@ -1,0 +1,96 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: SoundLib, Configuration: Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "d:\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundLib\Release\RSP000030.rsp" with contents
+[
+/O2 /D "WIN32" /D "NDEBUG" /D "_LIB" /D "_MBCS" /FD /EHsc /ML /GS /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+"\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\WaveResource.cpp"
+"\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundSource.cpp"
+"\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundResource.cpp"
+"\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundMaterial.cpp"
+"\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OggResource.cpp"
+"\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OALPlayer.cpp"
+"\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\Listener.cpp"
+"\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\Files.cpp"
+"\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\Environment.cpp"
+]
+Creating command line "cl.exe @"d:\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundLib\Release\RSP000030.rsp" /nologo"
+Creating temporary file "d:\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundLib\Release\RSP000031.rsp" with contents
+[
+/O2 /D "WIN32" /D "NDEBUG" /D "_LIB" /D "_MBCS" /FD /EHsc /ML /GS /Yc"stdafx.h" /Fp"Release/SoundLib.pch" /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+".\stdafx.cpp"
+]
+Creating command line "cl.exe @"d:\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundLib\Release\RSP000031.rsp" /nologo"
+Creating temporary file "d:\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundLib\Release\RSP000032.rsp" with contents
+[
+/OUT:"Release/SoundLib.lib" /NOLOGO
+".\Release\Environment.obj"
+".\Release\Files.obj"
+".\Release\Listener.obj"
+".\Release\OALPlayer.obj"
+".\Release\OggResource.obj"
+".\Release\SoundMaterial.obj"
+".\Release\SoundResource.obj"
+".\Release\SoundSource.obj"
+".\Release\stdafx.obj"
+".\Release\WaveResource.obj"
+]
+Creating command line "lib.exe @"d:\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundLib\Release\RSP000032.rsp""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+stdafx.cpp
+Compiling...
+WaveResource.cpp
+SoundSource.cpp
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundSource.cpp(16) : warning C4311: 'type cast' : pointer truncation from 'CSoundSource *const ' to 'DWORD'
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundSource.cpp(291) : warning C4244: 'return' : conversion from 'float' to 'clock_t', possible loss of data
+SoundResource.cpp
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundResource.cpp(100) : warning C4018: '<' : signed/unsigned mismatch
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundResource.cpp(106) : warning C4018: '<' : signed/unsigned mismatch
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundResource.cpp(125) : warning C4244: 'initializing' : conversion from 'unsigned long' to 'float', possible loss of data
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundResource.cpp(126) : warning C4244: 'return' : conversion from 'unsigned long' to 'float', possible loss of data
+SoundMaterial.cpp
+OggResource.cpp
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OggResource.cpp(29) : warning C4244: '=' : conversion from 'ogg_int64_t' to 'DWORD', possible loss of data
+OALPlayer.cpp
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OALPlayer.cpp(55) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OALPlayer.cpp(68) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OALPlayer.cpp(95) : warning C4311: 'type cast' : pointer truncation from 'CSoundResource *' to 'DWORD'
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OALPlayer.cpp(163) : warning C4311: 'type cast' : pointer truncation from 'CSoundResource *' to 'DWORD'
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OALPlayer.cpp(171) : warning C4311: 'type cast' : pointer truncation from 'CSoundResource *' to 'DWORD'
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OALPlayer.cpp(176) : warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OALPlayer.cpp(194) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OALPlayer.cpp(240) : warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OALPlayer.cpp(283) : warning C4101: 'DataLen' : unreferenced local variable
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OALPlayer.cpp(284) : warning C4101: 'err' : unreferenced local variable
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\OALPlayer.cpp(344) : warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+Listener.cpp
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\Listener.cpp(19) : warning C4305: '=' : truncation from 'double' to 'ALfloat'
+Files.cpp
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\Files.cpp(14) : warning C4101: 'c' : unreferenced local variable
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\Files.cpp(32) : warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\Files.cpp(38) : warning C4244: 'argument' : conversion from '__int64' to 'long', possible loss of data
+Environment.cpp
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\Environment.cpp(9) : warning C4305: '=' : truncation from 'double' to 'float'
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\Environment.cpp(10) : warning C4305: '=' : truncation from 'double' to 'float'
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\Environment.cpp(12) : warning C4305: '=' : truncation from 'double' to 'float'
+\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\Environment.cpp(14) : warning C4305: '=' : truncation from 'double' to 'float'
+Generating Code...
+Creating library...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://d:\Мои документы\Тарас\Visual Studio Projects\OpenAL\Player\SoundLib\Release\BuildLog.htm"
+SoundLib - 0 error(s), 26 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

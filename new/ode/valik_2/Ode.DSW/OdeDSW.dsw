@@ -1,0 +1,119 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Addons"=.\Addons\Addons.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Ode
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Ode"=.\Ode\Ode.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TESTBUGGY"=.\TESTS\TESTBUGGY\TESTBUGGY.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Addons
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Ode
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name drawstuff
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "TESTBUGGY2"=.\Tests\TestBuggy2\TestBuggy2.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Addons
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name drawstuff
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Ode
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "TestCylinder"=.\Tests\TestCylinder\TestCylinder.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Addons
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name drawstuff
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Ode
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "drawstuff"=.\drawstuff\drawstuff.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

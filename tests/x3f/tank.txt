@@ -1,0 +1,2980 @@
+
+Chunk M3DMAGIC (4d4dH) 
+Length is 162687 (27b7fH) 
+
+|  Chunk M3D_VERSION (2H) 
+|  Length is 10 (aH) 
+|  Version 3
+
+|  Chunk MDATA (3d3dH) 
+|  Length is 151776 (250e0H) 
+
+|  |  Chunk MESH_VERSION (3d3eH) 
+|  |  Length is 10 (aH) 
+|  |  Version 3
+
+|  |  Chunk MAT_ENTRY (afffH) 
+|  |  Length is 171 (abH) 
+
+|  |  |  Chunk MAT_NAME (a000H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Material name Material #2
+
+|  |  |  Chunk MAT_AMBIENT (a010H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 0,G: 0,B: 0
+
+|  |  |  Chunk MAT_DIFFUSE (a020H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 127,G: 127,B: 127
+
+|  |  |  Chunk MAT_SPECULAR (a030H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 255,G: 255,B: 255
+
+|  |  |  Chunk MAT_SHININESS (a040H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 15%
+
+|  |  |  Chunk MAT_SHIN2PCT (a041H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 30%
+
+|  |  |  Chunk MAT_TRANSPARENCY (a050H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_XPFALL (a052H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_REFBLUR (a053H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_SHADING (a100H) 
+|  |  |  Length is 8 (8H) 
+|  |  |  Shading value of 3
+
+|  |  |  Chunk MAT_SELF_ILPCT (a084H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_WIRESIZE (a087H) 
+|  |  |  Length is 10 (aH) 
+|  |  |  Wire frame size of 1.000000
+
+|  |  Chunk MAT_ENTRY (afffH) 
+|  |  Length is 171 (abH) 
+
+|  |  |  Chunk MAT_NAME (a000H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Material name Material #3
+
+|  |  |  Chunk MAT_AMBIENT (a010H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 0,G: 0,B: 0
+
+|  |  |  Chunk MAT_DIFFUSE (a020H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 169,G: 169,B: 169
+
+|  |  |  Chunk MAT_SPECULAR (a030H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 255,G: 255,B: 255
+
+|  |  |  Chunk MAT_SHININESS (a040H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 15%
+
+|  |  |  Chunk MAT_SHIN2PCT (a041H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 368%
+
+|  |  |  Chunk MAT_TRANSPARENCY (a050H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_XPFALL (a052H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_REFBLUR (a053H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_SHADING (a100H) 
+|  |  |  Length is 8 (8H) 
+|  |  |  Shading value of 3
+
+|  |  |  Chunk MAT_SELF_ILPCT (a084H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_WIRESIZE (a087H) 
+|  |  |  Length is 10 (aH) 
+|  |  |  Wire frame size of 1.000000
+
+|  |  Chunk MAT_ENTRY (afffH) 
+|  |  Length is 177 (b1H) 
+
+|  |  |  Chunk MAT_NAME (a000H) 
+|  |  |  Length is 12 (cH) 
+|  |  |  Material name Flame
+
+|  |  |  Chunk MAT_AMBIENT (a010H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 16,G: 40,B: 46
+
+|  |  |  Chunk MAT_DIFFUSE (a020H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 49,G: 121,B: 139
+
+|  |  |  Chunk MAT_SPECULAR (a030H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 229,G: 229,B: 229
+
+|  |  |  Chunk MAT_SHININESS (a040H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 1%
+
+|  |  |  Chunk MAT_SHIN2PCT (a041H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_TRANSPARENCY (a050H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 10%
+
+|  |  |  Chunk MAT_XPFALL (a052H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 100%
+
+|  |  |  Chunk MAT_REFBLUR (a053H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_SHADING (a100H) 
+|  |  |  Length is 8 (8H) 
+|  |  |  Shading value of 3
+
+|  |  |  Chunk MAT_SELF_ILPCT (a084H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 100%
+
+|  |  |  Chunk MAT_TWO_SIDE (a081H) 
+|  |  |  Length is 6 (6H) 
+
+|  |  |  Chunk MAT_ADDITIVE (a083H) 
+|  |  |  Length is 6 (6H) 
+
+|  |  |  Chunk MAT_WIRESIZE (a087H) 
+|  |  |  Length is 10 (aH) 
+|  |  |  Wire frame size of 1.000000
+
+|  |  Chunk MASTER_SCALE (100H) 
+|  |  Length is 10 (aH) 
+|  |  Master Scale 1.000000
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 17841 (45b1H) 
+|  |  Name: ChamferBox
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 17824 (45a0H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 7184 (1c10H) 
+|  |  |  |  598 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 4792 (12b8H) 
+|  |  |  |  598 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 1.000000 [1] 0.000000 [2] 0.000000
+|  |  |  |  [3] 0.000000 [4] 1.000000 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] 0.000000 [8] 1.000000
+|  |  |  |  [9] 0.001000 [10] 0.001000 [11] 0.001000
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 5788 (169cH) 
+|  |  |  |  576 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 1172 (494H) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 576 faces
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2567 (a07H) 
+|  |  Name: Turret
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2554 (9faH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 668 (29cH) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 448 (1c0H) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.974370 [1] 0.224951 [2] 0.000000
+|  |  |  |  [3] -0.224951 [4] 0.974370 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] 0.000000 [8] 1.000000
+|  |  |  |  [9] 0.239808 [10] 0.239807 [11] 30.196617
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1378 (562H) 
+|  |  |  |  96 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 212 (d4H) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 96 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 390 (186H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2571 (a0bH) 
+|  |  Name: Rotation P
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2554 (9faH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 668 (29cH) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 448 (1c0H) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.222181 [1] -0.962374 [2] 0.156435
+|  |  |  |  [3] -0.035190 [4] 0.152425 [5] 0.987688
+|  |  |  |  [6] -0.974370 [7] -0.224951 [8] -0.000000
+|  |  |  |  [9] 26.100471 [10] 5.964095 [11] 40.486885
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1378 (562H) 
+|  |  |  |  96 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 212 (d4H) 
+|  |  |  |  |  Material Name Of Material #3
+|  |  |  |  |  Assigned to 96 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 390 (186H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2571 (a0bH) 
+|  |  Name: Cylinder05
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2554 (9faH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 668 (29cH) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 448 (1c0H) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.222181 [1] -0.962374 [2] 0.156434
+|  |  |  |  [3] -0.035190 [4] 0.152425 [5] 0.987688
+|  |  |  |  [6] -0.974370 [7] -0.224951 [8] -0.000000
+|  |  |  |  [9] -23.310400 [10] -5.431149 [11] 40.485004
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1378 (562H) 
+|  |  |  |  96 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 212 (d4H) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 96 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 390 (186H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 12419 (3083H) 
+|  |  Name: Blast Brac
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 12402 (3072H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 5468 (155cH) 
+|  |  |  |  455 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 3648 (e40H) 
+|  |  |  |  455 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.205503 [1] -0.890131 [2] -0.406736
+|  |  |  |  [3] 0.091496 [4] -0.396312 [5] 0.913545
+|  |  |  |  [6] -0.974370 [7] -0.224951 [8] -0.000000
+|  |  |  |  [9] -23.669764 [10] -5.546161 [11] 40.530987
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 3226 (c9aH) 
+|  |  |  |  228 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 476 (1dcH) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 228 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 918 (396H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2571 (a0bH) 
+|  |  Name: Cylinder12
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2554 (9faH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 668 (29cH) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 448 (1c0H) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.222181 [1] -0.962374 [2] 0.156435
+|  |  |  |  [3] -0.035190 [4] 0.152425 [5] 0.987688
+|  |  |  |  [6] -0.974370 [7] -0.224951 [8] -0.000000
+|  |  |  |  [9] -19.289326 [10] -15.069630 [11] 63.256947
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1378 (562H) 
+|  |  |  |  96 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 212 (d4H) 
+|  |  |  |  |  Material Name Of Material #3
+|  |  |  |  |  Assigned to 96 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 390 (186H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2571 (a0bH) 
+|  |  Name: Cylinder08
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2554 (9faH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 668 (29cH) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 448 (1c0H) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.974370 [1] 0.224951 [2] 0.000000
+|  |  |  |  [3] -0.035190 [4] 0.152425 [5] 0.987688
+|  |  |  |  [6] 0.222181 [7] -0.962374 [8] 0.156435
+|  |  |  |  [9] -19.596968 [10] 9.002963 [11] 38.846539
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1378 (562H) 
+|  |  |  |  96 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 212 (d4H) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 96 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 390 (186H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 5903 (170fH) 
+|  |  Name: Barrel Rig
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 5886 (16feH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 1760 (6e0H) 
+|  |  |  |  146 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.974370 [1] 0.224951 [2] 0.000000
+|  |  |  |  [3] -0.035190 [4] 0.152425 [5] 0.987688
+|  |  |  |  [6] 0.222181 [7] -0.962374 [8] 0.156435
+|  |  |  |  [9] -13.385378 [10] -17.902411 [11] 43.220024
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 4066 (fe2H) 
+|  |  |  |  288 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 596 (254H) 
+|  |  |  |  |  Material Name Of Material #3
+|  |  |  |  |  Assigned to 288 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 1158 (486H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2571 (a0bH) 
+|  |  Name: Cylinder13
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2554 (9faH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 668 (29cH) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 448 (1c0H) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.222181 [1] -0.962374 [2] 0.156434
+|  |  |  |  [3] -0.035190 [4] 0.152425 [5] 0.987688
+|  |  |  |  [6] -0.974370 [7] -0.224951 [8] -0.000000
+|  |  |  |  [9] -11.350567 [10] -49.456203 [11] 48.158989
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1378 (562H) 
+|  |  |  |  96 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 212 (d4H) 
+|  |  |  |  |  Material Name Of Material #3
+|  |  |  |  |  Assigned to 96 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 390 (186H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 12419 (3083H) 
+|  |  Name: Barrel Bra
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 12402 (3072H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 5468 (155cH) 
+|  |  |  |  455 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 3648 (e40H) 
+|  |  |  |  455 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.076938 [1] 0.333254 [2] -0.939693
+|  |  |  |  [3] -0.211385 [4] 0.915608 [5] 0.342020
+|  |  |  |  [6] 0.974370 [7] 0.224951 [8] 0.000000
+|  |  |  |  [9] -13.427165 [10] -49.911766 [11] 48.299133
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 3226 (c9aH) 
+|  |  |  |  228 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 476 (1dcH) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 228 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 918 (396H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 78 (4eH) 
+|  |  Name: Flash
+
+|  |  |  Chunk N_DIRECT_LIGHT (4600H) 
+|  |  |  Length is 66 (42H) 
+|  |  |  Light at 20.070648, -77.387451, 53.765667
+
+|  |  |  |  Chunk COLOR_F (10H) 
+|  |  |  |  Length is 18 (12H) 
+|  |  |  |  Color R: 1.000000,G: 0.470588,B: 0.000000
+
+|  |  |  |  Chunk DL_OUTER_RANGE (465aH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 200.000000.
+
+|  |  |  |  Chunk DL_INNER_RANGE (4659H) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 80.000000.
+
+|  |  |  |  Chunk DL_MULTIPLIER (465bH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Multiple of 0.000000.
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 17824 (45a0H) 
+|  |  Name: Flame
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 17812 (4594H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 4988 (137cH) 
+|  |  |  |  415 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 3328 (d00H) 
+|  |  |  |  415 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.013774 [1] -0.059664 [2] 0.009698
+|  |  |  |  [3] -0.002182 [4] 0.009450 [5] 0.061233
+|  |  |  |  [6] -0.060407 [7] -0.013946 [8] -0.000000
+|  |  |  |  [9] -4.323892 [10] -56.665863 [11] 52.418385
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 9436 (24dcH) 
+|  |  |  |  672 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 1358 (54eH) 
+|  |  |  |  |  Material Name Of Flame
+|  |  |  |  |  Assigned to 672 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 2694 (a86H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2571 (a0bH) 
+|  |  Name: Cylinder15
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2554 (9faH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 668 (29cH) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 448 (1c0H) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.222181 [1] -0.962374 [2] 0.156435
+|  |  |  |  [3] -0.035190 [4] 0.152425 [5] 0.987688
+|  |  |  |  [6] 0.974370 [7] 0.224951 [8] 0.000000
+|  |  |  |  [9] 23.621624 [10] 5.403960 [11] 40.485008
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1378 (562H) 
+|  |  |  |  96 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 212 (d4H) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 96 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 390 (186H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 12419 (3083H) 
+|  |  Name: Blast Bra0
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 12402 (3072H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 5468 (155cH) 
+|  |  |  |  455 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 3648 (e40H) 
+|  |  |  |  455 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.205503 [1] -0.890131 [2] -0.406736
+|  |  |  |  [3] 0.091496 [4] -0.396312 [5] 0.913545
+|  |  |  |  [6] 0.974370 [7] 0.224951 [8] 0.000000
+|  |  |  |  [9] 23.995035 [10] 5.458123 [11] 40.530991
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 3226 (c9aH) 
+|  |  |  |  228 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 476 (1dcH) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 228 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 918 (396H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2063 (80fH) 
+|  |  Name: Cylinder14
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2046 (7feH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 608 (260H) 
+|  |  |  |  50 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.222181 [1] -0.962374 [2] 0.156435
+|  |  |  |  [3] -0.035190 [4] 0.152425 [5] 0.987688
+|  |  |  |  [6] 0.974370 [7] 0.224951 [8] 0.000000
+|  |  |  |  [9] 24.232733 [10] -5.021771 [11] 63.256947
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1378 (562H) 
+|  |  |  |  96 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 212 (d4H) 
+|  |  |  |  |  Material Name Of Material #3
+|  |  |  |  |  Assigned to 96 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 390 (186H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2571 (a0bH) 
+|  |  Name: Cylinder16
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2554 (9faH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 668 (29cH) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 448 (1c0H) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.974370 [1] -0.224951 [2] -0.000000
+|  |  |  |  [3] -0.035190 [4] 0.152425 [5] 0.987688
+|  |  |  |  [6] 0.222181 [7] -0.962374 [8] 0.156435
+|  |  |  |  [9] 13.956516 [10] 16.749393 [11] 38.846539
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1378 (562H) 
+|  |  |  |  96 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 212 (d4H) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 96 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 390 (186H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 5903 (170fH) 
+|  |  Name: Barrel Ri0
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 5886 (16feH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 1760 (6e0H) 
+|  |  |  |  146 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.974370 [1] -0.224951 [2] -0.000000
+|  |  |  |  [3] -0.035190 [4] 0.152425 [5] 0.987688
+|  |  |  |  [6] 0.222181 [7] -0.962374 [8] 0.156435
+|  |  |  |  [9] 20.168110 [10] -10.155979 [11] 43.220024
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 4066 (fe2H) 
+|  |  |  |  288 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 596 (254H) 
+|  |  |  |  |  Material Name Of Material #3
+|  |  |  |  |  Assigned to 288 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 1158 (486H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 12419 (3083H) 
+|  |  Name: Barrel Br0
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 12402 (3072H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 5468 (155cH) 
+|  |  |  |  455 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 3648 (e40H) 
+|  |  |  |  455 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.076938 [1] 0.333254 [2] -0.939693
+|  |  |  |  [3] -0.211385 [4] 0.915608 [5] 0.342020
+|  |  |  |  [6] -0.974370 [7] -0.224951 [8] -0.000000
+|  |  |  |  [9] 34.237640 [10] -38.907482 [11] 48.299133
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 3226 (c9aH) 
+|  |  |  |  228 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 476 (1dcH) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 228 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 918 (396H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 17825 (45a1H) 
+|  |  Name: Flame2
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 17812 (4594H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 4988 (137cH) 
+|  |  |  |  415 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 3328 (d00H) 
+|  |  |  |  415 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.013774 [1] 0.059664 [2] -0.009698
+|  |  |  |  [3] 0.002182 [4] -0.009450 [5] -0.061233
+|  |  |  |  [6] 0.060407 [7] 0.013946 [8] 0.000000
+|  |  |  |  [9] 29.923876 [10] -51.492584 [11] 50.182186
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 9436 (24dcH) 
+|  |  |  |  672 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 1358 (54eH) 
+|  |  |  |  |  Material Name Of Flame
+|  |  |  |  |  Assigned to 672 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 2694 (a86H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 4885 (1315H) 
+|  |  Name: Sphere01
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 4870 (1306H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 1520 (5f0H) 
+|  |  |  |  126 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 1016 (3f8H) 
+|  |  |  |  126 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.974370 [1] 0.224951 [2] 0.000000
+|  |  |  |  [3] -0.224951 [4] 0.974370 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] -0.000000 [8] 0.714286
+|  |  |  |  [9] 0.154970 [10] -0.382362 [11] 50.176281
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 2274 (8e2H) 
+|  |  |  |  160 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 340 (154H) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 160 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 646 (286H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 810 (32aH) 
+|  |  Name: Box01
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 798 (31eH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 320 (140H) 
+|  |  |  |  26 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 216 (d8H) 
+|  |  |  |  26 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.974370 [1] 0.224951 [2] 0.000000
+|  |  |  |  [3] -0.224951 [4] 0.974370 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] 0.000000 [8] 1.000000
+|  |  |  |  [9] 0.492643 [10] 16.434061 [11] 40.101036
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 202 (caH) 
+|  |  |  |  12 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 44 (2cH) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 12 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 54 (36H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2571 (a0bH) 
+|  |  Name: Cylinder10
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2554 (9faH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 668 (29cH) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 448 (1c0H) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.974370 [1] 0.224951 [2] 0.000000
+|  |  |  |  [3] -0.224951 [4] 0.974370 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] 0.000000 [8] 1.000000
+|  |  |  |  [9] 1.285742 [10] 17.433672 [11] 48.784130
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1378 (562H) 
+|  |  |  |  96 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 212 (d4H) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 96 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 390 (186H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2571 (a0bH) 
+|  |  Name: Cylinder11
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2554 (9faH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 668 (29cH) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 448 (1c0H) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.974370 [1] 0.224951 [2] 0.000000
+|  |  |  |  [3] -0.224951 [4] 0.974370 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] 0.000000 [8] 1.000000
+|  |  |  |  [9] 1.285742 [10] 17.433672 [11] 50.268078
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1378 (562H) 
+|  |  |  |  96 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 212 (d4H) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 96 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 390 (186H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2571 (a0bH) 
+|  |  Name: Cylinder01
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2554 (9faH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 668 (29cH) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk TEX_VERTS (4140H) 
+|  |  |  |  Length is 448 (1c0H) 
+|  |  |  |  55 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.974370 [1] 0.224951 [2] 0.000000
+|  |  |  |  [3] -0.224951 [4] 0.974370 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] 0.000000 [8] 1.000000
+|  |  |  |  [9] 0.239808 [10] 0.239807 [11] 25.911268
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1378 (562H) 
+|  |  |  |  96 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 212 (d4H) 
+|  |  |  |  |  Material Name Of Material #2
+|  |  |  |  |  Assigned to 96 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 390 (186H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 79 (4fH) 
+|  |  Name: Omni01
+
+|  |  |  Chunk N_DIRECT_LIGHT (4600H) 
+|  |  |  Length is 66 (42H) 
+|  |  |  Light at -342.743164, -349.906616, 365.788513
+
+|  |  |  |  Chunk COLOR_F (10H) 
+|  |  |  |  Length is 18 (12H) 
+|  |  |  |  Color R: 0.705882,G: 0.705882,B: 0.705882
+
+|  |  |  |  Chunk DL_OUTER_RANGE (465aH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 200.000000.
+
+|  |  |  |  Chunk DL_INNER_RANGE (4659H) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 80.000000.
+
+|  |  |  |  Chunk DL_MULTIPLIER (465bH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Multiple of 1.000000.
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 67 (43H) 
+|  |  Name: Camera01
+
+|  |  |  Chunk N_CAMERA (4700H) 
+|  |  |  Length is 52 (34H) 
+|  |  |  Camera at -246.943954, -139.832138, 135.889786
+|  |  |  Target at 26.655914, 4.158618, 23.358774
+|  |  |  Bank angle of 0.000000 and a foc of 53.333332
+
+|  |  |  |  Chunk CAM_RANGES (4720H) 
+|  |  |  |  Length is 14 (eH) 
+|  |  |  |  Camera near range is 0.000000 and far range is 1000.000000.
+
+|  Chunk KFDATA (b000H) 
+|  Length is 10895 (2a8fH) 
+
+|  |  Chunk KFHDR (b00aH) 
+|  |  Length is 21 (15H) 
+|  |  Revision level of 5
+|  |  Filename MAXSCENE
+|  |  Animation length of 100
+
+|  |  Chunk KFSEG (b008H) 
+|  |  Length is 14 (eH) 
+|  |  Segment starts at 0 and ends at 100
+
+|  |  Chunk KFCURTIME (b009H) 
+|  |  Length is 10 (aH) 
+|  |  Current frame is 1920
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 0 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ChamferBox
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 1071 (42fH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 1 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Turret
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.239808, 0.239807, 30.196617
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 944 (3b0H) 
+|  |  |  42 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 3
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 4
+|  |  |  Rotation of 0.017453
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 5
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 6
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 7
+|  |  |  Rotation of 0.034907
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 10
+|  |  |  Rotation of 0.034907
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 11
+|  |  |  Rotation of 0.052360
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 12
+|  |  |  Rotation of 0.052360
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 13
+|  |  |  Rotation of 0.034907
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 14
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 45
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 46
+|  |  |  Rotation of 0.017453
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 47
+|  |  |  Rotation of 0.069813
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 48
+|  |  |  Rotation of 0.069813
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 49
+|  |  |  Rotation of 0.034907
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 50
+|  |  |  Rotation of 0.017453
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 51
+|  |  |  Rotation of 0.017453
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 52
+|  |  |  Rotation of 0.034907
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 53
+|  |  |  Rotation of 0.052360
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 54
+|  |  |  Rotation of 0.017453
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 55
+|  |  |  Rotation of 0.052360
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 56
+|  |  |  Rotation of 0.104720
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 57
+|  |  |  Rotation of 0.034907
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 58
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 59
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 60
+|  |  |  Rotation of 0.017453
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 61
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 74
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 75
+|  |  |  Rotation of 0.017453
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 76
+|  |  |  Rotation of 0.087266
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 77
+|  |  |  Rotation of 0.069813
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 78
+|  |  |  Rotation of 0.052360
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 79
+|  |  |  Rotation of 0.069813
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 80
+|  |  |  Rotation of 0.052360
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 83
+|  |  |  Rotation of 0.052360
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 84
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 90
+|  |  |  Rotation of 0.000002
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 91
+|  |  |  Rotation of 0.000003
+|  |  |  Axis of -0.999968, -0.000000, -0.006328
+|  |  |  Frame 92
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 98
+|  |  |  Rotation of 0.000002
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 99
+|  |  |  Rotation of 0.000003
+|  |  |  Axis of -0.999968, -0.000000, -0.006328
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 437 (1b5H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 2 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Rotation P
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 1
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Turret
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 26.485540, -0.239807, 10.290268
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 306 (132H) 
+|  |  |  13 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 4.188790
+|  |  |  Axis of 0.577350, -0.577350, -0.577350
+|  |  |  Frame 5
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 6
+|  |  |  Rotation of 6.283185
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 11
+|  |  |  Rotation of 0.017453
+|  |  |  Axis of 1.000000, 0.000002, 0.000005
+|  |  |  Frame 13
+|  |  |  Rotation of 0.069813
+|  |  |  Axis of 1.000000, -0.000001, -0.000000
+|  |  |  Frame 14
+|  |  |  Rotation of 0.034907
+|  |  |  Axis of 1.000000, 0.000002, 0.000002
+|  |  |  Frame 17
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 18
+|  |  |  Rotation of 0.017453
+|  |  |  Axis of 1.000000, -0.000004, -0.000003
+|  |  |  Frame 19
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 20
+|  |  |  Rotation of 0.017453
+|  |  |  Axis of 1.000000, 0.000004, 0.000003
+|  |  |  Frame 46
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 48
+|  |  |  Rotation of 0.052360
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 49
+|  |  |  Rotation of 0.034907
+|  |  |  Axis of 1.000000, 0.000002, 0.000001
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 3 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Cylinder05
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 2
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Rotation P
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -0.011987, -0.000000, 50.707848
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 943 (3afH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 4 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Blast Brac
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 3
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Cylinder05
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -0.175519, -11.835179, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.038033, 0.040532, 0.376025
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 812 (32cH) 
+|  |  |  36 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.575959
+|  |  |  Axis of -0.000000, 0.000000, 1.000000
+|  |  |  Frame 22
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 23
+|  |  |  Rotation of 0.183260
+|  |  |  Axis of -0.000000, -0.000000, -1.000000
+|  |  |  Frame 24
+|  |  |  Rotation of 0.549779
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 28
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 29
+|  |  |  Rotation of 0.043982
+|  |  |  Axis of -0.000000, 0.000000, 1.000000
+|  |  |  Frame 30
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of 0.000000, -0.000000, 1.000000
+|  |  |  Frame 31
+|  |  |  Rotation of 0.124617
+|  |  |  Axis of 0.000000, -0.000000, 1.000000
+|  |  |  Frame 33
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 34
+|  |  |  Rotation of 0.124617
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 35
+|  |  |  Rotation of 0.076969
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 36
+|  |  |  Rotation of 0.549779
+|  |  |  Axis of 0.000000, -0.000000, -1.000000
+|  |  |  Frame 37
+|  |  |  Rotation of 0.183260
+|  |  |  Axis of -0.000000, -0.000000, -1.000000
+|  |  |  Frame 40
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 41
+|  |  |  Rotation of 0.040317
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 42
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 43
+|  |  |  Rotation of 0.124617
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 45
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 46
+|  |  |  Rotation of 0.124617
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 47
+|  |  |  Rotation of 0.080634
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 64
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 66
+|  |  |  Rotation of 0.366519
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 69
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 70
+|  |  |  Rotation of 0.054978
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 72
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of -0.000000, 0.000000, 1.000000
+|  |  |  Frame 73
+|  |  |  Rotation of 0.124616
+|  |  |  Axis of 0.000000, -0.000000, 1.000000
+|  |  |  Frame 75
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 76
+|  |  |  Rotation of 0.069639
+|  |  |  Axis of -0.000000, 0.000000, 1.000000
+|  |  |  Frame 88
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 89
+|  |  |  Rotation of 0.183260
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 90
+|  |  |  Rotation of 0.549779
+|  |  |  Axis of -0.000000, -0.000000, -1.000000
+|  |  |  Frame 93
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 94
+|  |  |  Rotation of 0.065974
+|  |  |  Axis of 0.000000, -0.000000, 1.000000
+|  |  |  Frame 96
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 97
+|  |  |  Rotation of 0.124617
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 99
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of 0.000000, -0.000000, 1.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 5 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Cylinder12
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 4
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Blast Brac
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.133854, 24.936253, -2.125856
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.575959
+|  |  |  Axis of 0.000000, -0.000000, -1.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 6 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Cylinder08
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 3
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Cylinder05
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -13.322271, 0.451149, -6.865224
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.570796
+|  |  |  Axis of 0.000000, -1.000000, -0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 821 (335H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 7 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Barrel Rig
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 6
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Cylinder08
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 686 (2aeH) 
+|  |  |  37 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.000001, -0.000000, 27.957298
+|  |  |  Frame 22
+|  |  |  Object at -0.000001, -0.000001, 27.957300
+|  |  |  Frame 23
+|  |  |  Object at -0.000001, 0.000000, 22.957300
+|  |  |  Frame 28
+|  |  |  Object at -0.000001, 0.000001, 7.957299
+|  |  |  Frame 29
+|  |  |  Object at -0.000001, -0.000000, 9.157298
+|  |  |  Frame 30
+|  |  |  Object at -0.000000, -0.000002, 12.457298
+|  |  |  Frame 31
+|  |  |  Object at -0.000001, -0.000001, 15.857300
+|  |  |  Frame 32
+|  |  |  Object at -0.000001, 0.000001, 19.157301
+|  |  |  Frame 33
+|  |  |  Object at -0.000000, -0.000001, 22.457300
+|  |  |  Frame 34
+|  |  |  Object at -0.000000, 0.000000, 25.857300
+|  |  |  Frame 35
+|  |  |  Object at -0.000001, -0.000001, 27.957300
+|  |  |  Frame 36
+|  |  |  Object at -0.000001, -0.000001, 12.957299
+|  |  |  Frame 40
+|  |  |  Object at -0.000001, 0.000001, 7.957299
+|  |  |  Frame 41
+|  |  |  Object at -0.000001, 0.000001, 9.057300
+|  |  |  Frame 42
+|  |  |  Object at -0.000001, -0.000000, 12.357298
+|  |  |  Frame 43
+|  |  |  Object at -0.000000, 0.000001, 15.757298
+|  |  |  Frame 44
+|  |  |  Object at -0.000000, -0.000001, 19.057299
+|  |  |  Frame 45
+|  |  |  Object at -0.000001, 0.000001, 22.357298
+|  |  |  Frame 46
+|  |  |  Object at 0.000001, -0.000004, 25.757298
+|  |  |  Frame 64
+|  |  |  Object at 0.000000, 0.000001, 27.957298
+|  |  |  Frame 65
+|  |  |  Object at -0.000001, -0.000001, 17.957298
+|  |  |  Frame 69
+|  |  |  Object at -0.000000, 0.000001, 7.957298
+|  |  |  Frame 70
+|  |  |  Object at -0.000000, -0.000000, 9.457298
+|  |  |  Frame 71
+|  |  |  Object at -0.000000, 0.000002, 12.757298
+|  |  |  Frame 72
+|  |  |  Object at 0.000000, 0.000000, 16.057297
+|  |  |  Frame 73
+|  |  |  Object at 0.000000, 0.000002, 19.457298
+|  |  |  Frame 74
+|  |  |  Object at 0.000000, 0.000000, 22.757298
+|  |  |  Frame 75
+|  |  |  Object at -0.000001, 0.000000, 26.057297
+|  |  |  Frame 88
+|  |  |  Object at 0.000000, -0.000002, 27.957298
+|  |  |  Frame 89
+|  |  |  Object at -0.000001, -0.000001, 22.957298
+|  |  |  Frame 93
+|  |  |  Object at -0.000001, 0.000000, 7.957298
+|  |  |  Frame 94
+|  |  |  Object at -0.000001, -0.000003, 9.757298
+|  |  |  Frame 95
+|  |  |  Object at -0.000001, -0.000001, 13.057299
+|  |  |  Frame 96
+|  |  |  Object at 0.000001, -0.000001, 16.357298
+|  |  |  Frame 97
+|  |  |  Object at -0.000000, -0.000000, 19.757298
+|  |  |  Frame 98
+|  |  |  Object at -0.000001, 0.000000, 23.057297
+|  |  |  Frame 99
+|  |  |  Object at -0.000000, 0.000000, 26.357298
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 8 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Cylinder13
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 7
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Barrel Rig
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -5.115395, -0.003039, 31.591276
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.570796
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 1097 (449H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 9 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Barrel Bra
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 7
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Barrel Rig
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -0.050019, -26.763380, -0.000001
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -7.241250, 0.139016, 31.590240
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 966 (3c6H) 
+|  |  |  43 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.831329
+|  |  |  Axis of 0.452583, -0.768334, 0.452583
+|  |  |  Frame 22
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 23
+|  |  |  Rotation of 0.030543
+|  |  |  Axis of -1.000000, -0.000000, 0.000000
+|  |  |  Frame 24
+|  |  |  Rotation of 0.091630
+|  |  |  Axis of -1.000000, 0.000001, -0.000000
+|  |  |  Frame 28
+|  |  |  Rotation of 0.000001
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 29
+|  |  |  Rotation of 0.007329
+|  |  |  Axis of 1.000000, 0.000000, -0.000000
+|  |  |  Frame 30
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, -0.000001, -0.000002
+|  |  |  Frame 31
+|  |  |  Rotation of 0.020769
+|  |  |  Axis of 1.000000, -0.000003, 0.000004
+|  |  |  Frame 32
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, -0.000001, -0.000002
+|  |  |  Frame 33
+|  |  |  Rotation of 0.020158
+|  |  |  Axis of 1.000000, 0.000001, 0.000002
+|  |  |  Frame 34
+|  |  |  Rotation of 0.020770
+|  |  |  Axis of 1.000000, 0.000004, -0.000002
+|  |  |  Frame 35
+|  |  |  Rotation of 0.012828
+|  |  |  Axis of 1.000000, 0.000000, -0.000000
+|  |  |  Frame 36
+|  |  |  Rotation of 0.091630
+|  |  |  Axis of -1.000000, -0.000000, 0.000000
+|  |  |  Frame 37
+|  |  |  Rotation of 0.030543
+|  |  |  Axis of -1.000000, -0.000000, 0.000000
+|  |  |  Frame 40
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 41
+|  |  |  Rotation of 0.006720
+|  |  |  Axis of 1.000000, 0.000000, -0.000000
+|  |  |  Frame 42
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, -0.000004, 0.000002
+|  |  |  Frame 43
+|  |  |  Rotation of 0.020769
+|  |  |  Axis of 1.000000, -0.000002, -0.000004
+|  |  |  Frame 44
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, 0.000001, 0.000002
+|  |  |  Frame 45
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, 0.000005, -0.000000
+|  |  |  Frame 46
+|  |  |  Rotation of 0.020769
+|  |  |  Axis of 1.000000, -0.000005, 0.000000
+|  |  |  Frame 47
+|  |  |  Rotation of 0.013439
+|  |  |  Axis of 1.000000, 0.000007, -0.000001
+|  |  |  Frame 64
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 65
+|  |  |  Rotation of 0.061086
+|  |  |  Axis of -1.000000, -0.000000, 0.000000
+|  |  |  Frame 66
+|  |  |  Rotation of 0.061087
+|  |  |  Axis of -1.000000, -0.000000, 0.000000
+|  |  |  Frame 69
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 70
+|  |  |  Rotation of 0.009163
+|  |  |  Axis of 1.000000, 0.000000, -0.000000
+|  |  |  Frame 71
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, -0.000004, 0.000002
+|  |  |  Frame 72
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, -0.000000, -0.000000
+|  |  |  Frame 73
+|  |  |  Rotation of 0.020769
+|  |  |  Axis of 1.000000, -0.000001, -0.000002
+|  |  |  Frame 74
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, 0.000002, 0.000004
+|  |  |  Frame 75
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, -0.000001, -0.000002
+|  |  |  Frame 76
+|  |  |  Rotation of 0.011607
+|  |  |  Axis of 1.000000, 0.000006, -0.000004
+|  |  |  Frame 88
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 89
+|  |  |  Rotation of 0.030543
+|  |  |  Axis of -1.000000, -0.000002, 0.000001
+|  |  |  Frame 90
+|  |  |  Rotation of 0.091630
+|  |  |  Axis of -1.000000, 0.000001, -0.000000
+|  |  |  Frame 93
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 94
+|  |  |  Rotation of 0.010996
+|  |  |  Axis of 1.000000, -0.000002, -0.000003
+|  |  |  Frame 95
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, -0.000003, 0.000004
+|  |  |  Frame 96
+|  |  |  Rotation of 0.020158
+|  |  |  Axis of 1.000000, 0.000004, -0.000002
+|  |  |  Frame 97
+|  |  |  Rotation of 0.020769
+|  |  |  Axis of 1.000000, -0.000005, 0.000000
+|  |  |  Frame 98
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, 0.000001, 0.000002
+|  |  |  Frame 99
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, 0.000004, -0.000002
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk LIGHT_NODE_TAG (b005H) 
+|  |  Length is 108 (6cH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 10 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Object name: Flash
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 7
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Barrel Rig
+
+|  |  |  Chunk COL_TRACK_TAG (b025H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Color R: 1.000000,G: 0.470588,B: 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 19.217340, 0.171469, 66.329880
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 474 (1daH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 11 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Object name: Flame
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 7
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Barrel Rig
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -36.702045, -6.982265, -0.000001
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.109368, 2.857712, 40.757179
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.570796
+|  |  |  Axis of -0.000000, 1.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 344 (158H) 
+|  |  |  18 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 22
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 23
+|  |  |  Scale of 1.061996, 1.061996, 1.061996
+|  |  |  Frame 28
+|  |  |  Scale of 1.061996, 1.061996, 1.061996
+|  |  |  Frame 29
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 35
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 36
+|  |  |  Scale of 1.061996, 1.061996, 1.061996
+|  |  |  Frame 40
+|  |  |  Scale of 1.061996, 1.061996, 1.061996
+|  |  |  Frame 41
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 64
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 65
+|  |  |  Scale of 1.061996, 1.061996, 1.061996
+|  |  |  Frame 69
+|  |  |  Scale of 1.061996, 1.061996, 1.061996
+|  |  |  Frame 70
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 88
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 89
+|  |  |  Scale of 1.061996, 1.061996, 1.061996
+|  |  |  Frame 93
+|  |  |  Scale of 1.061996, 1.061996, 1.061996
+|  |  |  Frame 94
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 99
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 12 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Cylinder15
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 2
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Rotation P
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -0.011987, -0.000000, 2.541318
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 3.141593
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of -1.000000, -1.000000, -1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 943 (3afH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 13 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Blast Bra0
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 12
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Cylinder15
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -0.175519, -11.835179, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.038033, 0.040532, 0.376025
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 812 (32cH) 
+|  |  |  36 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.575959
+|  |  |  Axis of -0.000000, 0.000000, 1.000000
+|  |  |  Frame 22
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 23
+|  |  |  Rotation of 0.183260
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 24
+|  |  |  Rotation of 0.549779
+|  |  |  Axis of -0.000000, -0.000000, -1.000000
+|  |  |  Frame 28
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 29
+|  |  |  Rotation of 0.043982
+|  |  |  Axis of -0.000000, 0.000000, 1.000000
+|  |  |  Frame 30
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 31
+|  |  |  Rotation of 0.124617
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 33
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 34
+|  |  |  Rotation of 0.124617
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 35
+|  |  |  Rotation of 0.076969
+|  |  |  Axis of 0.000000, -0.000000, 1.000000
+|  |  |  Frame 36
+|  |  |  Rotation of 0.549779
+|  |  |  Axis of -0.000000, -0.000000, -1.000000
+|  |  |  Frame 37
+|  |  |  Rotation of 0.183260
+|  |  |  Axis of -0.000000, 0.000000, -1.000000
+|  |  |  Frame 40
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 41
+|  |  |  Rotation of 0.040317
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 42
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 43
+|  |  |  Rotation of 0.124617
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 45
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 46
+|  |  |  Rotation of 0.124617
+|  |  |  Axis of -0.000000, 0.000000, 1.000000
+|  |  |  Frame 47
+|  |  |  Rotation of 0.080634
+|  |  |  Axis of 0.000000, -0.000000, 1.000000
+|  |  |  Frame 64
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 66
+|  |  |  Rotation of 0.366519
+|  |  |  Axis of 0.000000, -0.000000, -1.000000
+|  |  |  Frame 69
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 70
+|  |  |  Rotation of 0.054978
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 72
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 73
+|  |  |  Rotation of 0.124616
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 75
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 76
+|  |  |  Rotation of 0.069639
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 88
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 89
+|  |  |  Rotation of 0.183260
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 90
+|  |  |  Rotation of 0.549779
+|  |  |  Axis of -0.000000, 0.000000, -1.000000
+|  |  |  Frame 93
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 94
+|  |  |  Rotation of 0.065973
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 96
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of -0.000000, -0.000000, 1.000000
+|  |  |  Frame 97
+|  |  |  Rotation of 0.124616
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 99
+|  |  |  Rotation of 0.120951
+|  |  |  Axis of 0.000000, -0.000000, 1.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 14 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Cylinder14
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 13
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Blast Bra0
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.133854, 24.936253, -2.125856
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.575959
+|  |  |  Axis of 0.000000, -0.000000, -1.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 15 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Cylinder16
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 12
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Cylinder15
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -13.322271, 0.451149, -6.865226
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.570796
+|  |  |  Axis of 0.000000, -1.000000, -0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 821 (335H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 16 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Barrel Ri0
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 15
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Cylinder16
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 686 (2aeH) 
+|  |  |  37 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -0.000001, -0.000001, 27.957298
+|  |  |  Frame 22
+|  |  |  Object at -0.000001, -0.000004, 27.957296
+|  |  |  Frame 23
+|  |  |  Object at -0.000001, -0.000003, 22.957298
+|  |  |  Frame 28
+|  |  |  Object at -0.000001, -0.000002, 7.957298
+|  |  |  Frame 29
+|  |  |  Object at -0.000000, -0.000002, 9.157298
+|  |  |  Frame 30
+|  |  |  Object at -0.000001, -0.000004, 12.457297
+|  |  |  Frame 31
+|  |  |  Object at -0.000001, -0.000004, 15.857298
+|  |  |  Frame 32
+|  |  |  Object at -0.000001, -0.000002, 19.157299
+|  |  |  Frame 33
+|  |  |  Object at -0.000001, -0.000004, 22.457298
+|  |  |  Frame 34
+|  |  |  Object at -0.000000, -0.000003, 25.857298
+|  |  |  Frame 35
+|  |  |  Object at -0.000001, -0.000004, 27.957296
+|  |  |  Frame 36
+|  |  |  Object at -0.000001, -0.000003, 12.957297
+|  |  |  Frame 40
+|  |  |  Object at -0.000001, -0.000002, 7.957298
+|  |  |  Frame 41
+|  |  |  Object at -0.000000, -0.000001, 9.057299
+|  |  |  Frame 42
+|  |  |  Object at -0.000000, -0.000003, 12.357297
+|  |  |  Frame 43
+|  |  |  Object at -0.000001, -0.000002, 15.757298
+|  |  |  Frame 44
+|  |  |  Object at -0.000001, -0.000004, 19.057297
+|  |  |  Frame 45
+|  |  |  Object at -0.000001, -0.000002, 22.357298
+|  |  |  Frame 46
+|  |  |  Object at -0.000001, -0.000001, 25.757298
+|  |  |  Frame 64
+|  |  |  Object at 0.000001, -0.000000, 27.957298
+|  |  |  Frame 65
+|  |  |  Object at 0.000000, -0.000002, 17.957298
+|  |  |  Frame 69
+|  |  |  Object at 0.000001, 0.000000, 7.957298
+|  |  |  Frame 70
+|  |  |  Object at 0.000000, -0.000000, 9.457297
+|  |  |  Frame 71
+|  |  |  Object at 0.000001, 0.000001, 12.757298
+|  |  |  Frame 72
+|  |  |  Object at 0.000001, -0.000001, 16.057297
+|  |  |  Frame 73
+|  |  |  Object at 0.000001, 0.000000, 19.457298
+|  |  |  Frame 74
+|  |  |  Object at 0.000001, -0.000001, 22.757298
+|  |  |  Frame 75
+|  |  |  Object at 0.000000, -0.000002, 26.057297
+|  |  |  Frame 88
+|  |  |  Object at 0.000001, 0.000001, 27.957298
+|  |  |  Frame 89
+|  |  |  Object at -0.000000, -0.000002, 22.957298
+|  |  |  Frame 93
+|  |  |  Object at -0.000000, -0.000001, 7.957298
+|  |  |  Frame 94
+|  |  |  Object at -0.000001, -0.000000, 9.757297
+|  |  |  Frame 95
+|  |  |  Object at -0.000001, -0.000003, 13.057298
+|  |  |  Frame 96
+|  |  |  Object at -0.000000, -0.000002, 16.357298
+|  |  |  Frame 97
+|  |  |  Object at -0.000000, -0.000001, 19.757298
+|  |  |  Frame 98
+|  |  |  Object at 0.000000, -0.000003, 23.057297
+|  |  |  Frame 99
+|  |  |  Object at -0.000001, -0.000002, 26.357298
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 1097 (449H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 17 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Barrel Br0
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 16
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Barrel Ri0
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -0.050019, -26.763380, -0.000001
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -7.241250, 0.139016, 31.590240
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 966 (3c6H) 
+|  |  |  43 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.831329
+|  |  |  Axis of 0.452583, -0.768334, 0.452583
+|  |  |  Frame 22
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 23
+|  |  |  Rotation of 0.030543
+|  |  |  Axis of -1.000000, -0.000000, 0.000000
+|  |  |  Frame 24
+|  |  |  Rotation of 0.091630
+|  |  |  Axis of -1.000000, 0.000001, -0.000000
+|  |  |  Frame 28
+|  |  |  Rotation of 0.000001
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 29
+|  |  |  Rotation of 0.007329
+|  |  |  Axis of 1.000000, 0.000000, -0.000000
+|  |  |  Frame 30
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, 0.000000, -0.000000
+|  |  |  Frame 31
+|  |  |  Rotation of 0.020769
+|  |  |  Axis of 1.000000, -0.000004, 0.000002
+|  |  |  Frame 32
+|  |  |  Rotation of 0.020158
+|  |  |  Axis of 1.000000, -0.000001, -0.000002
+|  |  |  Frame 33
+|  |  |  Rotation of 0.020158
+|  |  |  Axis of 1.000000, 0.000001, 0.000002
+|  |  |  Frame 34
+|  |  |  Rotation of 0.020770
+|  |  |  Axis of 1.000000, 0.000004, -0.000002
+|  |  |  Frame 35
+|  |  |  Rotation of 0.012828
+|  |  |  Axis of 1.000000, 0.000000, -0.000000
+|  |  |  Frame 36
+|  |  |  Rotation of 0.091630
+|  |  |  Axis of -1.000000, -0.000000, 0.000000
+|  |  |  Frame 37
+|  |  |  Rotation of 0.030543
+|  |  |  Axis of -1.000000, -0.000000, 0.000000
+|  |  |  Frame 40
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 41
+|  |  |  Rotation of 0.006719
+|  |  |  Axis of 1.000000, 0.000003, 0.000006
+|  |  |  Frame 42
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, -0.000006, -0.000002
+|  |  |  Frame 43
+|  |  |  Rotation of 0.020769
+|  |  |  Axis of 1.000000, -0.000001, -0.000002
+|  |  |  Frame 44
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, 0.000001, 0.000002
+|  |  |  Frame 45
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, 0.000005, -0.000000
+|  |  |  Frame 46
+|  |  |  Rotation of 0.020769
+|  |  |  Axis of 1.000000, -0.000009, 0.000000
+|  |  |  Frame 47
+|  |  |  Rotation of 0.013439
+|  |  |  Axis of 1.000000, 0.000014, -0.000001
+|  |  |  Frame 64
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 65
+|  |  |  Rotation of 0.061087
+|  |  |  Axis of -1.000000, -0.000000, -0.000001
+|  |  |  Frame 66
+|  |  |  Rotation of 0.061087
+|  |  |  Axis of -1.000000, -0.000000, 0.000000
+|  |  |  Frame 69
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 70
+|  |  |  Rotation of 0.009163
+|  |  |  Axis of 1.000000, 0.000000, -0.000000
+|  |  |  Frame 71
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, -0.000003, 0.000004
+|  |  |  Frame 72
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, -0.000000, -0.000000
+|  |  |  Frame 73
+|  |  |  Rotation of 0.020769
+|  |  |  Axis of 1.000000, -0.000000, -0.000000
+|  |  |  Frame 74
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, -0.000004, 0.000002
+|  |  |  Frame 75
+|  |  |  Rotation of 0.020158
+|  |  |  Axis of 1.000000, 0.000004, -0.000002
+|  |  |  Frame 76
+|  |  |  Rotation of 0.011606
+|  |  |  Axis of 1.000000, 0.000008, -0.000001
+|  |  |  Frame 88
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 89
+|  |  |  Rotation of 0.030543
+|  |  |  Axis of -1.000000, -0.000002, 0.000001
+|  |  |  Frame 90
+|  |  |  Rotation of 0.091630
+|  |  |  Axis of -1.000000, -0.000000, 0.000000
+|  |  |  Frame 93
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+|  |  |  Frame 94
+|  |  |  Rotation of 0.010996
+|  |  |  Axis of 1.000000, -0.000002, -0.000003
+|  |  |  Frame 95
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, -0.000003, 0.000004
+|  |  |  Frame 96
+|  |  |  Rotation of 0.020158
+|  |  |  Axis of 1.000000, 0.000004, -0.000002
+|  |  |  Frame 97
+|  |  |  Rotation of 0.020769
+|  |  |  Axis of 1.000000, -0.000005, 0.000000
+|  |  |  Frame 98
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, 0.000001, 0.000002
+|  |  |  Frame 99
+|  |  |  Rotation of 0.020159
+|  |  |  Axis of 1.000000, 0.000004, -0.000002
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 475 (1dbH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 18 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Flame2
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 16
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Barrel Ri0
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -34.421276, -9.607575, 0.353415
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -0.207015, 0.232402, 43.037952
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 3.141593
+|  |  |  Axis of 0.707107, 0.000000, -0.707107
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 344 (158H) 
+|  |  |  18 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 22
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 23
+|  |  |  Scale of -0.938004, -1.061996, -1.061996
+|  |  |  Frame 28
+|  |  |  Scale of -0.938004, -1.061996, -1.061996
+|  |  |  Frame 29
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 35
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 36
+|  |  |  Scale of -0.938004, -1.061996, -1.061996
+|  |  |  Frame 40
+|  |  |  Scale of -0.938004, -1.061996, -1.061996
+|  |  |  Frame 41
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 64
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 65
+|  |  |  Scale of -0.938004, -1.061996, -1.061996
+|  |  |  Frame 69
+|  |  |  Scale of -0.938004, -1.061996, -1.061996
+|  |  |  Frame 70
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 88
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 89
+|  |  |  Scale of -0.938004, -1.061996, -1.061996
+|  |  |  Frame 93
+|  |  |  Scale of -0.938004, -1.061996, -1.061996
+|  |  |  Frame 94
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+|  |  |  Frame 99
+|  |  |  Scale of 0.061996, 0.061996, 0.061996
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 171 (abH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 19 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 21 (15H) 
+|  |  |  Object name: Sphere01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 1
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Turret
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -0.222621, -0.587138, 19.979664
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 0.714286
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 168 (a8H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 20 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Object name: Box01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 1
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Turret
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 3.889269, 15.722321, 9.904419
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 21 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Cylinder10
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 20
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Box01
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.997635, 0.795582, 8.683094
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 22 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Cylinder11
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 21
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Cylinder10
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.000000, 0.000000, 1.483948
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 23 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: Cylinder01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 1
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Turret
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.000000, 0.000000, -4.285349
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk LIGHT_NODE_TAG (b005H) 
+|  |  Length is 109 (6dH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 24 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Omni01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk COL_TRACK_TAG (b025H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Color R: 0.705882,G: 0.705882,B: 0.705882
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -342.743164, -349.906616, 365.788513
+
+|  |  Chunk CAMERA_NODE_TAG (b003H) 
+|  |  Length is 133 (85H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 25 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 21 (15H) 
+|  |  |  Object name: Camera01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -246.943954, -139.832138, 135.889786
+
+|  |  |  Chunk FOV_TRACK_TAG (b023H) 
+|  |  |  Length is 30 (1eH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Camera Fov of 45.000000
+
+|  |  |  Chunk ROLL_TRACK_TAG (b024H) 
+|  |  |  Length is 30 (1eH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Camera Roll of 0.000000
+
+|  |  Chunk TARGET_NODE_TAG (b004H) 
+|  |  Length is 73 (49H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 26 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 21 (15H) 
+|  |  |  Object name: Camera01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 26.655914, 4.158618, 23.358774

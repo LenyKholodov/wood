@@ -1,0 +1,15 @@
+What's New for FreeImagePlus
+
+* : fixed
+- : removed
+! : changed
++ : added
+
+November 2, 2003
++ [Herve Drolon] added fipImage::getScanLine
+
+October 20, 2003
+* [Dennis Lim] fixed a bug in fipImage constructor
+! [Herve Drolon] fixed a bug with fipImage::saveToHandle prototype
+
+September 8th 2003 - Wrapper for FreeImage 3.0.0

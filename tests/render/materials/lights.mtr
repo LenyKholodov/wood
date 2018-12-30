@@ -1,0 +1,1381 @@
+table xray02table { 0, 1, .2, .8, .2, .5, .7, .2, .5, 1, 1, .3, .4, .1, 1, .3, .4, .7, 0, .1, .5, 1, .6, .9, .17, .5, 1} 
+table senescrollightable { -1, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0 } 
+table senescrollightableA { 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 } 
+table sargetable1 {1, 1, .2, 0, 0, 0, .2 }
+table sargetable2 {0, .2, 1, 1, .2, 0, 0 }
+table sargetable3 {0, 0, 0, .2, 1, 1, .2 }
+table firetable { .3, .2, .8, .1, .2, .3, .1, .5, .1, 1, .2, .3, .3, .2, .1, .1, .7 }
+table strobetable { 0, 0, 0, 0, 1, 1 }
+table blinktable { 0, 1 }
+table flashtable { 0, 0, 0, 0, .5, 0, .5, 0, 0, 0, 0, 0, .5, 0, .5, 0, .5, .5, 0, 0, 0, .5, 0, 1, 0, 1, 0, 0, 0, 0, .5 }
+table neontable1 { .3, 0, 0, 0, 0, .3, 0, 0, 0, 0, .3, 0, 0, .1, .075, .15, .22, .3, .3, .45, .52, .6, .67, .75, .82, .9, .95, 1, 0, 0, 0, .3, 0, 0, 0, 0, 0, 0, 0, .3, 0, 0, 0, 0, 0, 0, 0, 0, 1, .6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, .3, 0, 0, 0, 0 }
+snapTable neontable2 { 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1}
+snapTable blinktable2 { 0, 0, 0, 1 }
+table blasttable { 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 0, 2, 2, 2, 2, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, .6, .9, .3, .5, 0, .2, 0, 0, 0, 0, 0, 2, 2, 1 }
+table flickerblink {0, .3, .1, .5, .3, .8, .9, .5, .2, .1, .7, .4, 1, .2, .5, 0, .2, .7, .5 }
+table acceleratorfade { .1, .2 }
+clampTable acceleratorflashtable2 { 4, 2, 1, 1, 1, 1, 1, 1, 1, .1, .1, .1, .1  }
+table bathroomtable { .7, 1, .6, .8, .6, .6, .6, .7, .8, 1, 1, .9, .7, .8, 1, .7, .7, .8, .6, .7, .7, .8, .6, .9, .7, .9, 1} 
+table bathroom2table { .9, 1, 1.6, .8, 2, 1, 1.5, 1.7, .8, 1, 1.2, .9, .9, .8, 1.3, .8, .9, .8, 1.6, .7, 1.7, .9, 1.1, .9, .8, .9, 1} 
+table firelightrot { 13, 16, 123, 256, 90, 12, 190, 160, 1, 59, 280, 150, 15, 280 }
+soundtable	buzz_speaker { 0, 0 }
+soundtable	speaker_1 { 0, 0 }
+
+lights/pentflame
+{	
+
+	{
+
+		map	lights/pentflame.tga
+		colored
+		rotate	time * .2
+		zeroClamp
+	}
+}
+
+lights/pentagram
+{	
+	qer_editorimage textures/decals/pentagramfx.tga
+	{
+
+		map	textures/decals/pentagramfx.tga
+		colored
+
+		zeroClamp
+	}
+}
+
+
+lights/strobevent01
+{	
+	{
+
+		map	lights/strobevent01.tga 
+		colored
+		rgb		strobetable[ time * 2 ]
+		zeroClamp
+	}
+}
+
+
+lights/impflash
+{
+	{
+		
+		map lights/impflash.tga
+		zeroClamp
+		rotate	time * 3.7
+		//rgb		flickerblink[ time * 1 ]
+		colored
+	}
+}
+
+lights/spawnflash
+{
+	{
+		
+		map lights/spawnflash.tga
+		zeroClamp
+		rotate	time * 3.7
+		colored
+		//rgb		flickerblink[ time * 1 ]
+	}
+}
+
+
+lights/baronflash
+{
+	{
+		
+		map lights/baronflash.tga
+		zeroClamp
+		rotate	time * 3.7
+		colored
+		//rgb		flickerblink[ time * 1 ]
+	}
+}
+
+lights/flashlight4
+{
+	{
+		map	lights/flashlight4.tga
+		zeroClamp
+		//colored
+		//rgb		eyestable[ time * .05 ] 
+	}
+}
+
+
+lights/defaultPointLight
+{
+	lightFalloffImage	makeIntensity( lights/squarelight1a.tga )	// this will also be the falloff for any
+																	// point light shaders that don't specify one
+	{
+		map lights/squarelight1.tga
+		colored
+		zeroClamp
+	}
+}
+
+lights/desertambientlight
+{
+	ambientLight
+	lightFalloffImage	makeIntensity( lights/squarelight1a.tga )
+	{
+		map lights/squarelight.tga
+		red 	( deserttable [Parm4 + (time * 0.1)]) * Parm0
+		green 	( deserttable [Parm4 + (time * 0.1)]) * Parm1
+		blue 	( deserttable [Parm4 + (time * 0.1)]) * Parm2	
+		zeroClamp
+	}
+}
+
+lights/desertlight
+{
+	{
+
+		map	lights/desertlight.tga
+		red 	( deserttable [Parm4 + (time * 0.1) ]) * Parm0
+		green 	( deserttable [Parm4 + (time * 0.1) ]) * Parm1
+		blue 	( deserttable [Parm4 + (time * 0.1) ]) * Parm2	
+		rotate	( time * 0.25 )
+		zeroClamp
+	}
+}
+
+lights/defaultProjectedLight
+{
+	lightFalloffImage	_noFalloff		// by default, stay bright almost all the way to the end
+	{
+		map lights/squarelight1.tga
+		colored
+		zeroClamp
+	}
+}
+
+
+// an ambient light will do non-directional bump mapping, and won't have specular lighting
+// or shadows
+lights/ambientLight
+{
+	ambientLight
+	lightFalloffImage	makeIntensity( lights/squarelight1a.tga )
+	{
+		map lights/squarelight1.tga
+		colored
+		zeroClamp
+	}
+}
+
+
+lights/ambientLight2
+{
+	ambientLight
+	lightFalloffImage	makeIntensity( lights/squarelight1a.tga )
+	{
+		map lights/squarelight.tga
+		colored
+		zeroClamp
+	}
+}
+
+
+//parm 3=flicker speed	parm 4=offset
+
+lights/nofalloff
+{
+	{
+		map	lights/nofalloff.tga
+		colored
+		zeroClamp
+	}
+}
+
+lights/qcfloorvent01x
+{
+	{
+		map	lights/qcfloorvent01x.tga
+		colored
+		rgb		eyestable[ time * 1 ]
+		zeroClamp
+	}
+}
+
+
+
+lights/roundfire
+{
+	{
+		map	lights/roundfire.tga
+		red 	( firetable [Parm4 + (time / 6 * (Parm3)) ]) * Parm0
+		green 	( firetable [Parm4 + (time / 6 * (Parm3)) ]) * Parm1
+		blue 	( firetable [Parm4 + (time / 6 * (Parm3)) ]) * Parm2
+		rotate	firelightrot [ time * 2 ]
+		zeroClamp
+	}
+}
+
+lights/floorpgrate
+{
+	{
+		map	lights/floorpgrate.tga
+		colored
+		zeroClamp
+		
+	}
+}
+
+lights/qc_comj
+{
+	{
+		map	lights/qc_comj.tga
+		colored
+		rgb		eyestable[ time * 1.1 ]
+		zeroClamp
+		rotate	time * 0.2
+	}
+}
+
+
+
+lights/blamplight2
+{	
+	{
+
+		//map	makeIntensity( lights/blamplight2.tga )
+		map	lights/blamplight2.tga 
+		colored
+		rgb		bathroomtable[ time *.3 ]
+		zeroClamp
+	}
+}
+
+
+lights/killtest
+{
+	{
+		if ( parm6 == 1 )
+		map		lights/squarelight1.tga
+		red 		( ( blasttable [Parm4 + (time / 6 * (Parm3)) ]) * (Parm0 * acceleratorfade [ time / 7 ] ) )
+		green 		( ( blasttable [Parm4 + (time / 6 * (Parm3)) ]) * (Parm1 * acceleratorfade [ time / 7 ] ) )
+		blue 		( ( blasttable [Parm4 + (time / 6 * (Parm3)) ]) * (Parm2 * acceleratorfade [ time / 7 ] ) )
+		zeroclamp
+	}
+	{
+		if ( parm6 == 0 )
+		map		lights/squarelight1.tga
+		red 		( ( blasttable [Parm4 + (time / 6 * (Parm3)) ]) * Parm0 )
+		green 		( ( blasttable [Parm4 + (time / 6 * (Parm3)) ]) * Parm1 )
+		blue 		( ( blasttable [Parm4 + (time / 6 * (Parm3)) ]) * Parm2 )
+		zeroclamp
+	}
+}
+
+lights/floorvent01x_cv
+{
+	{
+		map	lights/floorvent01x_cv.tga
+		colored
+		red 		( flickerblink [Parm4 + (time * (1 * Parm3)) ]) * Parm0
+		green 		( flickerblink [Parm4 + (time * (1 * Parm3)) ]) * Parm1
+		blue 		( flickerblink [Parm4 + (time * (1 * Parm3)) ]) * Parm2
+		//rgb		eyestable[ time * 1 ]
+		zeroClamp
+	}
+}
+
+lights/fanlightgrateSC
+{
+	{
+		if ( global0 == 0 )
+		map		lights/fangrate.tga
+		colored
+		zeroclamp
+	}
+	{
+		if ( global0 == 0 )
+		map	lights/fanblade.tga
+		colored
+		zeroclamp
+		rotate	time * -1
+	}
+	{
+		if ( global0 != 0 )
+		map		lights/fangrate.tga
+		red	( Parm0 * acceleratorflashtable2[ ( time - global1 ) / 7 ] )
+		green	( Parm1 * acceleratorflashtable2[ ( time - global1 ) / 7 ] )
+		blue	( Parm2 * acceleratorflashtable2[ ( time - global1 ) / 7 ] )
+		zeroclamp
+	}
+	{
+		if ( global0 != 0 )
+		map	lights/fanblade.tga
+		red	( Parm0 * acceleratorflashtable2[ ( time - global1 ) / 7 ] )
+		green	( Parm1 * acceleratorflashtable2[ ( time - global1 ) / 7 ] )
+		blue	( Parm2 * acceleratorflashtable2[ ( time - global1 ) / 7 ] )
+		zeroclamp
+		rotate	time * -1
+	}
+}
+
+lights/fanblade3
+{
+	{
+		map		lights/fanblade3.tga
+		colored
+		zeroclamp
+		rotate	(time * -1) * Parm3 + Parm4
+	}
+}
+
+lights/fanlightgrate
+{
+	{
+		map		lights/fanblade.tga
+		colored
+		zeroclamp
+		rotate	time * -1
+	}
+	{
+		map		lights/fangrate.tga
+		colored
+		zeroclamp
+	}
+}
+
+lights/square_blast
+{
+	{
+
+		map		lights/squarelight1.tga
+		red 		( blasttable [Parm4 + (time / 6 * (Parm3)) ]) * Parm0
+		green 	( blasttable [Parm4 + (time / 6 * (Parm3)) ]) * Parm1
+		blue 		( blasttable [Parm4 + (time / 6 * (Parm3)) ]) * Parm2
+		zeroclamp
+	}
+}
+
+lights/square_strobe
+{
+	{
+		map		lights/squarelight1.tga
+		red 		( blinktable2 [Parm4 + (time * (6 * Parm3)) ]) * Parm0
+		green 		( blinktable2 [Parm4 + (time * (6 * Parm3)) ]) * Parm1
+		blue 		( blinktable2 [Parm4 + (time * (6 * Parm3)) ]) * Parm2
+		zeroclamp
+	}
+}
+
+lights/square_brokenneon2
+{	
+	{
+		map		lights/squarelight1.tga
+		red 		( neontable2 [Parm4 + (time * (.15 * Parm3)) ]) * Parm0
+		green 		( neontable2 [Parm4 + (time * (.15 * Parm3)) ]) * Parm1
+		blue 		( neontable2 [Parm4 + (time * (.15 * Parm3)) ]) * Parm2
+		zeroclamp
+	}
+}
+
+lights/square_brokenneon1
+{	
+	{
+		map		lights/squarelight1.tga
+		red 		( neontable1 [Parm4 + (time * (.2 * Parm3)) ]) * Parm0
+		green 		( neontable1 [Parm4 + (time * (.2 * Parm3)) ]) * Parm1
+		blue 		( neontable1 [Parm4 + (time * (.2 * Parm3)) ]) * Parm2
+		zeroclamp
+	}
+}
+
+lights/square_flicker2
+{	
+	{
+		map		lights/squarelight1.tga
+		red 		( flashtable [Parm4 + (time * (.25 * Parm3)) ]) * Parm0
+		green 	( flashtable [Parm4 + (time * (.25 * Parm3)) ]) * Parm1
+		blue 		( flashtable [Parm4 + (time * (.25 * Parm3)) ]) * Parm2
+		zeroclamp
+	}
+}
+
+lights/square_flicker
+{	
+	{
+		map		lights/squarelight1.tga
+		red 		((.25 * blinktable [Parm4 + (time * (15 * Parm3)) ]) +.75) * Parm0
+		green 	((.25 * blinktable [Parm4 + (time * (15 * Parm3)) ]) +.75) * Parm1
+		blue 		((.25 * blinktable [Parm4 + (time * (15 * Parm3)) ]) +.75) * Parm2
+		zeroclamp
+	}
+}
+
+lights/round_sin
+{	
+	{
+		map			lights/round.tga
+		red 		( sintable [Parm4 + (time * Parm3)] ) * Parm0
+		green 		( sintable [Parm4 + (time * Parm3)] ) * Parm1
+		blue 		( sintable [Parm4 + (time * Parm3)] ) * Parm2
+		zeroclamp
+	}
+}
+
+lights/round_strobe
+{	
+	{
+		map		lights/round.tga
+		red 		( blinktable2 [Parm4 + (time * (6 * Parm3)) ]) * Parm0
+		green 	( blinktable2 [Parm4 + (time * (6 * Parm3)) ]) * Parm1
+		blue 		( blinktable2 [Parm4 + (time * (6 * Parm3)) ]) * Parm2
+		zeroclamp
+	}
+}
+
+lights/round_brokenneon2
+{	
+	{
+		map		lights/round.tga
+		red 		( neontable2 [Parm4 + (time * (.15 * Parm3)) ]) * Parm0
+		green 	( neontable2 [Parm4 + (time * (.15 * Parm3)) ]) * Parm1
+		blue 		( neontable2 [Parm4 + (time * (.15 * Parm3)) ]) * Parm2
+		zeroclamp
+	}
+}
+
+lights/round_brokenneon1
+{	
+	{
+		map		lights/round.tga
+		red 		( neontable1 [Parm4 + (time * (.2 * Parm3)) ]) * Parm0
+		green 	( neontable1 [Parm4 + (time * (.2 * Parm3)) ]) * Parm1
+		blue 		( neontable1 [Parm4 + (time * (.2 * Parm3)) ]) * Parm2
+		zeroclamp
+	}
+}
+
+lights/round_flicker2
+{	
+	{
+		map		lights/round.tga
+		red 		( flashtable [Parm4 + (time * (.25 * Parm3)) ]) * Parm0
+		green 	( flashtable [Parm4 + (time * (.25 * Parm3)) ]) * Parm1
+		blue 		( flashtable [Parm4 + (time * (.25 * Parm3)) ]) * Parm2
+		zeroclamp
+	}
+}
+
+lights/round_flicker
+{	
+	{
+		map		lights/round.tga
+		red 		((.25 * blinktable [Parm4 + (time * (15 * Parm3)) ]) +.75) * Parm0
+		green 	((.25 * blinktable [Parm4 + (time * (15 * Parm3)) ]) +.75) * Parm1
+		blue 		((.25 * blinktable [Parm4 + (time * (15 * Parm3)) ]) +.75) * Parm2
+		zeroclamp
+	}
+}
+
+lights/mlight01
+
+{
+	{
+		map	lights/mlight01.tga
+		colored
+		zeroClamp
+	}
+}
+
+lights/blur_cv
+{
+	{
+		map	lights/blur_cv.tga
+		zeroClamp
+		colored
+	}
+}
+
+
+lights/blamplight_cv
+{
+	{
+
+		map	lights/blamplight_cv.tga
+		zeroClamp
+		colored
+		red 	((.1 * sintable [.15 + (time * 12) ]) +.9) * Parm0
+		green 	((.1 * sintable [.15 + (time * 12) ]) +.9) * Parm1
+		blue 	((.1 * sintable [.15 + (time * 12) ]) +.9) * Parm2
+	}
+}
+
+lights/xblamplight_cv
+{
+	{
+
+		map	lights/blamplight_cv.tga
+		colored
+		zeroClamp
+                red     ((.1 * sintable [(time * ( 12 + Parm3 ) ) ]) +.9) * Parm0
+                green   ((.1 * sintable [(time * ( 12 + Parm3 ) ) ]) +.9) * Parm1
+                blue    ((.1 * sintable [(time * ( 12 + Parm3 ) ) ]) +.9) * Parm2
+
+	}
+}
+
+lights/duolight02_cv
+{
+	{
+		map	lights/duolight02grey.tga
+		colored
+
+		red 	( neontable1 [Parm4 + (time * (1 * Parm3)) ]) * Parm0 * sound
+		green 	( neontable1 [Parm4 + (time * (1 * Parm3)) ]) * Parm1 * sound
+		blue 	( neontable1 [Parm4 + (time * (1 * Parm3)) ]) * Parm2 * sound
+
+//		red 	neontable1 [ time * 1 ] * Parm0
+//		green 	neontable1 [ time * 1 ] * Parm1
+//		blue 	neontable1 [ time * 1 ] * Parm2
+		//rgb		buzz_speaker[ time ]
+
+		//zeroClamp
+	}
+}
+
+
+lights/bspot01_cv
+{
+	{
+
+		map	lights/bspot01_cv.tga
+		zeroClamp
+		colored
+		red 	blighttable [ time * .2 ] * Parm0
+		green 	blighttable [ time * .2 ] * Parm1
+		blue 	blighttable [ time * .2 ] * Parm2
+	}
+}
+
+lights/xbspot01_cv
+{
+	{
+
+		map	lights/bspot01_cv.tga
+		zeroClamp
+		colored
+		red 	blighttable [ (time * .2) + Parm3 ] * Parm0
+		green 	blighttable [ (time * .2) + Parm3 ] * Parm1
+		blue 	blighttable [ (time * .2) + Parm3 ] * Parm2
+	}
+}
+
+lights/square
+{
+	{
+		map	lights/squarelight1.tga
+		zeroClamp
+		red 		((.1 * Parm3 [.15 + (time * 5 + Parm4) ]) +.9) * Parm0
+		green 	((.1 * Parm3 [.15 + (time * 5 + Parm4) ]) +.9) * Parm1
+		blue 		((.1 * Parm3 [.15 + (time * 5 + Parm4) ]) +.9) * Parm2
+	}
+}
+
+lights/rotate
+{
+
+	{
+		map	lights/rotate3.tga
+		colored
+		rotate	time * 1
+		zeroClamp
+	}
+	{
+		map	lights/rotate3.tga
+		colored
+		rotate	time * 1.6
+		zeroClamp
+	}
+
+}
+
+lights/bspot01
+{
+	{
+		map	lights/bspot01.tga
+		zeroClamp
+		colored
+                rgb		blighttable[ time * .2 ]
+	}
+}
+
+
+
+lights/spot01
+{
+	{
+		map	lights/spot01.tga
+		colored
+		zeroClamp
+	}
+}
+
+lights/flash
+{
+	{
+		map	lights/light.tga
+		rgb		flashtable[ time ]
+		zeroClamp
+	}
+}
+
+lights/onewaydown
+{	//falloff only goes in one direction.  should get rid of this once planar lights are implemented.
+	{
+
+		map	makeIntensity( lights/onewaydown.tga )
+		zeroClamp
+	}
+}
+
+lights/oneway
+{	//falloff only goes in one direction.  should get rid of this once planar lights are implemented.
+	{
+
+		map	makeIntensity( lights/oneway.tga )
+		zeroClamp
+	}
+}
+
+lights/blinds02
+{
+	{
+		map	lights/blinds02.tga
+		colored
+		rgb		eyestable[ time * .01 ]
+		zeroClamp
+	}
+}
+
+lights/duolight02
+{
+	{
+		map	lights/duolight01.tga
+		colored
+		red		(neontable1[ time * 3 ])  * parm0
+		green	(neontable1[ time * 3 ])  * parm1
+		blue	(neontable1[ time * 3 ])  * parm2
+		//zeroClamp					    
+	}								    
+}
+
+
+lights/duolight01
+{
+	{
+		map	lights/duolight01.tga
+		red		eyestable[ time * .01 ]
+		green  	eyestable[ time * .01 ]
+		blue   	eyestable[ time * .01 ]
+		zeroClamp
+	}
+}
+
+lights/blamplight_tile4
+{	
+	{
+
+		map	lights/blamplighttile.tga 
+		colored
+		rgb		blamptable[ time * .5 ]
+		zeroClamp
+	}
+}
+
+lights/blamplight
+{	
+	{
+
+		//map	makeIntensity( lights/blamplight.tga )
+		map	lights/blamplight.tga 
+		colored
+		rgb		blamptable[ time * 5 ]
+		zeroClamp
+	}
+}
+
+lights/blamplighte3
+{	
+	{
+
+		
+		map	lights/blamplighte3.tga 
+		colored
+		rgb		bathroom2table[ time * 1 ]
+		zeroClamp
+	}
+}
+
+lights/triangle
+{	
+	{
+
+		map	makeIntensity( lights/triangle.tga )
+		colored
+		zeroClamp
+	}
+}
+
+lights/squarelight_split
+{	
+	{
+
+		map	makeIntensity( lights/squarelight_split.tga )
+		colored
+		zeroClamp
+	}
+}
+
+lights/squarelight1a
+{	
+	{
+
+		map	makeIntensity( lights/squarelight1a.tga )
+		colored
+		zeroClamp
+	}
+}
+
+lights/mars_light
+{
+	{
+		map	lights/mars.tga
+		colored
+		rgb		eyestable[ time * 1 ]
+		zeroClamp
+	}
+}
+
+lights/brucedemo2
+{
+	{
+		map	lights/grate5.tga
+		colored
+		rgb		eyestable[ time * 3 ]
+		zeroClamp
+	}
+}
+
+lights/brucedemo1
+{
+	{
+		map	lights/crap02.tga
+		colored
+		//rgb		blinktable[ time * 1.6 ]
+		zeroClamp
+	}
+}
+
+
+lights/floorvent01blue
+{
+	{
+		map	lights/floorvent01blue.tga
+		colored
+		rgb		eyestable[ time * .8 ]
+		zeroClamp
+	}
+}
+
+lights/floorvent01int
+{
+	{
+		map	lights/floorvent01int.tga
+		colored
+		rgb		eyestable[ time * 1.1 ]
+		zeroClamp
+	}
+}
+
+lights/sarge_talk
+
+{
+	{
+		map	lights/grate5.tga
+		colored
+		//scroll time * .8 , time * .3
+		rotate	time * 1.1
+		rgb		firetable[ time * .5 ]
+		zeroClamp
+	}
+}
+
+lights/jethro_spot1
+
+{
+	{
+		map	lights/grate5.tga
+		colored
+		rotate	time * .05
+		zeroClamp
+	}
+}
+
+lights/floorvent02
+{
+	{
+		map	lights/floorvent01.tga
+		colored
+		rotate	time * .2
+		zeroClamp
+	}
+}
+
+lights/sarge_spot1
+{
+	{
+		map	lights/floorvent01.tga
+		colored
+		rgb		sargetable1[ time * .05 ]
+		//translate time *.2, time * 7
+		rotate	time * .2
+		zeroClamp
+	}
+}
+
+lights/sarge_spot2
+{
+	{
+		map	lights/flashlight.tga
+		colored
+		rgb		sargetable2[ time * .05 ]
+		rotate	time * .01
+		zeroClamp
+	}
+}
+
+lights/sarge_spot3
+{
+	{
+		map	lights/crap01.tga
+		colored
+		rgb		sargetable3[ time * .05 ]
+		rotate	time * 2
+		zeroClamp
+	}
+}
+
+lights/grate4
+{
+	{
+		map	lights/grate4.tga
+		colored
+		rgb		eyestable[ time * .1 ]
+		zeroClamp
+	}
+}
+
+lights/floorvent01
+{
+	{
+		map	lights/floorvent01.tga
+		colored
+		rgb		eyestable[ time * 1 ]
+		zeroClamp
+	}
+}
+
+lights/floorvent01x
+{
+	{
+		map	lights/floorvent01x.tga
+		colored
+		rgb		eyestable[ time * 1 ]
+		zeroClamp
+	}
+}
+
+
+
+lights/crap01
+{
+	{
+		map	lights/crap01.tga
+		colored
+		rgb		eyestable[ time * .1 ]
+		zeroclamp
+	}
+}
+
+
+
+lights/senescrollight
+{
+	{
+		//slowpass
+		map	lights/senescrollight.tga
+		translate		( senescrollightable [Parm4 + (time * (0.1 * Parm3)) ]) , 0
+		red 		( senescrollightableA [Parm4 + (time * (0.1 * Parm3)) ]) * Parm0
+		green		( senescrollightableA [Parm4 + (time * (0.1 * Parm3)) ]) * Parm1
+		blue		( senescrollightableA [Parm4 + (time * (0.1 * Parm3)) ]) * Parm2
+
+		zeroclamp
+	}
+	{
+		//fastpass
+		map	lights/senescrollight.tga
+		translate		( senescrollightable [Parm4 + (time * (2 * Parm3)) ]) , 0
+		red 		( senescrollightableA [Parm4 + (time * (2 * Parm3)) ]) * Parm0
+		green		( senescrollightableA [Parm4 + (time * (2 * Parm3)) ]) * Parm1
+		blue		( senescrollightableA [Parm4 + (time * (2 * Parm3)) ]) * Parm2
+		zeroclamp
+	}
+}
+
+lights/squarelight1blue
+{
+	{
+		map	lights/squarelight1blue.tga
+		zeroclamp
+	}
+}
+
+lights/squarelight2a
+{
+	{
+		map	lights/squarelight2.tga
+		rgb		flashtable[ time ]
+		zeroclamp
+	}
+}
+
+lights/squarelight2
+{
+	{
+		map	lights/squarelight2.tga
+//		rgb		flashtable[ time ]
+		zeroclamp
+	}
+}
+
+lights/twopass
+{
+	{
+		map	lights/squarelight1.tga
+		colored
+		zeroclamp
+	}
+	{
+		map	lights/inverse.tga
+		colored
+		zeroclamp
+	}
+}
+
+lights/squarelight1
+{
+	{
+		map	lights/squarelight1.tga
+		colored
+		zeroclamp
+	}
+}
+
+lights/xray02
+{
+	{
+		map	lights/asstemp2a.tga
+		colored
+		translate time * 2, time * .5
+		rgb xray02table[ time * .1 ]
+	}
+}
+
+lights/flashlight3
+{
+	{
+		map	lights/flashlight3.tga
+		zeroClamp
+		colored
+                rotate	time * .01
+	}
+}
+
+lights/flashlight3blue
+{
+	{
+		map	lights/flashlight3blue.tga
+		zeroClamp
+		colored
+                rotate	time * .01
+	}
+}	
+
+lights/grate3
+{
+	{
+		map lights/grate3.tga
+		zeroclamp
+		colored
+	}
+}
+
+lights/grate3x
+{
+	{
+		map lights/grate3x.tga
+		zeroclamp
+		colored
+	}
+}
+
+
+lights/bluetex2xlight
+{
+	{
+		map lights/bluetex2xlight.tga
+		zeroclamp
+		colored
+	}
+}
+
+lights/rspot01drk
+{
+	{
+		map	lights/spot01drk.tga
+		zeroClamp
+		colored
+        rotate	time * .5
+	}
+}
+
+lights/xray01
+{
+	{
+		map	lights/xray01.tga
+		zeroClamp
+		colored
+		rotate	time * 1
+	}
+	{
+		map	lights/xray01.tga
+		zeroClamp
+		colored
+		rotate	time * -3
+	}
+}
+
+lights/spot08
+{
+	{
+		map	lights/spot08.tga
+		zeroClamp
+		colored
+	}
+}
+
+lights/blur
+{
+	{
+		map	lights/blur.tga
+		zeroClamp
+		colored
+	}
+}
+
+lights/blur2
+{
+	{
+		map	lights/blur2.tga
+		zeroClamp
+		colored
+	}
+}
+
+lights/flashlight
+{
+	{
+		map	lights/flashlight.tga
+		zeroClamp
+		colored
+	}
+}
+
+lights/flashlight2
+{
+	{
+		map	lights/flashlight2.tga
+		zeroClamp
+		colored
+	}
+}
+
+lights/spot01drk
+{
+	{
+		map	lights/spot01drk.tga
+		zeroClamp
+		colored
+	}
+}
+
+lights/spot02
+{
+	{
+		map	lights/spot02.tga
+		zeroClamp
+		colored
+	}
+}
+
+lights/blur2
+{
+	{
+		map	lights/blur2.tga
+		zeroClamp
+		colored
+	}
+}
+
+lights/stainedglass
+{
+	{
+		map	lights/stainedglass3.tga
+		zeroClamp
+		colored
+	}
+}
+
+lights/redlight01
+{
+	{
+		map	lights/redcircuit.tga
+		zeroClamp
+	}
+}
+
+lights/spotlight04
+{
+	{
+		map	lights/spot04.tga
+		zeroClamp
+		colored
+	}
+}
+
+lights/blurlight3
+{
+	{
+		map	lights/blur3.tga
+		zeroClamp
+		colored
+	}
+}
+
+_spotlight
+{
+	{
+		map	_spotlight
+		zeroClamp
+		colored 
+	}
+}
+
+_pointLight1
+{
+	{
+		map	_pointLight1
+		zeroClamp
+		colored 
+	}
+}
+
+_pointLight2
+{
+	{
+		map	_pointLight2
+		zeroClamp
+		colored 
+	}
+}
+
+_pointLight3
+{
+	{
+		map	_pointLight3
+		zeroClamp
+		colored 
+	}
+}
+
+lights/windowLight
+{
+	{
+		map	lights/window
+		zeroClamp
+	}
+}
+
+
+lights/rotatingLight
+{
+	{
+		map	lights/spot05
+		zeroClamp
+		colored
+		rotate	time * 0.05
+	}
+}
+
+lights/swingingLight
+{
+	{
+		map	lights/spot05
+		//zeroClamp
+		colored
+		rotate	time * 3
+		scale	speaker_1[ time ] *0.75 + 0.25, speaker_1[ time ] *0.75 + 0.25
+		zeroClamp
+	}
+}
+
+lights/scalingLight
+{
+	{
+		map	lights/spot05
+		zeroClamp
+		colored
+		scale	scaleTable[time] * 0.25 + 0.75, scaleTable[time] * 0.25 + 0.75
+	}
+}
+
+lights/scaleRotateLight
+{
+	{
+		map	lights/spot05
+		zeroClamp
+		colored
+		scale	scaleTable[time], 2
+		rotate	time * 0.2
+	}
+}
+
+lights/rotateScaleLight
+{
+	{
+		map	lights/spot05
+		zeroClamp
+		colored
+		rotate	time * 0.2
+		scale	scaleTable[time], 2
+	}
+}
+
+
+table shearTable { -1, 0, 1, 0 }
+
+lights/shearingLight
+{
+	{
+		map	lights/spot05
+		zeroClamp
+		colored
+		// shrink it down so we can distort it without
+		// going out of bounds
+		scale	2, 2
+		rotate	time * 0.2
+		// now shear it side to side
+		shear	shearTable[time] * 0.5, 0
+	}
+}
+
+lights/translatingLight
+{
+	{
+		map	lights/spot05
+		zeroClamp
+		colored
+
+		// there is enough border in the texture to let us move it this small
+		// amount without needing a downscale
+
+		// use two different scale values so the period of jitter doesn't seem so short
+		translate	0.05 * scaleTable[time], 0.05 * scaleTable[time*0.7]
+	}
+}
+
+
+table calRedTable { 1, 0, 0 }
+table calGreenTable { 0, 1, 0 }
+table calBlueTable { 0, 0, 1 }
+
+lights/colorAnimatingLight
+{
+	{
+		map	lights/spot05
+		zeroClamp
+		red		calRedTable[time*0.5]
+		green	calGreenTable[time*0.5]
+		blue	calBlueTable[time*0.5]
+	}
+}
+
+
+lights/doubleLight
+{
+	{
+		map	lights/spot07
+		zeroClamp
+		colored
+		rotate	time * 0.05
+	}
+	{
+		map	lights/spot05
+		zeroClamp
+		colored
+		scale	2, 2
+		shear	shearTable[time] * 2, 0
+		rotate	time * -0.05
+	}
+}
+
+
+lights/squarelight
+{
+	{
+
+		map	lights/squarelight.tga
+		zeroClamp
+		colored
+	}
+}
+
+
+lights/testFalloff
+{	// this is just a double bump for demonstrating custom falloffs
+	{
+
+		map	makeIntensity( lights/testFalloff.tga )
+		zeroClamp
+	}
+}
+
+lights/xfalloff
+{
+	// xian's pointlight falloff thingy
+	{
+		map makeintensity (lights/xfalloff.tga)
+		colored
+		zeroClamp
+	}
+}
+
+lights/xambient
+{
+	// xian's ambient texture volume thingy
+	{
+		map makeintensity (lights/xambient.tga)
+		zeroClamp
+		colored
+	}
+}
+

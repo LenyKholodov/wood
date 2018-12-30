@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenALPlayer", "OpenALPlayer.vcproj", "{41CDD41F-365F-4BC2-B7DA-F78F4B75AF73}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoundLib", "SoundLib\SoundLib.vcproj", "{1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{41CDD41F-365F-4BC2-B7DA-F78F4B75AF73}.0 = {1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{41CDD41F-365F-4BC2-B7DA-F78F4B75AF73}.Debug.ActiveCfg = Debug|Win32
+		{41CDD41F-365F-4BC2-B7DA-F78F4B75AF73}.Debug.Build.0 = Debug|Win32
+		{41CDD41F-365F-4BC2-B7DA-F78F4B75AF73}.Release.ActiveCfg = Release|Win32
+		{41CDD41F-365F-4BC2-B7DA-F78F4B75AF73}.Release.Build.0 = Release|Win32
+		{1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44}.Debug.ActiveCfg = Debug|Win32
+		{1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44}.Debug.Build.0 = Debug|Win32
+		{1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44}.Release.ActiveCfg = Release|Win32
+		{1CA5BD70-3E2D-4E32-AD6F-D7843C7C8A44}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

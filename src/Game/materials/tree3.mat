@@ -1,0 +1,28 @@
+material {
+	name "trees/Material #8"
+
+
+	diffuse 77 52 29 
+	specular 229 229 229 
+	ambient 77 52 29 
+	emission 0 0 0 
+
+	shiness 25
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "trees/Material10"
+
+
+	diffuse 23 104 14 
+	specular 192 192 192 
+	ambient 23 104 14 
+	emission 0 0 0 
+
+	shiness 20
+	alpha_koef 1
+	alpha_present 0
+}
+

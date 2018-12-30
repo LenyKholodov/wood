@@ -1,0 +1,30 @@
+material {
+	name "trees/Wood_Bark"
+
+	diffuse_map "bark4.jpg"
+
+	diffuse 148 105 50 
+	specular 229 229 229 
+	ambient 148 105 50 
+	emission 0 0 0 
+
+	shiness 100
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "trees/Stones_Limestone"
+
+	diffuse_map "limesto1.jpg"
+
+	diffuse 114 114 114 
+	specular 229 229 229 
+	ambient 114 114 114 
+	emission 0 0 0 
+
+	shiness 100
+	alpha_koef 1
+	alpha_present 0
+}
+

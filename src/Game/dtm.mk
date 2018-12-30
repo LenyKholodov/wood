@@ -1,0 +1,11 @@
+raw_file                "raw/terrain1.raw"
+raw_texture             "textures/terrain1.tga"
+map                     "maps/park.map"
+raw_width               0
+raw_height              0
+raw_tile_width          16
+raw_tile_height         16
+raw_texture_tile_width  128
+raw_texture_tile_height 128
+map_include             0
+max_height              40

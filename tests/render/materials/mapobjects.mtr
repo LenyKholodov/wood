@@ -1,0 +1,1852 @@
+table fivestage { 1, 0, 0, 0, 0 }
+
+models/mapobjects/teleporter/zot1
+{
+    noselfShadow
+    noshadows	
+	translucent
+	surfaceparm discrete
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage  models/mapobjects/teleporter/zot1.tga 
+
+		{ 
+      
+      		 blend	add
+	 		map	models/mapobjects/teleporter/zot1.tga
+			rgb	elevenstage [ time * Parm3 + Parm4 + 0/ 5 ]
+		}
+	               	
+		{ 
+      
+      		 blend	add
+	 		map	models/mapobjects/teleporter/zot2.tga
+			rgb	elevenstage [ time * Parm3 + Parm4 + 1.0 / 5 ]
+		}
+	               	
+		{ 
+      
+      		 blend	add
+	 		map	models/mapobjects/teleporter/zot3.tga
+			rgb	elevenstage [ time * Parm3 + Parm4 + 2.0 / 5 ]
+		}
+	               	
+		{ 
+      
+      		 blend	add
+	 		map	models/mapobjects/teleporter/zot4.tga
+			rgb	elevenstage [ time * Parm3 + Parm4 + 3.0 / 5 ]
+		}
+	               	
+		{ 
+      
+      		 blend	add
+	 		map	models/mapobjects/teleporter/zot5.tga
+			rgb	elevenstage [ time * Parm3 + Parm4 + 4.0 / 5 ]
+		}
+	               	
+
+}
+
+
+models/mapobjects/teleporter/nob1
+
+{
+    noselfShadow
+    noshadows	
+	translucent
+	surfaceparm discrete
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage  models/mapobjects/teleporter/nob1.tga 
+
+		{ 
+      
+      		 blend	add
+	 		map	models/mapobjects/teleporter/nob1.tga
+			rgb		eyestable[ time * .5 ] 
+	}
+	               	
+
+}
+models/mapobjects/teleporter/redflare
+
+{
+    noselfShadow
+    noshadows	
+	deform sprite
+	translucent
+	surfaceparm discrete
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage  models/mapobjects/teleporter/redflare.tga 
+
+		{ 
+      
+      		 blend	add
+	 		map	models/mapobjects/teleporter/redflare.tga
+			rgb		eyestable[ time * 1 ] 
+			rotate	( time * 6 )
+	}
+			{ 
+      
+      		 blend	add
+	 		map	models/mapobjects/teleporter/redflare.tga
+			rgb		eyestable[ time * 1.1 ] 
+			rotate	( time * -5.3 )
+	}
+	      
+	               	
+
+}
+
+models/mapobjects/teleporter/teleskull
+{
+	noselfshadow
+	noshadows
+	translucent
+
+	renderbump  -size 1024 1024 -aa 2 -trace 0.05 models/mapobjects/teleporter/teleskull_local.tga models/mapobjects/teleporter/teleskull_hi.lwo
+
+
+	  bumpmap 	addnormals (models/mapobjects/teleporter/teleskull_local.tga, heightmap (models/mapobjects/teleporter/teleskull_h.tga, 5) )
+	diffusemap	models/mapobjects/teleporter/teleskull.tga
+	specularmap 	models/mapobjects/teleporter/teleskull_s.tga
+}
+
+models/mapobjects/fpos/fpos
+
+{
+		noselfshadow
+	renderbump  -size 512 512 -aa 2 -trace 0.05 -colorMap models/mapobjects/fpos/fpos_local.tga models/mapobjects/fpos/fpos_hi.lwo
+
+
+// blended part
+	{
+		blend 		bumpmap
+		map		addnormals (models/mapobjects/fpos/fpos_local.tga, heightmap (models/mapobjects/fpos/fpos_h.tga, 5) ) 
+	// note that you do NOT put vertexColor on the bumpmap
+	}
+	{
+		blend 		diffusemap
+		map		models/mapobjects/fpos/fpos.tga
+		rgb		(sinTable [(time*.2)]+1)*0.5
+		//alphaTest .5 + 0.5 * sintable [ time * .1  ]
+	}
+	{
+		blend		specularmap
+		map		models/mapobjects/fpos/fpos_s.tga
+		rgb		(sinTable [(time*.2)]+1)*0.5
+	}
+// inverse blended part
+	{
+		blend		bumpmap
+		map		addnormals (models/mapobjects/fpos/fpos_local.tga, heightmap (models/mapobjects/fpos/fpos2_h.tga, 5) ) 
+	}
+	{
+		blend		diffusemap
+		map		models/mapobjects/fpos/fpos2.tga
+		rgb		1-(sinTable [(time*.2)]+1)*0.5
+		//alphaTest .5 + 0.5 * sintable [ time * .1  ]
+	}
+	{
+		blend 		specularmap
+		map		models/mapobjects/fpos/fpos2_s.tga
+		rgb		1-(sinTable [(time*.2)]+1)*0.5
+	}
+
+
+
+}
+
+models/wipes/starssmaller
+{
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+
+
+ {
+
+blend Add
+map		models/wipes/starssmaller.tga
+rgb 3
+}
+
+}
+
+
+models/mapobjects/pentagram/pentagram
+{
+	noselfshadow
+	renderbump  -size 1024 1024 -aa 2 -trace 0.05 -colorMap models/mapobjects/pentagram/pentagram_local.tga models/mapobjects/pentagram/pentagram_hi.lwo
+
+
+	  bumpmap 	addnormals (models/mapobjects/pentagram/pentagram_local.tga, heightmap (models/mapobjects/pentagram/pentagram_h.tga, 5) )
+	diffusemap	models/mapobjects/pentagram/pentagram.tga
+	specularmap 	models/mapobjects/pentagram/pentagram_s.tga
+}
+
+
+
+
+
+models/mapobjects/washroom/bsink
+{
+	renderbump  -size 512 512 -aa 2 -trace 0.1 -colorMap models/mapobjects/washroom/bsink_local.tga models/mapobjects/washroom/bsink_hi.lwo
+
+	bumpmap 	models/mapobjects/washroom/bsink_local.tga
+	diffusemap	models/mapobjects/washroom/bsink.tga
+	specularmap	models/mapobjects/washroom/bsink_s.tga
+}
+
+
+
+
+table camblinktable { 0.2, 1 }
+
+models/mapobjects/monitors/a_hangingmonitor
+{
+	bumpmap		models/mapobjects/monitors/hangingmonitor_local.tga
+	diffusemap		models/mapobjects/monitors/a_hangingmonitor_d.tga
+	specularmap		models/mapobjects/monitors/a_hangingmonitor_s.tga
+}
+
+
+
+
+models/mapobjects/architecture_pieces/tech1_archcorner/tech1_archcorner
+{
+      
+}
+
+models/mapobjects/arch/soccerdome/soccerdome
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -aa 2  models/mapobjects/arch/soccerdome/soccerdome_local.tga models/mapobjects/arch/soccerdome/soccerdome_hi.lwo
+
+                diffusemap	models/mapobjects/arch/soccerdome/soccerdome_d.tga
+		bumpmap		models/mapobjects/arch/soccerdome/soccerdome_local.tga
+                specularmap	models/mapobjects/arch/soccerdome/soccerdome_s.tga
+}
+
+models/mapobjects/matt_test/mattsimple
+{
+	noselfshadow
+	renderbump		-size 256 256 -trace .3 -aa 2 models/mapobjects/matt_test/mattsimple_local.tga models/mapobjects/matt_test/mattsimplehigh.ase
+	diffusemap		models/mapobjects/matt_test/mattsimple_d.tga
+	bumpmap			models/mapobjects/matt_test/mattsimple_local.tga
+	specularmap		models/mapobjects/matt_test/mattsimple_s.tga
+}
+
+
+models/mapobjects/recycle/groovetank/groovetank
+{
+         
+
+	renderbump  -size 512 512 -aa 2  models/mapobjects/recycle/groovetank/groovetank_local.tga models/mapobjects/recycle/groovetank/groovetank_hi.lwo
+
+                diffusemap	models/mapobjects/recycle/groovetank/groovetank_d.tga
+		bumpmap		models/mapobjects/recycle/groovetank/groovetank_local.tga
+                specularmap	models/mapobjects/recycle/groovetank/groovetank_s.tga
+}
+
+models/mapobjects/utility/tecknob1/tecknob1
+{
+         noselfshadow
+
+	renderbump  -size 256 256 -aa 2  models/mapobjects/utility/tecknob1/tecknob1_local.tga models/mapobjects/utility/tecknob1/tecknob1_hi.lwo
+
+                diffusemap	models/mapobjects/utility/tecknob1/tecknob1_d.tga
+		bumpmap		models/mapobjects/utility/tecknob1/tecknob1_local.tga
+                specularmap	models/mapobjects/utility/tecknob1/tecknob1_s.tga
+}
+
+models/mapobjects/utility/tecknob2/tecknob2
+{
+         noselfshadow
+
+	renderbump  -size 256 256 -aa 2  models/mapobjects/utility/tecknob2/tecknob2_local.tga models/mapobjects/utility/tecknob2/tecknob2_hi.lwo
+
+                diffusemap	models/mapobjects/utility/tecknob2/tecknob2_d.tga
+		bumpmap		models/mapobjects/utility/tecknob2/tecknob2_local.tga
+                specularmap	models/mapobjects/utility/tecknob2/tecknob2_s.tga
+}
+
+models/mapobjects/guiobjects/techdrpanel1/techdrpanel1
+{
+         noselfshadow
+
+	renderbump  -size 256 256 -aa 2  models/mapobjects/guiobjects/techdrpanel1/techdrpanel1_local.tga models/mapobjects/guiobjects/techdrpanel1/techdrpanel1_hi.lwo
+        diffusemap	models/mapobjects/guiobjects/techdrpanel1/techdrpanel1_d.tga
+        bumpmap 	addnormals (models/mapobjects/guiobjects/techdrpanel1/techdrpanel1_local.tga, heightmap (models/mapobjects/guiobjects/techdrpanel1/techdrpanel1_bmp.tga, 3) )
+        specularmap	models/mapobjects/guiobjects/techdrpanel1/techdrpanel1_s.tga
+}
+
+textures/base_door/doorlight
+{
+	qer_editorimage	textures/base_door/doorlight_red.tga
+	bumpmap		textures/base_door/doorlight_local.tga
+       	diffusemap	textures/base_door/doorlight_red.tga
+		{
+		if ( parm7 == 0 )
+		blend 	add
+		map		textures/base_door/doorlight_red.tga
+		rgb		5
+	}
+	{
+		if ( parm7 == 1 )
+		blend 	add
+		map		textures/base_door/doorlight_grn.tga
+		rgb		5
+	}
+}
+
+textures/base_door/doorlight_red_to_green
+{
+	qer_editorimage	textures/base_door/doorlight_red.tga
+	bumpmap		textures/base_door/doorlight_local.tga
+       	diffusemap	textures/base_door/doorlight_red.tga
+		{
+		if ( parm7 == 1 )
+		blend 	add
+		map		textures/base_door/doorlight_red.tga
+		rgb		5
+	}
+	{
+		if ( parm7 == 0 )
+		blend 	add
+		map		textures/base_door/doorlight_grn.tga
+		rgb		5
+	}
+}
+
+models/mapobjects/doors/hazdoor1/hazdoor1frm
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -aa 2  models/mapobjects/doors/hazdoor1/hazdoor1frm_local.tga models/mapobjects/doors/hazdoor1/hazdoor1frm_hi.lwo
+
+                diffusemap	models/mapobjects/doors/hazdoor1/hazdoor1frm_d.tga
+		bumpmap		models/mapobjects/doors/hazdoor1/hazdoor1frm_local.tga
+                specularmap	models/mapobjects/doors/hazdoor1/hazdoor1frm_s.tga
+}
+
+models/mapobjects/doors/hazdoor1/hazdoor1lf
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -aa 2  models/mapobjects/doors/hazdoor1/hazdoor1lf_local.tga models/mapobjects/doors/hazdoor1/hazdoor1lf_hi.lwo
+
+                diffusemap	models/mapobjects/doors/hazdoor1/hazdoor1lf_d.tga
+		bumpmap		models/mapobjects/doors/hazdoor1/hazdoor1lf_local.tga
+                specularmap	models/mapobjects/doors/hazdoor1/hazdoor1lf_s.tga
+}
+
+models/mapobjects/doors/hazdoor1/hazdoor1rt
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -aa 2  models/mapobjects/doors/hazdoor1/hazdoor1rt_local.tga models/mapobjects/doors/hazdoor1/hazdoor1rt_hi.lwo
+
+                diffusemap	models/mapobjects/doors/hazdoor1/hazdoor1rt_d.tga
+		bumpmap		addnormals (models/mapobjects/doors/hazdoor1/hazdoor1rt_local.tga, heightmap (models/mapobjects/doors/hazdoor1/hazdoor1rt_bmp.tga, 3) )
+                specularmap	models/mapobjects/doors/hazdoor1/hazdoor1rt_s.tga
+}
+
+models/mapobjects/doors/techdoor1/techdframe1
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -aa 2  models/mapobjects/doors/techdoor1/techdframe1_local.tga models/mapobjects/doors/techdoor1/techdframe1_hi.lwo
+
+                diffusemap	models/mapobjects/doors/techdoor1/techdframe1_d.tga
+		bumpmap		models/mapobjects/doors/techdoor1/techdframe1_local.tga
+                specularmap	models/mapobjects/doors/techdoor1/techdframe1_s.tga
+}
+
+models/mapobjects/doors/techdoor2/techdr2frame
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -trace 0.1 -aa 2 models/mapobjects/doors/techdoor2/techdr2frame_local.tga models/mapobjects/doors/techdoor2/techdr2frame_hi.lwo
+
+                diffusemap	models/mapobjects/doors/techdoor2/techdr2frame_d.tga
+		bumpmap		models/mapobjects/doors/techdoor2/techdr2frame_local.tga
+                specularmap	models/mapobjects/doors/techdoor2/techdr2frame_s.tga
+}
+
+models/mapobjects/doors/techdoor2/techdr2lft
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -trace 0.1 models/mapobjects/doors/techdoor2/techdr2lft_local.tga models/mapobjects/doors/techdoor2/techdr2lft_hi.lwo
+        diffusemap	models/mapobjects/doors/techdoor2/techdr2cb_d.tga
+{
+	blend bumpmap
+        map		addnormals (models/mapobjects/doors/techdoor2/techdr2cb_local.tga, heightmap (models/mapobjects/doors/techdoor2/techdr2cb_bmp.tga, 3) )
+	highquality
+	}
+        specularmap	models/mapobjects/doors/techdoor2/techdr2cb_s.tga
+}
+
+models/mapobjects/doors/techdoor2/techdr2lft_blu
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -trace 0.1 models/mapobjects/doors/techdoor2/techdr2lft_local.tga models/mapobjects/doors/techdoor2/techdr2lft_hi.lwo
+        diffusemap	models/mapobjects/doors/techdoor2/techdr2cbblu_d.tga
+{
+	blend bumpmap
+        map		addnormals (models/mapobjects/doors/techdoor2/techdr2cb_local.tga, heightmap (models/mapobjects/doors/techdoor2/techdr2cb_bmp.tga, 3) )
+	highquality
+	}
+        specularmap	models/mapobjects/doors/techdoor2/techdr2cb_s.tga
+}
+
+models/mapobjects/doors/techdoor2/techdr2rt
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -trace 0.1 models/mapobjects/doors/techdoor2/techdr2rt_local.tga models/mapobjects/doors/techdoor2/techdr2rt_hi.lwo
+        diffusemap	models/mapobjects/doors/techdoor2/techdr2cb_d.tga
+{
+	blend bumpmap
+        map		addnormals (models/mapobjects/doors/techdoor2/techdr2cb_local.tga, heightmap (models/mapobjects/doors/techdoor2/techdr2cb_bmp.tga, 3) )
+	highquality
+	}
+        specularmap	models/mapobjects/doors/techdoor2/techdr2cb_s.tga
+}
+
+models/mapobjects/doors/techdoor2/techdr2rt_blu
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -trace 0.1 models/mapobjects/doors/techdoor2/techdr2rt_local.tga models/mapobjects/doors/techdoor2/techdr2rt_hi.lwo
+        diffusemap	models/mapobjects/doors/techdoor2/techdr2cbblu_d.tga
+{
+	blend bumpmap
+        map		addnormals (models/mapobjects/doors/techdoor2/techdr2cb_local.tga, heightmap (models/mapobjects/doors/techdoor2/techdr2cb_bmp.tga, 3) )
+	highquality
+	}
+        specularmap	models/mapobjects/doors/techdoor2/techdr2cb_s.tga
+}
+
+
+models/mapobjects/doors/techdoor1/techdr1frame
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -trace 0.1 -aa 2  models/mapobjects/doors/techdoor1/techdr1frame_local.tga models/mapobjects/doors/techdoor1/techdr1frame_hi.lwo
+
+                diffusemap	models/mapobjects/doors/techdoor1/techdr1frame_d.tga
+		bumpmap		models/mapobjects/doors/techdoor1/techdr1frame_local.tga
+                specularmap	models/mapobjects/doors/techdoor1/techdr1frame_s.tga
+}
+
+models/mapobjects/doors/techdoor1/techdr1lft
+{
+         noselfshadow
+
+	renderbump  -size 256 256 -trace 0.1 -aa 1  models/mapobjects/doors/techdoor1/techdr1lft_local.tga models/mapobjects/doors/techdoor1/techdr1lft_hi.lwo
+
+                diffusemap	models/mapobjects/doors/techdoor1/techdr1lft_d.tga
+		bumpmap		models/mapobjects/doors/techdoor1/techdr1lft_local.tga
+                specularmap	models/mapobjects/doors/techdoor1/techdr1lft_s.tga
+}
+
+
+models/mapobjects/doors/techdoor1/techdr1rt
+{
+        
+        noselfshadow
+	renderbump  -size 512 512 -trace 0.08 -aa 1 models/mapobjects/doors/techdoor1/techdr1rt_local.tga models/mapobjects/doors/techdoor1/techdr1rt_hi.lwo
+
+                diffusemap	models/mapobjects/doors/techdoor1/techdr1rt_d.tga
+	{
+		blend bumpmap
+                map		addnormals (models/mapobjects/doors/techdoor1/techdr1rt_local.tga, heightmap (models/mapobjects/doors/techdoor1/techdr1rt_bmp.tga, 3) )
+		highquality
+	}
+                specularmap	models/mapobjects/doors/techdoor1/techdr1rt_s.tga
+}
+
+models/mapobjects/doors/techdoor1/techdr1rt_grn
+{
+        
+        noselfshadow
+	renderbump  -size 512 512 -trace 0.08 -aa 1 models/mapobjects/doors/techdoor1/techdr1rt_local.tga models/mapobjects/doors/techdoor1/techdr1rt_hi.lwo
+
+                diffusemap	models/mapobjects/doors/techdoor1/techdr1rt_grn_d.tga
+	{
+		blend bumpmap
+                map		addnormals (models/mapobjects/doors/techdoor1/techdr1rt_local.tga, heightmap (models/mapobjects/doors/techdoor1/techdr1rt_bmp.tga, 3) )
+		highquality
+	}
+                specularmap	models/mapobjects/doors/techdoor1/techdr1rt_s.tga
+}
+
+models/mapobjects/doors/techdoor1/techdr1rt_red
+{
+        
+        noselfshadow
+	renderbump  -size 512 512 -trace 0.08 -aa 1 models/mapobjects/doors/techdoor1/techdr1rt_local.tga models/mapobjects/doors/techdoor1/techdr1rt_hi.lwo
+
+                diffusemap	models/mapobjects/doors/techdoor1/techdr1rt_red_d.tga
+	{
+		blend bumpmap
+                map		addnormals (models/mapobjects/doors/techdoor1/techdr1rt_local.tga, heightmap (models/mapobjects/doors/techdoor1/techdr1rt_bmp.tga, 3) )
+		highquality
+	}
+                specularmap	models/mapobjects/doors/techdoor1/techdr1rt_s.tga
+}
+
+models/mapobjects/doors/techdoor1/techdr1rt_blu
+{
+        
+        noselfshadow
+	renderbump  -size 512 512 -trace 0.08 -aa 1 models/mapobjects/doors/techdoor1/techdr1rt_local.tga models/mapobjects/doors/techdoor1/techdr1rt_hi.lwo
+
+                diffusemap	models/mapobjects/doors/techdoor1/techdr1rt_blu_d.tga
+	{
+		blend bumpmap
+                map		addnormals (models/mapobjects/doors/techdoor1/techdr1rt_local.tga, heightmap (models/mapobjects/doors/techdoor1/techdr1rt_bmp.tga, 3) )
+		highquality
+	}
+                specularmap	models/mapobjects/doors/techdoor1/techdr1rt_s.tga
+}
+
+models/mapobjects/lab/hydrocon/hydrocon
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -trace 0.1 -aa 2  models/mapobjects/lab/hydrocon/hydrocon_local.tga models/mapobjects/lab/hydrocon/hydrocon_hi.lwo
+
+                diffusemap	models/mapobjects/lab/hydrocon/hydrocon_d.tga
+	{
+		blend bumpmap
+                map		addnormals (models/mapobjects/lab/hydrocon/hydrocon_local.tga, heightmap (models/mapobjects/lab/hydrocon/hydrocon_bmp.tga, 3) )
+		highquality
+	}
+                specularmap	models/mapobjects/lab/hydrocon/hydrocon_s.tga
+}
+
+models/mapobjects/lab/destab/destabase
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -trace 0.1 -aa 2  models/mapobjects/lab/destab/destabase_local.tga models/mapobjects/lab/destab/destabase_hi.lwo
+
+                diffusemap	models/mapobjects/lab/destab/destabase_d.tga
+		bumpmap		models/mapobjects/lab/destab/destabase_local.tga
+                specularmap	models/mapobjects/lab/destab/destabase_s.tga
+}
+
+models/mapobjects/lab/destab/destabarrel
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -trace 0.1 -aa 2  models/mapobjects/lab/destab/destabarrel_local.tga models/mapobjects/lab/destab/destabarrel_hi.lwo
+
+                diffusemap	models/mapobjects/lab/destab/destabarrel_d.tga
+	{
+		blend bumpmap
+                map		models/mapobjects/lab/destab/destabarrel_local.tga
+		highquality
+	}
+                specularmap	models/mapobjects/lab/destab/destabarrel_s.tga
+}
+
+models/mapobjects/lab/destab/destabmain
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -trace 0.1 -aa 2  models/mapobjects/lab/destab/destabmain_local.tga models/mapobjects/lab/destab/destabmain_hi.lwo
+
+                diffusemap	models/mapobjects/lab/destab/destabmain_d.tga
+		bumpmap 	addnormals ( models/mapobjects/lab/destab/destabmain_local.tga, heightmap (models/mapobjects/lab/destab/destabmain_bmp.tga, 3) ) 
+                specularmap	models/mapobjects/lab/destab/destabmain_s.tga
+}
+
+models/mapobjects/lab/destab/shaftcap
+{
+         
+
+	renderbump  -size 512 512 -trace 0.08 -aa 2 models/mapobjects/lab/destab/shaftcap_local.tga models/mapobjects/lab/destab/shaftcap_hi.lwo
+
+                diffusemap	models/mapobjects/lab/destab/shaftcap_d.tga
+		bumpmap 	addnormals ( models/mapobjects/lab/destab/shaftcap_local.tga, heightmap (models/mapobjects/lab/destab/shaftcap_bmp.tga, 3) )  
+                specularmap	models/mapobjects/lab/destab/shaftcap_s.tga
+}
+
+models/mapobjects/utility/trihatch/trihatch
+{
+         noselfshadow
+
+	renderbump  -size 256 256 -trace 0.1 -aa 2  models/mapobjects/utility/trihatch/trihatch_local.tga models/mapobjects/utility/trihatch/trihatch_hi.lwo
+           	
+		diffusemap	models/mapobjects/utility/trihatch/trihatch_d.tga
+		bumpmap		models/mapobjects/utility/trihatch/trihatch_local.tga
+                specularmap	models/mapobjects/utility/trihatch/trihatch_s.tga
+}
+
+models/mapobjects/utility/trihatch/trihatch2
+{
+         
+	renderbump  -size 256 256 -trace 0.1 -aa 2  models/mapobjects/utility/trihatch2/trihatch2_local.tga models/mapobjects/utility/trihatch2/trihatch2_hi.lwo
+           	
+	diffusemap	models/mapobjects/utility/trihatch2/trihatch2_d.tga
+		bumpmap		models/mapobjects/utility/trihatch2/trihatch2_local.tga
+                specularmap	models/mapobjects/utility/trihatch2/trihatch2_s.tga
+}
+
+models/mapobjects/utility/vent/vent
+{
+         noselfshadow
+
+	renderbump  -size 256 256 -trace 0.1 -aa 2  models/mapobjects/utility/vent/vent_local.tga models/mapobjects/utility/vent/vent_hi.lwo
+
+                diffusemap	models/mapobjects/utility/vent/vent_d.tga
+		bumpmap		models/mapobjects/utility/vent/vent_local.tga
+                specularmap	models/mapobjects/utility/vent/vent_s.tga
+}
+
+models/mapobjects/utility/binplug/binplug_c
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -trace 0.1 -aa 2  models/mapobjects/utility/binplug/binplug_c_local.tga models/mapobjects/utility/binplug/binplug_c_hi.lwo
+        diffusemap   	models/mapobjects/utility/binplug/binplug_c_d.tga
+	bumpmap		models/mapobjects/utility/binplug/binplug_c_local.tga
+        specularmap	models/mapobjects/utility/binplug/binplug_c_s.tga
+}
+
+models/mapobjects/utility/binplug/binplug_o
+{
+         noselfshadow
+
+	renderbump  -size 512 512 -trace 0.1 -aa 2  models/mapobjects/utility/binplug/binplug_o_local.tga models/mapobjects/utility/binplug/binplug_o_hi.lwo
+        diffusemap   	models/mapobjects/utility/binplug/binplug_o_d.tga
+	bumpmap		models/mapobjects/utility/binplug/binplug_o_local.tga
+        specularmap	models/mapobjects/utility/binplug/binplug_o_s.tga
+}
+
+models/mapobjects/lab/showerhead/showerhead
+{
+         noselfshadow
+
+	renderbump  -size 128 128 -aa 4  models/mapobjects/lab/showerhead/showerhead_local.tga models/mapobjects/lab/showerhead/showerhead_hi.lwo
+
+        	diffusemap	models/mapobjects/lab/showerhead/showerhead.tga
+		bumpmap		models/mapobjects/lab/showerhead/showerhead_local.tga
+                  specularmap	models/mapobjects/lab/showerhead/showerhead_s.tga
+}
+
+models/mapobjects/lab/tray/tray
+{
+         noselfshadow
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/tray/tray_local.tga models/mapobjects/lab/tray/tray_hi.lwo
+
+                diffusemap	models/mapobjects/lab/tray/tray_d.tga
+		bumpmap		models/mapobjects/lab/tray/tray_local.tga
+                specularmap	models/mapobjects/lab/tray/tray_s.tga
+}
+
+models/mapobjects/lab/roboarm1/roboarm1
+{
+         noselfshadow
+
+	renderbump  -size 256 256 -aa 2  models/mapobjects/lab/roboarm1/roboarm1_local.tga models/mapobjects/lab/roboarm1/roboarm1_hi.lwo
+
+                diffusemap	models/mapobjects/lab/roboarm1/roboarm1_d.tga
+		bumpmap		models/mapobjects/lab/roboarm1/roboarm1_local.tga
+                specularmap	models/mapobjects/lab/roboarm1/roboarm1_s.tga
+}
+
+
+models/mapobjects/lab/bottle1/bottle1
+{
+         noselfshadow
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/bottle1/bottle1_local.tga models/mapobjects/lab/bottle1/bottle1_hi.lwo
+
+                diffusemap	models/mapobjects/lab/bottle1/bottle1_d.tga
+		bumpmap		models/mapobjects/lab/bottle1/bottle1_local.tga
+                specularmap	models/mapobjects/lab/bottle1/bottle1_s.tga
+}
+
+models/mapobjects/lab/plasticjar1/plasticjar1
+{
+         noselfshadow
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/plasticjar1/plasticjar1_local.tga models/mapobjects/lab/plasticjar1/plasticjar1_hi.lwo
+
+                diffusemap	models/mapobjects/lab/plasticjar1/plasticjar1_d.tga
+		bumpmap		models/mapobjects/lab/plasticjar1/plasticjar1_local.tga
+                specularmap	models/mapobjects/lab/plasticjar1/plasticjar1_s.tga
+}
+
+
+
+models/mapobjects/lab/plasticjar1/plasticjar1b
+{
+         noselfshadow
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/plasticjar1/plasticjar1_local.tga models/mapobjects/lab/plasticjar1/plasticjar1_hi.lwo
+
+                diffusemap	models/mapobjects/lab/plasticjar1/plasticjar1b_d.tga
+		bumpmap		models/mapobjects/lab/plasticjar1/plasticjar1_local.tga
+                specularmap	models/mapobjects/lab/plasticjar1/plasticjar1_s.tga
+}
+
+models/mapobjects/lab/plasticjar2/plasticjar2
+{
+         noselfshadow
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/plasticjar2/plasticjar2_local.tga models/mapobjects/lab/plasticjar2/plasticjar2_hi.lwo
+
+
+        	diffusemap	models/mapobjects/lab/plasticjar2/plasticjar2_d.tga
+		bumpmap		models/mapobjects/lab/plasticjar2/plasticjar2_local.tga
+                specularmap	models/mapobjects/lab/plasticjar2/plasticjar2_s.tga
+}
+
+models/mapobjects/lab/plasticjar2/plasticjar2o
+{
+         noselfshadow
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/plasticjar2/plasticjar2_local.tga models/mapobjects/lab/plasticjar2/plasticjar2_hi.lwo
+
+
+        	diffusemap	models/mapobjects/lab/plasticjar2/plasticjar2o_d.tga
+		bumpmap		models/mapobjects/lab/plasticjar2/plasticjar2_local.tga
+                specularmap	models/mapobjects/lab/plasticjar2/plasticjar2_s.tga
+}
+
+models/mapobjects/lab/plasticbin/plasticbin
+{
+         noselfshadow
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/plasticbin/plasticbin_local.tga models/mapobjects/lab/plasticbin/plasticbin_hi.lwo
+
+                diffusemap	models/mapobjects/lab/plasticbin/plasticbin_d.tga
+		bumpmap		models/mapobjects/lab/plasticbin/plasticbin_local.tga
+                specularmap	models/mapobjects/lab/plasticbin/plasticbin_s.tga
+}
+
+models/mapobjects/lab/plasticbinmini/plasticbinmini
+{
+         noselfshadow
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/plasticbinmini/plasticbinmini_local.tga models/mapobjects/lab/plasticbinmini/plasticbinmini_hi.lwo
+
+        	diffusemap	models/mapobjects/lab/plasticbinmini/plasticbinmini_d.tga
+		bumpmap		models/mapobjects/lab/plasticbinmini/plasticbinmini_local.tga
+                specularmap	models/mapobjects/lab/plasticbinmini/plasticbinmini_s.tga
+}
+
+models/mapobjects/lab/spigotcan/spigotcan
+{
+        
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/spigotcan/spigotcan_local.tga models/mapobjects/lab/spigotcan/spigotcan_hi.lwo
+
+        	diffusemap	models/mapobjects/lab/spigotcan/spigotcan_d.tga
+		bumpmap		models/mapobjects/lab/spigotcan/spigotcan_local.tga
+                specularmap	models/mapobjects/lab/spigotcan/spigotcan_s.tga
+}
+
+models/mapobjects/lab/gizmo1/gizmo1
+{
+         noselfshadow
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/gizmo1/gizmo1_local.tga models/mapobjects/lab/gizmo1/gizmo1_hi.lwo
+
+        	diffusemap	models/mapobjects/lab/gizmo1/gizmo1_d.tga
+		bumpmap		models/mapobjects/lab/gizmo1/gizmo1_local.tga
+                specularmap	models/mapobjects/lab/gizmo1/gizmo1_s.tga
+                {
+		blend 	add
+		map		models/mapobjects/lab/gizmo1/gizmo1_add.tga
+		rgb		5
+	}
+}
+
+models/mapobjects/lab/gizmo2/gizmo2
+{
+         noselfshadow
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/gizmo2/gizmo2_local.tga models/mapobjects/lab/gizmo2/gizmo2_hi.lwo
+
+        	diffusemap	models/mapobjects/lab/gizmo2/gizmo2_d.tga
+		bumpmap		models/mapobjects/lab/gizmo2/gizmo2_local.tga
+                specularmap	models/mapobjects/lab/gizmo2/gizmo2_s.tga
+                {
+		blend 	add
+		map		models/mapobjects/lab/gizmo2/gizmo2_add.tga
+		rgb		5
+	}
+}
+
+models/mapobjects/lab/gizmo3/gizmo3
+{
+         noselfshadow
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/gizmo3/gizmo3_local.tga models/mapobjects/lab/gizmo3/gizmo3_hi.lwo
+
+        	diffusemap	models/mapobjects/lab/gizmo3/gizmo3_d.tga
+		bumpmap		models/mapobjects/lab/gizmo3/gizmo3_local.tga
+                specularmap	models/mapobjects/lab/gizmo3/gizmo3_s.tga
+                {
+		blend 	add
+		map		models/mapobjects/lab/gizmo3/gizmo3_add.tga
+		rgb		5
+	}
+}
+models/mapobjects/lab/beaker/beaker
+{
+        noselfshadow
+        translucent
+
+	renderbump  -size 128 128 -aa 2  models/mapobjects/lab/beaker/beaker_local.tga models/mapobjects/lab/beaker/beaker_hi.lwo
+
+
+                {
+			blend	diffusemap
+			map     models/mapobjects/lab/beaker/beaker_d.tga
+		}
+	bumpmap		models/mapobjects/lab/beaker/beaker_local.tga
+        specularmap	models/mapobjects/lab/beaker/beaker_s.tga
+}
+
+
+models/mapobjects/filler/foamcup
+{
+         noselfshadow
+
+	renderbump  -size 64 64 -aa 4  models/mapobjects/filler/foamcup_local.tga models/mapobjects/filler/foamcup_hi.lwo
+
+        	diffusemap	models/mapobjects/filler/foamcup.tga
+	bumpmap		models/mapobjects/filler/foamcup_local.tga
+                 // specularmap	models/mapobjects/filler/foamcup_s.tga
+}
+
+
+
+models/mapobjects/corpses/corpse1
+{
+	bumpmap		addnormals(models/mapobjects/corpses/corpse1_local.tga, heightmap (models/mapobjects/corpses/corpse1_h.tga, 7) )
+	diffusemap		models/mapobjects/corpses/corpse1_d.tga
+	specularmap		models/mapobjects/corpses/corpse1_s.tga
+
+}
+
+models/mapobjects/base/chairs/chair2_d
+{
+	bumpmap		addnormals( models/mapobjects/base/chairs/chair2_local.tga, heightmap (models/mapobjects/base/chairs/chair2_h.tga, 7) )
+	diffusemap		models/mapobjects/base/chairs/chair2_d.tga
+	specularmap		models/mapobjects/base/chairs/chair2_s.tga
+
+}
+
+
+models/mapobjects/washroom/turn
+{
+	bumpmap		addnormals( models/mapobjects/washroom/turn_local.tga, heightmap ( models/mapobjects/washroom/turn_h.tga, 7) )
+	diffusemap		models/mapobjects/washroom/turn.tga
+	specularmap		models/mapobjects/washroom/turn_s.tga
+
+}
+
+
+models/mapobjects/biocrate/ui
+{
+	{
+	blend Add
+	map 	models/mapobjects/biocrate/ui.tga
+	}
+
+}
+
+
+
+models/mapobjects/biocrate/biocrate
+{
+
+	bumpmap 	models/mapobjects/biocrate/biocrate_local.tga
+	diffusemap	models/mapobjects/biocrate/biocrate_d.tga
+	specularmap	models/mapobjects/biocrate/biocrate_s.tga
+}
+
+
+
+models/mapobjects/scroll_mon/scroll_mon_fx
+{
+	noshadows
+	translucent
+	{
+		blend add
+		map models/mapobjects/scroll_mon/scroll_mon_fx.tga
+	}	
+	{
+		blend add
+		map models/mapobjects/scroll_mon/scroll_mon_fx2.tga
+		scroll time * 0.8 , time * 0
+	}	
+	{
+		blend add
+		map models/mapobjects/scroll_mon/scroll_mon_fx3.tga
+		scroll time * 1.6 , time * 0
+	}	
+
+}
+
+
+models/mapobjects/scroll_mon/scroll_mon
+{
+
+	bumpmap 	models/mapobjects/scroll_mon/scroll_mon_local.tga
+	diffusemap	models/mapobjects/scroll_mon/scroll_mon_d.tga
+	specularmap	models/mapobjects/scroll_mon/scroll_mon_s.tga
+}
+
+
+
+models/mapobjects/kiosk/ui
+{
+	guiSurf
+	surfaceparm discrete
+	qer_editorimage	guisurfaces/guisurface.tga
+	//diffusemap      models/mapobjects/kiosk/ui.tga
+}
+
+
+models/mapobjects/kiosk/kglass_d
+{
+	noshadows
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+		{
+			blend	diffusemap
+			map      models/mapobjects/kiosk/kglass_d.tga
+		}
+	bumpmap		 models/mapobjects/kiosk/kglass_local.tga 
+	specularmap 	models/mapobjects/kiosk/kglass_s.tga
+}
+
+
+models/mapobjects/kiosk/kiosk
+{
+
+	{
+	blend bumpmap
+	map	models/mapobjects/kiosk/kiosk_local.tga
+	}
+	{       
+      	 blend	diffuseMap 
+	 map	models/mapobjects/kiosk/kiosk_d.tga
+	 alphaTest 0.5
+	}
+	
+	specularmap	models/mapobjects/kiosk/kiosk_s.tga
+}
+
+
+
+models/seneca/xianroom/xianroom1
+{
+	bumpmap		models/seneca/xianroom/xianroom1_local.tga
+	diffusemap		models/seneca/xianroom/xianroom1_d.tga
+	{
+		blend gl_one,gl_one
+		map models/seneca/xianroom/xianroom1_add.tga
+	}
+}
+
+models/seneca/xianroom/idlogo
+{
+	bumpmap		addnormals( models/seneca/xianroom/idlogo_local.tga, heightmap ( models/seneca/xianroom/idlogo_bmp.tga, 20) )
+	diffusemap		models/seneca/xianroom/idlogo_d.tga
+	specularmap		models/seneca/xianroom/idlogo_s.tga
+	{
+		blend gl_one,gl_one
+		map models/seneca/xianroom/idlogo_add.tga
+	}
+}
+
+models/seneca/xianroom/xbridge3_add
+{
+	noshadows
+	translucent
+	twoSided
+	{
+		blend gl_one,gl_one
+		map models/seneca/xianroom/xbridge3_add.tga
+	}
+}
+
+models/seneca/xianroom/xbridge2_add
+{
+	noshadows
+	translucent
+	twoSided
+	{
+		blend gl_one,gl_one
+		map models/seneca/xianroom/xbridge2_add.tga
+	}
+}
+
+models/seneca/xianroom/xbridge1_add
+{
+	noshadows
+	translucent
+	twoSided
+	{
+		blend gl_one,gl_one
+		map models/seneca/xianroom/xbridge1_add.tga
+		rgb (.3 * sintable [.15 + time ]) +.7
+	}
+}
+
+models/seneca/xianroom/xbridge3
+{
+	bumpmap		models/seneca/xianroom/xbridge3_local.tga
+	diffusemap		models/seneca/xianroom/xbridge3_d.tga
+	specularmap		models/seneca/xianroom/xbridge3_s.tga
+}
+
+models/seneca/xianroom/xbridge2
+{
+	bumpmap		models/seneca/xianroom/xbridge2_local.tga
+	diffusemap		_white
+//	diffusemap		models/seneca/xianroom/xbridge2_d.tga
+}
+
+models/seneca/xianroom/xbridge1
+{
+	bumpmap		models/seneca/xianroom/xbridge1_local.tga
+	diffusemap		models/seneca/xianroom/xbridge1_d.tga
+	specularmap 	models/seneca/xianroom/xbridge1_s.tga
+
+}
+
+models/seneca/reactor/reactorspinner
+{
+	bumpmap 		models/seneca/reactor/reactorspinner_local.tga
+	diffusemap		models/seneca/reactor/reactorspinner_d.tga	
+	specularmap		models/seneca/reactor/reactorspinner_s.tga	
+}
+
+models/mapobjects/filler/tbox8
+{
+	bumpmap 		models/mapobjects/filler/superpoopy_local.tga
+	diffusemap		models/mapobjects/filler/superpoopy.tga	
+}
+
+models/mapobjects/filler/tbox7
+{
+	bumpmap 		addnormals ( models/mapobjects/filler/tbox7_local.tga, heightmap (models/mapobjects/filler/tbox7_bmp.tga, 3) ) 
+	diffusemap		models/mapobjects/filler/tbox7_d.tga	
+}
+
+models/mapobjects/filler/tbox6
+{
+	bumpmap 		addnormals ( models/mapobjects/filler/tbox_local.tga, heightmap (models/mapobjects/filler/tbox6_bmp.tga, 3) ) 
+	diffusemap		models/mapobjects/filler/tbox6_d.tga	
+}
+
+models/mapobjects/filler/tbox5
+{
+	bumpmap 		addnormals ( models/mapobjects/filler/tbox_local.tga, heightmap (models/mapobjects/filler/tbox5_bmp.tga, 3) ) 
+	diffusemap		models/mapobjects/filler/tbox5_d.tga	
+}
+
+models/mapobjects/filler/tbox4
+{
+	bumpmap 		addnormals ( models/mapobjects/filler/tbox_local.tga, heightmap (models/mapobjects/filler/tbox4_bmp.tga, 3) ) 
+	diffusemap		models/mapobjects/filler/tbox4_d.tga	
+}
+
+
+models/mapobjects/filler/tbox3
+{
+	bumpmap 		addnormals ( models/mapobjects/filler/tbox3_local.tga, heightmap (models/mapobjects/filler/tbox3_bmp.tga, 3) ) 
+	diffusemap		models/mapobjects/filler/tbox3_d.tga	
+}
+
+models/mapobjects/filler/tbox2
+{
+	bumpmap 		addnormals ( models/mapobjects/filler/tbox_local.tga, heightmap (models/mapobjects/filler/tbox2_bmp.tga, 3) ) 
+	diffusemap		models/mapobjects/filler/tbox2_d.tga	
+}
+
+models/mapobjects/filler/tbox1
+{
+	bumpmap 		addnormals ( models/mapobjects/filler/tbox_local.tga, heightmap (models/mapobjects/filler/tbox1_bmp.tga, 3) ) 
+	diffusemap		models/mapobjects/filler/tbox1_d.tga	
+	specularmap		models/mapobjects/filler/tbox1_s.tga
+}
+
+models/mapobjects/filler/storagecloset3
+{
+	bumpmap			addnormals (models/mapobjects/filler/storagecloset_local.tga, heightmap (models/mapobjects/filler/storagecloset_bmp.tga, 4) )
+	diffusemap			models/mapobjects/filler/storagecloset3_d.tga
+}
+
+models/mapobjects/filler/storagecloset2
+{
+	bumpmap			models/mapobjects/filler/storagecloset_local.tga
+	diffusemap			models/mapobjects/filler/storagecloset2_d.tga
+}
+
+models/mapobjects/filler/storagecloset
+{
+	bumpmap			models/mapobjects/filler/storagecloset_local.tga
+	diffusemap			models/mapobjects/filler/storagecloset_d.tga
+	specularmap 		models/mapobjects/filler/storagecloset_s.tga
+}
+
+models/mapobjects/camera/camlight
+{
+
+	noShadows
+	twosided
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+
+
+	{
+		blend add
+		map models/mapobjects/camera/camlight.tga
+		 rgb		camblinktable[ time * 0.6 ]
+	}
+
+
+}
+
+models/mapobjects/camera/camera01
+
+{
+	//noSelfShadow
+
+	bumpmap	addnormals ( models/mapobjects/camera/camera01_local.tga, heightmap (models/mapobjects/camera/camera01_h.tga, 9) )
+	diffusemap	models/mapobjects/camera/camera01.tga
+	specularmap	models/mapobjects/camera/camera01_s.tga
+}
+
+
+
+models/mapobjects/storage/meat
+
+{
+	noSelfShadow
+
+	bumpmap	addnormals ( models/mapobjects/storage/meat_local.tga, heightmap (models/mapobjects/storage/meat_h.tga, 9) )
+	diffusemap	models/mapobjects/storage/meat.tga
+	specularmap	models/mapobjects/storage/meat_s.tga
+}
+
+
+
+models/mapobjects/lamps/cagelight
+{
+
+	noSelfShadow
+
+	bumpmap 	models/mapobjects/lamps/cagelight_local.tga
+	diffusemap	models/mapobjects/lamps/cagelight.tga
+	specularmap	models/mapobjects/lamps/cagelight_s.tga
+
+	{
+		blend gl_one,gl_one
+		map models/mapobjects/lamps/cagelight_fx.tga
+		 rgb		blamptable[ time * 5 ]
+	}
+
+}
+models/mapobjects/fuel_barrel/gbarrel
+
+{
+	qer_editorimage models/mapobjects/fuel_barrel/gbarrel_local.tga
+	noSelfShadow
+
+	bumpmap	addnormals ( models/mapobjects/fuel_barrel/gbarrel_local.tga, heightmap (models/mapobjects/fuel_barrel/gbarrel_h.tga, 9) )
+	diffusemap	models/mapobjects/fuel_barrel/gbarrel.tga
+	specularmap	models/mapobjects/fuel_barrel/gbarrel_s.tga
+}
+
+
+
+models/mapobjects/washroom/twist_d
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+
+	{       
+      	 blend	diffusemap
+	 map	models/mapobjects/washroom/twist_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	models/mapobjects/washroom/twist_s.tga
+	bumpmap 	models/mapobjects/washroom/twist_local.tga
+       
+
+}
+
+models/mapobjects/washroom/soap
+{
+
+	bumpmap 	models/mapobjects/washroom/soap_local.tga
+	diffusemap	models/mapobjects/washroom/soap.tga
+	specularmap	models/mapobjects/washroom/soap_s.tga
+}
+
+
+models/mapobjects/washroom/dryer
+{
+
+	bumpmap 	models/mapobjects/washroom/dryer_local.tga
+	diffusemap	models/mapobjects/washroom/dryer.tga
+	specularmap	models/mapobjects/washroom/dryer_s.tga
+}
+
+
+
+models/mapobjects/washroom/tp
+{
+
+	bumpmap 	models/mapobjects/washroom/tp_local.tga
+	diffusemap	models/mapobjects/washroom/tp.tga
+	specularmap	models/mapobjects/washroom/tp_s.tga
+}
+
+models/mapobjects/washroom/pipes
+
+{
+	noSelfShadow
+
+	bumpmap	addnormals ( models/mapobjects/washroom/pipes_local.tga, heightmap (models/mapobjects/washroom/pipes_b.tga, 5) )
+	diffusemap	models/mapobjects/washroom/pipes.tga
+	specularmap	models/mapobjects/washroom/pipes_s.tga
+}
+
+models/mapobjects/washroom/toilet
+
+{
+	noSelfShadow
+
+	bumpmap	addnormals ( models/mapobjects/washroom/toilet_local.tga, heightmap (models/mapobjects/washroom/toilet_b.tga, 5) )
+	diffusemap	models/mapobjects/washroom/toilet.tga
+	specularmap	models/mapobjects/washroom/toilet_s.tga
+}
+
+models/mapobjects/washroom/blgrill_d
+
+{
+ 	noShadows
+	surfaceparm trans
+
+	{       
+      	 blend	diffusemap
+	 map	models/mapobjects/washroom/blgrill_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	models/mapobjects/washroom/blgrill_s.tga	
+	bumpmap 	models/mapobjects/washroom/blgrill_local
+       
+
+}
+
+
+models/mapobjects/washroom/blamp2_d
+{
+
+	bumpmap 	models/mapobjects/washroom/blamp2_local.tga
+	diffusemap	models/mapobjects/washroom/blamp2_d.tga
+	specularmap	models/mapobjects/washroom/blamp2_s.tga
+	{
+		blend add
+		map models/mapobjects/washroom/blamp2_fx.tga
+		rgb		blamptable[ time * 5 ]
+	}
+}
+
+models/mapobjects/washroom/urn2_b
+
+{
+	noSelfShadow
+
+	bumpmap	addnormals ( models/mapobjects/washroom/urn2_local.tga, heightmap (models/mapobjects/washroom/urn2_b.tga, 5) )
+	diffusemap	models/mapobjects/washroom/urn2_d.tga
+	specularmap	models/mapobjects/washroom/urn2_s.tga
+}
+
+models/seneca/reactor/reactorlaser1
+{
+	bumpmap	models/seneca/reactor/reactorlaser1_local.tga
+	diffusemap	models/seneca/reactor/reactorlaser1_d.tga	
+	specularmap	models/seneca/reactor/reactorlaser1_s.tga
+}
+
+models/mapobjects/washroom/blamp_d
+{
+
+	bumpmap 	models/mapobjects/washroom/blamp_local.tga
+	diffusemap	models/mapobjects/washroom/blamp_d.tga
+	specularmap	models/mapobjects/washroom/blamp_s.tga
+	{
+		blend add
+		map models/mapobjects/washroom/blamp_fx.tga
+		rgb		blamptable[ time * 5 ]
+	}
+}
+
+models/mapobjects/washroom/clamp
+{
+
+	bumpmap 	models/mapobjects/washroom/clamp_local.tga
+	diffusemap	models/mapobjects/washroom/clamp.tga
+	specularmap	textures/washroom/redge_s.tga
+}
+
+models/mapobjects/washroom/urn_d
+
+{
+	noSelfShadow
+
+	bumpmap	addnormals ( models/mapobjects/washroom/urn_local.tga, heightmap (models/mapobjects/washroom/urn_b.tga, 5) )
+	diffusemap	models/mapobjects/washroom/urn_d.tga
+	specularmap	models/mapobjects/washroom/urn_s.tga
+}
+
+
+models/seneca/reactor/reactortubeglow
+{
+	translucent
+	twoSided
+	noshadows
+	{
+		blend gl_one,gl_one
+		map models/seneca/reactor/reactortubeglow.tga
+		rgb ( sintable [ time ] )
+	}
+	{
+		blend gl_one,gl_one
+		map models/seneca/reactor/reactortubeglow.tga
+//		rgb (.3 * sintable [.15 + time * .5 ]) +.7
+		rgb ( senetable3  [ time ] )
+	}
+} 
+
+
+models/seneca/reactor/reactortube
+{
+	bumpmap		models/seneca/reactor/reactortube_local.tga
+	diffusemap		models/seneca/reactor/reactortube_d.tga
+}
+
+models/mapobjects/washroom/trashcan01
+
+{
+	noSelfShadow
+
+	bumpmap	addnormals ( models/mapobjects/washroom/trashcan01_local.tga, heightmap (models/mapobjects/washroom/trashcan01_b.tga, 10) )
+	diffusemap	models/mapobjects/washroom/trashcan01.tga
+	specularmap	models/mapobjects/washroom/trashcan01_s.tga
+}
+
+
+models/mapobjects/filler/phone
+{
+	bumpmap		models/mapobjects/filler/phone_local.tga
+	diffusemap		models/mapobjects/filler/phone_d.tga
+	specularmap		models/mapobjects/filler/phone_s.tga
+}
+
+models/mapobjects/filler/paper4
+{
+	diffusemap		models/mapobjects/filler/paper4.tga
+}
+
+models/mapobjects/filler/paper3
+{
+	diffusemap		models/mapobjects/filler/paper3.tga
+}
+
+models/mapobjects/filler/paper2
+{
+	diffusemap		models/mapobjects/filler/paper2.tga
+}
+
+models/mapobjects/filler/paper1
+{
+	diffusemap		models/mapobjects/filler/paper1.tga
+}
+
+models/mapobjects/filler/cola2
+
+{
+	bumpmap		addnormals (models/mapobjects/filler/cola2_local.tga, heightmap (models/mapobjects/filler/cola2_bmp.tga, 4) ) 
+	diffusemap		models/mapobjects/filler/cola1_d.tga
+	specularmap		models/mapobjects/filler/cola1_s.tga
+}
+
+models/mapobjects/filler/cola1
+{
+	bumpmap		addnormals (models/mapobjects/filler/cola1_local.tga, heightmap (models/mapobjects/filler/cola1_bmp.tga, 4) ) 
+	diffusemap		models/mapobjects/filler/cola1_d.tga
+	specularmap		models/mapobjects/filler/cola1_s.tga
+}
+
+models/mapobjects/filler/cone4
+{
+	bumpmap		models/mapobjects/filler/cone4_local.tga
+	diffusemap		models/mapobjects/filler/cone1_d.tga
+}
+
+models/mapobjects/filler/cone3
+{
+	bumpmap		models/mapobjects/filler/cone3_local.tga
+	diffusemap		models/mapobjects/filler/cone1_d.tga
+}
+
+models/mapobjects/filler/cone2
+{
+	bumpmap		models/mapobjects/filler/cone2_local.tga
+	diffusemap		models/mapobjects/filler/cone1_d.tga
+}
+
+models/mapobjects/filler/cone1
+{
+	bumpmap		models/mapobjects/filler/cone1_local.tga
+	diffusemap		models/mapobjects/filler/cone1_d.tga
+}
+
+models/mapobjects/filler/binder1
+{
+	diffusemap		models/mapobjects/filler/binder1.tga
+}
+
+models/mapobjects/filler/monitor1
+{
+	bumpmap		models/mapobjects/filler/monitor_local.tga
+	diffusemap		models/mapobjects/filler/monitor_d.tga
+	specularmap		models/mapobjects/filler/monitor_s.tga
+	{
+		blend gl_one,gl_one
+		map models/mapobjects/filler/monitor_add.tga
+	}
+}
+models/mapobjects/filler/monitor_d
+{
+	bumpmap		models/mapobjects/filler/monitor_local.tga
+	diffusemap		models/mapobjects/filler/monitor_d.tga
+	specularmap		models/mapobjects/filler/monitor_s.tga
+	{
+		blend gl_one,gl_one
+		map models/mapobjects/filler/monitor_add.tga
+	}
+}
+
+models/mapobjects/filler/pc1
+{
+	bumpmap		models/mapobjects/filler/pc1_local.tga
+	diffusemap		models/mapobjects/filler/pc1_d.tga
+}
+
+models/mapobjects/cannister/cannister
+{
+	noSelfShadow
+
+	bumpmap 	models/mapobjects/cannister/cannister_local.tga
+	diffusemap	models/mapobjects/cannister/cannister.tga
+	specularmap	models/mapobjects/cannister/cannister_s.tga
+}
+
+models/mapobjects/techsign/techsignmon
+{
+	noSelfShadow
+
+	bumpmap 	models/mapobjects/techsign/techsignmon_local.tga
+	diffusemap	models/mapobjects/techsign/techsignmon.tga
+	specularmap	models/mapobjects/techsign/techsignmon_s.tga
+	{
+		blend gl_one,gl_one
+		map models/mapobjects/techsign/techsignmon_fx.tga
+		rgb (.4 * sintable [.15 + time * .5 ]) +.7
+	}
+	{
+		blend gl_one,gl_one
+		map models/mapobjects/techsign/techsignmon_fx2.tga
+		rgb		blinktable[ time * 2.8 ]
+	}
+}
+
+
+models/mapobjects/techsign/techsign01
+{
+	noSelfShadow
+
+	bumpmap 	models/mapobjects/techsign/techsign01_local.tga
+	diffusemap	models/mapobjects/techsign/techsign01.tga
+	specularmap	models/mapobjects/techsign/techsign01_s.tga
+}
+
+models/mapobjects/handrail/handrail
+{
+	noSelfShadow
+
+	bumpmap 	models/mapobjects/handrail/handrail_local.tga
+	diffusemap	models/mapobjects/handrail/handrail.tga
+	specularmap	models/mapobjects/handrail/handrail_s.tga
+}
+
+
+models/mapobjects/morgue/mlight
+{
+	noSelfShadow
+
+	bumpmap 	models/mapobjects/morgue/mlight_local.tga
+	diffusemap	models/mapobjects/morgue/mlight.tga
+	specularmap	models/mapobjects/morgue/mlight_s.tga
+	{
+		blend gl_one,gl_one
+		map models/mapobjects/morgue/mlight_fx.tga
+		rgb (.3 * sintable [.15 + time * .5 ]) +.7
+	}
+}
+
+
+models/mapobjects/morgue/mhatch
+{
+	//noSelfShadow
+
+	bumpmap models/mapobjects/morgue/mhatch_local.tga
+	diffusemap	models/mapobjects/morgue/mhatch.tga
+	specularmap	models/mapobjects/morgue/mhatch_s.tga
+}
+
+models/mapobjects/morgue/mhatch2
+{
+	//noSelfShadow
+
+	bumpmap	models/mapobjects/morgue/mhatch_local.tga
+	diffusemap	models/mapobjects/morgue/mhatch2.tga
+	specularmap	models/mapobjects/morgue/mhatch2_s.tga
+}
+
+
+models/mapobjects/base/tech/spintower
+{
+	bumpmap	addnormals ( models/mapobjects/base/tech/spintower_local.tga, heightmap (models/mapobjects/base/tech/spintower_bmp.tga, 10) )
+	diffusemap	models/mapobjects/base/tech/spintower_d.tga
+	specularmap	models/mapobjects/base/tech/spintower_s.tga
+}
+
+models/mapobjects/base/misc/emerlight_light
+{
+	bumpmap		models/mapobjects/base/misc/emerlight_light_local.tga
+	diffusemap		models/mapobjects/base/misc/emerlight_light_d.tga
+	specularmap		models/mapobjects/base/misc/emerlight_light_s.tga
+}
+
+models/mapobjects/base/misc/emerlight
+{
+	bumpmap		models/mapobjects/base/misc/emerlight_local.tga
+	diffusemap		models/mapobjects/base/misc/emerlight_d.tga
+}
+
+models/mapobjects/base/misc/coathanger
+{
+	bumpmap		models/mapobjects/base/misc/coathanger_local.tga
+	diffusemap		models/mapobjects/base/misc/coathanger_d.tga
+	specularmap		models/mapobjects/base/misc/coathanger_s.tga	
+}
+
+models/mapobjects/base/misc/exitsign1
+{
+	bumpmap		models/mapobjects/base/misc/exitsign1_local.tga
+	diffusemap		models/mapobjects/base/misc/exitsign1_d.tga
+	specularmap		models/mapobjects/base/misc/exitsign1_s.tga	
+}
+
+models/mapobjects/base/misc/exitsign2
+{
+	bumpmap		models/mapobjects/base/misc/exitsign2_local.tga
+	diffusemap		models/mapobjects/base/misc/exitsign2_d.tga
+	specularmap		models/mapobjects/base/misc/exitsign2_s.tga
+	{
+		blend gl_one,gl_one
+		map 	models/mapobjects/base/misc/exitsign2_add.tga
+	}
+}
+
+models/mapobjects/base/misc/firealarm
+{
+	bumpmap		models/mapobjects/base/misc/firealarm_local.tga
+	diffusemap		models/mapobjects/base/misc/firealarm_d.tga
+	specularmap		models/mapobjects/base/misc/firealarm_s.tga	
+}
+
+models/mapobjects/base/misc/firealarm2
+{
+	translucent
+	twosided
+	{
+		blend gl_one,gl_one
+		map models/mapobjects/base/misc/firealarm2.tga
+	}
+}
+
+models/mapobjects/base/misc/fireext
+{
+	bumpmap	addnormals ( models/mapobjects/base/misc/fireext_local.tga, heightmap (models/mapobjects/base/misc/fireext_bmp.tga, 10) )
+	diffusemap	models/mapobjects/base/misc/fireext_d.tga
+	specularmap	models/mapobjects/base/misc/fireext_s.tga
+}
+
+models/mapobjects/base/misc/firebell
+{
+	bumpmap	models/mapobjects/base/misc/firebell_local.tga
+	diffusemap	models/mapobjects/base/misc/firebell_d.tga
+	specularmap	models/mapobjects/base/misc/firebell_s.tga
+}
+
+models/mapobjects/fuel_barrel/pbarrel_flare
+{
+	surfaceparm discrete		
+	flare	( 0 204 187 ) ( 8 8 ) ( 1 1 ) ( 8 8) 
+}
+ 
+
+models/mapobjects/fuel_barrel/pbarrel
+{
+
+     noSelfShadow  
+	 bumpmap		addnormals( models/mapobjects/fuel_barrel/pbarrel_b.tga, heightmap( models/mapobjects/fuel_barrel/pbarrel_add.tga, 2 ) )
+        diffusemap	models/mapobjects/fuel_barrel/pbarrel.tga
+        specularmap	models/mapobjects/fuel_barrel/pbarrel_s.tga
+	
+        
+}
+
+
+
+models/mapobjects/fuel_barrel/fbarrel
+{
+  
+	surfaceparm discrete		
+	flare	( 193 245 245 ) ( 216 169 ) ( 237 169 ) ( 237 180 )  
+        //flare	( 193 245 245 ) ( 128 64 ) ( 15 23 ) ( 113 53 )  
+       
+        bumpmap		addnormals( models/mapobjects/fuel_barrel/fbarrel_b.tga, heightmap( models/mapobjects/fuel_barrel/fbarrel_add.tga, 2 ) )
+        diffusemap	models/mapobjects/fuel_barrel/fbarrel.tga
+        specularmap	models/mapobjects/fuel_barrel/fbarrel_s.tga
+        
+}
+
+
+models/mapobjects/fin/fin01
+{
+	diffusemap	models/mapobjects/fin/fin01.tga
+	specularmap	models/mapobjects/fin/fin01_s.tga
+        bumpmap	        heightmap (models/mapobjects/fin/fin01_b.tga, 5)          
+}
+
+
+models/mapobjects/lamps/oval_light
+{
+		bumpmap	addnormals( models/mapobjects/lamps/oval_light_local.tga, heightmap (models/mapobjects/lamps/oval_light_b.tga, 2))
+		diffusemap	models/mapobjects/lamps/oval_light.tga
+		specularmap	models/mapobjects/lamps/oval_light_s.tga
+    
+}
+
+models/mapobjects/doors/deltadoor_g
+{
+	    bumpmap	addnormals( models/mapobjects/doors/deltadoor_g_local.tga, heightmap( models/mapobjects/doors/deltadoor_g_b.tga, 2))
+		diffusemap	models/mapobjects/doors/deltadoor_g_d.tga
+		specularmap	models/mapobjects/doors/deltadoor_g_s.tga
+}
+
+models/mapobjects/recycle/wst_cnt/waste_contain_d
+
+{
+	     renderbump  -size 512 512 -aa 1  models/mapobjects/recycle/wst_cnt/waste_contain_local.tga models/mapobjects/recycle/wst_cnt/waste_contain_hi.ase
+
+		 bumpmap  models/mapobjects/recycle/wst_cnt/waste_contain_local.tga
+        diffusemap  	models/mapobjects/recycle/wst_cnt/waste_contain_d.tga  
+		specularmap		models/mapobjects/recycle/wst_cnt/waste_contain_s.tga
+}
+
+
+models/mapobjects/recycle/wst_cnt/waste_cont_2
+{
+	     renderbump  -size 256 128 -aa 2  models/mapobjects/recycle/wst_cnt/waste_cont_2_local.tga models/mapobjects/recycle/wst_cnt/waste_contain_hi.ase
+        
+
+           bumpmap models/mapobjects/recycle/wst_cnt/waste_cont_2_local.tga
+		   diffusemap  models/mapobjects/recycle/wst_cnt/waste_cont_2.tga 
+			specularmap		models/mapobjects/recycle/wst_cnt/waste_cont_2s.tga
+}
+
+models/mapobjects/recycle/wst_cnt/waste_contain_v2_d
+{
+	     renderbump  -size 512 512 -aa 2  models/mapobjects/recycle/wst_cnt/waste_contain_v2_local.tga models/mapobjects/recycle/wst_cnt/waste_contain_v2_hi.ase
+
+   
+	bumpmap addnormals (models/mapobjects/recycle/wst_cnt/waste_contain_v2_local2.tga, heightmap(models/mapobjects/recycle/wst_cnt/waste_contain_b.tga, 1))  
+	diffusemap 	models/mapobjects/recycle/wst_cnt/waste_contain_v2_d.tga  
+	specularmap		models/mapobjects/recycle/wst_cnt/waste_contain_s2.tga
+}
+
+models/mapobjects/recycle/wst_cnt/waste_cont_2v2
+{
+	     renderbump  -size 256 128 -aa 2  models/mapobjects/recycle/wst_cnt/waste_cont_v2_local.tga models/mapobjects/recycle/wst_cnt/waste_contain_v2_hi.ase
+
+ 		 bumpmap	addnormals (models/mapobjects/recycle/wst_cnt/wst_cnt2_local.tga, heightmap(models/mapobjects/recycle/wst_cnt/wst_cnt2_b.tga, 3))
+		diffusemap  models/mapobjects/recycle/wst_cnt/wst_cnt_2v3.tga
+  		specularmap		models/mapobjects/recycle/wst_cnt/wst_cnt_2_s.tga
+	
+}
+
+
+models/mapobjects/recycle/wst_cnt/wst_cnt_2v3
+{
+	    renderbump  -size 256 128 -aa 2  models/mapobjects/recycle/wst_cnt/waste_cont_v2_local.tga models/mapobjects/recycle/wst_cnt/waste_contain_v2_hi.ase
+
+
+	     bumpmap		addnormals(models/mapobjects/recycle/wst_cnt/wst_cnt2_local.tga, heightmap(models/mapobjects/recycle/wst_cnt/wst_cnt_2_b.tga, 2 ) )
+        diffusemap 		models/mapobjects/recycle/wst_cnt/wst_cnt_2v3.tga
+        specularmap		models/mapobjects/recycle/wst_cnt/wst_cnt_2_s.tga
+}
+
+
+models/mapobjects/recycle/wst_cnt/pressure_label
+{
+
+	translucent
+	//twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+
+	{       
+      	 //blend	gl_dst_color,gl_one
+             //blend 		gl_zero,gl_one_minus_src_color
+		blend diffusemap
+            //blend add
+	 map	models/mapobjects/recycle/wst_cnt/pressure_label
+       //alphaTest 0.5
+	}
+
+ }
+
+models/mapobjects/recycle/wst_cnt/ind_logo1
+{
+
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	//twoSided
+	translucent
+
+
+	{       
+      	blend diffusemap
+	 map	textures/decals/ind_logo1.tga
+	}
+
+ }
+
+
+models/mapobjects/steve_temp/edoor01
+{
+	noSelfShadow
+        renderbump      -trace .3 -size 512 512 -aa 1 models/mapobjects/steve_temp/edoor01_local.tga models/mapobjects/steve_temp/edoor01hi.ase
+	bumpmap	        addnormals (models/mapobjects/steve_temp/edoor01_local.tga, heightmap (models/mapobjects/steve_temp/edoor01_b.tga, 2))
+	diffusemap	models/mapobjects/steve_temp/edoor01_d.tga
+	specularmap	models/mapobjects/steve_temp/edoor01_s.tga
+}
+
+models/mapobjects/steve_temp/nozzle01
+{
+	
+        noSelfShadow
+        renderbump      -trace .2 -size 256 256 -aa 2 -colorMap models/mapobjects/steve_temp/nozzle01_local.tga models/mapobjects/steve_temp/nozzle01hi.ase
+        bumpmap	        addnormals (models/mapobjects/steve_temp/nozzle01_local.tga, heightmap (models/mapobjects/steve_temp/nozzle01_b.tga, 3))
+	diffusemap	models/mapobjects/steve_temp/nozzle01_d.tga
+	specularmap	models/mapobjects/steve_temp/nozzle01_s.tga
+        
+}
+
+models/mapobjects/base/chairs/chair5
+{
+	
+        noSelfShadow
+        renderbump      -trace .2 -size 512 512 -aa 2 -colorMap models/mapobjects/base/chairs/chair5_local.tga models/mapobjects/base/chairs/chair5hi.ase
+        bumpmap	        addnormals (models/mapobjects/base/chairs/chair5_local.tga, heightmap (models/mapobjects/base/chairs/chair5_b.tga, 3))
+	diffusemap	models/mapobjects/base/chairs/chair5_d.tga
+	specularmap	models/mapobjects/base/chairs/chair5_s.tga
+        
+}
+
+models/mapobjects/steve_temp/recyclight
+{
+	
+        bumpmap	        addnormals (models/mapobjects/steve_temp/recyclight_local.tga, heightmap (models/mapobjects/steve_temp/recyclight_b.tga, 1))
+	diffusemap	models/mapobjects/steve_temp/recyclight_d.tga
+	specularmap	models/mapobjects/steve_temp/recyclight_s.tga
+        
+}
+
+models/mapobjects/machineroom/railpiece
+{
+	
+        noSelfShadow
+        bumpmap	        models/mapobjects/machineroom/railpiece_local.tga
+	diffusemap	models/mapobjects/machineroom/railpiece.tga
+	specularmap	models/mapobjects/machineroom/railpiece_s.tga
+        
+}
+
+
+models/mapobjects/doors/a_smalldoor
+{
+	qer_editorimage	models/mapobjects/doors/a_smalldoor.tga
+	renderbump  	-size 256 256 -aa 2 models/mapobjects/doors/a_smalldoor_local.tga models/mapobjects/doors/a_smalldoor_hp.lwo
+	bumpmap		addnormals (models/mapobjects/doors/a_smalldoor_local.tga, heightmap (models/mapobjects/doors/a_smalldoor_b.tga, 3))
+	diffusemap	models/mapobjects/doors/a_smalldoor_d.tga
+	specularmap	models/mapobjects/doors/a_smalldoor_s.tga
+}
+
+models/mapobjects/doors/a_smalldoor_02
+{
+	qer_editorimage	models/mapobjects/doors/a_smalldoor_02.tga
+	renderbump  	-size 256 256 -aa 2 models/mapobjects/doors/a_smalldoor_local.tga models/mapobjects/doors/a_smalldoor_hp.lwo
+	bumpmap		addnormals (models/mapobjects/doors/a_smalldoor_local.tga, heightmap (models/mapobjects/doors/a_smalldoor_b02.tga, 3))
+	diffusemap	models/mapobjects/doors/a_smalldoor_d02.tga
+	specularmap	models/mapobjects/doors/a_smalldoor_s02.tga
+}
+
+models/mapobjects/doors/a_smalldoor_04
+{
+	qer_editorimage	models/mapobjects/doors/a_smalldoor_04.tga
+	renderbump  	-size 256 256 -aa 2 models/mapobjects/doors/a_smalldoor_local.tga models/mapobjects/doors/a_smalldoor_hp.lwo
+	bumpmap		addnormals (models/mapobjects/doors/a_smalldoor_local.tga, heightmap (models/mapobjects/doors/a_smalldoor_b04.tga, 3))
+	diffusemap	models/mapobjects/doors/a_smalldoor_d04.tga
+	specularmap	models/mapobjects/doors/a_smalldoor_s04.tga
+}

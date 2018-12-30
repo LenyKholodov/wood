@@ -1,0 +1,51 @@
+video/idlogo
+{
+	qer_editorimage	textures/editor/video.tga
+	{
+		videoMap	video/idlogo.roq
+	}
+}
+
+video/intro
+{
+	qer_editorimage	textures/editor/video.tga
+	{
+		videoMap	video/intro.roq
+	}
+	{
+		blend add
+		cubeMap		env/qcw
+		texgen		reflect
+	}
+}
+
+video/clip
+{
+	qer_editorimage	textures/editor/video.tga
+	{
+		videoMap	video/mpintro.roq
+	}
+}
+
+
+video/noise {
+	translucent {
+		noisemap 0
+	}
+}
+
+video/delta1_sarge {
+	translucent {
+		videomap "delta1_sarge_vid.roq"
+		linear
+	}
+}
+
+video/mars_flare
+{
+	qer_editorimage	textures/editor/video.tga
+	{
+	blend add	
+	videoMap	video/lensflare.roq
+	}
+}

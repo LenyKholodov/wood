@@ -1,0 +1,52 @@
+COPT= /nologo  /DDEBUG /DCONSOLE_MESSAGES /Zi  /EHsc /W0 \
+      /I"q:\h" 
+AOPT= /libpath:"q:/lib" /libpath:"q:/lib/api"
+OBJ_LIST=test.obj \
+         g_map.obj              g_level.obj       r_sbuffer.obj    r_landscape.obj     \
+         g_lndcache.obj         r_main.obj        r_lenv.obj       g_loader.obj        \
+         defs.obj               r_mdlenv.obj      r_mdlkeeper.obj  r_mdlmap.obj        \
+         r_mdldatacache.obj     r_mdlpool.obj     r_mdlsmp.obj                         \
+         r_meshrender.obj       r_mdlmulti.obj    r_mdl3d.obj      r_mdlsprite.obj     \
+         r_vbuffer.obj          r_shadow.obj      r_skybox.obj     r_mdleffect.obj     \
+         r_effwavewater.obj     r_skylight.obj    r_matrender.obj                      \
+         cv_utils.obj           r_matdict.obj                                          \
+         g_grcon.obj            i_main.obj        i_client.obj     r_render.obj        \
+         r_alphamesh.obj        r_matenvx.obj     cv_mesh.obj      cv_mem.obj \
+         g_boxcache.obj         g_cachemap.obj    r_hmap.obj       r_hmrender.obj \
+         r_hmlist.obj           cv_obj3d.obj      cv_farray.obj    camera.obj
+OBJ_LIST1=cv_grmap.obj 3ds2map.obj g_level.obj defs.obj cv_utils.obj cv_mesh.obj cv_obj3d.obj cv_farray.obj
+OBJ_LIST2=cv_utils.obj cv_mdlmulti.obj 3ds2mdl.obj defs.obj g_level.obj cv_mdlm3d.obj cv_obj3d.obj cv_farray.obj
+OBJ_LIST3=cv_mdlsprite.obj makesprite.obj defs.obj g_level.obj cv_obj3d.obj
+OBJ_LIST4=cv_treecomp.obj r_treeprecomp.obj  rndtreemap.obj g_level.obj defs.obj \
+          cv_utils.obj r_matdict.obj cv_mesh.obj cv_obj3d.obj cv_farray.obj
+OBJ_LIST5=cv_treecomp.obj g_level.obj defs.obj meminfo.obj cv_mem.obj \
+          cv_utils.obj cv_obj3d.obj cv_farray.obj
+OBJ_LIST6=g_level.obj defs.obj cv_rawmap.obj raw2map.obj
+
+all: 3ds2map.exe 3ds2mdl.exe makesprite.exe rndtreemap.exe meminfo.exe main.exe  \
+     raw2map.exe
+
+main.exe:  $(OBJ_LIST)
+           @link -out:main.exe $(OBJ_LIST) $(AOPT)
+
+3ds2map.exe:  $(OBJ_LIST1)
+           @link -out:3ds2map.exe $(OBJ_LIST1) $(AOPT)
+
+3ds2mdl.exe:  $(OBJ_LIST2)
+           @link -out:3ds2mdl.exe $(OBJ_LIST2) $(AOPT)
+
+makesprite.exe:  $(OBJ_LIST3)
+           @link -out:makesprite.exe $(OBJ_LIST3) $(AOPT)
+
+rndtreemap.exe:  $(OBJ_LIST4)
+           @link -out:rndtreemap.exe $(OBJ_LIST4) $(AOPT)
+
+meminfo.exe:  $(OBJ_LIST5)
+           @link -out:meminfo.exe $(OBJ_LIST5) $(AOPT)
+
+raw2map.exe:  $(OBJ_LIST6)
+           @link -out:raw2map.exe $(OBJ_LIST6) $(AOPT)
+
+.cpp.obj:
+        @cl /c $(COPT)  $<
+

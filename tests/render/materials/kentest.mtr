@@ -1,0 +1,145 @@
+clamptable shattertable1 { 0, 0, 1, 0 }
+clamptable shattertable2 { 0, 0, 0, 1 }
+
+textures/particles/spawnarc4
+
+{
+    noselfShadow
+    noshadows	
+	translucent
+	surfaceparm discrete
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage  textures/particles/spawnarc4.tga 
+
+		{ 
+      
+      		 blend	add
+	 		map	textures/particles/spawnarc4.tga
+			translate	time * 3 , time * 0
+	}
+	               	
+
+}
+
+textures/particles/spawnarc3
+
+{
+    noselfShadow
+    noshadows	
+	translucent
+	surfaceparm discrete
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage  textures/particles/spawnarc3.tga 
+
+		{ 
+      
+      		 blend	add
+	 		map	textures/particles/spawnarc3.tga
+			translate	time * 3 , time * 0
+	}
+	               	
+
+}
+
+models/wipes/hst_mars
+{
+    noselfShadow
+
+        		diffusemap	models/wipes/hst_mars.tga
+				bumpmap 	heightmap(models/wipes/hst_mars_h.tga, 4 ) 
+              //specularmap	models/wipes/hst_mars_s.tga
+}
+
+models/wipes/dust
+
+{
+    noselfShadow
+	translucent
+	noshadows
+    //twosided
+ 	{
+	    blend diffuseMap
+		map 	    models/wipes/dust.tga
+		translate	time * -0.03 , time * 0
+	
+	   }
+	 	{
+	    blend diffuseMap
+		map 	    models/wipes/dust.tga
+		scale	-1, 1
+		translate	time * -0.02 , time * 0
+
+	
+	   }
+		
+
+}
+
+
+models/wipes/wipe01
+
+{
+    noselfShadow
+    //twosided
+ 	
+	    diffusemap	    models/wipes/wipe01.tga
+		specularmap	    models/wipes/wipe01_s.tga
+
+		
+
+}
+
+
+
+textures/sfx/shatterglass01_fx1
+{
+	qer_editorimage textures/sfx/shatterglass01_fx1.tga
+	translucent
+	noshadows
+	twoSided
+	surfaceparm nonsolid
+
+	// non-shattered version
+/*
+	{
+		if ( parm7 == 0 )
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	{
+		if ( parm7 == 0 )
+		blend diffuseMap
+		map textures/sfx/shatterglass01_d.tga
+	}
+*/
+	// shattered version
+	{
+		if ( parm7 == 1 )
+		blend add
+		map	textures/sfx/shatterglass01_fx1.tga
+		rgb	shattertable1 [ ( ( time - parm3 ) * 3 ) + 2 / 3 ]
+	}
+	{
+		if ( parm7 == 1 )
+		blend add
+		map	textures/sfx/shatterglass01_fx2.tga
+		rgb	shattertable1 [ ( ( time - parm3 ) * 3 ) + 1 / 3 ]
+	}
+	{
+		if ( parm7 == 1 )
+		blend add
+		map	textures/sfx/shatterglass01_fx3.tga
+		rgb	shattertable1 [ ( ( time - parm3 ) * 3 ) ]
+	}
+	{
+		if ( parm7 == 1 )
+		blend add
+		map	textures/sfx/shatterglass01_fx4.tga
+		rgb	shattertable2 [ ( ( time - parm3 ) * 3 ) ]
+	}
+}

@@ -1,0 +1,8 @@
+test.cpp
+Note: Creating precompiled header vc60.pch
+string.h(73) : error C2027: use of undefined type 'String<31>'
+        test.cpp(5) : see reference to class template instantiation 'String<31>' being compiled
+string.h(73) : error C2065: 'mString' : undeclared identifier
+        test.cpp(5) : see reference to class template instantiation 'String<31>' being compiled
+string.h(74) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+        test.cpp(5) : see reference to class template instantiation 'String<31>' being compiled

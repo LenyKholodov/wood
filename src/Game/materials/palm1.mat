@@ -1,0 +1,16 @@
+material {
+	name "trees/Material #1"
+
+	diffuse_map "palm1.jpg"
+	alpha_map "PALM1M.JPG"
+
+	diffuse 149 149 149 
+	specular 229 229 229 
+	ambient 149 149 149 
+	emission 0 0 0 
+
+	shiness 100
+	alpha_koef 1
+	alpha_present 1
+}
+

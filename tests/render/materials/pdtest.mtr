@@ -1,0 +1,117 @@
+circscroll
+{
+
+	{
+		blend	add
+		map		guis/patd/assets/wms/scroll.tga
+		scroll	time * 0 , time * 0
+		rgb	flickertable [ time * 6 ]
+		
+	}
+
+
+}
+
+
+
+glass
+{
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+	translucent
+
+
+}
+
+
+mmap
+{
+
+	{
+		blend	add
+		map		guis/patd/assets/mmap/map7b.tga
+		scroll	time * 0 , time * 0
+		rgb	flickertable [ time * 4 ]
+
+
+		
+	}
+
+
+}
+
+mmaplines
+{
+
+	{
+		blend	blend
+		map		guis/patd/assets/mmap/maplines.tga
+		scroll	time * 0 , time * 0
+		rgb	flickertable [ time * 4 ]
+
+
+		
+	}
+
+
+}
+
+logoanim
+{
+	translucent
+	{
+		if ( ( time * 10 ) % 10 == 0 )
+		blend add
+		map		guis/patd/assets/logoanim/logofr01.tga
+	}	
+	{
+		if ( ( time * 10 ) % 10 == 1 )
+		blend add
+		map		guis/patd/assets/logoanim/logofr02.tga
+      	}	
+	{
+		if ( ( time * 10 ) % 10 == 2 )
+		blend add
+		map		guis/patd/assets/logoanim/logofr03.tga
+	}	
+	{
+		if ( ( time * 10 ) % 10 == 3 )
+		blend add
+		map		guis/patd/assets/logoanim/logofr04.tga
+	}	
+	{
+		if ( ( time * 10 ) % 10 == 4 )
+		blend add
+		map		guis/patd/assets/logoanim/logofr05.tga
+	}	
+	{
+		if ( ( time * 10 ) % 10 == 5 )
+		blend add
+		map		guis/patd/assets/logoanim/logofr06.tga
+	}
+	{
+		if ( ( time * 10 ) % 10 == 6 )
+		blend add
+		map		guis/patd/assets/logoanim/logofr07.tga
+	}
+	{
+		if ( ( time * 10 ) % 10 == 7 )
+		blend add
+		map		guis/patd/assets/logoanim/logofr08.tga
+	}
+	{
+		if ( ( time * 10 ) % 10 == 8 )
+		blend add
+		map		guis/patd/assets/logoanim/logofr09.tga
+	}
+	{
+		if ( ( time * 10 ) % 10 == 9 )
+		blend add
+		map		guis/patd/assets/logoanim/logofr10.tga
+	}
+
+}

@@ -1,0 +1,39 @@
+#ifndef __MISC_MAP__
+#define __MISC_MAP__
+
+#include <misc\tree.h>
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+///Отображение
+/////////////////////////////////////////////////////////////////////////////////////////////
+template <class T,class key_t = signed int>
+class Map: public BinTree<T,key_t>
+{
+  public:
+                Map (Pool* pool = Memory::M_GetPool ()): BinTree<T,key_t> (pool), mMode (EMPTY) {}
+
+                enum NoElementModes {
+                  DEFAULT = -1,
+                  CREATE  = 1,
+                  EXCEPT  = 2,
+                  EMPTY   = 3
+                };
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+///Индексирование                
+/////////////////////////////////////////////////////////////////////////////////////////////
+        dataiterator operator [] (key_t key) throw (ExcNoElement&, ExcNoMemory&);
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+///Режимы
+/////////////////////////////////////////////////////////////////////////////////////////////
+        int      GetMode () const { return mMode; }        
+        void     SetMode (int mode) { mMode = mode; }
+        
+  private:
+        int     mMode;
+};
+
+#include <misc\map.inl>
+
+#endif

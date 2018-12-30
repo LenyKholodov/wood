@@ -1,0 +1,11 @@
+LIB_OPT            = $(LIB_OPT) /YX"pch.h"
+COPT               = 
+
+!IF  "$(CFG)" == "Debug"
+TARGET_SHORT_NAME  = kerneld.lib
+!ELSEIF  "$(CFG)" == "Release"
+TARGET_SHORT_NAME  = kernel.lib
+!ENDIF
+
+!include make\objlist.inc
+!include ..\build\makepro.vc

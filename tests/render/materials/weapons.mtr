@@ -1,0 +1,773 @@
+clamptable muzzleflashtable{ 0.45, 1, 0.65, 0.88, 0.55, 0.88, 0.55, 1.0, 1.0, 1, 0.88, 0.75, 0.55, 0.30, 0 }
+table muzzleflashrandom{ 1.1, 0.9, 0.85, 1.2, 0.7, 1.02, 0.94 }
+table mgscaleTable {1, 5 }
+table mgTable {0, 1 }
+table emptyTable {0, .3, .7, 1, 1, 1, 1, 1 }
+table mguiTable {.5, 1,.5, 1,.6, 1,.5, .8,.5, 1,.5, .6 }
+
+
+models/weapons/mflash/f_shotgun1
+{	
+       	 noShadows
+	twosided
+   	{
+    	  Blend add
+	  Map   models/weapons/mflash/f_shotgun1.tga
+	zeroclamp
+	}
+}
+
+models/weapons/mflash/f_pistol1
+{	
+       	 noShadows
+	twosided
+   	{
+    	  Blend add
+	  Map   models/weapons/mflash/f_pistol1.tga
+	zeroclamp
+	}
+}
+
+
+
+
+models/weapons/shell1/sshell
+{
+        noselfShadow
+	renderbump  -size 256 256 -trace 0.1 -colorMap -aa 2  models/weapons/shell1/sshell_local.tga models/weapons/shell1/sshell_hi.lwo
+
+			diffusemap	 models/weapons/shell1/sshell.tga
+			bumpmap		 models/weapons/shell1/sshell_local.tga
+           specularmap	 models/weapons/shell1/sshell_s.tga
+
+}
+
+models/weapons/shotgun/gui
+{
+        noselfShadow
+	renderbump  -size 256 256 -trace 0.1 -colorMap -aa 2  models/weapons/shotgun/shotgui_local.tga models/weapons/shotgun/shotgui_hi.lwo
+
+	{
+    	Blend add
+		Map models/weapons/shotgun/gui.tga
+		zeroclamp
+		rgb emptytable[ time * 2 ]
+	}
+
+}
+
+
+models/weapons/shotgun/shotgui
+{
+        noselfShadow
+	renderbump  -size 256 256 -trace 0.1 -colorMap -aa 2  models/weapons/shotgun/shotgui_local.tga models/weapons/shotgun/shotgui_hi.lwo
+
+        	diffusemap	models/weapons/shotgun/shotgui.tga
+			bumpmap		models/weapons/shotgun/shotgui_local.tga
+           specularmap	 models/weapons/shotgun/shotgui_s.tga
+}
+
+
+models/weapons/shotgun/shotgun
+{
+        noselfShadow
+	renderbump  -size 1024 1024 -trace 0.02 -colorMap -aa 2  models/weapons/shotgun/shotgun_local.tga models/weapons/shotgun/shotgun_hi.lwo
+
+        	diffusemap	models/weapons/shotgun/shotgun.tga
+		{
+ 		  blend bumpmap
+          map  addnormals(models/weapons/shotgun/shotgun_local.tga, heightmap(models/weapons/shotgun/shotgun_h.tga, 5 ) )
+ 		  highquality
+     	}
+	
+           specularmap	 models/weapons/shotgun/shotgun_s.tga
+}
+
+/***
+models/weapons/plasmagun/plasmagun
+{
+        noselfShadow
+	renderbump  -size 1024 1024 -aa 2  models/weapons/plasmagun/plasmagun_local.tga models/weapons/plasmagun/plasmagun_hi.lwo
+
+        	diffusemap	models/weapons/plasmagun/plasmagun.tga
+			bumpmap		models/weapons/plasmagun/plasmagun_local.tga
+           specularmap	 models/weapons/plasmagun/plasmagun_s.tga
+}
+***/
+
+models/weapons/plasmagun/plasmagun_gui_background
+{	
+	noShadows
+	twosided
+	{
+		Blend add
+//		Map   models/weapons/plasmagun/m_gui.tga
+		Map   guis/assets/plasmagun/bg.tga
+		zeroclamp
+		rgb mguitable[ time *.3 ]
+	}
+/*
+	{
+    	Blend add
+		Map models/weapons/plasmagun/plasmagun_gui2_empty.tga
+		zeroclamp
+		rgb emptytable[ time *.3 ]
+	}
+*/
+}
+
+models/weapons/plasmagun/plasmagun_gui_empty 
+{
+	noShadows
+	twosided
+	{
+    	Blend add
+//		Map models/weapons/plasmagun/plasmagun_gui2_empty.tga
+		Map   guis/assets/plasmagun/empty.tga
+		zeroclamp
+		rgb emptytable[ time * 2 ]
+	}
+}
+
+models/weapons/plasmagun/plasmagun_gui_reload
+{
+	noShadows
+	twosided
+	{
+    	Blend add
+//		Map models/weapons/plasmagun/plasmagun_gui2_reload.tga
+		Map   guis/assets/plasmagun/reload.tga
+		zeroclamp
+		rgb emptytable[ time * 2 ]
+	}
+}
+
+models/weapons/plasmagun_gui_lowammo
+{
+	noShadows
+	twosided
+	{
+    	Blend add
+		Map   guis/assets/plasmagun/lowammo.tga
+		zeroclamp
+		rgb emptytable[ time * 2 ]
+	}
+}
+
+models/weapons/plasmagun/m_gui_gridscroll
+{
+
+	{
+		blend	blend
+		map		guis/assets/plasmagun/bg_mask.tga
+		red	mguitable[ time *.3 ]
+		green	mguitable[ time *.3 ]
+		blue	mguitable[ time *.3 ]
+		alpha	parm3
+	}
+
+	{
+		maskcolor
+		map		guis/assets/plasmagun/bg_mask.tga
+		alpha	parm3
+	}
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map	guis/assets/plasmagun/grid.tga
+				scale	3.8, 2
+				translate	time * -0.01 , time * -0.3
+		red	flickertable [ time * 0.3 ]
+		green	flickertable [ time * 0.3 ]
+		blue	flickertable [ time * 0.3 ]
+		alpha	parm3
+	}
+	           
+
+}
+
+models/weapons/plasmagun/plasmagun_gui
+{	
+	qer_editorimage	models/weapons/plasmagun/plasmagun_gui.tga
+	//guiSurf	guis/weapons/plasmagun.gui
+	guiSurf	entity
+	//translucent
+}
+
+
+models/weapons/plasmagun/plasmabolt
+{	
+	qer_editorimage    models/weapons/plasmagun/plasmabolt.tga
+       	 noShadows
+	deform sprite
+	noselfShadow
+	translucent
+	twosided
+   	{
+    		 Blend add
+		Map   models/weapons/plasmagun/plasmabolt2.tga
+		zeroclamp
+		rotate	time * 0.7
+		//centerscale   mgscaleTable[time* .9], mgscaleTable[time*. 9] 
+		rgb		fireballtable[ time * .7 ]
+		
+
+	}
+   	//{
+   // 		 Blend add
+	//	Map   models/weapons/plasmagun/plasmabolt2.tga
+	//	zeroclamp
+	//	rotate	time * -0.6
+	//	//centerscale   mgscaleTable[time* .9], mgscaleTable[time* .9] 
+	//	rgb		fireballtable[ time * 1 ]
+	//	
+
+	//}
+}
+
+models/weapons/impfireball/impfireball
+{	
+	qer_editorimage    models/weapons/impfireball/impfireball.tga
+    noShadows
+	deform sprite
+	noselfShadow
+	translucent
+	twosided
+   	{
+    		 Blend add
+		Map   models/weapons/impfireball/impfireball.tga
+		zeroclamp
+		rotate	time * 0.7
+		//centerscale   mgscaleTable[time* .9], mgscaleTable[time*. 9] 
+		rgb		fireballtable[ time * .7 ]
+		
+
+	}
+
+}
+
+models/weapons/impfireball/impfireball2
+{	
+	qer_editorimage    models/weapons/impfireball/impfireball2.tga
+    noShadows
+	deform sprite
+	noselfShadow
+	translucent
+	twosided
+   	{
+    		 Blend add
+		Map   models/weapons/impfireball/impfireball2.tga
+		zeroclamp
+		rotate	time * -0.5
+		//centerscale   mgscaleTable[time* .9], mgscaleTable[time*. 9] 
+		rgb		fireballtable[ time * .4 ]
+		
+
+	}
+
+}
+models/weapons/impfireball/impfireball3
+{	
+	qer_editorimage    models/weapons/impfireball/impfireball3.tga
+    noShadows
+	deform sprite
+	noselfShadow
+	translucent
+	twosided
+   	{
+    		 Blend add
+		Map   models/weapons/impfireball/impfireball3.tga
+		zeroclamp
+		rotate	time * -0.2
+		
+		rgb		fireballtable[ time * .4 ]
+		
+
+	}
+
+}
+
+
+
+models/weapons/bruiserfireball/bruiserfireball
+{	
+	qer_editorimage    models/weapons/bruiserfireball/bruiserfireball.tga
+       	 noShadows
+	deform sprite
+	noselfShadow
+	translucent
+	twosided
+   	{
+    		 Blend add
+		Map   models/weapons/bruiserfireball/bruiserfireball2.tga
+		zeroclamp
+		rotate	time * 0.7
+		//centerscale   mgscaleTable[time* .9], mgscaleTable[time*. 9] 
+		rgb		fireballtable[ time * .7 ]
+		
+
+	}
+   	//{
+   // 		 Blend add
+	//	Map   models/weapons/bruiserfireball/bruiserfireball2.tga
+	//	zeroclamp
+	//	rotate	time * -0.6
+	//	//centerscale   mgscaleTable[time* .9], mgscaleTable[time* .9] 
+	//	rgb		fireballtable[ time * 1 ]
+	//	
+
+	//}
+}
+
+
+
+models/weapons/shell1/mshell
+{
+        noselfShadow
+	renderbump  -size 128 128 -aa 4  models/weapons/shell1/mshell_local.tga models/weapons/shell1/mshell_hi.lwo
+
+        	diffusemap	models/weapons/shell1/mshell.tga
+			bumpmap		models/weapons/shell1/mshell_local.tga
+           specularmap	 models/weapons/shell1/mshell_s.tga
+}
+
+
+
+models/weapons/mflash/f_machinegun
+{	
+       	 noShadows
+	noselfShadow
+	translucent
+	twosided
+   	{
+    		 Blend add
+		Map   models/weapons/mflash/f_machinegun.tga
+		zeroclamp
+		rotate	time * 3.7
+		//centerscale   mgscaleTable[time* 9], mgscaleTable[time* 9] 
+		rgb		mgtable[ time * 5 ]
+		
+
+	}
+   	{
+    		 Blend add
+		Map   models/weapons/mflash/f_machinegun2.tga
+		zeroclamp
+		rotate	time * -2.1
+		//centerscale   mgscaleTable[time* 9], mgscaleTable[time* 9] 
+		rgb		mgtable[ time * 5 ]
+		
+
+	}
+}
+
+models/weapons/machinegun/m_strap
+{
+	noShadows
+	qer_editorimage	models/weapons/machinegun/m_strap.tga
+
+	{       
+      		 blend	diffuseMap 
+		 map	models/weapons/machinegun/m_strap.tga
+		 alphaTest 0.5
+	}
+
+	bumpmap		models/weapons/machinegun/m_strap_local.tga
+	specularmap	models/weapons/machinegun/m_strap_s.tga
+}
+
+models/weapons/machinegun/m_gui_background
+{	
+	noShadows
+	twosided
+	{
+		Blend add
+//		Map   models/weapons/machinegun/m_gui.tga
+		Map   guis/assets/machinegun/bg.tga
+		zeroclamp
+		rgb mguitable[ time *.3 ]
+	}
+/*
+	{
+    	Blend add
+		Map models/weapons/machinegun/m_gui2_empty.tga
+		zeroclamp
+		rgb emptytable[ time *.3 ]
+	}
+*/
+}
+
+models/weapons/machinegun/m_gui_empty 
+{
+	noShadows
+	twosided
+	{
+    	Blend add
+//		Map models/weapons/machinegun/m_gui2_empty.tga
+		Map   guis/assets/machinegun/empty.tga
+		zeroclamp
+		rgb emptytable[ time * 2 ]
+	}
+}
+
+models/weapons/machinegun/m_gui_reload
+{
+	noShadows
+	twosided
+	{
+    	Blend add
+//		Map models/weapons/machinegun/m_gui2_reload.tga
+		Map   guis/assets/machinegun/reload.tga
+		zeroclamp
+		rgb emptytable[ time * 2 ]
+	}
+}
+
+models/weapons/machinegun/m_gui_lowammo
+{
+	noShadows
+	twosided
+	{
+    	Blend add
+		Map   guis/assets/machinegun/lowammo.tga
+		zeroclamp
+		rgb emptytable[ time * 2 ]
+	}
+}
+
+models/weapons/machinegun/m_gui_gridscroll
+{
+
+	{
+		blend	blend
+		map		guis/assets/machinegun/bg_mask.tga
+		red	mguitable[ time *.3 ]
+		green	mguitable[ time *.3 ]
+		blue	mguitable[ time *.3 ]
+		alpha	parm3
+	}
+
+	{
+		maskcolor
+		map		guis/assets/machinegun/bg_mask.tga
+		alpha	parm3
+	}
+
+	{
+    		  	 blend	GL_DST_ALPHA, GL_ONE_MINUS_DST_ALPHA
+				map	guis/assets/machinegun/grid.tga
+				scale	3.8, 2
+				translate	time * -0.01 , time * -0.3
+		red	flickertable [ time * 0.3 ]
+		green	flickertable [ time * 0.3 ]
+		blue	flickertable [ time * 0.3 ]
+		alpha	parm3
+	}
+	           
+
+}
+
+models/weapons/machinegun/m_gui
+{	
+	qer_editorimage	models/weapons/machinegun/m_gui.tga
+	//guiSurf	guis/weapons/machinegun.gui
+	guiSurf	entity
+	//translucent
+}
+
+models/weapons/machinegun/w_machinegun
+{
+        noselfShadow
+	renderbump  -size 512 512 -aa 2  models/weapons/machinegun/w_machinegun_local.tga models/weapons/machinegun/w_machinegun_hi.lwo
+
+        	diffusemap	models/weapons/machinegun/w_machinegun.tga
+			bumpmap		models/weapons/machinegun/w_machinegun_local.tga
+			
+           specularmap	 models/weapons/machinegun/w_machinegun_s.tga
+}
+
+
+models/weapons/machinegun/machinegun
+{
+        noselfShadow
+	renderbump  -size 1024 1024 -aa 2  models/weapons/machinegun/machinegun_local.tga models/weapons/machinegun/machinegun_hi.lwo
+
+        	diffusemap	models/weapons/machinegun/machinegun.tga
+		{
+ 		  blend bumpmap
+          map  addnormals(models/weapons/machinegun/machinegun_local.tga, heightmap(models/weapons/machinegun/machinegun_h.tga, 6 ) )
+ 		  highquality
+     	}
+				
+           specularmap	 models/weapons/machinegun/machinegun_s.tga
+}
+
+
+
+models/weapons/rocketlauncher/rocketfin
+{
+	noselfShadow
+   	 noshadows
+
+	{       
+      	 blend	diffuseMap 
+	 map	models/weapons/rocketlauncher/rocketfin.tga
+	 alphaTest 0.5
+	}
+	bumpmap		models/weapons/rocketlauncher/rocketfin_local.tga
+		
+	
+}
+
+models/weapons/rocketlauncher/rocket
+{
+        noselfShadow
+		noshadows
+	renderbump  -size 128 128 -aa 4  models/weapons/rocketlauncher/rocket_local.tga models/weapons/rocketlauncher/rocket_hi.lwo
+
+        	diffusemap	models/weapons/rocketlauncher/rocket.tga
+			bumpmap		models/weapons/rocketlauncher/rocket_local.tga
+			{
+			blend Add
+           map  models/weapons/rocketlauncher/rocket_add.tga
+			translate	time * 6 , time * 0
+			rgb		eyestable[ time * .7 ]
+			}
+}
+
+
+models/weapons/ammobox1/ammobox1
+{
+        //noselfShadow
+	renderbump  -size 256 256 -aa 2  models/weapons/ammobox1/ammobox1_local.tga models/weapons/ammobox1/ammobox1_hi.lwo
+
+        	diffusemap	models/weapons/ammobox1/ammobox1.tga
+			bumpmap		models/weapons/ammobox1/ammobox1_local.tga
+           specularmap	 models/weapons/ammobox1/ammobox1_s.tga
+}
+models/weapons/ammobox1/ammobox2
+{
+        //noselfShadow
+	renderbump  -size 256 256 -aa 2  models/weapons/ammobox1/ammobox1_local.tga models/weapons/ammobox1/ammobox1_hi.lwo
+
+        	diffusemap	models/weapons/ammobox1/ammobox2.tga
+			bumpmap		models/weapons/ammobox1/ammobox1_local.tga
+           specularmap	 models/weapons/ammobox1/ammobox1_s.tga
+}
+
+
+
+
+models/weapons/pistol/w_pistol
+{
+        //noselfShadow
+	renderbump  -size 128 128 -aa 4  models/weapons/pistol/w_pistol_local.tga models/weapons/pistol/w_pistol_hi.lwo
+
+        	diffusemap	models/weapons/pistol/w_pistol.tga
+			bumpmap		models/weapons/pistol/w_pistol_local.tga
+           specularmap	 models/weapons/pistol/w_pistol_s.tga
+}
+
+
+models/weapons/pistol/pistol
+{
+
+    //noShadows
+	noselfShadow
+	renderbump  -size 512 512 -aa 2  models/weapons/pistol/pistol_local.tga models/weapons/pistol/pistol_hi.lwo
+
+        	diffusemap	models/weapons/pistol/pistol.tga
+		{
+ 		  blend bumpmap
+          map  addnormals(models/weapons/pistol/pistol_local.tga, heightmap(models/weapons/pistol/pistol_h.tga, 5 ) )
+ 		  highquality
+     	}
+                  specularmap	models/weapons/pistol/pistol_s.tga
+
+
+}
+
+models/weapons/mflash/mflash2
+{	
+       	 noShadows
+	twosided
+   	{
+    	  Blend add
+	  Map   models/weapons/mflash/mflash2.tga
+	zeroclamp
+	}
+}
+
+models/weapons/mflash/mflash1
+{	
+        noShadows
+        twosided
+   	{
+    	  Blend add
+	  Map   models/weapons/mflash/mflash1.tga
+	  zeroclamp
+	 rotate	time * -8
+	}
+}
+
+
+
+models/weapons/shell1/shell1
+{	
+        noShadows
+
+        bumpmap		models/weapons/shell1/shell1_local.tga
+        diffusemap		models/weapons/shell1/shell1.tga
+        specularmap		models/weapons/shell1/shell1_s.tga
+}
+
+
+muzzleflash
+{
+	{
+		//map	_spotlight
+		map lights/round
+		zeroClamp
+		colored 
+
+		red 	muzzleflashrandom[ time * 3.33 ] * muzzleflashtable[ (time + parm4) * 4 * Parm3 ] * Parm0
+		green 	muzzleflashrandom[ time * 3.33 ] * muzzleflashtable[ (time + parm4) * 4 * Parm3 ] * Parm1
+		blue 	muzzleflashrandom[ time * 3.33 ] * muzzleflashtable[ (time + parm4) * 4 * Parm3 ] * Parm2
+	}
+}
+
+
+
+models/monsters/zombie/commando/cgun_mflash1
+{
+	noSelfShadow
+	noshadows
+	twosided
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage textures/sfx/muzzle_b2.TGA
+	{
+		if ( ( time * 9 ) % 9 == 0 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/muzzle_b1.tga
+	}	
+	{
+		if ( ( time * 9 ) % 9 == 1 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/muzzle1.tga
+	}	
+	{
+		if ( ( time * 9 ) % 9 == 2 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/muzzle_b2.tga
+	}	
+	{
+		if ( ( time * 9 ) % 9 == 3 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/muzzle2.tga
+	}	
+	{
+		if ( ( time * 9 ) % 9 == 4 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/muzzle3.tga
+	}	
+	{
+		if ( ( time * 9 ) % 9 == 5 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/muzzle_b3.tga
+	}
+	{
+		if ( ( time * 9 ) % 9 == 6 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/muzzle_b1.tga
+	}
+	{
+		if ( ( time * 9 ) % 9 == 7 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/muzzle3.tga
+	}
+	{
+		if ( ( time * 9 ) % 9 == 8 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/muzzle_b2.tga
+	}
+
+
+}
+
+models/monsters/zombie/commando/cgun_mflash2
+{
+	noSelfShadow
+	noshadows
+	twosided
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+	qer_editorimage textures/sfx/fred_fire.tga
+	{
+		if ( ( time * 3 ) % 3 == 0 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/fire1.tga
+	}	
+	{
+		if ( ( time * 3 ) % 3 == 1 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/fire2.tga
+	}	
+	{
+		if ( ( time * 3 ) % 3 == 2 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/fire3.tga
+	}	
+	{
+		if ( ( time * 4 ) % 4 == 3 )
+	blend	add
+		map		models/monsters/zombie/commando/muz_flash/fire4.tga
+	}	
+	
+}
+
+
+models/monsters/zombie/commando/cgun
+{
+//	noSelfShadow
+	bumpmap models/monsters/zombie/commando/cgun_local
+	diffusemap models/monsters/zombie/commando/cgun_d.tga
+	specularmap models/monsters/zombie/commando/cgun_s.tga
+}
+
+
+models/weapons/shotgun
+{
+//	noSelfShadow
+	bumpmap addnormals ( models/seneca/shotgun/shotgun_local.tga, heightmap ( models/seneca/shotgun/shotgun_bmp.tga, 5) )
+	diffusemap models/seneca/shotgun/shotgun_d.tga
+	specularmap models/seneca/shotgun/shotgun_s.tga
+}
+
+models/weapons/hands/hand_stest 
+{	
+    	//noSelfShadow
+        bumpmap		addnormals( models/weapons/hands/hand_local.tga, heightmap( models/seneca/testshitmodels/testhandbmp.tga, 3 ) )
+        diffusemap	models/seneca/testshitmodels/testhandspec.tga
+        specularmap	models/weapons/hands/hand_sp.tga
+}
+
+models/weapons/hands/hand
+{	
+    	noSelfShadow
+		
+	
+        diffusemap	models/weapons/hands/hand_df.tga
+
+		{
+ 		  blend bumpmap
+          map  addnormals( models/weapons/hands/hand_local.tga, heightmap( models/weapons/hands/hand_add.tga, 3 ) )
+ 		  highquality
+     	}
+
+        specularmap	models/weapons/hands/hand_sp.tga
+}

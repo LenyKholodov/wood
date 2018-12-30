@@ -1,0 +1,9 @@
+; DLL.def : Declares the module parameters for the DLL.
+
+LIBRARY      "DLL"
+DESCRIPTION  'DLL Windows Dynamic Link Library'
+
+EXPORTS
+    ;Explicit exports go here
+    PluginInit @1
+    cucu       @2

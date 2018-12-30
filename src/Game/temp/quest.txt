@@ -1,0 +1,25 @@
+Необходимо прочитать c экрана в текстуру RGB + альфа.
+
+При отрисовки полигона с текстурой, считанной с экрана, прозрачность не присутствует, т.е. рисуются RGB компоненты, но фон текстуры не прозрачен. Рисую с включенным GL_BLEND и 
+    glTexEnvi        (GL_TEXTURE_ENV,GL_TEXTURE_ENV_MODE,GL_REPLACE);
+   При аналогичном вызове glTexImage2D всё работает нормально. 
+   Где ошибка?   
+
+Собственно основная загвоздка скорре всего в
+функции чтения: 
+
+///////
+    glCopyTexImage2D (GL_TEXTURE_2D,0,GL_RGBA,0,0,512,512,0);
+//////
+
+  Код отрисовки в текстуру:
+
+  glBlendFunc      (GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
+    glClearColor     (1,1,1,0);   
+    glClear          (GL_COLOR_BUFFER_BIT);    
+    glColor4f        (0,0,0,1); 
+
+    DrawFunctions ();
+
+    glBindTexture    (GL_TEXTURE_2D,texture);
+    glCopyTexImage2D (GL_TEXTURE_2D,0,GL_RGBA,0,0,512,512,0);

@@ -1,0 +1,215 @@
+initiating "1" 0
+ name=Gravity Center aka Loins
+
+ coord.x=150
+ coord.y=229
+ al.nom= 0.0000000000 al.min= 0.0000000000 al.max= 0.0000000000
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=12
+ Rcolor=12
+initiating "2" 00
+ name=Neck
+ length=45
+ al.nom=-1.5707963268 al.min=-3.6651914292 al.max= 1.0471975512
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min=-1.0471975512 ga.max= 1.0471975512
+ Lcolor=10
+ Rcolor=10
+initiating "3" 000
+ name=Chest
+ length=20
+ al.nom= 2.8797932658 al.min= 2.6179938780 al.max= 2.8797932658
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=15
+ Rcolor=15
+
+initiating "4" 001
+ name=Head
+ length=10
+ al.nom= 0.0000000000 al.min= 0.0000000000 al.max= 0.0000000000
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=10
+ Rcolor=10
+initiating "5" 0011
+ name=Tooth
+ length=5
+ al.nom= 1.5707963268 al.min= 0.0000000000 al.max= 0.0000000000
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=10
+ Rcolor=10
+
+
+initiating "6" 002
+
+ name=Left Shoulder
+ length=20
+ al.nom= 0.0000000000 al.min=-2.0943951024 al.max= 1.5707963268
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 1.9634954085 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=11
+ Rcolor=11
+initiating "7" 0022
+ name=Left Forearm
+ length=30
+ al.nom= 3.1415926536 al.min=-6.2831853072 al.max= 6.2831853072
+ be.nom= 0.0000000000 be.min=-2.0943951024 be.max= 1.0471975512
+ ga.nom=-1.7951958021 ga.min= 0.1308996939 ga.max= 3.1415926536
+
+ Lcolor=11
+ Rcolor=11
+initiating "8" 00222
+ name=Left Hand
+ length=25
+ al.nom= 0.0000000000 al.min=-2.6179938780 al.max= 0.0000000000
+ be.nom= 0.0000000000 be.min=-0.5235987756 be.max= 1.5707963268
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=11
+ Rcolor=11
+initiating "9" 002222
+ name=Left Hand's Fingers
+ length=10
+ al.nom= 0.0000000000 al.min=-0.7853981634 al.max= 0.7853981634
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=11
+ Rcolor=11
+
+
+
+
+initiating "10" 003
+
+ name=Right Shoulder
+ length=20
+ al.nom= 0.0000000000 al.min=-2.0943951024 al.max= 1.5707963268
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom=-1.9634954085 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=14
+ Rcolor=14
+initiating "11" 0033
+ name=Right Forearm
+ length=30
+ al.nom= 3.1415926536 al.min=-6.2831853072 al.max= 6.2831853072
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 1.7951958021 ga.min=-3.1415926536 ga.max=-0.1308996939
+
+ Lcolor=14
+ Rcolor=14
+initiating "12" 00333
+ name=Right Hand
+ length=25
+ al.nom= 0.0000000000 al.min=-2.6179938780 al.max= 0.0000000000
+ be.nom= 0.0000000000 be.min=-1.5707963268 be.max= 0.5235987756
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=14
+ Rcolor=14
+initiating "13" 003333
+ name=Right Hand's Fingers
+ length=10
+ al.nom= 0.0000000000 al.min=-0.7853981634 al.max= 0.7853981634
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=14
+ Rcolor=14
+
+
+
+
+
+
+initiating "14" 01
+ name=Left Tazz
+ length=20
+ al.nom= 1.5707963268 al.min= 0.0000000000 al.max= 0.0000000000
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 1.0471975512 ga.min= 0.7853981634 ga.max= 1.5707963268
+ Lcolor=11
+ Rcolor=11
+initiating "15" 011
+ name=Left Knee
+ length=45
+ al.nom= 0.0000000000 al.min=-2.0943951024 al.max= 0.5235987756
+ be.nom= 0.0000000000 be.min=-1.0471975512 be.max= 1.0471975512
+ ga.nom=-1.0471975512 ga.min=-0.5235987756 ga.max= 1.5707963268
+ Lcolor=11
+ Rcolor=11
+initiating "16" 0111
+ name=Left Heel
+ length=45
+ al.nom= 0.0000000000 al.min= 0.0000000000 al.max= 4.7123889804
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=11
+ Rcolor=11
+initiating "17" 01111
+ name=Left Foot
+ length=15
+ al.nom=-1.5707963268 al.min=-2.0943951024 al.max=-0.5235987756
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=11
+ Rcolor=11
+initiating "18" 011111
+ name=Left Foot's Fingers
+ length=7
+ al.nom= 0.0000000000 al.min=-1.0471975512 al.max= 0.0000000000
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=11
+ Rcolor=11
+
+
+
+
+
+
+initiating "19" 02
+ name=Right Tazz
+ length=20
+ al.nom= 1.5707963268 al.min= 0.0000000000 al.max= 0.0000000000
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom=-1.0471975512 ga.min=-1.5707963268 ga.max=-0.7853981634
+ Lcolor=14
+ Rcolor=14
+initiating "20" 022
+ name=
+ length=45
+ al.nom= 0.0000000000 al.min=-2.0943951024 al.max= 0.5235987756
+ be.nom= 0.0000000000 be.min=-1.0471975512 be.max= 1.0471975512
+ ga.nom= 1.0471975512 ga.min=-0.5235987756 ga.max= 1.5707963268
+ Lcolor=14
+ Rcolor=14
+initiating "21" 0222
+ name=Right Heel
+ length=45
+ al.nom= 0.0000000000 al.min= 0.0000000000 al.max= 4.7123889804
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=14
+ Rcolor=14
+initiating "22" 02222
+ name=Right Foot
+ length=15
+ al.nom=-1.5707963268 al.min=-2.0943951024 al.max=-0.5235987756
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=14
+ Rcolor=14
+initiating "23" 022222
+ name=Right Foot's Fingers
+ length=7
+ al.nom= 0.0000000000 al.min=-1.0471975512 al.max= 0.0000000000
+ be.nom= 0.0000000000 be.min= 0.0000000000 be.max= 0.0000000000
+ ga.nom= 0.0000000000 ga.min= 0.0000000000 ga.max= 0.0000000000
+ Lcolor=14
+ Rcolor=14
+
+
+
+
+
+

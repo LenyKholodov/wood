@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: buggy2sp - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\users\admin\LOCALS~1\Temp\RSP5D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/buggy2sp.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\studio\projects\ode2\PhCTest\BCScenePhisObject.cpp"
+]
+Creating command line "cl.exe @C:\users\admin\LOCALS~1\Temp\RSP5D.tmp" 
+Creating temporary file "C:\users\admin\LOCALS~1\Temp\RSP5E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/buggy2sp.pdb" /debug /machine:I386 /out:"Debug/buggy2sp.exe" /pdbtype:sept 
+.\Debug\BCPhisComponentObject.obj
+.\Debug\BCPhisMisc.obj
+.\Debug\BCScenePhisObject.obj
+.\Debug\buggy2sp.obj
+.\Debug\dCylinder.obj
+.\Debug\dCylinderMass.obj
+.\Debug\dEdge.obj
+.\Debug\dFace.obj
+.\Debug\BCPhisicalScene.obj
+.\Debug\BCPhisMaterialCollisionCharacter.obj
+.\resources.RES
+]
+Creating command line "link.exe @C:\users\admin\LOCALS~1\Temp\RSP5E.tmp"
+<h3>Output Window</h3>
+Compiling...
+BCScenePhisObject.cpp
+d:\studio\vc\include\map(75) : warning C4786: 'std::reverse_bidirectional_iterator<std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::iterator,std::pair<unsigned long const ,dSurfaceParameters>,std::pair<unsigned long const ,dSurfaceParameters> &,std::pair<unsigned long const ,dSurfaceParameters> *,int>' : identifier was truncated to '255' characters in the debug information
+        d:\studio\vc\include\map(75) : while compiling class-template member function 'std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::const_iterator __thiscall std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::end(void) const'
+d:\studio\vc\include\map(75) : warning C4786: 'std::reverse_bidirectional_iterator<std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::const_iterator,std::pair<unsigned long const ,dSurfaceParameters>,std::pair<unsigned long const ,dSurfaceParameters> const &,std::pair<unsigned long const ,dSurfaceParameters> const *,int>' : identifier was truncated to '255' characters in the debug information
+        d:\studio\vc\include\map(75) : while compiling class-template member function 'std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::const_iterator __thiscall std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::end(void) const'
+d:\studio\vc\include\map(75) : warning C4786: 'std::pair<std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::iterator,bool>' : identifier was truncated to '255' characters in the debug information
+        d:\studio\vc\include\map(75) : while compiling class-template member function 'std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::const_iterator __thiscall std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::end(void) const'
+d:\studio\vc\include\map(75) : warning C4786: 'std::pair<std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::iterator,std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::iterator>' : identifier was truncated to '255' characters in the debug information
+        d:\studio\vc\include\map(75) : while compiling class-template member function 'std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::const_iterator __thiscall std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::end(void) const'
+d:\studio\vc\include\map(75) : warning C4786: 'std::pair<std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::const_iterator,std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::const_iterator>' : identifier was truncated to '255' characters in the debug information
+        d:\studio\vc\include\map(75) : while compiling class-template member function 'std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::const_iterator __thiscall std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::end(void) const'
+d:\studio\vc\include\utility(21) : warning C4786: 'std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::iterator' : identifier was truncated to '255' characters in the debug information
+d:\studio\projects\ode2\phctest\bcphisicalscene.h(51) : warning C4786: 'std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::const_iterator' : identifier was truncated to '255' characters in the debug information
+d:\studio\projects\ode2\phctest\bcphisicalscene.h(51) : warning C4786: 'std::_Tree<unsigned long,std::pair<unsigned long const ,dSurfaceParameters>,std::map<unsigned long,dSurfaceParameters,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::_Kfn,std::less<unsigned long>,std::allocator<dSurfaceParameters> >::iterator' : identifier was truncated to '255' characters in the debug information
+Linking...
+
+
+
+<h3>Results</h3>
+buggy2sp.exe - 0 error(s), 8 warning(s)
+</pre>
+</body>
+</html>

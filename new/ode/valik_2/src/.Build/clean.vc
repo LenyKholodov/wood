@@ -1,0 +1,12 @@
+LIB_DIR  = Q:\lib
+
+LIB_PROJ = Ode       \
+		   advShapes \
+           drawstuff 
+
+all:       "__clean"
+
+"__clean":
+    @echo Clean from debug
+    @for %i in ($(LIB_PROJ)) do @call clean_lib.bat %i
+    @echo End of clean

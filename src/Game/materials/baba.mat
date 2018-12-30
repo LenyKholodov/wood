@@ -1,0 +1,112 @@
+material {
+	name "models/Material12"
+
+
+	diffuse 15 43 79 
+	specular 192 192 192 
+	ambient 15 43 79 
+	emission 0 0 0 
+
+	shiness 20
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "models/Material8"
+
+
+	diffuse 200 200 200 
+	specular 192 192 192 
+	ambient 200 200 200 
+	emission 0 0 0 
+
+	shiness 20
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "models/Material13"
+
+
+	diffuse 200 165 125 
+	specular 192 192 192 
+	ambient 200 165 125 
+	emission 0 0 0 
+
+	shiness 20
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "models/Material14"
+
+
+	diffuse 234 202 173 
+	specular 192 192 192 
+	ambient 234 202 173 
+	emission 0 0 0 
+
+	shiness 20
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "models/Material15"
+
+
+	diffuse 184 190 190 
+	specular 192 192 192 
+	ambient 184 190 190 
+	emission 0 0 0 
+
+	shiness 20
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "models/Material16"
+
+
+	diffuse 82 120 218 
+	specular 192 192 192 
+	ambient 82 120 218 
+	emission 0 0 0 
+
+	shiness 20
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "models/Material17"
+
+
+	diffuse 40 11 0 
+	specular 192 192 192 
+	ambient 40 11 0 
+	emission 0 0 0 
+
+	shiness 20
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "models/Material18"
+
+
+	diffuse 46 13 4 
+	specular 192 192 192 
+	ambient 46 13 4 
+	emission 0 0 0 
+
+	shiness 20
+	alpha_koef 1
+	alpha_present 0
+}
+

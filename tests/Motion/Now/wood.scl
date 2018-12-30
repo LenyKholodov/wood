@@ -1,0 +1,200 @@
+bonebegin // 22 total points
+ name=Gravity Center;
+// length=0;
+ coord.x=150; 
+ coord.y=229; 
+ al.nom=0;           al.min=0;           al.max=0;
+ be.nom=0;           be.min=0;           be.max=0;
+ ga.nom=0;           ga.min=0;           ga.max=0;
+ Lcolor=12;                      // not used
+ Rcolor=12;
+ bonebegin
+  name=Top;
+  length=45;
+  al.nom=-Pi/2;       al.min=0;           al.max=0;
+  be.nom=0;           be.min=0;           be.max=0;
+  ga.nom=0;           ga.min=0;           ga.max=0;
+  Lcolor=10;
+  Rcolor=10;
+  bonebegin
+   name=Branch 1 start;
+   length=20;
+   al.nom=Pi/3;        al.min=0;           al.max=0;
+   be.nom=0;           be.min=0;           be.max=0;
+   ga.nom=0;           ga.min=0;           ga.max=0;
+   Lcolor=1;
+   Rcolor=1;
+   bonebegin
+    name=Branch 1 joint 1;
+    length=15;
+    al.nom=Pi/6;        al.min=0;           al.max=0;
+    be.nom=0;           be.min=0;           be.max=0;
+    ga.nom=0;           ga.min=0;           ga.max=0;
+    Lcolor=1;
+    Rcolor=1;
+    bonebegin
+     name=Branch 1 joint 2;
+     length=15;
+     al.nom=Pi/6;        al.min=0;           al.max=0;
+     be.nom=0;           be.min=0;           be.max=0;
+     ga.nom=0;           ga.min=0;           ga.max=0;
+     Lcolor=1;
+     Rcolor=1;
+    boneend // Branch 1 joint 2
+   boneend // Branch 1 joint 1
+  boneend // Branch 1 start
+  bonebegin
+   name=Branch 2 start;
+   length=10;
+   al.nom=Pi/8;        al.min=0;           al.max=0;
+   be.nom=Pi/6;        be.min=0;           be.max=0;
+   ga.nom=0;           ga.min=0;           ga.max=0;
+   Lcolor=2;
+   Rcolor=2;
+   bonebegin
+    name=Branch 2 joint 1;
+    length=15;
+    al.nom=Pi/8;        al.min=0;           al.max=0;
+    be.nom=0;           be.min=0;           be.max=0;
+    ga.nom=0;           ga.min=0;           ga.max=0;
+    Lcolor=2;
+    Rcolor=2;
+   boneend // Branch 2 joint 1
+  boneend // Branch 2 start
+  bonebegin
+   name=Branch 3 start;
+   length=10;
+   al.nom=Pi/3;        al.min=0;           al.max=0;
+   be.nom=2*Pi/3;      be.min=0;           be.max=0;
+   ga.nom=0;           ga.min=0;           ga.max=0;
+   Lcolor=3;
+   Rcolor=3;
+   bonebegin
+    name=Branch 3 joint 1;
+    length=10;
+    al.nom=Pi/6;        al.min=0;           al.max=0;
+    be.nom=0;           be.min=0;           be.max=0;
+    ga.nom=0;           ga.min=0;           ga.max=0;
+    Lcolor=3;
+    Rcolor=3;
+    bonebegin
+     name=Branch 3 joint 2;
+     length=10;
+     al.nom=Pi/6;        al.min=0;           al.max=0;
+     be.nom=0;           be.min=0;           be.max=0;
+     ga.nom=0;           ga.min=0;           ga.max=0;
+     Lcolor=3;
+     Rcolor=3;
+     bonebegin
+      name=Branch 3 joint 3;
+      length=10;
+      al.nom=Pi/6;        al.min=0;           al.max=0;
+      be.nom=0;           be.min=0;           be.max=0;
+      ga.nom=0;           ga.min=0;           ga.max=0;
+      Lcolor=3;
+      Rcolor=3;
+     boneend // Branch 3 joint 3
+    boneend // Branch 3 joint 2
+   boneend // Branch 3 joint 1
+  boneend // Branch 3 start
+  bonebegin
+   name=Branch 4 start;
+   length=30;
+   al.nom=Pi/3;        al.min=0;           al.max=0;
+   be.nom=3*Pi/2;      be.min=0;           be.max=0;
+   ga.nom=0;           ga.min=0;           ga.max=0;
+   Lcolor=4;
+   Rcolor=4;
+   bonebegin
+    name=Branch 4 joint 1;
+    length=10;
+    al.nom=Pi/4;        al.min=0;           al.max=0;
+    be.nom=0;           be.min=0;           be.max=0;
+    ga.nom=0;           ga.min=0;           ga.max=0;
+    Lcolor=4;
+    Rcolor=4;
+   boneend // Branch 4 joint 1
+  boneend // Branch 4 start
+ boneend // Top
+ bonebegin
+  name=Root 1 start;
+  length=30;
+  al.nom=Pi/6;        al.min=0;           al.max=0;
+  be.nom=0;           be.min=0;           be.max=0;
+  ga.nom=0;           ga.min=0;           ga.max=0;
+  Lcolor=5;
+  Rcolor=5;
+  bonebegin
+   name=Root 1 joint 1;
+   length=30;
+   al.nom=Pi/6;        al.min=0;           al.max=0;
+   be.nom=0;           be.min=0;           be.max=0;
+   ga.nom=0;           ga.min=0;           ga.max=0;
+   Lcolor=5;
+   Rcolor=5;
+   bonebegin
+    name=Root 1 joint 2;
+    length=60;
+    al.nom=Pi/4;        al.min=0;           al.max=0;
+    be.nom=0;           be.min=0;           be.max=0;
+    ga.nom=0;           ga.min=0;           ga.max=0;
+    Lcolor=5;
+    Rcolor=5;
+   boneend // Root 1 joint 2
+  boneend // Root 1 joint 1
+ boneend // Root 1 start
+ bonebegin
+  name=Root 2 start;
+  length=30;
+  al.nom=Pi/6;        al.min=0;           al.max=0;
+  be.nom=2*Pi/3;      be.min=0;           be.max=0;
+  ga.nom=0;           ga.min=0;           ga.max=0;
+  Lcolor=6;
+  Rcolor=6;
+  bonebegin
+   name=Root 2 joint 1;
+   length=30;
+   al.nom=Pi/6;        al.min=0;           al.max=0;
+   be.nom=0;           be.min=0;           be.max=0;
+   ga.nom=0;           ga.min=0;           ga.max=0;
+   Lcolor=6;
+   Rcolor=6;
+   bonebegin
+    name=Root 2 joint 2;
+    length=60;
+    al.nom=Pi/4;        al.min=0;           al.max=0;
+    be.nom=0;           be.min=0;           be.max=0;
+    ga.nom=0;           ga.min=0;           ga.max=0;
+    Lcolor=6;
+    Rcolor=6;
+   boneend // Root 2 joint 2
+  boneend // Root 2 joint 1
+ boneend // Root 2 start
+ bonebegin
+  name=Root 3 start;
+   length=30;
+   al.nom=Pi/6;        al.min=0;           al.max=0;
+   be.nom=-2*Pi/3;     be.min=0;           be.max=0;
+   ga.nom=0;           ga.min=0;           ga.max=0;
+   Lcolor=7;
+   Rcolor=7;
+  bonebegin
+   name=Root 3 joint 1;
+   length=30;
+   al.nom=Pi/6;        al.min=0;           al.max=0;
+   be.nom=0;           be.min=0;           be.max=0;
+   ga.nom=0;           ga.min=0;           ga.max=0;
+   Lcolor=7;
+   Rcolor=7;
+   bonebegin
+    name=Root 3 joint 2;
+    length=60;
+    al.nom=Pi/4;        al.min=0;           al.max=0;
+    be.nom=0;           be.min=0;           be.max=0;
+    ga.nom=0;           ga.min=0;           ga.max=0;
+    Lcolor=7;
+    Rcolor=7;
+   boneend // Root 3 joint 2
+  boneend // Root 3 joint 1
+ boneend // Root 3 start
+boneend // Gravity Center

@@ -1,0 +1,20 @@
+/* Wedit generated resource file */
+#include <windows.h>
+#include "c:\lcc\project\tcp\tcpres.h"
+
+
+IDD_MAINDIALOG DIALOG 110, 40, 280, 146
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "tcp"
+FONT 8, "Helv"
+BEGIN
+    PUSHBUTTON      "Send", IDB_SEND, 215, 118, 42, 14
+    EDITTEXT        IDE_IP, 128, 18, 78, 12, ES_AUTOHSCROLL
+    LTEXT           "IP Address", 106, 89, 18, 36, 12
+    EDITTEXT        IDE_RUN, 48, 118, 158, 12, ES_AUTOHSCROLL
+    LTEXT           "Message", 108, 9, 118, 29, 12
+    PUSHBUTTON      "Connect", IDB_CON, 216, 16, 40, 14
+    EDITTEXT        IDE_MSG, 13, 36, 244, 74, ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL
+END

@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Addons - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\users\admin\LOCALS~1\Temp\RSP5E.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /D "RELEASE" /D "dSINGLE" /Fp"Release/Addons.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"Q:\src\AdvShapes\dCylinder.cpp"
+]
+Creating command line "cl.exe @C:\users\admin\LOCALS~1\Temp\RSP5E.tmp" 
+Creating command line "link.exe -lib /nologo /out:"q:\lib\OdeAddonsSP.lib"  .\Release\dCylinder.obj "
+<h3>Output Window</h3>
+Compiling...
+dCylinder.cpp
+Q:\src\AdvShapes\dCylinder.cpp(1087) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+Q:\src\AdvShapes\dCylinder.cpp(1119) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+Q:\src\AdvShapes\dCylinder.cpp(838) : warning C4700: local variable 'normal' used without having been initialized
+Creating library...
+
+
+
+<h3>Results</h3>
+OdeAddonsSP.lib - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

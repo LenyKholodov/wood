@@ -1,0 +1,2362 @@
+From: <Сохранено Microsoft Internet Explorer 5>
+Subject: WINAMP.COM | NSDN | Winamp2x | Developer Documentation | SDK | API
+Date: Sun, 3 Aug 2003 03:55:30 +0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0000_01C35973.153BAF50";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1106
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: text/html;
+	charset="windows-1251"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.winamp.com/nsdn/winamp2x/dev/sdk/api.jhtml
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- =0A=
+All code and content within these pages are copyright Nullsoft, Inc, a =0A=
+wholly owned subsidiary of America Online, Inc. Redistribution or use =0A=
+of any content and code is strictly prohibited without the expressed =0A=
+permission America Online, Inc.=0A=
+--><HTML><HEAD><TITLE>WINAMP.COM | NSDN | Winamp2x | Developer =
+Documentation | SDK | API</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Dwindows-1251"><LINK=20
+href=3D"http://www.winamp.com/inc/themes/nsdn.css" type=3Dtext/css =
+rel=3Dstylesheet>
+<META http-equiv=3Dpics-label=20
+content=3D'(pics-1.1 "http://www.icra.org/ratingsv02.html" l gen true =
+for "http://www.winamp.com" r (cz 1 lc 1 nz 1 oz 1 vz 1) =
+"http://www.rsac.org/ratingsv01.html" l gen true for =
+"http://www.winamp.com" r (n 0 s 0 v 0 l 1))'>
+<META=20
+content=3D"Winamp from Nullsoft is the ultimate high-fidelity music =
+player for Windows 95/98/ME/NT/2000. Winamp supports MP3, CD and other =
+audio formats, has more than 20,000 skins and 1000 audio visualization =
+and effect plug-ins. Winamp is free."=20
+name=3Ddescription>
+<META=20
+content=3D"MP3, player, software, Winamp, music, CD, audio, streaming, =
+free, Nullsoft, SHOUTcast, hi-fi, high-fidelity, Windows, 95, 98, NT, =
+play-back, freeware, PC, AOL, America Online"=20
+name=3Dkeywords>
+<META content=3D"MSHTML 6.00.2800.1106" name=3DGENERATOR></HEAD>
+<BODY leftMargin=3D0 topMargin=3D0 onload=3D"" rightMargin=3D0 =
+marginwidth=3D"0"=20
+marginheight=3D"0"><A name=3Dtop></A><BR><!-- SITE WIDTH CONTROL -->
+<TABLE class=3Dmastertable cellSpacing=3D0 cellPadding=3D0 width=3D750 =
+align=3Dcenter=20
+border=3D1>
+  <TBODY>
+  <TR>
+    <TD class=3Dmastertable><!-- SITE WIDTH CONTROL -->
+      <TABLE class=3Dheaderbg cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+      align=3Dcenter border=3D0>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D321 =
+align=3Dcenter=20
+              border=3D0><TBODY>
+              <TR>
+                <TD colSpan=3D3><IMG height=3D5 alt=3D""=20
+                  src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D225=20
+                  border=3D0></TD></TR>
+              <TR>
+                <TD width=3D69><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D1=20
+                  border=3D0></TD>
+                <TD>
+                  <TABLE cellSpacing=3D0 cellPadding=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3Dheaderlogo><A=20
+                        href=3D"http://www.winamp.com/nsdn/"><IMG =
+height=3D42=20
+                        =
+src=3D"http://www.winamp.com/images/misc/trans.gif"=20
+                        width=3D182 =
+border=3D0></A></TD></TR></TBODY></TABLE></TD>
+                <TD width=3D70><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D1=20
+                  border=3D0></TD></TR>
+              <TR>
+                <TD colSpan=3D3><IMG height=3D6 alt=3D""=20
+                  src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D225=20
+                  border=3D0></TD></TR></TBODY></TABLE></TD><!-- Tabs =
+Open -->
+          <TD vAlign=3Dbottom rowSpan=3D2>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3Dfontsize8pt vAlign=3Dcenter align=3Dright =
+colSpan=3D7=20
+                height=3D32><A =
+href=3D"http://www.winamp.com/download/">NEW!=20
+                  Download Winamp3!</A> - <A=20
+                  href=3D"http://forums.winamp.com/">Talk Back In The=20
+                Forums!</A></TD></TR>
+              <TR vAlign=3Dbottom>
+                <TD><A href=3D"http://www.winamp.com/"><IMG height=3D22=20
+                  src=3D"http://www.winamp.com/images/tabs/off/home.gif" =
+width=3D46=20
+                  border=3D0></A></TD>
+                <TD><A href=3D"http://www.winamp.com/download/"><IMG =
+height=3D22=20
+                  =
+src=3D"http://www.winamp.com/images/tabs/off/winamp.gif"=20
+                  width=3D59 border=3D0></A></TD>
+                <TD><A href=3D"http://www.winamp.com/music/"><IMG =
+height=3D22=20
+                  =
+src=3D"http://www.winamp.com/images/tabs/off/music.gif" width=3D44=20
+                  border=3D0></A></TD>
+                <TD><A href=3D"http://www.winamp.com/skins/"><IMG =
+height=3D22=20
+                  =
+src=3D"http://www.winamp.com/images/tabs/off/skins.gif" width=3D43=20
+                  border=3D0></A></TD>
+                <TD><A href=3D"http://www.winamp.com/plugins/"><IMG =
+height=3D22=20
+                  =
+src=3D"http://www.winamp.com/images/tabs/off/plugins.gif"=20
+                  width=3D58 border=3D0></A></TD>
+                <TD><A href=3D"http://forums.winamp.com/"><IMG =
+height=3D22=20
+                  =
+src=3D"http://www.winamp.com/images/tabs/off/community.gif"=20
+                  width=3D79 border=3D0></A></TD>
+                <TD><A href=3D"http://www.winamp.com/nsdn/"><IMG =
+height=3D22=20
+                  =
+src=3D"http://www.winamp.com/images/tabs/on/develop.gif"=20
+                  width=3D59 =
+border=3D0></A></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD vAlign=3Dbottom width=3D"90%">
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR class=3Dhorizontaldivider>
+                <TD class=3Dhorizontaldivider><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D1=20
+                  border=3D0></TD></TR></TBODY></TABLE></TD>
+          <TD></TD>
+          <TD vAlign=3Dbottom width=3D"10%">
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR class=3Dhorizontaldivider>
+                <TD class=3Dhorizontaldivider><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D1=20
+                  =
+border=3D0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!-- END =
+HEADER -->
+      <TABLE class=3Dheader height=3D22 cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+      border=3D0>
+        <TBODY>
+        <TR>
+          <TD align=3Dmiddle width=3D15>&nbsp;</TD>
+          <TD align=3Dmiddle width=3D"16%"><A class=3Dheader=20
+            href=3D"http://www.winamp.com/nsdn/">NSDN Home</A></TD>
+          <TD align=3Dmiddle><IMG=20
+            src=3D"http://www.winamp.com/images/tabs3/divider.gif"></TD>
+          <TD align=3Dmiddle width=3D"16%"><A class=3Dheader=20
+            =
+href=3D"http://www.winamp.com/nsdn/winamp3x/news/betanews.jhtml">Beta=20
+            News</A></TD>
+          <TD align=3Dmiddle><IMG=20
+            src=3D"http://www.winamp.com/images/tabs3/divider.gif"></TD>
+          <TD align=3Dmiddle width=3D"16%"><A class=3Dheaderhl=20
+            href=3D"http://www.winamp.com/nsdn/winamp2x/">Winamp 2x =
+Info</A></TD>
+          <TD align=3Dmiddle><IMG=20
+            src=3D"http://www.winamp.com/images/tabs3/divider.gif"></TD>
+          <TD align=3Dmiddle width=3D"16%"><A class=3Dheader=20
+            href=3D"http://www.winamp.com/nsdn/winamp3x/">Winamp 3x =
+Info</A></TD>
+          <TD align=3Dmiddle><IMG=20
+            src=3D"http://www.winamp.com/images/tabs3/divider.gif"></TD>
+          <TD align=3Dmiddle width=3D"16%"><A class=3Dheader=20
+            href=3D"http://www.winamp.com/nsdn/vault/">Code =
+Vault</A></TD>
+          <TD align=3Dmiddle><IMG=20
+            src=3D"http://www.winamp.com/images/tabs3/divider.gif"></TD>
+          <TD align=3Dmiddle width=3D"16%"><A class=3Dheader=20
+            =
+href=3D"http://www.winamp.com/nsdn/glossary/">Glossary</A></TD>
+          <TD align=3Dmiddle width=3D15>&nbsp;</TD></TR>
+        <TR class=3Dhorizontaldivider>
+          <TD class=3Dhorizontaldivider colSpan=3D13><IMG height=3D1 =
+alt=3D""=20
+            src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D1=20
+          border=3D0></TD></TR></TBODY></TABLE>
+      <SCRIPT language=3DJavascript1.1=20
+      src=3D"http://ar.atwola.com/file/adsWrapper.js"></SCRIPT>
+
+      <TABLE height=3D15 cellSpacing=3D0 cellPadding=3D0 align=3Dcenter>
+        <TBODY>
+        <TR>
+          <TD><IMG height=3D15 =
+src=3D"http://www.winamp.com/images/misc/trans.gif"=20
+            width=3D1></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR><!-- Left Column -->
+          <TD noWrap width=3D15><IMG height=3D1=20
+            src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D15></TD><!-- FEATURED COLUMN -->
+          <TD class=3Dfeaturedcolbg vAlign=3Dtop noWrap align=3Dmiddle =
+width=3D128><!-- Navigation Bar BEGIN -->
+            <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3Dfeaturedheader>N A V I G A T E</TD></TR>
+              <TR>
+                <TD height=3D2><IMG height=3D2 alt=3D""=20
+                  src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D1=20
+                  border=3D0></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 align=3Dleft>
+              <TBODY>
+              <TR class=3Dfontsize9pt>
+                <TD noWrap><A class=3Dnavlinks=20
+                  href=3D"http://www.winamp.com/nsdn/"><IMG height=3D13 =
+hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/section.gif"=20
+                  width=3D16 align=3DabsMiddle border=3D0>NSDN =
+Home</A><BR><BR><A=20
+                  class=3Dnavlinks=20
+                  href=3D"http://www.winamp.com/nsdn/winamp2x/"><IMG =
+height=3D13=20
+                  hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/section.gif"=20
+                  width=3D16 align=3DabsMiddle border=3D0>Winamp=20
+                  2x</A><BR>&nbsp;&nbsp;<A class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/user/"><IMG=20
+                  height=3D13 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/folder.gif"=20
+                  width=3D16 align=3DabsMiddle border=3D0>User=20
+                  Docs</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;<A =
+class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/download/walkthrough/index.jhtml?filenumber=
+=3D0&amp;language=3Denglish&amp;layout=3Dnormal&amp;prevlayout=3Dnormal">=
+<IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle=20
+                  =
+border=3D0>Walkthrough</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/download/faq/index.jhtml?filenumber=3D0&amp=
+;language=3Denglish&amp;layout=3Dnormal&amp;prevlayout=3Dnormal"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle=20
+                  border=3D0>FAQ</A><BR><BR>&nbsp;&nbsp;<A =
+class=3Dnavlinks=20
+                  href=3D"http://www.winamp.com/nsdn/winamp2x/dev/"><IMG =
+height=3D13=20
+                  hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/folder.gif"=20
+                  width=3D16 align=3DabsMiddle border=3D0>Dev=20
+                  Docs</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;<A =
+class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/"><IMG=20
+                  height=3D13 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/folder.gif"=20
+                  width=3D16 align=3DabsMiddle border=3D0>Making=20
+                  Skins</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/base.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>Base=20
+                  Skin</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/main.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>Main=20
+                  Window</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/eq.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle=20
+                  =
+border=3D0>Equalizer</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/playlist.jhtml"><IM=
+G=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle=20
+                  =
+border=3D0>Playlist</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/mb.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle=20
+                  =
+border=3D0>Minibrowser</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/wvs.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>WVS=20
+                  Window</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/cursors.jhtml"><IMG=
+=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle=20
+                  =
+border=3D0>Cursors</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/config.jhtml"><IMG =
+
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>Config=20
+                  files</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/zip.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle=20
+                  =
+border=3D0>WSZ</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/winamp29.jhtml"><IM=
+G=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>Winamp=20
+                  2.9</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/submit.jhtml"><IMG =
+
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>Submit=20
+                  Skins</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/skins/faq.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle=20
+                  border=3D0>FAQ</A><BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/sdk/"><IMG=20
+                  height=3D13 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/folder.gif"=20
+                  width=3D16 align=3DabsMiddle border=3D0>Winamp=20
+                  SDK</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/sdk/api.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>Winamp=20
+                  API</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/sdk/faq.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle=20
+                  border=3D0>FAQ</A><BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/plugins/"><IMG=20
+                  height=3D13 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/folder.gif"=20
+                  width=3D16 align=3DabsMiddle border=3D0>Writing=20
+                  Plug-ins</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A =
+
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/plugins/in.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>In=20
+                  SDK</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/plugins/out.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>Out=20
+                  SDK</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/plugins/gen.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>General=20
+                  SDK</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/plugins/dsp.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>DSP=20
+                  SDK</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/plugins/vis.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>Vis=20
+                  SDK</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/plugins/langpack.jhtml"><=
+IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>Lang=20
+                  Packs</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/plugins/submit.jhtml"><IM=
+G=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle border=3D0>Submit=20
+                  Plug-ins</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A =
+
+                  class=3Dnavlinks=20
+                  =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/plugins/faq.jhtml"><IMG=20
+                  height=3D16 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/document.gif"=20
+                  width=3D13 align=3DabsMiddle =
+border=3D0>FAQ</A><BR><BR><A=20
+                  class=3Dnavlinks=20
+                  href=3D"http://www.winamp.com/nsdn/winamp3x/"><IMG =
+height=3D13=20
+                  hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/section.gif"=20
+                  width=3D16 align=3DabsMiddle border=3D0>Winamp =
+3x</A><BR><A=20
+                  class=3Dnavlinks =
+href=3D"http://www.winamp.com/nsdn/nsis/"><IMG=20
+                  height=3D13 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/section.gif"=20
+                  width=3D16 align=3DabsMiddle border=3D0>NSIS</A><BR><A =
+
+                  class=3Dnavlinks =
+href=3D"http://www.winamp.com/nsdn/wvs/"><IMG=20
+                  height=3D13 hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/section.gif"=20
+                  width=3D16 align=3DabsMiddle border=3D0>WVS</A><BR><A =
+class=3Dnavlinks=20
+                  href=3D"http://www.winamp.com/nsdn/vault/"><IMG =
+height=3D13=20
+                  hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/section.gif"=20
+                  width=3D16 align=3DabsMiddle border=3D0>Code =
+Vault</A><BR><A=20
+                  class=3Dnavlinks=20
+                  href=3D"http://www.winamp.com/nsdn/glossary/"><IMG =
+height=3D13=20
+                  hspace=3D4=20
+                  =
+src=3D"http://www.winamp.com/nsdn/images/misc/section.gif"=20
+                  width=3D16 align=3DabsMiddle=20
+              border=3D0>Glossary</A><BR></TD></TR></TBODY></TABLE><!-- =
+Navigation Bar END --></TD><!-- CLOSE FEATURED COLUMN -->
+          <TD noWrap width=3D15><IMG height=3D1=20
+            src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D15></TD><!-- END Left Column --><!-- Main Content Section Column =
+-->
+          <TD noWrap width=3D15><IMG height=3D1=20
+            src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D15></TD><!-- DOCUMENT AREA -->
+          <TD vAlign=3Dtop width=3D"100%">
+            <TABLE class=3Dhighlighttable cellSpacing=3D0 width=3D"100%" =
+border=3D1>
+              <TBODY>
+              <TR>
+                <TD class=3Dhighlighttable>
+                  <TABLE height=3D28 cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%">
+                    <TBODY>
+                    <TR>
+                      <TD class=3Darticleheader=20
+                        width=3D"100%">&nbsp;&nbsp;Frontend.h for Winamp =
+API</TD>
+                      <TD class=3Darticleheaderrelease noWrap =
+align=3Dmiddle=20
+                      =
+width=3D70>&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD class=3Dhighlighttable>
+                  <TABLE cellSpacing=3D0 cellPadding=3D10 =
+width=3D"100%">
+                    <TBODY>
+                    <TR>
+                      <TD class=3Ddefault>Frontend.h contains lots of=20
+                        information on how to control Winamp through the =
+Win32=20
+                        Message API. Just compile it into your plugins =
+to have=20
+                        access to to our #defines. <BR><BR>
+                        <CENTER><A=20
+                        =
+href=3D"http://www.winamp.com/nsdn/winamp2x/dev/sdk/FRONTEND.H">CLICK=20
+                        HERE TO DOWNLOAD=20
+                    =
+FRONTEND.H</A></CENTER><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></=
+TABLE><BR>
+            <TABLE class=3Dhighlighttable cellSpacing=3D0 width=3D"100%" =
+border=3D1>
+              <TBODY>
+              <TR>
+                <TD class=3Dhighlighttable>
+                  <TABLE height=3D28 cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%">
+                    <TBODY>
+                    <TR>
+                      <TD class=3Darticleheader =
+width=3D"100%">&nbsp;&nbsp;Winamp=20
+                        Application Programming Interface</TD>
+                      <TD class=3Darticleheaderrelease noWrap =
+align=3Dmiddle=20
+                      =
+width=3D70>&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD class=3Dhighlighttable>
+                  <TABLE cellSpacing=3D0 cellPadding=3D10 =
+width=3D"100%">
+                    <TBODY>
+                    <TR>
+                      <TD class=3Ddefault>How to communicate with Winamp =
+from=20
+                        plug-ins and other applications.=20
+                        <UL type=3Dsquare>
+                          <LI><FONT class=3Dmaincontent>Using the =
+Command Line=20
+                          Interface</FONT>=20
+                          <LI><FONT class=3Dmaincontent>Using Windows=20
+                          Messages</FONT>
+                          <UL type=3Dsquare>
+                            <LI><FONT class=3Dmaincontent>Determining =
+the Winamp=20
+                            window</FONT>=20
+                            <LI><FONT class=3Dmaincontent>Using =
+WM_COMMAND=20
+                            messages</FONT>=20
+                            <LI><FONT class=3Dmaincontent>Using WM_USER=20
+                            messages</FONT>=20
+                            <LI><FONT class=3Dmaincontent>Using =
+WM_COPYDATA=20
+                            messages</FONT>=20
+                            <LI><FONT =
+class=3Dmaincontent>Examples</FONT> </LI></UL>
+                          <LI><FONT class=3Dmaincontent>Other Useful=20
+                          techniques</FONT>=20
+                          <LI><FONT =
+class=3Dmaincontent>Conclusion</FONT>=20
+                        </LI></UL><B>Using the command line interface to =
+control=20
+                        Winamp</B><BR><BR>The simplest, easiest, least =
+powerful=20
+                        way of controlling Winamp is to execute =
+winamp.exe=20
+                        yourself. By simply calling winamp.exe with =
+various=20
+                        command line options, you do a number of things. =
+For=20
+                        example:<BR>
+                        <UL><FONT face=3DCourier=20
+                          color=3D#ffffff>C:\path\to\winamp\winamp.exe =
+/ADD=20
+                          C:\mp3\whatever.mp3<BR><FONT =
+class=3Dmaincontent>(Adds=20
+                          C:\mp3\whatever.mp3 to the playlist of a =
+running=20
+                          Winamp, if Winamp is running, otherwise it =
+opens=20
+                          Winamp and plays it=20
+                          =
+outright)</FONT><BR><BR>C:\path\to\winamp\winamp.exe=20
+                          /NEW<BR><FONT class=3Dmaincontent>(Creates a =
+new=20
+                          instance of Winamp, even if Winamp is already=20
+                          =
+running)</FONT><BR><BR>C:\path\to\winamp\winamp.exe=20
+                          C:\mp3\file.mp3<BR><FONT =
+class=3Dmaincontent>(Plays the=20
+                          file C:\mp3\file.mp3, regardless of whether or =
+not=20
+                          Winamp is=20
+                          =
+open)</FONT><BR><BR>C:\path\to\winamp\winamp.exe=20
+                          /CLASS=3D"myclassname"<BR><FONT =
+class=3Dmaincontent>(Opens=20
+                          Winamp with a different Window Class name=20
+                          "myclassname")</FONT> </FONT></UL>As you might =
+notice,=20
+                        what you can actually do using the command line=20
+                        interface is pretty limited. It is really easy =
+to get=20
+                        started with, though. You can also specify =
+multiple=20
+                        files and or directories on the command line, =
+such as:=20
+                        <UL><FONT face=3DCourier=20
+                          color=3D#ffffff>C:\path\to\winamp\winamp.exe =
+/NEW "C:\my=20
+                          mp3s\" "C:\bigplaylist.pls" "C:\download\new =
+song.mp3"=20
+                          </FONT></UL><B>Using Windows Messages to =
+control=20
+                        Winamp</B><BR><BR><EM>Determining the Winamp=20
+                        window</EM><BR><BR>Winamp is a 32-bit Windows=20
+                        application. Having said that, we'll assume some =
+basic=20
+                        knowledge of 32 bit Windows programming. Winamp =
+can be=20
+                        controlled using the Windows Message system. =
+Before you=20
+                        can send Winamp messages, you have to determine =
+its=20
+                        Window Handle. There are two primary ways of =
+doing that,=20
+                        one for external applications, and another for=20
+                        plug-ins.<BR><BR>Plug-ins simply get passed a =
+HWND to=20
+                        Winamp in their respective structures. The =
+variable is=20
+                        usually named hwndWinamp or =
+hwndParent.<BR><BR>External=20
+                        applications can find the Winamp window using =
+the=20
+                        following pieces of =
+code:<BR><BR><STRONG>C/C++:</STRONG>=20
+
+                        <UL><FONT face=3DCourier color=3D#ffffff>HWND =
+hwndWinamp =3D=20
+                          FindWindow("Winamp v1.x",NULL); </FONT></UL>
+                        <TABLE class=3Ddefault>
+                          <TBODY>
+                          <TR>
+                            <TD>VBasic:</TD>
+                            <TD><IMG alt=3D""=20
+                              =
+src=3D"http://www.winamp.com/nsdn/images/misc/sexani.gif"=20
+                              border=3D0></TD></TR></TBODY></TABLE>
+                        <UL><FONT face=3DCourier color=3D#ffffff>Public =
+Declare=20
+                          Function FindWindow Lib "user32" Alias =
+"FindWindowA"=20
+                          (ByVal lpClassName As String, ByVal =
+lpWindowName As=20
+                          String) As Long<BR>Dim hwndWinamp as=20
+                          long<BR>hwndWinamp =3D FindWindow("Winamp=20
+                          v1.x",vbNullString) </FONT></UL>
+                        <TABLE class=3Ddefault>
+                          <TBODY>
+                          <TR>
+                            <TD>Delphi Pascal:</FONT></STRONG></TD>
+                            <TD><IMG alt=3D""=20
+                              =
+src=3D"http://www.winamp.com/nsdn/images/misc/sexani2.gif"=20
+                              border=3D0></TD></TR></TBODY></TABLE>
+                        <UL><FONT face=3DCourier color=3D#ffffff>var =
+hwndWinamp :=20
+                          THandle;<BR>hwndWinamp :=3D FindWindow('Winamp =
+v1.x',=20
+                          nil); </FONT></UL>Note that this code uses the =
+
+                        FindWindow() function to find a window of any =
+title=20
+                        whose class name is "Winamp v1.x". All versions =
+of=20
+                        Winamp 1.x and 2.x have the class "Winamp v1.x", =
+unless=20
+                        changed using the /CLASS=3D switch (see above). =
+Note that=20
+                        if you want to run multiple Winamp's and easily =
+tell the=20
+                        difference between them, you can use the =
+/CLASS=3D=20
+                        switch.<BR><BR><EM>Message types Winamp=20
+                        understands</EM><BR><BR>Winamp responds to three =
+
+                        messages in particular: WM_USER, WM_COMMAND, and =
+
+                        WM_COPYDATA. WM_USER and WM_COPYDATA allow you =
+to=20
+                        control some of the more advanced aspects of =
+Winamp=20
+                        while WM_COMMAND lets you do simple things such =
+as=20
+                        simulate the pause button being=20
+                        pressed.<BR><BR><EM>WM_COMMAND =
+Messages</EM><BR><BR>
+                        <TABLE class=3Ddefault>
+                          <TBODY>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT =
+class=3Dmaincontent>Previous track=20
+                              button</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40044</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Next =
+track=20
+                              button</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40048</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Play=20
+                              button</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40045</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT =
+class=3Dmaincontent>Pause/Unpause=20
+                              button</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40046</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Stop=20
+                              button</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40047</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Fadeout =
+and=20
+                              stop</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40147</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Stop =
+after=20
+                              current track</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40157</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT =
+class=3Dmaincontent>Fast-forward 5=20
+                              seconds</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40148</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT =
+class=3Dmaincontent>Fast-rewind 5=20
+                              seconds</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40144</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Start =
+of=20
+                              playlist</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40154</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Go to =
+end of=20
+                              playlist </FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40158</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Open =
+file=20
+                              dialog</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40029</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Open =
+URL=20
+                              dialog</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40155</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Open =
+file info=20
+                              box</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40188</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Set =
+time=20
+                              display mode to elapsed</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40037</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Set =
+time=20
+                              display mode to remaining</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40038</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle=20
+                              preferences screen</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40012</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Open=20
+                              visualization options</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40190</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Open=20
+                              visualization plug-in options</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40191</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Execute =
+current=20
+                              visualization plug-in</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40192</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle =
+about=20
+                              box</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40041</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle =
+title=20
+                              Autoscrolling</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40189</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle =
+always=20
+                              on top</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40019</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle=20
+                              Windowshade</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40064</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle =
+Playlist=20
+                              Windowshade</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40266</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle=20
+                              doublesize mode</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40165</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle=20
+                            EQ</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40036</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle =
+playlist=20
+                              editor</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40040</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle =
+main=20
+                              window visible</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40258</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle=20
+                              minibrowser</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40298</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle=20
+                              easymove</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40186</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Raise =
+volume by=20
+                              1%</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40058</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Lower =
+volume by=20
+                              1%</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40059</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle=20
+                              repeat</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40022</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Toggle=20
+                              shuffle</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40023</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Open =
+jump to=20
+                              time dialog</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40193</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Open =
+jump to=20
+                              file dialog</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40194</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Open =
+skin=20
+                              selector</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40219</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT =
+class=3Dmaincontent>Configure=20
+                              current visualization plug-in</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40221</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Reload =
+the=20
+                              current skin</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40291</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Close=20
+                              Winamp</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40001</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Moves =
+back 10=20
+                              tracks in playlist</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40197</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Show =
+the edit=20
+                              bookmarks</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40320</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Adds =
+current=20
+                              track as a bookmark</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40321</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Play =
+audio=20
+                              CD</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40323</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Load a =
+preset=20
+                              from EQ</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40253</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Save a =
+preset=20
+                              to EQF</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40254</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Opens =
+load=20
+                              presets dialog</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40172</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Opens =
+auto-load=20
+                              presets dialog</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40173</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Load =
+default=20
+                              preset</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40174</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Opens =
+save=20
+                              preset dialog</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40175</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Opens =
+auto-load=20
+                              save preset</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40176</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Opens =
+delete=20
+                              preset dialog</FONT></TD>
+                            <TD><FONT =
+class=3Dmaincontent>40178</FONT></TD></TR>
+                          <TR>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD noWrap><FONT class=3Dmaincontent>Opens =
+delete an=20
+                              auto load preset dialog</FONT></TD>
+                            <TD><FONT=20
+                          =
+class=3Dmaincontent>40180</FONT></TD></TR></TBODY></TABLE><BR><EM>WM_USER=
+=20
+                        Messages</EM><BR><BR>WM_USER messages are sent =
+using=20
+                        SendMessage(). In C/C++, you can send these =
+messages by=20
+                        calling:<BR><BR>
+                        <UL><FONT face=3DCourier color=3D#ffffff>int=20
+                          ret=3DSendMessage(hwndWinamp,WM_USER, data, =
+id);=20
+                        </FONT></UL>data is used by many of the =
+messages, but=20
+                        not all. For messages where the meaning of data =
+is not=20
+                        defined, simply use 0.<BR><BR>Here is a list of =
+the=20
+                        currently supported ids that you can use from =
+within=20
+                        Winamp plug-ins or from other applications (see =
+plug-in=20
+                        only WM_USER messages, below, for more):<BR><BR>
+                        <TABLE class=3Ddefault>
+                          <TBODY>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT class=3Dmaincontent>0</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Retrieves the =
+version=20
+                              of Winamp running. Version will be 0x20yx =
+for=20
+                              2.yx. This is a good way to determine if =
+you did=20
+                              in fact find the right window, etc. =
+</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>100</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Starts =
+playback. A lot=20
+                              like hitting 'play' in Winamp, but not =
+exactly the=20
+                              same</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>101</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Clears =
+Winamp's=20
+                              internal playlist.</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>102</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Begins play of =
+
+                              selected track.</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>103</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Makes Winamp =
+change to=20
+                              the directory =
+C:\\download</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>104</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Returns the =
+status of=20
+                              playback. If 'ret' is 1, Winamp is =
+playing. If=20
+                              'ret' is 3, Winamp is paused. Otherwise, =
+playback=20
+                              is stopped.</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>105</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>If data is 0, =
+returns=20
+                              the position in milliseconds of playback. =
+If data=20
+                              is 1, returns current track length in =
+seconds.=20
+                              Returns -1 if not playing or if an error=20
+                              occurs.</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>106</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Seeks within =
+the=20
+                              current track. The offset is specified in =
+'data',=20
+                              in milliseconds.</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>120</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Writes out the =
+current=20
+                              playlist to Winampdir\winamp.m3u, and =
+returns the=20
+                              current position in the playlist. =
+</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>121</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Sets the =
+playlist=20
+                              position to the position specified in =
+tracks in=20
+                              'data'.</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>122</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Sets the =
+volume to=20
+                              'data', which can be between 0 (silent) =
+and 255=20
+                              (maximum).</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>123</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Sets the =
+panning to=20
+                              'data', which can be between 0 (all left) =
+and 255=20
+                              (all right).</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>124</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Returns length =
+of the=20
+                              current playlist, in =
+tracks.</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>125</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Returns the =
+position=20
+                              in the current playlist, in tracks =
+(requires=20
+                              Winamp 2.05+).</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>126</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Retrieves info =
+about=20
+                              the current playing track. Returns =
+samplerate=20
+                              (i.e. 44100) if 'data' is set to 0, =
+bitrate if=20
+                              'data' is set to 1, and number of channels =
+if=20
+                              'data' is set to 2. (requires Winamp=20
+                            2.05+)</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>127</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Retrieves one =
+element=20
+                              of equalizer data, based on what 'data' is =
+set=20
+                              to.<BR>
+                              <TABLE cellSpacing=3D0 cellPadding=3D3 =
+border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD><FONT face=3DArial color=3D#dddddd=20
+                                size=3D1>0-9</FONT></TD>
+                                <TD noWrap width=3D20></TD>
+                                <TD><FONT face=3DArial color=3D#dddddd =
+size=3D1>The 10=20
+                                bands of EQ data. Will return 0-63 =
+(+20db -=20
+                                -20db)</FONT></TD></TR>
+                                <TR>
+                                <TD><FONT face=3DArial color=3D#dddddd=20
+                                size=3D1>10</FONT></TD>
+                                <TD noWrap width=3D20></TD>
+                                <TD><FONT face=3DArial color=3D#dddddd =
+size=3D1>The=20
+                                preamp value. Will return 0-63 (+20db -=20
+                                -20db)</FONT></TD></TR>
+                                <TR>
+                                <TD><FONT face=3DArial color=3D#dddddd=20
+                                size=3D1>11</FONT></TD>
+                                <TD noWrap width=3D20></TD>
+                                <TD><FONT face=3DArial color=3D#dddddd=20
+                                size=3D1>Enabled. Will return zero if =
+disabled,=20
+                                nonzero if=20
+                              =
+enabled.</FONT></TD></TR></TBODY></TABLE></FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>128</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Autoload. Will =
+return=20
+                              zero if disabled, nonzero if enabled. To =
+set an=20
+                              element of equalizer data, simply query =
+which item=20
+                              you wish to set using the message above =
+(127),=20
+                              then call this message with =
+data</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>129</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Adds the =
+specified=20
+                              file to the Winamp bookmark =
+list</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>135</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Restarts=20
+                            =
+Winamp</FONT></TD></TR></TBODY></TABLE><BR>Here is a=20
+                        list of the currently supported ids that you can =
+only=20
+                        use from within Winamp plug-ins (since they =
+depend on=20
+                        running in the same process as Winamp):<BR><BR>
+                        <TABLE class=3Ddefault>
+                          <TBODY>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>200</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Sets the =
+current skin.=20
+                              'data' points to a string that describes =
+what skin=20
+                              to load, which can either be a directory =
+or a .zip=20
+                              file. If no directory name is specified, =
+the=20
+                              default Winamp skin directory is=20
+                          assumed.</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>201</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Retrieves the =
+current=20
+                              skin directory and/or name. 'ret' is a =
+pointer to=20
+                              the Skin name (or NULL if error), and if =
+'data' is=20
+                              non-NULL, it must point to a string 260 =
+bytes=20
+                              long, which will receive the pathname to =
+where the=20
+                              skin bitmaps are stored (which can be =
+either a=20
+                              skin directory, or a temporary directory =
+when=20
+                              zipped skins are used) (Requires Winamp=20
+                              2.04+).</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>202</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Selects and =
+executes a=20
+                              visualization plug-in. 'data' points to a =
+string=20
+                              which defines which plug-in to execute. =
+The string=20
+                              can be in the following formats:<BR>
+                              <TABLE cellSpacing=3D0 cellPadding=3D3 =
+border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD><FONT face=3DArial color=3D#dddddd=20
+                                size=3D1>vis_whatever.dll</FONT></TD>
+                                <TD noWrap width=3D20></TD>
+                                <TD><FONT face=3DArial color=3D#dddddd=20
+                                size=3D1>Executes the default module in=20
+                                vis_whatever.dll in your plug-ins=20
+                                directory.</FONT></TD></TR>
+                                <TR>
+                                <TD><FONT face=3DArial color=3D#dddddd=20
+                                size=3D1>vis_whatever.dll,1</FONT></TD>
+                                <TD noWrap width=3D20></TD>
+                                <TD><FONT face=3DArial color=3D#dddddd=20
+                                size=3D1>executes the second module in=20
+                                vis_whatever.dll</FONT></TD></TR>
+                                <TR>
+                                <TD><FONT face=3DArial color=3D#dddddd=20
+                                =
+size=3D1>C:\path\vis_whatever.dll,1</FONT></TD>
+                                <TD noWrap width=3D20></TD>
+                                <TD><FONT face=3DArial color=3D#dddddd=20
+                                size=3D1>executes the second module in=20
+                                vis_whatever.dll in another=20
+                                =
+directory</FONT></TD></TR></TBODY></TABLE></FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>211</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Retrieves (and =
+returns=20
+                              a pointer in 'ret') a string that contains =
+the=20
+                              filename of a playlist entry (indexed by =
+'data').=20
+                              Returns NULL if error, or if 'data' is out =
+of=20
+                              range.</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>212</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Retrieves (and =
+returns=20
+                              a pointer in 'ret') a string that contains =
+the=20
+                              title of a playlist entry (indexed by =
+'data').=20
+                              Returns NULL if error, or if 'data' is out =
+of=20
+                              range.</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>241</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Opens an new =
+URL in=20
+                              the minibrowser. If the URL is NULL it =
+will open=20
+                              the Minibrowser window</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>242</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Returns 1 if =
+the=20
+                              internet connecton is available for=20
+                            Winamp</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>243</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Asks Winamp to =
+update=20
+                              the information about the current=20
+                          title</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>245</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Sets the =
+current=20
+                              playlist item</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>246</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Retrives the =
+current=20
+                              Minibrowser URL into the =
+buffer.</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>247</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Flushes the =
+playlist=20
+                              cache buffer</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>248</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Blocks the =
+Minibrowser=20
+                              from updates if value is set to =
+1</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>249</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Opens an new =
+URL in=20
+                              the minibrowser&nbsp;(like 241) except =
+that it=20
+                              will work even if 248 is set to 1 =
+</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>250</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Returns the =
+status of=20
+                              the shuffle option (1 if =
+set)</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>251</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Returns the =
+status of=20
+                              the repeat option (1 if =
+set)</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>252</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Sets the =
+status of the=20
+                              suffle option (1 to turn it =
+on)</FONT></TD></TR>
+                          <TR>
+                            <TD></TD>
+                            <TD noWrap width=3D40>&nbsp;</TD>
+                            <TD><FONT =
+class=3Dmaincontent>253</FONT></TD>
+                            <TD><FONT class=3Dmaincontent>Sets the =
+status of the=20
+                              repeat option (1 to turn it=20
+                          =
+on)</FONT></TD></TR></TBODY></TABLE><BR><EM>WM_COPYDATA=20
+                        Messages</EM><BR><BR>WM_COPYDATA messages are =
+sent using=20
+                        SendMessage() and a COPYDATASTRUCT structure. In =
+C/C++,=20
+                        you can send these messages by using:<BR><BR>
+                        <UL><FONT face=3DCourier =
+color=3D#ffffff>COPYDATASTRUCT=20
+                          cds;<BR>cds.dwData =3D id;<BR>cds.lpData =3D=20
+                          (void*)data;<BR>cds.cbData =3D=20
+                          =
+data_length;<BR>SendMessage(hwndWinamp,WM_COPYDATA,(WPARAM)NULL,(LPARAM)&=
+amp;cds);<BR></FONT></UL>To=20
+                        get the directory where skin bitmaps are stored =
+(useful=20
+                        for plug-ins to support their own =
+skins):<BR><BR>
+                        <UL><FONT face=3DCourier color=3D#ffffff>char=20
+                          skin_dir[260];=20
+                          =
+SendMessage(hwndWinamp,WM_USER,(LPARAM)skin_dir,201);=20
+                          </FONT></UL><B>Other Useful =
+Techniques</B><BR><BR>There=20
+                        are a number of other things you can do to =
+query/control=20
+                        Winamp. For example, this C/C++ code fragment =
+will get=20
+                        the title of the current song playing in Winamp. =
+A=20
+                        simple explanation is that it retrieves Winamp's =
+window=20
+                        title, removes the trailing ' - Winamp'.<BR><BR>
+                        <UL><FONT face=3DCourier color=3D#ffffff>char=20
+                          =
+this_title[2048],*p;<BR>GetWindowText(hwndWinamp,this_title,sizeof(this_t=
+itle));<BR>p=20
+                          =3D this_title+strlen(this_title)-8;<BR>while =
+(p &gt;=3D=20
+                          this_title)<BR>{<BR>
+                          <UL><FONT face=3DCourier color=3D#ffffff>if=20
+                            (!strnicmp(p,"- Winamp",8))=20
+                          break;<BR>p--;<BR></FONT></UL>}<BR>if (p =
+&gt;=3D=20
+                          this_title) p--;<BR>while (p &gt;=3D =
+this_title=20
+                          &amp;&amp; *p =3D=3D ' ')=20
+                        =
+p--;<BR>*++p=3D0;<BR></FONT></UL><B>Conclusion</B><BR><BR>You=20
+                        can control Winamp. It doesn't just own you, you =
+own it.=20
+                        If this is still unclear to you, look through =
+the=20
+                        various plug-in SDKs/examples. They'll show =
+these=20
+                        facilities in action. If you'd like to offer any =
+advice=20
+                        for these pages, e-mail it to nsdn@winamp.com.=20
+                    =
+</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR><!-- Document =
+End / Begin Footer -->
+          <TD noWrap width=3D15><IMG height=3D15=20
+            src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D1></TD></TD><!-- End DOCUMENT AREA --><!-- BEGIN FOOTER =
+--></TR></TBODY></TABLE><!-- CLOSE MAIN STRUCTURE TABLE -->
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR class=3Dhorizontaldivider>
+          <TD class=3Dhorizontaldivider><IMG height=3D1 alt=3D""=20
+            src=3D"http://www.winamp.com/images/misc/trans.gif" =
+width=3D1=20
+          border=3D0></TD></TR></TBODY></TABLE>
+      <TABLE class=3Dfooter height=3D78 cellSpacing=3D0 cellPadding=3D0 =
+width=3D750=20
+      align=3Dcenter border=3D0 valign=3D"middle">
+        <TBODY>
+        <TR>
+          <TD class=3Dfooter noWrap width=3D127>
+            <TABLE class=3Dfooter align=3Dcenter>
+              <TBODY>
+              <TR>
+                <TD><A =
+href=3D"http://www.winamp.com/makehome.jhtml"><IMG=20
+                  =
+src=3D"http://www.winamp.com/images/footer/makehome.gif"=20
+                  border=3D0></A></TD>
+                <TD><A class=3Dfontsize7pt style=3D"LINE-HEIGHT: 10px"=20
+                  href=3D"http://www.winamp.com/makehome.jhtml">Click =
+here=20
+                  to<BR>make us =
+your<BR>homepage</A></TD></TR></TBODY></TABLE></TD>
+          <TD class=3Dfooter>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 align=3Dcenter>
+              <TBODY>
+              <TR>
+                <TD class=3Dfooterlogo><A =
+href=3D"http://www.winamp.com/"><IMG=20
+                  height=3D63 =
+src=3D"http://www.winamp.com/images/misc/trans.gif"=20
+                  width=3D380 =
+border=3D0></A></TD></TR></TBODY></TABLE><A=20
+            href=3D"http://www.winamp.com/support/feedback.jhtml">Click =
+here for=20
+            help or feedback</A></TD>
+          <TD class=3Dfooter noWrap width=3D127>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 align=3Dcenter =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3Dfooter><A=20
+                  =
+href=3D"http://www.winamp.com/community/promote/index.jhtml">Promote=20
+                  Winamp!</A></TD></TR>
+              <TR>
+                <TD class=3Dfooter><A=20
+                  =
+href=3D"http://www.winamp.com/community/promote/index.jhtml"><IMG=20
+                  height=3D31=20
+                  =
+src=3D"http://www.winamp.com/images/footer/walisten.gif"=20
+                  width=3D88 border=3D0></A></TD></TR>
+              <TR>
+                <TD class=3Dfooter><A=20
+                  =
+href=3D"http://www.winamp.com/community/promote/index.jhtml">Click=20
+                  =
+Here</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!-- END =
+SITE WIDTH CONTROL --></TD></TR></TBODY></TABLE>
+<DIV class=3D"default fontsize8pt" align=3Dcenter>Copyright <A=20
+href=3D"http://www.nullsoft.com/" target=3Doutside>Nullsoft Inc. =
+2002</A> - [ <A=20
+href=3D"http://www.winamp.com/tos.jhtml">Disclaimer</A> | <A=20
+href=3D"http://www.winamp.com/tos.jhtml#TOS">Terms of Service</A> | <A=20
+href=3D"http://www.icra.org/labelv02.html" target=3D_blank>Labelled with =
+ICRA</A> |=20
+<A href=3D"http://mediaspace.aol.com/index.adp?fname=3Dwin" =
+target=3D_blank>Advertise=20
+with us!</A> ]</DIV><BR>
+<SCRIPT language=3DJavaScript1.1=20
+src=3D"http://ar.atwola.com/file/adsEnd.js"></SCRIPT>
+</BODY></HTML>
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/images/misc/trans.gif
+
+R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/images/tabs/off/home.gif
+
+R0lGODlhLgAWAJEDAL1rKXBaRu3oyP///yH5BAEAAAMALAAAAAAuABYAAAJ7nI+py+0P4wK02osz
+dlT4D4biKFITiaYqkADqC4Os4cb2O9f3PrL6FwgAhTzczxMcFo2iJJIYdEaT0aEz1AlNq1Jh9yn4
+Yo9hYvl8FlO3JfJ1DVZ7zT23GZ6G6tHhdvOuJwdWdiVDtsSThYiouFjU6LgDGWmjYXmJaVkAADs=
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/images/tabs/off/winamp.gif
+
+R0lGODlhOwAWAJEDAL1rKXBaRu3oyP///yH5BAEAAAMALAAAAAA7ABYAAAKWnI+py+0Po5wI2Iuz
+3rxbZwniSJbmiabipwDqC8clkLjyjZ+0Yee+v+v9hjGaUBQIIJWCZJNJvIVKzucy+puSqlylMwke
+gZljbzds0m7NVmuXym5/ydCRWlx+v5/h/fw6c7RERycX92eYGIiy51aoV+gISHKHN4l4hvk4piOI
+hVOFUvl5E9pJiprmmYo1yhrlESs7S1sAADs=
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/images/tabs/off/music.gif
+
+R0lGODlhLAAWAJEDAHBaRr1rKe3oyP///yH5BAEAAAMALAAAAAAsABYAAAJ+nI+py+0P4wm02ouz
+dVT4D4biCFJLQKZqGiToCsdCa7zyzdb4Prb2BwCEhLEgrDM0epQ8EhIUNEYFyurUyvw8gVSp0NqF
+fom93/IcBkeJXpaZmgzL12myaIsGjpf2djaEByfGdzU1Z1jy1rQTuIjT6CgDGXmkSFmpkam5eVEA
+ADs=
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/images/tabs/off/skins.gif
+
+R0lGODlhKwAWAJEDAL1rKXBaRu3oyP///yH5BAEAAAMALAAAAAArABYAAAJ8nI+py+0P4wC02otz
+dVT4D4bi+FELQKYqCSToCset8ca2OtdpENz4NOLxPENQ0SfohI69I1KkNPakxKZV+BFOQdGstioo
+DsXWVNeL/YLJYSxUJxq72/S6mgsPe+ls9j50VuUnZ3e1hfeUiKioGMho4/gIEymJo3GJmXlRAAA7
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/images/tabs/off/plugins.gif
+
+R0lGODlhOgAWAJEDAL1rKXBaRu3oyP///yH5BAEAAAMALAAAAAA6ABYAAAKUnI+py+0Po5wG2Iuz
+3rwDZwniSJbmiaaCtQDqC8fkh7jyjZv0YOd+TuulAoGfccUzEZciotHpC5WgTugxKmwWBdUidbu0
+jrpMrVgkJX25XnBbq3yz56j0OAxf65ndfLlkB6cm10c3SPd1tpJl6OfY+CimGAiZaLl1uKe4eDWF
+2cnZiQc6QklKanramap65PEKGxtbAAA7
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/images/tabs/off/community.gif
+
+R0lGODlhTwAWAJEDAL1rKXBaRu3oyP///yH5BAEAAAMALAAAAABPABYAAAK3nI+py+0Po5y0PoCz
+3rz7D4aAgwnmiabqyrbuK2ALANf2jccJnfd+PzLwfsSiKzg0Kpej5CkADSx/UFPVVkpdBdIpcQvL
+osDWaNls5kal6Wt13X2v1WWV+NnF191xdn//x0c3OEgW40RYRye4+NcICJk4Z4dIJsgop5j5yAk2
+mXKnyFXop1lKinrpqLcSepY3iXkqixYIu2Vo4urFq5VH2Ru8kquLKHzMsou8fKLMvCwSLT1NDVIA
+ADs=
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/images/tabs/on/develop.gif
+
+R0lGODlhOwAWAJEDAL1rKf/IADs7Wf///yH5BAEAAAMALAAAAAA7ABYAAAKSnA+py+0P05kIiIuz
+3rz7K1GD9ZXmmQEUibbuphrsS7/xXOemiuu+l/iZAoFcUENMConGHlPw1EVtzuLlmbRitUood9vV
+HDNR5tZ7LZ7NXLQ7VcWws+65kp2uW+Gbsnov1zWFttYmFqcnl3Z2RdjGyIdEFzhVKfiFCYgxJkQz
+eNiZ8xkZWgrSY/rDmSq0yuoDUAAAOw==
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/images/tabs3/divider.gif
+
+R0lGODlhAwAPAIABAHBaRv///yH5BAEAAAEALAAAAAADAA8AAAIJRGB4yesKW3wFADs=
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/nsdn/images/misc/section.gif
+
+R0lGODlhEAANAPcAAAAQIQAYMQAp7wAp9wAp/wgYKQgp5wgx5wgx9xAx1ikxIWNSOWNjY2taGHNa
+GJR7EJyUY62cUsacAM6lAM6tMee9AO/GEPfGAPfOAPfOCP/OAP//////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////yH5BAEAABAALAAAAAAQAA0A
+AAh3ACEIHEiwIMEACBMqPIiQAAEBDiMmFBjgQIMKFx4woIAhgwQEBAJAQJjgooYJGlKmlBCyYckK
+KgnA1GDBoUuTGhBYvJDSZgACL3sG1eATKE6jM30GGIq0J8KRTBM4SCpyZIAGEnoeWJBVw1OBBRQU
+UKhAwVcIAQEAOw==
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/nsdn/images/misc/folder.gif
+
+R0lGODlhEAANAKIGAP//nJyeAAAAAP/PnP///87PY////wAAACH5BAEAAAYALAAAAAAQAA0AAAND
+aBrM+tAEQmmIb4K9SWsLwY0VUQiSOK7A+b1N0QraOgDDWbjqduOzHarGuQ0GAdpQZcQdXahU8/hM
+RmEwQdSg7Xq9CQA7
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/nsdn/images/misc/document.gif
+
+R0lGODlhDQAQAKIEAP///wAAAMbHxoSGhP///wAAAAAAAAAAACH5BAEAAAQALAAAAAANABAAAAM3
+SBTbzCqAMStlF8itNQVgGArBJ4rkF6yaBKTnCbcr+5YxitM1OOc3Vc32yxVjKYFyySQthlBGAgA7
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/nsdn/images/misc/sexani.gif
+
+R0lGODlhJAAPAMQfALMAAFIAAEEAAJsAACMAABoAACsAAAsAABMAAGcAAAQAADsAAGwAAIIAALsA
+AFgAAIwAAHIAAE0AAIkAAJQAAH0AAKcAAK0AAHcAAEgAAKEAAGAAADQAAL8AAAAAAP///yH/C05F
+VFNDQVBFMi4wAwEAAAAh+QQFZAAfACwAAAAAJAAPAAAFG6AnjmRpnmiqrmzrvnAsz3Rt33iu73zv
+/0BWCAAh+QQFZAAfACwBAAEAIgAMAAAF/+D3KeRxIOiIHiIpvoqpjDN8FMYiJUzC/5ugcLh5PCQL
+A4IUK3ACDIplw+FkGpcEx2DYBiBVyAXC3RAOzANh8WhYCB9BwmRJiHyJSOfxIQA4Hw8RCy0xawkT
+DSICEBYDHXYfHZOTAHAFHwsUERIILWoZURovHwcSAJE+EJQDIgUamxIEM4YZERoOESwvOyJVepWY
+HxCxBiwxBhIYFg4WHQNzHxyRlJQCpR8FEBgSxioGAVgTBxwVFZg+IhDrq3YcACwG3N4KCOBuABFw
+2QmQpCIDTABwoChOACUj1EhgQGyAw4cQHVKASIHCOgwbBJyhZQKBCRMFCHhE87EAGgQETAYqUMlE
+RAgAOw==
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/nsdn/images/misc/sexani2.gif
+
+R0lGODlhJAAPAMQfALMAAFIAAEEAAJsAACMAABoAACsAAAsAABMAAGcAAAQAADsAAGwAAIIAALsA
+AFgAAIwAAHIAAE0AAIkAAJQAAH0AAKcAAK0AAHcAAEgAAKEAAGAAADQAAL8AAAAAAP///yH/C05F
+VFNDQVBFMi4wAwEAAAAh+QQFggAfACwAAAAAJAAPAAAFG6AnjmRpnmiqrmzrvnAsz3Rt33iu73zv
+/0BWCAAh+QQFZAAfACwBAAEAIgAMAAAF/+D3KeRxIOiIHiIpvoqpjDN8FMYiJUzC/5ugcLh5PCQL
+A4IUK3ACDIplw+FkGpcEx2DYBiBVyAXC3RAOzANh8WhYCB9BwmRJiHyJSOfxIQA4Hw8RCy0xawkT
+DSICEBYDHXYfHZOTAHAFHwsUERIILWoZURovHwcSAJE+EJQDIgUamxIEM4YZERoOESwvOyJVepWY
+HxCxBiwxBhIYFg4WHQNzHxyRlJQCpR8FEBgSxioGAVgTBxwVFZg+IhDrq3YcACwG3N4KCOBuABFw
+2QmQpCIDTABwoChOACUj1EhgQGyAw4cQHVKASIHCOgwbBJyhZQKBCRMFCHhE87EAGgQETAYqUMlE
+RAgAOw==
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/images/footer/makehome.gif
+
+R0lGODlhFAAZAMQVAP+fAPHQOM9LAP/HAP+zAN9/R/8AAL+BAOebc/fXAPj3Tv/XALcrAPmvALRX
+QOdzAIBMEv//AAAA/wAAAP///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABUALAAAAAAUABkAAAWNYCWOZGma01Sl6llOkpQarSvCqUzbt0xRuNoJ9/vhbMSiUTb0KYvH1+T5
+TA2pSiFpamRBXVxgJBJuQc6j8rgMOTwekDR0XYQEAvDtnEyBPAYNeVsshAUABAQPDHE8EAADCgEE
+AA8CjC4IjwsJAAICgi4QhnifoDZ2laY2Dnhvl41vAK+NnwezjWg8ujYhADs=
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.winamp.com/images/footer/walisten.gif
+
+R0lGODlhWAAfAMQfAKemmp9sA/b25vPz3svLuPi1Sv62AHVQBJaMdSEZCfn58NeRANXVxvOlAOfn
+1UQ2GXRxZvnCTlNRSGVfVOLhy8OQSuKkSv7++oCAgMLCrQEBAPv77O7u1f8AAAAAAP///yH5BAEA
+AB8ALAAAAABYAB8AAAX/4Cd+WmmeaKqubOu+2iibV23feK7vfO/7ppmmxikaj8ikcslsOpOYjDRT
+K42Gz+Ngy+16v1+OVwwud4/RqfRiLV2YlKhxsKnb7/h8XoDn6/93AgNFaWoZGDFYSxQQEhMERQII
+D5QSFJQPj5iYCZgMl5QIGxCYExsAmw8Dk6mpEwwbg4VqiG6LGBACAI8cpw8GBg8QBwYNmQEGBwsG
+AQkNBgsPBL8BGBvOxQ8UAMTPAQgSC8/RDeXADQEPDgIcUR0Z7++HtkmMuQoKu1LT3gnIyRqWPVjW
+7FkyCcSqZSAGrBqAf9A6AYP2YNyBf982tIPHUV6tN0jiQMBHUoKEChwm/yBboMFgs4gEsQGTWG2C
+uGULJHArNhPZuIrJHmBbACGWu45SPoaEcA8fAEcWIlBA0K0bNGQBAjJzZm5Bwgm/ogE7AAGrtwYL
+cAL1ihGBgo0d4sZNSq+IPZIEJkyoEKFABAsZgHor9uxBy63QGPYjduBwM8YQA6ysaLBYunUbDdFV
+xOGuAgeNKviNEAEBBgbhzg1Uvbogy8ha0T5roAHZAYbBJnurBIGBAllIPdLzDA5CgeN+A1iK8+91
+wwmpX0ZbzeyX7GXBGA+tTfHZAQBbNggiFHzzm7sZoJLue7zCBAwXAjdE2PBpv2KavNl+IGGobX9b
++QRUAACIN4gRR8Vjnv9nJ5E2GnIFWDCBAgI8INkDgV3ogASSHeCPchtgcNFt6VAQ4kUBXCSMhZmg
++OEDALCDhDtyCTcEBhKUBKGDyEmoQA0UwALIjzYooAeFdRB5ASB4HIiGZuZlMAEA+EhggQV+HYdl
+XxOMpMBUGZgxAB851lEGGWQaKOYWSqQRj41v5EUlOFb+dVwEFUgAgQNfIhAmF2SwOeYGHhCqppNd
+8FGoIGuGARdHUyjFgZzpYQkhdBngMwADvQTiaR2F5jEIHXiEyuQfwCkYaV15WQlhnhgMgI8DBHhg
+K6Gm3grqraHqGp6tve4K6rC4DltoqjWaZ0ReovkloQQEkMQAAg4Ea2jvsNjecSwd2dpRaLffhgoc
+lJJKyRdpebolLbSGthsur8buuq277sJ7LbDtHpggLbaAdq4FJvm2Lnj0XqttvMEKQu+3xOpqqqEy
+PiqPshRI0BcEU06Jl05iFNyrw/bi+6vD8nrrLbxO7rsqFg7sJQECFEyqMWoAFEHqqTjHwi3OofrR
+JILwJDuPG6BBkMEReeFY8xyNNt3xomUoKl6gZwCtWS0knOdAEnJm4TUSNzsJth1iLzHLqiLU9fXa
+TQDKhNtOnD30FRpggAHbeOfN9ix2WyFE3XYHLvjghBdu+OGIJ454EDLQDcPjkEcueQwyhAAAOw==
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: text/css;
+	charset="koi8-r"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.winamp.com/inc/themes/nsdn.css
+
+BODY {
+	BACKGROUND: #191939; FONT-FAMILY: Arial,Helvetica
+}
+.default {
+	FONT-SIZE: 10pt; COLOR: #ffffff
+}
+.headerlogo {
+	BACKGROUND-IMAGE: =
+url(http://www.winamp.com/images/themes/nsdn/headerlogo.gif)
+}
+.check {
+	BACKGROUND-IMAGE: =
+url(http://www.winamp.com/images/themes/modern/check.gif)
+}
+.bullet {
+	BACKGROUND-IMAGE: =
+url(http://www.winamp.com/images/themes/modern/bullet.gif)
+}
+.footerlogo {
+	BACKGROUND-IMAGE: =
+url(http://www.winamp.com/images/themes/nsdn/footerlogo.gif)
+}
+A:link {
+	COLOR: #ffc800
+}
+A:visited {
+	COLOR: #cc9000
+}
+A:hover {
+	COLOR: #ff0000
+}
+A.header:link {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.header:visited {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.header:hover {
+	COLOR: #ffc800; TEXT-DECORATION: underline
+}
+A.headerhl:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffc800; FONT-FAMILY: =
+Verdana, Helvetica; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+A.headerhl:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffc800; FONT-FAMILY: =
+Verdana, Helvetica; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+A.headerhl:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffc800; FONT-FAMILY: =
+Verdana, Helvetica; TEXT-ALIGN: center; TEXT-DECORATION: underline
+}
+.headerbg {
+	BACKGROUND-COLOR: #181850
+}
+.header {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: white; FONT-FAMILY: Verdana, =
+Helvetica; BACKGROUND-COLOR: #3b3b59; TEXT-ALIGN: center
+}
+.horizontaldivider {
+	BACKGROUND-COLOR: #bd6b29
+}
+.articleheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #ffffff; LINE-HEIGHT: 26px; =
+FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #32326c
+}
+.articleheaderrelease {
+	FONT-SIZE: 7pt; COLOR: #ffc800; BACKGROUND-COLOR: #32326c; TEXT-ALIGN: =
+center
+}
+.articleheaderdivider {
+	BACKGROUND-COLOR: #ffc800
+}
+.subarticleheader {
+	FONT-SIZE: 10px; COLOR: #425393; LINE-HEIGHT: 20px; FONT-FAMILY: =
+Verdana, Arial, Helvetica; BACKGROUND-COLOR: #ffffef
+}
+.resourceheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; LINE-HEIGHT: 20px; FONT-FAMILY: =
+Verdana; BACKGROUND-COLOR: #ffffef
+}
+.resourcerating {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #595959; BACKGROUND-COLOR: =
+#ffffef; TEXT-ALIGN: center
+}
+.topresources {
+	FONT-SIZE: 10px; COLOR: white; BACKGROUND-COLOR: black
+}
+.mastertable {
+	BORDER-RIGHT: #ffc800 1px solid; BORDER-TOP: #ffc800 1px solid; =
+BORDER-LEFT: #ffc800 1px solid; BORDER-BOTTOM: #ffc800 1px solid; =
+BACKGROUND-COLOR: #000000
+}
+.footer {
+	FONT-SIZE: 8pt; BACKGROUND-COLOR: #181850; TEXT-ALIGN: center
+}
+.featuredcolbg {
+	BACKGROUND-COLOR: #484880
+}
+.featuredbg {
+	BACKGROUND-COLOR: #f5f5f5
+}
+.featuredtable {
+	BORDER-RIGHT: #dddddd 2px solid; BORDER-TOP: #dddddd 2px solid; =
+BORDER-LEFT: #dddddd 2px solid; BORDER-BOTTOM: #dddddd 2px solid
+}
+.featuredheader {
+	FONT-SIZE: 7pt; COLOR: #ffc800; BACKGROUND-COLOR: #3b3b59; TEXT-ALIGN: =
+center
+}
+.arrow {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: red
+}
+.shadow {
+	BACKGROUND-COLOR: #c8c8c8
+}
+.button {
+	BACKGROUND-COLOR: #ffc800
+}
+.highlight {
+	COLOR: #999999
+}
+.highlighttable {
+	BORDER-RIGHT: #1c1c32 2px solid; BORDER-TOP: #1c1c32 2px solid; =
+BORDER-LEFT: #1c1c32 2px solid; BORDER-BOTTOM: #1c1c32 2px solid
+}
+.forumpostbg {
+	BACKGROUND-COLOR: #f0f0f0
+}
+.forumreplybg {
+	BACKGROUND-COLOR: #f9f9f9
+}
+.fontsize15pt {
+	FONT-SIZE: 15pt
+}
+.fontsize14pt {
+	FONT-SIZE: 14pt
+}
+.fontsize13pt {
+	FONT-SIZE: 13pt
+}
+.fontsize12pt {
+	FONT-SIZE: 12pt
+}
+.fontsize11pt {
+	FONT-SIZE: 11pt
+}
+.fontsize10pt {
+	FONT-SIZE: 10pt
+}
+.fontsize9pt {
+	FONT-SIZE: 9pt
+}
+.fontsize8pt {
+	FONT-SIZE: 8pt
+}
+.fontsize7pt {
+	FONT-SIZE: 7pt
+}
+.notice {
+	COLOR: red
+}
+.bold {
+	FONT-WEIGHT: bold
+}
+.nobold {
+	FONT-WEIGHT: normal
+}
+.italics {
+	FONT-STYLE: italic
+}
+.noitalics {
+	FONT-STYLE: normal
+}
+.colortier1 {
+	BACKGROUND-COLOR: #f8f8f8
+}
+.colortier2 {
+	BACKGROUND-COLOR: #e8e8e8
+}
+.colortier3 {
+	BACKGROUND-COLOR: #d8d8d8
+}
+.colortierheader1 {
+	BACKGROUND-COLOR: #f0f0f0
+}
+.colortierheader2 {
+	BACKGROUND-COLOR: #e0e0e0
+}
+.colortierheader3 {
+	BACKGROUND-COLOR: #d0d0d0
+}
+TD.normal {
+	FONT-SIZE: 10pt; COLOR: white
+}
+TH.normal {
+	FONT-SIZE: 10pt; COLOR: white
+}
+TABLE.normal {
+	BORDER-RIGHT: thin dashed; BORDER-TOP: thin dashed; BORDER-LEFT: thin =
+dashed; BORDER-BOTTOM: thin dashed
+}
+
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://ar.atwola.com/file/adsWrapper.js
+
+var adsHt=3D"http://ar.atwola.com",adsD=3Dnew =
+Date(),adsTz=3D"&TZ=3D"+adsD.getTimezoneOffset(),adsScr=3DadsD.getTime()%=
+0x3fffffff,adsTar=3D'_top',adsExt=3D'aol',adsTp=3D'',adsSL=3D"<SCRIPT =
+LANGUAGE=3D'JavaScript' SRC=3D'"=0A=
+var =
+adsDel=3D0,adsOld=3D1,adsNMSG,adsNG,adsNM,adsSr=3D"",adsOt=3D'',adsScat,a=
+dsIP=3D" SCROLLING=3DNO FRAMEBORDER=3D0 MARGINHEIGHT=3D0 =
+MARGINWIDTH=3D0></IFRAME>"=0A=
+var =
+adsNv=3Dnavigator,adsAN=3DadsNv.appName,adsAVA=3DadsNv.appVersion,adsAV=3D=
+parseInt(adsAVA),adsUA=3DadsNv.userAgent,adsLNm=3D0,adsLMN=3Dnew =
+Array(),adsCo=3Dnew Array(),adsCN=3D0=0A=
+var adsAH1=3D"<A HREF=3D'",adsAH2=3D"/"+adsScr+ =
+"/",adsOne=3D0,adsI1=3D"<IMG SRC=3D",adsI2=3D"/"+adsScr +"/",adsI3=3D" =
+BORDER=3D0 ALT=3D\"Click Here\"></A>"=0A=
+var adsIE=3D(adsAN=3D=3D"Microsoft Internet =
+Explorer"),adsNS=3D(adsAN=3D=3D"Netscape"),adsN4=3D(adsNS&&adsAV=3D=3D4),=
+adsN6=3D(adsNS&&adsAV>=3D5),adsOp=3D(adsUA.indexOf("Opera")!=3D-1)=0A=
+if (((adsNS||adsIE)&&adsAV>=3D4)||adsOp){adsOld=3D0=0A=
+if (adsOp&&adsUA.indexOf("Opera =
+5")=3D=3D-1&&adsUA.indexOf("Opera/5")=3D=3D-1&&adsUA.indexOf("Opera =
+6")=3D=3D-1&&adsUA.indexOf("Opera/6")=3D=3D-1){adsOld=3D1}}=0A=
+function adsClFn(z){if (window.adsCol0)return eval('window.adsCol'+z)=0A=
+else return('<!---->')}=0A=
+function adSetRotate(){}=0A=
+function adSetDelay(v){if (!adsOp){adsDel=3Descape(v)}}=0A=
+function adSetBucketMN(){}=0A=
+function adSetHtNm(v){adsHt=3D(v.indexOf('http')=3D=3D-1?"http://"+v:v)}=0A=
+function adSetTarget(v){adsTar=3Descape(v)}=0A=
+function =
+adSetNewMedia(v){adsNM=3Descape(v);adsNMSG=3D(v!=3D''?"NM=3D"+adsNM:"")}=0A=
+function adSetExt(v){adsExt=3Descape(v)}=0A=
+function =
+adSetSearch(v){adsSr=3D(v!=3D''?(window.encodeURIComponent)?"&search=3D"+=
+encodeURIComponent(v):"&search=3D"+escape(v):"")}=0A=
+function adSetType(v){adsTp=3Dv.toUpperCase()}=0A=
+function adSetOther(v){adsOt=3Dv}=0A=
+function adSetSearchCat(v){adsScat=3Dv}=0A=
+function adsCkPlg(){=0A=
+var =
+e=3D'</',ie=3D0,vm=3D'{08B0E5C0-4FCB-11CF-AAA5-00401C608500}',dc=3Ddocume=
+nt,dl=3Ddc.layers,da=3Ddc.all,dg=3Ddc.getElementById,n=3Dnavigator,db=3Dd=
+c.body=0A=
+var =
+cid=3D'componentid',beh=3D'url(#default#clientCaps)',jO=3D0,jI=3D0,ie5=3D=
+da&&dg,go=3D(da||dl||(dg&&!da))=0A=
+if =
+(adsUA.indexOf('MSIE')!=3D-1&&adsUA.indexOf('Win')!=3D-1&&!adsOp){ie=3D1=0A=
+var d=3Ddocument.writeln=0A=
+d('<script language=3D"VBscript">')=0A=
+d('Dim adsVB,po')=0A=
+d('adsVB=3D0')=0A=
+d('If ScriptEngineMajorVersion >=3D2 then adsVB=3D1')=0A=
+d('Function adsAX(aX)')=0A=
+d('on error resume next')=0A=
+d('If adsVB=3D1 then')=0A=
+d('adsAX=3DFalse')=0A=
+d('set po=3DCreateObject(aX)')=0A=
+d('adsAX=3DIsObject(po)')=0A=
+d('If (err) then adsAX=3DFalse')=0A=
+d('Else')=0A=
+d('adsAX=3DFalse')=0A=
+d('End If')=0A=
+d('End Function')=0A=
+d(e+'script>')}=0A=
+var i,u=3D0,dF=3D'',dV=3D'',dtB=3D'',fS,p=3Dn.plugins=0A=
+if (ie&&window.adsVB){u=3D0}else{u=3D1}=0A=
+if (p){var l=3Dp.length=0A=
+if (l>1){var =
+m=3Dn.mimeTypes,fl=3Dm['application/x-shockwave-flash'],v1=3Dm['applicati=
+on/x-mtx']=0A=
+if =
+(m&&((fl&&fl.enabledPlugin&&(fl.suffixes.indexOf('swf')!=3D-1))||(v1&&v1.=
+enabledPlugin&&(v1.suffixes.indexOf('mtx')!=3D-1)))){=0A=
+var ds,f=3D"Flash ",nm,ms=3D"MetaStream 3 Plugin"=0A=
+if (adsNS&&(n.appVersion.indexOf('4.0')!=3D-1)){=0A=
+for(i in p){=0A=
+ds=3Dp[i].description,fS=3Dds.indexOf(f)=0A=
+if (fS!=3D-1){if (ds.substring(fS+6,fS+7)>=3D5){dF=3D'F'}}=0A=
+else if (ds.indexOf(ms)!=3D-1){dV=3D'V'}}=0A=
+}else{=0A=
+for (i=3D0;i<l;i++){=0A=
+ds=3Dp[i].description,nm=3Dp[i].name=0A=
+fS=3Dds.indexOf(f)=0A=
+fN=3Dnm.indexOf(f)=0A=
+if (fS!=3D-1){if (ds.substring(fS+6,fS+7)>=3D5){dF=3D'F'}else if =
+(fN!=3D-1){if (nm.substring(fN+6,fN+7)>=3D5){dF=3D'F'}}}=0A=
+else if ((ds.indexOf(ms)!=3D-1)||(nm.indexOf(ms)!=3D-1)){dV=3D'V'}}}=0A=
+if (fl=3D=3Dnull)dF=3D''=0A=
+if (v1=3D=3Dnull)dV=3D''}=0A=
+}else if(ie=3D=3D1&&!u){if =
+(!ie5||adsOp||adsUA.indexOf('NT')!=3D-1){fS=3D"ShockwaveFlash.ShockwaveFl=
+ash."=0A=
+dF=3D(adsAX(fS+"5")?'F':'')=0A=
+if (!dF){dF=3D(adsAX(fS+"6")?'F':'')}}=0A=
+qf=3D'AxMetaStream.MetaStreamCtl'=0A=
+dV=3D(adsAX(qf+'Secondary')?'V':'')=0A=
+if (!dV)dV=3D(adsAX(qf)?'V':'')=0A=
+if(dV=3D=3D'V'){var x=3Dpo.PluginCommand("GetVersion(SWFVIEW.DLL)",0,0)=0A=
+if(!(x=3D=3D"No base control"||x>0))dV=3D''}=0A=
+}else{dV=3D'';dF=3D''}=0A=
+}else{dV=3D'';dF=3D''}=0A=
+if (go){if (n.platform=3D=3D'Win32'){jO=3Dn.javaEnabled();jI=3D1=0A=
+if (ie5&&!adsOp&&(db!=3Dnull)){jI=3D0=0A=
+db.style.behavior=3Dbeh=0A=
+if(db.isComponentInstalled(vm,cid))jI=3D1=0A=
+var =
+fC=3D'{D27CDB6E-AE6D-11CF-96B8-444553540000}',fV=3Ddb.getComponentVersion=
+(fC,cid)=0A=
+if (fV.charAt(0)>=3D5){dF=3D'F'}}}}=0A=
+if (jO&&jI){dtB=3D'B'}=0A=
+if =
+(adsOp){adsNMSG=3D"SNM=3DHI"+dF}else{adsNMSG=3D"SNM=3DHI"+((!adsN4)?'D':'=
+')+dtB+dF+dV}}=0A=
+function adsSF(){if =
+(adsScat&&adsScat!=3D''){adsScS=3D"&scat=3D"+escape(adsScat)}else{adsScS=3D=
+""}}=0A=
+function adsWrAd(){document.write(window.adsTop)}=0A=
+function htmlAdWH(m,w,h,t){adsSF()=0A=
+var d=3Ddocument,ah=3DadsExt+"' TARGET=3D"+adsTar+">",p=3D" =
+WIDTH=3D"+w+" =
+HEIGHT=3D"+h,l=3DadsAH1+adsHt+"/link/"+m+adsAH2+ah,c=3D'adsCo'=0A=
+var =
+p1=3DadsTz+adsScS+adsSr+adsOt,i1=3DadsI1+adsHt+"/image/"+m+adsI2+adsExt+"=
+?"+p1+"'"+p+adsI3,j=0A=
+if (!adsOld){if (!adsNMSG){if (!adsNG){adsCkPlg()=0A=
+adsNG=3DadsNMSG}else{adsNMSG=3DadsNG}}=0A=
+var =
+s=3DadsHt+"/html/"+m+"/"+adsScr+"/"+adsExt+"?"+adsNMSG+"&width=3D"+w+"&he=
+ight=3D"+h+"&target=3D"+adsTar+p1+"&CT=3D",ie4=3D(adsAVA.indexOf('MSIE =
+4')!=3D-1)=0A=
+j=3Dc+adsCN=0A=
+if =
+(((t=3D=3D'c'&&((adsN6&&adsUA.indexOf('rv:0')!=3D-1)||ie4||(adsAVA.indexO=
+f('MSIE 5.0')!=3D-1))))||(ie4&&t=3D=3D'd')||adsN4){adsTp=3D'J',t=3D''}=0A=
+if (t=3D=3D't'){d.write(adsSL+s+"J&hw=3Dtopbot'></SCRIPT>")}=0A=
+else if(t=3D=3D'b'){d.write(window.adsTop)}=0A=
+else if(t=3D=3D'c'){d.write ('<IFRAME ID=3D"'+j+'" NAME=3D"'+j+'" =
+SRC=3D"about:blank" HEIGHT=3D0 WIDTH=3D0'+adsIP)=0A=
+adsCo[adsCN++]=3Ds+"|"+w+"|"+h}=0A=
+else if(t=3D=3D'd'){d.write('<DIV ID=3D"'+j+'" NAME=3D"'+j+'"></DIV>')=0A=
+adsCo[adsCN++]=3Ds+"|T"}=0A=
+else{if (adsTp!=3D'J'&&!adsN4){var x=3D"<IFRAME NAME=3D'adsF"+adsLNm+"' =
+ID=3D'adsF"+adsLNm+"' SRC=3D"=0A=
+if (!adsDel){d.write(x+s+"I"+p+adsIP)}else{d.write(x+"''"+p+adsIP)=0A=
+adsLMN[adsLNm]=3D"adsF"+adsLNm+"|"+s+"I"}adsLNm++=0A=
+}else if ((adsTp=3D=3D'L'||(adsDel!=3D0&&adsTp!=3D'J'))&&adsN4){var =
+q=3DadsLNm=0A=
+d.write("<ILAYER ID=3DadsL"+q+" visibility=3Dhide"+p+"></ILAYER>")=0A=
+adsLMN[adsLNm]=3D"adsL"+adsLNm+"|"+s+"L"=0A=
+adsLNm++}else if(adsTp=3D=3D'J'||(adsTp.indexOf('I')=3D=3D-1&&adsN4)){=0A=
+d.write(adsSL+s+"J&hw=3Ddocw'></SCRIPT>")}else{d.write(l+i1)}}}=0A=
+else if(!(adsNS&&adsAV<=3D2)){d.write(l+i1)}adsScat=3D''}=0A=
+function imageAdWH(m,w,h){adsSF()=0A=
+var =
+s=3DadsHt+"/image/"+m+adsI2+adsExt+"?"+adsTz+adsScS+adsSr+adsOt,p=3D" =
+HEIGHT=3D"+h+" WIDTH=3D"+w+adsI3,d=3Ddocument=0A=
+d.write(adsAH1+adsHt+"/link/"+m+adsAH2+adsExt+"' TARGET=3D"+adsTar+">")=0A=
+if (!adsDel||adsOld){d.write(adsI1+s+p)=0A=
+}else{d.write(adsI1+adsHt+"/file/blank.gif NAME=3DadsImg"+adsLNm+p)=0A=
+adsLMN[adsLNm]=3D"adsImg"+adsLNm+"|"+s=0A=
+adsLNm++}adsScat=3D''}=0A=
+function adsEndFn(){}
+------=_NextPart_000_0000_01C35973.153BAF50
+Content-Type: application/x-javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://ar.atwola.com/file/adsEnd.js
+
+if (window.adsOne=3D=3D0&&!window.adsOld){adsOne++=0A=
+if (window.adsDel>0||(window.adsN4&&window.adsLNm>0))adsEndF()=0A=
+if (window.adsCN>0)adsCFn()}=0A=
+function adsOnL(){var w=3Dwindow=0A=
+if (w.adsPrO)w.adsPrO()=0A=
+adsDelFn()}=0A=
+function adsEndF(){var w=3Dwindow=0A=
+if (w.adsDel!=3D2||adsN4||(adsIE&&adsAV<=3D4)){if =
+(w.adsN4){adsDelFn()}else{setTimeout('adsDelFn()', =
+'1')}}else{w.adsPrO=3Dw.onload=0A=
+w.onload=3DadsOnL}}=0A=
+function adsDelFn(){var w=3Dwindow,n=3D0,s,z,r=3D1=0A=
+while (n<w.adsLNm){s=3Dw.adsLMN[n].split("|")=0A=
+if (s[0].indexOf('Img')!=3D-1){z=3Deval("document."+s[0])=0A=
+if(z)z.src=3Ds[1]}else if(!w.adsN4){z=3Deval("window."+s[0])=0A=
+if ((adsN6||(adsIE&&document.getElementById))&&n=3D=3D0){var y=3D"try{if =
+(z.location.href!=3D'about:blank'){r=3D0}}catch (err){r=3D0}"=0A=
+eval(y)}=0A=
+if (z&&r){if (adsN6){z.location.replace(s[1])}=0A=
+else{z.location.href=3Ds[1]}=0A=
+}}else{document.write("<LAYER SRC=3D'"+s[1]+"'")=0A=
+document.write ("visibility=3Dhidden =
+onload=3D\"moveToAbsolute("+s[0]+".pageX,"+s[0]+".pageY-1);visibility=3D'=
+show';\"></LAYER>")}=0A=
+n++}}=0A=
+function adsCol(x){var =
+o=3Deval('window.adsCol'+x),z=3D'adsCo'+x,d=3Ddocument=0A=
+if (o.indexOf("no =
+content")=3D=3D-1&&o.indexOf("no_ad")=3D=3D-1&&o.indexOf("<!---->")=3D=3D=
+-1){=0A=
+if (d.getElementById)q=3Dd.getElementById(z)=0A=
+else if (d.all)q=3Dd.all(z)=0A=
+adsCS=3DadsCo[x].split("|")=0A=
+if (adsCS[1]=3D=3D'T'){q.innerHTML=3Do}else{if =
+(o.indexOf('atwola_no_exp')=3D=3D-1){q.width=3DadsCS[1]=0A=
+q.height=3DadsCS[2]}=0A=
+var y=3D'try{q.src=3D"javascript:parent.adsClFn('+x+')"}catch (err){}'=0A=
+eval(y)}}}=0A=
+function adsCFn(){for (var i=3D0;i<adsCN;i++){adsCS=3DadsCo[i].split("|")=0A=
+document.write('<SCRIPT LANGUAGE=3D"JavaScript1.1" =
+SRC=3D"'+adsCS[0]+'J&hw=3Dcoll'+i+'">')=0A=
+document.write('</SCR','IPT>')}}
+------=_NextPart_000_0000_01C35973.153BAF50--

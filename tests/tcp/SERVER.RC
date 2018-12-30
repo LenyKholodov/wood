@@ -1,0 +1,8 @@
+/* Wedit generated resource file */
+#include <windows.h>
+#include "c:\lcc\project\tcp\tcpres.h"
+
+IDD_MAINDIALOG ACCELERATORS
+BEGIN
+    81, 300, VIRTKEY, CONTROL 
+END

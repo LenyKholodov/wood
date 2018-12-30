@@ -1,0 +1,18 @@
+GameLevel: Load level 'Fuck!'
+GameLevel: (c) UNT Games Studio, 2002
+CacheMap: resize: 423123244
+LandscapeMap: No enough memory: 400102496
+FloatCache: No enough memory for defrag pool
+MemManager: Error at alloc bytes = 60 from pool: 0x0200AB64
+GameLevel: Error at CreateLump loader: 3
+LandscapeCache: No enough memory
+LandscapeMap: Error at create landscape cache
+MemManager: Error at alloc bytes = 28 from pool: 0x0200AB64
+Error at LoadData
+::Error at load level
+LoadFont: Error at load bitmap
+LoadFont: Error at load font: 0
+LoadFont: Error at load bitmap
+LoadFont: Error at load font: 1
+MemManager: Error at alloc bytes = 192 from pool: 0x0200AB64
+WinMain: Error at execute start function

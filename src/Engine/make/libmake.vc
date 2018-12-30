@@ -1,0 +1,11 @@
+LIB_OPT            = $(LIB_OPT) /YX"pch.h"
+COPT               = 
+
+!IF  "$(CFG)" == "Debug"
+TARGET_SHORT_NAME  = gamed.lib
+!ELSEIF  "$(CFG)" == "Release"
+TARGET_SHORT_NAME  = game.lib
+!ENDIF
+
+!include make\objlist.inc
+!include ..\build\makepro.vc

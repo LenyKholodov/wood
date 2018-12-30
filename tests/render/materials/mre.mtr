@@ -1,0 +1,22 @@
+
+textures/base_wall/skpanel17a_d_trans
+{
+	qer_editorimage	textures/base_wall/skpanel17a_d.tga
+	bumpmap			textures/base_wall/skpanel17_local.tga
+	diffusemap		textures/base_wall/skpanel17a_d.tga
+	specularmap		textures/base_wall/skpanel17_s.tga
+	surfaceparm		nonsolid
+}
+
+textures/washroom/btile01_trans
+{
+	qer_editorimage textures/washroom/btile01.tga
+	bumpmap 		textures/washroom/btile_local.tga
+	diffusemap		textures/washroom/btile_d.tga
+	surfaceparm		nonsolid
+	{
+		blend		specularmap	
+		map			textures/washroom/btile_s.tga
+		scale		2, 2
+	}
+}	

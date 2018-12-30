@@ -1,0 +1,846 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: D3DSview - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "F:\DOCUME~1\Leny\LOCALS~1\Temp\RSP77.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/D3DSview.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Projects\TEST\RW\D3DSview\3DSVIEW.cpp"
+"D:\Projects\TEST\RW\D3DSview\d3dapp.cpp"
+"D:\Projects\TEST\RW\D3DSview\d3denum.cpp"
+"D:\Projects\TEST\RW\D3DSview\d3dfile.cpp"
+"D:\Projects\TEST\RW\D3DSview\d3dframe.cpp"
+"D:\Projects\TEST\RW\D3DSview\d3dtextr.cpp"
+"D:\Projects\TEST\RW\D3DSview\d3dutil.cpp"
+"D:\Projects\TEST\RW\D3DSview\IMPORT3DS.cpp"
+"D:\Projects\TEST\RW\D3DSview\info.cpp"
+]
+Creating command line "cl.exe @F:\DOCUME~1\Leny\LOCALS~1\Temp\RSP77.tmp" 
+Creating temporary file "F:\DOCUME~1\Leny\LOCALS~1\Temp\RSP78.tmp" with contents
+[
+ddraw.lib winmm.lib dxguid.lib d3dxof.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/D3DSview.pdb" /debug /machine:I386 /out:"Debug/D3DSview.exe" /pdbtype:sept 
+.\Debug\3DSVIEW.obj
+.\Debug\d3dapp.obj
+.\Debug\d3denum.obj
+.\Debug\d3dfile.obj
+.\Debug\d3dframe.obj
+.\Debug\d3dmath.obj
+.\Debug\d3dtextr.obj
+.\Debug\d3dutil.obj
+.\Debug\DEBUG.obj
+.\Debug\IMPORT3DS.obj
+.\Debug\info.obj
+.\Debug\D3DSview.res
+]
+Creating command line "link.exe @F:\DOCUME~1\Leny\LOCALS~1\Temp\RSP78.tmp"
+<h3>Output Window</h3>
+Compiling...
+3DSVIEW.cpp
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2146: syntax error : missing ';' before identifier 'm_pddsFrontBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2501: 'm_pddsFrontBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2501: 'm_pddsBackBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBufferLeft'
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2501: 'm_pddsBackBufferLeft' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2146: syntax error : missing ';' before identifier 'm_pddsZBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2501: 'm_pddsZBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(54) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dframe.h(58) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : error C2146: syntax error : missing ';' before identifier 'GetDirectDraw'
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : warning C4183: 'GetDirectDraw': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : error C2146: syntax error : missing ';' before identifier 'GetDirect3D'
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : warning C4183: 'GetDirect3D': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : error C2146: syntax error : missing ';' before identifier 'GetD3DDevice'
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : warning C4183: 'GetD3DDevice': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : error C2146: syntax error : missing ';' before identifier 'GetFrontBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : warning C4183: 'GetFrontBuffer': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : error C2146: syntax error : missing ';' before identifier 'GetBackBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : warning C4183: 'GetBackBuffer': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurface'
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : warning C4183: 'GetRenderSurface': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurfaceLeft'
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : warning C4183: 'GetRenderSurfaceLeft': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(82) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2146: syntax error : missing ';' before identifier 'ddDeviceDesc'
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2501: 'D3DDEVICEDESC7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2501: 'ddDeviceDesc' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2146: syntax error : missing ';' before identifier 'ddsdFullscreenMode'
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2501: 'ddsdFullscreenMode' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2143: syntax error : missing ';' before '*'
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2501: 'pddsdModes' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2065: 'fn' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2100: illegal indirection
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2059: syntax error : ','
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'ddsd' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(32) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'mtrl' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(34) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'light' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(36) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dapp.h(46) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+d:\projects\test\rw\d3dsview\d3dapp.h(46) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(46) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(47) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+d:\projects\test\rw\d3dsview\d3dapp.h(47) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(47) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(48) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+d:\projects\test\rw\d3dsview\d3dapp.h(48) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(48) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(49) : error C2146: syntax error : missing ';' before identifier 'm_pddsRenderTarget'
+d:\projects\test\rw\d3dsview\d3dapp.h(49) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(49) : error C2501: 'm_pddsRenderTarget' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(50) : error C2146: syntax error : missing ';' before identifier 'm_pddsRenderTargetLeft'
+d:\projects\test\rw\d3dsview\d3dapp.h(50) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(50) : error C2501: 'm_pddsRenderTargetLeft' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(51) : error C2146: syntax error : missing ';' before identifier 'm_ddsdRenderTarget'
+d:\projects\test\rw\d3dsview\d3dapp.h(51) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(51) : error C2501: 'm_ddsdRenderTarget' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(58) : error C2629: unexpected 'long ('
+d:\projects\test\rw\d3dsview\d3dapp.h(58) : error C2238: unexpected token(s) preceding ';'
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : error C2146: syntax error : missing ';' before identifier 'D3DTextr_GetSurface'
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : fatal error C1004: unexpected end of file found
+d3dapp.cpp
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2146: syntax error : missing ';' before identifier 'm_pddsFrontBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2501: 'm_pddsFrontBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2501: 'm_pddsBackBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBufferLeft'
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2501: 'm_pddsBackBufferLeft' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2146: syntax error : missing ';' before identifier 'm_pddsZBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2501: 'm_pddsZBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(54) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dframe.h(58) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : error C2146: syntax error : missing ';' before identifier 'GetDirectDraw'
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : warning C4183: 'GetDirectDraw': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : error C2146: syntax error : missing ';' before identifier 'GetDirect3D'
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : warning C4183: 'GetDirect3D': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : error C2146: syntax error : missing ';' before identifier 'GetD3DDevice'
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : warning C4183: 'GetD3DDevice': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : error C2146: syntax error : missing ';' before identifier 'GetFrontBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : warning C4183: 'GetFrontBuffer': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : error C2146: syntax error : missing ';' before identifier 'GetBackBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : warning C4183: 'GetBackBuffer': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurface'
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : warning C4183: 'GetRenderSurface': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurfaceLeft'
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : warning C4183: 'GetRenderSurfaceLeft': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(82) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2146: syntax error : missing ';' before identifier 'ddDeviceDesc'
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2501: 'D3DDEVICEDESC7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2501: 'ddDeviceDesc' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2146: syntax error : missing ';' before identifier 'ddsdFullscreenMode'
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2501: 'ddsdFullscreenMode' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2143: syntax error : missing ';' before '*'
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2501: 'pddsdModes' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2065: 'fn' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2100: illegal indirection
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2059: syntax error : ','
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'ddsd' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(32) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'mtrl' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(34) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'light' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(36) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dapp.h(46) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+d:\projects\test\rw\d3dsview\d3dapp.h(46) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(46) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(47) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+d:\projects\test\rw\d3dsview\d3dapp.h(47) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(47) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(48) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+d:\projects\test\rw\d3dsview\d3dapp.h(48) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(48) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(49) : error C2146: syntax error : missing ';' before identifier 'm_pddsRenderTarget'
+d:\projects\test\rw\d3dsview\d3dapp.h(49) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(49) : error C2501: 'm_pddsRenderTarget' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(50) : error C2146: syntax error : missing ';' before identifier 'm_pddsRenderTargetLeft'
+d:\projects\test\rw\d3dsview\d3dapp.h(50) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(50) : error C2501: 'm_pddsRenderTargetLeft' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(51) : error C2146: syntax error : missing ';' before identifier 'm_ddsdRenderTarget'
+d:\projects\test\rw\d3dsview\d3dapp.h(51) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(51) : error C2501: 'm_ddsdRenderTarget' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(58) : error C2629: unexpected 'long ('
+d:\projects\test\rw\d3dsview\d3dapp.h(58) : error C2238: unexpected token(s) preceding ';'
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : error C2146: syntax error : missing ';' before identifier 'D3DTextr_GetSurface'
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : fatal error C1004: unexpected end of file found
+d3denum.cpp
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2146: syntax error : missing ';' before identifier 'ddDeviceDesc'
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2501: 'D3DDEVICEDESC7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2501: 'ddDeviceDesc' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2146: syntax error : missing ';' before identifier 'ddsdFullscreenMode'
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2501: 'ddsdFullscreenMode' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2143: syntax error : missing ';' before '*'
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2501: 'pddsdModes' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2065: 'fn' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2100: illegal indirection
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2059: syntax error : ','
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'ddsd' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(32) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'mtrl' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(34) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'light' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(36) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3denum.cpp(22) : error C2199: syntax error : found 'HRESULT (' at global scope (was a declaration intended?)
+d:\projects\test\rw\d3dsview\d3denum.cpp(37) : error C2065: 'p1' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3denum.cpp(37) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3denum.cpp(38) : error C2065: 'p2' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3denum.cpp(38) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3denum.cpp(40) : error C2227: left of '->dwWidth' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(40) : error C2227: left of '->dwWidth' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(42) : error C2227: left of '->dwWidth' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(42) : error C2227: left of '->dwWidth' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(45) : error C2227: left of '->dwHeight' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(45) : error C2227: left of '->dwHeight' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(47) : error C2227: left of '->dwHeight' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(47) : error C2227: left of '->dwHeight' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(50) : error C2227: left of '->ddpfPixelFormat' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(50) : error C2228: left of '.dwRGBBitCount' must have class/struct/union type
+d:\projects\test\rw\d3dsview\d3denum.cpp(50) : error C2227: left of '->ddpfPixelFormat' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(50) : error C2228: left of '.dwRGBBitCount' must have class/struct/union type
+d:\projects\test\rw\d3dsview\d3denum.cpp(52) : error C2227: left of '->ddpfPixelFormat' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(52) : error C2228: left of '.dwRGBBitCount' must have class/struct/union type
+d:\projects\test\rw\d3dsview\d3denum.cpp(52) : error C2227: left of '->ddpfPixelFormat' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(52) : error C2228: left of '.dwRGBBitCount' must have class/struct/union type
+d:\projects\test\rw\d3dsview\d3denum.cpp(65) : error C2065: 'pddsd' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3denum.cpp(66) : error C2062: type 'void' unexpected
+d:\projects\test\rw\d3dsview\d3denum.cpp(67) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(67) : error C2447: missing function header (old-style formal list?)
+d:\projects\test\rw\d3dsview\d3denum.cpp(91) : error C2061: syntax error : identifier 'D3DDEVICEDESC7'
+d:\projects\test\rw\d3dsview\d3denum.cpp(97) : error C2065: 'pParentInfo' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3denum.cpp(102) : error C2065: 'pDesc' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3denum.cpp(102) : error C2227: left of '->dwDevCaps' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(102) : error C2065: 'D3DDEVCAPS_HWRASTERIZATION' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3denum.cpp(103) : error C2039: 'ddDeviceDesc' : is not a member of 'D3DEnum_DeviceInfo'
+        d:\projects\test\rw\d3dsview\d3denum.h(31) : see declaration of 'D3DEnum_DeviceInfo'
+d:\projects\test\rw\d3dsview\d3denum.cpp(109) : error C2227: left of '->deviceGUID' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3denum.cpp(111) : error C2039: 'pddsdModes' : is not a member of 'D3DEnum_DeviceInfo'
+        d:\projects\test\rw\d3dsview\d3denum.h(31) : see declaration of 'D3DEnum_DeviceInfo'
+d:\projects\test\rw\d3dsview\d3denum.cpp(111) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : warning C4390: ';' : empty controlled statement found; is this the intent?
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3denum.cpp(115) : fatal error C1003: error count exceeds 100; stopping compilation
+d3dfile.cpp
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'ddsd' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(32) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'mtrl' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(34) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'light' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(36) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : error C2146: syntax error : missing ';' before identifier 'D3DTextr_GetSurface'
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : fatal error C1004: unexpected end of file found
+d3dframe.cpp
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2146: syntax error : missing ';' before identifier 'm_pddsFrontBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2501: 'm_pddsFrontBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2501: 'm_pddsBackBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBufferLeft'
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2501: 'm_pddsBackBufferLeft' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2146: syntax error : missing ';' before identifier 'm_pddsZBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2501: 'm_pddsZBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(54) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dframe.h(58) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : error C2146: syntax error : missing ';' before identifier 'GetDirectDraw'
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : warning C4183: 'GetDirectDraw': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : error C2146: syntax error : missing ';' before identifier 'GetDirect3D'
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : warning C4183: 'GetDirect3D': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : error C2146: syntax error : missing ';' before identifier 'GetD3DDevice'
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : warning C4183: 'GetD3DDevice': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : error C2146: syntax error : missing ';' before identifier 'GetFrontBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : warning C4183: 'GetFrontBuffer': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : error C2146: syntax error : missing ';' before identifier 'GetBackBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : warning C4183: 'GetBackBuffer': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurface'
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : warning C4183: 'GetRenderSurface': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurfaceLeft'
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : warning C4183: 'GetRenderSurfaceLeft': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(82) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'ddsd' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(32) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'mtrl' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(34) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'light' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(36) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dframe.cpp(29) : error C2065: 'm_pddsFrontBuffer' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(30) : error C2065: 'm_pddsBackBuffer' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(31) : error C2065: 'm_pddsBackBufferLeft' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(33) : error C2065: 'm_pddsZBuffer' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(34) : error C2065: 'm_pd3dDevice' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(35) : error C2065: 'm_pDD' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(36) : error C2065: 'm_pD3D' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(67) : error C2227: left of '->SetCooperativeLevel' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3dframe.cpp(72) : error C2227: left of '->Release' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3dframe.cpp(76) : error C2227: left of '->Release' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3dframe.cpp(77) : error C2227: left of '->Release' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3dframe.cpp(78) : error C2227: left of '->Release' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3dframe.cpp(79) : error C2227: left of '->Release' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3dframe.cpp(80) : error C2227: left of '->Release' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3dframe.cpp(85) : error C2227: left of '->Release' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3dframe.cpp(102) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dframe.cpp(109) : error C2065: 'pMode' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(109) : error C2065: 'dwFlags' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(119) : error C2227: left of '->ddsCaps' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3dframe.cpp(119) : error C2228: left of '.dwCaps2' must have class/struct/union type
+d:\projects\test\rw\d3dsview\d3dframe.cpp(119) : error C2065: 'DDSCAPS2_STEREOSURFACELEFT' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(141) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dframe.cpp(148) : error C2065: 'IID_IDirect3DTnLHalDevice' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(212) : error C2065: 'DirectDrawCreateEx' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(212) : error C2065: 'IID_IDirectDraw7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(225) : error C2065: 'DDSCL_FPUSETUP' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(227) : error C2227: left of '->SetCooperativeLevel' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3dframe.cpp(235) : error C2146: syntax error : missing ';' before identifier 'ddsd'
+d:\projects\test\rw\d3dsview\d3dframe.cpp(236) : error C2228: left of '.dwSize' must have class/struct/union type
+d:\projects\test\rw\d3dsview\d3dframe.cpp(237) : error C2227: left of '->GetDisplayMode' must point to class/struct/union
+d:\projects\test\rw\d3dsview\d3dframe.cpp(238) : error C2228: left of '.ddpfPixelFormat' must have class/struct/union type
+d:\projects\test\rw\d3dsview\d3dframe.cpp(238) : error C2228: left of '.dwRGBBitCount' must have class/struct/union type
+d:\projects\test\rw\d3dsview\d3dframe.cpp(252) : error C2065: 'pddsd' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dframe.cpp(253) : error C2448: '<Unknown>' : function-style initializer appears to be a function definition
+d:\projects\test\rw\d3dsview\d3dframe.cpp(353) : error C2146: syntax error : missing ';' before identifier 'ddsd'
+d:\projects\test\rw\d3dsview\d3dframe.cpp(355) : error C2228: left of '.dwSize' must have class/struct/union type
+d:\projects\test\rw\d3dsview\d3dframe.cpp(355) : fatal error C1003: error count exceeds 100; stopping compilation
+d3dtextr.cpp
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : error C2146: syntax error : missing ';' before identifier 'D3DTextr_GetSurface'
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : fatal error C1004: unexpected end of file found
+d3dutil.cpp
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'ddsd' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(32) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'mtrl' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(34) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'light' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(36) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(58) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(58) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(58) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(58) : error C2374: 'D3DUtil_InitSurfaceDesc' : redefinition; multiple initialization
+        d:\projects\test\rw\d3dsview\d3dutil.h(31) : see declaration of 'D3DUtil_InitSurfaceDesc'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(58) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.cpp(58) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(59) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(60) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(60) : error C2447: missing function header (old-style formal list?)
+d:\projects\test\rw\d3dsview\d3dutil.cpp(75) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(75) : error C2146: syntax error : missing ')' before identifier 'r'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(75) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(75) : error C2374: 'D3DUtil_InitMaterial' : redefinition; multiple initialization
+        d:\projects\test\rw\d3dsview\d3dutil.h(33) : see declaration of 'D3DUtil_InitMaterial'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(75) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.cpp(75) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(76) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(77) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(77) : error C2447: missing function header (old-style formal list?)
+d:\projects\test\rw\d3dsview\d3dutil.cpp(92) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(92) : error C2146: syntax error : missing ')' before identifier 'ltType'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(92) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(92) : error C2374: 'D3DUtil_InitLight' : redefinition; multiple initialization
+        d:\projects\test\rw\d3dsview\d3dutil.h(35) : see declaration of 'D3DUtil_InitLight'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(92) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.cpp(92) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(93) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(94) : error C2143: syntax error : missing ';' before '{'
+d:\projects\test\rw\d3dsview\d3dutil.cpp(94) : error C2447: missing function header (old-style formal list?)
+IMPORT3DS.cpp
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2146: syntax error : missing ';' before identifier 'm_pddsFrontBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2501: 'm_pddsFrontBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2501: 'm_pddsBackBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBufferLeft'
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2501: 'm_pddsBackBufferLeft' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2146: syntax error : missing ';' before identifier 'm_pddsZBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2501: 'm_pddsZBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(54) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dframe.h(58) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : error C2146: syntax error : missing ';' before identifier 'GetDirectDraw'
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : warning C4183: 'GetDirectDraw': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : error C2146: syntax error : missing ';' before identifier 'GetDirect3D'
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : warning C4183: 'GetDirect3D': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : error C2146: syntax error : missing ';' before identifier 'GetD3DDevice'
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : warning C4183: 'GetD3DDevice': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : error C2146: syntax error : missing ';' before identifier 'GetFrontBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : warning C4183: 'GetFrontBuffer': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : error C2146: syntax error : missing ';' before identifier 'GetBackBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : warning C4183: 'GetBackBuffer': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurface'
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : warning C4183: 'GetRenderSurface': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurfaceLeft'
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : warning C4183: 'GetRenderSurfaceLeft': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(82) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2146: syntax error : missing ';' before identifier 'ddDeviceDesc'
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2501: 'D3DDEVICEDESC7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2501: 'ddDeviceDesc' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2146: syntax error : missing ';' before identifier 'ddsdFullscreenMode'
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2501: 'ddsdFullscreenMode' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2143: syntax error : missing ';' before '*'
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2501: 'pddsdModes' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2065: 'fn' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2100: illegal indirection
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2059: syntax error : ','
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'ddsd' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(32) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'mtrl' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(34) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'light' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(36) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dapp.h(46) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+d:\projects\test\rw\d3dsview\d3dapp.h(46) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(46) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(47) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+d:\projects\test\rw\d3dsview\d3dapp.h(47) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(47) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(48) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+d:\projects\test\rw\d3dsview\d3dapp.h(48) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(48) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(49) : error C2146: syntax error : missing ';' before identifier 'm_pddsRenderTarget'
+d:\projects\test\rw\d3dsview\d3dapp.h(49) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(49) : error C2501: 'm_pddsRenderTarget' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(50) : error C2146: syntax error : missing ';' before identifier 'm_pddsRenderTargetLeft'
+d:\projects\test\rw\d3dsview\d3dapp.h(50) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(50) : error C2501: 'm_pddsRenderTargetLeft' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(51) : error C2146: syntax error : missing ';' before identifier 'm_ddsdRenderTarget'
+d:\projects\test\rw\d3dsview\d3dapp.h(51) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(51) : error C2501: 'm_ddsdRenderTarget' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(58) : error C2629: unexpected 'long ('
+d:\projects\test\rw\d3dsview\d3dapp.h(58) : error C2238: unexpected token(s) preceding ';'
+d:\projects\test\rw\d3dsview\import3ds.hpp(164) : error C2061: syntax error : identifier 'LPDIRECT3DDEVICE7'
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : error C2146: syntax error : missing ';' before identifier 'D3DTextr_GetSurface'
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : fatal error C1004: unexpected end of file found
+info.cpp
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(43) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(44) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(45) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2146: syntax error : missing ';' before identifier 'm_pddsFrontBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(46) : error C2501: 'm_pddsFrontBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(47) : error C2501: 'm_pddsBackBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBufferLeft'
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(48) : error C2501: 'm_pddsBackBufferLeft' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2146: syntax error : missing ';' before identifier 'm_pddsZBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(49) : error C2501: 'm_pddsZBuffer' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(54) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dframe.h(58) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : error C2146: syntax error : missing ';' before identifier 'GetDirectDraw'
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(62) : warning C4183: 'GetDirectDraw': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : error C2146: syntax error : missing ';' before identifier 'GetDirect3D'
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(63) : warning C4183: 'GetDirect3D': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : error C2146: syntax error : missing ';' before identifier 'GetD3DDevice'
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(64) : warning C4183: 'GetD3DDevice': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : error C2146: syntax error : missing ';' before identifier 'GetFrontBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(65) : warning C4183: 'GetFrontBuffer': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : error C2146: syntax error : missing ';' before identifier 'GetBackBuffer'
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(66) : warning C4183: 'GetBackBuffer': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurface'
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(67) : warning C4183: 'GetRenderSurface': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurfaceLeft'
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dframe.h(68) : warning C4183: 'GetRenderSurfaceLeft': member function definition looks like a ctor, but name does not match enclosing class
+d:\projects\test\rw\d3dsview\d3dframe.h(82) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2146: syntax error : missing ';' before identifier 'ddDeviceDesc'
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2501: 'D3DDEVICEDESC7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(35) : error C2501: 'ddDeviceDesc' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2146: syntax error : missing ';' before identifier 'ddsdFullscreenMode'
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(44) : error C2501: 'ddsdFullscreenMode' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2143: syntax error : missing ';' before '*'
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(51) : error C2501: 'pddsdModes' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2065: 'fn' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2100: illegal indirection
+d:\projects\test\rw\d3dsview\d3denum.h(71) : error C2059: syntax error : ','
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2065: 'ddsd' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(141) : see declaration of 'DWORD'
+d:\projects\test\rw\d3dsview\d3dutil.h(32) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2065: 'mtrl' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        d:\win\vc98\include\windef.h(145) : see declaration of 'FLOAT'
+d:\projects\test\rw\d3dsview\d3dutil.h(34) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2065: 'light' : undeclared identifier
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2078: too many initializers
+d:\projects\test\rw\d3dsview\d3dutil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        d:\win\vc98\include\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+d:\projects\test\rw\d3dsview\d3dutil.h(36) : error C2059: syntax error : ')'
+d:\projects\test\rw\d3dsview\d3dapp.h(46) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+d:\projects\test\rw\d3dsview\d3dapp.h(46) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(46) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(47) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+d:\projects\test\rw\d3dsview\d3dapp.h(47) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(47) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(48) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+d:\projects\test\rw\d3dsview\d3dapp.h(48) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(48) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(49) : error C2146: syntax error : missing ';' before identifier 'm_pddsRenderTarget'
+d:\projects\test\rw\d3dsview\d3dapp.h(49) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(49) : error C2501: 'm_pddsRenderTarget' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(50) : error C2146: syntax error : missing ';' before identifier 'm_pddsRenderTargetLeft'
+d:\projects\test\rw\d3dsview\d3dapp.h(50) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(50) : error C2501: 'm_pddsRenderTargetLeft' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(51) : error C2146: syntax error : missing ';' before identifier 'm_ddsdRenderTarget'
+d:\projects\test\rw\d3dsview\d3dapp.h(51) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(51) : error C2501: 'm_ddsdRenderTarget' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dapp.h(58) : error C2629: unexpected 'long ('
+d:\projects\test\rw\d3dsview\d3dapp.h(58) : error C2238: unexpected token(s) preceding ';'
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : error C2146: syntax error : missing ';' before identifier 'D3DTextr_GetSurface'
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+d:\projects\test\rw\d3dsview\d3dtextr.h(26) : fatal error C1004: unexpected end of file found
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+D3DSview.exe - 692 error(s), 36 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,31 @@
+material {
+	name "trees/1 - Default"
+
+	diffuse_map "bark5.jpg"
+
+	diffuse 67 67 67 
+	specular 229 229 229 
+	ambient 67 67 67 
+	emission 0 0 0 
+
+	shiness 100
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "trees/Material #25"
+
+	diffuse_map "tree1.tga"
+	alpha_map "TREE1_O.TGA"
+
+	diffuse 127 127 127 
+	specular 229 229 229 
+	ambient 25 25 25 
+	emission 0 0 0 
+
+	shiness 100
+	alpha_koef 1
+	alpha_present 1
+}
+

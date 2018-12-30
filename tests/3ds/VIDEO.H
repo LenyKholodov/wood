@@ -1,0 +1,85 @@
+// маленькая видеобиблиотека
+
+#ifndef __EXAMPLE_VIDEO_H
+#define __EXAMPLE_VIDEO_H
+
+#include <conio.h>  // для outp()
+#include <string.h> // для memset() и memcpy()
+#include <stdlib.h> // для malloc()
+
+#define XSIZE 320   // размер экрана по горизонтали
+#define YSIZE 200   // размер экрана по вертикали
+#define DIST  XSIZE // расстояние от камеры до экрана
+
+char *exampleTexture; // текстура
+char *videoBuffer;    // видеобуфер
+
+#ifdef __WATCOMC__
+char *videoMem = (char*)0xA0000L; // указатель на видеопамять
+#endif
+
+#ifdef __BORLANDC__
+#include <dos.h>                       // для MK_FP()
+char far *videoMem = (char far*)MK_FP(0xA000, 0); // указатель на видеопамять
+#endif
+
+void initPalette();
+
+#ifdef __WATCOMC__
+// функция установки нужного видеорежима для Watcom C
+extern void setVideoMode(int mode);
+#pragma aux setVideoMode = " int 10h " parm [eax] modify [eax];
+#endif
+
+#ifdef __BORLANDC__
+// функция установки нужного видеорежима для Borland C
+void setVideoMode(int mode) {
+  _asm { mov ax,mode; int 10h; }
+}
+#endif
+
+// инициализация видеосистемы и видеорежима
+void initVideo() {
+  exampleTexture = (char*)malloc(65535L); // отведем память под текстуру
+  videoBuffer    = (char*)malloc(64000L); // отведем память под видеобуфер
+  setVideoMode(0x13);              // установим видеорежим 320x200x256c
+}
+
+// выход обратно в текстовый режим
+void doneVideo() {
+  setVideoMode(0x03);
+}
+
+// функция генерации простенькой тестовой текстуры
+void makeTexture() {
+  int i, j;
+  char *d = exampleTexture;
+
+  for (i = 0; i < 256; i++)
+    for (j = 0; j < 256; j++)
+      *d++ = 0x80 ^ ((i ^ j) >> 1);
+}
+
+// функция инициализации палитры оттенками зеленого цвета
+void initPalette() {
+  int i;
+
+  outp(0x3C8, 0x00);
+  for (i = 0; i < 256; i++) {
+    outp(0x3C9, 0);
+    outp(0x3C9, i >> 2);
+    outp(0x3C9, 0);
+  }
+}
+
+// функция очистки видеобуфера
+void clearVideoBuffer() {
+  memset(videoBuffer, 0, 64000L);
+}
+
+// функция копирование видеобуфера в видеопамять
+void showVideoBuffer() {
+	memcpy((void*)videoMem, videoBuffer, 64000L);
+}
+
+#endif

@@ -1,0 +1,201 @@
+uses Graph, Crt, Walk_1;
+var num : Longint;
+
+    Abs_X, VSpeed : Integer;
+    Ch : Char;
+    Quit : Boolean;
+    Velocity : Word;
+{***************************************************************************}
+procedure StartWalking;
+var _dy : Integer;
+begin
+        {Right Leg}
+        Incr(RL.Knee.al,wVel);
+        Incr(RL.Fing.al,wVel);
+        {GC_Stage;}
+        TazzStage(RL);
+        KneeStage(RL);
+        FootStage(RL);
+        FingStage(RL);
+        EdgeStage(RL);
+        if RL.Fing.y<>Land
+         then begin
+               _dy:=RL.Fing.y-Land;
+               RL.Fing.y:=Land;
+               RL.Edge.y:=Land;
+               RL.Foot.y:=RL.Foot.y-_dy;
+               RL.Knee.y:=RL.Knee.y-_dy;
+               GC.y:=GC.y-_dy;
+              end;
+        {Left Leg}
+        Decr(LL.Knee.al,wVel);
+        if LL.Knee.al.a>LL.Knee.al.amin/2
+         then begin
+               Incr(LL.Foot.al,2*wVel);
+               Decr(LL.Fing.al,1.5*wVel);
+              end
+         else begin
+               Decr(LL.Foot.al,2*wVel);
+               Incr(LL.Fing.al,1.5*wVel);
+              end;
+        if LL.Knee.al.a<=LL.Knee.al.amin
+         then begin
+               LL.Foot.al.a:=LL.Foot.al.amin;
+               WalkStart:=No;
+               LLeg_forw:=No;
+              end;
+        TazzStage(LL);
+        KneeStage(LL);
+        FootStage(LL);
+        FingStage(LL);
+        EdgeStage(LL);
+end;                         {StartWalking}
+{***************************************************************************}
+procedure LegForward(var L:Leg);
+begin
+               Decr(L.Knee.al,wVel);
+               if L.Knee.al.a>0
+                then Incr(L.Foot.al,2*wVel)
+                else Decr(L.Foot.al,2*wVel);
+               if L.Fing.al.a>0 then Decr(L.Fing.al,2*wVel);
+               TazzStage(L);
+               KneeStage(L);
+               FootStage(L);
+               FingStage(L);
+               EdgeStage(L);
+end;
+{***************************************************************************}
+procedure LegBackward(var L:Leg);
+var _dy : Integer;
+begin
+               Incr(L.Knee.al,wVel);
+               if L.Knee.al.a>0
+                then begin
+                      Incr(L.Fing.al,wVel);
+                      {GC_Stage;}
+                      TazzStage(L);
+                      KneeStage(L);
+                      FootStage(L);
+                      FingStage(L);
+                      EdgeStage(L);
+                      if L.Fing.y<>Land
+                       then begin
+                             _dy:=L.Fing.y-Land;
+                             L.Fing.y:=Land;
+                             L.Edge.y:=Land;
+                             L.Foot.y:=L.Foot.y-_dy;
+                             L.Knee.y:=L.Knee.y-_dy;
+                             GC.y:=GC.y-_dy;
+                            end;
+                     end
+                else begin
+                      TazzStage(L);
+                      KneeStage(L);
+                      FootStage(L);
+                      FingStage(L);
+                      EdgeStage(L);
+                      if L.Foot.y>Land
+                       then begin
+                             _dy:=L.Foot.y-Land;
+                             L.Foot.y:=Land;
+                             L.Knee.y:=L.Knee.y-_dy;
+                             GC.y:=GC.y-_dy;
+                            end;
+                     end;
+end;
+{***************************************************************************}
+procedure WalkLegs;
+var _dy : Integer;
+begin
+ if WalkStart
+  then StartWalking
+  else begin {WalkStart}
+        if LLeg_forw
+         then begin
+               {Right Leg}
+               LegBackward(RL);
+               {Left Leg}
+               LegForward(LL);
+               if RL.Knee.al.a>=RL.Knee.al.amax
+                then LLeg_forw:=No;
+              end
+         else begin {not LLeg_forw}
+               {Right Leg}
+               LegForward(RL);
+               {Left Leg}
+               LegBackward(LL);
+               if RL.Knee.al.a<=RL.Knee.al.amin
+                then LLeg_forw:=Yes;
+              end;
+       end; {else WalkStart}
+end;                         {WalkLegs}
+{***************************************************************************}
+procedure Walk;
+var dy : Longint;
+    s : String;
+begin
+ SetFillStyle(1,2); Bar(200,100,500,Land+2);
+ SetColor(15); Str(num,s);
+ OutTextXY(450,120,s);
+ Dec(Abs_X,Velocity);
+ if Abs_X<200 then Inc(Abs_X,20);
+ SetColor(9);
+ Line(200,Land,500,Land);
+ SetColor(15);
+ for dy:=0 to 28 do Line(Abs_X+10*dy,Land,Abs_X+10*dy,Land-2);
+ for dy:=0 to 14 do Line(Abs_X+20*dy,Land,Abs_X+20*dy,Land-4);
+{ Circle(GC.x,GC.y,RL.Tazz_L+RL.Knee_L+RL.Foot_L);}
+
+ WalkLegs;
+ WalkHands;
+ ShowStages;
+end;
+{***************************************************************************}
+begin
+ InitSceleton;
+ RL.Lcolor:=14; LL.Lcolor:=11;
+ RH.Lcolor:=14; LH.Lcolor:=11;
+ RL.Tazz.x:=RL.Tazz.x+5;
+ LL.Tazz.x:=LL.Tazz.x-5;
+ SetColor(RL.Lcolor); OutTextXY(10,10,'right leg');
+ SetColor(LL.Lcolor); OutTextXY(10,20,'left leg');
+ SetColor(RH.Lcolor); OutTextXY(10,30,'right arm');
+ SetColor(LH.Lcolor); OutTextXY(10,40,'left arm');
+ Quit:=No;
+ Velocity:=7{7}; {14ppt~=5km/h - line velocity}
+ wVel:=Pi/40{0.08 0.078}; {angle velocity}
+ WalkStart:=Yes;
+ LLeg_forw:=Yes;
+ {Fall:=No;}
+ Abs_X:=GC.x-120;
+ {}
+ num:=0;
+{ GC.x:=50;}
+ repeat
+  if KeyPressed
+   then begin
+         Ch:=ReadKey;
+         case Ch of
+          #13, #27 : Quit:=Yes;
+          'R','r' : begin
+                     InitSceleton;
+                     {Fall:=No;}
+                     WalkStart:=Yes;
+                     num:=0;
+                    end;
+         else begin
+               Walk;
+               {Inc(GC.x,7);}
+               Inc(num);
+               {GC.a:=GC.a+0.05;}
+              end;
+         end; {case}
+            end;
+
+  Walk; Delay(70);
+  Inc(num);
+{  Inc(GC.x,-7);}
+{  GC.a:=GC.a+0.05;}
+ until Quit;
+{ CloseGraph;}
+end.

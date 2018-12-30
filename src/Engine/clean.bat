@@ -1,0 +1,1 @@
+@if exist debug del debug\*.* /Q

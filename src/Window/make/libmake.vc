@@ -1,0 +1,11 @@
+LIB_OPT            = $(LIB_OPT) /YX"pch.h"
+COPT               = 
+
+!IF  "$(CFG)" == "Debug"
+TARGET_SHORT_NAME  = winfaced.lib
+!ELSEIF  "$(CFG)" == "Release"
+TARGET_SHORT_NAME  = winface.lib
+!ENDIF
+
+!include make\objlist.inc
+!include ..\build\makepro.vc

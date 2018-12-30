@@ -1,0 +1,14 @@
+What's New for FreeImage.NET
+
+* : fixed
+- : removed
+! : changed
++ : added
+
+November 10th, 2003
+* [anonymous] fixed a bug in BITMAPINFOHEADER declaration
+* [anonymous] fixed a bug in FreeImage_Clone declaration
++ [anonymous] added a sample c# freeimage drawing procedure
+
+October 20th 2003
++ [David Boland]  - Wrapper for FreeImage 3

@@ -1,0 +1,1 @@
+cl /F16000 /GX %1 resources.RES advShapes\dCylinder.cpp advShapes\dCylinderMass.cpp advShapes\dFace.cpp advShapes\dEdge.cpp advShapes\dMesh.cpp PhCTest\BCScenePhisObject.cpp PhCTest\BCPhisComponentObject.cpp PhCTest\BCPhisMaterialCollisionCharacter.cpp PhCTest\BCPhisicalScene.cpp PhCTest\BCPhisMisc.cpp

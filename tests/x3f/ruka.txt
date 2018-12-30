@@ -1,0 +1,2413 @@
+
+Chunk M3DMAGIC (4d4dH) 
+Length is 304722 (4a652H) 
+
+|  Chunk M3D_VERSION (2H) 
+|  Length is 10 (aH) 
+|  Version 3
+
+|  Chunk MDATA (3d3dH) 
+|  Length is 298106 (48c7aH) 
+
+|  |  Chunk MESH_VERSION (3d3eH) 
+|  |  Length is 10 (aH) 
+|  |  Version 3
+
+|  |  Chunk MAT_ENTRY (afffH) 
+|  |  Length is 177 (b1H) 
+
+|  |  |  Chunk MAT_NAME (a000H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Material name 2 - Default
+
+|  |  |  Chunk MAT_AMBIENT (a010H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 72,G: 72,B: 72
+
+|  |  |  Chunk MAT_DIFFUSE (a020H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 72,G: 72,B: 72
+
+|  |  |  Chunk MAT_SPECULAR (a030H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 229,G: 229,B: 229
+
+|  |  |  Chunk MAT_SHININESS (a040H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 10%
+
+|  |  |  Chunk MAT_SHIN2PCT (a041H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_TRANSPARENCY (a050H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_XPFALL (a052H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_REFBLUR (a053H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_SHADING (a100H) 
+|  |  |  Length is 8 (8H) 
+|  |  |  Shading value of 3
+
+|  |  |  Chunk MAT_SELF_ILPCT (a084H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_XPFALLIN (a08aH) 
+|  |  |  Length is 6 (6H) 
+
+|  |  |  Chunk MAT_WIRESIZE (a087H) 
+|  |  |  Length is 10 (aH) 
+|  |  |  Wire frame size of 1.000000
+
+|  |  Chunk MAT_ENTRY (afffH) 
+|  |  Length is 177 (b1H) 
+
+|  |  |  Chunk MAT_NAME (a000H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Material name 1 - Default
+
+|  |  |  Chunk MAT_AMBIENT (a010H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 150,G: 150,B: 150
+
+|  |  |  Chunk MAT_DIFFUSE (a020H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 150,G: 150,B: 150
+
+|  |  |  Chunk MAT_SPECULAR (a030H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 229,G: 229,B: 229
+
+|  |  |  Chunk MAT_SHININESS (a040H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 10%
+
+|  |  |  Chunk MAT_SHIN2PCT (a041H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_TRANSPARENCY (a050H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_XPFALL (a052H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_REFBLUR (a053H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_SHADING (a100H) 
+|  |  |  Length is 8 (8H) 
+|  |  |  Shading value of 3
+
+|  |  |  Chunk MAT_SELF_ILPCT (a084H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_XPFALLIN (a08aH) 
+|  |  |  Length is 6 (6H) 
+
+|  |  |  Chunk MAT_WIRESIZE (a087H) 
+|  |  |  Length is 10 (aH) 
+|  |  |  Wire frame size of 1.000000
+
+|  |  Chunk MAT_ENTRY (afffH) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk MAT_NAME (a000H) 
+|  |  |  Length is 14 (eH) 
+|  |  |  Material name Default
+
+|  |  |  Chunk MAT_AMBIENT (a010H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 178,G: 178,B: 178
+
+|  |  |  Chunk MAT_DIFFUSE (a020H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 178,G: 178,B: 178
+
+|  |  |  Chunk MAT_SPECULAR (a030H) 
+|  |  |  Length is 15 (fH) 
+
+|  |  |  |  Chunk COLOR_24 (11H) 
+|  |  |  |  Length is 9 (9H) 
+|  |  |  |  Color R: 255,G: 255,B: 255
+
+|  |  |  Chunk MAT_SHININESS (a040H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 50%
+
+|  |  |  Chunk MAT_SHIN2PCT (a041H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_TRANSPARENCY (a050H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_XPFALL (a052H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_REFBLUR (a053H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_SHADING (a100H) 
+|  |  |  Length is 8 (8H) 
+|  |  |  Shading value of 3
+
+|  |  |  Chunk MAT_SELF_ILPCT (a084H) 
+|  |  |  Length is 14 (eH) 
+
+|  |  |  |  Chunk INT_PERCENTAGE (30H) 
+|  |  |  |  Length is 8 (8H) 
+|  |  |  |  Percentage of 0%
+
+|  |  |  Chunk MAT_XPFALLIN (a08aH) 
+|  |  |  Length is 6 (6H) 
+
+|  |  |  Chunk MAT_WIRESIZE (a087H) 
+|  |  |  Length is 10 (aH) 
+|  |  |  Wire frame size of 1.000000
+
+|  |  Chunk MASTER_SCALE (100H) 
+|  |  Length is 10 (aH) 
+|  |  Master Scale 1.000000
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 21983 (55dfH) 
+|  |  Name: ShoulderHo
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 21966 (55ceH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 6584 (19b8H) 
+|  |  |  |  548 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 1.000000 [1] 0.000000 [2] 0.000000
+|  |  |  |  [3] 0.000000 [4] 1.000000 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] 0.000000 [8] 1.000000
+|  |  |  |  [9] -39.990688 [10] -9.390340 [11] 0.000000
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 15322 (3bdaH) 
+|  |  |  |  1092 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 2204 (89cH) 
+|  |  |  |  |  Material Name Of 2 - Default
+|  |  |  |  |  Assigned to 1092 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 4374 (1116H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 21983 (55dfH) 
+|  |  Name: ShoulderH0
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 21966 (55ceH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 6584 (19b8H) 
+|  |  |  |  548 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 1.000000 [1] 0.000000 [2] 0.000000
+|  |  |  |  [3] 0.000000 [4] 1.000000 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] 0.000000 [8] 1.000000
+|  |  |  |  [9] -39.990688 [10] -9.390340 [11] 0.000000
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 15322 (3bdaH) 
+|  |  |  |  1092 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 2204 (89cH) 
+|  |  |  |  |  Material Name Of 2 - Default
+|  |  |  |  |  Assigned to 1092 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 4374 (1116H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 14543 (38cfH) 
+|  |  Name: SwivelBase
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 14526 (38beH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 4352 (1100H) 
+|  |  |  |  362 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.195090 [1] 0.980785 [2] 0.000000
+|  |  |  |  [3] -0.980785 [4] -0.195090 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] 0.000000 [8] 1.000000
+|  |  |  |  [9] -4.991963 [10] -0.494785 [11] 0.000000
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 10114 (2782H) 
+|  |  |  |  720 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 1460 (5b4H) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 720 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 2886 (b46H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 6597 (19c5H) 
+|  |  Name: Shoulder
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 6582 (19b6H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 1952 (7a0H) 
+|  |  |  |  162 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.980785 [1] 0.195090 [2] -0.000000
+|  |  |  |  [3] 0.000000 [4] -0.000000 [5] 1.000000
+|  |  |  |  [6] 0.195090 [7] -0.980785 [8] 0.000000
+|  |  |  |  [9] -6.451124 [10] 4.304731 [11] 0.307106
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 4570 (11daH) 
+|  |  |  |  324 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 668 (29cH) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 324 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 1302 (516H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 7503 (1d4fH) 
+|  |  Name: ShoulderSu
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 7486 (1d3eH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 2240 (8c0H) 
+|  |  |  |  186 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.980785 [1] 0.195090 [2] -0.000000
+|  |  |  |  [3] -0.195090 [4] 0.980785 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] -0.000000 [8] 1.000000
+|  |  |  |  [9] -2.842847 [10] -13.600012 [11] 58.402267
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 5186 (1442H) 
+|  |  |  |  368 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 756 (2f4H) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 368 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 1478 (5c6H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 7503 (1d4fH) 
+|  |  Name: ShoulderS0
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 7486 (1d3eH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 2240 (8c0H) 
+|  |  |  |  186 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.980785 [1] 0.195090 [2] -0.000000
+|  |  |  |  [3] -0.195090 [4] 0.980785 [5] 0.000000
+|  |  |  |  [6] 0.000000 [7] -0.000000 [8] 1.000000
+|  |  |  |  [9] -8.013113 [10] 12.392683 [11] 58.235664
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 5186 (1442H) 
+|  |  |  |  368 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 756 (2f4H) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 368 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 1478 (5c6H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 8354 (20a2H) 
+|  |  Name: Bicep
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 8342 (2096H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 2480 (9b0H) 
+|  |  |  |  206 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.693520 [1] 0.137950 [2] 0.707107
+|  |  |  |  [3] -0.693520 [4] -0.137950 [5] 0.707107
+|  |  |  |  [6] 0.195090 [7] -0.980785 [8] 0.000000
+|  |  |  |  [9] -5.073419 [10] -3.486936 [11] 89.344849
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 5802 (16aaH) 
+|  |  |  |  412 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 844 (34cH) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 412 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 1654 (676H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 16423 (4027H) 
+|  |  Name: BicepNub01
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 16406 (4016H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 4916 (1334H) 
+|  |  |  |  409 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.195090 [1] 0.980785 [2] 0.000000
+|  |  |  |  [3] -0.693520 [4] -0.137950 [5] -0.707107
+|  |  |  |  [6] -0.693520 [7] -0.137950 [8] 0.707107
+|  |  |  |  [9] -2.929166 [10] -12.792178 [11] 89.243446
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 11430 (2ca6H) 
+|  |  |  |  814 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 1648 (670H) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 814 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 3262 (cbeH) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 16423 (4027H) 
+|  |  Name: BicepNub02
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 16406 (4016H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 4916 (1334H) 
+|  |  |  |  409 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.195090 [1] 0.980785 [2] 0.000000
+|  |  |  |  [3] -0.693520 [4] -0.137950 [5] -0.707107
+|  |  |  |  [6] -0.693520 [7] -0.137950 [8] 0.707107
+|  |  |  |  [9] -7.693596 [10] 11.761607 [11] 89.126122
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 11430 (2ca6H) 
+|  |  |  |  814 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 1648 (670H) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 814 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 3262 (cbeH) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 8356 (20a4H) 
+|  |  Name: Forearm
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 8342 (2096H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 2480 (9b0H) 
+|  |  |  |  206 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.562555 [1] -0.111899 [2] 0.819152
+|  |  |  |  [3] -0.803412 [4] -0.159809 [5] -0.573576
+|  |  |  |  [6] 0.195090 [7] -0.980785 [8] 0.000000
+|  |  |  |  [9] -72.670815 [10] -16.932886 [11] 158.266571
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 5802 (16aaH) 
+|  |  |  |  412 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 844 (34cH) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 412 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 1654 (676H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2623 (a3fH) 
+|  |  Name: ForearmNub
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2606 (a2eH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 776 (308H) 
+|  |  |  |  64 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.562555 [1] -0.111899 [2] 0.819152
+|  |  |  |  [3] 0.803412 [4] 0.159808 [5] 0.573576
+|  |  |  |  [6] 0.195090 [7] -0.980785 [8] -0.000000
+|  |  |  |  [9] -96.892891 [10] -31.562304 [11] 140.190201
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1770 (6eaH) 
+|  |  |  |  124 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 268 (10cH) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 124 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 502 (1f6H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 7343 (1cafH) 
+|  |  Name: ForearmPiv
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 7326 (1c9eH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 2192 (890H) 
+|  |  |  |  182 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.562555 [1] -0.111899 [2] 0.819152
+|  |  |  |  [3] -0.803412 [4] -0.159809 [5] -0.573576
+|  |  |  |  [6] 0.195090 [7] -0.980785 [8] 0.000000
+|  |  |  |  [9] -74.058441 [10] -14.111902 [11] 158.557205
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 5074 (13d2H) 
+|  |  |  |  360 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 740 (2e4H) 
+|  |  |  |  |  Material Name Of 2 - Default
+|  |  |  |  |  Assigned to 360 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 1446 (5a6H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 6839 (1ab7H) 
+|  |  Name: ClawWheelB
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 6822 (1aa6H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 2024 (7e8H) 
+|  |  |  |  168 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.845074 [1] 0.168095 [2] 0.507538
+|  |  |  |  [3] -0.497786 [4] -0.099016 [5] 0.861629
+|  |  |  |  [6] 0.195090 [7] -0.980785 [8] -0.000000
+|  |  |  |  [9] -133.543793 [10] -26.047243 [11] 116.248894
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 4738 (1282H) 
+|  |  |  |  336 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 692 (2b4H) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 336 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 1350 (546H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2542 (9eeH) 
+|  |  Name: ClawMover
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2526 (9deH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 752 (2f0H) 
+|  |  |  |  62 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.195090 [1] 0.980785 [2] 0.000000
+|  |  |  |  [3] -0.803412 [4] -0.159808 [5] -0.573576
+|  |  |  |  [6] -0.562555 [7] -0.111899 [8] 0.819152
+|  |  |  |  [9] -150.778427 [10] -29.450314 [11] 141.060059
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1714 (6b2H) 
+|  |  |  |  120 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 260 (104H) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 120 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 486 (1e6H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 60013 (ea6dH) 
+|  |  Name: ClawBase
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 59998 (ea5eH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 18128 (46d0H) 
+|  |  |  |  1510 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.195090 [1] 0.980785 [2] 0.000000
+|  |  |  |  [3] -0.803412 [4] -0.159808 [5] -0.573576
+|  |  |  |  [6] -0.562555 [7] -0.111899 [8] 0.819152
+|  |  |  |  [9] -152.397888 [10] -29.786926 [11] 143.411972
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 41810 (a352H) 
+|  |  |  |  2984 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 5988 (1764H) 
+|  |  |  |  |  Material Name Of 2 - Default
+|  |  |  |  |  Assigned to 2984 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 11942 (2ea6H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 41071 (a06fH) 
+|  |  Name: Claw01
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 41058 (a062H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 12296 (3008H) 
+|  |  |  |  1024 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.059203 [1] 0.979976 [2] -0.190113
+|  |  |  |  [3] -0.592472 [4] 0.118782 [5] 0.796786
+|  |  |  |  [6] 0.803412 [7] 0.159808 [8] 0.573576
+|  |  |  |  [9] -154.462326 [10] -42.040344 [11] 149.039001
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 28702 (701eH) 
+|  |  |  |  2048 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 4112 (1010H) 
+|  |  |  |  |  Material Name Of Default
+|  |  |  |  |  Assigned to 2048 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 8198 (2006H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2543 (9efH) 
+|  |  Name: ClawWheelC
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2526 (9deH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 752 (2f0H) 
+|  |  |  |  62 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] -0.195090 [1] 0.980785 [2] 0.000000
+|  |  |  |  [3] -0.803412 [4] -0.159808 [5] -0.573576
+|  |  |  |  [6] -0.562555 [7] -0.111899 [8] 0.819152
+|  |  |  |  [9] -149.277679 [10] -29.151798 [11] 138.874802
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1714 (6b2H) 
+|  |  |  |  120 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 260 (104H) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 120 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 486 (1e6H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 7343 (1cafH) 
+|  |  Name: ClawWheelP
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 7326 (1c9eH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 2192 (890H) 
+|  |  |  |  182 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.846744 [1] 0.159530 [2] 0.507519
+|  |  |  |  [3] 0.148073 [4] -0.986956 [5] 0.063187
+|  |  |  |  [6] 0.510979 [7] 0.021647 [8] -0.859321
+|  |  |  |  [9] -133.891098 [10] -26.193224 [11] 116.010712
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 5074 (13d2H) 
+|  |  |  |  360 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 740 (2e4H) 
+|  |  |  |  |  Material Name Of 2 - Default
+|  |  |  |  |  Assigned to 360 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 1446 (5a6H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 2623 (a3fH) 
+|  |  Name: ClawWheelN
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 2606 (a2eH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 776 (308H) 
+|  |  |  |  64 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.846744 [1] 0.159530 [2] 0.507519
+|  |  |  |  [3] 0.148073 [4] -0.986956 [5] 0.063187
+|  |  |  |  [6] 0.510979 [7] 0.021647 [8] -0.859321
+|  |  |  |  [9] -127.180313 [10] -27.153002 [11] 104.629372
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 1770 (6eaH) 
+|  |  |  |  124 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 268 (10cH) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 124 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 502 (1f6H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 21743 (54efH) 
+|  |  Name: BicepPivot
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 21726 (54deH) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 6512 (1970H) 
+|  |  |  |  542 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.693520 [1] 0.137950 [2] 0.707107
+|  |  |  |  [3] -0.693520 [4] -0.137950 [5] 0.707107
+|  |  |  |  [6] 0.195090 [7] -0.980785 [8] 0.000000
+|  |  |  |  [9] -5.422255 [10] -0.500046 [11] 89.532722
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 15154 (3b32H) 
+|  |  |  |  1080 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 2180 (884H) 
+|  |  |  |  |  Material Name Of 2 - Default
+|  |  |  |  |  Assigned to 1080 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 4326 (10e6H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 12807 (3207H) 
+|  |  Name: BicepCosme
+
+|  |  |  Chunk N_TRI_OBJECT (4100H) 
+|  |  |  Length is 12790 (31f6H) 
+
+|  |  |  |  Chunk POINT_ARRAY (4110H) 
+|  |  |  |  Length is 3848 (f08H) 
+|  |  |  |  320 Vertices
+
+|  |  |  |  Chunk MESH_MATRIX (4160H) 
+|  |  |  |  Length is 54 (36H) 
+|  |  |  |  [0] 0.693520 [1] 0.137950 [2] 0.707107
+|  |  |  |  [3] -0.195090 [4] 0.980785 [5] 0.000000
+|  |  |  |  [6] -0.693520 [7] -0.137950 [8] 0.707107
+|  |  |  |  [9] -27.508341 [10] 3.615170 [11] 110.290749
+
+|  |  |  |  Chunk FACE_ARRAY (4120H) 
+|  |  |  |  Length is 8882 (22b2H) 
+|  |  |  |  632 Faces
+
+|  |  |  |  |  Chunk MSH_MAT_GROUP (4130H) 
+|  |  |  |  |  Length is 1284 (504H) 
+|  |  |  |  |  Material Name Of 1 - Default
+|  |  |  |  |  Assigned to 632 faces
+
+|  |  |  |  |  Chunk SMOOTH_GROUP (4150H) 
+|  |  |  |  |  Length is 2534 (9e6H) 
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 79 (4fH) 
+|  |  Name: Omni01
+
+|  |  |  Chunk N_DIRECT_LIGHT (4600H) 
+|  |  |  Length is 66 (42H) 
+|  |  |  Light at 30.110291, 14.961661, 797.626770
+
+|  |  |  |  Chunk COLOR_F (10H) 
+|  |  |  |  Length is 18 (12H) 
+|  |  |  |  Color R: 1.000000,G: 1.000000,B: 1.000000
+
+|  |  |  |  Chunk DL_OUTER_RANGE (465aH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 200.000000.
+
+|  |  |  |  Chunk DL_INNER_RANGE (4659H) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 80.000000.
+
+|  |  |  |  Chunk DL_MULTIPLIER (465bH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Multiple of 0.190000.
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 79 (4fH) 
+|  |  Name: Omni02
+
+|  |  |  Chunk N_DIRECT_LIGHT (4600H) 
+|  |  |  Length is 66 (42H) 
+|  |  |  Light at 1184.312744, -914.185120, 656.658081
+
+|  |  |  |  Chunk COLOR_F (10H) 
+|  |  |  |  Length is 18 (12H) 
+|  |  |  |  Color R: 1.000000,G: 1.000000,B: 1.000000
+
+|  |  |  |  Chunk DL_OUTER_RANGE (465aH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 200.000000.
+
+|  |  |  |  Chunk DL_INNER_RANGE (4659H) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 80.000000.
+
+|  |  |  |  Chunk DL_MULTIPLIER (465bH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Multiple of 0.270000.
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 79 (4fH) 
+|  |  Name: Omni03
+
+|  |  |  Chunk N_DIRECT_LIGHT (4600H) 
+|  |  |  Length is 66 (42H) 
+|  |  |  Light at -1258.243896, -914.185120, 656.658081
+
+|  |  |  |  Chunk COLOR_F (10H) 
+|  |  |  |  Length is 18 (12H) 
+|  |  |  |  Color R: 1.000000,G: 1.000000,B: 1.000000
+
+|  |  |  |  Chunk DL_OUTER_RANGE (465aH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 200.000000.
+
+|  |  |  |  Chunk DL_INNER_RANGE (4659H) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 80.000000.
+
+|  |  |  |  Chunk DL_MULTIPLIER (465bH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Multiple of 0.270000.
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 79 (4fH) 
+|  |  Name: Omni04
+
+|  |  |  Chunk N_DIRECT_LIGHT (4600H) 
+|  |  |  Length is 66 (42H) 
+|  |  |  Light at -1258.243896, 1325.374756, 656.658081
+
+|  |  |  |  Chunk COLOR_F (10H) 
+|  |  |  |  Length is 18 (12H) 
+|  |  |  |  Color R: 1.000000,G: 1.000000,B: 1.000000
+
+|  |  |  |  Chunk DL_OUTER_RANGE (465aH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 200.000000.
+
+|  |  |  |  Chunk DL_INNER_RANGE (4659H) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 80.000000.
+
+|  |  |  |  Chunk DL_MULTIPLIER (465bH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Multiple of 0.270000.
+
+|  |  Chunk NAMED_OBJECT (4000H) 
+|  |  Length is 79 (4fH) 
+|  |  Name: Omni05
+
+|  |  |  Chunk N_DIRECT_LIGHT (4600H) 
+|  |  |  Length is 66 (42H) 
+|  |  |  Light at 1184.312744, 1325.374756, 656.658081
+
+|  |  |  |  Chunk COLOR_F (10H) 
+|  |  |  |  Length is 18 (12H) 
+|  |  |  |  Color R: 1.000000,G: 1.000000,B: 1.000000
+
+|  |  |  |  Chunk DL_OUTER_RANGE (465aH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 200.000000.
+
+|  |  |  |  Chunk DL_INNER_RANGE (4659H) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Range of 80.000000.
+
+|  |  |  |  Chunk DL_MULTIPLIER (465bH) 
+|  |  |  |  Length is 10 (aH) 
+|  |  |  |  Multiple of 0.270000.
+
+|  Chunk KFDATA (b000H) 
+|  Length is 6600 (19c8H) 
+
+|  |  Chunk KFHDR (b00aH) 
+|  |  Length is 21 (15H) 
+|  |  Revision level of 5
+|  |  Filename MAXSCENE
+|  |  Animation length of 65
+
+|  |  Chunk KFSEG (b008H) 
+|  |  Length is 14 (eH) 
+|  |  Segment starts at 0 and ends at 65
+
+|  |  Chunk KFCURTIME (b009H) 
+|  |  Length is 10 (aH) 
+|  |  Current frame is 2720
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 0 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ShoulderHo
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -39.990688, -9.390340, 0.000000
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 1 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ShoulderH0
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -39.990688, -9.390340, 0.000000
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 225 (e1H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 2 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: SwivelBase
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -4.991963, -0.494785, 0.000000
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 94 (5eH) 
+|  |  |  3 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 2.879793
+|  |  |  Axis of 0.000000, 0.000000, -1.000000
+|  |  |  Frame 44, Cont -1.00
+|  |  |  Rotation of 2.879793
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+|  |  |  Frame 59, Ease to 0.70
+|  |  |  Rotation of 2.530727
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 171 (abH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 3 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 21 (15H) 
+|  |  |  Object name: Shoulder
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 2
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: SwivelBase
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -0.000001, -49.692894, 0.000001
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 4.991963, 0.494785, 0.307106
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 2.094395
+|  |  |  Axis of -0.577350, 0.577350, 0.577350
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 4 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ShoulderSu
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 3
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Shoulder
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000001, -16.196741, 58.402267
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.045904, 58.095161, 18.264647
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.570796
+|  |  |  Axis of 1.000000, 0.000000, -0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 5 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ShoulderS0
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 3
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Shoulder
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000001, 10.305181, 58.235664
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.045903, 57.928558, -8.237275
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.570796
+|  |  |  Axis of 1.000000, 0.000000, -0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 194 (c2H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 6 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Object name: Bicep
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 3
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Shoulder
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -0.000002, -80.362213, 0.000002
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -0.168846, 89.037743, 7.910726
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 68 (44H) 
+|  |  |  2 Keys, 0 Flags.
+|  |  |  Frame 46, Cont -1.00
+|  |  |  Rotation of 0.785398
+|  |  |  Axis of 0.000000, -0.000000, -1.000000
+|  |  |  Frame 54
+|  |  |  Rotation of 0.436332
+|  |  |  Axis of 0.000000, 0.000000, 1.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 7 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: BicepNub01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 6
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Bicep
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -1.441319, 0.000000, -1.723713
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.131724, -0.275131, 9.544768
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 4.188790
+|  |  |  Axis of -0.577350, 0.577350, 0.577350
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 8 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: BicepNub02
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 6
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Bicep
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 23.570168, 0.000000, -1.889618
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.131724, -0.441048, -15.466718
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 4.188790
+|  |  |  Axis of -0.577350, 0.577350, 0.577350
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 196 (c4H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 9 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 20 (14H) 
+|  |  |  Object name: Forearm
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 6
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Bicep
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -0.000002, -80.362213, 0.000002
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.000003, 97.470016, -0.000003
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 68 (44H) 
+|  |  |  2 Keys, 0 Flags.
+|  |  |  Frame 54, Cont -1.00
+|  |  |  Rotation of 1.396263
+|  |  |  Axis of -0.000000, -0.000000, -1.000000
+|  |  |  Frame 59
+|  |  |  Rotation of 0.174533
+|  |  |  Axis of -0.000000, 0.000000, 1.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 10 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ForearmNub
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 9
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Forearm
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000001, 4.592417
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.455982, 32.166397, 9.622828
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 3.141593
+|  |  |  Axis of -0.000000, -1.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of -1.000000, -1.000000, -1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 190 (beH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 11 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ForearmNub
+|  |  |  Flags 1: 0
+|  |  |  Flags 2: 0
+|  |  |  Parent 9
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Forearm
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, -0.000001, 4.854360
+
+|  |  |  Chunk INSTANCE_NAME (b011H) 
+|  |  |  Length is 17 (11H) 
+|  |  |  Instance name: ForearmNu0
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.455981, 32.166397, -15.905369
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 3.141593
+|  |  |  Axis of -1.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 12 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ForearmPiv
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 9
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Forearm
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, -0.000000, 13.256023
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.703024, 0.497314, -3.037491
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 499 (1f3H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 13 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ClawWheelB
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 9
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Forearm
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.291080, -0.011870, 2.447694
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 254 (feH) 
+|  |  |  13 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.845432, 53.640144, -2.936491
+|  |  |  Frame 18
+|  |  |  Object at 0.845432, 76.324059, -2.936493
+|  |  |  Frame 19
+|  |  |  Object at 0.845430, 90.017151, -2.936494
+|  |  |  Frame 20
+|  |  |  Object at 0.845433, 100.915077, -2.936494
+|  |  |  Frame 21
+|  |  |  Object at 0.845434, 109.017853, -2.936495
+|  |  |  Frame 22
+|  |  |  Object at 0.845433, 114.325470, -2.936495
+|  |  |  Frame 23
+|  |  |  Object at 0.845437, 116.837936, -2.936496
+|  |  |  Frame 24
+|  |  |  Object at 0.845433, 116.555244, -2.936496
+|  |  |  Frame 25
+|  |  |  Object at 0.845430, 117.685211, -2.936496
+|  |  |  Frame 46
+|  |  |  Object at 0.845439, 117.685219, -2.936492
+|  |  |  Frame 47
+|  |  |  Object at 0.845434, 117.685204, -2.936495
+|  |  |  Frame 58
+|  |  |  Object at 0.845431, 117.685211, -2.936491
+|  |  |  Frame 59
+|  |  |  Object at 0.845423, 117.685219, -2.936503
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 152 (98H) 
+|  |  |  6 Keys, 0 Flags.
+|  |  |  Frame 23
+|  |  |  Rotation of 4.633849
+|  |  |  Axis of -0.000000, -0.000000, -1.000000
+|  |  |  Frame 26
+|  |  |  Rotation of 1.570796
+|  |  |  Axis of 0.000000, -0.000000, -1.000000
+|  |  |  Frame 27
+|  |  |  Rotation of 0.087266
+|  |  |  Axis of -0.000000, 0.000000, 1.000000
+|  |  |  Frame 28
+|  |  |  Rotation of 0.087266
+|  |  |  Axis of -0.000000, 0.000000, 1.000000
+|  |  |  Frame 28
+|  |  |  Rotation of 0.087266
+|  |  |  Axis of 0.000000, -0.000000, -1.000000
+|  |  |  Frame 28
+|  |  |  Rotation of 0.087266
+|  |  |  Axis of 0.000000, -0.000000, -1.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 532 (214H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 14 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 22 (16H) 
+|  |  |  Object name: ClawMover
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 13
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: ClawWheelB
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 398 (18eH) 
+|  |  |  21 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -2.543959, 30.294138, -0.024629
+|  |  |  Frame 22
+|  |  |  Object at -2.543962, 30.294144, -0.024630
+|  |  |  Frame 23
+|  |  |  Object at -2.543956, 30.294132, -0.024630
+|  |  |  Frame 26
+|  |  |  Object at -2.543948, 30.294149, -0.024629
+|  |  |  Frame 30
+|  |  |  Object at -2.543948, 30.294134, -0.024629
+|  |  |  Frame 31
+|  |  |  Object at -4.847120, 59.558620, -0.024627
+|  |  |  Frame 32
+|  |  |  Object at -6.592215, 81.732124, -0.024624
+|  |  |  Frame 37
+|  |  |  Object at -7.000102, 86.914726, -0.024624
+|  |  |  Frame 38
+|  |  |  Object at -6.929868, 86.022415, -0.024624
+|  |  |  Frame 39
+|  |  |  Object at -6.585773, 81.650246, -0.024625
+|  |  |  Frame 40
+|  |  |  Object at -5.999152, 74.196518, -0.024625
+|  |  |  Frame 41
+|  |  |  Object at -5.219481, 64.289948, -0.024626
+|  |  |  Frame 42
+|  |  |  Object at -4.296255, 52.559189, -0.024628
+|  |  |  Frame 43
+|  |  |  Object at -3.278933, 39.632954, -0.024629
+|  |  |  Frame 47
+|  |  |  Object at -2.929675, 35.195286, -0.024631
+|  |  |  Frame 49
+|  |  |  Object at -2.929687, 35.195278, -0.024629
+|  |  |  Frame 50
+|  |  |  Object at -2.929673, 35.195286, -0.024630
+|  |  |  Frame 56
+|  |  |  Object at -2.929687, 35.195278, -0.024628
+|  |  |  Frame 57
+|  |  |  Object at -2.929687, 35.195267, -0.024630
+|  |  |  Frame 58
+|  |  |  Object at -2.929687, 35.195282, -0.024630
+|  |  |  Frame 59
+|  |  |  Object at -2.929696, 35.195278, -0.024627
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 2.140318
+|  |  |  Axis of 0.591882, -0.547130, -0.591882
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 171 (abH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 15 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 21 (15H) 
+|  |  |  Object name: ClawBase
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 14
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: ClawMover
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -0.014203, 0.005895, 2.875275
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 301 (12dH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 16 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Claw01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 15
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: ClawBase
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 1.845467, -16.376923, 0.000001
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -11.615223, 0.389264, 7.141891
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 174 (aeH) 
+|  |  |  7 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.577948
+|  |  |  Axis of -0.992874, -0.084268, 0.084268
+|  |  |  Frame 28
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 29
+|  |  |  Rotation of 0.464025
+|  |  |  Axis of 0.000000, 1.000000, -0.000000
+|  |  |  Frame 30
+|  |  |  Rotation of 0.393735
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+|  |  |  Frame 31
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 34
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 35
+|  |  |  Rotation of 0.220238
+|  |  |  Axis of -0.000000, -1.000000, -0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 362 (16aH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 17 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Claw01
+|  |  |  Flags 1: 0
+|  |  |  Flags 2: 0
+|  |  |  Parent 15
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: ClawBase
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 1.845467, -16.376923, 0.000001
+
+|  |  |  Chunk INSTANCE_NAME (b011H) 
+|  |  |  Length is 17 (11H) 
+|  |  |  Instance name: Claw01.Cla
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -0.311301, -11.724058, 7.141891
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 218 (daH) 
+|  |  |  9 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 2.032540
+|  |  |  Axis of -0.516832, -0.651593, -0.555257
+|  |  |  Frame 28
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 29
+|  |  |  Rotation of 0.470525
+|  |  |  Axis of -0.986707, -0.045128, -0.156119
+|  |  |  Frame 30
+|  |  |  Rotation of 0.402732
+|  |  |  Axis of -0.974972, -0.105787, -0.195545
+|  |  |  Frame 31
+|  |  |  Rotation of 0.059824
+|  |  |  Axis of -0.107967, 0.389843, -0.914530
+|  |  |  Frame 32
+|  |  |  Rotation of 0.041279
+|  |  |  Axis of -0.175255, 0.505050, -0.845110
+|  |  |  Frame 33
+|  |  |  Rotation of 0.024985
+|  |  |  Axis of -0.293196, 0.742114, -0.602747
+|  |  |  Frame 34
+|  |  |  Rotation of 0.018433
+|  |  |  Axis of -0.373438, 0.890879, 0.258610
+|  |  |  Frame 35
+|  |  |  Rotation of 0.220380
+|  |  |  Axis of 0.909570, 0.414846, 0.024180
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 318 (13eH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 18 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Claw01
+|  |  |  Flags 1: 0
+|  |  |  Flags 2: 0
+|  |  |  Parent 15
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: ClawBase
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 1.845467, -16.376923, 0.000001
+
+|  |  |  Chunk INSTANCE_NAME (b011H) 
+|  |  |  Length is 17 (11H) 
+|  |  |  Instance name: Claw01.Cl0
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 11.826399, -0.482163, 7.141891
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 174 (aeH) 
+|  |  |  7 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 3.021923
+|  |  |  Axis of 0.059906, -0.705837, -0.705837
+|  |  |  Frame 28
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 29
+|  |  |  Rotation of 0.464025
+|  |  |  Axis of -0.000000, -1.000000, 0.000000
+|  |  |  Frame 30
+|  |  |  Rotation of 0.393735
+|  |  |  Axis of -0.000000, -1.000000, 0.000000
+|  |  |  Frame 31
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 34
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 35
+|  |  |  Rotation of 0.220238
+|  |  |  Axis of 0.000000, 1.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 406 (196H) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 19 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Claw01
+|  |  |  Flags 1: 0
+|  |  |  Flags 2: 0
+|  |  |  Parent 15
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: ClawBase
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 1.845467, -16.376923, 0.000001
+
+|  |  |  Chunk INSTANCE_NAME (b011H) 
+|  |  |  Length is 17 (11H) 
+|  |  |  Instance name: Claw01.Cl1
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.555919, 11.615860, 7.141891
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 262 (106H) 
+|  |  |  11 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 4.088414
+|  |  |  Axis of 0.607283, -0.512264, -0.607283
+|  |  |  Frame 23
+|  |  |  Rotation of 25.132740
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 24
+|  |  |  Rotation of 6.283185
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 25
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 26
+|  |  |  Rotation of 6.283185
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 28
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 29
+|  |  |  Rotation of 5.819160
+|  |  |  Axis of -1.000000, 0.000000, -0.000000
+|  |  |  Frame 30
+|  |  |  Rotation of 0.393735
+|  |  |  Axis of 1.000000, -0.000000, -0.000000
+|  |  |  Frame 31
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 34
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 1.000000, 0.000000, 0.000000
+|  |  |  Frame 35
+|  |  |  Rotation of 0.220238
+|  |  |  Axis of -1.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 20 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ClawWheelC
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 13
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: ClawWheelB
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -0.000000, 0.000000, 3.566925
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -2.334650, 27.634659, -0.024629
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 2.140318
+|  |  |  Axis of 0.591882, -0.547130, -0.591882
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 21 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ClawWheelP
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 13
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: ClawWheelB
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at -0.000004, -0.000001, 13.224868
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -0.438919, -0.017891, 0.075422
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.492277
+|  |  |  Axis of -0.999979, 0.004720, -0.004364
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 22 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ClawWheelN
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 21
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: ClawWheelP
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 1.199173, 1.646467
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -0.247040, 1.221796, 13.188514
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 190 (beH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 23 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: ClawWheelN
+|  |  |  Flags 1: 0
+|  |  |  Flags 2: 0
+|  |  |  Parent 21
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: ClawWheelP
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 1.199173, 1.646468
+
+|  |  |  Chunk INSTANCE_NAME (b011H) 
+|  |  |  Length is 17 (11H) 
+|  |  |  Instance name: ClawWheel0
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -0.247061, 1.221803, -13.239534
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 3.141593
+|  |  |  Axis of 0.000000, -0.999962, 0.008727
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of -1.000000, -1.000000, -1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 24 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: BicepPivot
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 6
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Bicep
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.014121, -0.000000, 7.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.302962, -0.037270, -2.997552
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 0.000000
+|  |  |  Axis of 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk OBJECT_NODE_TAG (b002H) 
+|  |  Length is 173 (adH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 25 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 23 (17H) 
+|  |  |  Object name: BicepCosme
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  Parent 6
+
+|  |  |  |  Chunk PARENT_NAME (80f0H) 
+|  |  |  |  Length is 0 (0H) 
+|  |  |  |  Parent name: Bicep
+
+|  |  |  Chunk PIVOT (b013H) 
+|  |  |  Length is 18 (12H) 
+|  |  |  Pivot at 0.000000, 0.000000, 0.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 0.231651, 29.390320, -11.342475
+
+|  |  |  Chunk ROT_TRACK_TAG (b021H) 
+|  |  |  Length is 42 (2aH) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Rotation of 1.570796
+|  |  |  Axis of 1.000000, 0.000000, -0.000000
+
+|  |  |  Chunk SCL_TRACK_TAG (b022H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Scale of 1.000000, 1.000000, 1.000000
+
+|  |  Chunk LIGHT_NODE_TAG (b005H) 
+|  |  Length is 109 (6dH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 26 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Omni01
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk COL_TRACK_TAG (b025H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Color R: 1.000000,G: 1.000000,B: 1.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 30.110291, 14.961661, 797.626770
+
+|  |  Chunk LIGHT_NODE_TAG (b005H) 
+|  |  Length is 109 (6dH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 27 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Omni02
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk COL_TRACK_TAG (b025H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Color R: 1.000000,G: 1.000000,B: 1.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 1184.312744, -914.185120, 656.658081
+
+|  |  Chunk LIGHT_NODE_TAG (b005H) 
+|  |  Length is 109 (6dH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 28 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Omni03
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk COL_TRACK_TAG (b025H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Color R: 1.000000,G: 1.000000,B: 1.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -1258.243896, -914.185120, 656.658081
+
+|  |  Chunk LIGHT_NODE_TAG (b005H) 
+|  |  Length is 109 (6dH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 29 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Omni04
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk COL_TRACK_TAG (b025H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Color R: 1.000000,G: 1.000000,B: 1.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at -1258.243896, 1325.374756, 656.658081
+
+|  |  Chunk LIGHT_NODE_TAG (b005H) 
+|  |  Length is 109 (6dH) 
+
+|  |  |  Chunk NODE_ID (b030H) 
+|  |  |  Length is 8 (8H) 
+|  |  |   Node ID: 30 
+
+|  |  |  Chunk NODE_HDR (b010H) 
+|  |  |  Length is 19 (13H) 
+|  |  |  Object name: Omni05
+|  |  |  Flags 1: 4000
+|  |  |  Flags 2: 0
+|  |  |  No Parent
+
+|  |  |  Chunk COL_TRACK_TAG (b025H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Color R: 1.000000,G: 1.000000,B: 1.000000
+
+|  |  |  Chunk POS_TRACK_TAG (b020H) 
+|  |  |  Length is 38 (26H) 
+|  |  |  1 Keys, 0 Flags.
+|  |  |  Frame 0
+|  |  |  Object at 1184.312744, 1325.374756, 656.658081

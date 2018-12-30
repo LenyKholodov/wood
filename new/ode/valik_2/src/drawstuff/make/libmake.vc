@@ -1,0 +1,7 @@
+LIB_OPT            = $(LIB_OPT) /YX "pch.h"
+COPT               = /EHa
+
+TARGET_SHORT_NAME  = drawstuff.lib
+
+!include make\objlist.inc
+!include ..\.build\makepro.vc

@@ -1,0 +1,3001 @@
+// this will be full intensity for 90% of the time, then fade to 0
+// parm3 is set to the time the mark is spawned
+// parm4 is set to the time the mark will be removed
+clampTable	decalFade{ 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 }
+
+textures/decals/duffyglowsplat
+{
+	qer_editorimage textures/decals/duffyglowsplat.tga
+	noShadows
+	{
+		blend blend
+		map textures/decals/duffyglowsplat.tga
+
+		vertexcolor
+	}
+}
+
+textures/decals/duffyglowsplat2
+{
+	qer_editorimage textures/decals/duffyglowsplat2.tga
+	noShadows
+	{
+		blend blend
+		map textures/decals/duffyglowsplat2.tga
+
+		vertexcolor
+	}
+}
+
+textures/decals/dglowsplat2
+{
+	qer_editorimage textures/decals/dglowsplat2.tga
+	noShadows
+	{
+		blend blend
+		map textures/decals/dglowsplat2.tga
+
+		vertexcolor
+	}
+}
+
+textures/decals/dglowsplat5
+{
+	qer_editorimage textures/decals/dglowsplat5.tga
+	noShadows
+	{
+		blend blend
+		map textures/decals/dglowsplat5.tga
+
+		vertexcolor
+	}
+}
+
+textures/decals/dglowsplat7
+{
+	qer_editorimage textures/decals/dglowsplat7.tga
+	noShadows
+	{
+		blend blend
+		map textures/decals/dglowsplat7.tga
+
+		vertexcolor
+	}
+}
+
+
+textures/decals/dglowsplat11
+{
+	qer_editorimage textures/decals/dglowsplat11.tga
+	noShadows
+	{
+		blend blend
+		map textures/decals/dglowsplat11.tga
+
+		vertexcolor
+	}
+}
+
+
+
+textures/decals/random01
+{
+
+	qer_editorimage textures/decals/random01.tga
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	//twoSided
+	translucent
+
+
+	{
+		//colored
+      	blend	diffuseMap  
+		map textures/decals/random01.tga
+	}
+
+
+}
+
+
+textures/decals/ballburn01
+{
+	qer_editorimage textures/decals/ballburn01.tga
+
+	DECAL_MACRO
+	{       
+//		blend		gl_dst_color, gl_zero
+      	blend		gl_zero, gl_one_minus_src_color
+		map			textures/decals/ballburn01.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		rgb			decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor	// oblique projections will be slightly faded down
+	}
+
+	{
+      	blend	add  
+		map		textures/decals/ballburn01_fx.tga
+		rgb		fireballtable[ time * .5 ]
+		vertexColor	// oblique projections will be slightly faded down
+	}
+}
+
+
+textures/decals/bulleth02
+{
+	DECAL_MACRO
+	{       
+      	blend	gl_zero, gl_one_minus_src_color
+		map		textures/decals/bulleth02.tga
+		clamp			// we don't want it to tile if the projection extends past the bounds
+		rgb		decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor		// oblique projections will be slightly faded down
+	}
+}
+
+
+textures/decals/pentagramfx
+{
+	qer_editorimage textures/decals/pentagramfx.tga
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	twoSided
+	translucent
+
+
+	{       
+      	blend	add
+		map		textures/decals/pentagramfx.tga
+		red		(fireballtable[ time * .2]) * parm0
+		green	(fireballtable[ time * .2]) * parm1
+		blue	(fireballtable[ time * .2]) * parm2
+		colored
+	}
+}
+
+
+textures/decals/gobdrip
+{
+    noselfShadow
+    noshadows	
+	deform sprite
+	translucent
+	surfaceparm discrete
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	               	
+ 						bumpmap 		textures/decals/gobdrip_local.tga 
+						specularmap		textures/decals/gobdrip.tga
+}
+
+
+
+
+//=====================================================================
+//
+// player damage tunnel vision effect
+//
+// parm3 will range from 0.0 to 1.0 based on health, 1.0 is full health
+// parm0 will be the time that damage was last taken, allowing an
+// accentuation and fade out
+//=====================================================================
+
+
+clampTable	tunnelVisionSolidAlpha { 1, 0 }
+// when health is near 0, the density will be greater
+
+
+textures/decals/tunnel
+{
+	noshadows
+	translucent
+
+	qer_editorimage		textures/decals/tunnel.tga
+
+	{
+		alpha		tunnelVisionSolidAlpha[ parm3 ] - (time-parm0)*0.25
+	    blend		blend
+		centerscale	0.65+0.05*sinTable[time], 0.65+0.05*sinTable[time]
+		rotate time * 0.07
+		map    textures/decals/tunnel.tga
+		clamp
+	}
+
+	{
+		alpha		tunnelVisionSolidAlpha[ parm3 ] - (time-parm0)*0.25
+	    blend		blend
+		centerscale	0.65+0.05*sinTable[time], 0.65+0.05*sinTable[time]
+		rotate time * -0.06
+		map    textures/decals/tunnel.tga
+		clamp
+	}
+
+}
+
+
+
+//=====================================================================
+//
+// screen damage blobs
+//
+// the alpha parmater (parm3) will decrease from 1.0 to 0.0 over the length of
+// time on screen
+//=====================================================================
+
+textures/decals/slash01
+{
+	noshadows
+	translucent
+
+	qer_editorimage		textures/decals/slash01.tga
+
+	{
+	   blend  blend  
+		map    textures/decals/slash01.tga
+		colored
+	}
+
+}
+
+genericDamage
+{
+	noshadows
+	translucent
+	{
+		blend  blend
+		map    textures/decals/slash01.tga
+		colored
+	}
+
+}
+
+leftSlash
+{
+	noshadows
+	translucent
+	{
+		blend  blend
+		map    textures/decals/slash01.tga
+		colored
+	}
+
+}
+
+rightSlash
+{
+	noshadows
+	translucent
+	{
+		blend  blend
+		map    textures/decals/slash01.tga
+		scale	-1, 1
+		colored
+	}
+
+}
+
+pinkySlash
+{
+	noshadows
+	translucent
+	{
+		blend  blend
+		map    textures/decals/slash01.tga
+		colored
+	}
+
+}
+
+//=====================================================================
+
+textures/decals/hurt01
+
+{
+	DECAL_MACRO
+	qer_editorimage textures/decals/hurt01.tga
+
+
+
+	{       
+      		 blend	diffusemap
+			 map	textures/decals/hurt01.tga
+	   		 alphaTest 0.5
+	}
+
+	specularmap 	textures/decals/hurt01_s.tga		    
+	bumpmap 	heightmap(textures/decals/hurt01_h.tga, 16 ) 
+
+       
+}
+
+textures/decals/hurt05
+{
+
+	qer_editorimage textures/decals/hurt05.tga
+	DECAL_MACRO
+
+	{       
+      	 blend gl_dst_color,gl_zero
+	 map	textures/decals/hurt05.tga
+	}
+	{       
+      	 blend	add  
+	 map	textures/decals/hurt05_fx.tga
+		rgb		fireballtable[ time * .5 ]
+	}
+
+
+ }
+
+
+textures/decals/hurt04
+{
+
+	qer_editorimage textures/decals/hurt04.tga
+	DECAL_MACRO
+	{       
+      	 blend gl_dst_color,gl_zero
+	 map	textures/decals/hurt04.tga
+			 clamp
+	}
+
+
+ }
+
+
+
+textures/decals/hurt03
+{
+
+	qer_editorimage textures/decals/hurt03.tga
+	DECAL_MACRO
+
+	{       
+      	 blend gl_dst_color,gl_zero
+	 map	textures/decals/hurt03.tga
+			 clamp
+	}
+
+
+ }
+
+
+
+
+textures/decals/hurt02
+{
+
+	qer_editorimage textures/decals/hurt02.tga
+	DECAL_MACRO
+
+	{       
+      	 blend gl_dst_color,gl_zero
+	 map	textures/decals/hurt02.tga
+			 clamp
+	}
+	     
+
+
+ }
+
+
+
+
+
+textures/decals/bulleth01
+
+{
+	qer_editorimage textures/decals/bulleth01.tga
+	DECAL_MACRO
+
+
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/bulleth01_d.tga
+	   alphaTest 0.5
+	}
+	specularmap 	textures/decals/bulleth01_s.tga	
+	bumpmap 	    textures/decals/bulleth01_local.tga
+
+
+       
+
+}
+
+
+
+textures/decals/blood_drop
+{
+
+	qer_editorimage textures/decals/blood_drop.tga
+	noShadows
+	deform sprite
+	surfaceparm discrete
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+
+	{       
+      	 blend	filter
+	 map	textures/decals/blood_drop_d.tga
+	}
+
+	//specularmap	textures/decals/blood_drop_s.tga
+        	//bumpmap		textures/decals/blood_drop_local.tga 
+
+ }
+
+
+textures/decals/glass_on_floor
+{
+	translucent
+	twoSided
+	noshadows
+	qer_editorimage	textures/decals/glass_on_floor.tga
+	
+	{
+		blend diffuseMap
+		map textures/decals/glass_on_floor.tga
+	}
+	{
+		blend specularMap
+		map textures/decals/glass_on_floor.tga
+	}
+
+
+
+}
+
+
+
+
+textures/decals/stainwall
+{
+
+	DECAL_MACRO
+	//polygonOffset
+	qer_editorimage	textures/decals/stainwall.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/stainwall.tga
+	}	
+}
+
+
+textures/decals/dirty_frame
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/dirty_frame.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/dirty_frame.tga
+	}	
+}
+
+
+textures/decals/drip2
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/drip2.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/drip2_d.tga
+	}	
+}
+
+textures/decals/sci_logo
+{
+
+	qer_editorimage textures/decals/sci_logo.tga
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	twoSided
+	translucent
+
+
+	{
+		colored
+      	blend	diffuseMap  
+		map textures/decals/sci_logo.tga
+	}
+
+
+ }
+
+
+
+textures/decals/military_logo2
+{
+
+	qer_editorimage textures/decals/military_logo2.tga
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	twoSided
+	translucent
+
+
+	{
+		colored
+      	blend	add
+		map textures/decals/military_logo2.tga
+	}
+
+
+ }
+
+
+textures/decals/ind_logo2
+{
+
+	qer_editorimage textures/decals/ind_logo2.tga
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	twoSided
+	translucent
+
+
+	{
+		colored
+      	blend	add  
+		map textures/decals/ind_logo2.tga
+	}
+
+ }
+
+
+
+textures/decals/corp_logo2
+{
+
+	qer_editorimage textures/decals/corp_logo2.tga
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	
+twoSided
+	translucent
+
+
+	{
+		colored
+		blend	add  
+		map textures/decals/corp_logo2.tga
+	}
+
+ }
+
+
+textures/decals/glass_crack1
+{
+
+	qer_editorimage textures/decals/glass_crack1.tga
+	noShadows
+	twoSided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{       
+      	 blend	diffuseMap  
+	 map	textures/decals/glass_crack1.tga
+	}
+
+ }
+
+
+
+textures/decals/widget
+{
+
+	qer_editorimage textures/decals/widget.tga
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+
+
+	{       
+      	 blend	diffuseMap 
+	 map	textures/decals/widget.tga
+	 alphaTest 0.5
+	}
+
+	specularmap	textures/decals/widget_s.tga
+        	bumpmap		textures/decals/widget_local.tga 
+
+ }
+
+textures/decals/military_logo
+{
+
+	qer_editorimage textures/decals/military_logo.tga
+	noShadows
+	twoSided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{
+		colored
+      	blend	diffuseMap  
+		map textures/decals/military_logo.tga
+	}
+
+
+ }
+
+
+
+textures/decals/ind_logo1
+{
+
+	qer_editorimage textures/decals/ind_logo1.tga
+	noShadows
+	twoSided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{
+		colored
+      	blend	diffuseMap  
+		map textures/decals/ind_logo1.tga
+	}
+
+
+ }
+
+
+
+textures/decals/corp_logo1
+{
+
+	qer_editorimage textures/decals/corp_logo1.tga
+	noShadows
+	twoSided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{       
+      	colored
+		blend diffuseMap 
+	 map	textures/decals/corp_logo1.tga
+	}
+
+ }
+
+textures/decals/alphabet5
+{
+	qer_editorimage textures/decals/alphabet5.tga
+	noShadows
+	twoSided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{
+		colored       
+      	blend	add  
+		map textures/decals/alphabet5_d.tga
+	}
+
+ }
+
+
+textures/decals/alphabet4
+{
+	qer_editorimage textures/decals/alphabet4.tga
+	noShadows
+	twoSided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{
+		colored       
+      	blend	diffuseMap  
+		map	textures/decals/alphabet4_d.tga
+	}
+
+
+ }
+
+
+textures/decals/whitesquare64
+{
+
+	qer_editorimage textures/decals/whitesquare64.tga
+	noShadows
+	twoSided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{       
+      	 blend	diffuseMap  
+	 map	textures/decals/whitesquare64.tga
+	}
+
+ }
+
+
+textures/decals/whitesquare128
+{
+
+	qer_editorimage textures/decals/whitesquare128.tga
+	noShadows
+	twoSided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{       
+      	 blend	diffuseMap  
+	 map	textures/decals/whitesquare128.tga
+	}
+
+ }
+
+
+textures/decals/step01
+{
+
+	qer_editorimage textures/decals/step01.tga
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{       
+      	 blend	diffuseMap  
+	 map	textures/decals/step01.tga
+	}
+
+ }
+
+
+textures/decals/bulletglass2
+{
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	twosided
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/bulletglass2.tga
+	
+	{
+	 	blend	diffuseMap
+		map	 textures/decals/bulletglass2_d.tga
+		
+	}
+
+
+
+}
+
+textures/decals/bulletglass1
+{
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	twosided
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/bulletglass1.tga
+	
+	{
+	 	blend	diffuseMap
+		map	 textures/decals/bulletglass1_d.tga
+		
+	}
+
+
+
+}
+
+textures/decals/floor_stripecrn
+{
+
+	qer_editorimage textures/decals/floor_stripecrn.tga
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{       
+      	 blend	diffuseMap  //GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+	 map	textures/decals/floor_stripecrn.tga
+	 //alphaTest 0.5
+	}
+
+ }
+
+
+textures/decals/floor_stripetrim
+{
+
+	qer_editorimage textures/decals/floor_stripetrim.tga
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{       
+      	 blend	diffuseMap  //GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+	 map	textures/decals/floor_stripetrim.tga
+	 //alphaTest 0.5
+	}
+
+ }
+
+
+textures/decals/floor_stripetrim2
+{
+
+	qer_editorimage textures/decals/floor_stripetrim2.tga
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{       
+      	 blend	diffuseMap  //GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+	 map	textures/decals/floor_stripetrim2.tga
+	 //alphaTest 0.5
+	}
+
+ }
+
+
+textures/decals/floor_stripe
+{
+
+	qer_editorimage textures/decals/floor_stripe.tga
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+
+
+	{       
+      	 blend	diffuseMap  //GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+	 map	textures/decals/floor_stripe.tga
+	 //alphaTest 0.5
+	}
+
+ }
+
+
+textures/decals/pipevent
+{
+
+	qer_editorimage textures/decals/pipevent.tga
+	noShadows
+
+
+	{       
+      	 blend	diffuseMap //GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+	 map	textures/decals/pipevent_d.tga
+	 alphaTest 0.5
+	}
+
+	specularmap	textures/decals/pipevent_s.tga
+        bumpmap		textures/decals/pipevent_local.tga 
+
+ }
+
+
+textures/decals/flap
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	qer_editorimage textures/decals/flap.tga
+
+	{       
+      	 blend	diffuseMap //GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+	 map	textures/decals/flap_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/flap_s.tga
+ 	bumpmap		addnormals(textures/decals/flap_local.tga  , heightmap( textures/decals/flap_h.tga, 6 ) )
+       
+
+}
+
+
+
+textures/decals/stain01bwet
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/stain01bwet.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/stain01b.tga
+	}	
+
+	specularmap	 textures/decals/stain01b_s.tga
+}
+
+textures/decals/alphabet1
+{
+	qer_editorimage	textures/decals/alphabet1.tga	
+	noshadows
+	{
+		colored
+		blend diffusemap
+		map textures/decals/alphabet1_d.tga
+		alphaTest 0.5
+	}
+}
+
+textures/decals/alphabet2
+{
+	qer_editorimage	textures/decals/alphabet2.tga	
+	noshadows
+	translucent
+	{
+		colored
+		blend gl_one,gl_one
+		map textures/decals/alphabet2.tga
+	}
+}
+
+textures/decals/alphabet3
+{
+	qer_editorimage	textures/decals/alphabet3.tga	
+	noshadows
+	translucent
+	{
+		colored
+		blend add
+		map textures/decals/alphabet3.tga
+	}
+}
+
+textures/decals/shadow
+{	
+	translucent
+	twosided
+	qer_editorimage textures/decals/shadow
+	noshadows
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/shadow
+	}
+}
+
+textures/decals/wheel
+{
+	noShadows
+	qer_editorimage textures/decals/wheel.tga
+	
+
+
+	{       
+      	 blend	diffuseMap //GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+	 map	textures/decals/wheel_d.tga
+	 alphaTest 0.5
+	}
+
+	specularmap	textures/decals/wheel_s.tga
+
+	bumpmap		addnormals( textures/decals/wheel_local.tga  , heightmap( textures/decals/wheel_h.tga, 6 ) )
+   	
+
+ }
+
+textures/decals/sp4_2_alpha
+{
+	qer_editorimage		textures/decals/sp4_alpha.tga
+	twoSided
+	noshadows
+	{
+		blend		diffusemap
+		map 		textures/base_trim/sp4_2_d.tga
+		alphaTest	0.5
+
+	}
+	bumpmap			addnormals( textures/base_trim/sp4_local.tga , heightmap ( textures/base_trim/sp4_2_b.tga , 3 ) )
+	specularmap		textures/base_trim/sp4_2_s.tga
+}
+
+textures/decals/hangingwires2
+{
+	surfaceparm 		nonsolid
+	surfaceparm		noimpact
+	noshadows
+	qer_editorimage		textures/decals/hangingwires.tga
+	bumpmap			addnormals ( textures/decals/hangingwires_local.tga , heightmap ( textures/decals/hangingwires2_b.tga , 2 ) )
+	{
+		blend		diffusemap
+		map		textures/decals/hangingwires2_d.tga
+		alphatest	.25
+	}
+	specularmap		textures/decals/hangingwires2_s.tga
+}
+textures/decals/spanel
+{
+
+	qer_editorimage textures/base_wall/spanel.tga
+	noShadows
+
+
+	{       
+      	 blend	diffuseMap //GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+	 map	textures/base_wall/spanel_d.tga
+	 alphaTest 0.5
+	}
+
+	specularmap	textures/base_wall/spanel_s.tga
+        bumpmap		textures/base_wall/spanel_local.tga 
+
+ }
+
+
+textures/decals/pressurepanel2
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/pressurepanel2.tga
+
+	{       
+      	 blend	diffuseMap //GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+	 map	textures/decals/pressurepanel2_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/pressurepanel2_s.tga
+ 	bumpmap	        textures/decals/pressurepanel2_local.tga  
+       
+
+}
+
+textures/decals/pressurepanel_a
+{
+ 	noShadows
+	qer_editorimage 	textures/decals/pressurepanel_a.tga
+	surfaceparm nonsolid
+	bumpmap			addnormals( textures/decals/pressurepanel_local.tga  , heightmap( textures/decals/pressurepanel_h.tga, 6 ) )
+	{       
+		blend		diffusemap
+		map		textures/decals/pressurepanel_a_d.tga
+		alphaTest 	0.5
+	}
+	specularmap		textures/decals/pressurepanel_s.tga
+}
+
+textures/decals/pressurepanel
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/pressurepanel.tga
+
+	{       
+      	 blend	diffuseMap //GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+	 map	textures/decals/pressurepanel_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/pressurepanel_s.tga
+ 	bumpmap		addnormals( textures/decals/pressurepanel_local.tga  , heightmap( textures/decals/pressurepanel_h.tga, 6 ) )
+       
+
+}
+
+textures/decals/vent01
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/vent01.tga
+
+	{       
+      	 blend	diffuseMap //GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+	 map	textures/decals/vent01_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/vent01_s.tga
+	bumpmap 	textures/decals/vent01_local.tga
+       
+
+}
+
+
+
+textures/decals/skid_tilecap2
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage textures/decals/skid_tilecap2.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/skid_tilecap2.tga
+	}	
+}
+
+textures/decals/skid_tilecap1
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage textures/decals/skid_tilecap1.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/skid_tilecap1.tga
+	}	
+}
+
+
+textures/decals/skid_turn
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage textures/decals/skid_turn.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/skid_turn_d.tga
+	}	
+}
+
+
+
+textures/decals/skid_tile
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage textures/decals/skid_tile.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/skid_tile.tga
+	}	
+}
+
+
+
+
+textures/decals/skid
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage textures/decals/skid.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/skid.tga
+	}	
+}
+
+
+
+textures/decals/cam_base
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/cam_base.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/cam_base_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/cam_base_s.tga
+	bumpmap 	textures/decals/cam_base_local.tga
+       
+
+}
+
+textures/decals/cam_base2
+
+{
+ 	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/cam_base2.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/cam_base2_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/cam_base2_s.tga
+	bumpmap 	addnormals (textures/decals/cam_base_local.tga, heightmap (textures/decals/cam_base2_b.tga, 1 ))
+       
+
+}
+
+textures/decals/floordiv
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/floordiv.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/floordiv_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/floordiv_s.tga
+	bumpmap 	textures/decals/floordiv_local.tga
+       
+
+}
+
+textures/decals/wall_wire
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/wall_wire.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/wall_wire_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/wall_wire_s.tga
+	bumpmap 	textures/decals/wall_wire_local.tga
+       
+
+}
+textures/decals/plugin
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/plugin.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/plugin_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/plugin_s.tga
+	bumpmap 	textures/decals/plugin_local.tga
+       
+
+}
+
+
+textures/decals/floor_drain
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/floor_drain.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/floor_drain_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/floor_drain_s.tga
+	bumpmap 	textures/decals/floor_drain_local.tga
+       
+
+}
+
+textures/decals/floor_drain2
+
+{
+ 	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/floor_drain2.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/floor_drain2_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/floor_drain2_s.tga
+	bumpmap 	addnormals (textures/decals/floor_drain_local.tga , heightmap (textures/decals/floor_drain2_b.tga ,2))
+       
+
+}
+textures/decals/achtung
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/achtung.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/achtung_d.tga
+	}	
+}
+
+
+textures/decals/pipeterm
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/pipeterm.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/pipeterm_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/pipeterm_s.tga
+	bumpmap 	textures/decals/pipeterm_local.tga
+       
+
+}
+
+
+textures/decals/pipeterm_rust
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/pipeterm.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/pipeterm_rust_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/pipeterm_rust_s.tga
+	bumpmap 	textures/decals/pipeterm_local.tga
+       
+
+}
+
+textures/decals/pipeterm3
+
+{
+ 	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/pipeterm3.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/pipeterm3_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/pipeterm3_s.tga
+	bumpmap 	addnormals (textures/decals/pipeterm_local.tga, heightmap (textures/decals/pipeterm3_b.tga, 1 ))
+       
+
+}
+
+textures/decals/bcap
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/bcap.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/bcap_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/bcap_s.tga
+	bumpmap 	textures/decals/bcap_local.tga
+       
+
+}
+
+textures/decals/bootprint01
+{
+	qer_editorimage	textures/decals/bootprint01.tga
+	DECAL_MACRO
+	{       
+      	blend		gl_zero, gl_one_minus_src_color
+		map 		textures/decals/bootprint01_d.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		rgb			decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+
+textures/decals/footprint01r
+{
+	qer_editorimage	textures/decals/footprint01r.tga
+
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	DECAL_MACRO
+	{       
+      	blend		gl_zero, gl_one_minus_src_color
+		map 		textures/decals/footprint01r_d.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		rgb			decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+
+textures/decals/footprint01
+{
+	qer_editorimage	textures/decals/footprint01.tga
+
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	DECAL_MACRO
+	{       
+      	blend		gl_zero, gl_one_minus_src_color
+		map 		textures/decals/footprint01_d.tga
+		clamp		// we don't want it to tile if the projection extends past the bounds
+		rgb			decalFade[(time - Parm3)/(parm4 - parm3)]
+		vertexColor	// oblique projections will be slightly faded down
+	}	
+}
+
+textures/decals/handprint02
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/handprint02.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/handprint02_d.tga
+	}	
+}
+
+textures/decals/smear01
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	sort 1
+	//polygonOffset
+	qer_editorimage	textures/decals/smear01.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/smear01_d.tga
+	}	
+	
+}
+
+textures/decals/handprint01
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/handprint01.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/handprint01_d.tga
+	}	
+}
+
+textures/decals/smoke01
+{
+	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	twoSided
+	translucent
+	qer_editorimage	textures/decals/smoke01.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/smoke01.tga
+		scroll time * .1 , time * .0
+	}	
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/smoke01.tga
+		scroll time * .03 , time * .0
+	 }
+
+}
+
+textures/decals/drip
+{
+	translucent
+	twosided
+	noshadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	//polygonOffset
+	qer_editorimage	textures/decals/drip.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/drip.tga
+	}	
+}
+
+textures/decals/stain01
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/stain01.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/stain01.tga
+	}	
+}
+
+textures/decals/stain03
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/stain03.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/stain03.tga
+	}	
+}
+textures/decals/stain01b
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/stain01b.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/stain01b.tga
+	}	
+}
+
+textures/decals/stain02
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/stain02.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/stain02.tga
+	}	
+}
+
+textures/decals/graffiti
+{
+	translucent
+	twosided
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	//polygonOffset
+	qer_editorimage	textures/decals/graffiti.tga
+	{
+		blend gl_dst_color,gl_zero
+		map textures/decals/graffiti.tga
+	}	
+}
+
+textures/decals/fgrill
+
+{
+ 	noShadows
+	surfaceparm trans
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	//polygonOffset
+	qer_editorimage textures/decals/fgrill.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/fgrill_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/fgrill_s.tga
+	bumpmap 	textures/decals/fgrill_local.tga
+       
+
+}
+textures/decals/fgrill2
+
+{
+ 	noShadows
+	surfaceparm trans
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	qer_editorimage textures/decals/fgrill2.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/fgrill2_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/fgrill2_s.tga
+	bumpmap 	addnormals( textures/decals/fgrill_local.tga , heightmap ( textures/decals/fgrill2_b.tga, 1 ) )
+       
+
+}
+textures/decals/toiletmunge
+
+{
+ 	noShadows
+	surfaceparm trans
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	//polygonOffset
+	qer_editorimage textures/decals/toiletmunge.tga
+
+	{       
+      	 blend diffusemap
+	 map	textures/decals/toiletmunge_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/toiletmunge.tga	
+	bumpmap 	heightmap(textures/decals/toiletmunge_b.tga, 7 ) 
+       
+
+}
+
+textures/decals/bdrain
+
+{
+ 	noShadows
+	surfaceparm trans
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	//polygonOffset
+	qer_editorimage textures/decals/bdrain.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/bdrain_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/bdrain_s.tga
+	bumpmap 	textures/decals/bdrain_local.tga
+       
+
+}
+
+textures/decals/bathpanel
+
+{
+ 	noShadows
+	surfaceparm trans
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	//polygonOffset
+	qer_editorimage textures/decals/bathpanel.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/bathpanel_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/bathpanel_s.tga
+	bumpmap 	textures/decals/bathpanel_local.tga
+       
+
+}
+
+
+textures/decals/sprinklercap
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/sprinklercap.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/sprinklercap_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/sprinklercap_s.tga
+	bumpmap 	textures/decals/sprinklercap_local.tga
+       
+
+}
+
+textures/decals/hivent03
+
+{
+ 	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/hivent03.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/hivent03_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/hivent03_s.tga
+	bumpmap 	addnormals (textures/decals/hivent01_local.tga , heightmap (textures/decals/hivent03_b.tga , 1 ))
+       
+}
+
+textures/decals/hivent02
+
+{
+ 	noShadows
+        //noselfshadow
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/hivent02.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/hivent02_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/hivent01_s.tga
+	bumpmap 	textures/decals/hivent01_local.tga
+       
+
+}
+
+
+textures/decals/hivent01
+
+{
+ 	noShadows
+        //noselfshadow
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/hivent01.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/hivent01_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/hivent01_s.tga
+	bumpmap 	textures/decals/hivent01_local.tga
+       
+
+}
+
+textures/decals/snippers
+
+{
+ 	noShadows
+	surfaceparm trans
+	qer_editorimage textures/decals/snippers.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/snippers_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/snippers_s.tga
+	bumpmap 	textures/decals/snippers_local.tga
+       
+
+}
+
+textures/decals/drain
+
+{
+ 	noShadows
+	surfaceparm trans
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	//polygonOffset
+	qer_editorimage textures/decals/drain.tgabl
+
+	{       
+      	 blend	diffusemap
+	 map	textures/decals/drain_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/drain_s.tga
+	bumpmap 	textures/decals/drain_local.tga
+       
+
+}
+
+textures/decals/bloodpool01
+
+{
+ 	noShadows
+	// translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	//polygonOffset
+	qer_editorimage textures/decals/bloodpool01.tga
+
+
+
+
+	{
+       
+      	 blend	diffusemap
+	 map	textures/decals/bloodpool01_d.tga
+	               alphaTest 0.5
+	
+	}
+
+	//{
+//
+//	blend specularmap	
+//	map 	textures/decals/bloodpool01_s.tga
+//	scroll time * .02 , time * .01
+//
+//	}
+
+	{
+
+	blend bumpmap 	
+	map	heightmap(textures/decals/bloodpool01_b.tga, 4 ) 
+	
+	}
+	{
+		blend add
+		cubeMap		env/qcw
+		texgen		reflect
+	}
+       
+
+
+
+}
+
+textures/decals/jimblood
+{
+ 	noShadows
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	qer_editorimage textures/decals/bloodpool01_jim.tga
+
+	{
+      	 blend	diffusemap
+		 map	textures/decals/bloodpool01_jim.tga
+	}
+
+	{
+		blend add
+		cubeMap		env/qcw
+		texgen		reflect
+	}
+}
+
+
+textures/decals/bloodrun01
+
+{
+ 	noShadows
+	surfaceparm trans
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	//polygonOffset
+	qer_editorimage textures/decals/bloodpool01.tga
+
+	{
+       
+      	 blend diffuseMap
+	 map	textures/decals/bloodrun02.tga
+		alphaTest 0.5
+	scroll time * .0 , time * -0.07
+	
+	}
+	{
+       
+      	blend diffuseMap
+//	GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA
+	 map	textures/decals/bloodrun01.tga
+		alphaTest 0.5
+	scroll time * .0 , time * -0.005
+	
+	}
+	
+
+	{
+
+	blend specularmap	
+	map 	textures/decals/bloodrun01_s.tga
+	scroll time * .0 , time * -0.01
+
+	}
+
+	{
+
+	blend bumpmap 	
+	map	heightmap(textures/decals/bloodrun01_b.tga, 9 ) 
+	scroll time * .0 , time * -0.02
+	
+	}
+       
+
+
+
+}
+
+
+
+
+textures/decals/caution_hazardous_material
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/caution_hazardous_material.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/caution_hazardous_material_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/caution_hazardous_material_s.tga
+	bumpmap 	heightmap(textures/decals/caution_hazardous_material_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/no_smoking
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/no_smoking.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/no_smoking_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/no_smoking_s.tga
+	bumpmap 	heightmap(textures/decals/no_smoking_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/high_voltage
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/high_voltage.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/high_voltage_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/high_voltage_s.tga
+	bumpmap 	heightmap(textures/decals/high_voltage_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/no_eating
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/no_eating.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/no_eating_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/no_eating_s.tga
+	bumpmap 	heightmap(textures/decals/no_eating_b.tga, 1 ) 
+       
+
+}
+
+
+textures/decals/danger_author_person
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/danger_author_person.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/danger_author_person_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/danger_author_person_s.tga
+	bumpmap 	heightmap(textures/decals/danger_author_person_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/report_injuries
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/report_injuries.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/report_injuries_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/report_injuries_s.tga
+	bumpmap 	heightmap(textures/decals/report_injuries_b.tga, 1 ) 
+       
+
+}
+
+
+textures/decals/report_all_spills
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/report_all_spills.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/report_all_spills_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/report_all_spills_s.tga
+	bumpmap 	heightmap(textures/decals/report_all_spills_b.tga, 1 ) 
+       
+
+}
+
+
+
+
+
+textures/decals/first_aid_stat
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/first_aid_stat.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/first_aid_stat_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/first_aid_stat_s.tga
+	bumpmap 	heightmap(textures/decals/first_aid_stat_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/one_way
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/one_way.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/one_way_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/one_way_s.tga
+	bumpmap 	heightmap(textures/decals/one_way_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/employee_door_sign
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/employee_door_sign.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/employee_door_sign_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/employee_door_sign_s.tga
+	bumpmap 	heightmap(textures/decals/employee_door_sign_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/speed_limit
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/speed_limit.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/speed_limit_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/speed_limit_s.tga
+	bumpmap 	heightmap(textures/decals/speed_limit_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/do_not_enter
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/do_not_enter.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/do_not_enter_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/do_not_enter_s.tga
+	bumpmap 	heightmap(textures/decals/do_not_enter_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/forklifts
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/forklifts.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/forklifts_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/forklifts_s.tga
+	bumpmap 	heightmap(textures/decals/forklifts_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/biohazard
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/biohazard.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/biohazard_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/biohazard_s.tga
+	bumpmap 	heightmap(textures/decals/biohazard_b.tga, 1 ) 
+       
+
+}
+
+
+textures/decals/bio_auth_pers
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/bio_auth_pers.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/bio_auth_pers_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/bio_auth_pers_s.tga
+	bumpmap 	heightmap(textures/decals/bio_auth_pers_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/wrong_way
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/wrong_way.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/wrong_way_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/wrong_way_s.tga
+	bumpmap 	heightmap(textures/decals/wrong_way_b.tga, 1 ) 
+       
+
+}
+
+
+
+
+textures/decals/danger_electric_shock
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/danger_electric_shock.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/danger_electric_shock_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/danger_electric_shock_s.tga
+	bumpmap 	heightmap(textures/decals/danger_electric_shock_b.tga, 1 ) 
+       
+
+}
+
+
+textures/decals/danger_high_voltage
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/danger_high_voltage.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/danger_high_voltage_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/danger_high_voltage_s.tga
+	bumpmap 	heightmap(textures/decals/danger_high_voltage_b.tga, 1 ) 
+       
+
+}
+
+
+
+textures/decals/compressedgas
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/compressedgas.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/compressedgas_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/compressedgas_s.tga
+	bumpmap 	heightmap(textures/decals/compressedgas_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/elevatorshaft
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/elevatorshaft.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/elevatorshaft_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/elevatorshaft_s.tga
+	bumpmap 	heightmap(textures/decals/elevatorshaft_b.tga, 1 )     
+
+}
+
+textures/decals/labcoat
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/labcoat.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/labcoat_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/labcoat_s.tga
+	bumpmap 	heightmap(textures/decals/labcoat_b.tga, 1 )     
+
+}
+
+textures/decals/movingmachine
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/movingmachine.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/movingmachine_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/movingmachine_s.tga
+	bumpmap 	heightmap(textures/decals/movingmachine_b.tga, 1 )     
+
+}
+
+textures/decals/oxidizer
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/oxidizer.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/oxidizer_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/oxidizer_s.tga
+	bumpmap 	heightmap(textures/decals/oxidizer_b.tga, 1 )     
+
+}
+
+
+
+
+
+
+
+
+textures/decals/p_change
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/p_change.tga
+
+	diffusemap textures/decals/p_change.tga		
+	specularmap	textures/decals/p_poster_s.tga
+	bumpmap 	heightmap(textures/decals/p_poster_b.tga, 1 ) 
+       
+}
+
+textures/decals/p_change_face
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/p_change_face.tga
+     
+	diffusemap textures/decals/p_change_face.tga
+	specularmap	textures/decals/p_poster_s.tga
+	bumpmap 	heightmap(textures/decals/p_poster_b.tga, 1 ) 
+       
+}
+
+textures/decals/p_destiny
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/p_destiny.tga
+
+	diffusemap textures/decals/p_destiny.tga
+	specularmap	textures/decals/p_poster_s.tga
+	bumpmap 	heightmap(textures/decals/p_poster_b.tga, 1 ) 
+       
+}
+
+textures/decals/p_future
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/p_future.tga
+
+	diffusemap textures/decals/p_future.tga
+	specularmap	textures/decals/p_poster_s.tga
+	bumpmap 	heightmap(textures/decals/p_poster_b.tga, 1 ) 
+       
+}
+
+textures/decals/p_inspirational
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/p_inspirational.tga
+     
+	diffusemap textures/decals/p_inspirational.tga
+	specularmap	textures/decals/p_poster_s.tga
+	bumpmap 	heightmap(textures/decals/p_poster_b.tga, 1 ) 
+       
+}
+textures/decals/p_oppressive
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/p_oppressive.tga
+      
+	diffusemap textures/decals/p_oppressive.tga
+	specularmap	textures/decals/p_poster_s.tga
+	bumpmap 	heightmap(textures/decals/p_poster_b.tga, 1 ) 
+
+	{
+		blend add
+		cubeMap		env/bland
+		texgen		reflect
+	}
+
+
+       
+}
+
+textures/decals/p_oppressive2
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/p_oppressive2.tga
+      
+	diffusemap textures/decals/p_oppressive2.tga
+	specularmap	textures/decals/p_poster_s.tga
+	bumpmap 	heightmap(textures/decals/p_poster_b.tga, 1 ) 
+       
+}
+
+textures/decals/p_oppressive3
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/p_oppressive3.tga
+      
+	diffusemap textures/decals/p_oppressive3.tga
+	specularmap	textures/decals/p_poster_s.tga
+	bumpmap 	heightmap(textures/decals/p_poster_b.tga, 1 ) 
+       
+}
+
+textures/decals/p_time
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/p_time.tga
+      
+	diffusemap textures/decals/p_time.tga
+	specularmap	textures/decals/p_poster_s.tga
+	bumpmap 	heightmap(textures/decals/p_poster_b.tga, 1 ) 
+       
+}
+
+textures/decals/authorizedpersons
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/authorizedpersons.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/authorizedpersons_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/authorizedpersons_s.tga
+	bumpmap 	heightmap(textures/decals/authorizedpersons_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/confinedwalkway
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/confinedwalkway.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/confinedwalkway_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/confinedwalkway_s.tga
+	bumpmap 	heightmap(textures/decals/confinedwalkway_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/crane
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/crane.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/crane_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/crane_s.tga
+	bumpmap 	heightmap(textures/decals/crane_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/report_office
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/report_office.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/report_office_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/report_office_s.tga
+	bumpmap 	heightmap(textures/decals/report_office_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/surveillance
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/surveillance.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/surveillance_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/surveillance_s.tga
+	bumpmap 	heightmap(textures/decals/surveillance_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/override_switch_one
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/override_switch_one.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/override_switch_one_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/override_switch_one_s.tga
+	bumpmap 	heightmap(textures/decals/override_switch_one_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/override_switch_two
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/override_switch_two.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/override_switch_two_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/override_switch_two_s.tga
+	bumpmap 	heightmap(textures/decals/override_switch_two_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/override_switch_three
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/decals/override_switch_three.tga
+
+	{       
+      blend	diffusemap
+	 map	textures/decals/override_switch_three_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/decals/override_switch_three_s.tga
+	bumpmap 	heightmap(textures/decals/override_switch_three_b.tga, 1 ) 
+       
+
+}
+
+textures/decals/logofred
+{
+	noshadows
+	translucent
+
+	qer_editorimage		textures/decals/logofred.tga
+
+	{
+	   blend  blend
+		map    textures/decals/logofred.tga
+		//alphatest .5
+	}
+
+	//{
+	//   blend  add  
+	//	map    textures/decals/logofred.tga
+	//}
+
+
+}
+
+textures/decals/e3text
+{
+	noshadows
+	translucent
+	qer_editorimage		textures/decals/e3text.tga
+
+	//{
+	//   blend  diffusemap  
+	//	map    textures/decals/e3text.tga
+	//	alphatest .5
+	//}
+
+	{
+	   blend  add  
+		map    textures/decals/e3text.tga
+	}
+
+
+}
+
+textures/decals/e3text2
+{
+	noshadows
+	translucent
+	qer_editorimage		textures/decals/e3tex2t.tga
+
+	{
+	   blend  add  
+		map    textures/decals/e3text2.tga
+	}
+
+
+}
+
+textures/decals/e3idlogo
+{
+	noshadows
+	translucent
+	qer_editorimage		textures/decals/e3idlogo.tga
+
+	{
+	   blend  add  
+		map    textures/decals/e3idlogo.tga
+		rgb		blinktable[ time * .2 +.5 ] 
+	}
+		{
+	   blend  add  
+		map    textures/decals/e3idlogob.tga
+		rgb		blinktable[ time * .2 ]
+	}
+
+}
+
+
+leftSmack
+{
+	noshadows
+	translucent
+	{
+		blend  blend
+		map    textures/decals/smack01.tga
+		colored
+	}
+
+}
+
+rightSmack
+{
+	noshadows
+	translucent
+	{
+		blend  blend
+		map    textures/decals/smack01.tga
+		scale	-1, -1
+		colored
+	}
+
+}
+
+bothSmack
+{
+	noshadows
+	translucent
+	{
+		blend  blend
+		map    textures/decals/smack01.tga
+		//scale	-1, 1
+		colored
+	}
+
+}
+
+/*
+textures/decals/bulleth02
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	translucent
+	qer_editorimage textures/decals/bulleth02.tga
+	{       
+      	 blend	diffusemap
+		 map	textures/decals/bulleth02.tga
+	}
+	//specularmap 	textures/decals/bulleth01_s.tga	
+	//bumpmap 	    textures/decals/bulleth01_local.tga
+
+
+       
+
+}
+*/
+
+textures/decals/a_fanvent_fin
+{
+	qer_editorimage		textures/decals/a_fanvent_fin.tga
+	twoSided
+	noshadows
+	{
+		blend		diffusemap
+		map 		textures/decals/a_fanvent_d_fin.tga
+		alphaTest 	0.25
+	}
+	bumpmap 		addnormals( textures/decals/a_fanvent_local_fin.tga  , heightmap( textures/decals/a_fanvent_b_fin.tga, 4 ) )
+	specularmap 		textures/decals/a_fanvent_s_fin.tga
+}
+
+
+
+
+
+
+

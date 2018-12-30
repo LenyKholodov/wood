@@ -1,0 +1,150 @@
+textures/paultest/blendBumpMap
+{
+qer_editorimage textures/paultest/blendBumpMap
+	// blended part
+
+	{
+		blend bumpmap
+		map		heightmap (textures/rock/skysand1_bmp.tga, 4)
+		// note that you do NOT put vertexColor on the bumpmap
+	}
+	{
+		blend diffusemap
+		map		textures/rock/skysand1_d.tga
+		vertexColor
+	}
+	{
+		blend specularmap
+		map		textures/rock/skysand1_s.tga
+		vertexColor
+	}
+
+	// inverse blended part
+
+	{
+		blend	bumpmap
+		map		models/seneca/textures/factoutwall1_local.tga
+	}
+	{
+		blend	diffusemap
+		map		models/seneca/textures/factoutwall1_d.tga
+		inverseVertexColor
+	}
+}
+
+models/monsters/cacodemon_temp/morgore
+{
+    //noselfShadow
+
+        	diffusemap	models/monsters/cacodemon_temp/morgore.tga
+	      bumpmap heightmap (models/monsters/cacodemon_temp/morgore.tga, 3 )
+                  //specularmap	models/monsters/zombie/morgue/morgue_s.tga
+}
+
+models/monsters/cacodemon_temp/temp_caco_eye
+{
+    //noselfShadow
+
+        	diffusemap	models/monsters/cacodemon_temp/temp_caco_eye.tga
+}
+
+models/monsters/monkey_temp/monkeyskin
+{
+    //noselfShadow
+
+        	diffusemap	models/monsters/monkey_temp/monkeyskin.tga
+            bumpmap heightmap (models/monsters/monkey_temp/monkeyskin_b.tga, 10 )
+
+}
+
+textures/object/todays_code
+{
+qer_editorimage textures/object/todays_code_temp.tga
+    //noselfShadow
+
+        	diffusemap	textures/object/todays_code_temp.tga
+            bumpmap heightmap (models/monsters/monkey_temp/monkeyskin_b.tga, 1 )
+
+}
+
+
+textures/paultest/organic1
+{
+	qer_editorimage textures/paultest/organic1.tga
+	diffusemap	textures/paultest/organic1_d.tga
+      bumpmap textures/paultest/organic1_local.tga
+	specularmap		textures/paultest/organic1_local.tga
+
+}
+
+textures/paultest/rustfill01
+{
+	qer_editorimage textures/paultest/rustfill01.tga
+        diffusemap	textures/paultest/rustfill01_d.tga    
+	specularmap	textures/paultest/rustfill01_s.tga         
+        bumpmap	        heightmap( textures/paultest/rustfill01_b.tga , 4 ) 
+
+       
+}
+
+textures/paultest/hose01
+{
+	qer_editorimage textures/paultest/hose01.tga
+        diffusemap	textures/paultest/hose01_d.tga    
+	specularmap	textures/paultest/hose01_s.tga         
+        bumpmap	        addnormals (textures/paultest/hose01_local.tga, heightmap (textures/paultest/hose01_b.tga, 4 )) 
+
+       
+}
+
+textures/paultest/pipeterm2_rust
+
+{
+ 	noShadows
+	//polygonOffset
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	surfaceparm trans
+	qer_editorimage textures/paultest/pipeterm2_rust.tga
+
+	{       
+      	 blend	diffusemap
+	 map	textures/paultest/pipeterm2_rust_d.tga
+	 alphaTest 0.5
+	}
+	specularmap	textures/paultest/pipeterm2_rust_s.tga
+	bumpmap 	addnormals (textures/decals/pipeterm_local.tga, heightmap (textures/paultest/pipeterm2_rust_b.tga, 1 ))
+       
+
+}
+
+textures/paultest/elevfloor_01
+{
+	qer_editorimage textures/paultest/elevfloor_01.tga
+        diffusemap	textures/paultest/elevfloor_d01.tga      
+	specularmap	textures/paultest/elevfloor_s01.tga        
+        bumpmap	        addnormals( textures/recyc_floor/a_sen_techgrate_local01_fin.tga  , heightmap( textures/recyc_floor/a_sen_techgrate_b01_fin.tga, 5 ) )
+
+       
+}
+
+textures/paultest/a_sflooralpha_04_fin
+{
+        noShadows
+	twoSided
+	qer_editorimage	textures/paultest/a_sflooralpha_04_fin.tga
+	bumpmap			addnormals( textures/base_floor/sfloor_local.tga, heightmap( textures/base_floor/a_sflooralpha_b05_fin.tga, 3 ) )
+{
+	blend diffusemap
+	map			textures/paultest/a_sflooralpha_d04_fin.tga
+	alphatest		0.5
+}
+	specularmap		textures/base_floor/a_sflooralpha_s05_fin.tga
+}
+textures/base_wall/skpanelT2
+{
+	qer_editorimage		textures/base_wall/skpanelT2.tga
+	bumpmap		addnormals (textures/base_wall/skpanelT_local.tga, heightmap (textures/base_wall/skpanelT2_b.tga, 3))
+	diffusemap		textures/base_wall/skpanelT2_d.tga
+	specularmap		textures/base_wall/skpanelT2_s.tga
+}

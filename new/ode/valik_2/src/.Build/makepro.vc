@@ -1,0 +1,92 @@
+#Пути переназначить при переустановке на другую машину
+
+LIB_DIR     = Q:\lib
+
+!IF "$(CFG)" == ""
+CFG=Debug
+!MESSAGE No configuration specified. Defaulting to Debug.
+!ENDIF 
+
+!IF "$(CFG)" != "Release" && "$(CFG)" != "Debug"
+!ERROR Invalid configuration "$(CFG)" specified.
+!ENDIF 
+
+!IF "$(COPT)" == ""
+LIB_OPT     = $(LIB_OPT) /nologo /D "WOOD_LIB_COMPILE"  /EHs /GB /GA /QIfdiv \
+              /Fo"$(OUTDIR)\\" /Fd"$(OUTDIR)\\" /Fp"$(OUTDIR)\pch.pch" /c \
+              /I "q:\h"
+!ELSE
+LIB_OPT     = $(LIB_OPT) /nologo /D "WOOD_LIB_COMPILE"  /GA /GB /QIfdiv  \
+              /Fo"$(OUTDIR)\\" /Fd"$(OUTDIR)\\" /Fp"$(OUTDIR)\pch.pch" /c  \
+              /I "q:\h"
+!ENDIF
+
+OUTDIR=$(CFG)
+
+!IF "$(PRECISION)" == "DOUBLE"
+OUTDIR=$(CFG).Double
+!ELSEIF "$(PRECISION)" == "SINGLE"
+OUTDIR=$(CFG).Single
+!ENDIF 
+
+!IF  "$(CFG)" == "Debug"
+CPPFLAGS    =  $(CPPFLAGS) $(COPT) $(LIB_OPT) /Zi /D"DEBUG"
+CFLAGS      =  $(CFLAGS)   $(COPT) $(LIB_OPT) /Zi /D"DEBUG"
+!ELSEIF  "$(CFG)" == "Release"
+CPPFLAGS    =  $(CPPFLAGS) $(COPT) $(LIB_OPT) /D"RELEASE"
+CFLAGS      =  $(CFLAGS)   $(COPT) $(LIB_OPT) /D"RELEASE"
+!ENDIF
+
+!IF "$(PRECISION)"=="SINGLE"
+CPPFLAGS = $(CPPFLAGS) /D"dSINGLE"
+CFLAGS   = $(CFLAGS) /D"dSINGLE"
+!ELSEIF "$(PRECISION)"=="DOUBLE"
+CPPFLAGS = $(CPPFLAGS) /D"dDOUBLE"
+CFLAGS   = $(CFLAGS) /D"dDOUBLE"
+!ENDIF
+
+TARGET_NAME = $(LIB_DIR)\$(TARGET_SHORT_NAME)
+
+all: $(OUTDIR) $(TARGET_NAME) 
+
+CL=cl.exe
+
+.c{$(OUTDIR)}.obj::
+   $(CL) @<<
+   $(CFLAGS) $< 
+<<
+
+.cpp{$(OUTDIR)}.obj::
+   $(CL) @<<
+   $(CPPFLAGS) $< 
+<<
+
+.cxx{$(OUTDIR)}.obj::
+   $(CL) @<<
+   $(CPPFLAGS) $< 
+<<
+
+.c{$(OUTDIR)}.sbr::
+   $(CL) @<<
+   $(CFLAGS) $< 
+<<
+
+.cpp{$(OUTDIR)}.sbr::
+   $(CL) @<<
+   $(CPPFLAGS) $< 
+<<
+
+.cxx{$(OUTDIR)}.sbr::
+   $(CL) @<<
+   $(CPPFLAGS) $< 
+<<
+
+"$(OUTDIR)":
+    @if not exist $(OUTDIR) mkdir $(OUTDIR)
+
+$(TARGET_NAME) :  $(OBJ_LIST)
+  @echo off                         
+  @if NOT exist $(TARGET_NAME) echo Create library "$(TARGET_NAME)"
+  @if exist $(TARGET_NAME) ( lib  /out:$(TARGET_NAME) $(OBJ_LIST) $(TARGET_NAME) ) \
+  else ( lib /out:$(TARGET_NAME) $(OBJ_LIST))
+  @echo on  

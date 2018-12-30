@@ -1,0 +1,70 @@
+material {
+	name "trees/greenskn"
+
+
+	diffuse 0 18 0 
+	specular 102 256 187 
+	ambient 0 18 0 
+	emission 0 0 0 
+
+	shiness 67
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "trees/areola3"
+
+
+	diffuse 139 19 19 
+	specular 256 87 95 
+	ambient 139 19 19 
+	emission 0 0 0 
+
+	shiness 48
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "trees/brzskin"
+
+
+	diffuse 96 73 54 
+	specular 254 254 254 
+	ambient 96 73 54 
+	emission 0 0 0 
+
+	shiness 53
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "trees/bone1"
+
+
+	diffuse 250 202 119 
+	specular 256 256 256 
+	ambient 250 202 119 
+	emission 0 0 0 
+
+	shiness 59
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "trees/brownskn"
+
+
+	diffuse 16 6 0 
+	specular 256 176 111 
+	ambient 16 6 0 
+	emission 0 0 0 
+
+	shiness 48
+	alpha_koef 1
+	alpha_present 0
+}
+

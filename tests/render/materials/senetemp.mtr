@@ -1,0 +1,6266 @@
+snaptable cdplayertable { 0, .0625, .125, .1875, .25, .3125, .375, .4375, .5, .5625, .625, .6875, .75, .8125, .875, .9375 }
+table fadeintable { 0, 1 }
+table fadeouttable { 1, 0 }
+table ember1 { .7, 1, .5, .7, .6, 1, .8, .6, .7, 1, .6, 1, 1, .6, .7, .8, .6, 1, .5, .7, 1 }
+//blend add/filter/blend
+
+//============================================================================================================
+//caves
+//============================================================================================================
+
+textures/caves/ice
+{
+	translucent
+	noshadows	
+	{
+		blend 		bumpmap
+		map		heightmap (textures/caves/ice.tga, 1)
+	}
+	{
+		blend 		diffusemap
+		map		textures/caves/ice.tga
+	}
+	{
+		blend		specularmap
+		map		textures/caves/ice.tga
+	}
+}
+
+textures/caves/iceblend
+{
+	translucent
+	noshadows
+	{
+		blend 		bumpmap
+		map		heightmap (textures/caves/ice.tga, 1)
+	}
+	{
+		blend 		diffusemap
+		map		textures/caves/ice.tga
+		vertexColor
+	}
+	{
+		blend		specularmap
+		map		textures/caves/ice.tga
+		vertexColor
+	}
+	{
+		blend		bumpmap
+		map		heightmap (textures/caves/black.tga, 1)
+	}
+	{
+		blend		diffusemap
+		map		textures/caves/black.tga
+		inverseVertexColor
+	}
+	{
+		blend 		specularmap
+		map		textures/caves/black.tga
+		inverseVertexColor
+	}
+}
+
+//============================================================================================================
+//weapons
+//============================================================================================================
+
+models/weapons/plasmagun/plasmagun
+{
+	renderbump  -size 512 512 -aa 2 -trace .045 models/weapons/plasmagun/plasmagun_local.tga models/weapons/plasmagun/work/plasmagun_hp.lwo
+//	noselfshadow	
+	bumpmap		models/weapons/plasmagun/plasmagun_local.tga
+	{
+		blend		diffusemap
+		map		models/weapons/plasmagun/plasmagun_d.tga
+		alphatest	.5
+	}
+	specularmap	models/weapons/plasmagun/plasmagun_s.tga
+}
+
+//============================================================================================================
+//mcity
+//============================================================================================================
+
+textures/mcity/mcityfloor1
+{
+	qer_editorimage			textures/mcity/mcityfloor1
+	bumpmap				addnormals (textures/mcity/mcityfloor1_local.tga, heightmap (textures/mcity/mcityfloor1_bmp.tga, 4) )
+	diffusemap			textures/mcity/mcityfloor1
+	specularmap			textures/mcity/mcityfloor1_s
+}
+
+textures/mcity/mcityplain
+{	
+	qer_editorimage			textures/mcity/mcityplain
+	bumpmap				heightmap (textures/mcity/mcityplain.tga, 1)
+	diffusemap			textures/mcity/mcityplain
+}
+
+textures/mcity/mcityplain2
+{	
+	qer_editorimage			textures/mcity/mcityplain2
+	bumpmap				heightmap (textures/mcity/mcityplain2.tga, 1)
+	diffusemap			textures/mcity/mcityplain2
+}
+
+textures/mcity/mcityplain3
+{	
+	qer_editorimage			textures/mcity/mcityplain3
+	bumpmap				heightmap (textures/mcity/mcityplain3.tga, 1)
+	diffusemap			textures/mcity/mcityplain3
+}
+
+textures/mcity/mcityplain4
+{	
+	qer_editorimage			textures/mcity/mcityplain4
+	bumpmap				heightmap (textures/mcity/mcityplain4.tga, 1)
+	diffusemap			textures/mcity/mcityplain4
+}
+
+textures/mcity/mcityplain5
+{	
+	qer_editorimage			textures/mcity/mcityplain5
+	bumpmap				heightmap (textures/mcity/mcityplain5.tga, 1)
+	diffusemap			textures/mcity/mcityplain5
+}
+
+textures/mcity/mcityplain6
+{	
+	qer_editorimage			textures/mcity/mcityplain6
+	bumpmap				heightmap (textures/mcity/mcityplain6_bmp.tga, 4)
+	diffusemap			textures/mcity/mcityplain6
+	specularmap			textures/mcity/mcityplain6_s
+}
+
+textures/mcity/mcityplain7
+{	
+	qer_editorimage			textures/mcity/mcityplain7
+	bumpmap				heightmap (textures/mcity/mcityplain6_bmp.tga, 4)
+	diffusemap			textures/mcity/mcityplain7
+	specularmap			textures/mcity/mcityplain6_s
+}
+
+
+textures/mcity/mcity4
+{	
+	qer_editorimage			textures/mcity/mcity4
+	bumpmap				addnormals (textures/mcity/mcity4_local.tga, heightmap (textures/mcity/mcity4_bmp.tga, 4) )
+	diffusemap			textures/mcity/mcity4
+	specularmap			textures/mcity/mcity4_s
+	{
+		blend			add
+		map			textures/mcity/mcity4_add.tga
+		rgb			3
+	}
+}
+
+textures/mcity/mcity3
+{
+	qer_editorimage			textures/mcity/mcity3.tga
+	bumpmap				addnormals (textures/mcity/mcity3_local.tga, heightmap (textures/mcity/mcity3_bmp.tga, 4 ) )
+	diffusemap			textures/mcity/mcity3.tga
+	specularmap			textures/mcity/mcity3_s.tga
+	{
+		blend			add
+		map			textures/mcity/mcity3_add.tga
+		rgb			3
+	}
+}
+
+textures/mcity/mcity2a
+{
+	qer_editorimage			textures/mcity/mcity2a.tga
+	bumpmap				addnormals (textures/mcity/mcity2a_local.tga, heightmap (textures/mcity/mcity2a_bmp.tga, 4 ) )
+	diffusemap			textures/mcity/mcity2a.tga
+}
+
+textures/mcity/mcity2
+{
+	qer_editorimage			textures/mcity/mcity2.tga
+	bumpmap				addnormals (textures/mcity/mcity2_local.tga, heightmap (textures/mcity/mcity2_bmp.tga, 4 ) )
+	diffusemap			textures/mcity/mcity2.tga
+}
+
+textures/mcity/mcity1a
+{
+	qer_editorimage			textures/mcity/mcity1a.tga
+	bumpmap				addnormals (textures/mcity/mcity1_local.tga, heightmap (textures/mcity/mcity1_bmp.tga, 4 ) )
+	diffusemap			textures/mcity/mcity1a.tga
+}
+
+textures/mcity/mcity1
+{
+	qer_editorimage			textures/mcity/mcity1.tga
+	bumpmap				addnormals (textures/mcity/mcity1_local.tga, heightmap (textures/mcity/mcity1_bmp.tga, 4 ) )
+	diffusemap			textures/mcity/mcity1.tga
+}
+
+
+textures/mcity/mcitypipe2a
+{
+	qer_editorimage			textures/mcity/mcitypipe2a.tga
+	bumpmap				addnormals (textures/mcity/mcitypipe1a_local.tga, heightmap (textures/mcity/mcitypipe1a_bmp.tga, 4 ) )
+	diffusemap			textures/mcity/mcitypipe2a.tga
+	specularmap			textures/mcity/mcitypipe2a_s.tga
+}
+
+textures/mcity/mcitypipe2
+{
+	qer_editorimage			textures/mcity/mcitypipe2.tga
+	bumpmap				addnormals (textures/mcity/mcitypipe1_local.tga, heightmap (textures/mcity/mcitypipe1_bmp.tga, 4 ) )
+	diffusemap			textures/mcity/mcitypipe2.tga
+	specularmap			textures/mcity/mcitypipe2_s.tga
+}
+
+textures/mcity/mcitypipe1as
+{
+	qer_editorimage			textures/mcity/mcitypipe1a.tga
+	bumpmap				addnormals (textures/mcity/mcitypipe1a_local.tga, heightmap (textures/mcity/mcitypipe1a_bmp.tga, 4 ) )
+	diffusemap			textures/mcity/mcitypipe1a.tga
+	specularmap			textures/mcity/mcitypipe1a.tga
+}
+
+textures/mcity/mcitypipe1a
+{
+	qer_editorimage			textures/mcity/mcitypipe1a.tga
+	bumpmap				addnormals (textures/mcity/mcitypipe1a_local.tga, heightmap (textures/mcity/mcitypipe1a_bmp.tga, 4 ) )
+	diffusemap			textures/mcity/mcitypipe1a.tga
+}
+
+textures/mcity/mcitypipe1s
+{
+	qer_editorimage			textures/mcity/mcitypipe1.tga
+	bumpmap				addnormals (textures/mcity/mcitypipe1_local.tga, heightmap (textures/mcity/mcitypipe1_bmp.tga, 4 ) )
+	diffusemap			textures/mcity/mcitypipe1.tga
+	specularmap			textures/mcity/mcitypipe1_s.tga
+}
+
+textures/mcity/mcitypipe1
+{
+	qer_editorimage			textures/mcity/mcitypipe1.tga
+	bumpmap				addnormals (textures/mcity/mcitypipe1_local.tga, heightmap (textures/mcity/mcitypipe1_bmp.tga, 4 ) )
+	diffusemap			textures/mcity/mcitypipe1.tga
+}
+
+
+
+
+
+//============================================================================================================
+//wipes
+//============================================================================================================
+models/wipes/marsatmosphere
+{
+	translucent
+	noshadows
+	qer_editorimage			models/wipes/marsatmosphere.tga
+	{
+		blend			add
+		map			models/wipes/marsatmosphere.tga
+	}
+}
+
+models/wipes/marsatmosphere2
+{
+	translucent
+	noshadows
+	qer_editorimage			models/wipes/marsatmosphere2.tga
+	{
+		blend			add
+		map			models/wipes/marsatmosphere2.tga
+	}
+}
+
+//============================================================================================================
+//base_door
+//============================================================================================================
+
+textures/base_door/doorsign1
+{	
+	noshadows
+	surfaceparm noimpact
+	{
+		blend		diffusemap		
+		map			textures/base_door/doorsign1
+		alphatest	.5
+	}
+	{
+		blend		specularmap		
+		map			_white
+		rgb			.4
+	}
+}
+
+
+textures/base_door/smalldoortex2
+{
+	qer_editorimage		textures/base_door/smalldoortex2.tga
+	noshadows
+	twosided
+	bumpmap			textures/base_door/smalldoortex2_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_door/smalldoortex2_d.tga
+		alphatest	0.55
+	}
+	specularmap		textures/base_door/smalldoortex2_s.tga
+}
+
+textures/base_door/smalldoortex2a
+{
+	qer_editorimage		textures/base_door/smalldoortex2a.tga
+	noshadows
+	twosided
+	translucent
+	bumpmap			textures/base_door/smalldoortex2a_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_door/smalldoortex2a_d.tga
+		red		Parm0
+		green		Parm1
+		blue		Parm2
+	}
+		specularmap	textures/base_door/smalldoortex2a_s.tga
+}
+
+textures/base_door/smalldoortex
+{
+	qer_editorimage		textures/base_door/smalldoortex.tga
+	bumpmap			textures/base_door/smalldoortex_local.tga
+	diffusemap		textures/base_door/smalldoortex_d.tga
+	specularmap		textures/base_door/smalldoortex_s.tga
+}
+
+textures/base_door/smdoor1
+{
+	qer_editorimage	textures/base_door/smdoor1.tga
+	bumpmap			textures/base_door/stedoor1_local.tga
+	diffusemap		textures/base_door/smdoor1_d.tga
+}
+
+textures/base_door/smdoor1trim
+{
+	qer_editorimage	textures/base_door/smdoor1trim.tga
+	bumpmap			textures/base_door/stedoorpanel1_local.tga
+	diffusemap		textures/base_door/smdoor1trim_d.tga
+}
+	
+
+//============================================================================================================
+//outside
+//============================================================================================================
+
+textures/outside/outbuildings14
+{
+	qer_editorimage		textures/outside/outbuildings14.ga
+	bumpmap			textures/outside/outbuildings14_local.tga
+	diffusemap		textures/outside/outbuildings14.tga
+//	specularmap		textures/outside/outbuildings14_s.tga
+	{
+		blend		add
+		map		textures/outside/outbuildings14_add.tga
+		rgb		5
+	}
+}
+
+textures/outside/outbuildings13
+{
+	qer_editorimage		textures/outside/outbuildings13.ga
+	bumpmap			textures/outside/outbuildings13_local.tga
+	diffusemap		textures/outside/outbuildings13.tga
+//	specularmap		textures/outside/outbuildings13_s.tga
+}
+
+textures/outside/outbuildings12
+{
+	qer_editorimage		textures/outside/outbuildings12.ga
+	bumpmap			textures/outside/outbuildings12_local.tga
+	diffusemap		textures/outside/outbuildings12.tga
+//	specularmap		textures/outside/outbuildings12_s.tga
+}
+
+textures/outside/outbuildings11
+{
+	qer_editorimage		textures/outside/outbuildings11.ga
+	bumpmap			textures/outside/outbuildings11_local.tga
+	diffusemap		textures/outside/outbuildings11.tga
+//	specularmap		textures/outside/outbuildings11_s.tga
+}
+
+textures/outside/outbuildings10
+{
+	qer_editorimage		textures/outside/outbuildings10.ga
+	bumpmap			textures/outside/outbuildings10_local.tga
+	diffusemap		textures/outside/outbuildings10.tga
+//	specularmap		textures/outside/outbuildings10_s.tga
+	{
+		blend		add
+		map		textures/outside/outbuildings10_add.tga
+		rgb		5
+	}
+}
+
+textures/outside/outbuildings9
+{
+	qer_editorimage		textures/outside/outbuildings9.tga
+	bumpmap			textures/outside/outbuildings9_local.tga
+	diffusemap		textures/outside/outbuildings9.tga
+	specularmap		textures/outside/outbuildings9_s.tga
+	{
+		blend		add
+		map		textures/outside/outbuildings9_add.tga
+		rgb		5
+	}
+}
+
+textures/outside/outbuildings8
+{
+
+	qer_editorimage		textures/outside/outbuildings8.tga
+	bumpmap			textures/outside/outbuildings8_local.tga
+	diffusemap		textures/outside/outbuildings8.tga
+//	specularmap		textures/outside/outbuildings8_s.tga
+}
+
+textures/outside/outbuildings7
+{
+	noshadows
+	qer_editorimage		textures/outside/outbuildings7.tga
+	bumpmap			textures/outside/outbuildings7_local.tga
+	{
+		blend		diffusemap
+		map		textures/outside/outbuildings7.tga
+		alphatest	.5
+	}
+//	specularmap		textures/outside/outbuildings7_s.tga
+}
+
+textures/outside/outbuildings6
+{
+	qer_editorimage		textures/outside/outbuildings6.tga
+	bumpmap			textures/outside/outbuildings6_local.tga
+	diffusemap		textures/outside/outbuildings6.tga
+	specularmap		textures/outside/outbuildings6_s.tga
+}
+
+textures/outside/outbuildings5
+{
+	qer_editorimage		textures/outside/outbuildings5.tga
+	bumpmap			textures/outside/outbuildings5_local.tga
+	diffusemap		textures/outside/outbuildings5.tga
+//	specularmap		textures/outside/outbuildings5_s.tga
+}
+
+textures/outside/outbuildings4
+{
+	noshadows
+	qer_editorimage		textures/outside/outbuildings4.tga
+	bumpmap			textures/outside/outfactory5_local.tga
+	{
+		blend		diffusemap
+		map		textures/outside/outbuildings4.tga
+		alphatest	.2
+	}
+//	specularmap		textures/outside/outbuildings3_s.tga
+}
+
+textures/outside/outbuildings3
+{
+	qer_editorimage		textures/outside/outbuildings3.tga
+	bumpmap			textures/outside/outfactory4_local.tga
+	diffusemap		textures/outside/outbuildings3.tga
+//	specularmap		textures/outside/outbuildings3_s.tga
+	{
+		blend		add
+		map		textures/outside/outbuildings3_add.tga
+		rgb		5
+	}
+}
+
+textures/outside/outbuildings2
+{
+	qer_editorimage		textures/outside/outbuildings2.tga
+	bumpmap			textures/outside/outbuildings2_local.tga
+	diffusemap		textures/outside/outbuildings2.tga
+//	specularmap		textures/outside/outbuildings2_s.tga
+}
+
+textures/outside/outbuildings1
+{
+	qer_editorimage		textures/outside/outbuildings1.tga
+	bumpmap			textures/outside/outbuildings1_local.tga
+	diffusemap		textures/outside/outbuildings1_d.tga
+//	specularmap		textures/outside/outbuildings1_s.tga
+}
+
+textures/outside/outerpipe
+{	
+	qer_editorimage		textures/outside/outerpipe.tga
+	bumpmap			addnormals (textures/outside/outerpipe_local.tga , heightmap (textures/outside/outerpipe_bmp.tga , 4))
+	diffusemap		textures/outside/outerpipe_d.tga
+}
+
+textures/outside/outfactory1
+{	
+	qer_editorimage	textures/outside/outfactory1.tga
+	bumpmap			addnormals (textures/outside/outfactory1_local.tga, heightmap (textures/outside/outfactory1_bmp.tga, 4))
+	diffusemap		textures/outside/outfactory1_d.tga
+}
+
+textures/outside/outfactory2
+{	
+	qer_editorimage	textures/outside/outfactory2.tga
+//	twosided
+//	noshadows
+	bumpmap			textures/outside/outfactory2_local.tga
+	{
+		blend		diffusemap
+		map			textures/outside/outfactory2_d.tga
+		alphatest	0.35
+	}
+}
+
+textures/outside/outfactory3
+{	
+	qer_editorimage	textures/outside/outfactory3.tga
+//	twosided
+//	noshadows
+	bumpmap			textures/outside/outfactory3_local.tga
+	{
+		blend		diffusemap
+		map			textures/outside/outfactory3_d.tga
+		alphatest	0.35
+	}
+}
+
+textures/outside/outfactory4
+{	
+	qer_editorimage	textures/outside/outfactory4.tga
+	bumpmap			textures/outside/outfactory4_local.tga
+	diffusemap		textures/outside/outfactory4_d.tga
+}
+
+textures/outside/outfactory5
+{	
+	qer_editorimage	textures/outside/outfactory5.tga
+	twosided
+	noshadows
+	bumpmap			textures/outside/outfactory5_local.tga
+	{
+		blend		diffusemap
+		map			textures/outside/outfactory5_d.tga
+		alphatest	0.5
+	}
+}
+
+textures/outside/outfactory6
+{	
+	qer_editorimage	textures/outside/outfactory6.tga
+	bumpmap			textures/outside/outfactory6_local.tga
+	diffusemap		textures/outside/outfactory6_d.tga
+}
+
+textures/outside/outfactory7
+{	
+	qer_editorimage	textures/outside/outfactory7.tga
+	bumpmap			addnormals (textures/outside/outfactory7_local.tga, heightmap (textures/outside/outfactory7_bmp.tga,4))
+	diffusemap		textures/outside/outfactory7_d.tga
+}
+
+textures/outside/outfactory8
+{	
+	qer_editorimage	textures/outside/outfactory8.tga
+	bumpmap			addnormals (textures/outside/outfactory8_local.tga, heightmap (textures/outside/outfactory8_bmp.tga,4))
+	diffusemap		textures/outside/outfactory8_d.tga
+}
+
+textures/outside/outfactory9
+{	
+	qer_editorimage	textures/outside/outfactory9.tga
+	bumpmap			textures/outside/outfactory9_local.tga
+	diffusemap		textures/outside/outfactory9_d.tga
+}
+
+textures/outside/outfactory10
+{	
+	qer_editorimage	textures/outside/outfactory10.tga
+	bumpmap			textures/outside/outfactory10_local.tga
+	diffusemap		textures/outside/outfactory10_d.tga
+	specularmap		textures/outside/outfactory10_s.tga
+}
+
+textures/outside/redskybuilding1
+{	
+	qer_editorimage	textures/outside/redskybuilding1.tga
+	bumpmap			textures/outside/redskybuilding1_local.tga
+	diffusemap		textures/outside/redskybuilding1_d.tga
+	specularmap		textures/outside/redskybuilding1_s.tga
+}
+
+textures/outside/redskyroadwall2
+{	
+	qer_editorimage	textures/outside/redskyroadwall2.tga
+	{
+		blend		bumpmap
+		map			addnormals ( textures/outside/redskyroadwall2_local.tga, heightmap (textures/outside/redskyroadwall2_bmp.tga, 4) )
+	}
+	diffusemap		textures/outside/redskyroadwall2_d.tga
+	specularmap		textures/outside/redskyroadwall2_s.tga
+}
+
+textures/outside/redskyroadwall
+{	
+	qer_editorimage	textures/outside/redskyroadwall.tga
+	{
+		blend		bumpmap
+		map			addnormals ( textures/outside/redskyroadwall_local.tga, heightmap (textures/outside/redskyroadwall_bmp.tga, 4) )
+	}
+	diffusemap		textures/outside/redskyroadwall_d.tga
+	specularmap		textures/outside/redskyroadwall_s.tga
+}
+
+
+
+//============================================================================================================
+//skies
+//============================================================================================================
+
+table deserttable { .3, .2, .12, .4, .1, .5, .32, .15, .1, .12, .15, .12, .15, .3, .5, .12, .15, 1, 0, 1, .5, .1, .4, .15, .12, .15, .18, 1, .1, .11, .15, .2, .1, .2, .1, .12, .12, .3, .2, .1, .1, .1, .2, .14, .14, .1, .2, .05, .2, .3, .1, .12, .1, .1, .1, .13, .14, .1, .14, .21, 0, 1, .5, .1, .4, .15, .1, .12, .14, .1 }
+
+textures/skies/colortest
+{
+	noFragment
+	forceOpaque
+	noshadows
+	{
+		blend		add		// so transparent windows can draw on top of it
+		cameraCubeMap	env/cloudy
+		texgen		skybox
+	}
+}
+
+textures/skies/desertlightning
+{
+	noFragment
+	forceOpaque				// so transparent windows can draw on top of it
+	noshadows
+	{
+		blend		add		// so transparent windows can draw on top of it
+		cameraCubeMap	env/desert
+		texgen		skybox
+		red 		( deserttable [Parm4 + (time * 0.1) ]) * Parm0
+		green 		( deserttable [Parm4 + (time * 0.1) ]) * Parm1
+		blue 		( deserttable [Parm4 + (time * 0.1) ]) * Parm2	
+	}
+}
+
+textures/skies/desert
+{
+	noFragment
+	noshadows
+	forceOpaque				// so transparent windows can draw on top of it
+	{
+		blend		add		// so transparent windows can draw on top of it
+		cameraCubeMap	env/desert
+		texgen		skybox
+	}
+}
+
+//============================================================================================================
+//rock
+//============================================================================================================
+
+
+textures/rock/sandblend
+{
+
+	{
+		blend 		bumpmap
+		map		heightmap (textures/rock/skysand1_bmp.tga, 4)
+	}
+	{
+		blend 		diffusemap
+		map		textures/rock/skysand1_d.tga
+		vertexColor
+	}
+	{
+		blend		specularmap
+		map		textures/rock/skysand1_s.tga
+		vertexColor
+	}
+	{
+		blend		bumpmap
+		map		heightmap (textures/rock/skyrock1_bmp.tga, 4)
+	}
+	{
+		blend		diffusemap
+		map		textures/rock/skyrock1_d.tga
+		inverseVertexColor
+	}
+	{
+		blend 		specularmap
+		map		textures/rock/skyrock1_s.tga
+		inverseVertexColor
+	}
+}
+
+textures/rock/skyrock1
+{	
+//	noSelfShadow
+	qer_editorimage	textures/rock/skyrock1.tga
+	bumpmap			addnormals (textures/outside/rocks_local.tga, heightmap (textures/rock/skyrock1_bmp.tga, 12) ) 
+//	bumpmap			heightmap (textures/rock/skyrock1_bmp.tga, 30)
+	diffusemap		textures/rock/skyrock1_d.tga
+//	specularmap		textures/rock/skyrock1_s.tga
+}
+
+textures/rock/skysand1
+{
+//	noSelfShadow
+	qer_editorimage	textures/rock/skysand1.tga
+	bumpmap			heightmap (textures/rock/skysand1_bmp.tga, 4)
+	diffusemap		textures/rock/skysand1_d.tga
+	specularmap		textures/rock/skysand1_s.tga
+}
+
+textures/rock/skysand1ns
+{
+	noshadows
+	qer_editorimage	textures/rock/skysand1.tga
+	bumpmap			heightmap (textures/rock/skysand1_bmp.tga, 4)
+	diffusemap		textures/rock/skysand1_d.tga
+	specularmap		textures/rock/skysand1_s.tga
+}
+
+
+//============================================================================================================
+//monsters
+//============================================================================================================
+
+models/monsters/imp/impwing
+{
+	qer_editorimage models/monsters/imp/impwing
+	noshadows
+	{
+		blend	bumpmap
+		map	addnormals (models/monsters/imp/imp_local, heightmap (models/monsters/imp/imp_bmp.tga, 6) )
+	}
+	{
+		blend diffusemap
+		map	models/monsters/imp/imp_d
+		alphatest .01
+	}
+	specularmap	models/monsters/imp/imp_s
+}	
+
+models/monsters/imp/imp
+{
+	renderbump  -size 512 512 -aa 2 models/monsters/imp/imp_local.tga models/monsters/imp/imp_hp.ase
+//	noselfShadow
+	{
+		blend	bumpmap
+		map	addnormals (models/monsters/imp/imp_local, heightmap (models/monsters/imp/imp_bmp.tga, 6) )
+	}
+	{
+		blend diffusemap
+		map	models/monsters/imp/imp_d
+//		alphatest .35
+	}
+	specularmap	models/monsters/imp/imp_s
+}	
+
+
+//============================================================================================================
+//decals
+//============================================================================================================
+
+textures/decals/scratches
+{
+	qer_editorimage		textures/decals/scratches.tga	
+	translucent
+	surfaceparm 		nonsolid
+	surfaceparm 		noimpact
+	diffusemap		textures/decals/scratches.tga
+}	
+
+textures/decals/uacosticker2
+{
+	qer_editorimage		textures/decals/uacosticker2.tga
+	surfaceparm 		nonsolid
+	surfaceparm 		noimpact
+	translucent
+	diffusemap		textures/decals/uacosticker2.tga
+}	
+
+textures/decals/uacosticker
+{
+	qer_editorimage		textures/decals/uacosticker.tga
+	surfaceparm 		nonsolid
+	surfaceparm 		noimpact
+	translucent
+	diffusemap		textures/decals/uacosticker.tga
+}	
+
+textures/decals/redsticker3
+{
+	qer_editorimage		textures/decals/redsticker3.tga
+	surfaceparm 		nonsolid
+	surfaceparm 		noimpact
+	translucent
+	diffusemap		textures/decals/redsticker3.tga
+}	
+
+textures/decals/redsticker2
+{
+	qer_editorimage		textures/decals/redsticker2.tga
+	surfaceparm 		nonsolid
+	surfaceparm 		noimpact
+	translucent
+	diffusemap		textures/decals/redsticker2.tga
+}	
+
+textures/decals/redsticker1
+{
+	qer_editorimage		textures/decals/redsticker1.tga
+	surfaceparm 		nonsolid
+	surfaceparm 		noimpact
+	translucent
+	diffusemap		textures/decals/redsticker1.tga
+}	
+
+textures/decals/hangingwires
+{
+	surfaceparm 		nonsolid
+	surfaceparm		noimpact
+	noshadows
+	qer_editorimage		textures/decals/hangingwires.tga
+	bumpmap			textures/decals/hangingwires_local.tga
+	{
+		blend		diffusemap
+		map		textures/decals/hangingwires_d.tga
+		alphatest	.25
+	}
+	specularmap		textures/decals/hangingwires_s.tga
+}
+
+textures/decals/hangingwires2sided
+{
+	twoSided
+	surfaceparm 		nonsolid
+	surfaceparm		noimpact
+	noshadows
+	qer_editorimage		textures/decals/hangingwires.tga
+	bumpmap			textures/decals/hangingwires_local.tga
+	{
+		blend		diffusemap
+		map		textures/decals/hangingwires_d.tga
+		alphatest	.25
+	}
+	specularmap		textures/decals/hangingwires_s.tga
+}
+		
+textures/decals/splat15
+{
+	DECAL_MACRO
+	surfaceparm blood
+
+	qer_editorimage	textures/decals/splat15.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat15.tga
+		colored
+	}	
+}
+
+textures/decals/splat14
+{
+	DECAL_MACRO
+	surfaceparm blood
+
+	qer_editorimage	textures/decals/splat14.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat14.tga
+		colored
+	}	
+}
+
+textures/decals/splat13
+{
+	DECAL_MACRO
+	surfaceparm blood
+
+	qer_editorimage	textures/decals/splat13.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat13.tga
+		colored
+	}	
+}
+
+textures/decals/splat12
+{
+	DECAL_MACRO
+	surfaceparm blood
+
+	qer_editorimage	textures/decals/splat12.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat12.tga
+		colored
+	}	
+}
+
+textures/decals/splat11
+{
+	DECAL_MACRO
+	surfaceparm blood
+
+	qer_editorimage	textures/decals/splat11.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat11.tga
+		colored
+	}	
+}
+
+textures/decals/splat10
+{
+	DECAL_MACRO
+	surfaceparm blood
+
+	qer_editorimage	textures/decals/splat10.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat10.tga
+		colored
+	}	
+}
+
+textures/decals/splat9
+{
+	DECAL_MACRO
+	surfaceparm blood
+
+	qer_editorimage	textures/decals/splat9.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map textures/decals/splat9.tga
+		colored
+	}	
+}
+
+textures/decals/splat8
+{
+	DECAL_MACRO
+	surfaceparm blood
+
+	qer_editorimage	textures/decals/splat8.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map textures/decals/splat8.tga
+		colored
+	}	
+}
+
+
+textures/decals/splat7
+{
+	DECAL_MACRO
+	surfaceparm blood
+
+	qer_editorimage	textures/decals/splat7.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat7.tga
+		colored
+	}	
+}
+
+textures/decals/splat6
+{
+	DECAL_MACRO
+	surfaceparm blood
+
+	qer_editorimage	textures/decals/splat6.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat6.tga
+		colored
+	}	
+}
+
+textures/decals/splat5
+{
+	DECAL_MACRO
+	surfaceparm blood
+
+	qer_editorimage	textures/decals/splat5.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat5.tga
+		colored
+	}	
+}
+
+textures/decals/splat4
+{
+	DECAL_MACRO
+	surfaceparm blood
+	
+	qer_editorimage	textures/decals/splat4.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat4.tga\
+		colored
+	}	
+}
+
+textures/decals/splat3
+{
+	DECAL_MACRO
+	surfaceparm blood
+	
+	qer_editorimage	textures/decals/splat3.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat3.tga
+		colored
+	}	
+}
+
+textures/decals/splat2
+{
+	DECAL_MACRO
+	surfaceparm blood
+	
+	qer_editorimage	textures/decals/splat2.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat2.tga
+		colored
+	}	
+}
+
+textures/decals/splat1
+{
+	DECAL_MACRO
+	surfaceparm blood
+	
+	qer_editorimage	textures/decals/splat1.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/splat1.tga
+		colored
+	}	
+}
+
+textures/decals/sdirt12
+{
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt12.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map	textures/decals/sdirt12.tga
+		colored
+	}	
+}
+
+textures/decals/sdirt11a
+{
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt11a.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map	textures/decals/sdirt11a.tga
+		colored
+	}	
+}
+
+textures/decals/sdirt11
+{
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt11.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map	textures/decals/sdirt11.tga
+		colored
+	}	
+}
+
+textures/decals/sdirt10a
+{
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt10a.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map	textures/decals/sdirt10a.tga
+		colored
+	}	
+}
+
+textures/decals/sdirt10
+{
+	translucent
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt10.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/sdirt10.tga
+		colored	
+	}	
+}
+
+textures/decals/sdirt9
+{
+	translucent
+	surfaceparm 	nonsolid
+	surfaceparm 	noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt9.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/sdirt9.tga
+		colored	
+	}	
+}
+
+textures/decals/sdirt8
+{
+	translucent
+	surfaceparm 	nonsolid
+	surfaceparm 	noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt8.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/sdirt8.tga	
+		colored
+	}	
+}
+
+textures/decals/sdirt7
+{
+	translucent
+	surfaceparm 	nonsolid
+	surfaceparm 	noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt7.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/sdirt7.tga
+		colored
+	}	
+}
+
+textures/decals/sdirt6
+{
+	translucent
+	surfaceparm	nonsolid
+	surfaceparm 	noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt6.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/sdirt6.tga
+		colored
+	}	
+}
+
+textures/decals/sdirt5
+{
+	translucent
+	surfaceparm 	nonsolid
+	surfaceparm 	noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt5.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/sdirt5.tga
+		colored
+	}	
+}
+
+textures/decals/sdirt4
+{
+	translucent
+	surfaceparm 	nonsolid
+	surfaceparm 	noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt4.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/sdirt4.tga
+		colored
+	}	
+}
+
+textures/decals/sdirt3
+{
+	translucent
+	surfaceparm 	nonsolid
+	surfaceparm 	noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt3.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/sdirt3.tga
+		colored
+	}	
+}
+
+textures/decals/sdirt2
+{
+	translucent
+	surfaceparm 	nonsolid
+	surfaceparm 	noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt2.tga
+	{
+		blend 	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/sdirt2.tga
+		colored	
+	}	
+}
+
+
+textures/decals/sdirt1
+{
+	translucent
+	surfaceparm 	nonsolid
+	surfaceparm 	noimpact
+	noshadows
+	qer_editorimage	textures/decals/sdirt1.tga
+	{
+		blend  	gl_zero,gl_one_minus_src_color
+		map 	textures/decals/sdirt1.tga
+		colored
+	}	
+}
+
+textures/decals/mini
+{
+	translucent
+	twoSided
+	noshadows
+	qer_editorimage	textures/decals/mini.tga
+	
+	{
+		blend diffuseMap
+		map textures/decals/mini.tga
+	}
+}
+
+textures/decals/sulfuric
+{
+	translucent
+	twoSided
+	noshadows
+	qer_editorimage	textures/decals/sulfuric.tga
+	
+	{
+		blend diffuseMap
+		map textures/decals/sulfuric.tga
+	}
+}
+
+textures/decals/lw65
+{
+	translucent
+	twoSided
+	noshadows
+	qer_editorimage	textures/decals/lw65.tga
+	
+	{
+		blend diffuseMap
+		map textures/decals/lw65.tga
+	}
+}
+
+textures/decals/uacdec2.tga
+{
+	qer_editorimage	textures/decals/uacdec2.tga
+	twoSided
+	noshadows
+		{
+			blend	diffusemap
+			map textures/decals/uacdec2.tga
+			alphatest .55
+		}
+	specularmap textures/decals/uacdec2_s.tga
+}
+
+textures/decals/uacdec1.tga
+{
+	qer_editorimage	textures/decals/uacdec1.tga
+	twoSided
+	noshadows
+		{
+			blend	diffusemap
+			map textures/decals/uacdec1.tga
+			alphatest .55
+		}
+	specularmap textures/decals/uacdec1_s.tga
+}
+
+textures/decals/screw6
+{
+	qer_editorimage	textures/decals/screw6.tga
+	noshadows
+		{
+			blend	diffusemap
+			map textures/decals/screw6_d.tga
+		}
+	{
+		blend gl_zero,gl_one
+		map textures/decals/screw6_local.tga
+		alphatest .55
+	}
+	bumpmap 		textures/decals/screw6_local.tga
+	specularmap 	textures/decals/screw6_s.tga
+}
+
+textures/decals/screw5
+{
+	qer_editorimage	textures/decals/screw5.tga
+	noshadows
+		{
+			blend	diffusemap
+			map textures/decals/screw5_d.tga
+		}
+	{
+		blend gl_zero,gl_one
+		map textures/decals/screw5_local.tga
+		alphatest .55
+	}
+	bumpmap 		textures/decals/screw5_local.tga
+	specularmap 	textures/decals/screw5_s.tga
+}
+
+textures/decals/screw4
+{
+	qer_editorimage	textures/decals/screw4.tga
+	noshadows
+		{
+			blend	diffusemap
+			map textures/decals/screw4_d.tga
+		}
+	{
+		blend gl_zero,gl_one
+		map textures/decals/screw4_local.tga
+		alphatest .55
+	}
+	bumpmap 		textures/decals/screw4_local.tga
+	specularmap 	textures/decals/screw4_s.tga
+}
+
+textures/decals/screw3
+{
+	qer_editorimage	textures/decals/screw3.tga
+	noshadows
+		{
+			blend	diffusemap
+			map textures/decals/screw3_d.tga
+		}
+	{
+		blend gl_zero,gl_one
+		map textures/decals/screw3_local.tga
+		alphatest .55
+	}
+	bumpmap 		textures/decals/screw3_local.tga
+	specularmap 	textures/decals/screw3_s.tga
+}
+
+textures/decals/screw2
+{
+	qer_editorimage	textures/decals/screw2.tga
+	noshadows
+		{
+			blend	diffusemap
+			map textures/decals/screw2_d.tga
+		}
+	{
+		blend gl_zero,gl_one
+		map textures/decals/screw2_local.tga
+		alphatest .55
+	}
+	bumpmap 		textures/decals/screw2_local.tga
+	specularmap 	textures/decals/screw2_s.tga
+}
+
+textures/decals/screw1
+{
+	qer_editorimage	textures/decals/screw1.tga
+	noshadows
+		{
+			blend	diffusemap
+			map textures/decals/screw1_d.tga
+		}
+	{
+		blend gl_zero,gl_one
+		map textures/decals/screw1_local.tga
+		alphatest .55
+	}
+	bumpmap 		textures/decals/screw1_local.tga
+	specularmap 	textures/decals/screw1_s.tga
+}
+
+textures/decals/ember5
+{
+	qer_editorimage	textures/decals/ember5.tga
+	noshadows
+	bumpmap		heightmap (textures/decals/ember5.tga, 4)
+	specularmap		textures/decals/ember1_dif.tga
+	{
+		blend	diffusemap
+		map textures/decals/ember1_dif.tga
+		rgb Parm3
+	}
+	{
+		blend gl_zero,gl_one
+		map textures/decals/ember5.tga
+		alphatest .55
+	}
+	{
+		ignoreAlphaTest
+		blend gl_one, gl_one
+		map textures/decals/ember5_add.tga
+		rgb ( ember1 [ (time * .25) + Parm4 ] ) * 2
+	}	
+}
+
+textures/decals/ember4
+{
+	qer_editorimage	textures/decals/ember4.tga
+	noshadows
+	bumpmap		heightmap (textures/decals/ember4.tga, 4)
+	specularmap		textures/decals/ember1_dif.tga
+	{
+		blend	diffusemap
+		map textures/decals/ember1_dif.tga
+		rgb Parm3
+	}
+	{
+		blend gl_zero,gl_one
+		map textures/decals/ember4.tga
+		alphatest .55
+	}
+	{
+		ignoreAlphaTest
+		blend gl_one, gl_one
+		map textures/decals/ember4_add.tga
+		rgb ( ember1 [ (time * .25) + Parm4 ] ) * 2
+	}	
+}
+
+textures/decals/ember3
+{
+	qer_editorimage	textures/decals/ember3.tga
+	noshadows
+	bumpmap		heightmap (textures/decals/ember3.tga, 4)
+	specularmap		textures/decals/ember1_dif.tga
+	{
+		blend	diffusemap
+		map textures/decals/ember1_dif.tga
+		rgb Parm3
+	}
+	{
+		blend gl_zero,gl_one
+		map textures/decals/ember3.tga
+		alphatest .55
+	}
+	{
+		ignoreAlphaTest
+		blend gl_one, gl_one
+		map textures/decals/ember3_add.tga
+		rgb ( ember1 [ (time * .25) + Parm4 ] ) * 2
+	}	
+}
+
+textures/decals/ember2
+{
+	qer_editorimage	textures/decals/ember2.tga
+	noshadows
+	bumpmap		heightmap (textures/decals/ember2_bmp.tga, 4)
+	specularmap		textures/decals/ember2_dif.tga
+	{
+		blend	diffusemap
+		map textures/decals/ember2_dif.tga
+		rgb Parm3
+		alphaTest 0.55
+	}
+	{
+		ignoreAlphaTest
+		blend gl_one, gl_one
+		map textures/decals/ember2_add.tga
+		rgb ( ember1 [ time * .25 ] ) * 2
+	}	
+	{
+		ignoreAlphaTest
+		blend gl_one, gl_one
+		map textures/decals/ember2_add2.tga
+		rgb ( ember1 [ (time * .5) + .33 ] ) * 2
+	}	
+	{
+		ignoreAlphaTest
+		blend gl_one, gl_one
+		map textures/decals/ember2_add3.tga
+		rgb ( ember1 [ (time * .15) + .66 ] ) * 2
+	}	
+}
+
+textures/decals/ember1
+{
+	qer_editorimage	textures/decals/ember1.tga
+	noshadows
+	{
+		blend	diffusemap
+		map textures/decals/ember1_dif.tga
+		rgb Parm3
+		alphaTest .5
+	}
+	bumpmap		heightmap (textures/decals/ember1_bmp.tga, 4)
+	specularmap		textures/decals/ember1_dif.tga
+
+	{
+		ignoreAlphaTest
+		blend gl_one, gl_one
+		map textures/decals/ember1_add.tga
+		rgb ( ember1 [ time * .25 ] ) * 2
+	}	
+	{
+		ignoreAlphaTest
+		blend gl_one, gl_one
+		map textures/decals/ember1_add2.tga
+		rgb ( ember1 [ (time * .5) + .33 ] ) * 2
+	}	
+	{
+		ignoreAlphaTest	
+		blend gl_one, gl_one
+		map textures/decals/ember1_add3.tga
+		rgb ( ember1 [ (time * .15) + .66 ] ) * 2
+	}	
+}
+
+textures/decals/pl_tarp
+{
+	qer_editorimage	textures/decals/pl_tarp.tga
+	twoSided
+	noshadows
+	translucent
+	{
+		blend		diffusemap
+		map		textures/decals/pl_tarp_d.tga
+	}
+	bumpmap 		addnormals (textures/decals/pl_tarp_local.tga, heightmap ( textures/decals/pl_tarp_bmp.tga, 4) )
+	specularmap 		textures/decals/pl_tarp_s.tga
+}
+
+
+
+textures/decals/fanvent
+{
+	qer_editorimage		textures/decals/fanvent.tga
+	twoSided
+	noshadows
+	{
+		blend		diffusemap
+		map 		textures/decals/fanvent_d.tga
+		alphaTest 	0.25
+	}
+	bumpmap 		textures/decals/fanvent_local.tga
+	specularmap 		textures/decals/fanvent_d.tga
+}
+
+textures/decals/sp1_alpha
+{
+	qer_editorimage		textures/decals/sp1_alpha.tga
+	twoSided
+	noshadows
+	{
+		blend		diffusemap
+		map 		textures/base_trim/sp1_d.tga
+		alphaTest 	0.5
+	}
+	bumpmap 		textures/base_trim/sp1_local.tga
+	specularmap 		textures/base_trim/sp1_s.tga
+}
+
+textures/decals/sp2_alpha
+{
+	qer_editorimage		textures/decals/sp2_alpha.tga
+	twoSided
+	noshadows
+	{
+		blend		diffusemap
+		map 		textures/base_trim/sp2_d.tga
+		alphaTest 	0.5
+
+	}
+	bumpmap			textures/base_trim/sp2_local.tga
+	specularmap		textures/base_trim/sp2_s.tga
+}
+
+textures/decals/sp3_alpha
+{
+	qer_editorimage		textures/decals/sp3_alpha.tga
+	twoSided
+	noshadows
+	{
+		blend		diffusemap
+		map	 	textures/base_trim/sp3_d.tga
+		alphaTest 	0.5
+
+	}
+	bumpmap			textures/base_trim/sp3_local.tga
+	specularmap		textures/base_trim/sp3_s.tga
+}
+
+textures/decals/sp4_alpha
+{
+	qer_editorimage		textures/decals/sp4_alpha.tga
+	twoSided
+	noshadows
+	{
+		blend		diffusemap
+		map 		textures/base_trim/sp4_d.tga
+		alphaTest	0.5
+
+	}
+	bumpmap			textures/base_trim/sp4_local.tga
+	specularmap		textures/base_trim/sp4_s.tga
+}
+
+textures/decals/sp5_alpha
+{
+	qer_editorimage		textures/decals/sp5_alpha.tga
+	twoSided
+	noshadows
+	{
+		blend		diffusemap
+		map 		textures/base_trim/sp5_d.tga
+		alphaTest 	0.5
+
+	}
+	bumpmap			textures/base_trim/sp5_local.tga
+	specularmap		textures/base_trim/sp5_s.tga
+}
+
+textures/decals/sp6_alpha
+{
+	qer_editorimage	textures/decals/sp6_alpha.tga
+	twoSided
+	noshadows
+	{
+		blend		diffusemap
+		map		textures/base_trim/sp6_d.tga
+		alphaTest	0.5
+
+	}
+	bumpmap			textures/base_trim/sp6_local.tga
+	specularmap		textures/base_trim/sp6_s.tga
+}
+
+
+
+//============================================================================================================
+//base_wall
+//============================================================================================================
+
+textures/base_wall/gotbwall1venttest
+{
+//	translucent
+	noshadows
+	qer_editorimage		textures/base_wall/gotbwall1vent.tga
+	bumpmap			textures/base_wall/gotbwall1vent_local.tga
+	{	
+		blend		diffusemap
+		blend		gl_dst_color,gl_zero
+		map		textures/base_wall/test_d.tga
+	}
+	specularmap		textures/base_wall/test_s.tga
+}
+
+textures/base_wall/cpuwall3
+{
+	qer_editorimage		textures/base_wall/cpuwall3.tga
+	bumpmap			textures/base_wall/cpuwall3_local.tga
+	diffusemap		textures/base_wall/cpuwall3.tga
+	specularmap		textures/base_wall/cpuwall3_s.tga
+}
+
+textures/base_wall/cpuwall2
+{
+	qer_editorimage		textures/base_wall/cpuwall2.tga
+	bumpmap			textures/base_wall/cpuwall2_local.tga
+	diffusemap		textures/base_wall/cpuwall2_d.tga
+	specularmap		textures/base_wall/cpuwall2_s.tga
+	{
+		blend		add
+		map		textures/base_wall/cpuwall2_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_wall/cpuwall1
+{
+	qer_editorimage		textures/base_wall/cpuwall1.tga
+	bumpmap			textures/base_wall/cpuwall1_local.tga
+	diffusemap		textures/base_wall/cpuwall1_d.tga
+	specularmap		textures/base_wall/cpuwall1_s.tga
+	{
+		blend		add
+		map		textures/base_wall/cpuwall1_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_wall/medrust1
+{
+	qer_editorimage		textures/base_wall/medrust1.tga
+	bumpmap			heightmap (textures/base_wall/medrust1.tga, 4)
+	diffusemap		textures/base_wall/medrust1.tga
+}
+
+//S O panel***************************************************************************************************************************
+
+
+textures/base_wall/sopanel36
+{
+	qer_editorimage		textures/base_wall/sopanel36.tga
+	bumpmap			textures/base_wall/sopanel36_local.tga
+	diffusemap		textures/base_wall/sopanel36.tga
+	specularmap		textures/base_wall/sopanel36_s.tga
+}
+
+textures/base_wall/sopanel35a
+{
+	qer_editorimage		textures/base_wall/sopanel35a.tga
+	bumpmap			textures/base_wall/sopanel35_local.tga
+	diffusemap		textures/base_wall/sopanel35a.tga
+	specularmap		textures/base_wall/sopanel35_s.tga
+}
+
+textures/base_wall/sopanel35
+{
+	qer_editorimage		textures/base_wall/sopanel35.tga
+	bumpmap			textures/base_wall/sopanel35_local.tga
+	diffusemap		textures/base_wall/sopanel35.tga
+	specularmap		textures/base_wall/sopanel35_s.tga
+}
+
+textures/base_wall/sopanel34a
+{
+	qer_editorimage		textures/base_wall/sopanel34a.tga
+	bumpmap			textures/base_wall/sopanel34_local.tga
+	diffusemap		textures/base_wall/sopanel34a.tga
+	specularmap		textures/base_wall/sopanel34_s.tga
+}
+
+textures/base_wall/sopanel34
+{
+	qer_editorimage		textures/base_wall/sopanel34.tga
+	bumpmap			textures/base_wall/sopanel34_local.tga
+	diffusemap		textures/base_wall/sopanel34.tga
+	specularmap		textures/base_wall/sopanel34_s.tga
+}
+
+textures/base_wall/sopanel33
+{
+	qer_editorimage		textures/base_wall/sopanel33.tga
+	bumpmap			textures/base_wall/sopanel33_local.tga
+	diffusemap		textures/base_wall/sopanel33.tga
+	specularmap		textures/base_wall/sopanel33_s.tga
+}
+
+textures/base_wall/sopanel32
+{
+	qer_editorimage		textures/base_wall/sopanel32.tga
+	noShadows
+	twoSided
+	bumpmap			textures/base_wall/sopanel32_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel32_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel32_s.tga
+}
+
+textures/base_wall/sopanel31a
+{
+	qer_editorimage		textures/base_wall/sopanel31a.tga
+	noShadows
+	twoSided
+	bumpmap			textures/base_wall/sopanel31a_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel31a_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel31a_s.tga
+}
+
+textures/base_wall/sopanel31
+{
+	qer_editorimage		textures/base_wall/sopanel31.tga
+	noShadows
+	twoSided
+	bumpmap			textures/base_wall/sopanel31_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel31_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel31_s.tga
+}
+
+textures/base_wall/sopanel30
+{
+	qer_editorimage		textures/base_wall/sopanel30.tga
+	noShadows
+	bumpmap			textures/base_wall/sopanel30_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel30_d.tga
+		alphatest	.5
+		red		Parm0 
+		green		Parm1 
+		blue		Parm2 
+	}
+	specularmap		textures/base_wall/sopanel30_s.tga
+}
+
+textures/base_wall/sopanel29
+{
+	qer_editorimage		textures/base_wall/sopanel29.tga
+	bumpmap			textures/base_wall/sopanel29_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel29_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel29_s.tga
+}
+
+textures/base_wall/sopanel28a
+{
+	qer_editorimage		textures/base_wall/sopanel28a.tga
+	bumpmap			addnormals (textures/base_wall/sopanel28a_local.tga, heightmap (textures/base_wall/sopanel28a_bmp.tga, 4 ) )
+	diffusemap		textures/base_wall/sopanel28a.tga
+	specularmap		textures/base_wall/sopanel28a_s.tga
+}
+
+textures/base_wall/sopanel28
+{
+	qer_editorimage		textures/base_wall/sopanel28.tga
+	bumpmap			addnormals (textures/base_wall/sopanel28_local.tga, heightmap (textures/base_wall/sopanel28_bmp.tga, 4 ) )
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel28.tga
+		red		Parm0 
+		green		Parm1 
+		blue		Parm2 
+	}
+	specularmap		textures/base_wall/sopanel28_s.tga
+}
+
+textures/base_wall/sopanel27
+{
+	qer_editorimage		textures/base_wall/sopanel27.tga
+	bumpmap			addnormals (textures/base_wall/sopanel27_local.tga, heightmap (textures/base_wall/sopanel27_bmp.tga, 4 ) )
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel27.tga
+		red		Parm0 
+		green		Parm1 
+		blue		Parm2 
+	}
+	specularmap		textures/base_wall/sopanel27_s.tga
+}
+
+textures/base_wall/sopanel26a
+{
+	qer_editorimage		textures/base_wall/sopanel26a.tga
+	translucent
+	noShadows
+	{
+		blend		gl_dst_color,gl_zero
+		map		textures/base_wall/sopanel26a.tga
+	}
+}
+
+textures/base_wall/sopanel26
+{
+	qer_editorimage		textures/base_wall/sopanel26.tga
+	noShadows
+	bumpmap			textures/base_wall/sopanel26_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel26_d.tga
+		alphatest	.5
+		red		Parm0 
+		green		Parm1 
+		blue		Parm2 
+	}
+	specularmap		textures/base_wall/sopanel26_s.tga
+}
+
+textures/base_wall/sopanel25
+{
+	qer_editorimage		textures/base_wall/sopanel25.tga
+	bumpmap			addnormals (textures/base_wall/sopanel25_local.tga, heightmap (textures/base_wall/sopanel25_bmp.tga, 4 ) )
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel25.tga
+		red		Parm0 
+		green		Parm1 
+		blue		Parm2 
+	}
+	specularmap		textures/base_wall/sopanel25_s.tga
+}
+
+textures/base_wall/sopanel24
+{
+	qer_editorimage		textures/base_wall/sopanel24.tga
+	bumpmap			addnormals (textures/base_wall/sopanel24_local.tga, heightmap (textures/base_wall/sopanel24_bmp.tga, 4 ) )
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel24.tga
+		red		Parm0 
+		green		Parm1 
+		blue		Parm2 
+	}
+	specularmap		textures/base_wall/sopanel24_s.tga
+}
+
+textures/base_wall/sopanel23
+{
+	qer_editorimage		textures/base_wall/sopanel23.tga
+	bumpmap			addnormals (textures/base_wall/sopanel23_local.tga, heightmap (textures/base_wall/sopanel23_bmp.tga, 4 ) )
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel23.tga
+		red		Parm0 
+		green		Parm1 
+		blue		Parm2 
+	}
+	specularmap		textures/base_wall/sopanel23_s.tga
+}
+
+textures/base_wall/sopanel22_shadow
+{	
+	qer_editorimage		textures/base_wall/sopanel22_shadow.tga
+	translucent  
+	{
+		blend 		gl_dst_color,gl_zero
+		map		textures/base_wall/sopanel22_shadow.tga
+	}	
+}
+
+textures/base_wall/sopanel22
+{
+	qer_editorimage		textures/base_wall/sopanel22.tga
+	noshadows
+	{
+		blend		bumpmap
+		map		textures/base_wall/sopanel22_local.tga
+	}
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel22_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel22_s.tga
+}
+
+textures/base_wall/sopanel21_shadow
+{	
+	qer_editorimage		 textures/base_wall/sopanel21_shadow.tga
+	translucent  
+	{
+		blend 		gl_dst_color,gl_zero
+		map		textures/base_wall/sopanel21_shadow.tga
+	}	
+}
+
+textures/base_wall/sopanel21_y
+{
+	qer_editorimage		textures/base_wall/sopanel21_y.tga
+	twoSided
+	noshadows
+	{
+		blend		bumpmap
+		map		textures/base_wall/sopanel21_local.tga
+	}
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel21_y_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel21_s.tga
+}
+
+textures/base_wall/sopanel21
+{
+	qer_editorimage		textures/base_wall/sopanel21.tga
+	twoSided	
+	noshadows
+	{
+		blend		bumpmap
+		map		textures/base_wall/sopanel21_local.tga
+	}
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel21_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel21_s.tga
+}
+
+textures/base_wall/sopanel20_shadow
+{	
+	qer_editorimage		 textures/base_wall/sopanel20_shadow.tga
+	translucent  
+	{
+		blend 		gl_dst_color,gl_zero
+		map		textures/base_wall/sopanel20_shadow.tga
+	}	
+}
+
+textures/base_wall/sopanel20
+{
+	qer_editorimage		textures/base_wall/sopanel20.tga
+	noshadows
+	{
+		blend		bumpmap
+		map		textures/base_wall/sopanel20_local.tga
+	}
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel20_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel20_s.tga
+}
+
+textures/base_wall/sopanel19
+{
+	qer_editorimage		textures/base_wall/sopanel19.tga
+	diffusemap		textures/base_wall/sopanel19_d.tga
+	{	//if ( parm7 == 0 )
+		blend		bumpmap
+		map		textures/base_wall/sopanel19_local.tga
+	}
+	{	//if ( parm7 == 0 )
+		blend		specularmap
+		map		textures/base_wall/sopanel19_s.tga
+	}
+	{	//if ( parm7 == 0 )
+		colored
+		blend		add
+		map		textures/base_wall/sopanel19_add.tga
+	}
+
+/**
+	{if ( parm7 != 0 )
+		blend		bumpmap
+		map		addnormals(textures/base_wall/sopanel19_local.tga, heightmap (textures/base_wall/sopanel19_bmp2.tga, 4 ) )
+	}
+	{if ( parm7 != 0 )
+		blend		specularmap
+		map		textures/base_wall/sopanel19_s2.tga
+	}
+	{if ( parm7 != 0 )
+		blend		add
+		map		textures/base_wall/sopanel19_add2.tga
+		colored
+	}
+**/
+}
+
+textures/base_wall/sopanel18_shadow
+{	
+	qer_editorimage		textures/base_wall/sopanel18_shadow.tga
+	translucent
+	noshadows
+	{
+		blend 		gl_dst_color,gl_zero
+		map		textures/base_wall/sopanel18_shadow.tga
+	}	
+}
+
+textures/base_wall/sopanel18
+{
+	qer_editorimage		textures/base_wall/sopanel18.tga
+	noshadows
+	{
+		blend		bumpmap
+		map		textures/base_wall/sopanel18_local.tga
+	}
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel18_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel18_s.tga
+}
+
+textures/base_wall/sopanel17
+{
+	qer_editorimage		textures/base_wall/sopanel17.tga
+	noshadows
+	bumpmap			textures/base_wall/sopanel17_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel17_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel17_s.tga
+}
+
+textures/base_wall/sopanel16
+{
+	qer_editorimage		textures/base_wall/sopanel16.tga
+	bumpmap			textures/base_wall/sopanel16_local.tga
+	diffusemap		textures/base_wall/sopanel16.tga
+	specularmap		textures/base_wall/sopanel16_s.tga
+}
+
+textures/base_wall/sopanel15b
+{
+	qer_editorimage		textures/base_wall/sopanel15b.tga
+	bumpmap			textures/base_wall/sopanel15b_local.tga
+	diffusemap		textures/base_wall/sopanel15b.tga
+	specularmap		textures/base_wall/sopanel15b_s.tga
+}
+
+textures/base_wall/sopanel15a
+{
+	qer_editorimage		textures/base_wall/sopanel15a.tga
+	bumpmap			textures/base_wall/sopanel15a_local.tga
+	diffusemap		textures/base_wall/sopanel15a.tga
+	specularmap		textures/base_wall/sopanel15a_s.tga
+}
+
+textures/base_wall/sopanel15
+{
+	qer_editorimage		textures/base_wall/sopanel15.tga
+	bumpmap			textures/base_wall/sopanel15_local.tga
+	diffusemap		textures/base_wall/sopanel15.tga
+	specularmap		textures/base_wall/sopanel15_s.tga
+}
+
+textures/base_wall/sopanel14a
+{
+	qer_editorimage		textures/base_wall/sopanel14a.tga
+	bumpmap			textures/base_wall/sopanel14a_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel14a.tga
+		rgb		parm3
+	}
+	specularmap		textures/base_wall/sopanel14a_s.tga
+}
+
+textures/base_wall/sopanel14
+{
+	qer_editorimage		textures/base_wall/sopanel14.tga
+	bumpmap			textures/base_wall/sopanel14_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel14.tga
+		rgb		parm3
+	}
+	specularmap		textures/base_wall/sopanel14_s.tga
+}
+
+textures/base_wall/sopanel13
+{
+	qer_editorimage		textures/base_wall/sopanel13.tga
+	bumpmap			addnormals (textures/base_wall/sopanel13_local.tga, heightmap (textures/base_wall/sopanel13_bmp.tga, 4) )
+	diffusemap		textures/base_wall/sopanel13.tga
+	specularmap		textures/base_wall/sopanel13_s.tga
+}
+
+textures/base_wall/sopanel12a
+{
+	qer_editorimage		textures/base_wall/sopanel12a.tga
+	bumpmap			addnormals (textures/base_wall/sopanel12a_local.tga, heightmap (textures/base_wall/sopanel12a_bmp.tga, 4) )
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel12a.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel12a_s.tga
+}
+
+textures/base_wall/sopanel12
+{
+	qer_editorimage		textures/base_wall/sopanel12.tga
+	bumpmap			addnormals (textures/base_wall/sopanel12_local.tga, heightmap (textures/base_wall/sopanel12_bmp.tga, 4) )
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel12.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel12_s.tga
+}
+
+textures/base_wall/sopanel11
+{
+	qer_editorimage		textures/base_wall/sopanel11.tga
+	bumpmap			addnormals (textures/base_wall/sopanel11_local.tga, heightmap (textures/base_wall/sopanel11_bmp.tga, 4) )
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel11.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel11_s.tga
+}
+
+textures/base_wall/sopanel10
+{
+	qer_editorimage		textures/base_wall/sopanel10.tga
+	bumpmap			textures/base_wall/sopanel10_local.tga
+	diffusemap		textures/base_wall/sopanel10_d.tga
+	specularmap		textures/base_wall/sopanel10_s.tga
+}
+
+textures/base_wall/sopanel9
+{
+	qer_editorimage		textures/base_wall/sopanel9.tga
+	bumpmap			textures/base_wall/sopanel9_local.tga
+	diffusemap		textures/base_wall/sopanel9_d.tga
+	specularmap		textures/base_wall/sopanel9_s.tga
+}
+
+textures/base_wall/sopanel8
+{
+	qer_editorimage		textures/base_wall/sopanel8.tga
+	bumpmap			textures/base_wall/sopanel8_local.tga
+	diffusemap		textures/base_wall/sopanel8_d.tga
+	specularmap		textures/base_wall/sopanel8_s.tga
+}
+
+textures/base_wall/sopanel7
+{
+	noShadows
+	qer_editorimage		textures/base_wall/sopanel7.tga
+	bumpmap			textures/base_wall/sopanel7_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel7_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel7_s.tga
+}
+
+textures/base_wall/sopanel6
+{
+	noShadows
+	qer_editorimage		textures/base_wall/sopanel6.tga
+	bumpmap			textures/base_wall/sopanel6_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel6_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel6_s.tga
+}
+
+textures/base_wall/sopanel5
+{
+	noShadows
+	qer_editorimage		textures/base_wall/sopanel5.tga
+	bumpmap			textures/base_wall/sopanel5_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/sopanel5_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/sopanel5_s.tga
+}
+
+textures/base_wall/sopanel4
+{
+	qer_editorimage		textures/base_wall/sopanel4.tga
+	bumpmap			textures/base_wall/sopanel4_local.tga
+	diffusemap		textures/base_wall/sopanel4_d.tga
+	specularmap		textures/base_wall/sopanel4_s.tga
+}
+
+textures/base_wall/sopanel3a
+{
+	qer_editorimage		textures/base_wall/sopanel3a.tga
+	bumpmap			textures/base_wall/sopanel3a_local.tga
+	diffusemap		textures/base_wall/sopanel3a_d.tga
+	specularmap		textures/base_wall/sopanel3a_s.tga
+}
+
+textures/base_wall/sopanel3
+{
+	qer_editorimage		textures/base_wall/sopanel3.tga
+	bumpmap			textures/base_wall/sopanel3_local.tga
+	diffusemap		textures/base_wall/sopanel3_d.tga
+	specularmap		textures/base_wall/sopanel3_s.tga
+}
+
+textures/base_wall/sopanel2d
+{
+	qer_editorimage		textures/base_wall/sopanel2d.tga
+	bumpmap			textures/base_wall/sopanel2d_local.tga
+	diffusemap		textures/base_wall/sopanel2d.tga
+	specularmap		textures/base_wall/sopanel2d_s.tga
+}
+
+textures/base_wall/sopanel2c
+{
+	qer_editorimage		textures/base_wall/sopanel2c.tga
+	bumpmap			textures/base_wall/sopanel2c_local.tga
+	diffusemap		textures/base_wall/sopanel2c_d.tga
+	specularmap		textures/base_wall/sopanel2c_s.tga
+}
+
+textures/base_wall/sopanel2b5
+{
+	qer_editorimage		textures/base_wall/sopanel2b5.tga
+	bumpmap			textures/base_wall/sopanel2b5_local.tga
+	diffusemap		textures/base_wall/sopanel2b5_d.tga
+	specularmap		textures/base_wall/sopanel2b5_s.tga
+}
+
+textures/base_wall/sopanel2b4
+{
+	qer_editorimage		textures/base_wall/sopanel2b4.tga
+	bumpmap			textures/base_wall/sopanel2b4_local.tga
+	diffusemap		textures/base_wall/sopanel2b4_d.tga
+	specularmap		textures/base_wall/sopanel2b4_s.tga
+}
+
+textures/base_wall/sopanel2b3
+{
+	qer_editorimage		textures/base_wall/sopanel2b3.tga
+	bumpmap			textures/base_wall/sopanel2b3_local.tga
+	diffusemap		textures/base_wall/sopanel2b3_d.tga
+	specularmap		textures/base_wall/sopanel2b3_s.tga
+}
+
+textures/base_wall/sopanel2b2
+{
+	qer_editorimage		textures/base_wall/sopanel2b2.tga
+	bumpmap			textures/base_wall/sopanel2b2_local.tga
+	diffusemap		textures/base_wall/sopanel2b2_d.tga
+	specularmap		textures/base_wall/sopanel2b2_s.tga
+}
+
+textures/base_wall/sopanel2b
+{
+	qer_editorimage		textures/base_wall/sopanel2b.tga
+	bumpmap			textures/base_wall/sopanel2b_local.tga
+	diffusemap		textures/base_wall/sopanel2b_d.tga
+	specularmap		textures/base_wall/sopanel2b_s.tga
+}
+
+textures/base_wall/sopanel2a
+{
+	qer_editorimage		textures/base_wall/sopanel2a.tga
+	bumpmap			textures/base_wall/sopanel2a_local.tga
+	diffusemap		textures/base_wall/sopanel2a_d.tga
+	specularmap		textures/base_wall/sopanel2a_s.tga
+}
+
+textures/base_wall/sopanel2
+{
+	qer_editorimage		textures/base_wall/sopanel2.tga
+	bumpmap			textures/base_wall/sopanel2_local.tga
+	diffusemap		textures/base_wall/sopanel2_d.tga
+	specularmap		textures/base_wall/sopanel2_s.tga
+}
+
+textures/base_wall/sopanel1c
+{
+	qer_editorimage		textures/base_wall/sopanel1c.tga
+	bumpmap			textures/base_wall/sopanel1c_local.tga
+	diffusemap		textures/base_wall/sopanel1c.tga
+	specularmap		textures/base_wall/sopanel1c_s.tga
+}
+
+textures/base_wall/sopanel1b
+{
+	qer_editorimage		textures/base_wall/sopanel1b.tga
+	bumpmap			textures/base_wall/sopanel1b_local.tga
+	diffusemap		textures/base_wall/sopanel1b.tga
+	specularmap		textures/base_wall/sopanel1b_s.tga
+}
+
+textures/base_wall/sopanel1a
+{
+	qer_editorimage		textures/base_wall/sopanel1a.tga
+	bumpmap			textures/base_wall/sopanel1a_local.tga
+	diffusemap		textures/base_wall/sopanel1a_d.tga
+	specularmap		textures/base_wall/sopanel1a_s.tga
+}
+
+textures/base_wall/sopanel1
+{
+	qer_editorimage		textures/base_wall/sopanel1.tga
+	bumpmap			textures/base_wall/sopanel1_local.tga
+	diffusemap		textures/base_wall/sopanel1_d.tga
+	specularmap		textures/base_wall/sopanel1_s.tga
+}
+
+
+//S N panel***************************************************************************************************************************
+
+textures/base_wall/twistlightpipe
+{
+	qer_editorimage		textures/base_wall/twistlightpipe.tga
+	bumpmap			textures/base_wall/twistlightpipe_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/twistlightpipe_d.tga
+	}
+	specularmap		textures/base_wall/twistlightpipe_s.tga
+	{
+		map		textures/base_wall/twistlightpipe_local.tga
+		maskcolor
+	}
+	{
+		blend		gl_dst_alpha , gl_one
+		map 		textures/base_wall/twistlightpipe_add.tga
+		rgb 		5
+		translate	time, 0.5 * time
+	}
+}
+
+textures/base_wall/twistlightpipeblue
+{
+	qer_editorimage		textures/base_wall/twistlightpipeblue.tga
+	bumpmap			textures/base_wall/twistlightpipe_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/twistlightpipe_d.tga
+	}
+	specularmap		textures/base_wall/twistlightpipe_s.tga
+	{
+		map		textures/base_wall/twistlightpipe_local.tga
+		maskcolor
+	}
+	{
+		blend		gl_dst_alpha , gl_one
+		map 		textures/base_wall/twistlightpipeblue_add.tga
+		rgb 		5
+		translate	time, 0.5 * time
+	}
+}
+
+textures/base_wall/snpanelplain1
+{
+	qer_editorimage		textures/base_wall/snpanelplain1.tga
+	diffusemap		textures/base_wall/snpanelplain1.tga
+}
+
+textures/base_wall/snpanelredplain
+{
+	qer_editorimage		textures/base_wall/snpanelredplain.tga
+	bumpmap			heightmap (textures/base_wall/snpanelredplain_bmp, 3)
+	diffusemap		textures/base_wall/snpanelredplain.tga
+	{
+		blend		specularmap
+		map		textures/base_wall/snpanelredplain_bmp.tga
+		rgb		0.4
+	}
+}
+
+
+textures/base_wall/snpanel1
+{
+	qer_editorimage		textures/base_wall/snpanel1.tga
+	bumpmap			textures/base_wall/snpanel1_local.tga
+	diffusemap		textures/base_wall/snpanel1_d.tga
+}
+
+
+textures/base_wall/snpanel2
+{
+	qer_editorimage		textures/base_wall/snpanel2.tga
+	bumpmap			textures/base_wall/snpanel2_local.tga
+	diffusemap		textures/base_wall/snpanel2_d.tga
+	specularmap		textures/base_wall/snpanel2_s.tga
+}
+
+textures/base_wall/snpanel3
+{
+	qer_editorimage		textures/base_wall/snpanel3.tga
+	bumpmap			textures/base_wall/snpanel3_local.tga
+	diffusemap		textures/base_wall/snpanel3_d.tga
+	specularmap		textures/base_wall/snpanel3_s.tga
+}
+
+textures/base_wall/snpanel3a
+{
+	qer_editorimage		textures/base_wall/snpanel3a.tga
+	bumpmap			textures/base_wall/snpanel3a_local.tga
+	diffusemap		textures/base_wall/snpanel3a_d.tga
+	specularmap		textures/base_wall/snpanel3a_s.tga
+}
+
+textures/base_wall/snpanel3b
+{
+	qer_editorimage		textures/base_wall/snpanel3b.tga
+	bumpmap			textures/base_wall/snpanel3b_local.tga
+	diffusemap		textures/base_wall/snpanel3b_d.tga
+	specularmap		textures/base_wall/snpanel3b_s.tga
+}
+
+textures/base_wall/snpanel3c
+{
+	qer_editorimage		textures/base_wall/snpanel3c.tga
+	bumpmap			textures/base_wall/snpanel3c_local.tga
+	diffusemap		textures/base_wall/snpanel3c_d.tga
+	specularmap		textures/base_wall/snpanel3c_s.tga
+}
+
+textures/base_wall/snpanel3d
+{
+	qer_editorimage		textures/base_wall/snpanel3d.tga
+	bumpmap			textures/base_wall/snpanel3d_local.tga
+	diffusemap		textures/base_wall/snpanel3d_d.tga
+	specularmap		textures/base_wall/snpanel3d_s.tga
+}
+
+textures/base_wall/snpanel3e
+{
+	qer_editorimage		textures/base_wall/snpanel3e.tga
+	bumpmap			textures/base_wall/snpanel3e_local.tga
+	diffusemap		textures/base_wall/snpanel3e_d.tga
+	specularmap		textures/base_wall/snpanel3e_s.tga
+}
+
+textures/base_wall/snpanel3f
+{
+	qer_editorimage		textures/base_wall/snpanel3f.tga
+	bumpmap			textures/base_wall/snpanel3f_local.tga
+	diffusemap		textures/base_wall/snpanel3f_d.tga
+	specularmap		textures/base_wall/snpanel3f_s.tga
+}
+
+textures/base_wall/snpanel3g
+{
+	qer_editorimage		textures/base_wall/snpanel3g.tga
+	bumpmap			textures/base_wall/snpanel3g_local.tga
+	diffusemap		textures/base_wall/snpanel3g_d.tga
+	specularmap		textures/base_wall/snpanel3g_s.tga
+}
+
+textures/base_wall/snpanel4
+{
+	qer_editorimage		textures/base_wall/snpanel4.tga
+	bumpmap			textures/base_wall/snpanel4_local.tga
+	diffusemap		textures/base_wall/snpanel4_d.tga
+	specularmap		textures/base_wall/snpanel4_s.tga
+}
+
+textures/base_wall/snpanel5
+{
+	qer_editorimage		textures/base_wall/snpanel5.tga
+	bumpmap			textures/base_wall/snpanel5_local.tga
+	diffusemap		textures/base_wall/snpanel5_d.tga
+	specularmap		textures/base_wall/snpanel5_s.tga
+}
+
+textures/base_wall/snpanel6
+{
+	qer_editorimage		textures/base_wall/snpanel6.tga
+	bumpmap			textures/base_wall/snpanel6_local.tga
+	diffusemap		textures/base_wall/snpanel6_d.tga
+	specularmap		textures/base_wall/snpanel6_s.tga
+}
+
+textures/base_wall/snpanel7
+{
+	qer_editorimage		textures/base_wall/snpanel7.tga
+	bumpmap			textures/base_wall/snpanel7_local.tga
+	diffusemap		textures/base_wall/snpanel7_d.tga
+	specularmap		textures/base_wall/snpanel7_s.tga
+}
+
+textures/base_wall/snpanel8
+{
+	qer_editorimage		textures/base_wall/snpanel8.tga
+//	bumpmap			addnormals (textures/base_wall/snpanel8_local.tga, heightmap (textures/base_wall/snpanel8_bmp.tga, 4))
+	bumpmap			textures/base_wall/snpanel8_local.tga
+	diffusemap		textures/base_wall/snpanel8_d.tga
+	specularmap		textures/base_wall/snpanel8_s.tga
+}
+
+textures/base_wall/snpanel9
+{
+	qer_editorimage		textures/base_wall/snpanel9.tga
+	bumpmap			textures/base_wall/snpanel9_local.tga
+	diffusemap		textures/base_wall/snpanel9_d.tga
+	specularmap		textures/base_wall/snpanel9_s.tga
+	{
+		blend 		gl_dst_color,gl_zero
+		map		textures/base_wall/snpanel9_overlay.tga
+		scale		0.25, 1
+	}
+
+}
+
+textures/base_wall/snpanel10
+{
+	qer_editorimage		textures/base_wall/snpanel10.tga
+	noshadows
+	bumpmap			textures/base_wall/snpanel10_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/snpanel10_d.tga
+		alphatest	.55
+	}
+}
+
+textures/base_wall/snpanel10a
+{
+	qer_editorimage		textures/base_wall/snpanel10a.tga
+	noshadows
+	bumpmap			textures/base_wall/snpanel10_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/snpanel10a_d.tga
+		alphatest	.55
+	}
+	specularmap		textures/base_wall/snpanel10a_s.tga
+}
+
+
+textures/base_wall/snpanel11
+{
+	qer_editorimage		textures/base_wall/snpanel11.tga
+	bumpmap			textures/base_wall/snpanel11_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/snpanelplain1.tga
+		scale 		2 , 1
+	}
+	{
+		blend		add
+		map		textures/base_wall/snpanel11_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_wall/snpanel12
+{
+	qer_editorimage		textures/base_wall/snpanel12.tga
+	surfaceparm 		nonsolid
+	noshadows
+	bumpmap			textures/base_wall/snpanel12_local.tga
+	specularmap		textures/base_wall/snpanel12_s.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/snpanel12_d.tga
+		alphatest	.55
+	}
+}
+
+textures/base_wall/snpanel12a
+{
+	qer_editorimage		textures/base_wall/snpanel12a.tga
+	surfaceparm 		nonsolid
+	noshadows
+	bumpmap			textures/base_wall/snpanel12_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/snpanel12_d.tga
+		alphatest	.55
+	}
+	specularmap		textures/base_wall/snpanel12_s.tga
+	{
+		blend		add
+		map		textures/base_wall/snpanel12_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_wall/snpanel13
+{
+	qer_editorimage		textures/base_wall/snpanel13.tga
+	bumpmap			textures/base_wall/snpanel13_local.tga
+	diffusemap		textures/base_wall/snpanel13_d.tga
+	specularmap		textures/base_wall/snpanel13_s.tga
+}
+
+
+textures/base_wall/snpanel14
+{
+	qer_editorimage		textures/base_wall/snpanel14.tga
+	bumpmap			textures/base_wall/snpanel14_local.tga
+	diffusemap		textures/base_wall/snpanel14_d.tga
+	specularmap		textures/base_wall/snpanel14_s.tga
+}
+
+textures/base_wall/snpanel15
+{
+	qer_editorimage		textures/base_wall/snpanel15.tga
+	bumpmap			textures/base_wall/snpanel15_local.tga
+	diffusemap		textures/base_wall/snpanel15_d.tga
+	specularmap		textures/base_wall/snpanel15_s.tga
+}
+
+textures/base_wall/snpanel16
+{
+	qer_editorimage		textures/base_wall/snpanel16.tga
+	bumpmap			textures/base_wall/snpanel16_local.tga
+	diffusemap		textures/base_wall/snpanel16_d.tga
+	{
+		blend		add
+		map		textures/base_wall/snpanel16_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_wall/snpanel16_2
+{
+	qer_editorimage		textures/base_wall/snpanel16_2.tga
+	bumpmap			textures/base_wall/snpanel16_local.tga
+	diffusemap		textures/base_wall/snpanel16_2_s.tga
+	specularmap		textures/base_wall/snpanel16_2_s.tga
+	{
+		blend		add
+		map		textures/base_wall/snpanel16_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_wall/snpanel16a
+{
+	qer_editorimage		textures/base_wall/snpanel16a.tga
+	bumpmap			textures/base_wall/snpanel16a_local.tga
+	diffusemap		textures/base_wall/snpanel16a_d.tga
+	specularmap		textures/base_wall/snpanel16a_s.tga
+}
+
+textures/base_wall/snpanel17
+{
+	qer_editorimage		textures/base_wall/snpanel17.tga
+	bumpmap			textures/base_wall/snpanel17_local.tga
+	diffusemap		textures/base_wall/snpanel17_d.tga
+	specularmap		textures/base_wall/snpanel17_s.tga
+}
+
+textures/base_wall/snpanel18
+{
+	qer_editorimage		textures/base_wall/snpanel18.tga
+	bumpmap			textures/base_wall/snpanel18_local.tga
+	diffusemap		textures/base_wall/snpanel18_d.tga
+	specularmap		textures/base_wall/snpanel18_s.tga
+}
+
+textures/base_wall/snpanel19
+{
+	qer_editorimage		textures/base_wall/snpanel19.tga
+	surfaceparm 		nonsolid
+	translucent
+	noshadows
+	bumpmap			textures/base_wall/snpanel19_local.tga
+	diffusemap		textures/base_wall/snpanel19_d.tga
+	specularmap		textures/base_wall/snpanel19_s.tga
+}
+
+textures/base_wall/snpanel20
+{
+	qer_editorimage		textures/base_wall/snpanel20.tga
+	surfaceparm 		nonsolid
+	translucent
+	noshadows
+	bumpmap			textures/base_wall/snpanel20_local.tga
+	diffusemap		textures/base_wall/snpanel20_d.tga
+	specularmap		textures/base_wall/snpanel20_s.tga
+}
+
+textures/base_wall/snpanel21
+{
+	qer_editorimage		textures/base_wall/snpanel21.tga
+	bumpmap			textures/base_wall/snpanel21_local.tga
+	diffusemap		textures/base_wall/snpanel21_d.tga
+	specularmap		textures/base_wall/snpanel21_s.tga
+}
+
+textures/base_wall/snpanel22
+{
+	qer_editorimage		textures/base_wall/snpanel22.tga
+	bumpmap			textures/base_wall/snpanel22_local.tga
+	diffusemap		textures/base_wall/snpanel22_d.tga
+	specularmap		textures/base_wall/snpanel22_s.tga
+}
+
+textures/base_wall/snpanel23
+{
+	qer_editorimage		textures/base_wall/snpanel23.tga
+	bumpmap			textures/base_wall/snpanel23_local.tga
+	diffusemap		textures/base_wall/snpanel23_d.tga
+	specularmap		textures/base_wall/snpanel23_s.tga
+}
+
+textures/base_wall/snpanel24
+{
+	qer_editorimage		textures/base_wall/snpanel24.tga
+	surfaceparm nonsolid
+	noshadows
+	bumpmap			textures/base_wall/snpanel24_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/snpanel24_d.tga
+		alphatest	.55
+	}
+	specularmap		textures/base_wall/snpanel24_s.tga
+}
+
+textures/base_wall/snpanel25
+{
+	qer_editorimage		textures/base_wall/snpanel25.tga
+	bumpmap			textures/base_wall/snpanel25_local.tga
+	diffusemap		textures/base_wall/snpanel25_d.tga
+}
+
+textures/base_wall/snpanel25a
+{
+	qer_editorimage		textures/base_wall/snpanel25a.tga
+	bumpmap			textures/base_wall/snpanel25_local.tga
+	diffusemap		textures/base_wall/snpanel25a_d.tga
+}
+
+textures/base_wall/snpanel25_add
+{
+	translucent
+	surfaceparm nonsolid
+	qer_editorimage		textures/base_wall/snpanel25_add.tga
+	{
+		blend		add
+		map		textures/base_wall/snpanel25_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_wall/snpanel26
+{
+	qer_editorimage		textures/base_wall/snpanel26.tga
+	bumpmap			textures/base_wall/snpanel26_local.tga
+	diffusemap		textures/base_wall/snpanel26_d.tga
+}
+
+textures/base_wall/snpanel26
+{
+	qer_editorimage		textures/base_wall/snpanel28.tga
+	bumpmap			addnormals ( textures/base_wall/snpanel28_local.tga, heightmap (textures/base_wall/snpanel28_bmp.tga, 3) )
+		
+	diffusemap		textures/base_wall/snpanel28_d.tga
+	specularmap		textures/base_wall/snpanel28_s.tga
+}
+
+
+//S M panel***************************************************************************************************************************
+
+textures/base_wall/smpanel1
+{
+	qer_editorimage		textures/base_wall/smpanel1.tga
+	bumpmap			addnormals (textures/base_wall/smpanel1_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel1_d.tga
+
+}
+
+textures/base_wall/smpanel1a
+{
+	qer_editorimage		textures/base_wall/smpanel1a.tga
+	bumpmap			addnormals (textures/base_wall/smpanel1a_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel1a_d.tga
+
+}
+
+textures/base_wall/smpanel2
+{
+	qer_editorimage		textures/base_wall/smpanel2.tga
+	bumpmap			addnormals (textures/base_wall/smpanel2_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel2_d.tga
+
+}
+
+textures/base_wall/smpanel2a
+{
+	qer_editorimage		textures/base_wall/smpanel2a.tga
+	bumpmap			addnormals (textures/base_wall/smpanel2a_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel2a_d.tga
+
+}
+
+textures/base_wall/smpanel3
+{
+	qer_editorimage		textures/base_wall/smpanel3.tga
+	bumpmap			addnormals (textures/base_wall/smpanel3_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel3_d.tga
+
+}
+
+textures/base_wall/smpanel3a
+{
+	qer_editorimage		textures/base_wall/smpanel3a.tga
+	bumpmap			addnormals (textures/base_wall/smpanel3a_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel3a_d.tga
+
+}
+
+textures/base_wall/smpanel4
+{
+	qer_editorimage		textures/base_wall/smpanel4.tga
+	bumpmap			addnormals (textures/base_wall/smpanel4_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel4_d.tga
+
+}
+
+textures/base_wall/smpanel4a
+{
+	qer_editorimage	textures/base_wall/smpanel4a.tga
+	bumpmap			addnormals (textures/base_wall/smpanel4a_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel4a_d.tga
+
+}
+
+textures/base_wall/smpanel5
+{
+	qer_editorimage		textures/base_wall/smpanel5.tga
+	bumpmap			addnormals (textures/base_wall/smpanel5_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel5_d.tga
+
+}
+
+textures/base_wall/smpanel5a
+{
+	qer_editorimage		textures/base_wall/smpanel5a.tga
+	bumpmap			addnormals (textures/base_wall/smpanel5a_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel5a_d.tga
+
+}
+
+textures/base_wall/smpanel6
+{
+	qer_editorimage		textures/base_wall/smpanel6.tga
+	bumpmap			addnormals (textures/base_wall/smpanel6_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel6_d.tga
+
+}
+
+textures/base_wall/smpanel7
+{
+	qer_editorimage		textures/base_wall/smpanel7.tga
+	bumpmap			addnormals (textures/base_wall/smpanel7_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel7_d.tga
+
+}
+
+textures/base_wall/smpanel8
+{
+	qer_editorimage		textures/base_wall/smpanel8.tga
+	bumpmap			addnormals (textures/base_wall/smpanel8_local.tga, heightmap (textures/base_wall/smpanel8_bmp.tga, 2) )
+	diffusemap		textures/base_wall/smpanel8_d.tga
+
+}
+
+textures/base_wall/superpipes
+{
+	qer_editorimage		textures/base_wall/superpipes
+	bumpmap			textures/base_wall/superpipes_local.tga
+	diffusemap		textures/base_wall/superpipes_d.tga
+	specularmap		textures/base_wall/superpipes_s.tga
+}
+
+//S L panel***************************************************************************************************************************
+
+textures/base_wall/slpanel1
+{
+	qer_editorimage		textures/base_wall/slpanel1
+	bumpmap			textures/base_wall/slpanel1_local.tga
+	diffusemap		textures/base_wall/slpanel1_d.tga
+	specularmap		textures/base_wall/slpanel1_s.tga
+}
+
+textures/base_wall/slpanel1a
+{
+	qer_editorimage		textures/base_wall/slpanel1a
+	bumpmap			textures/base_wall/slpanel1_local.tga
+	diffusemap		textures/base_wall/slpanel1a_d.tga
+	specularmap		textures/base_wall/slpanel1_s.tga
+}
+
+textures/base_wall/slpanel2
+{
+	qer_editorimage		textures/base_wall/slpanel2
+	bumpmap			textures/base_wall/slpanel2_local.tga
+	diffusemap		textures/base_wall/slpanel2_d.tga
+	specularmap		textures/base_wall/slpanel2_s.tga
+}
+
+textures/base_wall/slpanel2a
+{
+	qer_editorimage		textures/base_wall/slpanel2a
+	bumpmap			textures/base_wall/slpanel2_local.tga
+	diffusemap		textures/base_wall/slpanel2_d.tga
+	specularmap		textures/base_wall/slpanel2_s.tga
+	{
+		blend		add
+		map		textures/base_wall/slpanel2_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_wall/slpanel3
+{
+	qer_editorimage		textures/base_wall/slpanel3
+	bumpmap			textures/base_wall/slpanel3_local.tga
+	diffusemap		textures/base_wall/slpanel3_d.tga
+	specularmap		textures/base_wall/slpanel3_s.tga
+}
+
+textures/base_wall/slpanelpipe
+{
+	qer_editorimage		textures/base_wall/slpanelpipe
+	bumpmap			textures/base_wall/slpanelpipe_local.tga
+	diffusemap		textures/base_wall/slpanelpipe_d.tga
+	specularmap		textures/base_wall/slpanelpipe_s.tga
+}
+
+textures/base_wall/longpanel
+{
+	qer_editorimage		textures/base_wall/longpanel.tga
+	{
+		blend		bumpmap
+		map		textures/base_wall/longpanel_local.tga
+		scale		1 , 8
+	}
+	diffusemap		textures/base_wall/longpanel.tga
+	{
+		blend		specularmap	
+		map		textures/base_wall/longpanel_s.tga
+		scale 		1,8
+	}
+}
+
+textures/base_wall/conctest
+{
+	qer_editorimage		textures/base_wall/conctest.tga
+	bumpmap			heightmap (textures/base_wall/conctest_bmp.tga, 4)
+	diffusemap		textures/base_wall/conctest.tga
+}
+
+textures/base_wall/tramtrim
+{
+	qer_editorimage		textures/base_wall/tramtrim.tga
+	bumpmap			textures/base_wall/tramtrim_local.tga
+	diffusemap		textures/base_wall/tramtrim_d.tga
+	specularmap		textures/base_wall/tramtrim_s.tga
+}
+
+textures/base_wall/tramwall2
+{
+	qer_editorimage		textures/base_wall/tramwall2.tga
+	bumpmap			textures/base_wall/tramwall2_local.tga
+	{
+				blend gl_zero,gl_one
+				map textures/base_wall/tramwall2_local.tga
+				alphatest .55
+	}
+	diffusemap		textures/base_wall/tramwall2_d.tga
+	specularmap		textures/base_wall/tramwall2_s.tga
+}
+
+textures/base_wall/tramwall1
+{
+	qer_editorimage		textures/base_wall/tramwall1.tga
+	bumpmap			textures/base_wall/tramwall1_local.tga
+	diffusemap		textures/base_wall/tramwall1_d.tga
+	specularmap		textures/base_wall/tramwall1_s.tga
+}
+
+//S K panel***************************************************************************************************************************
+
+
+textures/base_wall/skpanelT
+{
+	qer_editorimage		textures/base_wall/skpanelT.tga
+	bumpmap			textures/base_wall/skpanelT_local.tga
+	diffusemap		textures/base_wall/skpanelT_d.tga
+	specularmap		textures/base_wall/skpanelT_s.tga
+}
+
+textures/base_wall/skpanel26
+{
+	qer_editorimage		textures/base_wall/skpanel26.tga
+	bumpmap			textures/base_wall/skpanel26_local.tga
+	diffusemap		textures/base_wall/skpanel26_d.tga
+	specularmap		textures/base_wall/skpanel26_s.tga
+}
+
+textures/base_wall/skpanel25a
+{	
+	qer_editorimage		textures/base_wall/skpanel25a.tga
+	bumpmap			textures/base_wall/skpanel25_local.tga
+	diffusemap		textures/base_wall/skpanel25a.tga
+	specularmap		textures/base_wall/skpanel25_s.tga
+}
+
+
+textures/base_wall/skpanel25b
+{
+	qer_editorimage		textures/base_wall/skpanel25b.tga
+	bumpmap			textures/base_wall/skpanel25b_local.tga
+	diffusemap		textures/base_wall/skpanel25b_d.tga
+	specularmap		textures/base_wall/skpanel25b_s.tga
+}
+
+textures/base_wall/skpanel25
+{
+	qer_editorimage		textures/base_wall/skpanel25.tga
+	bumpmap			textures/base_wall/skpanel25_local.tga
+	diffusemap		textures/base_wall/skpanel25_d.tga
+	specularmap		textures/base_wall/skpanel25_s.tga
+}
+
+textures/base_wall/skpanel24
+{
+	qer_editorimage		textures/base_wall/skpanel24.tga
+	bumpmap			textures/base_wall/skpanel24_local.tga
+	diffusemap		textures/base_wall/skpanel24_d.tga
+	specularmap		textures/base_wall/skpanel24_s.tga
+}
+
+textures/base_wall/skpanel23
+{
+	qer_editorimage		textures/base_wall/skpanel23.tga
+	bumpmap			textures/base_wall/skpanel23_local.tga
+	diffusemap		textures/base_wall/skpanel23_d.tga
+	specularmap		textures/base_wall/skpanel23_s.tga
+}
+
+textures/base_wall/skpanel22
+{
+	qer_editorimage		textures/base_wall/skpanel22.tga
+	bumpmap			textures/base_wall/skpanel22_local.tga
+	diffusemap		textures/base_wall/skpanel22_d.tga
+	specularmap		textures/base_wall/skpanel22_s.tga
+}
+
+textures/base_wall/skpanel21
+{
+	qer_editorimage		textures/base_wall/skpanel21.tga
+	bumpmap			textures/base_wall/skpanel21_local.tga
+	diffusemap		textures/base_wall/skpanel21_d.tga
+	specularmap		textures/base_wall/skpanel21_s.tga
+}
+
+textures/base_wall/skpanel20
+{
+	qer_editorimage		textures/base_wall/skpanel20.tga
+	bumpmap			textures/base_wall/skpanel20_local.tga
+	diffusemap		textures/base_wall/skpanel20_d.tga
+	specularmap		textures/base_wall/skpanel20_s.tga
+}
+
+textures/base_wall/skpanel19
+{
+	qer_editorimage		textures/base_wall/skpanel19.tga
+	bumpmap			textures/base_wall/skpanel19_local.tga
+	diffusemap		textures/base_wall/skpanel19_d.tga
+	specularmap		textures/base_wall/skpanel19_s.tga
+}
+
+textures/base_wall/skpanel18
+{	
+	qer_editorimage		textures/base_wall/skpanel18.tga
+	bumpmap			textures/base_wall/skpanel18_local.tga
+	diffusemap		textures/base_wall/skpanel18_d.tga
+	specularmap		textures/base_wall/skpanel18_s.tga
+}
+
+textures/base_wall/skpanel17cg
+{
+	qer_editorimage		textures/base_wall/skpanel17cg.tga
+	bumpmap			textures/base_wall/skpanel17_local.tga
+	diffusemap		textures/base_wall/skpanel17cg_d.tga
+	specularmap		textures/base_wall/skpanel17cg_s.tga
+}
+
+textures/base_wall/skpanel17e_d
+{
+	qer_editorimage		textures/base_wall/skpanel17e_d.tga
+	bumpmap			textures/base_wall/skpanel17_local.tga
+	diffusemap		textures/base_wall/skpanel17e_d.tga
+	specularmap		textures/base_wall/skpanel17_s.tga
+}
+
+textures/base_wall/skpanel17d_d
+{
+	qer_editorimage		textures/base_wall/skpanel17d_d.tga
+	bumpmap			textures/base_wall/skpanel17_local.tga
+	diffusemap		textures/base_wall/skpanel17d_d.tga
+	specularmap		textures/base_wall/skpanel17_s.tga
+}
+
+textures/base_wall/skpanel17c_d
+{
+	qer_editorimage		textures/base_wall/skpanel17c_d.tga
+	bumpmap			textures/base_wall/skpanel17_local.tga
+	diffusemap		textures/base_wall/skpanel17c_d.tga
+	specularmap		textures/base_wall/skpanel17_s.tga
+}
+
+textures/base_wall/skpanel17b_d
+{
+	qer_editorimage		textures/base_wall/skpanel17b_d.tga
+	bumpmap			textures/base_wall/skpanel17_local.tga
+	diffusemap		textures/base_wall/skpanel17b_d.tga
+	specularmap		textures/base_wall/skpanel17_s.tga
+}
+
+textures/base_wall/skpanel17a_d
+{
+	qer_editorimage		textures/base_wall/skpanel17a_d.tga
+	bumpmap			textures/base_wall/skpanel17_local.tga
+	diffusemap		textures/base_wall/skpanel17a_d.tga
+	specularmap		textures/base_wall/skpanel17_s.tga
+}
+
+/**
+textures/base_wall/skpanel17
+{
+	qer_editorimage		textures/base_wall/skpanel17.tga
+	bumpmap			textures/base_wall/skpanel17_local.tga
+	diffusemap		textures/base_wall/skpanel17_d.tga
+	specularmap		textures/base_wall/skpanel17_s.tga
+}
+**/
+
+textures/base_wall/skpanel16a
+{
+	qer_editorimage		textures/base_wall/skpanel16a.tga
+	bumpmap			textures/base_wall/skpanel16a_local.tga
+	diffusemap		textures/base_wall/skpanel16a_d.tga
+	specularmap		textures/base_wall/skpanel16a_s.tga
+}
+
+textures/base_wall/skpanel16
+{
+	qer_editorimage		textures/base_wall/skpanel16.tga
+	bumpmap			textures/base_wall/skpanel16_local.tga
+	diffusemap		textures/base_wall/skpanel16_d.tga
+	specularmap		textures/base_wall/skpanel16_s.tga
+}
+
+textures/base_wall/skpanel15
+{
+	qer_editorimage		textures/base_wall/skpanel15.tga
+	bumpmap			textures/base_wall/skpanel15_local.tga
+	diffusemap		textures/base_wall/skpanel15_d.tga
+	specularmap		textures/base_wall/skpanel15_s.tga
+}
+
+textures/base_wall/skpanel14
+{
+	qer_editorimage		textures/base_wall/skpanel14.tga
+	bumpmap			textures/base_wall/skpanel14_local.tga
+	diffusemap		textures/base_wall/skpanel14_d.tga
+	specularmap		textures/base_wall/skpanel14_s.tga
+}
+
+textures/base_wall/skpanel13b
+{
+	qer_editorimage		textures/base_wall/skpanel13b.tga
+	bumpmap			textures/base_wall/skpanel13_local.tga
+	diffusemap		textures/base_wall/skpanel13b.tga
+	specularmap		textures/base_wall/skpanel13_s.tga
+}
+
+textures/base_wall/skpanel13a
+{
+	qer_editorimage		textures/base_wall/skpanel13a.tga
+	bumpmap			textures/base_wall/skpanel13_local.tga
+	diffusemap		textures/base_wall/skpanel13a.tga
+	specularmap		textures/base_wall/skpanel13_s.tga
+}
+
+textures/base_wall/skpanel13
+{
+	qer_editorimage		textures/base_wall/skpanel13.tga
+	bumpmap			textures/base_wall/skpanel13_local.tga
+	diffusemap		textures/base_wall/skpanel13c.tga
+	specularmap		textures/base_wall/skpanel13_s.tga
+}
+
+textures/base_wall/skpanel12b
+{
+	qer_editorimage		textures/base_wall/skpanel12b.tga
+	bumpmap			textures/base_wall/skpanel12_local.tga
+	diffusemap		textures/base_wall/skpanel12b.tga
+	specularmap		textures/base_wall/skpanel12_s.tga
+}
+
+textures/base_wall/skpanel12a
+{
+	qer_editorimage		textures/base_wall/skpanel12a.tga
+	bumpmap			textures/base_wall/skpanel12_local.tga
+	diffusemap		textures/base_wall/skpanel12a.tga
+	specularmap		textures/base_wall/skpanel12_s.tga
+}
+
+textures/base_wall/skpanel12
+{	
+	qer_editorimage		textures/base_wall/skpanel12.tga
+	bumpmap			textures/base_wall/skpanel12_local.tga
+	diffusemap		textures/base_wall/skpanel12_d.tga
+	specularmap		textures/base_wall/skpanel12_s.tga
+}
+
+textures/base_wall/skpanel11a
+{	
+	qer_editorimage		textures/base_wall/skpanel11a.tga
+	bumpmap			textures/base_wall/skpanel11_local.tga
+	diffusemap		textures/base_wall/skpanel11a.tga
+	specularmap		textures/base_wall/skpanel11_s.tga
+}
+
+textures/base_wall/skpanel11
+{
+	qer_editorimage		textures/base_wall/skpanel11.tga
+	bumpmap			textures/base_wall/skpanel11_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/skpanel11_d.tga
+		rgb		Parm3
+	}
+	specularmap		textures/base_wall/skpanel11_s.tga
+}
+
+textures/base_wall/skpanel10
+{
+	twosided
+	noshadows
+	qer_editorimage		textures/base_wall/skpanel10.tga
+	bumpmap			textures/base_wall/skpanel10_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/skpanel10_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_wall/skpanel10_s.tga
+}
+
+textures/base_wall/skpanel9
+{
+	twosided
+	noshadows
+	qer_editorimage		textures/base_wall/skpanel9.tga
+	bumpmap			textures/base_wall/skpanel9_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/skpanel9_d.tga	
+		alphatest 	.5
+	}
+	specularmap		textures/base_wall/skpanel9_s.tga
+}
+
+textures/base_wall/skpanel8
+{
+	qer_editorimage		textures/base_wall/skpanel8.tga
+	bumpmap			textures/base_wall/skpanel8_local.tga
+	diffusemap		textures/base_wall/skpanel8_d.tga
+	specularmap		textures/base_wall/skpanel8_s.tga
+}
+
+textures/base_wall/skpanel8a
+{
+	qer_editorimage		textures/base_wall/skpanel8a.tga
+	bumpmap			textures/base_wall/skpanel8a_local.tga
+	diffusemap		textures/base_wall/skpanel8a.tga
+	specularmap		textures/base_wall/skpanel8a_s.tga
+}
+
+textures/base_wall/skpanel7
+{
+	qer_editorimage		textures/base_wall/skpanel7.tga
+	bumpmap			textures/base_wall/skpanel7_local.tga
+	diffusemap		textures/base_wall/skpanel7_d.tga
+	specularmap		textures/base_wall/skpanel7_s.tga
+	{
+		blend add
+		map		textures/base_wall/skpanel7_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_wall/skpanel6
+{
+	qer_editorimage		textures/base_wall/skpanel6.tga
+	bumpmap			textures/base_wall/skpanel6_local.tga
+	diffusemap		textures/base_wall/skpanel6_d.tga
+	specularmap		textures/base_wall/skpanel6_s.tga
+}
+
+textures/base_wall/skpanel5
+{
+	qer_editorimage		textures/base_wall/skpanel5.tga
+	bumpmap			textures/base_wall/skpanel5_local.tga
+	diffusemap		textures/base_wall/skpanel5_d.tga
+	specularmap		textures/base_wall/skpanel5_s.tga
+}
+
+textures/base_wall/skpanel4
+{
+	qer_editorimage		textures/base_wall/skpanel4.tga
+	bumpmap			textures/base_wall/skpanel4_local.tga
+	diffusemap		textures/base_wall/skpanel4_d.tga
+	specularmap		textures/base_wall/skpanel4_s.tga
+}
+
+textures/base_wall/skpanel3b
+{
+	qer_editorimage		textures/base_wall/skpanel3b.tga
+	bumpmap			textures/base_wall/skpanel3_local.tga
+	diffusemap		textures/base_wall/skpanel3b_d.tga
+	specularmap		textures/base_wall/skpanel3_s.tga
+	{
+		blend 		add
+		map		textures/base_wall/skpanel3_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_wall/skpanel3a
+{
+	qer_editorimage		textures/base_wall/skpanel3a.tga
+	bumpmap			textures/base_wall/skpanel3_local.tga
+	diffusemap		textures/base_wall/skpanel3b_d.tga
+	specularmap		textures/base_wall/skpanel3_s.tga
+	{
+		blend 		add
+		map		textures/base_wall/skpanel3a_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_wall/skpanel3
+{
+	qer_editorimage		textures/base_wall/skpanel3.tga
+	bumpmap			textures/base_wall/skpanel3_local.tga
+	diffusemap		textures/base_wall/skpanel3_d.tga
+	specularmap		textures/base_wall/skpanel3_s.tga
+	{
+		blend 		add
+		map		textures/base_wall/skpanel3_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_wall/skpanel2
+{
+	qer_editorimage		textures/base_wall/skpanel2.tga
+	bumpmap			textures/base_wall/skpanel2_local.tga
+	diffusemap		textures/base_wall/skpanel2_d.tga
+	specularmap		textures/base_wall/skpanel2_s.tga
+}
+
+textures/base_wall/skpanel1b
+{
+	qer_editorimage		textures/base_wall/skpanel1b.tga
+	bumpmap			textures/base_wall/skpanel1_local.tga
+	diffusemap		textures/base_wall/skpanel1b.tga
+	specularmap		textures/base_wall/skpanel1_s.tga
+}
+
+textures/base_wall/skpanel1a
+{
+	qer_editorimage		textures/base_wall/skpanel1a.tga
+	bumpmap			textures/base_wall/skpanel1_local.tga
+	diffusemap		textures/base_wall/skpanel1a.tga
+	specularmap		textures/base_wall/skpanel1_s.tga
+}
+
+textures/base_wall/skpanel1
+{
+	qer_editorimage		textures/base_wall/skpanel1.tga
+	bumpmap			textures/base_wall/skpanel1_local.tga
+	diffusemap		textures/base_wall/skpanel1_d.tga
+	specularmap		textures/base_wall/skpanel1_s.tga
+}
+
+textures/base_wall/reactorcircles
+{
+	qer_editorimage		textures/base_wall/reactorcircles.tga
+	bumpmap			textures/base_wall/reactorcircles_local.tga
+	diffusemap		textures/base_wall/reactorcircles_d.tga
+	specularmap		textures/base_wall/reactorcircles_s.tga
+}
+
+textures/base_wall/reactorwalla3b2
+{
+	qer_editorimage		textures/base_wall/reactorwalla3b2.tga
+	diffusemap		textures/base_wall/reactorwalla3b2.tga
+	specularmap		textures/base_wall/reactorwalla3a2_s.tga
+}	
+
+
+textures/base_wall/reactorwalla3b
+{
+	qer_editorimage		textures/base_wall/reactorwalla3b.tga
+	bumpmap			textures/base_wall/reactorwalla3a_local.tga
+	diffusemap		textures/base_wall/reactorwalla3b.tga
+	specularmap		textures/base_wall/reactorwalla3a_s.tga
+}	
+
+textures/base_wall/reactorwalla3a2
+{
+	qer_editorimage		textures/base_wall/reactorwalla3a2.tga
+	diffusemap		textures/base_wall/reactorwalla3a2.tga
+	specularmap		textures/base_wall/reactorwalla3a2_s.tga
+}	
+
+textures/base_wall/reactorwalla3a
+{
+	qer_editorimage		textures/base_wall/reactorwalla3a.tga
+	bumpmap			textures/base_wall/reactorwalla3a_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/reactorwalla3a.tga
+		colored
+	}
+	specularmap		textures/base_wall/reactorwalla3a_s.tga
+}	
+
+textures/base_wall/reactorwall1a5
+{	
+	qer_editorimage		textures/base_wall/reactorwall1a5.tga
+	bumpmap			textures/base_wall/reactorwall1a3_local.tga
+	diffusemap		textures/base_wall/reactorwall1a5.tga
+	specularmap		textures/base_wall/reactorwall1a3_s.tga
+}
+
+textures/base_wall/reactorwall1a4
+{
+	qer_editorimage		textures/base_wall/reactorwall1a4.tga
+	bumpmap			textures/base_wall/reactorwall1a3_local.tga
+	diffusemap		textures/base_wall/reactorwall1a4.tga
+	specularmap		textures/base_wall/reactorwall1a3_s.tga
+}
+
+textures/base_wall/reactorwall1a3
+{
+	qer_editorimage		textures/base_wall/reactorwall1a3.tga
+	bumpmap			textures/base_wall/reactorwall1a3_local.tga
+	diffusemap		textures/base_wall/reactorwall1a3_d.tga
+	specularmap		textures/base_wall/reactorwall1a3_s.tga
+}
+
+textures/base_wall/reactorwall1a2
+{
+	qer_editorimage		textures/base_wall/reactorwall1a2.tga
+	bumpmap			textures/base_wall/reactorwall1_local.tga
+	diffusemap		textures/base_wall/reactorwall1a2_d.tga
+	specularmap		textures/base_wall/reactorwall1a2_s.tga
+}
+
+textures/base_wall/reactorwall1a
+{
+	qer_editorimage		textures/base_wall/reactorwall1a.tga
+	bumpmap			textures/base_wall/reactorwall1a_local.tga
+	diffusemap		textures/base_wall/reactorwall1a_d.tga
+	specularmap		textures/base_wall/reactorwall1a_s.tga
+}
+
+textures/base_wall/reactorwall1
+{
+	qer_editorimage		textures/base_wall/reactorwall1.tga
+	bumpmap			textures/base_wall/reactorwall1_local.tga
+	diffusemap		textures/base_wall/reactorwall1_d.tga
+	specularmap		textures/base_wall/reactorwall1_s.tga
+}
+
+textures/base_wall/pipevent_2
+{
+	qer_editorimage		textures/base_wall/pipevent_2.tga
+	bumpmap			textures/base_wall/pipevent_2_local.tga
+	diffusemap		textures/base_wall/pipevent_2_d.tga
+	specularmap		textures/base_wall/pipevent_2_s.tga
+}
+
+textures/base_wall/bluetex1e2
+{
+	qer_editorimage		textures/base_wall/bluetex1e2.tga
+	bumpmap			textures/base_wall/bluetex1e2_local.tga
+	diffusemap		textures/base_wall/bluetex1e2_d.tga
+	specularmap		textures/base_wall/bluetex1e2_s.tga
+}
+
+textures/base_wall/techgrate2
+{
+	qer_editorimage		textures/base_wall/techgrate2.tga
+	bumpmap			textures/base_wall/techgrate2_local.tga
+	diffusemap		textures/base_wall/techgrate2_d.tga
+	specularmap		textures/base_wall/techgrate2_s.tga
+}
+
+
+//============================================================================================================
+//base_trim
+//============================================================================================================
+
+textures/decals/lightgrate
+{
+	noshadows
+	twoSided
+	qer_editorimage		textures/decals/lightgrate.tga
+	sort 3
+	bumpmap			textures/decals/lightgrate_local.tga
+	
+	{
+		blend		diffusemap
+		map		textures/decals/lightgrate_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/decals/lightgrate_s.tga
+}
+
+textures/base_trim/redhaz3
+{
+	qer_editorimage 	textures/base_trim/redhaz3.tga
+	bumpmap			heightmap (textures/base_trim/redhaz3_bmp.tga, 4)
+	diffusemap		textures/base_trim/redhaz3.tga
+}
+
+textures/base_trim/skpaneltrim2
+{
+	qer_editorimage 	textures/base_trim/skpaneltrim2.tga
+	bumpmap			textures/base_trim/skpaneltrim2_local.tga
+	diffusemap		textures/base_trim/skpaneltrim2_d.tga
+	specularmap		textures/base_trim/skpaneltrim2_s.tga
+}
+
+textures/base_trim/skpaneltrim1
+{
+	qer_editorimage 	textures/base_trim/skpaneltrim1.tga
+	bumpmap			textures/base_trim/skpaneltrim1_local.tga
+	diffusemap		textures/base_trim/skpaneltrim1_d.tga
+	specularmap		textures/base_trim/skpaneltrim1_s.tga
+}
+
+textures/base_trim/glasscountertop
+{
+	qer_editorimage 	textures/base_trim/glasscountertop.tga
+	bumpmap			textures/base_trim/glasscountertop_local.tga
+	diffusemap		textures/base_trim/glasscountertop_d.tga
+	specularmap		textures/base_trim/glasscountertop_s.tga
+ }
+
+textures/base_trim/reactorfence
+{
+	qer_editorimage	textures/base_trim/reactorfence.tga
+	twoSided
+	noshadows
+	{
+		blend		bumpmap
+		map		textures/base_trim/reactorfence_local.tga
+	}
+	{
+		blend 		specularmap
+		map		textures/base_trim/reactorfence_s.tga
+	}
+	{
+		blend		 diffusemap
+		map		textures/base_trim/reactorfence_d.tga
+		alphatest 	0.5
+	}
+}
+
+
+textures/base_trim/reactorgirder1
+{
+	qer_editorimage	textures/base_trim/reactorgirder1.tga
+	twoSided
+	noshadows
+	{
+		blend		bumpmap
+		map		textures/base_trim/reactorgirder1_local.tga
+	}
+	{
+		blend 		specularmap
+		map		textures/base_trim/reactorgirder1_s.tga
+	}
+	{
+		blend 		diffusemap
+		map		textures/base_trim/reactorgirder1_d.tga
+		alphatest	0.5
+	}
+}
+
+textures/base_trim/reactorep2
+{
+	qer_editorimage		textures/base_trim/reactorep2.tga
+	bumpmap			textures/base_trim/reactorep2_local.tga
+	diffusemap		textures/base_trim/reactorep2_d.tga
+	specularmap		textures/base_trim/reactorep2_s.tga
+}
+
+textures/base_trim/reactorep
+{
+	qer_editorimage		textures/base_trim/reactorep.tga
+	bumpmap			textures/base_trim/reactorep_local.tga
+	diffusemap		textures/base_trim/reactorep_d.tga
+	specularmap		textures/base_trim/reactorep_s.tga
+}
+
+textures/base_trim/reactortrim3
+{
+	qer_editorimage		textures/base_trim/reactortrim3.tga
+	bumpmap			textures/base_trim/reactortrim3_local.tga
+	diffusemap		textures/base_trim/reactortrim3_d.tga
+	specularmap		textures/base_trim/reactortrim3_s.tga
+}
+
+textures/base_trim/reactortrim2
+{
+	qer_editorimage		textures/base_trim/reactortrim2.tga
+	bumpmap			textures/base_trim/reactortrim2_local.tga
+	diffusemap		textures/base_trim/reactortrim_d.tga
+	specularmap		textures/base_trim/reactortrim_s.tga
+}
+
+textures/base_trim/reactortrim
+{
+	qer_editorimage		textures/base_trim/reactortrim.tga
+	bumpmap			textures/base_trim/reactortrim_local.tga
+	diffusemap		textures/base_trim/reactortrim_d.tga
+	specularmap		textures/base_trim/reactortrim_s.tga
+}
+
+textures/base_trim/reactorpipe2
+{
+	qer_editorimage		textures/base_trim/reactorpipe2.tga
+	bumpmap			textures/base_trim/reactorpipe2_local.tga
+	diffusemap		textures/base_trim/reactorpipe2.tga
+	specularmap		textures/base_trim/reactorpipe2_s.tga
+}
+
+textures/base_trim/reactorpipe
+{
+	qer_editorimage		textures/base_trim/reactorpipe.tga
+	bumpmap			textures/base_trim/reactorpipe_local.tga
+	diffusemap		textures/base_trim/reactorpipe_d.tga
+	specularmap		textures/base_trim/reactorpipe_s.tga
+}
+
+textures/base_trim/sp6
+{
+	qer_editorimage		textures/base_trim/sp6.tga
+	bumpmap			textures/base_trim/sp6_local.tga
+	diffusemap		textures/base_trim/sp6_d.tga
+	specularmap		textures/base_trim/sp6_s.tga
+}
+
+textures/base_trim/sp5
+{
+	qer_editorimage		textures/base_trim/sp5.tga
+	bumpmap			textures/base_trim/sp5_local.tga
+	diffusemap		textures/base_trim/sp5_d.tga
+	specularmap		textures/base_trim/sp5_s.tga
+}
+
+textures/base_trim/sp4
+{
+	qer_editorimage		textures/base_trim/sp4.tga
+	bumpmap			textures/base_trim/sp4_local.tga
+	diffusemap		textures/base_trim/sp4_d.tga
+	specularmap		textures/base_trim/sp4_s.tga
+}
+
+textures/base_trim/sp3
+{
+	qer_editorimage		textures/base_trim/sp3.tga
+	bumpmap			textures/base_trim/sp3_local.tga
+	diffusemap		textures/base_trim/sp3_d.tga
+	specularmap		textures/base_trim/sp3_s.tga
+}
+
+textures/base_trim/sp2
+{
+	qer_editorimage		textures/base_trim/sp2.tga
+	bumpmap			textures/base_trim/sp2_local.tga
+	diffusemap		textures/base_trim/sp2_d.tga
+	specularmap		textures/base_trim/sp2_s.tga
+}
+
+textures/base_trim/sp1
+{
+	qer_editorimage		textures/base_trim/sp1.tga
+	bumpmap			textures/base_trim/sp1_local.tga
+	diffusemap		textures/base_trim/sp1_d.tga
+	specularmap		textures/base_trim/sp1_s.tga
+}
+
+textures/base_trim/comptrim2
+{
+	qer_editorimage		textures/base_trim/comptrim2.tga
+	bumpmap			textures/base_trim/comptrim2_local.tga
+	diffusemap		textures/base_trim/comptrim2_d.tga
+	specularmap		textures/base_trim/comptrim2_s.tga
+}
+
+textures/base_trim/comptrim
+{
+	qer_editorimage		textures/base_trim/comptrim.tga
+	bumpmap			textures/base_trim/comptrim_local.tga
+	diffusemap		textures/base_trim/comptrim_d.tga
+	specularmap		textures/base_trim/comptrim_s.tga
+}
+
+textures/base_trim/tabletop2
+{
+	qer_editorimage		textures/base_trim/tabletop2.tga
+	diffusemap		textures/base_trim/tabletop2.tga
+	specularmap		textures/base_trim/tabletop2.tga
+}
+
+textures/base_trim/tabletrim2
+{
+	qer_editorimage		textures/base_trim/tabletrim2.tga
+	bumpmap			textures/base_trim/tabletrim_local.tga
+	diffusemap		textures/base_trim/tabletrim2_d.tga
+	specularmap		textures/base_trim/tabletrim2_d.tga
+}
+
+textures/base_trim/tabletop
+{
+	qer_editorimage		textures/base_trim/tabletop.tga
+	diffusemap		textures/base_trim/tabletop.tga
+}
+
+textures/base_trim/tabletrimd
+{
+	qer_editorimage		textures/base_trim/tabletrimd.tga
+	bumpmap			textures/base_trim/tabletrimd_local.tga
+	diffusemap		textures/base_trim/tabletrim_d.tga
+}
+
+textures/base_trim/tabletrimc
+{
+	qer_editorimage		textures/base_trim/tabletrimc.tga
+	bumpmap			textures/base_trim/tabletrimc_local.tga
+	diffusemap		textures/base_trim/tabletrim_d.tga
+}
+
+textures/base_trim/tabletrimb
+{
+	qer_editorimage		textures/base_trim/tabletrimb.tga
+	bumpmap			textures/base_trim/tabletrimb_local.tga
+	diffusemap		textures/base_trim/tabletrim_d.tga
+}
+
+textures/base_trim/tabletrima
+{
+	qer_editorimage		textures/base_trim/tabletrima.tga
+	bumpmap			textures/base_trim/tabletrima_local.tga
+	diffusemap		textures/base_trim/tabletrim_d.tga
+}
+
+textures/base_trim/tabletrim
+{
+	qer_editorimage		textures/base_trim/tabletrim.tga
+	bumpmap			textures/base_trim/tabletrim_local.tga
+	diffusemap		textures/base_trim/tabletrim_d.tga
+}
+
+
+
+
+
+//============================================================================================================
+//base_floor
+//============================================================================================================
+
+textures/base_floor/sofloor3
+{
+	qer_editorimage		textures/base_floor/sofloor3.tga
+	bumpmap			textures/base_floor/sofloor3_local.tga
+	diffusemap		textures/base_floor/sofloor3_d.tga	
+	specularmap		textures/base_floor/sofloor3_s.tga	
+}
+
+textures/base_floor/sofloor2
+{
+	qer_editorimage		textures/base_floor/sofloor2.tga
+	bumpmap			textures/base_floor/sofloor2_local.tga
+	diffusemap		textures/base_floor/sofloor2_d.tga	
+	specularmap		textures/base_floor/sofloor2_s.tga	
+}
+
+textures/base_floor/sofloor1
+{
+	qer_editorimage		textures/base_floor/sofloor1.tga
+	{
+		blend		bumpmap
+		map		textures/base_floor/sofloor1_local.tga
+		scale		2 , 2
+	}
+	diffusemap		textures/base_floor/sofloor1_d.tga	
+	specularmap		textures/base_floor/sofloor1_s.tga	
+}
+
+textures/base_floor/cpufloor1
+{
+	qer_editorimage		textures/base_floor/cpufloor1.tga
+	bumpmap			textures/base_floor/cpufloor1_local.tga
+	diffusemap		textures/base_floor/cpufloor1_d.tga	
+	specularmap		textures/base_floor/cpufloor1_s.tga	
+}
+
+textures/base_floor/cpufloor2
+{
+	qer_editorimage		textures/base_floor/cpufloor2.tga
+	noshadows
+	bumpmap			textures/base_floor/cpufloor2_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_floor/cpufloor2_d.tga	
+		alphatest	0.55
+	}
+	specularmap		textures/base_floor/cpufloor2_s.tga	
+}
+
+textures/base_floor/plfloor
+{
+	qer_editorimage		textures/base_floor/plfloor.tga
+	bumpmap			heightmap (textures/base_floor/plfloor_bmp.tga, 4)
+	diffusemap		textures/base_floor/plfloor.tga
+}
+
+textures/base_floor/tramfloor
+{
+	qer_editorimage		textures/base_floor/tramfloor.tga
+	bumpmap			textures/base_floor/tramfloor_local.tga
+	diffusemap		textures/base_floor/tramfloor_d.tga
+	specularmap		textures/base_floor/tramfloor_s.tga
+}
+
+textures/base_floor/reactorfloor2
+{
+	qer_editorimage		textures/base_floor/reactorfloor2.tga
+	bumpmap			textures/base_floor/reactorfloor2_local.tga
+	diffusemap		textures/base_floor/reactorfloor2_d.tga
+	specularmap		textures/base_floor/reactorfloor2_s.tga
+}
+
+textures/base_floor/reactorfloor1
+{
+	qer_editorimage		textures/base_floor/reactorfloor1.tga
+	bumpmap			textures/base_floor/reactorfloor1_local.tga
+	diffusemap		textures/base_floor/reactorfloor1_d.tga
+	specularmap		textures/base_floor/reactorfloor1_s.tga
+}
+
+textures/base_floor/reactorwalk1b
+{
+	qer_editorimage		textures/base_floor/reactorwalk1b.tga
+	bumpmap			textures/base_floor/reactorwalk1a_local.tga
+	diffusemap		textures/base_floor/reactorwalk1b_d.tga
+	specularmap		textures/base_floor/reactorwalk1a_s.tga
+}
+
+textures/base_floor/reactorwalk1a
+{
+	qer_editorimage		textures/base_floor/reactorwalk1a.tga
+	bumpmap			textures/base_floor/reactorwalk1a_local.tga
+	diffusemap		textures/base_floor/reactorwalk1a_d.tga
+	specularmap		textures/base_floor/reactorwalk1a_s.tga
+}
+
+textures/base_floor/reactorwalk1
+{
+	qer_editorimage		textures/base_floor/reactorwalk1.tga
+	bumpmap			textures/base_floor/reactorwalk1_local.tga
+	diffusemap		textures/base_floor/reactorwalk1_d.tga
+	specularmap		textures/base_floor/reactorwalk1_s.tga
+}
+
+textures/base_floor/whitefloortrim
+{
+	qer_editorimage		textures/base_floor/whitefloortrim.tga
+	bumpmap			textures/base_floor/whitefloortrim_local.tga
+	diffusemap		textures/base_floor/whitefloortrim_d.tga
+	specularmap		textures/base_floor/whitefloortrim_s.tga
+}
+
+
+
+
+
+
+//============================================================================================================
+//base_light
+//============================================================================================================
+
+textures/base_light/snpanel15light
+{
+	qer_editorimage		textures/base_light/snpanel15light.tga
+	bumpmap			textures/base_light/snpanel15light_local.tga
+	diffusemap		textures/base_light/snpanel15light_d.tga
+	{
+		blend		add
+		map		textures/base_light/snpanel15light_add.tga
+		red		parm0 * 5
+		green		parm1 * 5
+		blue 		parm2 * 5
+	}
+}
+
+
+textures/base_wall/snpanel27
+{
+	qer_editorimage		textures/base_light/snpanel27.tga
+	bumpmap			textures/base_light/snpanel27_local.tga
+	diffusemap		textures/base_light/snpanel27_d.tga
+	{
+		blend		add
+		map		textures/base_light/snpanel27_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_light/whiteblock
+{
+	qer_editorimage		textures/base_light/whiteblock.tga
+	diffusemap		textures/base_light/whiteblock.tga
+	{
+		blend		add
+		map		textures/base_light/whiteblock.tga
+		rgb		Parm3
+	}
+}
+
+textures/base_light/reactorlight1a
+{
+	noshadows
+	qer_editorimage		textures/base_light/reactorlight1a.tga
+	bumpmap			textures/base_light/reactorlight1_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_light/reactorlight1a.tga
+		alphatest	.5
+	}
+	specularmap		textures/base_light/reactorlight1_s.tga
+	{
+		blend 		add
+		map 		textures/base_light/reactorlight1_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_light/reactorlight1
+{
+	qer_editorimage		textures/base_light/reactorlight1.tga
+	bumpmap			textures/base_light/reactorlight1_local.tga
+	diffusemap		textures/base_light/reactorlight1_d.tga
+	specularmap		textures/base_light/reactorlight1_s.tga
+	{
+		blend 		add
+		map 		textures/base_light/reactorlight1_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+textures/base_light/bluepillar
+{
+	qer_editorimage		textures/base_light/bluepillar.tga
+	bumpmap			textures/base_wall/bluetex1e2_local.tga
+	diffusemap		textures/base_wall/bluetex1e2_d.tga
+	specularmap		textures/base_wall/bluetex1e2_s.tga
+	{
+		blend	 	gl_one, gl_one
+		map 		textures/base_light/bluepillar_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+
+
+//============================================================================================================
+//object
+//============================================================================================================
+
+textures/object/parts_ns
+{
+	qer_editorimage		textures/object/parts.tga
+	noshadows
+	bumpmap			addnormals (textures/object/parts_local.tga, heightmap (textures/object/parts_bmp.tga, 4) ) 
+	{
+		blend		diffusemap
+		map		textures/object/parts.tga
+		alphatest	.4
+	}
+	specularmap		textures/object/parts_s.tga
+}
+
+textures/object/parts
+{
+	qer_editorimage		textures/object/parts.tga
+	bumpmap			addnormals (textures/object/parts_local.tga, heightmap (textures/object/parts_bmp.tga, 4) ) 
+	{
+		blend		diffusemap
+		map		textures/object/parts.tga
+		alphatest	.4
+	}
+	specularmap		textures/object/parts_s.tga
+}
+
+textures/object/cpupanels1
+{	
+	qer_editorimage		textures/object/cpupanels1.tga
+	bumpmap			textures/object/cpupanels1_local.tga
+	diffusemap		textures/object/cpupanels1.tga
+	specularmap		textures/object/cpupanels1_s.tga
+}
+
+textures/object/cpupanels
+{	
+	qer_editorimage		textures/object/cpupanels.tga
+	bumpmap			textures/object/cpupanels_local.tga
+	diffusemap		textures/object/cpupanels.tga
+	specularmap		textures/object/cpupanels_s.tga
+	{
+		blend		add
+		map		textures/object/cpupanels_add.tga
+	}
+}
+
+textures/object/cpupanels2
+{	
+	qer_editorimage		textures/object/cpupanels2.tga
+	noshadows		
+	twosided
+	bumpmap			textures/object/cpupanels2_local.tga
+	{
+		blend		diffusemap	
+		map		textures/object/cpupanels2.tga
+		alphatest	.5
+	}
+	specularmap		textures/object/cpupanels2_s.tga
+}
+
+textures/object/fan
+{	
+	qer_editorimage		textures/object/fan.tga
+	noshadows		
+	twosided
+	bumpmap			textures/object/fan_local.tga
+	{
+		blend		diffusemap	
+		map		textures/object/fan_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/object/fan_s.tga
+}
+
+
+textures/object/gohoser_sen
+{
+	qer_editorimage		textures/object/gohosersen.tga
+	noShadows
+	twoSided
+	bumpmap			textures/object/gohoser_y_local.tga
+	{			
+		blend		diffusemap
+		map		textures/object/gohosersen_d.tga
+		red		Parm0
+		green		Parm1
+		blue		Parm2
+		alphatest	.5
+	}
+	specularmap		textures/object/gohoser_y_s.tga
+}
+
+
+textures/object/sopbox2a
+{
+	qer_editorimage		textures/object/sopbox2a.tga
+	bumpmap			addnormals (textures/object/sopbox2_local.tga, heightmap (textures/object/sopbox2_bmp.tga, 4 ) ) 
+	{
+		blend		diffusemap
+		map		textures/object/sopbox2a.tga
+		red		Parm0
+		green		Parm1
+		blue		Parm2
+	}
+	specularmap		textures/object/sopbox2_s.tga
+}
+
+textures/object/sopbox2
+{
+	qer_editorimage		textures/object/sopbox2.tga
+	bumpmap	addnormals 	(textures/object/sopbox2_local.tga, heightmap (textures/object/sopbox2_bmp.tga, 4 ) ) 
+	{
+		blend		diffusemap
+		map		textures/object/sopbox2.tga
+		red		Parm0
+		green		Parm1
+		blue		Parm2
+	}
+	specularmap		textures/object/sopbox2_s.tga
+}
+
+textures/object/sopbox1
+{
+	qer_editorimage		textures/object/sopbox1.tga
+	bumpmap			textures/object/sopbox1_local.tga
+	{
+		blend		diffusemap
+		map		textures/object/sopbox1_d.tga
+		red		Parm0
+		green		Parm1
+		blue		Parm2
+	}
+	specularmap		textures/object/sopbox1_s.tga
+}
+
+textures/object/sodoor1b
+{
+	qer_editorimage		textures/object/sodoor1b.tga
+	bumpmap			textures/object/sodoor1b_local.tga
+	diffusemap		textures/object/sodoor1b.tga
+	specularmap		textures/object/sodoor1b.tga
+}
+
+textures/object/sodoor1a
+{
+	qer_editorimage		textures/object/sodoor1a.tga
+	bumpmap			textures/object/sodoor1a_local.tga
+	diffusemap		textures/object/sodoor1a.tga
+	specularmap		textures/object/sodoor1a.tga
+}
+
+textures/object/sodoor1
+{
+	qer_editorimage		textures/object/sodoor1.tga
+	bumpmap			textures/object/sodoor1_local.tga
+	diffusemap		textures/object/sodoor1.tga
+	specularmap		textures/object/sodoor1.tga
+}
+
+textures/object/servertex1
+{
+	qer_editorimage		textures/object/servertex1.tga
+	bumpmap			textures/object/servertex1_local.tga
+	diffusemap		textures/object/servertex1_d.tga
+	specularmap		textures/object/servertex1_s.tga
+}
+
+textures/object/cpumonitor1
+{
+	qer_editorimage		textures/object/cpumonitor1.tga
+	{
+		blend		add
+		map		textures/object/cpumonitor1.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}	
+}
+
+textures/object/cpumonitor2
+{
+	qer_editorimage		textures/object/cpumonitor2.tga
+	{
+		blend		add
+		map		textures/object/cpumonitor2.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}	
+}
+
+textures/object/cpumonitor3
+{
+	qer_editorimage		textures/object/cpumonitor3.tga
+	{
+		blend		add
+		map		textures/object/cpumonitor3.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}	
+}
+
+textures/object/cpumonitor4
+{
+	qer_editorimage		textures/object/cpumonitor4.tga
+	{
+		blend		add
+		map		textures/object/cpumonitor4.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}	
+}
+
+textures/object/cpumonitor5
+{
+	qer_editorimage		textures/object/cpumonitor5.tga
+	{
+		blend		add
+		map		textures/object/cpumonitor5.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}	
+}
+	
+textures/object/topbox
+{
+	qer_editorimage	textures/object/topbox.tga
+	bumpmap			textures/object/topbox_local.tga
+	diffusemap		textures/object/topbox_d.tga
+	specularmap		textures/object/topbox_s.tga
+}
+
+
+textures/object/pcboardshit
+{
+	qer_editorimage	textures/object/pcboardshit.tga
+	diffusemap		textures/object/pcboardshit.tga
+	specularmap		textures/object/pcboardshit_s.tga
+}
+
+textures/object/counterside
+{
+	qer_editorimage	textures/object/counterside.tga
+	bumpmap		textures/object/counterside_local.tga
+	diffusemap		textures/object/counterside_d.tga
+	specularmap		textures/object/counterside_s.tga
+}
+
+textures/object/counterfront
+{
+	qer_editorimage	textures/object/counterfront.tga
+	bumpmap		textures/object/counterfront_local.tga
+	diffusemap		textures/object/counterfront_d.tga
+	specularmap		textures/object/counterfront_s.tga
+}
+
+textures/object/bottles
+{
+	qer_editorimage	textures/object/bottles.tga
+	bumpmap		textures/object/bottles_local.tga
+	{
+		blend		diffusemap
+		map		textures/object/bottles_d.tga
+		alphatest	.5
+	}
+	specularmap		textures/object/bottles_s.tga
+}
+
+textures/object/magpage6
+{
+	qer_editorimage	textures/object/magpage6.tga
+	diffusemap		textures/object/magpage6.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/magpage5
+{
+	qer_editorimage	textures/object/magpage5.tga
+	diffusemap		textures/object/magpage5.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/magpage4
+{
+	qer_editorimage	textures/object/magpage4.tga
+	diffusemap		textures/object/magpage4.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/magpage3
+{
+	qer_editorimage	textures/object/magpage3.tga
+	diffusemap		textures/object/magpage3.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/magpage2
+{
+	qer_editorimage	textures/object/magpage2.tga
+	diffusemap		textures/object/magpage2.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/magpage1
+{
+	qer_editorimage	textures/object/magpage1.tga
+	diffusemap		textures/object/magpage1.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/magback6
+{
+	qer_editorimage	textures/object/magback6.tga
+	bumpmap		textures/object/mag_local.tga
+	diffusemap		textures/object/magback6.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/magback5
+{
+	qer_editorimage	textures/object/magback5.tga
+	bumpmap		textures/object/mag_local.tga
+	diffusemap		textures/object/magback5.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/magback4
+{
+	qer_editorimage	textures/object/magback4.tga
+	bumpmap		textures/object/mag_local.tga
+	diffusemap		textures/object/magback4.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/magback3
+{
+	qer_editorimage	textures/object/magback3.tga
+	bumpmap		textures/object/mag_local.tga
+	diffusemap		textures/object/magback3.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/magback2
+{
+	qer_editorimage	textures/object/magback2.tga
+	bumpmap		textures/object/mag_local.tga
+	diffusemap		textures/object/magback2.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/magback1
+{
+	qer_editorimage	textures/object/magback1.tga
+	bumpmap		textures/object/mag_local.tga
+	diffusemap		textures/object/magback1.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/mag6
+{
+	qer_editorimage	textures/object/mag6.tga
+	bumpmap		textures/object/mag_local.tga
+	diffusemap		textures/object/mag6.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/mag5
+{
+	qer_editorimage	textures/object/mag5.tga
+	bumpmap		textures/object/mag_local.tga
+	diffusemap		textures/object/mag5.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/mag4
+{
+	qer_editorimage	textures/object/mag4.tga
+	bumpmap		textures/object/mag_local.tga
+	diffusemap		textures/object/mag4.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/mag3
+{
+	qer_editorimage	textures/object/mag3.tga
+	bumpmap		textures/object/mag_local.tga
+	diffusemap		textures/object/mag3.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/mag2
+{
+	qer_editorimage	textures/object/mag2.tga
+	bumpmap		textures/object/mag_local.tga
+	diffusemap		textures/object/mag2.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/mag1
+{
+	qer_editorimage	textures/object/mag1.tga
+	bumpmap		textures/object/mag_local.tga
+	diffusemap		textures/object/mag1.tga
+	specularmap		textures/object/mag_s.tga
+}
+
+textures/object/magrack3
+{
+	qer_editorimage	textures/object/magrack3.tga
+	bumpmap		textures/object/magrack3_local.tga
+	diffusemap		textures/object/magrack3_d.tga
+	specularmap		textures/object/magrack3_s.tga
+}
+
+textures/object/magrack2
+{
+	qer_editorimage	textures/object/magrack2.tga
+	bumpmap		textures/object/magrack2_local.tga
+	diffusemap		textures/object/magrack2_d.tga
+	specularmap		textures/object/magrack2_s.tga
+}
+
+textures/object/magrack1
+{
+	qer_editorimage	textures/object/magrack1.tga
+	bumpmap		textures/object/magrack1_local.tga
+	diffusemap		textures/object/magrack1_d.tga
+	specularmap		textures/object/magrack1_s.tga
+}
+
+textures/object/chairtex1
+{
+	qer_editorimage		textures/object/chairtex1.tga
+	bumpmap			textures/object/chairtex1_local.tga
+	diffusemap		textures/object/chairtex1_d.tga
+	specularmap		textures/object/chairtex1_s.tga
+}
+
+textures/object/cdplayer3
+{
+	qer_editorimage		textures/object/cdplayer3.tga
+	bumpmap			textures/object/cdplayer3_local.tga
+	diffusemap		textures/object/cdplayer3_d.tga
+	specularmap		textures/object/cdplayer3_s.tga
+}
+
+textures/object/cdplayer3f
+{
+	qer_editorimage		textures/object/cdplayer3f.tga
+	bumpmap			textures/object/cdplayer3f_local.tga
+	diffusemap		textures/object/cdplayer3f_d.tga
+	specularmap		textures/object/cdplayer3f_d.tga
+}
+
+textures/object/cdplayer3e
+{
+	qer_editorimage		textures/object/cdplayer3e.tga
+	bumpmap			textures/object/cdplayer3e_local.tga
+	diffusemap		textures/object/cdplayer3e_d.tga
+	specularmap		textures/object/cdplayer3e_d.tga
+}
+
+textures/object/cdplayer3d
+{
+	qer_editorimage		textures/object/cdplayer3d.tga
+	bumpmap			textures/object/cdplayer3d_local.tga
+	diffusemap		textures/object/cdplayer3a_d.tga
+	specularmap		textures/object/cdplayer3a_d.tga
+}
+
+textures/object/cdplayer3c
+{
+	qer_editorimage		textures/object/cdplayer3c.tga
+	bumpmap			textures/object/cdplayer3c_local.tga
+	diffusemap		textures/object/cdplayer3c_d.tga
+	specularmap		textures/object/cdplayer3c_d.tga
+}
+
+textures/object/cdplayer3b
+{
+	qer_editorimage		textures/object/cdplayer3b.tga
+	bumpmap			textures/object/cdplayer3b_local.tga
+	diffusemap		textures/object/cdplayer3a_d.tga
+	specularmap		textures/object/cdplayer3a_d.tga
+}
+
+textures/object/cdplayer3a
+{
+	qer_editorimage		textures/object/cdplayer3a.tga
+	bumpmap			textures/object/cdplayer3a_local.tga
+	diffusemap		textures/object/cdplayer3a_d.tga
+	specularmap		textures/object/cdplayer3a_d.tga
+}
+
+textures/object/cdplayer2
+{
+	qer_editorimage		textures/object/cdplayer2.tga
+	bumpmap			textures/object/cdplayer2_local.tga
+	diffusemap		textures/object/cdplayer2_d.tga
+	specularmap		textures/object/cdplayer2_s.tga
+}
+
+
+
+textures/base_wall/twistlightpipe
+{
+	qer_editorimage		textures/base_wall/twistlightpipe.tga
+	bumpmap			textures/base_wall/twistlightpipe_local.tga
+	{
+		blend		diffusemap
+		map		textures/base_wall/twistlightpipe_d.tga
+	}
+	specularmap		textures/base_wall/twistlightpipe_s.tga
+	{
+		map		textures/base_wall/twistlightpipe_local.tga
+		maskcolor
+	}
+	{
+		blend		gl_dst_alpha , gl_one
+		map 		textures/base_wall/twistlightpipe_add.tga
+		rgb 		5
+		translate	time, 0.5 * time
+	}
+}
+
+
+textures/object/cdplayer
+{
+	qer_editorimage		textures/object/cdplayer.tga
+	bumpmap			textures/object/cdplayer_local.tga
+	{
+		blend		diffusemap
+		map		textures/object/cdplayer_d.tga
+	}
+	specularmap		textures/object/cdplayer_s.tga
+	{
+		map		textures/object/cdplayer_local.tga
+		maskcolor
+	}
+	{
+		blend		gl_dst_alpha , gl_one
+		map		textures/object/cdplayer_add.tga
+		red		parm0
+		green		parm1
+		blue		parm2
+		translate 	cdplayertable [ time * .2 ], 0
+	}
+}
+
+
+textures/object/post_it1
+{
+	qer_editorimage	textures/object/post_it1.tga
+	diffusemap		textures/object/post_it1.tga
+}
+	
+textures/object/post_it2
+{
+	qer_editorimage	textures/object/post_it2.tga
+	diffusemap		textures/object/post_it2.tga
+}
+
+textures/object/post_it3
+{
+	qer_editorimage	textures/object/post_it3.tga
+	diffusemap		textures/object/post_it3.tga
+}
+
+textures/object/post_it4
+{
+	qer_editorimage	textures/object/post_it4.tga
+	noshadows
+	twoSided
+	{
+		blend 	diffusemap
+		map		textures/object/post_it4.tga
+		alphaTest 0.5
+	}
+}
+
+//============================================================================================================
+//mapobjects
+//============================================================================================================
+
+
+models/mapobjects/cpu/heater2_y
+{
+	renderbump  		-size 256 64 -aa 2 models/mapobjects/cpu/heater2_local.tga models/mapobjects/cpu/work/heater2_hp.lwo
+	bumpmap			models/mapobjects/cpu/heater2_local.tga
+	diffusemap		models/mapobjects/cpu/heater2_y.tga
+	specularmap		models/mapobjects/cpu/heater2_s.tga
+}
+
+models/mapobjects/cpu/heater2
+{
+	renderbump  		-size 256 64 -aa 2 models/mapobjects/cpu/heater2_local.tga models/mapobjects/cpu/work/heater2_hp.lwo
+	bumpmap			models/mapobjects/cpu/heater2_local.tga
+	diffusemap		models/mapobjects/cpu/heater2.tga
+	specularmap		models/mapobjects/cpu/heater2_s.tga
+}
+
+models/mapobjects/cpu/heater_y
+{
+	renderbump  		-size 256 128 -aa 2 models/mapobjects/cpu/heater_local.tga models/mapobjects/cpu/work/heater_hp.lwo
+	bumpmap			models/mapobjects/cpu/heater_local.tga
+	diffusemap		models/mapobjects/cpu/heater_y.tga
+	specularmap		models/mapobjects/cpu/heater_s.tga
+}
+
+models/mapobjects/cpu/heater
+{
+	renderbump  		-size 256 128 -aa 2 models/mapobjects/cpu/heater_local.tga models/mapobjects/cpu/work/heater_hp.lwo
+	bumpmap			models/mapobjects/cpu/heater_local.tga
+	diffusemap		models/mapobjects/cpu/heater.tga
+	specularmap		models/mapobjects/cpu/heater_s.tga
+}
+
+models/mapobjects/cpu/pullhandle
+{
+	renderbump  		-size 64 128 -aa 2 models/mapobjects/cpu/pullhandle_local.tga models/mapobjects/cpu/work/pullhandle_hp.lwo
+	bumpmap			models/mapobjects/cpu/pullhandle_local.tga
+	diffusemap		models/mapobjects/cpu/pullhandle.tga
+	specularmap		models/mapobjects/cpu/pullhandle_s.tga
+}
+
+models/mapobjects/cpu/cpumaze1
+{
+	renderbump  		-size 128 512 -aa 2 -colorMap models/mapobjects/cpu/cpumaze1_local.tga models/mapobjects/cpu/work/cpumaze1_hp.lwo
+	bumpmap			models/mapobjects/cpu/cpumaze1_local.tga
+	diffusemap		models/mapobjects/cpu/cpumaze1.tga
+	specularmap		models/mapobjects/cpu/cpumaze1_s.tga
+}
+
+models/mapobjects/teleporter/teleporterunit
+{
+	renderbump  		-size 256 512 -aa 2 -colorMap models/mapobjects/teleporter/teleporterunit_local.tga models/mapobjects/teleporter/work/teleporterunit_hp.lwo
+	bumpmap			models/mapobjects/teleporter/teleporterunit_local.tga
+	diffusemap		models/mapobjects/teleporter/teleporterunit.tga
+	specularmap		models/mapobjects/teleporter/teleporterunit_s.tga
+}
+
+models/mapobjects/machineroom/mac_thing
+{
+	renderbump  		-size 512 128 -aa 2 models/mapobjects/machineroom/mac_thing_local.tga models/mapobjects/machineroom/work/mac_thing_hp.lwo
+	bumpmap			models/mapobjects/machineroom/mac_thing_local.tga
+	diffusemap		models/mapobjects/machineroom/mac_thing.tga
+	specularmap		models/mapobjects/machineroom/mac_thing_s.tga
+}
+
+models/mapobjects/machineroom/mac_britapivot
+{
+	renderbump  		-size 64 256 -aa 2 -trace .035 models/mapobjects/machineroom/mac_britapivot_local.tga models/mapobjects/machineroom/work/mac_britapivot_hp.lwo
+	bumpmap			models/mapobjects/machineroom/mac_britapivot_local.tga
+	diffusemap		models/mapobjects/machineroom/mac_britapivot.tga
+	specularmap		models/mapobjects/machineroom/mac_britapivot_s.tga
+}
+
+models/mapobjects/machineroom/mac_britacase
+{
+	renderbump  		-size 256 256 -aa 2 models/mapobjects/machineroom/mac_britacase_local.tga models/mapobjects/machineroom/work/mac_britacase_hp.lwo
+	bumpmap			models/mapobjects/machineroom/mac_britacase_local.tga
+	diffusemap		models/mapobjects/machineroom/mac_britacase.tga
+	specularmap		models/mapobjects/machineroom/mac_britacase_s.tga
+}
+
+models/mapobjects/machineroom/capsule2
+{
+	noshadows
+	{ if ( parm4 == 0 )
+		blend		diffusemap
+		map		models/mapobjects/machineroom/capsule2a.tga
+		alphatest	1
+	}
+	specularmap		models/mapobjects/machineroom/capsule2_s.tga
+//	{if ( parm4 == 0 )
+//		blend		add
+//		map		models/mapobjects/machineroom/capsule2.tga
+//		ignoreAlphaTest
+//	}
+	{ if ( parm4 == 1 )
+		blend		diffusemap
+		map		models/mapobjects/machineroom/capsule2a.tga
+		alphatest	0
+		translate 	time * 0.15 , time * 0.1
+	}
+}
+
+models/mapobjects/machineroom/capsule
+{
+	renderbump  		-size 128 128 -aa 2 models/mapobjects/machineroom/capsule_local.tga models/mapobjects/machineroom/work/capsule_hp.lwo
+	bumpmap			models/mapobjects/machineroom/capsule_local.tga
+	diffusemap		models/mapobjects/machineroom/capsule.tga
+	specularmap		models/mapobjects/machineroom/capsule_s.tga
+}
+
+models/mapobjects/machineroom/machineclaw1
+{
+//	renderbump  		-size 512 512 -aa 2 -colorMap models/mapobjects/machineroom/machineclaw1_local.tga models/mapobjects/machineroom/work/machineclaw_hp.lwo
+	bumpmap			models/mapobjects/machineroom/machineclaw1_local.tga
+	diffusemap		models/mapobjects/machineroom/machineclaw1.tga
+	specularmap		models/mapobjects/machineroom/machineclaw1_s.tga
+}
+
+models/mapobjects/machineroom/machineclaw2
+{
+	renderbump  		-size 128 256 -aa 2 -colorMap models/mapobjects/machineroom/machineclaw2_local.tga models/mapobjects/machineroom/work/machineclaw_hp.lwo
+	bumpmap			models/mapobjects/machineroom/machineclaw2_local.tga
+	diffusemap		models/mapobjects/machineroom/machineclaw2.tga
+	specularmap		models/mapobjects/machineroom/machineclaw2_s.tga
+}
+	
+models/mapobjects/cpu/ccfloortex
+{
+	noshadows
+	bumpmap			models/mapobjects/cpu/ccfloortex_local.tga
+	diffusemap		models/mapobjects/cpu/ccfloortex.tga
+	specularmap		models/mapobjects/cpu/ccfloortex_s.tga
+}
+
+models/mapobjects/cpu/comcenter1
+{
+	translucent
+	noshadows
+	{
+		blend		add
+		map		models/mapobjects/cpu/comcenter1.tga
+		rgb		3
+	}
+}
+
+models/mapobjects/cpu/comcenter
+{
+	renderbump  		-size 512 256 -aa 2 -colorMap models/mapobjects/cpu/comcenter_local.tga models/mapobjects/cpu/work/comcenter_hp.lwo
+	bumpmap			models/mapobjects/cpu/comcenter_local.tga
+	diffusemap		models/mapobjects/cpu/comcenter.tga
+	specularmap		models/mapobjects/cpu/comcenter_s.tga
+}
+
+models/mapobjects/cpu/hangingcpublock2
+{
+	noshadows
+	bumpmap			models/mapobjects/cpu/hangingcpublock2_local.tga
+	{
+		blend		diffusemap
+		map		models/mapobjects/cpu/hangingcpublock2.tga
+		alphatest 	.5
+	}
+	specularmap		models/mapobjects/cpu/hangingcpublock2_s.tga
+}
+
+models/mapobjects/cpu/hangingcpublock
+{
+	renderbump  	-size 256 128 -aa 2 -colorMap models/mapobjects/cpu/hangingcpublock_local.tga models/mapobjects/cpu/work/hangingcpublock_hp.lwo
+	bumpmap		models/mapobjects/cpu/hangingcpublock_local.tga
+	diffusemap	models/mapobjects/cpu/hangingcpublock.tga
+	specularmap	models/mapobjects/cpu/hangingcpublock_s.tga
+}
+
+models/mapobjects/boxes/metalbox1
+{
+	renderbump  	-size 256 128 -aa 2 -colorMap models/mapobjects/boxes/metalbox1_local.tga models/mapobjects/boxes/work/metalbox1_hp.lwo
+	bumpmap		models/mapobjects/boxes/metalbox1_local.tga
+	diffusemap	models/mapobjects/boxes/metalbox1.tga
+	specularmap	models/mapobjects/boxes/metalbox1_s.tga
+}
+
+models/mapobjects/cpu/cpudesk2_white
+{
+	bumpmap		models/mapobjects/cpu/cpudesk2_local.tga
+	diffusemap	models/mapobjects/cpu/cpudesk2_white.tga
+	specularmap	models/mapobjects/cpu/cpudesk2_s.tga
+}
+
+models/mapobjects/cpu/cpudesk2_yellow
+{
+	bumpmap		models/mapobjects/cpu/cpudesk2_local.tga
+	diffusemap	models/mapobjects/cpu/cpudesk2_yellow.tga
+	specularmap	models/mapobjects/cpu/cpudesk2_s.tga
+}
+
+models/mapobjects/cpu/cpudesk2_red
+{
+	bumpmap		models/mapobjects/cpu/cpudesk2_local.tga
+	diffusemap	models/mapobjects/cpu/cpudesk2_red.tga
+	specularmap	models/mapobjects/cpu/cpudesk2_s.tga
+}
+
+models/mapobjects/cpu/cpudesk2
+{
+	renderbump  	-size 256 256 -aa 2 -colorMap models/mapobjects/cpu/cpudesk2_local.tga models/mapobjects/cpu/work/cpudesk2_hp.lwo
+	bumpmap		models/mapobjects/cpu/cpudesk2_local.tga
+	diffusemap	models/mapobjects/cpu/cpudesk2.tga
+	specularmap	models/mapobjects/cpu/cpudesk2_s.tga
+}
+
+
+models/mapobjects/cpu/cpudesk1a
+{
+	bumpmap		models/mapobjects/cpu/cpudesk1_local.tga
+	diffusemap	models/mapobjects/cpu/cpudesk1a.tga
+	specularmap	models/mapobjects/cpu/cpudesk1_s.tga
+}
+
+models/mapobjects/cpu/cpudesk1
+{
+	renderbump  	-size 512 256 -aa 2 -colorMap models/mapobjects/cpu/cpudesk1_local.tga models/mapobjects/cpu/work/cpudesk1_hp.lwo
+	bumpmap		models/mapobjects/cpu/cpudesk1_local.tga
+	diffusemap	models/mapobjects/cpu/cpudesk1.tga
+	specularmap	models/mapobjects/cpu/cpudesk1_s.tga
+}
+
+models/mapobjects/cpu/boxmonitor1
+{
+	renderbump  	-size 128 64 -aa 2 -colorMap models/mapobjects/cpu/boxmonitor1_local.tga models/mapobjects/cpu/work/boxmonitor1_hp.lwo
+	bumpmap		models/mapobjects/cpu/boxmonitor1_local.tga
+	diffusemap	models/mapobjects/cpu/boxmonitor1.tga
+	specularmap	models/mapobjects/cpu/boxmonitor1_s.tga
+}
+
+models/mapobjects/cpu/cpudoorarch
+{
+	renderbump  	-size 256 256 -aa 2 -colorMap models/mapobjects/cpu/cpudoorarch_local.tga models/mapobjects/cpu/work/cpudoorarch_hp.lwo
+	bumpmap		addnormals (models/mapobjects/cpu/cpudoorarch_local.tga, heightmap (models/mapobjects/cpu/cpudoorarch_bmp.tga, 4) ) 
+	diffusemap	models/mapobjects/cpu/cpudoorarch.tga
+	specularmap	models/mapobjects/cpu/cpudoorarch_s.tga
+}
+
+models/mapobjects/cpu/comrack2
+{
+	renderbump  	-size 256 256 -aa 2 -colorMap models/mapobjects/cpu/comrack2_local.tga models/mapobjects/cpu/work/comrack2_hp.lwo
+	bumpmap		addnormals (models/mapobjects/cpu/comrack2_local.tga, heightmap (models/mapobjects/cpu/comrack2_bmp.tga, 4) ) 
+	diffusemap	models/mapobjects/cpu/comrack2.tga
+	specularmap	models/mapobjects/cpu/comrack2_s.tga
+}
+
+models/mapobjects/doors/cpudoor2light2
+{
+	noshadows
+	translucent
+	surfaceparm		nonsolid
+	{
+		blend		add
+		map		models/mapobjects/doors/cpudoor2light.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+models/mapobjects/doors/cpudoor2light
+{
+	noshadows
+	translucent
+	surfaceparm		nonsolid
+	deform flare 		16
+	qer_editorimage		textures/editor/flare.tga
+	{
+		blend		add
+		map		_quadratic
+		colored
+		vertexcolor
+	}
+}
+
+models/mapobjects/doors/cpudoor2pipes
+{
+	renderbump  	-size 32 64 -aa 2 -colorMap models/mapobjects/doors/cpudoor2pipes_local.tga models/mapobjects/doors/work/cpudoor2pipes_hp.lwo
+	bumpmap		models/mapobjects/doors/cpudoor2pipes_local.tga
+	diffusemap	models/mapobjects/doors/cpudoor2pipes_d.tga
+	specularmap	models/mapobjects/doors/cpudoor2pipes_s.tga
+}
+
+models/mapobjects/doors/cpudoor2
+{
+	renderbump  	-size 256 512 -aa 2 -colorMap models/mapobjects/doors/cpudoor2_local.tga models/mapobjects/doors/work/cpudoor2_hp.lwo
+	bumpmap		addnormals (models/mapobjects/doors/cpudoor2_local.tga, heightmap (models/mapobjects/doors/cpudoor2_bmp.tga, 4) )
+	diffusemap	models/mapobjects/doors/cpudoor2_d.tga
+	specularmap	models/mapobjects/doors/cpudoor2_s.tga
+}
+
+models/mapobjects/doors/cpudoor2r
+{
+	renderbump  	-size 128 256 -aa 2 -colorMap models/mapobjects/doors/cpudoor2r_local.tga models/mapobjects/doors/work/cpudoor2r_hp.lwo
+	bumpmap		models/mapobjects/doors/cpudoor2r_local.tga
+	diffusemap	models/mapobjects/doors/cpudoor2r_d.tga
+	specularmap	models/mapobjects/doors/cpudoor2r_s.tga
+}
+
+models/mapobjects/cpu/cpudisc
+{
+	renderbump  	-size 64 128 -aa 2 -colorMap models/mapobjects/cpu/cpudisc_local.tga models/mapobjects/cpu/work/cpudisc_hp.lwo
+	bumpmap		models/mapobjects/cpu/cpudisc_local.tga
+	diffusemap	models/mapobjects/cpu/cpudisc.tga
+	specularmap	models/mapobjects/cpu/cpudisc_s.tga
+}
+
+models/mapobjects/cpu/comrack
+{
+//	renderbump  	-size 128 256 -aa 2 models/mapobjects/cpu/comrack_local.tga models/mapobjects/cpu/work/comrack_hp.lwo
+	bumpmap		models/mapobjects/cpu/comrack_local.tga 
+	diffusemap	models/mapobjects/cpu/comrack_d.tga 
+	specularmap	models/mapobjects/cpu/comrack_s.tga 
+}
+
+models/mapobjects/cpu/xrayboardscreen
+{
+	{
+		blend	add
+		map	models/mapobjects/cpu/xrayboardscreen.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+models/mapobjects/cpu/xrayboard1
+{
+	renderbump  	-size 128 128 -aa 2 models/mapobjects/cpu/xrayboard1_local.tga models/mapobjects/cpu/work/xrayboard1_hp.lwo
+	bumpmap		models/mapobjects/cpu/xrayboard1_local.tga 
+	diffusemap	models/mapobjects/cpu/xrayboard1_d.tga 
+	specularmap	models/mapobjects/cpu/xrayboard1_s.tga 
+}
+
+models/mapobjects/cpu/cpupole2
+{
+	renderbump  	-size 128 256 -aa 2 models/mapobjects/cpu/cpupole2_local.tga models/mapobjects/cpu/work/cpupole2_hp.lwo
+	bumpmap		models/mapobjects/cpu/cpupole2_local.tga 
+	diffusemap	models/mapobjects/cpu/cpupole2_d.tga 
+	specularmap	models/mapobjects/cpu/cpupole2_s.tga 
+}
+
+models/mapobjects/cpu/cpupole2a
+{
+	bumpmap		models/mapobjects/cpu/cpupole2a_local.tga 
+	diffusemap	models/mapobjects/cpu/cpupole2a_d.tga 
+	specularmap	models/mapobjects/cpu/cpupole2a_s.tga 
+}
+
+models/mapobjects/cpu/cpufloorinsert
+{
+	renderbump  	-size 512 256 -aa 2 -trace .15 models/mapobjects/cpu/cpufloorinsert_local.tga models/mapobjects/cpu/work/cpufloorinsert_hp.lwo
+	bumpmap		addnormals (models/mapobjects/cpu/cpufloorinsert_local.tga, heightmap (models/mapobjects/cpu/cpufloorinsert_bmp.tga, 2 ) )
+		
+	diffusemap	models/mapobjects/cpu/cpufloorinsert_d.tga 
+	specularmap	models/mapobjects/cpu/cpufloorinsert_s.tga 
+}
+
+models/mapobjects/cpu/cpuoverdoor
+{
+	renderbump  	-size 128 256 -aa 2 -trace .1 models/mapobjects/cpu/cpuoverdoor_local.tga models/mapobjects/cpu/work/cpuoverdoor_hp.lwo
+	bumpmap		models/mapobjects/cpu/cpuoverdoor_local.tga 
+	diffusemap	models/mapobjects/cpu/cpuoverdoor_d.tga 
+	specularmap	models/mapobjects/cpu/cpuoverdoor_s.tga 
+}
+
+models/mapobjects/cpu/cpuhex
+{
+	renderbump  	-size 256 32 -aa 2 -trace .01 models/mapobjects/cpu/cpuhex_local.tga models/mapobjects/cpu/work/cpuhex_hp.lwo
+	bumpmap		models/mapobjects/cpu/cpuhex_local.tga 
+	diffusemap	models/mapobjects/cpu/cpuhex_d.tga 
+	specularmap	models/mapobjects/cpu/cpuhex_s.tga 
+}
+
+models/mapobjects/cpu/cpuarch1
+{
+	renderbump  	-size 256 512 -aa 2 models/mapobjects/cpu/cpuarch1_local.tga models/mapobjects/cpu/work/cpuarch1_hp.lwo
+	bumpmap		addnormals (models/mapobjects/cpu/cpuarch1_local.tga , heightmap (models/mapobjects/cpu/cpuarch1_bmp, 4) )
+	diffusemap	models/mapobjects/cpu/cpuarch1_d.tga 
+	specularmap	models/mapobjects/cpu/cpuarch1_s.tga 
+}
+
+models/mapobjects/doors/smalldoor
+{
+	qer_editorimage	models/mapobjects/doors/smalldoor_local.tga
+	renderbump  	-size 256 256 -aa 2 models/mapobjects/doors/smalldoor_local.tga models/mapobjects/doors/work/smalldoor_hp.lwo
+	bumpmap		models/mapobjects/doors/smalldoor_local.tga
+	diffusemap	models/mapobjects/doors/smalldoor_d.tga
+	specularmap	models/mapobjects/doors/smalldoor_s.tga
+}
+
+models/mapobjects/doors/smalldoor_light
+{
+	translucent
+	qer_editorimage	models/mapobjects/doors/smalldoor_light_add.tga
+	{
+		blend	add
+		map	models/mapobjects/doors/smalldoor_light_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+models/mapobjects/doors/smalldoor_sign
+{
+	translucent
+	qer_editorimage	models/mapobjects/doors/smalldoor_sign_add.tga
+	{
+		blend	add
+		map	models/mapobjects/doors/smalldoor_sign_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+models/mapobjects/doors/smalldoorblue_light
+{
+	translucent
+	qer_editorimage	models/mapobjects/doors/smalldoorblue_light_add.tga
+	{
+		blend	add
+		map	models/mapobjects/doors/smalldoorblue_light_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+models/mapobjects/doors/smalldoorblue_sign
+{
+	translucent
+	qer_editorimage	models/mapobjects/doors/smalldoorblue_sign_add.tga
+	{
+		blend	add
+		map	models/mapobjects/doors/smalldoorblue_sign_add.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+models/mapobjects/lab/microscope/microscopeblue
+{
+	renderbump  	-size 256 256 -aa 2 models/mapobjects/lab/microscope/microscope_local.tga models/mapobjects/lab/microscope/microscope_hp.lwo
+	bumpmap		models/mapobjects/lab/microscope/microscope_local.tga
+	diffusemap	models/mapobjects/lab/microscope/microscope_d.tga
+	specularmap	models/mapobjects/lab/microscope/microscope_s.tga
+}
+
+models/mapobjects/lab/microscope/microscope
+{
+	renderbump  	-size 256 256 -aa 2 models/mapobjects/lab/microscope/microscope_local.tga models/mapobjects/lab/microscope/microscope_hp.lwo
+	bumpmap		models/mapobjects/lab/microscope/microscope_local.tga
+	diffusemap	models/mapobjects/lab/microscope/microscopeblack_d.tga
+	specularmap	models/mapobjects/lab/microscope/microscope_s.tga
+}
+
+models/mapobjects/lab/blaptop/blaptop
+{
+	renderbump  	-size 128 256 -aa 3 models/mapobjects/lab/blaptop/blaptop_local.tga models/mapobjects/lab/blaptop/blaptop_hi.lwo
+	bumpmap		models/mapobjects/lab/blaptop/blaptop_local.tga
+	diffusemap	models/mapobjects/lab/blaptop/blaptop_d.tga
+	specularmap	models/mapobjects/lab/blaptop/blaptop_s.tga
+}
+
+models/mapobjects/lab/infusion1
+{
+	renderbump  	-size 128 256 -aa 2 models/mapobjects/lab/infusion/infusion1_local.tga models/mapobjects/lab/infusion/infusion_hp.lwo
+	bumpmap		models/mapobjects/lab/infusion/infusion1_local.tga
+	diffusemap	models/mapobjects/lab/infusion/infusion1_d.tga
+	specularmap	models/mapobjects/lab/infusion/infusion1_s.tga
+}
+
+models/mapobjects/lab/infusion2
+{
+	renderbump  	-size 128 128 -aa 2 models/mapobjects/lab/infusion/infusion2_local.tga models/mapobjects/lab/infusion/infusion_hp.lwo
+	translucent
+	bumpmap		addnormals (models/mapobjects/lab/infusion/infusion2_local.tga, heightmap (models/mapobjects/lab/infusion/infusion2_bmp.tga, 4))
+	diffusemap	models/mapobjects/lab/infusion/infusion2_d.tga
+	specularmap	models/mapobjects/lab/infusion/infusion2_s.tga
+}
+
+models/mapobjects/lab/cube1
+{
+	bumpmap			addnormals (models/mapobjects/lab/cube1/cube_hp_local.tga, heightmap (models/mapobjects/lab/cube1/cube_bmp.tga,4))
+	diffusemap		models/mapobjects/lab/cube1/cube_d.tga
+	specularmap		models/mapobjects/lab/cube1/cube_s.tga
+}
+
+models/mapobjects/skmachines/skcube
+{
+	renderbump  	-size 256 256 -aa 2 models/mapobjects/skmachines/skcube_local.tga models/mapobjects/skmachines/work/skcube_hp.lwo
+	bumpmap		models/mapobjects/skmachines/skcube_local.tga
+	diffusemap	models/mapobjects/skmachines/skcube_d.tga 
+	specularmap	models/mapobjects/skmachines/skcube_s.tga 
+}
+
+models/mapobjects/skmachines/skcubered
+{
+	bumpmap	models/mapobjects/skmachines/skcube_local.tga
+	diffusemap	models/mapobjects/skmachines/skcube_d2.tga 
+	specularmap	models/mapobjects/skmachines/skcube_s.tga 
+}
+
+models/mapobjects/skmachines/skcubeyellow
+{
+	bumpmap	models/mapobjects/skmachines/skcube_local.tga
+	diffusemap	models/mapobjects/skmachines/skcube_d3.tga 
+	specularmap	models/mapobjects/skmachines/skcube_s.tga 
+}
+
+models/mapobjects/skmachines/skcube2
+{
+	renderbump  -size 64 64 -aa 2 models/mapobjects/skmachines/skcube2_local.tga models/mapobjects/skmachines/work/skcube_hp.lwo
+	bumpmap	models/mapobjects/skmachines/skcube2_local.tga
+	diffusemap	models/mapobjects/skmachines/skcube2_d.tga 
+	specularmap	models/mapobjects/skmachines/skcube2_s.tga 
+}
+
+models/mapobjects/filler/pipebutton
+{
+	renderbump  -size 256 256 -aa 2 models/mapobjects/filler/pipebutton_local.tga models/mapobjects/filler/work/pipebutton_hp.lwo
+	bumpmap	models/mapobjects/filler/pipebutton_local.tga
+	diffusemap	models/mapobjects/filler/pipebutton_d.tga 
+	specularmap	models/mapobjects/filler/pipebutton_s.tga 
+}
+
+models/mapobjects/skmachines/skpipeblock
+{
+	renderbump  -size 256 256 -aa 4 models/mapobjects/skmachines/skpipeblock_local.tga models/mapobjects/skmachines/work/skpipeblock_hp.lwo
+	bumpmap	models/mapobjects/skmachines/skpipeblock_local.tga
+	diffusemap	models/mapobjects/skmachines/skpipeblock_d.tga 
+	specularmap	models/mapobjects/skmachines/skpipeblock_s.tga 
+}
+
+models/mapobjects/skmachines/skceilingdisc1red
+{
+	renderbump  -size 256 256 -aa 2 models/mapobjects/skmachines/skceilingdisc1_local.tga models/mapobjects/skmachines/work/skceilingdisc_hp.lwo
+	bumpmap	models/mapobjects/skmachines/skceilingdisc1_local.tga 
+	diffusemap	models/mapobjects/skmachines/skceilingdisc1red_d.tga 
+	specularmap	models/mapobjects/skmachines/skceilingdisc1_s.tga 
+}
+
+models/mapobjects/skmachines/skceilingdisc1
+{
+	renderbump  -size 256 256 -aa 2 models/mapobjects/skmachines/skceilingdisc1_local.tga models/mapobjects/skmachines/work/skceilingdisc_hp.lwo
+	bumpmap	models/mapobjects/skmachines/skceilingdisc1_local.tga 
+	diffusemap	models/mapobjects/skmachines/skceilingdisc1_d.tga 
+	specularmap	models/mapobjects/skmachines/skceilingdisc1_s.tga 
+}
+
+models/mapobjects/skmachines/skceilingdisc1a
+{
+	renderbump  -size 64 64 -aa 2 models/mapobjects/skmachines/skceilingdisc1a_local.tga models/mapobjects/skmachines/work/skceilingdisc_hp.lwo
+	bumpmap	models/mapobjects/skmachines/skceilingdisc1a_local.tga 
+	diffusemap	models/mapobjects/skmachines/skceilingdisc1a_d.tga 
+	specularmap	models/mapobjects/skmachines/skceilingdisc1a_s.tga 
+}
+
+models/mapobjects/lab/sink2faucet
+{
+	renderbump  -aa 2 -size 64 64 models/mapobjects/lab/sink2/sink2faucet_local.tga models/mapobjects/lab/sink2/work/sink2_hp.lwo
+	bumpmap	models/mapobjects/lab/sink2/sink2faucet_local.tga 
+	diffusemap	models/mapobjects/lab/sink2/sink2faucet_d.tga 
+	specularmap	models/mapobjects/lab/sink2/sink2faucet_s.tga 
+}
+
+models/mapobjects/lab/sink2
+{
+	renderbump  -aa 2 -size 128 128 models/mapobjects/lab/sink2/sink2_local.tga models/mapobjects/lab/sink2/work/sink2_hp.lwo
+	bumpmap	models/mapobjects/lab/sink2/sink2_local.tga 
+	diffusemap	models/mapobjects/lab/sink2/sink2_d.tga 
+	specularmap	models/mapobjects/lab/sink2/sink2_s.tga 
+}
+
+models/mapobjects/lab/sink1faucet
+{
+	renderbump  -aa 2 -size 64 64 models/mapobjects/lab/sink1/sink1faucet_local.tga models/mapobjects/lab/sink1/work/sink1_hp.lwo
+	bumpmap	models/mapobjects/lab/sink1/sink1faucet_local.tga 
+	diffusemap	models/mapobjects/lab/sink1/sink1faucet_d.tga 
+	specularmap	models/mapobjects/lab/sink1/sink1faucet_s.tga 
+}
+
+models/mapobjects/lab/sink1
+{
+	renderbump  -aa 2 -size 128 128 models/mapobjects/lab/sink1/sink1_local.tga models/mapobjects/lab/sink1/work/sink1_hp.lwo
+	bumpmap	models/mapobjects/lab/sink1/sink1_local.tga 
+	diffusemap	models/mapobjects/lab/sink1/sink1_d.tga 
+	specularmap	models/mapobjects/lab/sink1/sink1_s.tga 
+}
+
+models/mapobjects/normchairblood1
+{
+	renderbump  -aa 2 -size 128 128 models/mapobjects/base/chairs/normchair_local.tga models/mapobjects/base/chairs/work/normchair_hp.lwo
+	bumpmap	models/mapobjects/base/chairs/normchair_local.tga
+	diffusemap	models/mapobjects/base/chairs/normchairblood1_d.tga
+	specularmap	models/mapobjects/base/chairs/normchair_s.tga
+}
+
+models/mapobjects/normchair
+{
+	renderbump  -aa 2 -size 128 128 models/mapobjects/base/chairs/normchair_local.tga models/mapobjects/base/chairs/work/normchair_hp.lwo
+	bumpmap	models/mapobjects/base/chairs/normchair_local.tga
+	diffusemap	models/mapobjects/base/chairs/normchair_d.tga
+	specularmap	models/mapobjects/base/chairs/normchair_s.tga
+}
+
+models/mapobjects/filler/ktableblood1
+{
+	renderbump  -aa 2 -size 256 128 models/mapobjects/filler/ktable_local.tga models/mapobjects/filler/work/ktable_hp.lwo
+	bumpmap	models/mapobjects/filler/ktable_local.tga
+	diffusemap	models/mapobjects/filler/ktableblood1_d.tga
+	specularmap	models/mapobjects/filler/ktable_s.tga
+}
+
+models/mapobjects/filler/ktable
+{
+	renderbump  -aa 2 -size 256 128 models/mapobjects/filler/ktable_local.tga models/mapobjects/filler/work/ktable_hp.lwo
+	bumpmap	models/mapobjects/filler/ktable_local.tga
+	diffusemap	models/mapobjects/filler/ktable_d.tga
+	specularmap	models/mapobjects/filler/ktable_s.tga
+}
+
+models/mapobjects/lab/compcart/compcartgrey
+{
+	bumpmap	models/mapobjects/lab/compcart/compcart_local.tga
+	diffusemap	models/mapobjects/lab/compcart/compcart.tga
+	specularmap	models/mapobjects/lab/compcart/compcart_s.tga
+}
+
+models/mapobjects/lab/compcart/compcart
+{
+	renderbump  -aa 2 -size 256 128 models/mapobjects/lab/compcart/compcart_local.tga models/mapobjects/lab/compcart/work/compcart_hp.lwo
+	bumpmap	models/mapobjects/lab/compcart/compcart_local.tga
+	diffusemap	models/mapobjects/lab/compcart/compcart2.tga
+	specularmap	models/mapobjects/lab/compcart/compcart2_s.tga
+}
+
+models/mapobjects/filecabinet1
+{
+	renderbump  -size 128 256 -aa 2 models/mapobjects/lab/filecabinet1/filecabinet1_local.tga models/mapobjects/lab/filecabinet1/work/filecabinet1_hp.lwo
+	bumpmap	models/mapobjects/lab/filecabinet1/filecabinet1_local.tga
+	diffusemap	models/mapobjects/lab/filecabinet1/filecabinet1_d.tga
+	specularmap	models/mapobjects/lab/filecabinet1/filecabinet1_s.tga
+}
+
+models/mapobjects/bubbler2
+{
+	renderbump  -size 256 256 -aa 2 models/mapobjects/lab/bubbler2/bubbler2_local.tga models/mapobjects/lab/bubbler2/work/bubbler2_hp.lwo
+	bumpmap	models/mapobjects/lab/bubbler2/bubbler2_local.tga
+	diffusemap	models/mapobjects/lab/bubbler2/bubbler2_d.tga
+	specularmap	models/mapobjects/lab/bubbler2/bubbler2_s.tga
+}
+
+models/mapobjects/bubbler1
+{
+	renderbump  -size 256 256 -aa 2 models/mapobjects/lab/bubbler1/bubbler1_local.tga models/mapobjects/lab/bubbler1/work/bubbler1_hp.lwo
+	bumpmap	models/mapobjects/lab/bubbler1/bubbler1_local.tga
+	diffusemap	models/mapobjects/lab/bubbler1/bubbler1_d.tga
+	specularmap	models/mapobjects/lab/bubbler1/bubbler1_s.tga
+}
+
+models/mapobjects/scannerbed3
+{
+	bumpmap		models/mapobjects/lab/scannerbed/scannerbed_local.tga
+	diffusemap	models/mapobjects/lab/scannerbed/scannerbed3_d.tga
+	specularmap	models/mapobjects/lab/scannerbed/scannerbed_s.tga
+}
+
+models/mapobjects/scannerbed2
+{
+	bumpmap		models/mapobjects/lab/scannerbed/scannerbed_local.tga
+	diffusemap	models/mapobjects/lab/scannerbed/scannerbed2_d.tga
+	specularmap	models/mapobjects/lab/scannerbed/scannerbed_s.tga
+}
+
+models/mapobjects/scannerbed
+{
+	renderbump  -size 1024 512 -aa 2 models/mapobjects/lab/scannerbed/scannerbed_local.tga models/mapobjects/lab/scannerbed/work/scannerbed_hp.lwo
+	bumpmap	models/mapobjects/lab/scannerbed/scannerbed_local.tga
+	diffusemap	models/mapobjects/lab/scannerbed/scannerbed_d.tga
+	specularmap	models/mapobjects/lab/scannerbed/scannerbed_s.tga
+}
+
+models/mapobjects/tablecart1ball
+{	
+	noShadows
+	deform sprite
+	surfaceparm discrete
+	bumpmap			models/mapobjects/lab/tablecart1/tablecart1ball_local.tga
+	{
+		blend 		diffusemap
+		map		models/mapobjects/lab/tablecart1/tablecart1ball_d.tga
+		alphatest .5
+	}
+}
+
+models/mapobjects/tablecart2
+{
+	renderbump  -size 128 128 -trace .25 -aa 2 models/mapobjects/lab/tablecart2/tablecart2_local.tga models/mapobjects/lab/tablecart2/work/tablecart2_hp.lwo
+	bumpmap	models/mapobjects/lab/tablecart2/tablecart2_local.tga
+	diffusemap	models/mapobjects/lab/tablecart2/tablecart2_d.tga
+	specularmap	models/mapobjects/lab/tablecart2/tablecart2_s.tga
+}
+
+models/mapobjects/tablecart1a.tga
+{
+	translucent
+	qer_editorimage		models/mapobjects/tablecart1a.tga
+	{
+		blend		add
+		map		models/mapobjects/tablecart1a.tga
+		colored
+	}
+}
+
+models/mapobjects/tablecart1
+{
+	renderbump  -size 128 128 -aa 2 models/mapobjects/lab/tablecart1/tablecart1_local.tga models/mapobjects/lab/tablecart1/work/tablecart1_hp.lwo
+	bumpmap		models/mapobjects/lab/tablecart1/tablecart1_local.tga
+	diffusemap	models/mapobjects/lab/tablecart1/tablecart1_d.tga
+	specularmap	models/mapobjects/lab/tablecart1/tablecart1_s.tga
+}
+
+models/mapobjects/serverrack1a
+{
+	bumpmap	models/mapobjects/lab/serverrack1/serverrack1_local.tga
+	diffusemap	models/mapobjects/lab/serverrack1/serverrack1a_d.tga
+	specularmap	models/mapobjects/lab/serverrack1/serverrack1_s.tga
+}
+
+models/mapobjects/serverrack1
+{
+	renderbump  -size 256 256 -aa 2 models/mapobjects/lab/serverrack1/serverrack1_local.tga models/mapobjects/lab/serverrack1/work/serverrack1_hp.lwo
+	bumpmap	models/mapobjects/lab/serverrack1/serverrack1_local.tga
+	diffusemap	models/mapobjects/lab/serverrack1/serverrack1_d.tga
+	specularmap	models/mapobjects/lab/serverrack1/serverrack1_s.tga
+}
+
+models/mapobjects/fridge2add
+{
+	translucent
+	noshadows
+	{
+		blend 		gl_dst_color,gl_zero
+		map		models/mapobjects/lab/fridge2/fridge2add.tga
+	}
+}
+
+models/mapobjects/fridge2grillblood
+{
+	noshadows
+	bumpmap			models/mapobjects/lab/fridge2/grill_local.tga
+	{
+		blend 		diffusemap
+		map 		models/mapobjects/lab/fridge2/grillblood.tga
+		alphatest	.25
+	}
+	specularmap		models/mapobjects/lab/fridge2/grill_s.tga
+}
+
+models/mapobjects/fridge2grill
+{
+	noshadows
+	bumpmap			models/mapobjects/lab/fridge2/grill_local.tga
+	{
+		blend 		diffusemap
+		map 		models/mapobjects/lab/fridge2/grill_d.tga
+		alphatest	.25
+	}
+	specularmap		models/mapobjects/lab/fridge2/grill_s.tga
+}
+
+models/mapobjects/fridge2blood
+{
+	bumpmap	models/mapobjects/lab/fridge2/fridge2_local.tga
+	diffusemap	models/mapobjects/lab/fridge2/fridge2blood.tga
+	specularmap	models/mapobjects/lab/fridge2/fridge2_s.tga
+}
+
+models/mapobjects/fridge2
+{
+	renderbump  	-size 512 512 -aa 2 models/mapobjects/lab/fridge2/fridge2_local.tga models/mapobjects/lab/fridge2/work/fridge2_hp.lwo
+	bumpmap		models/mapobjects/lab/fridge2/fridge2_local.tga
+	diffusemap	models/mapobjects/lab/fridge2/fridge2_d.tga
+	specularmap	models/mapobjects/lab/fridge2/fridge2_s.tga
+}
+
+models/mapobjects/fridge1
+{
+	renderbump  	-size 512 512 -aa 2 models/mapobjects/lab/fridge1/fridge1_local.tga models/mapobjects/lab/fridge1/work/fridge1_hp.lwo
+	bumpmap		models/mapobjects/lab/fridge1/fridge1_local.tga
+	diffusemap	models/mapobjects/lab/fridge1/fridge1_d.tga
+	specularmap	models/mapobjects/lab/fridge1/fridge1_s.tga
+}
+
+models/mapobjects/fridge1glass
+{
+	noshadows	
+	translucent
+	{
+		blend 		add
+		cubeMap		env/reactor 
+		texgen		reflect
+	}
+	{
+		blend		diffuseMap
+		map 		models/mapobjects/lab/fridge1/fridge1glass_d.tga
+	}
+}
+
+models/testbox
+{
+	diffusemap models/testbox
+}	
+
+models/mapobjects/tram/traminfoscreen
+{
+	renderbump -trace 0.1 -size 128 128 -aa 2 models/mapobjects/tram/traminfoscreen_local.tga models/mapobjects/tram/work/traminfo_hp.lwo
+	bumpmap			models/mapobjects/tram/traminfoscreen_local.tga
+	diffusemap		models/mapobjects/tram/traminfoscreen_d.tga
+	specularmap		models/mapobjects/tram/traminfoscreen_s.tga
+}
+
+models/mapobjects/tram/traminfo
+{
+	renderbump -trace 0.1 -size 128 256 -aa 4 models/mapobjects/tram/traminfo_local.tga models/mapobjects/tram/work/traminfo_hp.lwo
+	bumpmap			models/mapobjects/tram/traminfo_local.tga
+	diffusemap		models/mapobjects/tram/traminfo_d.tga
+	specularmap		models/mapobjects/tram/traminfo_s.tga
+}
+
+models/mapobjects/tram/tramoverlook3a
+{
+	bumpmap			models/mapobjects/tram/tramoverlook3a_local.tga
+	diffusemap		models/mapobjects/tram/tramoverlook3a_d.tga
+	specularmap		models/mapobjects/tram/tramoverlook3a_s.tga
+}	
+
+models/mapobjects/tram/tramoverlook3
+{	
+	bumpmap			models/mapobjects/tram/tramoverlook3_local.tga
+	diffusemap		models/mapobjects/tram/tramoverlook3_d.tga
+	specularmap		models/mapobjects/tram/tramoverlook3_s.tga
+}
+
+models/mapobjects/tram/tramcorner
+{
+	bumpmap			models/mapobjects/tram/tramcorner_local.tga
+	diffusemap		models/mapobjects/tram/tramcorner_d.tga
+	specularmap		models/mapobjects/tram/tramcorner_s.tga
+}
+
+models/mapobjects/tram/tramtablescreen
+{
+	bumpmap			models/mapobjects/tram/tramtablescreen_local.tga
+	diffusemap		models/mapobjects/tram/tramtablescreen_d.tga
+	specularmap		models/mapobjects/tram/tramtablescreen_s.tga
+}
+
+models/mapobjects/tram/tramtable
+{
+	bumpmap			models/mapobjects/tram/tramtable_local.tga
+	diffusemap		models/mapobjects/tram/tramtable_d.tga
+	specularmap		models/mapobjects/tram/tramtable_s.tga
+}
+
+models/mapobjects/tram/tramchair
+{
+	bumpmap			models/mapobjects/tram/tramchair_local.tga
+	diffusemap		models/mapobjects/tram/tramchair_d.tga
+	specularmap		models/mapobjects/tram/tramchair_s.tga
+}
+
+models/mapobjects/tram/trampillar2
+{
+	bumpmap			models/mapobjects/tram/trampillar2_local.tga
+	diffusemap		models/mapobjects/tram/trampillar2_d.tga
+	specularmap		models/mapobjects/tram/trampillar2_s.tga
+}
+
+models/mapobjects/tram/trampillar
+{
+	bumpmap			models/mapobjects/tram/trampillar_local.tga
+	diffusemap		models/mapobjects/tram/trampillar_d.tga
+	specularmap		models/mapobjects/tram/trampillar_s.tga
+}
+
+/**
+models/mapobjects/tram/traminfoscreen
+{
+	bumpmap			models/mapobjects/tram/traminfoscreen_local.tga
+	diffusemap		models/mapobjects/tram/traminfoscreen_d.tga
+	specularmap		models/mapobjects/tram/traminfoscreen_s.tga
+}
+
+models/mapobjects/tram/traminfo
+{	
+	bumpmap			models/mapobjects/tram/traminfo_local.tga
+	diffusemap		models/mapobjects/tram/traminfo_d.tga
+	specularmap		models/mapobjects/tram/traminfo_s.tga
+}
+**/
+
+models/mapobjects/tram/tramoverlook
+{
+	bumpmap			models/mapobjects/tram/tramoverlook_local.tga
+	diffusemap		models/mapobjects/tram/tramoverlook_d.tga
+	specularmap		models/mapobjects/tram/tramoverlook_s.tga
+}
+
+models/mapobjects/base/chairs/chair1
+{
+	bumpmap			addnormals (models/mapobjects/base/chairs/chair1_local.tga, heightmap (models/mapobjects/base/chairs/chair1_bmp.tga, 6 ))
+	diffusemap		models/mapobjects/base/chairs/chair1_d.tga
+	specularmap		models/mapobjects/base/chairs/chair1_s.tga
+}
+
+models/mapobjects/monitors/hangingmonitor
+{
+	bumpmap			models/mapobjects/monitors/hangingmonitor_local.tga
+	diffusemap		models/mapobjects/monitors/hangingmonitor_d.tga
+	specularmap		models/mapobjects/monitors/hangingmonitor_s.tga
+}
+
+models/mapobjects/monitors/hangingmonitorpiece
+{
+	twoSided
+	{
+		blend		diffusemap
+		map 		models/mapobjects/monitors/hangingmonitorpiece_d.tga
+		alphaTest	0.5
+	}	
+	bumpmap			models/mapobjects/monitors/hangingmonitorpiece_local.tga
+	specularmap		models/mapobjects/monitors/hangingmonitorpiece_s.tga
+}
+
+models/mapobjects/monitors/hangingmonitorscreen
+{
+	translucent
+	noShadows
+	{
+		blend 		gl_one,gl_one
+		map 		models/mapobjects/monitors/hangingmonitorscreen.tga
+		red		parm0 * 2
+		green		parm1 * 2
+		blue		parm2 * 2
+	}
+}
+
+//============================================================================================================
+//sfx
+//============================================================================================================
+
+table threestage { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+table elevenstage { .5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+table slowstart_one_zero {1.000000, 0.999699, 0.998795, 0.997290, 0.995185, 0.992480, 0.989177, 0.985278, 
+0.980785, 0.975702, 0.970031, 0.963776, 0.956940, 0.949528, 0.941544, 0.932993, 
+0.923880, 0.914210, 0.903989, 0.893224, 0.881921, 0.870087, 0.857729, 0.844854, 
+0.831470, 0.817585, 0.803208, 0.788346, 0.773010, 0.757209, 0.740951, 0.724247, 
+0.707107, 0.689541, 0.671559, 0.653173, 0.634393, 0.615232, 0.595699, 0.575808, 
+0.555570, 0.534998, 0.514103, 0.492898, 0.471397, 0.449611, 0.427555, 0.405241, 
+0.382683, 0.359895, 0.336890, 0.313682, 0.290285, 0.266713, 0.242980, 0.219101, 
+0.195090, 0.170962, 0.146730, 0.122411, 0.098017, 0.073565, 0.049068, 0.024541}
+
+table faststart_zero_one {0.024541, 0.049068, 0.073565, 0.098017, 0.122411, 0.146730, 0.170962, 
+0.195090, 0.219101, 0.242980, 0.266713, 0.290285, 0.313682, 0.336890, 0.359895, 
+0.382683, 0.405241, 0.427555, 0.449611, 0.471397, 0.492898, 0.514103, 0.534998, 
+0.555570, 0.575808, 0.595699, 0.615232, 0.634393, 0.653173, 0.671559, 0.689541, 
+0.707107, 0.724247, 0.740951, 0.757209, 0.773010, 0.788346, 0.803208, 0.817585, 
+0.831470, 0.844854, 0.857729, 0.870087, 0.881921, 0.893224, 0.903989, 0.914210, 
+0.923880, 0.932993, 0.941544, 0.949528, 0.956940, 0.963776, 0.970031, 0.975702, 
+0.980785, 0.985278, 0.989177, 0.992480, 0.995185, 0.997290, 0.998795, 0.999699, 
+1.000000 }
+
+table watersplashscaletable {0.024541, 0.049068, 0.073565, 0.098017, 0.122411, 0.146730, 0.170962, 
+0.195090, 0.219101, 0.242980, 0.266713, 0.290285, 0.313682, 0.336890, 0.359895, 
+0.382683, 0.405241, 0.427555, 0.449611, 0.471397, 0.492898, 0.514103, 0.534998, 
+0.555570, 0.575808, 0.595699, 0.615232, 0.634393, 0.653173, 0.671559, 0.689541, 
+0.707107, 0.724247, 0.740951, 0.757209, 0.773010, 0.788346, 0.803208, 0.817585, 
+0.831470, 0.844854, 0.857729, 0.870087, 0.881921, 0.893224, 0.903989, 0.914210, 
+0.923880, 0.932993, 0.941544, 0.949528, 0.956940, 0.963776, 0.970031, 0.975702, 
+0.980785, 0.985278, 0.989177, 0.992480, 0.995185, 0.997290, 0.998795, 0.999699, 
+1.000000 }
+
+
+table watersplashrgbtable   {0, 1, 1, 1, .8, .6, .4, .2, .1, .05, 0}
+
+textures/sfx/web2
+{
+	translucent
+	bumpmap			heightmap (textures/sfx/web2.tga, 4)
+	diffusemap		textures/sfx/web2.tga
+	{
+		blend		specularmap	
+		map			textures/sfx/web2.tga
+		red			.25
+		green		.25
+		blue		.2
+	}
+}
+textures/sfx/web1
+{
+	translucent
+	bumpmap			heightmap (textures/sfx/web1.tga, 4)
+	diffusemap		textures/sfx/web1.tga
+	{
+		blend		specularmap	
+		map			textures/sfx/web1.tga
+		red			.25
+		green		.25
+		blue		.2
+	}
+}
+
+textures/sfx/secureclear
+{
+	translucent
+	surfaceparm		nonsolid
+	noshadows
+	qer_editorimage	textures/sfx/secureclear.tga
+	{
+		blend		add
+		map			textures/sfx/secureclear
+		rgb  		sintable [time] + 2.5
+	}
+}
+
+textures/sfx/nogreyinvert
+{
+	translucent
+	surfaceparm nonsolid
+	noshadows
+	qer_editorimage		textures/sfx/inverttest.tga
+	{
+		blend		gl_one_minus_dst_color,gl_one_minus_src_color
+		map		textures/sfx/inverttest.tga
+	}
+}
+
+textures/sfx/overlay
+{
+	translucent
+	surfaceparm nonsolid
+	noshadows
+	qer_editorimage		textures/sfx/inverttest.tga
+	{
+		blend		gl_dst_color,gl_src_color
+		map		textures/sfx/inverttest.tga
+	}
+}
+
+textures/sfx/colortest
+{
+	translucent
+	surfaceparm nonsolid
+	noshadows
+	qer_editorimage		textures/sfx/inverttest.tga
+	{
+		blend		gl_one_minus_dst_color,gl_one_minus_src_color
+		map		textures/sfx/inverttest.tga
+	}
+}
+
+textures/sfx/inverttest
+{
+	translucent
+	surfaceparm nonsolid
+	noshadows
+	qer_editorimage		textures/sfx/inverttest.tga
+	{
+		blend		gl_one_minus_dst_color,gl_zero
+		map		textures/sfx/inverttest.tga
+	}
+}
+
+textures/sfx/smokescreen
+{
+	translucent
+	surfaceparm nonsolid
+	noshadows
+	qer_editorimage			textures/sfx/smokescreen.tga
+	{
+		blend			add
+		map			textures/sfx/smokescreen.tga
+		translate		time, time * .1
+	
+	}
+	{
+		blend			add
+		map			textures/sfx/smokescreen.tga
+		translate		time * .5 , time * -0.1
+	}
+	{
+		blend			filter
+		map			textures/sfx/smokescreen2.tga
+		translate		time * .25 , time * -0.02
+	}
+}
+	
+
+textures/sfx/teenysmoke2
+{
+	translucent
+	surfaceparm nonsolid
+	noshadows
+	qer_editorimage		textures/sfx/teenysmoke.tga
+	{
+		blend			gl_zero,gl_one_minus_src_color
+		map			textures/sfx/teenysmoke.tga
+		vertexColor
+	}
+}
+
+textures/sfx/teenysmoke
+{
+	translucent
+	surfaceparm nonsolid
+	noshadows
+	qer_editorimage		textures/sfx/teenysmoke.tga
+	{
+		blend		add
+		map		textures/sfx/teenysmoke.tga
+		vertexColor
+	}
+}
+
+textures/sfx/mac_glow
+{
+	translucent
+	surfaceparm nonsolid
+	noshadows
+	qer_editorimage		textures/sfx/mac_glow.tga
+	{
+		blend		add
+		map		textures/sfx/mac_glow.tga
+		rgb		3
+	}
+}
+
+textures/sfx/outsidedustpass1
+{
+	qer_editorimage		textures/sfx/outsidedustpass1
+	translucent
+	noshadows
+	{
+		blend		add
+		map		textures/sfx/outsidedustpass1.tga
+		translate 	time, 0
+//		rgb		.5
+	}
+	{
+		blend		add
+		map		textures/sfx/outsidedustpass1.tga
+		translate 	time * 0.25, 0.1
+//		rgb		.5
+	}
+}		
+
+textures/sfx/smsmoke
+{
+	qer_editorimage textures\sfx\smsmoke.tga
+	translucent
+	noshadows
+	surfaceparm nonsolid
+	{
+		blend 	add
+		map	textures\sfx\smsmoke1.tga
+		rgb	elevenstage [ time * Parm3 + Parm4 + 10.0 / 11 ]
+	}
+	{
+		blend 	add
+		map	textures\sfx\smsmoke2.tga
+		rgb	elevenstage [ time * Parm3 + Parm4 + 9.0 / 11 ]
+	}
+	{
+		blend 	add
+		map	textures\sfx\smsmoke3.tga
+		rgb	elevenstage [ time * Parm3 + Parm4 + 8.0 / 11 ]
+	}
+	{
+		blend 	add
+		map	textures\sfx\smsmoke4.tga
+		rgb	elevenstage [ time * Parm3 + Parm4 + 7.0 / 11 ]
+	}
+	{
+		blend 	add
+		map	textures\sfx\smsmoke5.tga
+		rgb	elevenstage [ time * Parm3 + Parm4 + 6.0 / 11 ]
+	}
+	{
+		blend 	add
+		map	textures\sfx\smsmoke6.tga
+		rgb	elevenstage [ time * Parm3 + Parm4 + 5.0 / 11 ]
+	}
+	{
+		blend 	add
+		map	textures\sfx\smsmoke7.tga
+		rgb	elevenstage [ time * Parm3 + Parm4 + 4.0 / 11 ]
+	}
+	{
+		blend 	add
+		map	textures\sfx\smsmoke8.tga
+		rgb	elevenstage [ time * Parm3 + Parm4 + 3.0 / 11 ]
+	}
+	{
+		blend 	add
+		map	textures\sfx\smsmoke9.tga
+		rgb	elevenstage [ time * Parm3 + Parm4 + 2.0 / 11 ]
+	}
+	{
+		blend 	add
+		map	textures\sfx\smsmoke10.tga
+		rgb	elevenstage [ time * Parm3 + Parm4 + 1.0 / 11 ]
+	}
+	{
+		blend 	add
+		map	textures\sfx\smsmoke11.tga
+		rgb	elevenstage [ time * Parm3 + Parm4 ]
+	}
+}
+
+
+
+textures/sfx/spotlight
+{
+	qer_editorimage		textures/sfx/spotlight.tga
+	translucent
+	noshadows
+	{
+		blend		add
+		map		textures/sfx/spotlight
+		colored
+	}
+}
+
+textures/sfx/smallglow
+{
+	qer_editorimage 	textures/sfx/smallglow
+	translucent
+	noshadows
+	deform sprite
+	{
+		blend		add
+		map		textures/sfx/smallglow.tga
+		colored
+	}
+}
+textures/sfx/desertdust
+{
+	translucent
+	noshadows
+	{
+		//blend gl_dst_color,gl_zero
+		blend add
+		map textures/sfx/desertdust.tga
+		rotate	( time * -0.1 )
+		clamp
+	}	
+}
+
+textures/sfx/watersplash
+{
+	surfaceparm discrete
+	translucent
+	qer_editorimage		textures/sfx/watersplash_local.tga
+	{
+		blend		bumpmap
+		map		textures/sfx/watersplash_local.tga
+		centerScale 	1 + 9 * (1-faststart_zero_one [2*time])*(1-faststart_zero_one [2*time]), 1 + 9 * (1-faststart_zero_one [2*time])*(1-faststart_zero_one [2*time])
+		clamp
+	}
+	{
+		blend		specularmap
+		map		textures/sfx/watersplash_d.tga
+		centerScale 	1 + 9 * (1-faststart_zero_one [2*time])*(1-faststart_zero_one [2*time]), 1 + 9 * (1-faststart_zero_one [2*time])*(1-faststart_zero_one [2*time])
+		rgb		watersplashrgbtable [2*time]
+		zeroClamp
+	}
+}
+
+
+textures/sfx/redskyglass
+{
+	translucent
+	twosided
+	noshadows
+	qer_editorimage	env/desert2_nx.tga
+	{
+		blend 	add
+		cubeMap	env/desert2
+		texgen	reflect
+	}
+}
+
+textures/sfx/redskyenv
+{
+	translucent
+	noshadows
+	qer_editorimage	textures/sfx/techglass1.tga
+	{
+		cubeMap	env/redskyenv
+		texgen	reflect
+	}
+}
+
+
+textures/sfx/techglassadd
+{
+	translucent
+	twosided
+	noshadows
+	qer_editorimage	textures/sfx/techglass1.tga
+	{
+		blend 	add
+		cubeMap	env/sk7
+		texgen	reflect
+	}
+	{
+		blend		add
+		map 		textures/sfx/techglass1_d.tga
+		scale		8 , 8
+	}
+}
+
+textures/sfx/tramwall2env
+{
+	qer_editorimage	textures/base_wall/tramwall2_alpha.tga
+	noShadows
+
+	{
+		blend bumpmap
+		map	textures/base_wall/tramwall2_local.tga
+	}
+	{
+		blend diffusemap
+		map	textures/base_wall/tramwall2_d.tga
+	}
+	{
+		blend 	add
+		cubeMap	env/tramenv
+		texgen	reflect
+	}
+	{
+		blend gl_zero,gl_one
+		map textures/base_wall/tramwall2_alpha.tga
+		alphatest .55
+	}
+}
+
+textures/sfx/firetest
+{
+	qer_editorimage textures\sfx\firetest.tga
+	translucent
+	noshadows
+//	deform sprite
+	surfaceparm nonsolid
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_1.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 13.0 / 14 ]
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_2.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 12.0 / 14 ]
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_3.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 11.0 / 14 ]
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_4.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 10.0 / 14 ]
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_5.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 9.0 / 14 ]
+
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_6.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 8.0 / 14 ]
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_7.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 7.0 / 14 ]
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_8.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 6.0 / 14 ]
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_9.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 5.0 / 14 ]
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_10.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 4.0 / 14 ]
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_11.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 3.0 / 14 ]
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_12.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 2.0 / 14 ]
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_13.tga
+		rgb	threestage [ time * Parm3 + Parm4 + 1.0 / 14 ]
+	}
+	{
+		blend add
+		map	textures\sfx\work\firetest\firetest2_14.tga
+		rgb	threestage [ time * Parm3 + Parm4 ]
+	}
+
+}
+
+
+textures/sfx/defaultflare
+{
+	qer_editorimage textures/sfx/defaultflare.tga
+	noShadows
+	deform sprite
+	surfaceparm discrete
+	surfaceparm nonsolid
+	surfaceparm noimpact
+	{       
+		blend	add
+		map		textures/sfx/defaultflare.tga
+		red		parm0
+		green	parm1
+		blue	parm2
+	}
+ }
+
+textures/sfx/reactorflare
+{
+	qer_editorimage textures/sfx/reactorflare.tga
+	translucent
+	noShadows
+	deform sprite
+	{
+		blend add
+		map textures/sfx/reactorflare.tga
+		rgb  sintable [time] + 2.5
+	}
+}
+
+textures/sfx/flamesparks
+{
+	qer_editorimage textures/sfx/firesparks.tga
+	translucent
+	noShadows
+	{
+		blend add
+		map textures/sfx/firesparks.tga
+//		rgb  sintable [time] + 2.5
+//		centerScale (1.25 + 0.25 * sintable[time]), (1.25 + 0.25 * sintable[time])
+		zeroClamp
+//		translate sintable[time], 0
+	}
+}
+
+textures/sfx/reactorreflectadd
+{
+	qer_editorimage textures/sfx/reactorreflect.tga
+	translucent
+	noShadows
+	{
+		blend gl_one,gl_one
+		cubeMap		env/reactor
+		texgen		reflect
+	}
+}
+
+textures/sfx/tramenv
+{
+	qer_editorimage textures/sfx/tramenv.tga
+	{
+		cubeMap		env/tramenv
+		texgen		reflect
+	}
+}
+
+textures/sfx/reactorreflect
+{
+	qer_editorimage textures/sfx/reactorreflect.tga
+	{
+		cubeMap		env/reactor
+		texgen		reflect
+	}
+}
+
+textures/sfx/bluefog
+{
+	translucent
+	noShadows
+	{
+		blend gl_one,gl_one
+		map textures/sfx/bluefog.tga
+	}
+}
+
+
+
+//============================================================================================================
+//ktest
+//============================================================================================================
+
+textures/ktest/nurntest2fire
+{
+	qer_editorimage textures/ktest/nurntest2fire.tga
+	bumpmap	addnormals ( textures/ktest/nurntest2fire_local.tga, heightmap ( textures/ktest/nurntest2fire_bmp.tga, 4 ) )
+	diffusemap	textures/ktest/nurntest2fire_d.tga
+	specularmap	textures/ktest/nurntest2fire_s.tga
+}
+
+        

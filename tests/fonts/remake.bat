@@ -1,0 +1,1 @@
+@for %%a in (*.cpp) do cc.bat %%a

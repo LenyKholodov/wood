@@ -1,0 +1,44 @@
+material {
+	name "trees/Palm"
+
+	diffuse_map "palm.tga"
+
+	diffuse 201 185 96 
+	specular 229 229 229 
+	ambient 201 185 96 
+	emission 0 0 0 
+
+	shiness 100
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "trees/Material #103"
+
+
+	diffuse 107 150 107 
+	specular 150 147 71 
+	ambient 25 25 25 
+	emission 0 0 0 
+
+	shiness 20
+	alpha_koef 1
+	alpha_present 0
+}
+
+material {
+	name "trees/Coconut"
+
+	diffuse_map "coconut.jpg"
+
+	diffuse 117 87 34 
+	specular 229 229 229 
+	ambient 110 78 23 
+	emission 0 0 0 
+
+	shiness 100
+	alpha_koef 1
+	alpha_present 0
+}
+

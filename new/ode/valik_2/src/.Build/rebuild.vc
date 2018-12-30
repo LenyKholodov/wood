@@ -1,0 +1,13 @@
+LIB_DIR  = Q:\lib
+
+LIB_PROJ = Ode       \
+		   AdvShapes \
+           drawstuff 
+
+all:       "__clean"
+
+"__clean":
+    @echo Rebuild project
+    @if exist $(LIB_DIR)\*.lib del  $(LIB_DIR)\*.lib
+    @for %i in ($(LIB_PROJ)) do @call rebuild_lib.bat %i
+    @echo End of rebuild
